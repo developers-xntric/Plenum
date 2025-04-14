@@ -3,7 +3,7 @@ import React from 'react'
 
 const Navbar = () => {
     return (
-        <header className='z-50 2xl:w-[75%] xl:[80%] w-[85%] font-normal font-["Archivo"] mx-auto absolute -translate-x-1/2 left-1/2 top-8  bg-white rounded-[13px]'>
+        <header className='z-50 2xl:w-[75%] xl:[80%]  w-[85%] font-normal font-["Archivo"] mx-auto absolute -translate-x-1/2 left-1/2 top-8  bg-white rounded-[13px]'>
             <div className='px-4 py-2'>
                 <div className='flex justify-between items-center'>
                     <div>
@@ -26,11 +26,9 @@ const Navbar = () => {
                             <li>Careers</li>
                         </ul>
                     </div>
-                    <div>
-                        <button className='bg-black px-8 2xl:px-10 text-[15px] py-2 2xl:py-3 rounded-[8px] text-white'>
-                            Contact Us
-                        </button>
-                    </div>
+                    <button className='bg-black px-8 2xl:px-10 text-[15px] py-2 2xl:py-3 rounded-[8px] text-white'>
+                        Contact Us
+                    </button>
                 </div>
             </div>
         </header>
