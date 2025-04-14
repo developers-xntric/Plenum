@@ -1,1 +1,30 @@
 @import "tailwindcss";
+
+:root {
+    --primary-color: #FF6035;
+    --secondary-color: #101010;
+}
+
+.bg-primary {
+    background-color: var(--primary-color);
+}
+
+.text-primary {
+    color: var(--primary-color);
+}
+
+.border-primary {
+    border-color: var(--primary-color);
+}
+
+.bg-secondary {
+    background-color: var(--secondary-color);
+}
+
+.text-secondary {
+    color: var(--secondary-color);
+}
+
+.border-secondary {
+    border-color: var(--secondary-color);
+}

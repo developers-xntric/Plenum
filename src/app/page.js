@@ -1,5 +1,5 @@
 export default function Home() {
   return (
-    <h1 className="text-7xl">Plenum</h1>
+    <h1 className="text-7xl text-primary">Plenum</h1>
   );
 }
