@@ -14,7 +14,7 @@
     font-family: 'Archivo';
     src: url('/fonts/Archivo-Regular.woff2') format('woff2'),
         url('/fonts/Archivo-Regular.woff') format('woff');
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
 }
 

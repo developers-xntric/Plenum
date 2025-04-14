@@ -1,5 +1,7 @@
 export default function Home() {
   return (
-    <div className="text-primary font-['Chakra'] font-bold text-6xl">1 Week</div>
+    <div className="text-primary font-['Chakra'] bg-black h-screen font-bold text-6xl">
+    
+    </div>
   );
 }
