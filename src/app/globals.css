@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* Thin weight */
+/* Archivo Thin weight */
 @font-face {
     font-family: 'Archivo';
     src: url('/fonts/Archivo-Thin.woff2') format('woff2'),
@@ -9,7 +9,7 @@
     font-style: normal;
 }
 
-/* Regular weight */
+/* Archivo Regular weight */
 @font-face {
     font-family: 'Archivo';
     src: url('/fonts/Archivo-Regular.woff2') format('woff2'),
@@ -18,7 +18,7 @@
     font-style: normal;
 }
 
-/* Bold weight */
+/* Archivo Bold weight */
 @font-face {
     font-family: 'Archivo';
     src: url('/fonts/Archivo-Bold.woff2') format('woff2'),
@@ -27,9 +27,33 @@
     font-style: normal;
 }
 
+/* ChakraPetch Thin weight */
+@font-face {
+    font-family: 'Chakra';
+    src: url('/fonts/ChakraPetch-Light.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+/* ChakraPetch Regular weight */
+@font-face {
+    font-family: 'Chakra';
+    src: url('/fonts/ChakraPetch-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* ChakraPetch Bold weight */
+@font-face {
+    font-family: 'Chakra';
+    src: url('/fonts/ChakraPetch-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
 @layer utilities {
     .greyish-effect {
-        @apply opacity-40 text-6xl font-normal font-['Archivo'];
+        @apply opacity-40 text-6xl font-bold font-['Archivo'];
     }
 }
 
