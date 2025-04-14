@@ -1,4 +1,6 @@
+import Navbar from "@/components/layout/navbar";
 import "./globals.css";
+import Footer from "@/components/layout/footer";
 
 export const metadata = {
   title: "Plenum",
@@ -12,7 +14,9 @@ export default function RootLayout({ children }) {
         className={`antialiased`}
         cz-shortcut-listen="true"
       >
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
