@@ -1,5 +1,38 @@
 @import "tailwindcss";
 
+/* Thin weight */
+@font-face {
+    font-family: 'Archivo';
+    src: url('/fonts/Archivo-Thin.woff2') format('woff2'),
+        url('/fonts/Archivo-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+/* Regular weight */
+@font-face {
+    font-family: 'Archivo';
+    src: url('/fonts/Archivo-Regular.woff2') format('woff2'),
+        url('/fonts/Archivo-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Bold weight */
+@font-face {
+    font-family: 'Archivo';
+    src: url('/fonts/Archivo-Bold.woff2') format('woff2'),
+        url('/fonts/Archivo-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@layer utilities {
+    .greyish-effect {
+        @apply opacity-40 text-6xl font-normal font-['Archivo'];
+    }
+}
+
 :root {
     --primary-color: #FF6035;
     --secondary-color: #101010;

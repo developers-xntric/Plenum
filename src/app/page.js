@@ -1,5 +1,5 @@
 export default function Home() {
   return (
-    <h1 className="text-7xl text-primary">Plenum</h1>
+    <div className="greyish-effect">1 Week</div>
   );
 }
