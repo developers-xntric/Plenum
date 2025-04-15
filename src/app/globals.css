@@ -55,6 +55,16 @@
     .greyish-effect {
         @apply opacity-40 text-6xl font-bold font-['Archivo'];
     }
+
+    .bg-smoke-image {
+        background: linear-gradient(to bottom , #010101, rgba(255,255,255,0.2)), url("/images/smoke.webp");
+        background-size: contain;
+        background-position: left;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+
+    }
 }
 
 :root {
