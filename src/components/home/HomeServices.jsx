@@ -32,6 +32,7 @@ export default function HomeServices({ }) {
 
         <div className="flex flex-col space-y-16">
           {/* UPPER column - Headline */}
+          
           {/* <div className="xl:w-[70%]">
             <h1 className="text-[52px] font-bold font-['Archivo'] text-secondary">Why AI enabled Enterprise with Plenum? With Plenum gain the tools to unlock deeper insights, automate complex workflows</h1>
           </div> */}
@@ -50,8 +51,8 @@ export default function HomeServices({ }) {
             {/* LEFT */}
             <div className="space-y-6 w-[35%] ">
               <div>
-                <h2 className="text-[50px] text-secondary font-bold font-['Archivo'] bg-smoke-image">Our</h2>
-                <h2 className="text-[50px] text-secondary font-bold font-['Archivo'] bg-smoke-image">Services</h2>
+                <h2 className="text-[50px] text-secondary font-bold font-['Archivo'] ">Our</h2>
+                <h2 className="text-[50px] text-secondary font-bold font-['Archivo'] ">Services</h2>
               </div>
               <div className="space-y-2 ">
                 <p className="text-sm text-secondary leading-[20px] font-['Archivo']">

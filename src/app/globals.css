@@ -55,6 +55,16 @@
     .greyish-effect {
         @apply opacity-40 text-6xl font-bold font-['Archivo'];
     }
+
+    .bg-smoke-image {
+        background: linear-gradient(to bottom , #010101, rgba(255,255,255,0.2)), url("/images/smoke.webp");
+        background-size: contain;
+        background-position: left;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+
+    }
 }
 
 :root {
@@ -84,31 +94,4 @@
 
 .border-secondary {
     border-color: var(--secondary-color);
-}
-
-
-/* @layer utilities {
-    .bg-smoke-image {
-       background: url("/images/smoke.webp") #101010 0% 0% / 400px 500px repeat;
-       -webkit-text-fill-color: transparent;
-       -webkit-background-clip: text;
-       -webkit-text-stroke-width: 0.69px;
-       -webkit-text-stroke-color: rgba(16, 16, 16, 0.10);
-       background-size: center;
-       background-position: right;
-       background-clip: text;
-    }
-  }
-   */
-
-@layer utilities{
-    .bg-smoke-image {
-        background: linear-gradient(to bottom , #010101, rgba(255,255,255,0.2)), url("/images/smoke.webp");
-        background-size: contain;
-        background-position: left;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        -webkit-background-clip: text;
-
-    }
 }
