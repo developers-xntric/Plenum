@@ -4,7 +4,7 @@ import Button from "../common/button"
 const Navbar = () => {
     return (
         // Main Header
-        <header className='z-50 2xl:w-[75%] w-[85%] font-normal font-["Archivo"] mx-auto absolute -translate-x-1/2 left-1/2 top-8 bg-[#FFFFFF] rounded-[13px]'>
+        <header className='z-50 2xl:w-[1300px] w-[85%] font-normal font-["Archivo"] mx-auto absolute -translate-x-1/2 left-1/2 top-8 bg-[#FFFFFF] rounded-[13px]'>
             {/* Wrapper */}
             <div className='px-[18px] py-2'>
                 {/* Inner Row Whole Div */}
@@ -31,7 +31,7 @@ const Navbar = () => {
                         </svg>
                     </Link>
                     {/* Links And Button Div */}
-                    <div className='flex justify-between gap-[90px]'>
+                    <div className='flex justify-between gap-[30px] xl:gap-[90px]'>
                         {/* Whole Links */}
                         <ul className='flex justify-between items-center gap-8 2xl:gap-10 text-[14px] text-secondary'>
                             <Link href={"/"}>Home</Link>
@@ -44,7 +44,7 @@ const Navbar = () => {
                             <Link href={"/"}>Careers</Link>
                         </ul>
                         {/* Button */}
-                        <Button text={"Contact Us"} link="/contact" className={"bg-secondary text-[#FFFFFF]"} />
+                        <Button text={"Contact Us"} link="/contact" className={"bg-secondary py-[10px]  px-7 xl:px-10 text-[#FFFFFF]"} />
                     </div>
                 </div>
             </div>

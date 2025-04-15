@@ -60,15 +60,24 @@
 :root {
     --primary-color: #FF6035;
     --secondary-color: #101010;
+    --gray: #FFFFFF0D;
+    --liner-gray: linear-gradient(90deg,
+            #10101014 -2.12%,
+            #FFFFFF14 50.19%,
+            #10101014 101.94%);
 }
 
 .bg-primary {
     background-color: var(--primary-color);
 }
+.bg-liner-gary {
+    background-color: var(--liner-gray);
+}
 
 .text-primary {
     color: var(--primary-color);
 }
+
 
 .border-primary {
     border-color: var(--primary-color);
@@ -84,4 +93,8 @@
 
 .border-secondary {
     border-color: var(--secondary-color);
+}
+
+.bg-gray-light {
+    background-color: var(--gray);
 }
