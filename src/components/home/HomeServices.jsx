@@ -25,17 +25,13 @@ export default function HomeServices({ }) {
   return (
     <div className=" bg-white ">
       {/* Main content */}
-      <div className="container 2xl:max-w-[1300px] w-[90%] mx-auto space-y-20 px-4 py-16 md:py-24">
+      <div className="container 2xl:max-w-[1300px] w-[90%] mx-auto space-y-20 py-16 md:py-24">
 
         {/* BRAND ICONS SLIDER */}
         <BrandSlider />
 
         <div className="flex flex-col space-y-16">
           {/* UPPER column - Headline */}
-          
-          {/* <div className="xl:w-[70%]">
-            <h1 className="text-[52px] font-bold font-['Archivo'] text-secondary">Why AI enabled Enterprise with Plenum? With Plenum gain the tools to unlock deeper insights, automate complex workflows</h1>
-          </div> */}
 
           <div className="xl:w-[75%] 2xl:w-[70%]">
             <h2 className="text-[52px] leading-[60px] font-bold font-['Archivo'] text-secondary bg-smoke-image">
@@ -46,29 +42,33 @@ export default function HomeServices({ }) {
 
 
           {/* BOTTOM column - Services */}
-          <div className="flex  justify-between max-w-[90%]">
+          <div className="flex items-center justify-between xl:max-w-[90%]">
 
             {/* LEFT */}
-            <div className="space-y-6 w-[35%] ">
-              <div>
-                <h2 className="text-[50px] text-secondary font-bold font-['Archivo'] ">Our</h2>
-                <h2 className="text-[50px] text-secondary font-bold font-['Archivo'] ">Services</h2>
+            <div className="space-y-6 w-full md:w-[35%]">
+              <div className="relative">
+                <h2 className="text-[50px] text-secondary font-bold font-['Archivo']">Our</h2>
+                <h2 className="text-[50px] text-secondary font-bold font-['Archivo'] mt-[-32px]">Services</h2>
               </div>
-              <div className="space-y-2 ">
+              <div className="space-y-5">
                 <p className="text-sm text-secondary leading-[20px] font-['Archivo']">
                   Plenum offers AI solutions to automate workflows, enhance decisions, and boost efficiency. We tailor
                   services to your needs and help you scale confidently.
                 </p>
-                <Button link={"/services"} text={"Explore More"} className={" px-6 font-normal font-['Archivo'] py-2 border-2 border-primary text-[#404040] rounded text-sm transition-colors"} />
+                <Button
+                  link={"/services"}
+                  text={"Explore More"}
+                  className="px-6 py-2 border border-primary text-secondary rounded text-sm transition-colors inline-block font-['Archivo']"
+                />
               </div>
-            </div> 
+            </div>
 
             {/* RIGHT */}
-            <div className="space-y-">
+            <div>
               {servicesData.map((item, index) => (
                 <div
                   key={index}
-                  className="group border-t-[2.5px] border-[#e7e7e7] py-3 flex items-center gap-3 text-secondary text-[21px] cursor-pointer"
+                  className="group border-t-[2.5px] border-[#e7e7e7] py-5 flex items-center gap-3 text-secondary text-[21px] cursor-pointer"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
