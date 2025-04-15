@@ -70,7 +70,7 @@ const Hero = () => {
             {/* //hero section main heading */}
             <div className='flex max-w-[950px] -mt-48 mx-auto justify-center h-full items-center'>
                 <div className='w-[730px] mx-auto flex flex-col gap-3'>
-                    <h1 className='text-white text-[50px] lg:text-[70px] font-bold leading-[71px] font-["Chakra"] text-center'>ERP with <span className='text-primary'>Intelligence</span> at Its Core</h1>
+                    <h1 className='text-white text-[50px] font-semibold lg:text-[70px] leading-[71px] font-["Chakra"] text-center'>ERP with <span className='text-primary'>Intelligence</span> at Its Core</h1>
                     <p className='font-["Archivo"] font-normal text-center text-white'>Plenum isn’t just another ERP provider; we embed AI into your systems to deliver actionable insights and smarter decision-making capabilities.</p>
                 </div>
             </div>
@@ -91,17 +91,19 @@ const Hero = () => {
                 <div className="w-[686px] p-[0.8px] h-14 bg-white/5 rounded-xl  bg-gradient-to-l from-red-500 via-orange-700/80 to-red-300 outline-red-500 inline-flex justify-start items-center">
                     <div className="flex px-4 rounded-xl justify-start items-center gap-2 bg-zinc-900 w-full h-full">
                         <div className="w-2 h-2 bg-red-500 rounded-full" />
-                        <div className="justify-center text-white/80 text-base font-semibold font-['Archivo']">What process in your business you would like to enhance with intelligence </div>
-                        <div className="w-2.5 h-7 relative opacity-0">
-                            <div className="left-0 top-[-3px] absolute justify-center text-white text-xl font-medium font-['Archivo']">?</div>
+                        <div className="text-white/80 text-base font-semibold font-['Archivo']">What process in your business you would like to enhance with intelligence  </div>
+                        <div className="w-2.5 h-7 relative">
+                            <span className="text-lg text-primary animate-blink font-semibold">
+                                ?
+                            </span>
                         </div>
                     </div>
                 </div>
-                <div className='flex mt-10 2xl:max-w-[1440px]  leading-[15px] w-[1000px] mx-auto justify-center items-center gap-9 flex-wrap'>
+                <div className='flex mt-10 2xl:max-w-[1440px]  leading-[15px] w-[1000px] mx-auto justify-center items-center gap-8 flex-wrap'>
                     {
                         links.map((ele, ind) => {
                             return (
-                                <Link href={ele.link} key={ind} className='text-white hover:text-[#FF6035] hover:transition-all ease-in-out duration-400 text-[18px] underline font-semibold font-["Archivo"]'>
+                                <Link href={ele.link} key={ind} className='text-white hover:text-[#FF6035] hover:transition-all ease-in-out duration-400 text-[16px] underline  font-["Archivo"]'>
                                     {ele.name}
                                 </Link>
                             )
