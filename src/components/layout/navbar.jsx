@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Button from "../common/button"
 
 const Navbar = () => {
     return (
@@ -12,7 +13,7 @@ const Navbar = () => {
                     <Link href={"/"} className='w-[100px]'>
                         {/* Logo Svg */}
                         <svg xmlns="http://www.w3.org/2000/svg" width="95" height="19" viewBox="0 0 89 19" fill="none">
-                            <g clip-path="url(#clip0_1037_613)">
+                            <g clipPath="url(#clip0_1037_613)">
                                 <path d="M86.927 1.53503C87.0132 1.53503 87.0746 1.5657 87.1378 1.62704C87.2011 1.5657 87.2624 1.53503 87.3487 1.53503H87.5959V1.66538H87.2126V2.5337H87.0611V1.66538H86.6797V1.53503H86.927Z" fill="#101010" />
                                 <path d="M87.8702 1.62512V2.53178H87.7188V1.53503H87.9085C87.966 1.53503 88.012 1.57145 88.0389 1.62129C88.1999 1.92798 88.1194 1.77464 88.2823 2.08324L88.5257 1.62129C88.5526 1.57337 88.5986 1.53695 88.6542 1.53695H88.8439V2.5337H88.6925V1.62704L88.3053 2.3631H88.2612L87.8702 1.62704V1.62512Z" fill="#101010" />
                                 <path d="M9.00904 2.53766H6.02264C2.69696 2.53766 0 5.23462 0 8.5603V18.1482H2.40944V4.9471H9.01096C11.3265 4.9471 13.203 6.82366 13.203 9.13918C13.203 11.4547 11.3265 13.3313 9.01096 13.3313H3.61512L6.02456 15.7407H9.01096C12.6567 15.7407 15.6125 12.785 15.6125 9.13918C15.6125 5.49339 12.6567 2.53766 9.01096 2.53766H9.00904Z" fill="#101010" />
@@ -43,9 +44,7 @@ const Navbar = () => {
                             <Link href={"/"}>Careers</Link>
                         </ul>
                         {/* Button */}
-                        <button className='bg-secondary px-10 text-[16px] py-[10px] rounded-[8px] text-[#FFFFFF] align-middle'>
-                            Contact Us
-                        </button>
+                        <Button text={"Contact Us"} link="/contact" className={"bg-secondary text-[#FFFFFF]"} />
                     </div>
                 </div>
             </div>
