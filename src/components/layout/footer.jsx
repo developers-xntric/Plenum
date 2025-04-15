@@ -1,15 +1,7 @@
-"use client"
-
 import Link from "next/link"
-import { useEffect, useState } from "react"
 import Image from "next/image"
 
 export default function Footer() {
-  const [year, setYear] = useState("2023")
-
-  useEffect(() => {
-    setYear(new Date().getFullYear().toString())
-  }, [])
 
   return (
     <footer className="bg-black text-white pb- px-4 md:px-8 lg:px-12 relative">
@@ -17,6 +9,8 @@ export default function Footer() {
         <div className="flex item-center justify-between gap-8">
           {/* Logo and Left Links */}
           <div className=" space-y-8 pt-12 ">
+
+            {/* PLENUM LOGO */}
             <svg xmlns="http://www.w3.org/2000/svg" width="198" height="40" viewBox="0 0 198 40" fill="none">
               <g clipPath="url(#clip0_1043_8141)">
                 <path
@@ -58,8 +52,8 @@ export default function Footer() {
 
             <div className="grid grid-cols-2 gap-x-8 gap-y-2 ">
               <div>
-                <h3 className="text-gray-400 mb-4 text-lg font-semibold font-['Archivo']">Product</h3>
-                <ul className="space-y-2 font-normal text-base font-['Archivo']">
+                <h3 className="text-[#767676] mb-4 text-lg font-semibold font-['Archivo']">Product</h3>
+                <ul className="space-y-1 font-normal text-base font-['Archivo']">
                   <li>
                     <Link href="#" className="hover:text-gray-300">
                       Global Accounts
@@ -79,8 +73,8 @@ export default function Footer() {
               </div>
 
               <div>
-                <h3 className="text-gray-400 mb-4 text-lg font-semibold font-['Archivo']">Company</h3>
-                <ul className="space-y-2 font-normal text-base font-['Archivo']">
+                <h3 className="text-[#767676] mb-4 text-lg font-semibold font-['Archivo']">Company</h3>
+                <ul className="space-y-1 font-normal text-base font-['Archivo']">
                   <li>
                     <Link href="#" className="hover:text-gray-300">
                       About Us
@@ -104,12 +98,12 @@ export default function Footer() {
           {/* Center CTA */}
           <div className="md:col-span- flex justify-center relative font-['Archivo']">
             <div className="">
-              <Image src="/layout/footer-circle.webp" width={440} height={450} alt="footer-circle" className=""/>
+              <Image src="/layout/footer-circle.webp" width={420} height={450} alt="footer-circle" className=""/>
               <div className="flex flex-col items-center justify-center text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full">
                 <h3 className="text-3xl font-normal mb-1 font-['Archivo']">Got a project?</h3>
-                <p className="text-3xl font-normal mb-4 font-['Archivo']">Want to collaborate?</p>
+                <p className="text-3xl font-normal mb-7 font-['Archivo']">Want to collaborate?</p>
                 <button className="bg-white text-black rounded-full py-1 px-5 flex items-center justify-between gap-2 text-sm hover:bg-gray-100 transition-colors">
-                  <div className="bg-orange-600 text-white rounded-full p-2 relative right-4">
+                  <div className="bg-primary text-white rounded-full p-2 relative right-4">
                     {/* ARROW ICON */}
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
                       <path
@@ -128,11 +122,11 @@ export default function Footer() {
           </div>
 
           {/* Right Links */}
-          <div className=" mt-[9%]">
-            <div className="grid grid-cols-2 gap-x-8 gap-y-2">
+          <div className=" mt-[9%] ">
+            <div className="flex  gap-x-8 gap-y-2">
               <div>
-                <h3 className="text-gray-400 mb-4 text-lg font-semibold font-['Archivo']">Legal</h3>
-                <ul className="space-y-2 text-base font-['Archivo']">
+                <h3 className="text-[#767676] mb-4 text-lg font-semibold font-['Archivo']">Legal</h3>
+                <ul className="space-y-1 text-base font-['Archivo']">
                   <li>
                     <Link href="#" className="hover:text-gray-300">
                       Terms & Conditions
@@ -152,8 +146,8 @@ export default function Footer() {
               </div>
 
               <div>
-                <h3 className="text-gray-400 mb-4 text-lg font-semibold font-['Archivo']">Follow Us</h3>
-                <ul className="space-y-2 text-base font-['Archivo']">
+                <h3 className="text-[#767676] mb-4 text-lg font-semibold font-['Archivo']">Follow Us</h3>
+                <ul className="space-y-1 text-base font-['Archivo']">
                   <li>
                     <Link href="#" className="hover:text-gray-300">
                       Instagram
@@ -172,7 +166,7 @@ export default function Footer() {
 
         {/* Copyright  */}
         <div className="flex items-center justify-center ">
-          <p className="text-[13px] text-white text-center relative right-5 bottom-6 font-['Archivo']">© {year} Plenum. All rights reserved.</p>
+          <p className="text-[13px] text-white text-center relative  bottom-6 font-['Archivo']">© 2025 Plenum. All rights reserved.</p>
         </div>
       </div>
     </footer>
