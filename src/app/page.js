@@ -4,6 +4,7 @@ import CentralizeIntelligence from "@/components/home/centralize-intelligence";
 import Hero from "@/components/Home/hero";
 import HomeServices from "@/components/home/home-services";
 import { cardData } from "@/data/home-blog";
+import HouseAIProduct from "@/components/home/house-ai-product"
 
 export default function Home() {
   return (
@@ -14,7 +15,6 @@ export default function Home() {
       <HouseAIProduct />
       <CaseStudies />
       <Blog heading='Discover Our Blog Articles' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world" cardData={cardData} />
-      import HouseAIProduct from "@/components/home/house-ai-product"
     </div>
   );
 }
