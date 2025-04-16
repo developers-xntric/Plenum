@@ -4,9 +4,9 @@ import Button from "../common/button"
 const Navbar = () => {
     return (
         // Main Header
-        <header className='z-50 2xl:w-[1300px] w-[85%] font-normal font-["Archivo"] mx-auto absolute -translate-x-1/2 left-1/2 top-8 bg-[#FFFFFF] rounded-[13px]'>
+        <header className='z-50 2xl:w-[1300px] w-[90%] xl:w-[85%] font-normal font-["Archivo"] mx-auto absolute -translate-x-1/2 left-1/2 top-8 bg-[#FFFFFF] rounded-[13px]'>
             {/* Wrapper */}
-            <div className='px-[18px] py-2'>
+            <div className='xl:px-[18px] xl:py-2 py-2 px-3'>
                 {/* Inner Row Whole Div */}
                 <div className='flex justify-between items-center'>
                     {/* Logo Div */}
@@ -33,7 +33,7 @@ const Navbar = () => {
                     {/* Links And Button Div */}
                     <div className='flex justify-between gap-[30px] xl:gap-[90px]'>
                         {/* Whole Links */}
-                        <ul className='flex justify-between items-center gap-8 2xl:gap-10 text-[14px] text-secondary'>
+                        <ul className='flex justify-between items-center gap-8 2xl:gap-10 text-[12px] xl:text-[14px] text-secondary'>
                             <Link href={"/"}>Home</Link>
                             <Link href={"/"}>Services</Link>
                             <Link href={"/"}>Products</Link>

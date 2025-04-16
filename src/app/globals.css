@@ -56,8 +56,8 @@
         @apply opacity-40 text-6xl font-bold font-['Archivo'];
     }
 
-    .bg-smoke-text-image{
-        background: linear-gradient(to bottom , #010101, rgba(255,255,255,0.2)), url("/images/house-ai-prodcut/smoke.webp");
+    .bg-smoke-text-image {
+        background: linear-gradient(to bottom, #010101, rgba(255, 255, 255, 0.2)), url("/images/smoke.webp");
         background-size: contain;
         background-position: left;
         -webkit-text-fill-color: transparent;
@@ -66,23 +66,23 @@
     }
 
     .home-section-headings {
-        opacity: 0.9;
+        opacity: 0.8;
         background: url("/images/house-ai-prodcut/smoke.webp") rgb(0, 0, 0) 0% 0% / 73.53749871253967px 73.53749871253967px repeat;
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 
-    .grayish-gradient{
+    .grayish-gradient {
         opacity: 0.4;
-        background: linear-gradient(to bottom , #010101, rgba(255,255,255,0.2)), url("/images/house-ai-prodcut/smoke.webp");
+        background: linear-gradient(to bottom, #010101, rgba(255, 255, 255, 0.2)), url("/images/smoke.webp");
         background-size: contain;
         background-position: left;
         -webkit-text-fill-color: transparent;
         background-clip: text;
         -webkit-background-clip: text;
     }
-    
+
 }
 
 :root {
@@ -146,4 +146,39 @@
 
 .animate-blink {
     animation: blink 0.6s infinite;
+}
+
+.custom-pagination {
+    margin-top: 40px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+}
+
+.custom-pagination button {
+    width: 6px;
+    height: 6px;
+    background-color: #d4d4d8;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    padding: 0;
+}
+
+.custom-pagination button:hover {
+    background-color: black !important;
+    transform: scale(1.2);
+}
+
+.custom-pagination button.splide__pagination__button--active {
+    background-color: black !important;
+    transform: scale(1.2);
+}
+
+.splide__pagination__page.is-active {
+    background-color: black !important;
+    transform: scale(1.2);
 }
