@@ -8,7 +8,7 @@ import { cardData } from "@/data/home-blog";
 
 export default function Home() {
   return (
-    <div className="bg-black">
+    <div className="">
       <Hero />
       <HomeServices />
       <CentralizeIntelligence />
