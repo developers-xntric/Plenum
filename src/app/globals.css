@@ -56,7 +56,7 @@
         @apply opacity-40 text-6xl font-bold font-['Archivo'];
     }
 
-    .bg-smoke-image {
+    .bg-smoke-text-image {
         background: linear-gradient(to bottom, #010101, rgba(255, 255, 255, 0.2)), url("/images/smoke.webp");
         background-size: contain;
         background-position: left;
@@ -72,6 +72,17 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+
+    .grayish-gradient {
+        opacity: 0.4;
+        background: linear-gradient(to bottom, #010101, rgba(255, 255, 255, 0.2)), url("/images/smoke.webp");
+        background-size: contain;
+        background-position: left;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+
 }
 
 :root {
@@ -163,7 +174,7 @@
 }
 
 .custom-pagination button.splide__pagination__button--active {
-    background-color: black !important ;
+    background-color: black !important;
     transform: scale(1.2);
 }
 
