@@ -54,7 +54,7 @@ const links = [
 const Hero = () => {
     return (
         // hero main section
-        <section className='relative z-30 overflow-hidden lg:h-[160vh] xl:h-[160vh] h-screen flex flex-col'>
+        <section className='relative z-30 bg-black overflow-hidden lg:h-[140vh] xl:h-[160vh] h-screen flex flex-col'>
             {/* //shadow svg */}
             <div className='absolute top-0 -z-10 left-1/2 -translate-x-1/2'>
                 <svg width="1440" height="1484" viewBox="0 0 1440 1484" fill="none" xmlns="http://www.w3.org/2000/svg">
