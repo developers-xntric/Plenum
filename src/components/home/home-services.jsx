@@ -46,7 +46,7 @@ export default function HomeServices({ }) {
 
             {/* LEFT */}
             <div className="space-y-6 w-full md:w-[35%]">
-              <div className="relative bg-smoke-text-image">
+              <div className="relative ">
                 <h2 className="text-[52px] text-secondary font-bold font-['Archivo']">Our</h2>
                 <h2 className="text-[52px] text-secondary font-bold font-['Archivo'] mt-[-32px]">Services</h2>
               </div>
