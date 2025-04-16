@@ -58,7 +58,7 @@ const Hero = () => {
             <section className='relative z-30  overflow-hidden h-[110vh] 2xl:h-screen flex flex-col'>
                 {/* //shadow svg */}
                 <div className='absolute top-0 -z-10 left-1/2 -translate-x-1/2'>
-                    <svg width="1440" height="1484" viewBox="0 0 1440 1484" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg className='opacity-80' width="2000" height="2000" viewBox="0 0 1440 1484" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="1440" height="1484" fill="url(#paint0_linear_1096_1934)" />
                         <defs>
                             <linearGradient id="paint0_linear_1096_1934" x1="720" y1="0" x2="720" y2="1484" gradientUnits="userSpaceOnUse">
@@ -71,7 +71,7 @@ const Hero = () => {
                 {/* //hero section main heading */}
                 <div className='flex w-[600px] xl:w-[950px] mx-auto justify-center h-screen items-center'>
                     <div className='w-[550px] xl:w-[650px] mx-auto flex flex-col gap-3'>
-                        <h1 className='text-white text-[50px] font-semibold xl:text-[60px] leading-[50px] xl:leading-[71px] font-["Chakra"] text-center'>ERP with <span className='text-primary'>Intelligence</span> at Its Core</h1>
+                        <h1 className='text-white text-[50px]  font-semibold xl:text-[60px] leading-[50px] xl:leading-[71px] font-["Chakra"] text-center'>ERP with <span className='text-primary'>Intelligence</span> at Its Core</h1>
                         <p className='font-["Archivo"] font-normal text-sm xl:text-base text-center text-white'>Plenum isn’t just another ERP provider; we embed AI into your systems to deliver actionable insights and smarter decision-making capabilities.</p>
                     </div>
                 </div>
@@ -81,7 +81,7 @@ const Hero = () => {
                         src='/home/herovideo.webm'
                         height={1000}
                         width={1000}
-                        autoPlay={true}
+                        autoPlay
                         loop
                         muted
                         className='w-full object-contain h-full'
@@ -114,9 +114,9 @@ const Hero = () => {
                 </div>
                 {/* last section of hero */}
                 {/* second shadow */}
-                <div className='absolute top-full -z-10 left-1/2 -translate-x-1/2'>
+                {/* <div className='absolute top-full -z-10 left-1/2 -translate-x-1/2'>
                     <svg width="1440" height="1484" viewBox="0 0 1440 1484" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="1440" height="1484" fill="url(#paint0_linear_1096_1934)" />
+                        <rect width="2000" height="2000" fill="url(#paint0_linear_1096_1934)" />
                         <defs>
                             <linearGradient id="paint0_linear_1096_1934" x1="720" y1="0" x2="720" y2="1484" gradientUnits="userSpaceOnUse">
                                 <stop offset="0.150626" stopColor="#101010" />
@@ -125,7 +125,7 @@ const Hero = () => {
                         </defs>
                     </svg>
 
-                </div>
+                </div> */}
             </section>
             <div className='w-full  bg-gradient-to-l from-stone-950/10 via-white/10 to-stone-950/10 py-3 xl:py-3  flex justify-center items-center gap-10'>
                 <p className='font-["Chakra"] font-normal text-base xl:text-lg text-white' >Ready to experience hyperperformance?</p>
