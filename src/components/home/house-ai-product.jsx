@@ -24,14 +24,14 @@ export default function HouseAIProduct() {
 
           <div className="relative rounded-2xl overflow-hidden shadow-xl">
             <Image
-              src="/images/smoke.webp"
+              src="/images/house-ai-product/smoke.webp"
               width={400}
               height={400}
               alt="Smoke Background"
-              className="w-full h-full object-cover opacity- absolute inset-0 z-10"
+              className="w-full h-full object-cover absolute inset-0 z-10"
             />
             {/* Momentum AI Card */}
-            <div className="bg-gradient-to-br from-black to-gray-800 text-white p-7 rounded-2xl shadow-xl space-y-6 relative">
+            <div className="bg-gradient-to-br from-black opacity-90 to-gray-800 text-white p-7 h-full rounded-2xl shadow-xl space-y-6 relative">
               <div className='space-y-2'>
                 <div className="flex justify-between items-start ">
                   <h3 className="text-2xl font-medium font-['Archivo']">Momentum AI</h3>
@@ -46,11 +46,15 @@ export default function HouseAIProduct() {
                 </p>
               </div>
 
-              <div className="relative h-32">
+              <div className="flex justify-center items-center ">
                 {/*  A Chart  */}
-                <div className="absolute top-4 left-8 bg-white text-black px-2 py-1 rounded-full text-xs">10k+</div>
-                <div className="absolute bottom-4 right-8 bg-white text-black px-2 py-1 rounded-full text-xs">15k+</div>
-                <div className="w-full h-full border-t border-dashed border-white"></div>
+                <Image
+                  src="/images/house-ai-product/momentum-graph.png"
+                  width={200}
+                  height={100}
+                  alt="Smoke Background"
+                  className=""
+                />
               </div>
             </div>
           </div>
@@ -58,13 +62,13 @@ export default function HouseAIProduct() {
           {/* Vertical Builds Card */}
           <div className="relative rounded-2xl overflow-hidden shadow-xl">
             <Image
-              src="/images/smoke.webp"
+              src="/images/house-ai-product/smoke.webp"
               width={400}
               height={400}
               alt="Smoke Background"
-              className="w-full h-full object-cover opacity- absolute inset-0 z-10"
+              className="w-full h-full object-cover absolute inset-0 z-10"
             />
-            <div className="bg-gradient-to-br from-black to-gray-800 text-white p-7 h-full rounded-2xl shadow-xl space-y-6  relative">
+            <div className="bg-gradient-to-br from-black opacity-90 to-gray-800 text-white p-7 h-full rounded-2xl shadow-xl space-y-6  relative">
               <div className='space-y-2'>
                 <div className="flex justify-between items-start">
                   <h3 className="text-2xl font-medium font-['Archivo']">Vertical builds</h3>

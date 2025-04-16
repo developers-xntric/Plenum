@@ -5,8 +5,8 @@ import CaseStudyCard from "../common/home-case-study-card"
 export default function CaseStudies() {
 
     return (
-        <section className="bg-white 2xl:py-16">
-            <div className="2xl:max-w-[1330px] w-[90%] mx-auto py-16 xl:py-24">
+        <section className="bg-white ">
+            <div className="2xl:max-w-[1330px] w-[90%] mx-auto py-12 xl:py-10">
                 <div className="mb-8 space-y-6">
                     <div className="xl:max-w-[70%]">
                         <h2 className="text-[50px] leading-[55px] font-['Archivo'] text-secondary font-bold home-section-headings">
