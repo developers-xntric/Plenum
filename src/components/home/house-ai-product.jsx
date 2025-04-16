@@ -28,20 +28,25 @@ export default function HouseAIProduct() {
               width={400}
               height={400}
               alt="Smoke Background"
-              className="w-full h-full object-cover absolute inset-0 z-10"
+              className="w-full h-full object-cover absolute inset-0 z-30"
             />
+
+            {/* Dark overlay */}
+            <div className="absolute inset-0 bg-gradient-to-br from-black opacity-90 to-gray-800 z-20" />
+
+
             {/* Momentum AI Card */}
-            <div className="bg-gradient-to-br from-black opacity-90 to-gray-800 text-white p-7 h-full rounded-2xl shadow-xl space-y-6 relative">
+            <div className="text-white p-7 h-full rounded-2xl shadow-xl space-y-6 relative z-50">
               <div className='space-y-2'>
                 <div className="flex justify-between items-start ">
                   <h3 className="text-2xl font-medium font-['Archivo']">Momentum AI</h3>
-                  <Link href="#" className="text-primary flex items-center gap-2 underline underline-offset-4 cursor-pointer z-20">View Product
+                  <Link href="#" className="text-primary flex items-center gap-2 underline underline-offset-4 cursor-pointer z-40 ">View Product
                     <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
                       <path d="M0.9375 10.214L9.67107 1.48047M9.67107 1.48047H0.9375M9.67107 1.48047V10.214" stroke="#FF6035" strokeWidth="1.74671" />
                     </svg>
                   </Link>
                 </div>
-                <p className="text-[13px] text-white font-['Archivo'] w-[60%]">
+                <p className="text-[13px] text-white font-['Archivo'] xl:w-[60%]">
                   Plenum isn’t just another ERP provider; we embed AI into your systems to deliver actionable insights.
                 </p>
               </div>
@@ -66,9 +71,14 @@ export default function HouseAIProduct() {
               width={400}
               height={400}
               alt="Smoke Background"
-              className="w-full h-full object-cover absolute inset-0 z-10"
+              className="w-full h-full object-cover absolute inset-0 z-30"
             />
-            <div className="bg-gradient-to-br from-black opacity-90 to-gray-800 text-white p-7 h-full rounded-2xl shadow-xl space-y-6  relative">
+
+            {/* Dark overlay */}
+            <div className="absolute inset-0 bg-gradient-to-br from-black opacity-90 to-gray-800 z-20" />
+
+
+            <div className="text-white p-7 h-full rounded-2xl shadow-xl space-y-6  relative z-50">
               <div className='space-y-2'>
                 <div className="flex justify-between items-start">
                   <h3 className="text-2xl font-medium font-['Archivo']">Vertical builds</h3>
@@ -78,7 +88,7 @@ export default function HouseAIProduct() {
                     </svg>
                   </Link>
                 </div>
-                <p className="text-[13px] text-white font-['Archivo']  w-[60%]">
+                <p className="text-[13px] text-white font-['Archivo']  xl:w-[60%]">
                   Plenum isn’t just another ERP provider; we embed AI into your systems to deliver actionable insights.
                 </p>
               </div>
