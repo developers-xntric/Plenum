@@ -25,7 +25,7 @@ export default function HomeServices({ }) {
   return (
     <div className=" bg-white ">
       {/* Main content */}
-      <div className="container 2xl:max-w-[1300px] w-[90%] mx-auto space-y-20 py-16 2xl:py-24">
+      <div className="container 2xl:max-w-[1300px] w-[90%] mx-auto space-y-20 py-16 xl:py-24">
 
         {/* BRAND ICONS SLIDER */}
         <BrandSlider />
