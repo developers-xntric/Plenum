@@ -75,7 +75,7 @@ const Hero = () => {
                 </div>
             </div>
             {/* //video */}
-            <div className='w-full absolute top-20 -z-20 opacity-50 left-1/2 -translate-x-1/2'>
+            <div className='w-full absolute top-20 -z-20 opacity-80 left-1/2 -translate-x-1/2'>
                 <video
                     src='/home/hero.webm'
                     height={1000}
