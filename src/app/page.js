@@ -5,6 +5,7 @@ import Hero from "@/components/Home/hero";
 import HomeServices from "@/components/home/home-services";
 import HouseAIProduct from "@/components/Home/house-ai-product";
 import { cardData } from "@/data/home-blog";
+import HouseAIProduct from "@/components/home/house-ai-product"
 
 export default function Home() {
   return (
