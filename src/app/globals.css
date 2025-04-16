@@ -64,6 +64,14 @@
         background-clip: text;
         -webkit-background-clip: text;
     }
+
+    .home-section-headings {
+        opacity: 0.9;
+        background: url("/images/smoke.webp") rgb(0, 0, 0) 0% 0% / 73.53749871253967px 73.53749871253967px repeat;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }
 
 :root {
