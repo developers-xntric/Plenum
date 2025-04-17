@@ -4,7 +4,7 @@ import Image from "next/image"
 export default function Footer() {
 
   return (
-    <footer className="bg-black text-white  relative">
+    <footer className="bg-secondary text-white  relative">
       <div className="2xl:max-w-[1300px] w-[90%]  mx-auto">
         <div className="flex item-center justify-between gap-8">
           {/* Logo and Left Links */}
