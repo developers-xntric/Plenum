@@ -34,7 +34,7 @@ export default function HomeServices({ }) {
           {/* UPPER column - Headline */}
 
           <div className="xl:w-[75%] 2xl:w-[70%]">
-            <h2 className="text-[55px] leading-[60px] font-bold font-['Archivo'] text-secondary bg-smoke-text-image animate-pulse">
+            <h2 className="text-[55px] leading-[60px] font-bold font-['Archivo'] text-secondary bg-smoke-text-imag animate-pulse">
               Why AI enabled Enterprise with Plenum? With Plenum gain the tools to unlock deeper insights, automate
               complex workflows
             </h2>
@@ -47,8 +47,8 @@ export default function HomeServices({ }) {
             {/* LEFT */}
             <div className="space-y-6 w-full md:w-[30%]">
               <div className="relative ">
-                <h2 className="text-[52px] text-secondary font-bold font-['Archivo']">Our</h2>
-                <h2 className="text-[52px] text-secondary font-bold font-['Archivo'] mt-[-32px]">Services</h2>
+                <h2 className="text-[52px] text-secondary font-bold opacity-[0.85] font-['Archivo']">Our</h2>
+                <h2 className="text-[52px] text-secondary font-bold opacity-[0.85] font-['Archivo'] mt-[-32px]">Services</h2>
               </div>
               <div className="space-y-5">
                 <p className="text-sm text-secondary leading-[20px] font-['Archivo'] opacity-75">
