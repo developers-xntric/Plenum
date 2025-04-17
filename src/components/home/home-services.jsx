@@ -34,7 +34,8 @@ export default function HomeServices({ }) {
           {/* UPPER column - Headline */}
 
           <div className="xl:w-[75%] 2xl:w-[70%]">
-            <h2 className="text-[55px] leading-[60px] font-bold font-['Archivo'] text-secondary bg-smoke-text-imag animate-pulse">
+            
+            <h2 className="text-[55px] leading-[60px] font-bold font-['Archivo'] text-secondary bg-smoke-text-image animate-pulse">
               Why AI enabled Enterprise with Plenum? With Plenum gain the tools to unlock deeper insights, automate
               complex workflows
             </h2>

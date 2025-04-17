@@ -36,7 +36,7 @@ export default function HouseAIProduct() {
 
 
             {/* Momentum AI Card */}
-            <div className="text-white p-7 h-full rounded-2xl shadow-xl space-y-6 relative z-50">
+            <div className="text-white p-7 pb-0 h-full rounded-2xl shadow-xl space-y-6 relative z-50">
               <div className='space-y-2'>
                 <div className="flex justify-between items-start ">
                   <h3 className="text-2xl font-medium font-['Archivo']">Momentum AI</h3>
@@ -55,10 +55,10 @@ export default function HouseAIProduct() {
                 {/*  A Chart  */}
                 <Image
                   src="/images/house-ai-product/momentum-graph.png"
-                  width={200}
+                  width={300}
                   height={100}
                   alt="Smoke Background"
-                  className=""
+                  className="w-full h-44 object-contain"
                 />
               </div>
             </div>
@@ -93,7 +93,7 @@ export default function HouseAIProduct() {
                 </p>
               </div>
               <div className='flex items-center justify-center '>
-                <div className="space-y-3 w-[50%]">
+                <div className="space-y-3 w-[55%]">
                   <div className='space-y-2'>
                     <p className="text-sm font-['Archivo']">Process</p>
                     <div ref={processRef} className="bg-[#dbdbdb] rounded-full h-8 overflow-hidden">
