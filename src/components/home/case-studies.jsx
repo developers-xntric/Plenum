@@ -14,7 +14,7 @@ export default function CaseStudies() {
                         </h2>
                     </div>
 
-                    <p className="text-gray-600 font-['Archivo'] opacity-[0.7] max-w-[55%]">
+                    <p className="text-secondary font-['Archivo'] opacity-75 max-w-[55%]">
                         Plenum isn't just another ERP provider; we embed AI into your systems to deliver actionable insights and
                         smarter decision-making capabilities.
                     </p>

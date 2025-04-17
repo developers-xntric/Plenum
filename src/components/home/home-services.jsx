@@ -34,7 +34,7 @@ export default function HomeServices({ }) {
           {/* UPPER column - Headline */}
 
           <div className="xl:w-[75%] 2xl:w-[70%]">
-            <h2 className="text-[55px] leading-[60px] font-bold font-['Archivo'] text-secondary bg-smoke-text-image  animate-pulse">
+            <h2 className="text-[55px] leading-[60px] font-bold font-['Archivo'] text-secondary bg-smoke-text-imag animate-pulse">
               Why AI enabled Enterprise with Plenum? With Plenum gain the tools to unlock deeper insights, automate
               complex workflows
             </h2>
@@ -51,7 +51,7 @@ export default function HomeServices({ }) {
                 <h2 className="text-[52px] text-secondary font-bold font-['Archivo'] mt-[-32px]">Services</h2>
               </div>
               <div className="space-y-5">
-                <p className="text-sm text-secondary leading-[20px] font-['Archivo']">
+                <p className="text-sm text-secondary leading-[20px] font-['Archivo'] opacity-75">
                   Plenum offers AI solutions to automate workflows, enhance decisions, and boost efficiency. We tailor
                   services to your needs and help you scale confidently.
                 </p>
