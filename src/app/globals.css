@@ -183,3 +183,14 @@
     transform: scale(1.2);
 }
 
+@keyframes arrow-for-top {
+    0%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(-5px);
+    }
+}
+.arrow-for-top{
+    animation: arrow-for-top 1.5s ease infinite;
+}
