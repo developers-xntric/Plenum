@@ -19,7 +19,7 @@ export default function CentralizeIntelligence() {
                         </p>
                         <div className="pt-4">
                             <div className="flex items-center gap-3">
-                                <span className="text-[50px] font-semibold grayish-gradient font-['Archivo']">10/10</span>
+                                <span className="text-[50px] font-medium grayish-gradient font-['Archivo']">10/10</span>
                                 <div >
                                     <p className="text-xs font-medium text-black opacity-[0.6] leading-tight font-['Archivo']">
                                         Clients say they would
@@ -40,7 +40,7 @@ export default function CentralizeIntelligence() {
                         </p>
                         <div className="pt-4">
                             <div className="flex items-center gap-3">
-                                <span className="text-[50px] font-semibold grayish-gradient font-['Archivo']">1 Week</span>
+                                <span className="text-[50px] font-medium grayish-gradient font-['Archivo']">1 Week</span>
                                 <div>
                                     <p className="text-xs font-medium text-black opacity-[0.6] leading-tight font-['Archivo']">
                                         Design
@@ -61,7 +61,7 @@ export default function CentralizeIntelligence() {
                         </p>
                         <div className="pt-4">
                             <div className="flex items-center gap3">
-                                <span className="text-[50px] font-semibold grayish-gradient font-['Archivo']">10+Years</span>
+                                <span className="text-[50px] font-medium grayish-gradient font-['Archivo']">10+Years</span>
                                 <div className="ml-2">
                                     <p className="text-xs font-medium text-black opacity-[0.6] leading-tight font-['Archivo']">
                                         Average
