@@ -56,7 +56,7 @@ const Hero = () => {
     return (
         <section className='relative z-30 bg-black overflow-hidden flex flex-col'>
             <div className=' absolute top-0 -translate-x-1/2 left-1/2 w-full -z-15'>
-                <Image src='/home/shade.png' height={1000} width={1000} alt='' className='w-full h-full' />
+                <Image src='/home/shade.png' priority height={1000} width={1000} alt='' className='w-full h-full' />
             </div>
             {/* //hero section main heading */}
             <div className='flex w-[750px] xl:w-[950px] 2xl:w-[980px] mx-auto justify-center h-screen mt-40'>
@@ -94,7 +94,7 @@ const Hero = () => {
                     {
                         links.map((ele, ind) => {
                             return (
-                                <Link href={ele.link} key={ind} className='text-white hover:text-[#FF6035] hover:transition-all ease-in-out duration-400 text-[12px] xl:text-[14px] underline  font-["Archivo"]'>
+                                <Link href={ele.link} key={ind} className='text-white hover:text-[#FF6035] hover:transition-all ease-in-out duration-400  text-[12px] lg:text-[14px] underline font-medium font-["Archivo"]'>
                                     {ele.name}
                                 </Link>
                             )

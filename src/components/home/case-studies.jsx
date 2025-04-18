@@ -8,8 +8,8 @@ export default function CaseStudies() {
         <section className="bg-white ">
             <div className="2xl:max-w-[1330px] w-[90%] mx-auto py-12 xl:py-10">
                 <div className="mb-8 space-y-6">
-                    <div className="w-[90%] xl:max-w-[70%]">
-                        <h2 className="text-[50px] leading-[55px] font-['Archivo'] text-secondary font-bold home-section-headings">
+                    <div className="w-[90%] lg:max-w-[75%] xl:max-w-[70%]">
+                        <h2 className="text-[50px] leading-[55px] font-['Archivo'] text-secondary font-medium home-section-headings">
                             Our Case Studies Driving AI Transformation Across Industries
                         </h2>
                     </div>

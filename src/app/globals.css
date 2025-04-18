@@ -14,6 +14,15 @@
     font-family: 'Archivo';
     src: url('/fonts/Archivo-Regular.woff2') format('woff2'),
         url('/fonts/Archivo-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Archivo medium weight */
+@font-face {
+    font-family: 'Archivo';
+    src: url('/fonts/Archivo-Medium.woff2') format('woff2'),
+        url('/fonts/Archivo-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
 }
@@ -40,6 +49,22 @@
     font-family: 'Chakra';
     src: url('/fonts/ChakraPetch-Regular.ttf') format('truetype');
     font-weight: 400;
+    font-style: normal;
+}
+
+/* ChakraPetch medium weight */
+@font-face {
+    font-family: 'Chakra';
+    src: url('/fonts/ChakraPetch-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* ChakraPetch semibold weight */
+@font-face {
+    font-family: 'Chakra';
+    src: url('/fonts/ChakraPetch-Semibold.ttf') format('truetype');
+    font-weight: 600;
     font-style: normal;
 }
 
@@ -184,13 +209,15 @@
 }
 
 @keyframes arrow-for-top {
-    0%{
+    0% {
         transform: translateY(5px);
     }
-    100%{
+
+    100% {
         transform: translateY(-5px);
     }
 }
-.arrow-for-top{
+
+.arrow-for-top {
     animation: arrow-for-top 1.5s ease infinite;
 }
