@@ -1,5 +1,5 @@
 import CaseStudies from "@/components/home/case-studies";
-import Blog from "../components/home/blog";
+import { Blog } from "../components/home/blog";
 import CentralizeIntelligence from "@/components/home/centralize-intelligence";
 import Hero from "@/components/Home/hero";
 import HomeServices from "@/components/home/home-services";

@@ -1,6 +1,6 @@
 import BlogSlider from "../common/blogslider";
 
-const Blog = ({ heading, para, cardData }) => {
+export const Blog = ({ heading, para, cardData }) => {
     return (
         <section className='relative pt-10 pb-10'>
             <div className='max-w-[90%] mx-auto 2xl:max-w-[1300px] '>
@@ -18,4 +18,3 @@ const Blog = ({ heading, para, cardData }) => {
     );
 };
 
-export default Blog;
