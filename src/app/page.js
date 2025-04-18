@@ -1,9 +1,9 @@
-import CaseStudies from "@/components/home/case-studies";
-import { Blog } from "../components/home/blog";
-import CentralizeIntelligence from "@/components/home/centralize-intelligence";
-import Hero from "@/components/Home/hero";
-import HomeServices from "@/components/home/home-services";
-import HouseAIProduct from "@/components/home/house-ai-product";
+import CaseStudies from "@/components/homepage/case-studies";
+import { Blog } from "@/components/homepage/blog";
+import CentralizeIntelligence from "@/components/homepage/centralize-intelligence";
+import Hero from "@/components/homepage/hero";
+import HomeServices from "@/components/homepage/home-services";
+import HouseAIProduct from "@/components/homepage/house-ai-product";
 import { cardData } from "@/data/home-blog";
 
 export default function Home() {
