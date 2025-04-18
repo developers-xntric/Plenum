@@ -1,10 +1,18 @@
+"use client"
 import Link from "next/link"
 import Image from "next/image"
 
 export default function Footer() {
 
+  const scrollToTop = () => {
+    if (typeof window !== 'undefined') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
+
   return (
-    <footer className="bg-black text-white  relative">
+    <footer className="bg-secondary text-white  relative">
       <div className="2xl:max-w-[1300px] w-[90%]  mx-auto">
         <div className="flex item-center justify-between gap-8">
           {/* Logo and Left Links */}
@@ -147,6 +155,19 @@ export default function Footer() {
         <div className="flex items-center justify-center ">
           <p className="text-[13px] text-white text-center relative  bottom-6 font-['Archivo']">© 2025 Plenum. All rights reserved.</p>
         </div>
+
+
+        {/* ARROW REDIRECT TO TOP */}
+        <button
+          onClick={scrollToTop}
+          className="arrow-for-top absolute bottom-6 right-6 md:right-20 z-50 hover:scale-110 transition-transform duration-300 cursor-pointer"
+          aria-label="Scroll to top"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="20" viewBox="0 0 17 20" fill="none">
+            <path d="M8.5 18.4805L8.5 0.980468M8.5 0.980468L16 8.48047M8.5 0.980468L1 8.48047" stroke="#CB5919" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </button>
+
       </div>
     </footer>
   )

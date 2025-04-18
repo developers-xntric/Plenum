@@ -57,7 +57,7 @@
     }
 
     .bg-smoke-text-image {
-        background: linear-gradient(to bottom, #010101, rgba(255, 255, 255, 0.2)), url("/images/smoke.webp");
+        background: linear-gradient(#010101, rgba(255, 255, 255, 0.2)), url("/images/smoke.webp");
         background-size: contain;
         background-position: left;
         -webkit-text-fill-color: transparent;
@@ -181,4 +181,16 @@
 .splide__pagination__page.is-active {
     background-color: black !important;
     transform: scale(1.2);
+}
+
+@keyframes arrow-for-top {
+    0%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(-5px);
+    }
+}
+.arrow-for-top{
+    animation: arrow-for-top 1.5s ease infinite;
 }
