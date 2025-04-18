@@ -43,7 +43,7 @@ const Navbar = () => {
                             <Link href={"/"}>Careers</Link>
                         </ul>
                         {/* Button */}
-                        <Button text={"Contact Us"} link="/contact" className={"bg-secondary py-[10px]  px-5 xl:px-10 text-[#FFFFFF]"} />
+                        <Button text={"Contact Us"} link="/contact" className={"bg-[#101010] py-[10px] hover:bg-[#FF6035] transition-all duration-500 px-5 xl:px-10 text-[#FFFFFF]"} />
                     </div>
                 </div>
             </div>

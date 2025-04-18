@@ -33,13 +33,11 @@ export default function HomeServices({ }) {
         <div className="flex flex-col space-y-16">
           {/* UPPER column - Headline */}
 
-          <div className="lg:max-w-[70%] xl:w-[75%] 2xl:w-[70%]">
-            <h2 className="text-[55px] leading-[60px] font-medium font-['Archivo'] text-secondary bg-smoke-text-imag animate-pulse">
-              Why AI enabled Enterprise with Plenum? With Plenum gain the tools to unlock deeper insights, automate
-              complex workflows
+          <div className="lg:w-[85%] xl:w-[75%] 2xl:w-[75%] relative z-20">
+            <h2 className="text-[55px] leading-[60px] font-medium font-['Archivo'] relative z-20 bg-[linear-gradient(to_right,_#101010,_#9b9999,_#101010,_#9b9999)] bg-clip-text text-transparent">
+              Why AI enabled Enterprise with Plenum? With Plenum gain the tools to unlock deeper insights, automate complex workflows
             </h2>
           </div>
-
 
           {/* BOTTOM column - Services */}
           <div className="flex items-center justify-between xl:max-w-[90%]">
