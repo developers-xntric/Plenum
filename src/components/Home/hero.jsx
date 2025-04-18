@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import Button from '../common/button'
+import Image from 'next/image'
 const links = [
     {
         name: "(SCM)",
@@ -54,17 +55,8 @@ const links = [
 const Hero = () => {
     return (
         <section className='relative z-30 bg-black overflow-hidden flex flex-col'>
-            {/* //shadow svg */}
-            <div className='absolute top-0 -z-10 left-1/2 -translate-x-1/2'>
-                <svg className='opacity-90' width="4000" height="4000" viewBox="0 0 2000 2000" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="2000" height="2000" fill="url(#paint0_linear_1096_1934)" />
-                    <defs>
-                        <linearGradient id="paint0_linear_1096_1934" x1="720" y1="0" x2="720" y2="1484" gradientUnits="userSpaceOnUse">
-                            <stop offset="0.150626" stopColor="#101010" />
-                            <stop offset="0.532738" stopColor="#101010" stopOpacity="0" />
-                        </linearGradient>
-                    </defs>
-                </svg>
+            <div className=' absolute top-0 -translate-x-1/2 left-1/2 w-full -z-15'>
+                <Image src='/home/shade.png' height={1000} width={1000} alt='' className='w-full h-full' />
             </div>
             {/* //hero section main heading */}
             <div className='flex w-[750px] xl:w-[950px] 2xl:w-[980px] mx-auto justify-center h-screen mt-40'>
@@ -76,7 +68,7 @@ const Hero = () => {
             {/* //video */}
             <div className='w-full absolute top-48  2xl:top-20 -z-20 opacity-100 left-1/2 -translate-x-1/2'>
                 <video
-                    src='/home/herovideo.webm'
+                    src='/home/hero.webm'
                     height={1000}
                     width={1000}
                     autoPlay
