@@ -3,12 +3,14 @@
 import { useState } from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import Link from "next/link"
-// Sample testimonial data
+import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel"
+
+// Sample testimonial data (unchanged)
 const testimonials = [
   {
     id: 1,
     quote:
-      "The talent bar at Plenum is extremely high, and there is something electric and deeply fulfilling about working with a team that is so passionate about our mission and what we do.",
+      "The talent bar at Plenum is extremely high, and there is something electric and deeply fulfilling about working with a team that is so passionate about our mission and what  what we do.",
     author: "Maroun Najjar",
     position: "Head of Design",
     socialLink: "https://linkedin.com",
@@ -40,22 +42,6 @@ const testimonials = [
 ]
 
 export default function Testimonials() {
-  const [currentIndex, setCurrentIndex] = useState(0)
-
-  // Calculate which testimonials to show (2 at a time)
-  const displayedTestimonials = [
-    testimonials[currentIndex % testimonials.length],
-    testimonials[(currentIndex + 1) % testimonials.length],
-  ]
-
-  const handlePrev = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1))
-  }
-
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length)
-  }
-
   return (
     <section className="bg-white">
       <div className="2xl:max-w-[1330px] w-[90%] mx-auto py-12 xl:py-10 space-y-8">
@@ -66,37 +52,47 @@ export default function Testimonials() {
           </p>
         </div>
 
-        <div className="flex justify-end items-center">
-          <div className="flex gap-2">
-            <button variant="ghost" size="icon" aria-label="Previous testimonial" onClick={handlePrev} className="cursor-pointer">
-              <ChevronLeft className="h-4 w-4" />
-            </button>
-            <buttom variant="ghost" size="icon" aria-label="Next testimonial" onClick={handleNext} className="cursor-pointer">
-              <ChevronRight className="h-4 w-4" />
-            </buttom>
+        <Carousel
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          className="w-full "
+        >
+          <div className="flex  justify-end items-center mb-4">
+            <div className="flex absolute gap-4 left-[90%] mb-10">
+              <div className="flex items-center gap-1 rela">
+                <CarouselPrevious className="h-10 w-10 bg-white border-none cursor-pointer" />
+                <p className="relative -left-3 text-secondary font-medium home-section-headings">Prev</p>
+              </div>
+              <div className="flex items-center">
+                <CarouselNext className="h-10 w-10 bg-white border-none cursor-pointer relative left-4" />
+                <p className="relative right-13 text-secondary font-medium home-section-headings">Next</p>
+              </div>
+            </div>
           </div>
-        </div>
 
-        <div className="grid md:grid-cols-2 gap-6">
-          {displayedTestimonials.map((testimonial) => (
-            <TestimonialCard
-              key={testimonial.id}
-              quote={testimonial.quote}
-              author={testimonial.author}
-              position={testimonial.position}
-              socialLink={testimonial.socialLink}
-            />
-          ))}
-        </div>
+          <CarouselContent>
+            {testimonials.map((testimonial) => (
+              <CarouselItem key={testimonial.id} className="md:basis-1/2">
+                <TestimonialCard
+                  quote={testimonial.quote}
+                  author={testimonial.author}
+                  position={testimonial.position}
+                  socialLink={testimonial.socialLink}
+                />
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+        </Carousel>
       </div>
     </section>
   )
 }
 
-
 function TestimonialCard({ quote, author, position, socialLink }) {
   return (
-    <div className="bg-[#EFEFEF] p-6 rounded-lg relative transition-all duration-300 ease-in-out">
+    <div className="bg-[#EFEFEF] p-6 rounded-lg relative transition-all duration-300 ease-in-out h-full">
       <blockquote className="mb-6">
         <p className="text-secondary font-['Archivo'] opacity-75">{`"${quote}"`}</p>
       </blockquote>
