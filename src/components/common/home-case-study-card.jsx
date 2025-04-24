@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function HomeCaseStudyCard({ title, image, link}) {
     return (
         <Link href={link} className="block ">
-            <div className="rounded-[12px] border-2 border-[#bfbfbf] overflow-hidden h-full transition-shadow hover:shadow-md p-3">
+            <div className="rounded-[12px] border-2 border-[#bfbfbf] overflow-hidden h-full  p-3">
                 <div className="relative ">
                     <Image src={image} alt={title} width={1000} height={1000} className="rounded-[12px]" />
 

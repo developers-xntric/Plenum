@@ -36,7 +36,7 @@ export default function HouseAIProduct() {
 
 
             {/* Momentum AI Card */}
-            <div className="text-white p-7 pb-0 h-full rounded-2xl space-y-6 relative z-50">
+            <div className="text-white p-7 pb-0 xl:h-80 rounded-2xl space-y-6 relative z-50">
               <div className='space-y-2'>
                 <div className="flex justify-between items-start ">
                   <h3 className="text-3xl font-medium font-['Archivo']">Momentum AI</h3>
@@ -46,7 +46,7 @@ export default function HouseAIProduct() {
                     </svg>
                   </Link>
                 </div>
-                <p className="text-[13px] text-white font-['Archivo'] xl:w-[60%]">
+                <p className="text-[13px] text-white font-['Archivo'] lg:max-w-[80%] xl:w-[60%]">
                   Plenum isn’t just another ERP provider; we embed AI into your systems to deliver actionable insights.
                 </p>
               </div>
@@ -88,7 +88,7 @@ export default function HouseAIProduct() {
                     </svg>
                   </Link>
                 </div>
-                <p className="text-[13px] text-white font-['Archivo']  xl:w-[60%]">
+                <p className="text-[13px] text-white font-['Archivo'] lg:max-w-[80%] xl:w-[60%]">
                   Plenum isn’t just another ERP provider; we embed AI into your systems to deliver actionable insights.
                 </p>
               </div>
