@@ -1,8 +1,7 @@
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel"
-import { testimonials } from "@/data/home-testimonials"
 import TestimonialCard from "../common/testimonial-cards"
 
-export default function Testimonials() {
+export default function Testimonials({ testimonials }) {
   return (
     <section className="bg-white">
       <div className="2xl:max-w-[1330px] w-[90%] mx-auto py-12 xl:py-10 space-y-8">

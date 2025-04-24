@@ -7,6 +7,8 @@ import HouseAIProduct from "@/components/homepage/house-ai-product";
 import { cardData } from "@/data/home-blog";
 import Testimonials from "@/components/homepage/testimonial";
 import ArticleSlider from "@/components/common/article-slider";
+import { testimonials } from "@/data/home-testimonials";
+import { caseStudies } from "@/data/case-studies-card-data";
 
 export default function Home() {
   return (
@@ -15,9 +17,17 @@ export default function Home() {
       <HomeServices />
       <CentralizeIntelligence />
       <HouseAIProduct />
-      <CaseStudies />
-      <Testimonials/>
-      <Blog heading='Discover Our Blog Articles' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world" cardData={cardData} />
+      <CaseStudies
+        title={" Our Case Studies Driving AI Transformation Across Industries"}
+        paragraph={"Plenum isn't just another ERP provider; we embed AI into your systems to deliver actionable insights and smarter decision-making capabilities."}
+        caseStudies={caseStudies}
+     />
+      <Testimonials testimonials={testimonials} />
+      <Blog
+        heading="Discover Our Blog Articles"
+        para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world"
+        cardData={cardData}
+      />
       <ArticleSlider />
     </div>
   );
