@@ -20,7 +20,7 @@ export const ERPSolutionsBottomSection = ({ bottomSection, className, left, blac
         <section className='relative font-["Archivo"] '>
           
             <ERPSolutions blackSection={blackSection} />
-            <div className={`max-w-[95%] 2xl:max-w-[1300px] ${left ? "ms-auto" : ""}  `}>
+            <div className={`max-w-[95%] 2xl:max-w-[1440px] ${left ? "ms-auto" : ""}  `}>
                 <div className={`${className}`}>
                     <div className='w-[50%]'>
                         <h2 className='text-[39px] text-secondary font-medium home-section-headings'>{bottomSection.heading}</h2>
