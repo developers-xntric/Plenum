@@ -16,18 +16,18 @@ const Navbar = () => {
         {
             title: "ERP consulting and implementation",
             isExpanded: true,
-            link: "/services/erp",
+            link: "/service/ERP-consulting",
             subMenus: [
                 {
                     title: "Oracle ERP Solutions",
                     isExpanded: true,
-                    link: "/services/erp/oracle",
+                    link: "/service",
                     items: ["Net Suite", "Fusion Cloud"],
                 },
                 {
                     title: "Microsoft Dynamics ERP Solutions",
                     isExpanded: true,
-                    link: "/services/erp/microsoft",
+                    link: "/service",
                     items: ["Business Central", "Finance and Operations"],
                 },
             ],
@@ -35,36 +35,53 @@ const Navbar = () => {
         {
             title: "Managed Cloud Services",
             isExpanded: false,
-            link: "/services/cloud",
+            link: "/service",
         },
         {
             title: "AI consulting, governance and implementation",
             isExpanded: false,
-            link: "/services/ai",
+            link: "/service",
         },
         {
             title: "Digital Experiences",
             isExpanded: false,
-            link: "/services/digital",
+            link: "/service",
         },
     ]
 
+    // Debounce function to limit event handler calls
+    const debounce = (func, wait) => {
+        let timeout
+        return (...args) => {
+            clearTimeout(timeout)
+            timeout = setTimeout(() => func(...args), wait)
+        }
+    }
+
     // Position the dropdown under the Services link
-    useEffect(() => {
+    const updateDropdownPosition = () => {
         if (showServicesDropdown && servicesRef.current && dropdownRef.current) {
             const rect = servicesRef.current.getBoundingClientRect()
-            dropdownRef.current.style.top = `${rect.bottom + window.scrollY}px`
-            dropdownRef.current.style.left = `${rect.left + window.scrollX}px`
+            dropdownRef.current.style.top = `${53}px` // Added 8px offset
+            dropdownRef.current.style.left = `${32}%`
         }
-    }, [showServicesDropdown])
+    }
 
+    // Update position on showServicesDropdown change, scroll, or resize
     useEffect(() => {
+        updateDropdownPosition()
+        const debouncedUpdate = debounce(updateDropdownPosition, 50)
+        window.addEventListener("scroll", debouncedUpdate)
+        window.addEventListener("resize", debouncedUpdate)
+
         return () => {
+            window.removeEventListener("scroll", debouncedUpdate)
+            window.removeEventListener("resize", debouncedUpdate)
             if (timeoutRef.current) {
                 clearTimeout(timeoutRef.current)
             }
         }
-    }, [])
+    }, [showServicesDropdown])
 
     const handleMouseEnter = () => {
         if (timeoutRef.current) {
@@ -137,20 +154,70 @@ const Navbar = () => {
                             </li>
                             <li
                                 ref={servicesRef}
-                                className="relative"
                                 onMouseEnter={handleMouseEnter}
                                 onMouseLeave={handleMouseLeave}
                             >
                                 <Link href={"/service"} className="flex items-center">
                                     Services
                                 </Link>
-
+                                {/* Services Dropdown */}
                                 {showServicesDropdown && (
                                     <div
-                                        className="absolute w-full  bottom-0 translate-y-full"
+                                        ref={dropdownRef}
+                                        className="absolute top-10 bg-[#4C4C4CE5] text-white p-6 w-[358px] shadow-lg z-[1000] transition-opacity duration-500 ease-in-out"
                                         onMouseEnter={handleMouseEnter}
                                         onMouseLeave={handleMouseLeave}
-                                    />
+                                        style={{ opacity: showServicesDropdown ? 1 : 0 }}
+                                    >
+                                        <ul className="space-y-3">
+                                            {servicesMenuItems.map((item, index) => (
+                                                <li key={index} className="space-y-2 text-[14px]">
+                                                    <Link
+                                                        href={item.link || "#"}
+                                                        className="flex items-center text-left w-full hover:text-orange-400 transition-colors"
+                                                    >
+                                                        <ChevronRight
+                                                            className={cn(
+                                                                "h-4 w-4 mr-2 text-orange-500 transition-transform",
+                                                                item.isExpanded ? "rotate-90" : "",
+                                                            )}
+                                                        />
+                                                        <span className={item.isExpanded ? "text-orange-500" : ""}>{item.title}</span>
+                                                    </Link>
+
+                                                    {item.isExpanded && item.subMenus && (
+                                                        <ul className="ml-6 space-y-2">
+                                                            {item.subMenus.map((subMenu, subIndex) => (
+                                                                <li key={subIndex} className="space-y-2">
+                                                                    <Link
+                                                                        href={subMenu.link || "#"}
+                                                                        className="flex items-center text-left w-full hover:text-orange-400 transition-colors"
+                                                                    >
+                                                                        <ChevronRight
+                                                                            className={cn("h-4 w-4 mr-2 transition-transform", subMenu.isExpanded ? "rotate-90" : "")}
+                                                                        />
+                                                                        {subMenu.title}
+                                                                    </Link>
+
+                                                                    {subMenu.isExpanded && subMenu.items && (
+                                                                        <ul className="ml-6 space-y-2">
+                                                                            {subMenu.items.map((item, itemIndex) => (
+                                                                                <li key={itemIndex} className="hover:text-orange-400 transition-colors">
+                                                                                    <Link href="#" className="block w-full">
+                                                                                        {item}
+                                                                                    </Link>
+                                                                                </li>
+                                                                            ))}
+                                                                        </ul>
+                                                                    )}
+                                                                </li>
+                                                            ))}
+                                                        </ul>
+                                                    )}
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
                                 )}
                             </li>
                             <li>
@@ -184,64 +251,6 @@ const Navbar = () => {
                 </div>
             </div>
 
-            {/* Services Dropdown */}
-            {showServicesDropdown && (
-                <div
-                    ref={dropdownRef}
-                    className="absolute bg-gray-700 text-white p-6 w-[358px] shadow-lg rounded-b-lg z-[1000]"
-                    onMouseEnter={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}
-                >
-                    <ul className="space-y-3">
-                        {servicesMenuItems.map((item, index) => (
-                            <li key={index} className="space-y-2">
-                                <Link
-                                    href={item.link || "#"}
-                                    className="flex items-center text-left w-full hover:text-orange-400 transition-colors"
-                                >
-                                    <ChevronRight
-                                        className={cn(
-                                            "h-4 w-4 mr-2 text-orange-500 transition-transform",
-                                            item.isExpanded ? "rotate-90" : "",
-                                        )}
-                                    />
-                                    <span className={item.isExpanded ? "text-orange-500" : ""}>{item.title}</span>
-                                </Link>
-
-                                {item.isExpanded && item.subMenus && (
-                                    <ul className="ml-6 space-y-2">
-                                        {item.subMenus.map((subMenu, subIndex) => (
-                                            <li key={subIndex} className="space-y-2">
-                                                <Link
-                                                    href={subMenu.link || "#"}
-                                                    className="flex items-center text-left w-full hover:text-orange-400 transition-colors"
-                                                >
-                                                    <ChevronRight
-                                                        className={cn("h-4 w-4 mr-2 transition-transform", subMenu.isExpanded ? "rotate-90" : "")}
-                                                    />
-                                                    {subMenu.title}
-                                                </Link>
-
-                                                {subMenu.isExpanded && subMenu.items && (
-                                                    <ul className="ml-6 space-y-2">
-                                                        {subMenu.items.map((item, itemIndex) => (
-                                                            <li key={itemIndex} className="hover:text-orange-400 transition-colors">
-                                                                <Link href="#" className="block w-full">
-                                                                    {item}
-                                                                </Link>
-                                                            </li>
-                                                        ))}
-                                                    </ul>
-                                                )}
-                                            </li>
-                                        ))}
-                                    </ul>
-                                )}
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-            )}
         </header>
     )
 }
