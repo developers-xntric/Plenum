@@ -33,11 +33,6 @@ const ERPConsulting = () => {
             </div>
             <Testimonials testimonials={testimonials} />
             <ArticleSlider />
-            <Blog
-                heading='Discover Our Blog Articles'
-                para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world"
-                cardData={cardData}
-            />
             <Blog heading='Discover Our Blog' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world" cardData={cardData} />
         </div>
     )
