@@ -3,7 +3,7 @@ import Button from "../common/button"
 
 const Navbar = () => {
     return (
-        <header className='z-[999] 2xl:w-[1300px] w-[80%] xl:w-[85%] font-normal font-["Archivo"] mx-auto fixed -translate-x-1/2 left-1/2 top-6 bg-[#FFFFFF] rounded-[13px]'>
+        <header className='z-[999] border-[#101010] border 2xl:w-[1300px] w-[80%] xl:w-[85%] font-normal font-["Archivo"] mx-auto fixed -translate-x-1/2 left-1/2 top-6 bg-[#FFFFFF] rounded-[13px]'>
             {/* Wrapper */}
             <div className='xl:px-[18px] xl:py-2 py-1.5 px-3'>
                 {/* Inner Row Whole Div */}
@@ -34,7 +34,7 @@ const Navbar = () => {
                         {/* Whole Links */}
                         <ul className='flex justify-between items-center gap-6 xl:gap-8 2xl:gap-10 text-[12px] xl:text-[14px] text-secondary'>
                             <Link href={"/"}>Home</Link>
-                            <Link href={"/"}>Services</Link>
+                            <Link href={"/service"}>Services</Link>
                             <Link href={"/"}>Products</Link>
                             <Link href={"/"}>Industries</Link>
                             <Link href={"/"}>Resources</Link>
