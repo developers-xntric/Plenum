@@ -167,9 +167,9 @@ export default function ArticleCarousel() {
 
     return (
         <div className="w-full bg-[#282526] text-white py-16 font-['Archivo']">
-            <div className="max-w-[95%] xl:max-w-[85%] ms-auto">
+            <div className="max-w-[95%] ms-auto">
                 <h2 className="text-3xl font-bold mb-6 text-[50px]">Discover Our Articles</h2>
-                <p className="text-gray-400 text-[15px] mb-10 max-w-xl">
+                <p className="text-[#FFF] text-[15px] mb-10 max-w-xl">
                     Explore our latest posts for insights in design, learning, and innovation. Stay updated with trends and
                     breakthroughs in the creative world.
                 </p>
