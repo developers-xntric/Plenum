@@ -4,7 +4,7 @@ import TestimonialCard from "../common/testimonial-cards"
 export default function Testimonials({ testimonials }) {
   return (
     <section className="bg-white">
-      <div className="2xl:max-w-[1330px] w-[90%] mx-auto py-12 xl:py-10 space-y-8">
+      <div className="2xl:max-w-[1330px] w-[90%] mx-auto py-12 xl:py-16 space-y-8">
         <div className='space-y-5'>
           <h2 className="text-[50px] leading-[55px] font-['Archivo'] text-secondary font-medium home-section-headings">Trusted by Professionals</h2>
           <p className="text-secondary font-['Archivo'] opacity-75 max-w-[45%]">
