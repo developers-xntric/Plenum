@@ -14,7 +14,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-secondary text-white  relative">
-      <div className="2xl:max-w-[1300px] w-[90%]  mx-auto">
+      <div className="2xl:max-w-[1440px] w-[90%]  mx-auto">
         <div className="flex item-center justify-between gap-8">
           {/* Logo and Left Links */}
           <div className=" space-y-8 pt-12 ">

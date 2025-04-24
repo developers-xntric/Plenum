@@ -2,8 +2,8 @@ export default function CentralizeIntelligence() {
     return (
         <div className=" bg-white">
 
-            <div className="2xl:max-w-[1300px] mx-auto w-[90%] space-y-20">
-                <div className="lg:max-w-[75%] xl:max-w-[70%]"> 
+            <div className="2xl:max-w-[1440px] mx-auto w-[90%] space-y-20">
+                <div className="lg:max-w-[89%] xl:max-w-[70%]"> 
                     <h1 className="text-[50px] leading-[55px] font-['Archivo'] text-secondary font-medium home-section-headings">
                         Centralizing intelligence for the largest telecom provider in Mauritius
                     </h1>
