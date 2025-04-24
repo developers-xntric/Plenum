@@ -6,7 +6,7 @@ export default function ServicesList({ serviceList }) {
 
     return (
         <section className="bg-white ">
-            <div className="2xl:max-w-[1300px] w-[90%] mx-auto py-12">
+            <div className="2xl:max-w-[1440px] w-[90%] mx-auto py-12">
                 <div className="grid grid-cols-1 md:grid-cols-2 md:gap-20 xl:gap-8 font-['Archivo']">
                     {serviceList.map((service, _index) => (
                         <div key={service.id} className="relative ">

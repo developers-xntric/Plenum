@@ -6,7 +6,7 @@ export default function ServiceContact() {
     return (
 
         <div className="bg-white">
-            <div className="2xl:max-w-[1300px] w-[90%] mx-auto py-20">
+            <div className="2xl:max-w-[1440px] w-[90%] mx-auto py-20">
                 <div className="flex flex-col md:flex-row  justify-between">
 
                     {/* Left side - Map and Stats */}

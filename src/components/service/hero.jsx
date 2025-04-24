@@ -6,7 +6,7 @@ const ServiceHero = () => {
   return (
     <div className='md:h-screen bg-cover bg-no-repeat overflow-x-hidden' style={{ backgroundImage: "url('/service/sp_herobg.webp')" }}>
       {/* Wrapper */}
-      <div className="2xl:max-w-[1300px] h-full w-[90%] mx-auto space-y-20 py-16 xl:pt-36">
+      <div className="2xl:max-w-[1440px] h-full w-[90%] mx-auto space-y-20 py-16 xl:pt-36">
 
         {/* Image Div */}
         <div className='xl:w-[200px] xl:h-[250px] w-[130px] h-[180px] absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2'>
