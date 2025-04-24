@@ -1,6 +1,7 @@
 "use client"
 import Link from "next/link"
 import Image from "next/image"
+import ArrowButton from "../common/arrow-button";
 
 export default function Footer() {
 
@@ -89,21 +90,7 @@ export default function Footer() {
               <div className="flex flex-col items-center justify-center text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full">
                 <h3 className="text-3xl font-normal mb-1 font-['Archivo']">Got a project?</h3>
                 <p className="text-3xl font-normal mb-7 font-['Archivo']">Want to collaborate?</p>
-                <button className="bg-white text-black rounded-full py-1 px-5 flex items-center justify-between gap-2 text-sm hover:bg-gray-100 transition-colors">
-                  <div className="bg-primary text-white rounded-full p-2 relative right-4">
-                    {/* ARROW ICON */}
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-                      <path
-                        d="M15.4786 13.7214V6.54688H8.30404M15.2672 6.75755L6.61523 15.4095"
-                        stroke="white"
-                        strokeWidth="1.2661"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </div>
-                  <span className="text-sm font-medium font-['Archivo'] relative right-2">Discuss your project</span>
-                </button>
+                <ArrowButton text={"Discuss your project"} />
               </div>
             </div>
           </div>
