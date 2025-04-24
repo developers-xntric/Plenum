@@ -75,7 +75,6 @@ export default function ServicesList({ serviceList }) {
                     ))}
                 </div>
 
-                <div className="mt-16 border-t border-gray-200"></div>
             </div>
         </section>
     );
