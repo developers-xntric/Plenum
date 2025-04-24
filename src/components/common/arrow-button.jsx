@@ -2,7 +2,7 @@ import React from 'react'
 
 const ArrowButton = ({ text, className }) => {
     return (
-        <button className="bg-white text-black rounded-full py-1 px-5 flex items-center justify-between gap-2 text-sm hover:bg-gray-100 transition-colors">
+        <button className={`bg-white text-black rounded-full py-1 px-5 flex items-center justify-between gap-2 text-sm hover:bg-gray-100 transition-colors ${className}`}>
             <div className="bg-primary text-white rounded-full p-2 relative right-4">
                 {/* ARROW ICON */}
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">

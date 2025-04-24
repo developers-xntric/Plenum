@@ -20,6 +20,13 @@ const Service = () => {
                 text={"Plenum Tech delivers advanced Enterprise Technology Platforms tailored to streamline operations and optimize workflows. Our solutions are designed to drive business growth and scalability across industries."}
             />
             <ServicesList serviceList={ServiceList} />
+            <PinkSection
+                heading={"Ready To Supercharge Your AI Workflow?"}
+                text={"Ready to explore the power of AI? Contact us 24×7 to schedule a one-on-one consultation and see how Momentum AI can elevate your AI workflow management and automation journey."}
+                show_button={true}
+                className="md:h-[340px]"
+                isVideo={true}
+            />
         </div>
     )
 }
