@@ -31,17 +31,6 @@ const ERPConsulting = () => {
                 <ERPSolutionsBottomSection className='flex justify-center items-center gap-5' bottomSection={bottomSection} left={true} blackSection={blackSection} />
                 <ERPSolutionsBottomSection className='flex flex-row-reverse justify-center items-center gap-20' blackSection={blackSection2} bottomSection={bottomSection2} left={false} />
             </div>
-            <ERPSolutionsBottomSection
-                className='flex justify-center items-center gap-5'
-                bottomSection={bottomSection}
-                left={true}
-                blackSection={blackSection}
-            />
-            <ERPSolutionsBottomSection
-                className='flex flex-row-reverse justify-center items-center gap-20'
-                blackSection={blackSection2}
-                bottomSection={bottomSection2}
-                left={false} />
             <Testimonials testimonials={testimonials} />
             <ArticleSlider />
             <Blog
