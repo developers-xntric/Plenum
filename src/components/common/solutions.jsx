@@ -2,11 +2,7 @@ import React from 'react'
 import Button from './button'
 import Image from 'next/image'
 
-const blackSection = {
-    heading: "Powerful ERP Solutions Built for Growth",
-    para: "Plenum delivers intelligent, integrated platforms built to streamline processes, improve efficiency, and support strategic decision-making. Our premium solutions are tailored to accelerate business growth and ensure long-term scalability across industries.",
-    button: "Get in touch"
-}
+
 const ERPSolutions = ({ blackSection }) => {
     return (
         <section className='relative font-["Archivo"] bg-[#282526]'>
@@ -18,7 +14,8 @@ const ERPSolutions = ({ blackSection }) => {
         </section>
     )
 }
-export const ERPSolutionsBottomSection = ({ bottomSection, className,left }) => {
+
+export const ERPSolutionsBottomSection = ({ bottomSection, className, left, blackSection }) => {
     return (
         <section className='relative font-["Archivo"] '>
             <ERPSolutions blackSection={blackSection} />

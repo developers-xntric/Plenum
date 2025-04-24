@@ -17,7 +17,7 @@ const Service_Inner_Hero = ({ heading, para }) => {
             <Image src={"/service/ERPC/ERPC-Hero.svg"} alt='ERPC' width={1500} height={1500} />
           </div>
         </div>
-      </div>
+      </div>                
     </div>
   )
 }
