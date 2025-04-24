@@ -9,6 +9,7 @@ import { blackSection, blackSection2, bottomSection, bottomSection2 } from '@/da
 import { cardData } from '@/data/home-blog';
 import { testimonials } from '@/data/home-testimonials';
 import ArticleSlider from "@/components/common/article-slider";
+import ERPC2 from '@/components/service/ERP-Cosultant/ERPC2';
 
 const ERPConsulting = () => {
     return (
@@ -22,12 +23,28 @@ const ERPConsulting = () => {
                     text={"Trusted by world's most exciting brands"}
                     brand_icons={service_brand_icons} />
             </div>
+            <ERPC2
+                para={"We at Plenum Tech, are honoured to have secured the reputation of being the top most reliable ERP solutions in Dubai and beyond. We uphold a powerful presence in Dubai, Saudi Arabia, and all over the Middle East, providing tailored IT services that enable businesses to reach their maximum potential. We deliver innovation and reliability to every project, offering IT solutions company in the UAE and robust IT infrastructure services."}
+            />
             <ERPServicesEast />
-            <ERPSolutionsBottomSection className='flex justify-center items-center gap-5' bottomSection={bottomSection} left={true} blackSection={blackSection} />
-            <ERPSolutionsBottomSection className='flex flex-row-reverse justify-center items-center gap-20' blackSection={blackSection2} bottomSection={bottomSection2} left={false} />
+            <ERPSolutionsBottomSection
+                className='flex justify-center items-center gap-5'
+                bottomSection={bottomSection}
+                left={true}
+                blackSection={blackSection}
+            />
+            <ERPSolutionsBottomSection
+                className='flex flex-row-reverse justify-center items-center gap-20'
+                blackSection={blackSection2}
+                bottomSection={bottomSection2}
+                left={false} />
             <Testimonials testimonials={testimonials} />
             <ArticleSlider />
-            <Blog heading='Discover Our Blog Articles' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world" cardData={cardData} />
+            <Blog
+                heading='Discover Our Blog Articles'
+                para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world"
+                cardData={cardData}
+            />
         </div>
     )
 }
