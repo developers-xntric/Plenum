@@ -23,7 +23,7 @@ const ERPConsulting = () => {
                     brand_icons={service_brand_icons} />
             </div>
             <ERPServicesEast />
-            <div className='max-w-full xl:max-w-[1300px] mx-auto '>
+            <div className='max-w-full 2xl:max-w-[1300px] mx-auto '>
                 <ERPSolutionsBottomSection className='flex justify-center items-center gap-5' bottomSection={bottomSection} left={true} blackSection={blackSection} />
                 <ERPSolutionsBottomSection className='flex flex-row-reverse justify-center items-center gap-20' blackSection={blackSection2} bottomSection={bottomSection2} left={false} />
             </div>
