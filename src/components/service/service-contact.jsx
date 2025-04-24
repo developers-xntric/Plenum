@@ -6,24 +6,26 @@ export default function ServiceContact() {
     return (
 
         <div className="bg-white">
-            <div className="2xl:max-w-[1300px] w-[90%] mx-auto py-16">
-                <div className="flex flex-col md:flex-row gap-8">
+            <div className="2xl:max-w-[1300px] w-[90%] mx-auto py-20">
+                <div className="flex flex-col md:flex-row  justify-between">
+
                     {/* Left side - Map and Stats */}
-                    <div className="">
+                    <div className="w-[60%] ">
+
+                        {/* World Map */}
                         <div className="relative mb-16">
-                            {/* World Map */}
-                            <div className="world-map relative">
+                            <div className="world-map mr-[10%]">
                                 <WorldMap />
                             </div>
                         </div>
 
                         {/* Stats */}
-                        <div className="grid grid-cols-4 gap-8">
-                            <div className="stat">
-                                <h2 className="text-5xl font-bold text-gray-700">
-                                    5000<span className="text-orange-500">+</span>
+                        <div className="grid grid-cols-4 gap-8 font-['Archivo']">
+                            <div className="stat ">
+                                <h2 className="text-[48px] xl:text-[54px] font-medium font-['Archivo'] opacity-[0.8] text-[#202020]">
+                                    5000<span className="text-primary font-['Archivo'] ">+</span>
                                 </h2>
-                                <p className="text-gray-500 mt-1">
+                                <p className="text-secondary opacity-[0.6] relative bottom-2">
                                     Projects
                                     <br />
                                     Delivered
@@ -31,10 +33,10 @@ export default function ServiceContact() {
                             </div>
 
                             <div className="stat">
-                                <h2 className="text-5xl font-bold text-gray-700">
-                                    700<span className="text-orange-500">+</span>
+                                <h2 className="text-[48px] xl:text-[54px] font-medium font-['Archivo'] opacity-[0.8] text-[#202020]">
+                                    700<span className="text-primary font-['Archivo'] ">+</span>
                                 </h2>
-                                <p className="text-gray-500 mt-1">
+                                <p className="text-secondary opacity-[0.6] relative bottom-2">
                                     Global
                                     <br />
                                     Employees
@@ -42,21 +44,21 @@ export default function ServiceContact() {
                             </div>
 
                             <div className="stat">
-                                <h2 className="text-5xl font-bold text-gray-700">
-                                    1000<span className="text-orange-500">+</span>
+                                <h2 className="text-[48px] xl:text-[54px] font-medium font-['Archivo'] opacity-[0.8] text-[#202020]">
+                                    1000<span className="text-primary font-['Archivo'] ">+</span>
                                 </h2>
-                                <p className="text-gray-500 mt-1">
+                                <p className="text-secondary opacity-[0.6] relative bottom-2">
                                     Companies
                                     <br />
                                     Served
                                 </p>
                             </div>
 
-                            <div className="stat">
-                                <h2 className="text-5xl font-bold text-gray-700">
-                                    20<span className="text-orange-500">+</span>
+                            <div className="stat ">
+                                <h2 className="text-[48px] xl:text-[54px] font-medium font-['Archivo'] opacity-[0.8] text-[#202020]">
+                                    20<span className="text-primary font-['Archivo'] ">+</span>
                                 </h2>
-                                <p className="text-gray-500 mt-1">
+                                <p className="text-secondary opacity-[0.6] relative bottom-2">
                                     Global Awards
                                     <br />
                                     Won
@@ -66,7 +68,9 @@ export default function ServiceContact() {
                     </div>
 
                     {/* Right side - Contact Form */}
-                    <ContactForm />
+                    <div className="w-[40%]">
+                        <ContactForm />
+                    </div>
                 </div>
             </div>
         </div>
