@@ -227,7 +227,7 @@ export default function ArticleCarousel() {
                                             </h3>
                                             <a
                                                 href="#"
-                                                className="text-orange-500 inline-flex items-center text-sm hover:underline"
+                                                className="text-primary inline-flex items-center text-sm hover:underline"
                                                 aria-label={`Read more about ${article.title}`}
                                             >
                                                 Read More <ChevronRight className="h-4 w-4 ml-1" />
