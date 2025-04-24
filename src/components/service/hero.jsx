@@ -7,6 +7,7 @@ const ServiceHero = () => {
     <div className='md:h-screen bg-cover bg-no-repeat' style={{ backgroundImage: "url('/service/sp_herobg.webp')" }}>
       {/* Wrapper */}
       <div className="2xl:max-w-[1300px] h-full w-[90%] mx-auto space-y-20 py-16 xl:pt-36">
+
         {/* Image Div */}
         <div className='w-[200px] h-[250px] absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2'>
           <Image src="/service/sp_hero.svg" alt='Plenum AI Logo' width={1500} height={1500} className='w-full h-full object-contain' />
@@ -25,6 +26,7 @@ const ServiceHero = () => {
             <p className='mb-8 text-[18px] font-normal'>
               Our flagship solution, Momentum AI, is designed to simplify and supercharge your AI development process with minimal or no coding —accelerating innovation across industries.
             </p>
+            {/* Button */}
             <Button className={"px-8 py-2 tracking-tighter font-semibold bg-[#FFF] text-black rounded"} text={"Request a Demo"} link={"/service"} />
           </div>
         </div>
