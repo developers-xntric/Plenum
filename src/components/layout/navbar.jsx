@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from "react"
 import Link from "next/link"
-import { ChevronRight } from "lucide-react"
+import { ArrowRight, ChevronRight } from "lucide-react"
 import Button from "../common/button"
 import { cn } from "@/lib/utils"
 
@@ -176,12 +176,7 @@ const Navbar = () => {
                                                         href={item.link || "#"}
                                                         className="flex items-center text-left w-full hover:text-orange-400 transition-colors"
                                                     >
-                                                        <ChevronRight
-                                                            className={cn(
-                                                                "h-4 w-4 mr-2 text-orange-500 transition-transform",
-                                                                item.isExpanded ? "rotate-90" : "",
-                                                            )}
-                                                        />
+                                                        <ArrowRight className="mr-2" size={16} />
                                                         <span className={item.isExpanded ? "text-orange-500" : ""}>{item.title}</span>
                                                     </Link>
 
@@ -193,9 +188,7 @@ const Navbar = () => {
                                                                         href={subMenu.link || "#"}
                                                                         className="flex items-center text-left w-full hover:text-orange-400 transition-colors"
                                                                     >
-                                                                        <ChevronRight
-                                                                            className={cn("h-4 w-4 mr-2 transition-transform", subMenu.isExpanded ? "rotate-90" : "")}
-                                                                        />
+                                                                        <ArrowRight className="mr-2" size={16} />
                                                                         {subMenu.title}
                                                                     </Link>
 
