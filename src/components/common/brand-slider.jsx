@@ -26,7 +26,7 @@ export default function BrandSlider({ text, brand_icons }) {
             >
                 {loopIcons.map((icon, index) => (
                     <div key={index} className="flex-shrink-0">
-                        <Image src={icon} alt={`Icon ${index}`} width={200} height={180} />
+                        <Image src={icon} alt={`Icon ${index}`} width={190} height={170} />
                     </div>
                 ))}
             </motion.div>
