@@ -13,17 +13,17 @@ const ServiceHero = () => {
           <Image src="/service/sp_hero.svg" alt='Plenum AI Logo' width={1500} height={1500} className='w-full h-full object-contain' />
         </div>
 
-        <div className='w-full h-full flex'>
+        <div className='w-full h-full flex mt-10 xl:mt-0'>
           {/* Centered Text Below Image */}
           <div className="flex flex-col justify-end h-full items-start w-[530px]">
             <h1 className='md:text-[60px] xl:text-[90px] font-["Chakra"] font-[600] text-primary flex flex-col gap-2 md:leading-12 xl:leading-20'>Plenum <span>AI Services</span></h1>
-            <p className='mt-8 md:text-md xl:text-[18px] font-normal text-gray-400 w-[450px]'>
+            <p className='mt-8 md:text-[14px] xl:text-[18px] font-normal text-gray-400 w-[450px]'>
               At Plenum Technologies, we offer cutting-edge AI software platforms tailored to empower data engineers, scientists, analysts, and automation engineers.
             </p>
           </div>
           {/* Right-Aligned Text and Button */}
           <div className="text-gray-400 md:w-[340px] xl:w-96 ms-auto">
-            <p className='mb-8 md:text-md xl:text-[18px] font-normal'>
+            <p className='mb-8 md:text-[14px] xl:text-[18px] font-normal'>
               Our flagship solution, Momentum AI, is designed to simplify and supercharge your AI development process with minimal or no coding —accelerating innovation across industries.
             </p>
             {/* Button */}
