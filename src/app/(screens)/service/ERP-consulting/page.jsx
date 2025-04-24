@@ -1,7 +1,18 @@
 import BrandSlider from '@/components/common/brand-slider';
-import Service_Inner_Hero from '@/components/service/ERP-Cosultant/hero';
+import  { ERPSolutionsBottomSection } from '@/components/common/solutions';
+import ERP_Consultant_Hero from '@/components/service/ERP-Cosultant/hero';
 import { service_brand_icons } from '@/data/brand-slider-icons-data';
+import { Input } from 'postcss';
+import React from 'react';
 
+
+
+const bottomSection = {
+    heading: "Oracle Solutions",
+    Input: ["Net Suite", "Fusion Cloud"],
+    button: "View All",
+    img:"/service/ERPC/service.webp"
+}
 const ERPConsulting = () => {
     return (
         <div>
@@ -13,7 +24,8 @@ const ERPConsulting = () => {
                 <BrandSlider
                     text={"Trusted by world's most exciting brands"}
                     brand_icons={service_brand_icons} />
-            </div>
+            </div> */}
+            {/* <ERPSolutionsBottomSection className='flex justify-center items-center gap-5' bottomSection={bottomSection} left={true} /> */}
         </div>
     )
 }
