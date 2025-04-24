@@ -11,31 +11,37 @@ export default function ArticleCarousel() {
             id: 1,
             title: "Unlocking AI's Potential in Product Development",
             date: "March 1, 2023",
-            image: "/placeholder.svg?height=300&width=400",
+            image: "/home/article1.webp",
         },
         {
             id: 2,
             title: "The Role of Artificial Intelligence",
             date: "March 5, 2023",
-            image: "/placeholder.svg?height=300&width=400",
+            image: "/home/article2.webp",
         },
         {
             id: 3,
             title: "The Role of Artificial Intelligence in Design",
             date: "March 8, 2023",
-            image: "/placeholder.svg?height=300&width=400",
+            image: "/home/article3.webp",
         },
         {
             id: 4,
             title: "Future Trends in AI Development",
             date: "March 12, 2023",
-            image: "/placeholder.svg?height=300&width=400",
+            image: "/home/article1.webp",
         },
         {
             id: 5,
             title: "How Machine Learning is Changing Industries",
             date: "March 15, 2023",
-            image: "/placeholder.svg?height=300&width=400",
+            image: "/home/article2.webp",
+        },
+        {
+            id: 6,
+            title: "How Machine Learning is Changing Industries",
+            date: "March 15, 2023",
+            image: "/home/article3.webp",
         },
     ]
 
@@ -54,12 +60,12 @@ export default function ArticleCarousel() {
                 const nextIndex = (activeIndex + 1) % articles.length
                 goToSlide(nextIndex)
             }
-        }, 5600) // Includes 600ms animation buffer
+        }, 2000)
 
         return () => clearInterval(interval)
     }, [activeIndex, articles.length, isAnimating])
 
-    // Smooth slide transition with immediate scaling
+    // Smooth slide transition with scrolling
     const goToSlide = (index) => {
         if (isAnimating || index === activeIndex) return
 
@@ -67,13 +73,13 @@ export default function ArticleCarousel() {
         setActiveIndex(index)
 
         if (carouselRef.current) {
-            carouselRef.current.style.transition = "none"
-            requestAnimationFrame(() => {
-                carouselRef.current.style.transition = "all 600ms ease-out"
-                setTimeout(() => {
-                    setIsAnimating(false)
-                }, 600)
-            })
+            const article = carouselRef.current.children[index]
+            const scrollPos = article.offsetLeft - 180 // This offset creates the partial visibility effect
+
+            carouselRef.current.scrollTo({ left: scrollPos, behavior: "smooth" })
+            setTimeout(() => {
+                setIsAnimating(false)
+            }, 600) // Match the transition duration
         }
     }
 
@@ -94,16 +100,25 @@ export default function ArticleCarousel() {
 
         if (carouselRef.current) {
             carouselRef.current.style.cursor = "grab"
-            const currentScrollLeft = carouselRef.current.scrollLeft
-            const dragDistance = currentScrollLeft - scrollLeft.current
+            const currentScroll = carouselRef.current.scrollLeft
 
-            if (Math.abs(dragDistance) > dragThreshold) {
-                const direction = dragDistance > 0 ? -1 : 1
-                const newIndex = Math.max(0, Math.min(articles.length - 1, activeIndex + direction))
-                goToSlide(newIndex)
-            } else {
-                goToSlide(activeIndex)
+            let minDiff = Number.POSITIVE_INFINITY
+            let closestIndex = 0
+
+            for (let i = 0; i < articles.length; i++) {
+                const article = carouselRef.current.children[i]
+                // Calculate how far the article's left edge is from being 100px from the left edge of the container
+                // This matches our goToSlide positioning logic
+                const targetPosition = article.offsetLeft - 100
+                const diff = Math.abs(targetPosition - currentScroll)
+
+                if (diff < minDiff) {
+                    minDiff = diff
+                    closestIndex = i
+                }
             }
+
+            goToSlide(closestIndex)
         }
     }
 
@@ -116,12 +131,6 @@ export default function ArticleCarousel() {
 
         if (carouselRef.current) {
             carouselRef.current.scrollLeft = scrollLeft.current - walk
-            setActiveIndex((prev) => {
-                const newScroll = carouselRef.current.scrollLeft
-                const cardWidth = carouselRef.current.children[0].offsetWidth + 16
-                const newIndex = Math.round(newScroll / cardWidth)
-                return Math.max(0, Math.min(articles.length - 1, newIndex))
-            })
         }
     }
 
@@ -141,12 +150,6 @@ export default function ArticleCarousel() {
 
         if (carouselRef.current) {
             carouselRef.current.scrollLeft = scrollLeft.current - walk
-            setActiveIndex((prev) => {
-                const newScroll = carouselRef.current.scrollLeft
-                const cardWidth = carouselRef.current.children[0].offsetWidth + 16
-                const newIndex = Math.round(newScroll / cardWidth)
-                return Math.max(0, Math.min(articles.length - 1, newIndex))
-            })
         }
     }
 
@@ -154,19 +157,27 @@ export default function ArticleCarousel() {
         handleMouseUp()
     }
 
+    // Add padding to the container to ensure the first item is properly positioned
+    useEffect(() => {
+        if (carouselRef.current) {
+            // Initial scroll to position the first item with partial visibility of previous items
+            goToSlide(activeIndex)
+        }
+    }, [])
+
     return (
-        <div className="w-full bg-black text-white py-12 px-4 md:px-6">
-            <div className="max-w-6xl mx-auto">
-                <h2 className="text-3xl font-bold mb-2">Discover Our Articles</h2>
-                <p className="text-gray-400 mb-10 max-w-xl">
+        <div className="w-full bg-[#282526] text-white py-16 font-['Archivo']">
+            <div className="max-w-[95%] xl:max-w-[85%] ms-auto">
+                <h2 className="text-3xl font-bold mb-6 text-[50px]">Discover Our Articles</h2>
+                <p className="text-gray-400 text-[15px] mb-10 max-w-xl">
                     Explore our latest posts for insights in design, learning, and innovation. Stay updated with trends and
                     breakthroughs in the creative world.
                 </p>
 
-                <div className="relative overflow-hidden">
+                <div className="relative">
                     <div
                         ref={carouselRef}
-                        className="flex overflow-x-hidden gap-4 md:gap-6 mb-8 cursor-grab transition-all"
+                        className="flex overflow-x-hidden gap-4 md:gap-6 mb-8 cursor-grab"
                         onMouseDown={handleMouseDown}
                         onMouseUp={handleMouseUp}
                         onMouseLeave={handleMouseUp}
@@ -177,25 +188,25 @@ export default function ArticleCarousel() {
                     >
                         {articles.map((article, index) => {
                             const isActive = index === activeIndex
+                            const isFirstVisible = index === activeIndex
 
                             return (
                                 <div
                                     key={article.id}
                                     className={cn(
                                         "flex-shrink-0 transition-all duration-500 ease-out",
-                                        isActive ? "w-[65%] md:w-[55%]" : "w-[35%] md:w-[30%]",
+                                        isActive ? "w-full md:w-[45%]" : "w-[35%] md:w-[30%]",
                                     )}
                                     style={{
-                                        transform: isActive ? "scale(1)" : "scale(0.95)",
+                                        transform: isFirstVisible ? "scale(1)" : "scale(0.95)",
                                         opacity: isActive ? 1 : 0.8,
-                                        transition: isAnimating ? "all 600ms ease-out" : "none",
                                     }}
                                 >
                                     <div className="flex flex-col h-full">
                                         <div
                                             className={cn(
                                                 "w-full bg-gray-800 overflow-hidden",
-                                                isActive ? "h-[300px]" : "h-[200px]"
+                                                isActive ? "h-[300px] xl:h-[404px]" : "h-[200px] xl:h-[300px]",
                                             )}
                                         >
                                             <div className="relative w-full h-full">
@@ -210,8 +221,8 @@ export default function ArticleCarousel() {
                                         </div>
 
                                         <div className="mt-3">
-                                            {!isActive && <p className="text-xs text-gray-400 mb-1">{article.date}</p>}
-                                            <h3 className={cn("font-semibold mb-1 line-clamp-2", isActive ? "text-lg" : "text-sm")}>
+                                            <p className="text-xs text-gray-400 mb-1">{article.date}</p>
+                                            <h3 className={cn("font-semibold mb-1 line-clamp-2 text-xl")}>
                                                 {article.title}
                                             </h3>
                                             <a
@@ -234,7 +245,7 @@ export default function ArticleCarousel() {
                                 key={index}
                                 className={cn(
                                     "w-2 h-2 rounded-full transition-all duration-300",
-                                    index === activeIndex ? "bg-orange-500 w-4" : "bg-gray-600 opacity-70 hover:opacity-100",
+                                    index === activeIndex ? "bg-white w-4" : "bg-gray-600 opacity-70 hover:opacity-100",
                                 )}
                                 onClick={() => goToSlide(index)}
                                 aria-label={`Go to slide ${index + 1}`}
