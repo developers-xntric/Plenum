@@ -167,9 +167,9 @@ export default function ArticleCarousel() {
 
     return (
         <div className="w-full bg-[#282526] text-white py-16 font-['Archivo']">
-            <div className="max-w-[95%] ms-auto">
+            <div className="w-[95%] xl:max-w-[95%] 2xl:max-w-[76%] ms-auto">
                 <h2 className="text-3xl font-bold mb-6 text-[50px]">Discover Our Articles</h2>
-                <p className="text-[#FFF] text-[15px] mb-10 max-w-xl">
+                <p className="text-[#FFF] opacity-60 text-[15px] mb-10 max-w-xl">
                     Explore our latest posts for insights in design, learning, and innovation. Stay updated with trends and
                     breakthroughs in the creative world.
                 </p>
@@ -227,7 +227,7 @@ export default function ArticleCarousel() {
                                             </h3>
                                             <a
                                                 href="#"
-                                                className="text-orange-500 inline-flex items-center text-sm hover:underline"
+                                                className="text-primary inline-flex items-center text-sm hover:underline"
                                                 aria-label={`Read more about ${article.title}`}
                                             >
                                                 Read More <ChevronRight className="h-4 w-4 ml-1" />

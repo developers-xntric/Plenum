@@ -174,10 +174,10 @@ const Navbar = () => {
                                                 <li key={index} className="space-y-2 text-[14px]">
                                                     <Link
                                                         href={item.link || "#"}
-                                                        className="flex items-center text-left w-full hover:text-orange-400 transition-colors"
+                                                        className="flex items-center text-left w-full hover:text-[#FF6035] transition-colors"
                                                     >
                                                         <ArrowRight className="mr-2" size={16} />
-                                                        <span className={item.isExpanded ? "text-orange-500" : ""}>{item.title}</span>
+                                                        <span className={item.isExpanded ? "text-primary" : ""}>{item.title}</span>
                                                     </Link>
 
                                                     {item.isExpanded && item.subMenus && (
@@ -186,7 +186,7 @@ const Navbar = () => {
                                                                 <li key={subIndex} className="space-y-2">
                                                                     <Link
                                                                         href={subMenu.link || "#"}
-                                                                        className="flex items-center text-left w-full hover:text-orange-400 transition-colors"
+                                                                        className="flex items-center text-left w-full hover:text-[#FF6035] transition-colors"
                                                                     >
                                                                         <ArrowRight className="mr-2" size={16} />
                                                                         {subMenu.title}
@@ -195,7 +195,7 @@ const Navbar = () => {
                                                                     {subMenu.isExpanded && subMenu.items && (
                                                                         <ul className="ml-6 space-y-2">
                                                                             {subMenu.items.map((item, itemIndex) => (
-                                                                                <li key={itemIndex} className="hover:text-orange-400 transition-colors">
+                                                                                <li key={itemIndex} className="hover:text-[#FF6035] transition-colors">
                                                                                     <Link href="#" className="block w-full">
                                                                                         {item}
                                                                                     </Link>
