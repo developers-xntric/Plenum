@@ -5,6 +5,7 @@ import { service_brand_icons } from '@/data/brand-slider-icons-data'
 import ServicesList from '@/components/service/services-list'
 import React from 'react'
 import { ServiceList } from "@/data/service-list";
+import ServiceContact from '@/components/service/service-contact';
 
 const Service = () => {
     return (
@@ -24,9 +25,10 @@ const Service = () => {
                 heading={"Ready To Supercharge Your AI Workflow?"}
                 text={"Ready to explore the power of AI? Contact us 24×7 to schedule a one-on-one consultation and see how Momentum AI can elevate your AI workflow management and automation journey."}
                 show_button={true}
-                className="md:h-[340px]"
+                className="xl:h-[340px]"
                 isVideo={true}
             />
+            <ServiceContact />
         </div>
     )
 }
