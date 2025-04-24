@@ -24,7 +24,7 @@ const Service = () => {
                 heading={"Ready To Supercharge Your AI Workflow?"}
                 text={"Ready to explore the power of AI? Contact us 24×7 to schedule a one-on-one consultation and see how Momentum AI can elevate your AI workflow management and automation journey."}
                 show_button={true}
-                className="md:h-[340px]"
+                className="xl:h-[340px]"
                 isVideo={true}
             />
         </div>
