@@ -1,36 +1,35 @@
 import Image from 'next/image'
 import React from 'react'
+import Button from '../common/button'
 
 const ServiceHero = () => {
   return (
     <div className='md:h-screen bg-cover bg-no-repeat' style={{ backgroundImage: "url('/service/sp_herobg.webp')" }}>
       {/* Wrapper */}
-      <div className="2xl:max-w-[1300px] h-full w-[90%] mx-auto space-y-20 py-16 xl:pt-24">
+      <div className="2xl:max-w-[1300px] h-full w-[90%] mx-auto space-y-20 py-16 xl:pt-36">
         {/* Image Div */}
-        <div className='w-[160px] h-[250px] absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2'>
-          <Image src="/service/sp_hero.png" alt='Plenum AI Logo' width={1500} height={1500} className='w-full h-full object-contain' />
+        <div className='w-[180px] h-[250px] absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2'>
+          <Image src="/service/sp_hero.svg" alt='Plenum AI Logo' width={1500} height={1500} className='w-full h-full object-contain' />
         </div>
 
-        <div className='w-full h-full'>
+        <div className='w-full h-full flex'>
           {/* Centered Text Below Image */}
-          <div className="flex flex-col justify-end h-full items-start w-96">
-            <h1 className='text-5xl font-bold text-orange-500'>Plenum<br />AI Services</h1>
-            <p className='mt-4 text-gray-400 max-w-md'>
+          <div className="flex flex-col justify-end h-full items-start w-[530px]">
+            <h1 className='text-[90px] font-["Chakra"] font-[600] text-primary flex flex-col gap-2 leading-20'>Plenum <span>AI Services</span></h1>
+            <p className='mt-8 text-[18px] font-normal text-gray-400 w-[450px]'>
               At Plenum Technologies, we offer cutting-edge AI software platforms tailored to empower data engineers, scientists, analysts, and automation engineers.
             </p>
           </div>
           {/* Right-Aligned Text and Button */}
-          {/* <div className="text-right text-gray-400 max-w-xs">
-          <p className='mb-4'>
-            Our flagship solution, Momentum AI, is designed to simplify and supercharge your AI development process with minimal or no coding —accelerating innovation across industries.
-          </p>
-          <button className='px-4 py-2 bg-white text-black border border-gray-300 rounded'>
-            Request a Demo
-          </button>
-        </div> */}
+          <div className="text-gray-400 w-96 ms-auto">
+            <p className='mb-8 text-[18px] font-normal'>
+              Our flagship solution, Momentum AI, is designed to simplify and supercharge your AI development process with minimal or no coding —accelerating innovation across industries.
+            </p>
+            <Button className={"px-8 py-2 tracking-tighter font-semibold bg-[#FFF] text-black rounded"} text={"Request a Demo"} link={"/service"} />
+          </div>
         </div>
       </div>
-    </div>
+    </div >
   )
 }
 
