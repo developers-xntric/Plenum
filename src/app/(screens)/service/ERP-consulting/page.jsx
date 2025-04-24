@@ -1,6 +1,8 @@
 import BrandSlider from '@/components/common/brand-slider';
 import { ERPSolutionsBottomSection } from '@/components/common/solutions';
 import Service_Inner_Hero from '@/components/service/ERP-Cosultant/hero';
+import ERPServicesEast from '@/components/service/ERP-Cosultant/ERP-services-east';
+import ERP_Consultant_Hero from '@/components/service/ERP-Cosultant/hero';
 import { service_brand_icons } from '@/data/brand-slider-icons-data';
 import { blackSection, blackSection2, bottomSection, bottomSection2 } from '@/data/erp-consulting-service';
 
@@ -18,6 +20,7 @@ const ERPConsulting = () => {
             </div>
             <ERPSolutionsBottomSection className='flex justify-center items-center gap-5' bottomSection={bottomSection} left={true} blackSection={blackSection} />
             <ERPSolutionsBottomSection className='flex flex-row-reverse justify-center items-center gap-20' blackSection={blackSection2} bottomSection={bottomSection2} left={false} />
+            <ERPServicesEast/>
         </div>
     )
 }
