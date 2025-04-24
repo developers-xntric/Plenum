@@ -8,7 +8,7 @@ const ServiceHero = () => {
       {/* Wrapper */}
       <div className="2xl:max-w-[1300px] h-full w-[90%] mx-auto space-y-20 py-16 xl:pt-36">
         {/* Image Div */}
-        <div className='w-[180px] h-[250px] absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2'>
+        <div className='w-[180px] h-[260px] absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2'>
           <Image src="/service/sp_hero.svg" alt='Plenum AI Logo' width={1500} height={1500} className='w-full h-full object-contain' />
         </div>
 

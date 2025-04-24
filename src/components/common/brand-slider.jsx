@@ -10,7 +10,7 @@ export default function BrandSlider({ text, brand_icons }) {
         <div className=" overflow-hidden flex items-center ">
 
             <div className="bg-white absolute z-20 w-[220px]">
-                <h2 className="text-secondary opacity-45 w-[170px] text-base leading-[20px] font-bold font-['Archivo'] ">{text}</h2>
+                <h2 className="text-secondary opacity-70 w-[150px] text-base leading-[20px] font-normal font-['Archivo'] ">{text}</h2>
             </div>
 
             <motion.div
