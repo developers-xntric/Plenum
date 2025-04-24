@@ -44,7 +44,7 @@ export const ServiceList = [
                 </defs>
             </svg>
         ),
-        link: "/services/erp-consulting-and-implementation",
+        link: "/service/ERP-consulting",
     },
     {
         id: 2,
@@ -96,7 +96,7 @@ export const ServiceList = [
                 </defs>
             </svg>
         ),
-        link: "/services/oracle-erp",
+        link: "/service/ERP-consulting",
     },
     {
         id: 3,
