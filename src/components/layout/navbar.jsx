@@ -62,8 +62,8 @@ const Navbar = () => {
     const updateDropdownPosition = () => {
         if (showServicesDropdown && servicesRef.current && dropdownRef.current) {
             const rect = servicesRef.current.getBoundingClientRect()
-            dropdownRef.current.style.top = `${53}px` // Added 8px offset
-            dropdownRef.current.style.left = `${32}%`
+            dropdownRef.current.style.top = `${rect.bottom}px` // Added 8px offset
+            dropdownRef.current.style.left = `${30}%`
         }
     }
 
