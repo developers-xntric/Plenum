@@ -5,6 +5,7 @@ import { service_brand_icons } from '@/data/brand-slider-icons-data'
 import ServicesList from '@/components/service/services-list'
 import React from 'react'
 import { ServiceList } from "@/data/service-list";
+import ServiceContact from '@/components/service/service-contact';
 
 const Service = () => {
     return (
@@ -27,6 +28,7 @@ const Service = () => {
                 className="xl:h-[340px]"
                 isVideo={true}
             />
+            <ServiceContact />
         </div>
     )
 }
