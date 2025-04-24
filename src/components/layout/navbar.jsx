@@ -177,7 +177,7 @@ const Navbar = () => {
                                                         className="flex items-center text-left w-full hover:text-[#FF6035] transition-colors"
                                                     >
                                                         <ArrowRight className="mr-2" size={16} />
-                                                        <span className={item.isExpanded ? "text-primary" : ""}>{item.title}</span>
+                                                        <span>{item.title}</span>
                                                     </Link>
 
                                                     {item.isExpanded && item.subMenus && (
