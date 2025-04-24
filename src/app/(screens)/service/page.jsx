@@ -2,7 +2,9 @@ import BrandSlider from '@/components/common/brand-slider'
 import ServiceHero from '@/components/service/hero'
 import PinkSection from '@/components/service/pink-section'
 import { service_brand_icons } from '@/data/brand-slider-icons-data'
+import ServicesList from '@/components/service/services-list'
 import React from 'react'
+import { ServiceList } from "@/data/service-list";
 
 const Service = () => {
     return (
@@ -17,6 +19,7 @@ const Service = () => {
                 heading={"Scalable Expertise When You Need It"}
                 text={"Plenum Tech delivers advanced Enterprise Technology Platforms tailored to streamline operations and optimize workflows. Our solutions are designed to drive business growth and scalability across industries."}
             />
+            <ServicesList serviceList={ServiceList} />
         </div>
     )
 }

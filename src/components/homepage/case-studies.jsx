@@ -2,7 +2,7 @@ import { caseStudies } from "@/data/case-studies-card-data"
 import CaseStudyCard from "../common/home-case-study-card"
 
 
-export default function CaseStudies() {
+export default function CaseStudies({title,paragraph,caseStudies}) {
 
     return (
         <section className="bg-white ">
@@ -10,13 +10,12 @@ export default function CaseStudies() {
                 <div className="mb-8 space-y-6">
                     <div className="w-[90%] lg:max-w-[75%] xl:max-w-[70%]">
                         <h2 className="text-[50px] leading-[55px] font-['Archivo'] text-secondary font-medium home-section-headings">
-                            Our Case Studies Driving AI Transformation Across Industries
+                            {title}
                         </h2>
                     </div>
 
                     <p className="text-secondary font-['Archivo'] opacity-75 max-w-[55%]">
-                        Plenum isn't just another ERP provider; we embed AI into your systems to deliver actionable insights and
-                        smarter decision-making capabilities.
+                        {paragraph}
                     </p>
                 </div>
 
