@@ -3,22 +3,14 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 
-const brand_icons = [
-    "/images/brand-logos/achieve.webp",
-    "/images/brand-logos/midfunnel.webp",
-    "/images/brand-logos/momentum.webp",
-    "/images/brand-logos/obscura.webp",
-    "/images/brand-logos/tangent.webp",
-];
-
-export default function BrandSlider() {
+export default function BrandSlider({ text, brand_icons }) {
     const loopIcons = [...brand_icons, ...brand_icons];
 
     return (
         <div className=" overflow-hidden flex items-center ">
 
             <div className="bg-white absolute z-20 w-[220px]">
-                <h2 className="text-secondary opacity-45 w-[170px] text-base leading-[20px] font-bold font-['Archivo'] ">Trusted by world's most exciting brands</h2>
+                <h2 className="text-secondary opacity-45 w-[170px] text-base leading-[20px] font-bold font-['Archivo'] ">{text}</h2>
             </div>
 
             <motion.div

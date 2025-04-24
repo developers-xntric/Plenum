@@ -1,3 +1,4 @@
+import { home_brand_icons } from "@/data/brand-slider-icons-data";
 import BrandSlider from "../common/brand-slider";
 import Button from "../common/button";
 
@@ -28,7 +29,7 @@ export default function HomeServices({ }) {
       <div className="2xl:max-w-[1300px] w-[90%] mx-auto space-y-20 py-16 xl:py-24">
 
         {/* BRAND ICONS SLIDER */}
-        <BrandSlider />
+        <BrandSlider text={"Trusted by world's most exciting brands"} brand_icons={home_brand_icons} />
 
         <div className="flex flex-col space-y-16">
           {/* UPPER column - Headline */}
