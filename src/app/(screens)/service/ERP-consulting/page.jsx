@@ -1,4 +1,5 @@
 import BrandSlider from '@/components/common/brand-slider';
+import ERPServicesEast from '@/components/service/ERP-Cosultant/ERP-services-east';
 import ERP_Consultant_Hero from '@/components/service/ERP-Cosultant/hero';
 import { service_brand_icons } from '@/data/brand-slider-icons-data';
 import React from 'react';
@@ -12,6 +13,7 @@ const ERPConsulting = () => {
                     text={"Trusted by world's most exciting brands"}
                     brand_icons={service_brand_icons} />
             </div> */}
+            <ERPServicesEast/>
         </div>
     )
 }
