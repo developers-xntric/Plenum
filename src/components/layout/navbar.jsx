@@ -20,8 +20,8 @@ const Navbar = () => {
                 {
                     title: "Oracle ERP Solutions",
                     isExpanded: true,
-                    link: "/service",
-                    items: [{ title: "Net Suite", link: "/service/" }, { title: "Fusion Cloud", link: "/service/" }],
+                    link: "/service/oracle",
+                    items: [{ title: "Net Suite", link: "/service/oracle-net-suite" }, { title: "Fusion Cloud", link: "/service/oracle-cloud-fusion" }],
                 },
                 {
                     title: "Microsoft Dynamics ERP Solutions",
