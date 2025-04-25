@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-export default function ImpactSection() {
+export default function Finance_Opearations_Service() {
     return (
         <section className="py-12 lg:px-16 2xl:max-w-[1440px] font-['Archivo'] max-w-[90%] mx-auto">
             <div className="text-center mb-8 md:mb-12">
