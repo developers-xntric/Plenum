@@ -17,6 +17,8 @@ const ERPConsulting = () => {
             <Service_Inner_Hero
                 heading={"Plenum Tech offers top ERP solutions across Dubai and the Middle East"}
                 para={"Delivering tailored IT services for business growth and operational excellence."}
+                image={"/service/ERPC/ERPC-Hero.svg"}
+                is_space_in_image={false}
             />
             <div className='2xl:max-w-[1440px] h-full w-[90%] mx-auto space-y-20 py-16'>
                 <BrandSlider
