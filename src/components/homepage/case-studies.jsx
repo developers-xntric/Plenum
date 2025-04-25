@@ -6,9 +6,9 @@ export default function CaseStudies({title,paragraph,caseStudies}) {
 
     return (
         <section className="bg-white ">
-            <div className="2xl:max-w-[1330px] w-[90%] mx-auto py-12 xl:py-10">
+            <div className="2xl:max-w-[1440px] w-[90%] mx-auto py-12 xl:py-10">
                 <div className="mb-8 space-y-6">
-                    <div className="w-[90%] lg:max-w-[75%] xl:max-w-[70%]">
+                    <div className="w-[90%] lg:max-w-[85%] xl:max-w-[70%] 2xl:max-w-[65%]">
                         <h2 className="text-[50px] leading-[55px] font-['Archivo'] text-secondary font-medium home-section-headings">
                             {title}
                         </h2>

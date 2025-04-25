@@ -12,10 +12,10 @@ export default function HouseAIProduct() {
 
   return (
     <section className="py-12 bg-white ">
-      <div className="2xl:max-w-[1300px] mx-auto w-[90%] space-y-12">
+      <div className="2xl:max-w-[1440px] mx-auto w-[90%] space-y-12">
         <div className='space-y-5'>
           <h2 className="text-[50px] leading-[55px] font-['Archivo'] text-secondary font-medium home-section-headings">Our In house AI Product</h2>
-          <p className="text-secondary font-['Archivo'] opacity-75 max-w-[55%]">
+          <p className="text-secondary font-['Archivo'] opacity-75 lg:max-w-[70%] xl:max-w-[52%]">
             Plenum isn't just another ERP provider; we embed AI into your systems to deliver actionable insights and smarter decision-making capabilities.
           </p>
         </div>
@@ -32,21 +32,21 @@ export default function HouseAIProduct() {
             />
 
             {/* Dark overlay */}
-            <div className="absolute inset-0 bg-gradient-to-br from-black opacity-90 to-gray-800 z-20" />
+            <div className="absolute inset-0 bg-gradient-to-br from-black opacity-90 to-gray-950 z-20" />
 
 
             {/* Momentum AI Card */}
-            <div className="text-white p-7 pb-0 h-full rounded-2xl shadow-xl space-y-6 relative z-50">
+            <div className="text-white p-7 pb-0 xl:h-80 rounded-2xl space-y-6 relative z-50">
               <div className='space-y-2'>
                 <div className="flex justify-between items-start ">
-                  <h3 className="text-2xl font-medium font-['Archivo']">Momentum AI</h3>
+                  <h3 className="text-3xl font-medium font-['Archivo']">Momentum AI</h3>
                   <Link href="#" className="text-primary flex items-center gap-2 underline underline-offset-4 cursor-pointer z-40 ">View Product
                     <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
                       <path d="M0.9375 10.214L9.67107 1.48047M9.67107 1.48047H0.9375M9.67107 1.48047V10.214" stroke="#FF6035" strokeWidth="1.74671" />
                     </svg>
                   </Link>
                 </div>
-                <p className="text-[13px] text-white font-['Archivo'] xl:w-[60%]">
+                <p className="text-[13px] text-white font-['Archivo'] lg:max-w-[80%] xl:w-[60%]">
                   Plenum isn’t just another ERP provider; we embed AI into your systems to deliver actionable insights.
                 </p>
               </div>
@@ -65,7 +65,7 @@ export default function HouseAIProduct() {
           </div>
 
           {/* Vertical Builds Card */}
-          <div className="relative rounded-2xl overflow-hidden shadow-xl">
+          <div className="relative rounded-2xl overflow-hidden">
             <Image
               src="/images/house-ai-product/smoke.webp"
               width={400}
@@ -75,20 +75,20 @@ export default function HouseAIProduct() {
             />
 
             {/* Dark overlay */}
-            <div className="absolute inset-0 bg-gradient-to-br from-black opacity-90 to-gray-800 z-20" />
+            <div className="absolute inset-0 bg-gradient-to-br from-black opacity-90 to-gray-950 z-20" />
 
 
             <div className="text-white p-7 h-full rounded-2xl shadow-xl space-y-6  relative z-50">
               <div className='space-y-2'>
                 <div className="flex justify-between items-start">
-                  <h3 className="text-2xl font-medium font-['Archivo']">Vertical builds</h3>
+                  <h3 className="text-3xl font-medium font-['Archivo']">Vertical builds</h3>
                   <Link href="#" className="text-primary flex items-center gap-2 underline underline-offset-4 cursor-pointer z-20">View Product
                     <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
                       <path d="M0.9375 10.214L9.67107 1.48047M9.67107 1.48047H0.9375M9.67107 1.48047V10.214" stroke="#FF6035" strokeWidth="1.74671" />
                     </svg>
                   </Link>
                 </div>
-                <p className="text-[13px] text-white font-['Archivo']  xl:w-[60%]">
+                <p className="text-[13px] text-white font-['Archivo'] lg:max-w-[80%] xl:w-[60%]">
                   Plenum isn’t just another ERP provider; we embed AI into your systems to deliver actionable insights.
                 </p>
               </div>
