@@ -10,6 +10,7 @@ import PinkSection from '@/components/service/pink-section'
 import { bc_service, bc_service_black } from '@/data/erp-consulting-service'
 import { cardData } from '@/data/home-blog'
 import { testimonials } from '@/data/home-testimonials'
+import { services2 } from '@/data/microsoft'
 import { bc_solution } from '@/data/mobility-solutions'
 
 const BuisnessCentral = () => {
@@ -35,7 +36,11 @@ const BuisnessCentral = () => {
                 heading2={"365 Business Central?"}
                 para={"Unlock the full potential of your business with Microsoft Dynamics 365 Business Central.Here's why Microsoft Dynamics 365 Business Central is the solution of choice for organizations worldwide:"}
             />
-            <MicrosoftDynamic />
+            <MicrosoftDynamic heading1='One-stop Solution For Microsoft' heading2='Dynamics 365 Services' para='Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world' services={services2}
+                button={"Get in touch now"}
+                className='flex flex-col items-start text-start'
+                bgColor='black'
+            />
             <Capabilities />
             <div className='pt-32 pb-20'>
                 <PinkSection
