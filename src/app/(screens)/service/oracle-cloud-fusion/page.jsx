@@ -4,6 +4,7 @@ import { Blog } from '@/components/homepage/blog'
 import Testimonials from '@/components/homepage/testimonial'
 import New_Service_Inner_Hero from '@/components/service/finance-and-opearations/hero'
 import OracleCloudFusionERP from '@/components/service/oracle-cloud-fusion/ocf-erp'
+import OrcaleFinancialFeature from '@/components/service/oracle-cloud-fusion/oracle-financial-feature'
 import PinkSection from '@/components/service/pink-section'
 import { ocf_service, ocf_service_black } from '@/data/erp-consulting-service'
 import { cardData } from '@/data/home-blog'
@@ -23,6 +24,7 @@ const OracleCloudFusion = () => {
                 <ERPSolutionsBottomSection para='More than ever, the management of successful organizations relies on the critical information obtained from business results and operations.' arrow={true} className='flex justify-center items-center gap-5' bottomSection={ocf_service} left={true} blackSection={ocf_service_black} />
             </div>
             <OracleCloudFusionERP />
+            <OrcaleFinancialFeature />
             <div className='pt-32 pb-20'>
                 <PinkSection
                     heading={"Ready To Supercharge Your AI Workflow?"}
