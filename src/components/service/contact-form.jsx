@@ -19,7 +19,6 @@ export function ContactForm() {
         console.log("Form submitted:", formData)
     }
 
-
     return (
         <>
             {/*  Contact Form */}
