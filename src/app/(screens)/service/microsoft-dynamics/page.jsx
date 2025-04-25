@@ -27,7 +27,13 @@ const MicrosoftDynamics = () => {
             </div>
             <MicrosoftCarousel MicrosoftCarouselData={MicrosoftCarouselData} title={"Connect Your Applications With Microsoft Dynamics"} para={"Plenum provides a smart approach to integration and helps you transform the way you work. Seamlessly connect your apps with Microsoft Dynamics to save time and effort and increase productivity"} />
             {/* TABS */}
-            <MicrosoftPartner/>
+            <MicrosoftPartner />
+            <div>
+                <MicrosoftDynamic />
+            </div>
+            <div>
+                <MobilitySolutions />
+            </div>
         </div>
     )
 }
