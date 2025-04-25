@@ -13,7 +13,7 @@ const Service_Inner_Hero = ({ heading, para, is_space_in_image = true, image, im
             {/* Heading */}
             <h1 className='text-secondary md:text-[35px] xl:text-[48px] font-["Chakra"] md:leading-10 xl:leading-[52px] font-medium home-section-headings'>{heading}</h1>
             {/* Paragraph */}
-            <p className='text-secondary font-normal md:text-[14px] xl:text-[18px] opacity-60'>{para}</p>
+            <p className='text-secondary font-normal md:text-[14px] xl:text-[18px] opacity-60 w-[95%]'>{para}</p>
             {/* Button */}
             <Button text={button_text || "Let's Talk"} link={"/contact"} className={button_className ? button_className : "px-10 py-2 bg-primary text-white"} />
           </div>
