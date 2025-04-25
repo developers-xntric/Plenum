@@ -1,6 +1,8 @@
 import BrandSlider from '@/components/common/brand-slider'
 import Service_Inner_Hero from '@/components/service/ERP-Cosultant/hero'
+import MicrosoftCarousel from '@/components/service/microsoft/microsft-carousel'
 import { service_brand_icons } from '@/data/brand-slider-icons-data'
+import { MicrosoftCarouselData } from '@/data/microsoft-carousel'
 import React from 'react'
 
 const MicrosoftDynamics = () => {
@@ -20,6 +22,7 @@ const MicrosoftDynamics = () => {
                     text={"Trusted by world's most exciting brands"}
                     brand_icons={service_brand_icons} />
             </div>
+            <MicrosoftCarousel MicrosoftCarouselData={MicrosoftCarouselData} title={"Connect Your Applications With Microsoft Dynamics"} para={"Plenum provides a smart approach to integration and helps you transform the way you work. Seamlessly connect your apps with Microsoft Dynamics to save time and effort and increase productivity"} />
         </div>
     )
 }
