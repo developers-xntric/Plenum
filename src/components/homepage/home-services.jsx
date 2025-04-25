@@ -20,7 +20,7 @@ const servicesData = [
           We architect, implement and optimize Microsoft D365 ERP systems, Business Central with a focus on automation, insights, and integrated workflows. With our copilot studio capabilities and our inhouse on premise product SecureGPT® built in, your ERP becomes a smart assistant — empowering finance, operations, and procurement teams.
         </p>
         <Link
-          href="/services/erp-consulting"
+          href="/service/ERP-consulting"
           className="text-[#FF6035] font-['Archivo'] flex items-center font-semibold text-[17px] mt-2 underline"
         >
           View Service 
