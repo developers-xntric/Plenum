@@ -27,7 +27,7 @@ const Navbar = () => {
                     title: "Microsoft Dynamics ERP Solutions",
                     isExpanded: true,
                     link: "/service/microsoft-dynamics",
-                    items: [{ title: "Business Central", link: "/service/business-central" }, { title: "Finance and Operations", link: "/service/" }],
+                    items: [{ title: "Business Central", link: "/service/business-central" }, { title: "Finance and Operations", link: "/service/finance-operations" }],
                 },
             ],
         },

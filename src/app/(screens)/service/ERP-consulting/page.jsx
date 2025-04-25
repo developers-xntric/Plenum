@@ -30,7 +30,7 @@ const ERPConsulting = () => {
             />
             <ERPServicesEast />
             <div className='max-w-full 2xl:max-w-[1440px] mx-auto '>
-                <ERPSolutionsBottomSection className='flex justify-center items-center gap-5' bottomSection={bottomSection} left={true} blackSection={blackSection} />
+                <ERPSolutionsBottomSection className='flex justify-center items-center gap-5' bottomSection={bottomSection} left={true} blackSection={blackSection}  />
                 <ERPSolutionsBottomSection className='flex flex-row-reverse justify-center items-center gap-20' blackSection={blackSection2} bottomSection={bottomSection2} left={false} />
             </div>
             <Testimonials testimonials={testimonials} />

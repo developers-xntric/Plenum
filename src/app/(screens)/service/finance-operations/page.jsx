@@ -22,7 +22,7 @@ const FinanceOpearations = () => {
                 button_text="Connect with our Experts"
             />
             <div className='max-w-full 2xl:max-w-[1440px] mx-auto '>
-                <ERPSolutionsBottomSection className='flex justify-center items-center gap-5' bottomSection={fao_service} left={true} blackSection={fao_service_black} />
+                <ERPSolutionsBottomSection para='We offer robust ERP solutions through Microsoft Dynamics. These solutions are designed to automate financial processes, optimize supply chains, and enhance customer relationship management.' arrow={true} className='flex justify-center items-center gap-5' bottomSection={fao_service} left={true} blackSection={fao_service_black} />
             </div>
             <FaoDynamicOpearation />
             <div className='py-8'>

@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from './button'
 import Image from 'next/image'
+import { ArrowUpRight } from 'lucide-react'
 
 
 const ERPSolutions = ({ blackSection }) => {
@@ -15,14 +16,18 @@ const ERPSolutions = ({ blackSection }) => {
     )
 }
 
-export const ERPSolutionsBottomSection = ({ bottomSection, className, left, blackSection }) => {
+export const ERPSolutionsBottomSection = ({ bottomSection, className, left, blackSection, para, arrow = false }) => {
     return (
         <section className='relative font-["Archivo"] '>
             <ERPSolutions blackSection={blackSection} />
             <div className={`max-w-[95%] 2xl:max-w-[1610px] ${left ? "ms-auto" : ""}  `}>
                 <div className={`${className}`}>
                     <div className='w-[50%] 2xl:w-[60%]'>
-                        <h2 className='text-[39px] text-secondary font-medium home-section-headings w-[60%]'>{bottomSection.heading}</h2>
+                        <div className='relative flex items-center justify-start'>
+                            <h2 className='text-[39px] text-secondary font-medium home-section-headings w-[68%]'>{bottomSection.heading}</h2>
+                            {arrow && <ArrowUpRight color='#FF6035' size={30} className='ml-14' />}
+                        </div>
+                        {para && <p className='text-secondary font-["Archivo"] max-w-[91%] my-4 opacity-75'>{para}</p>}
                         {
                             bottomSection.Input.map((item, index) => {
                                 return (
