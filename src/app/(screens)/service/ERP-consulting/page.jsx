@@ -18,7 +18,7 @@ const ERPConsulting = () => {
                 heading={"Plenum Tech offers top ERP solutions across Dubai and the Middle East"}
                 para={"Delivering tailored IT services for business growth and operational excellence."}
             />
-            <div className='2xl:max-w-[1300px] h-full w-[90%] mx-auto space-y-20 py-16'>
+            <div className='2xl:max-w-[1440px] h-full w-[90%] mx-auto space-y-20 py-16'>
                 <BrandSlider
                     text={"Trusted by world's most exciting brands"}
                     brand_icons={service_brand_icons} />
@@ -27,8 +27,10 @@ const ERPConsulting = () => {
                 para={"We at Plenum Tech, are honoured to have secured the reputation of being the top most reliable ERP solutions in Dubai and beyond. We uphold a powerful presence in Dubai, Saudi Arabia, and all over the Middle East, providing tailored IT services that enable businesses to reach their maximum potential. We deliver innovation and reliability to every project, offering IT solutions company in the UAE and robust IT infrastructure services."}
             />
             <ERPServicesEast />
-                <ERPSolutionsBottomSection className='flex justify-start items-center gap-5' bottomSection={bottomSection} left={true} blackSection={blackSection} />
-                <ERPSolutionsBottomSection className='flex flex-row-reverse justify-end items-center gap-20' blackSection={blackSection2} bottomSection={bottomSection2} left={false} />
+            <div className='max-w-full 2xl:max-w-[1440px] mx-auto '>
+                <ERPSolutionsBottomSection className='flex justify-center items-center gap-5' bottomSection={bottomSection} left={true} blackSection={blackSection} />
+                <ERPSolutionsBottomSection className='flex flex-row-reverse justify-center items-center gap-20' blackSection={blackSection2} bottomSection={bottomSection2} left={false} />
+            </div>
             <Testimonials testimonials={testimonials} />
             <ArticleSlider />
             <Blog heading='Discover Our Blog' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world" cardData={cardData} />

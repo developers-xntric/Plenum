@@ -6,7 +6,7 @@ const ERPC2 = ({ heading, para }) => {
     return (
         <div className='overflow-hidden bg-[#EFEFEF]'>
             {/* Wrapper */}
-            <div className='2xl:max-w-[1300px] h-full w-[90%] mx-auto my-auto space-y-20'>
+            <div className='2xl:max-w-[1440px] h-full w-[90%] mx-auto my-auto space-y-20'>
                 <div className='flex w-full items-center justify-between'>
                     {/* Part 1 Left */}
                     <div className='w-1/2 space-y-8 relative bottom-8'>

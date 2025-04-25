@@ -19,7 +19,11 @@ export const ERPSolutionsBottomSection = ({ bottomSection, className, left, blac
     return (
         <section className='relative font-["Archivo"] '>
             <ERPSolutions blackSection={blackSection} />
+<<<<<<< HEAD
             <div className={`max-w-[95%] 2xl:max-w-[1610px] ${left ? "ms-auto" : ""}  `}>
+=======
+            <div className={`max-w-[95%] 2xl:max-w-[1440px] ${left ? "ms-auto" : ""}  `}>
+>>>>>>> origin/plenum-umar
                 <div className={`${className}`}>
                     <div className='w-[50%] 2xl:w-[60%]'>
                         <h2 className='text-[39px] text-secondary font-medium home-section-headings'>{bottomSection.heading}</h2>

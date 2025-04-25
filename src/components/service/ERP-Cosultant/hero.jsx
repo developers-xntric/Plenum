@@ -6,7 +6,7 @@ const Service_Inner_Hero = ({ heading, para }) => {
   return (
     <div className='md:h-screen 2xl:h-auto overflow-hidden'>
       {/* Wrapper */}
-      <div className='2xl:max-w-[1300px] h-full w-[90%] mx-auto my-auto space-y-20 py-16 md:py-28'>
+      <div className='2xl:max-w-[1440px] h-full w-[90%] mx-auto my-auto space-y-20 py-16 md:py-28'>
         <div className='flex items-center w-full justify-between'>
           <div className='w-[377px] space-y-8 mt-12'>
             <h1 className='text-secondary md:text-[35px] xl:text-[48px] font-["Chakra"] md:leading-10 xl:leading-[52px] font-medium home-section-headings'>{heading}</h1>

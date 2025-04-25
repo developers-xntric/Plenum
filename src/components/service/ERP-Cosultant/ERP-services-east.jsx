@@ -11,7 +11,7 @@ export default function ERPServicesEast() {
   return (
     <div className="text-center py-16 bg-white">
       {/* WRAPPER */}
-      <div className="2xl:max-w-[1300px] w-[90%] mx-auto space-y-16">
+      <div className="2xl:max-w-[1440px] w-[90%] mx-auto space-y-16">
         {/* Headings */}
         <div className="space-y-6">
           <h1 className="text-[50px] leading-[55px] font-['Archivo'] text-secondary font-medium home-section-headings">
