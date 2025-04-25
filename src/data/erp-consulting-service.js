@@ -50,3 +50,16 @@ export const md_service_black = {
     para: "Plenum’s smart, adaptable solutions are built to transform how businesses operate. We focus on simplifying complexity and enabling scalable, strategic growth across industries.",
     button: "Get in touch"
 }
+
+export const bc_service = {
+    heading: "Dynamics 365 Business Central",
+    Input: ["About Dynamics 365 Business Central"],
+    button: "View All",
+    img: "/service/BC/BC_2.svg"
+}
+
+export const bc_service_black = {
+    heading: "Gain Real-Time Insights & Reporting with Business Central, the ERP for SMBs/SMEs",
+    para: "Experience the power of real-time insights and reporting with Microsoft Dynamics 365 Business",
+    button: "Get in touch"
+}

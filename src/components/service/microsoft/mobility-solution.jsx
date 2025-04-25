@@ -1,21 +1,20 @@
 import Image from "next/image"
 
 
-export default function MobilitySolutions() {
+export default function MobilitySolutions({ solutions, className, card_className, isCenter = false, heading1, heading2, para }) {
   return (
     <section className="py-12 max-w-[90%] 2xl:max-w-[1440px] font-['Archivo'] mx-auto">
-      <div className="mb-8">
-        <h2 className="text-2xl md:text-[50px] font-medium text-gray-800 leading-[40px]">Mobility Solutions For</h2>
-        <h2 className="text-2xl md:text-[50px] font-medium text-secondary  home-section-headings mb-4">Microsoft Dynamics</h2>
-        <p className="text-[15px] text-[#101010] opacity-60 max-w-[540px]">
-          Revolutionize your business with turnkey Apps for Dynamics 365, NAV, AX and Business Central provided by
-          Plexian - Certified Microsoft Application Developer.
+      <div className={`mb-8 ${isCenter ? "text-center" : ""}`}>
+        <h2 className="text-2xl md:text-[50px] font-medium text-gray-800 leading-[40px]">{heading1 || "Mobility Solutions For"}</h2>
+        <h2 className="text-2xl md:text-[50px] font-medium text-secondary  home-section-headings mb-4">{heading2 || "Microsoft Dynamics"}</h2>
+        <p className={`text-[15px] text-[#101010] opacity-60 ${isCenter && "mx-auto"} max-w-[540px]`}>
+          {para || "Revolutionize your business with turnkey Apps for Dynamics 365, NAV, AX and Business Central provided by Plexian - Certified Microsoft Application Developer."}
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div className={`${className} gap-5`}>
         {solutions.map((solution, index) => (
-          <div key={index} className="bg-white px-4 py-6 rounded-sm shadow-sm border border-gray-100 gap-4 justify-center  flex flex-col">
+          <div key={index} className={`bg-white px-4 py-6 rounded-sm shadow-sm border border-gray-100 gap-4 justify-center flex flex-col ${card_className}`}>
             <Image
               src={solution.icon || "/placeholder.svg"}
               alt={solution.title}
@@ -33,38 +32,3 @@ export default function MobilitySolutions() {
     </section>
   )
 }
-
-const solutions = [
-  {
-    title: "Dynamics CRM Application",
-    icon: "/service/MD/icon1.svg",
-  },
-  {
-    title: "Workflow Approvals Application",
-    icon: "/service/MD/icon2.svg",
-  },
-  {
-    title: "Retail Management Application",
-    icon: "/service/MD/icon3.svg",
-  },
-  {
-    title: "Warehouse Management Application",
-    icon: "/service/MD/icon4.svg",
-  },
-  {
-    title: "Timesheet Application",
-    icon: "/service/MD/icon5.svg",
-  },
-  {
-    title: "Expense Application",
-    icon: "/service/MD/icon6.svg",
-  },
-  {
-    title: "Loyalty Management Application",
-    icon: "/service/MD/icon7.svg",
-  },
-  {
-    title: "Loyalty Management Application",
-    icon: "/service/MD/icon7.svg",
-  },
-]
