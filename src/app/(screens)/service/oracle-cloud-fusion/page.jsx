@@ -1,12 +1,13 @@
 import ArticleSlider from '@/components/common/article-slider'
+import { ERPSolutionsBottomSection } from '@/components/common/solutions'
 import { Blog } from '@/components/homepage/blog'
 import Testimonials from '@/components/homepage/testimonial'
 import New_Service_Inner_Hero from '@/components/service/finance-and-opearations/hero'
 import OracleCloudFusionERP from '@/components/service/oracle-cloud-fusion/ocf-erp'
 import PinkSection from '@/components/service/pink-section'
+import { ocf_service, ocf_service_black } from '@/data/erp-consulting-service'
 import { cardData } from '@/data/home-blog'
 import { testimonials } from '@/data/home-testimonials'
-import React from 'react'
 
 const OracleCloudFusion = () => {
     return (
@@ -18,6 +19,9 @@ const OracleCloudFusion = () => {
                 image_className="md:w-[500px] md:h-[300px] xl:w-[528.08px] xl:h-[400px]"
                 button_text="Connect with our Experts"
             />
+            <div className='max-w-full 2xl:max-w-[1440px] mx-auto '>
+                <ERPSolutionsBottomSection para='We offer robust ERP solutions through Microsoft Dynamics. These solutions are designed to automate financial processes, optimize supply chains, and enhance customer relationship management.' arrow={true} className='flex justify-center items-center gap-5' bottomSection={ocf_service} left={true} blackSection={ocf_service_black} />
+            </div>
             <OracleCloudFusionERP />
             <div className='pt-32 pb-20'>
                 <PinkSection

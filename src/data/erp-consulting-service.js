@@ -63,3 +63,16 @@ export const bc_service_black = {
     para: "Experience the power of real-time insights and reporting with Microsoft Dynamics 365 Business",
     button: "Get in touch"
 }
+
+export const ocf_service = {
+    heading: "Oracle Fusion Cloud EPM",
+    Input: ["Oracle Fusion Cloud SCM", "Customer Experience (CX)"],
+    button: "View All",
+    img: "/service/OCF/OCF3.svg"
+}
+
+export const ocf_service_black = {
+    heading: "What is Oracle Fusion Cloud?",
+    para: "Oracle Cloud Fusion application are divided into five software categories: customer relationship management, human capital management, enterprise resource planning, enterprise resource management and supply chain management.",
+    button: "Get in touch"
+}
