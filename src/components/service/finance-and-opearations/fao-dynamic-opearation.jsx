@@ -194,11 +194,11 @@ export default function FaoDynamicOperation() {
 
     return (
         <section className="max-w-5xl mx-auto text-center px-4 py-20">
-            <h1 className="text-2xl md:text-3xl font-medium text-gray-800 mb-4">
+            <h1 className="text-[50px] max-w-2xl mx-auto leading-[55px] font-['Archivo'] text-secondary font-medium home-section-headings mb-4">
                 Dynamics 365 Finance and Operations modules
             </h1>
 
-            <p className="text-sm md:text-base text-gray-600 max-w-3xl mx-auto mb-8">
+            <p className="text-secondary font-['Archivo'] opacity-75 max-w-4xl mx-auto mb-8">
                 Enhance your business efficiency and adapt quickly to changing market conditions by optimizing your financial
                 processes and streamlining your finance operations with real-time insights and analytics that enable informed
                 decision-making.
@@ -257,7 +257,7 @@ export default function FaoDynamicOperation() {
                 </div>
             </div>
 
-            <p className="text-sm md:text-base text-gray-700 max-w-2xl mx-auto">
+            <p className="text-secondary font-['Archivo'] opacity-75 max-w-2xl mx-auto">
                 {tabContent[activeTab][currentSlide].caption}
             </p>
 
