@@ -21,7 +21,7 @@ const Oracle = () => {
                 <Service_Inner_Hero
                     heading={"Certified Gold Microsoft Dynamics Partner with Global Presence"}
                     para={"Top Microsoft Dynamics partner with 300+ Projects completed worldwide. Delivering a single point solution tailored for your business needs."}
-                    image={"/service/oracle/oracle.svg"}
+                    image={"/service/Oracle/oracle.svg"}
                     image_className="md:w-[500px] md:h-[300px] xl:w-[600px] xl:h-[450px]"
                     button_text="Connect with our Experts"
                 />

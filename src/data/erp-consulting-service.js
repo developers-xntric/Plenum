@@ -81,7 +81,7 @@ export const oracle_service = {
     heading: "AI-Driven Finance: Capitalizing on an Agentic Landscape",
     Input: ["Finance teams and AI: The future of efficiency", "Empower financial excellence with AI agents for ERP"],
     button: "View All",
-    img: "/service/oracle/O2.svg"
+    img: "/service/Oracle/O2.svg"
 }
 
 export const oracle_service_black = {
