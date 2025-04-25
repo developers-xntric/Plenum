@@ -1,9 +1,15 @@
+import ArticleSlider from '@/components/common/article-slider'
 import { ERPSolutionsBottomSection } from '@/components/common/solutions'
+import { Blog } from '@/components/homepage/blog'
+import Testimonials from '@/components/homepage/testimonial'
 import Capabilities from '@/components/service/buisness-central/capabilities'
 import New_Service_Inner_Hero from '@/components/service/finance-and-opearations/hero'
 import MicrosoftDynamic from '@/components/service/microsoft/microsoft-dynamic'
 import MobilitySolutions from '@/components/service/microsoft/mobility-solution'
+import PinkSection from '@/components/service/pink-section'
 import { bc_service, bc_service_black } from '@/data/erp-consulting-service'
+import { cardData } from '@/data/home-blog'
+import { testimonials } from '@/data/home-testimonials'
 import { bc_solution } from '@/data/mobility-solutions'
 
 const BuisnessCentral = () => {
@@ -30,6 +36,18 @@ const BuisnessCentral = () => {
             />
             <MicrosoftDynamic />
             <Capabilities />
+            <div className='pt-32 pb-20'>
+                <PinkSection
+                    heading={"Ready To Supercharge Your AI Workflow?"}
+                    text={"Discover how Microsoft Dynamics 365 Business Central can streamline your operations, boost productivity, and drive smarter decisions. Connect with our experts to explore tailored ERP solutions for your business, anytime, anywhere."}
+                    show_button={true}
+                    className="xl:h-[340px]"
+                    isVideo={true}
+                />
+            </div>
+            <Testimonials testimonials={testimonials} />
+            <ArticleSlider />
+            <Blog heading='Discover Our Blog' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world" cardData={cardData} />
         </div>
     )
 }

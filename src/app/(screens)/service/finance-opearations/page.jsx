@@ -11,6 +11,7 @@ import { testimonials } from '@/data/home-testimonials';
 import ArticleSlider from "@/components/common/article-slider";
 import { Blog } from '@/components/homepage/blog';
 import { cardData } from '@/data/home-blog';
+
 const FinanceOpearations = () => {
     return (
         <div>
