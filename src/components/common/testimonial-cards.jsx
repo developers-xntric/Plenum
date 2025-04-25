@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function TestimonialCard({ quote, author, position, socialLink }) {
     return (
-      <div className="bg-[#EFEFEF] p-6 rounded-lg relative transition-all duration-300 ease-in-out h-full">
+      <div className="bg-[#EFEFEF] p-6 relative transition-all duration-300 ease-in-out h-full">
         <blockquote className="mb-6">
           <p className="text-secondary font-['Archivo'] opacity-75 xl:max-w-[90%] 2xl:max-w-[78%]">{`"${quote}"`}</p>
         </blockquote>

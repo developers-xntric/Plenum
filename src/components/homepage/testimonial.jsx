@@ -21,7 +21,7 @@ export default function Testimonials({ testimonials }) {
         >
           <div className="flex  justify-end items-center mb-4">
             <div className="flex absolute gap-4 left-[95%] mb-10">
-              <div className="flex items-center gap-1 rela">
+              <div className="flex items-center gap-1">
                 <CarouselPrevious className="h-10 w-10 bg-white border-none cursor-pointer" />
                 {/* <p className="relative -left-3 text-secondary font-medium home-section-headings">Prev</p> */}
               </div>
