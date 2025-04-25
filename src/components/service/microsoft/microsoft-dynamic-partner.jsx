@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 
 export default function MicrosoftDynamicPartner() {
-  const [activeTab, setActiveTab] = useState('United Arab Emirates');
+  const [activeTab, setActiveTab] = useState('Dynamics 365 CE/CRM');
 
   const tabs = ['Dynamics ERP', 'Dynamics 365 CE/CRM', 'Dynamics Modules'];
 
