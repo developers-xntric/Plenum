@@ -9,16 +9,15 @@ export default function NetSuiteCards() {
         <div className="bg-gray-100 flex p-6 col-span-2 rounded-sm">
           <div className="w-1/2">
             <div className="flex items-center mb-4">
-              <div className="w-8 h-8 mr-3 ">
+              <div className="w-[203px] h-[43px] mr-3 ">
                 <Image
-                  src="/"
+                  src="/service/ONS/icon1.svg"
                   alt="Propertese"
                   width={32}
                   height={32}
                   className="w-full h-full"
                 />
               </div>
-              <h3 className="text-lg font-medium text-gray-800">Propertese</h3>
             </div>
 
             <p className="text-sm text-gray-600 max-w-[90%] mb-4">
@@ -30,7 +29,7 @@ export default function NetSuiteCards() {
 
             <Link
               href="#"
-              className="inline-flex items-center text-sm font-medium text-orange-500 hover:text-orange-600 mb-4"
+              className="inline-flex items-center text-sm font-medium text-primary hover:text-orange-600 mb-4"
             >
               Learn More <ArrowRight className="ml-1 h-4 w-4" />
             </Link>
@@ -45,16 +44,15 @@ export default function NetSuiteCards() {
         </div>
         <div className="bg-gray-100 p-6 col-span-1 rounded-sm">
           <div className="flex items-center mb-4">
-            <div className="w-8 h-8 mr-3 flex-shrink-0">
+            <div className="w-[210px] h-[45px] mr-3 flex-shrink-0">
               <Image
-                src="/icons/ns-ai-assistant-icon.svg"
+                src="/service/ONS/icon2.svg"
                 alt="NS AI Assistant"
-                width={32}
-                height={32}
+                width={1000}
+                height={1000}
                 className="w-full h-full"
               />
             </div>
-            <h3 className="text-lg font-medium text-gray-800">NS AI Assistant</h3>
           </div>
 
           <p className="text-sm text-gray-600 mb-4">
@@ -64,7 +62,7 @@ export default function NetSuiteCards() {
 
           <Link
             href="#"
-            className="inline-flex items-center text-sm font-medium text-orange-500 hover:text-orange-600 mb-4"
+            className="inline-flex items-center text-sm font-medium text-primary hover:text-orange-600 mb-4"
           >
             Learn More <ArrowRight className="ml-1 h-4 w-4" />
           </Link>
@@ -80,10 +78,9 @@ export default function NetSuiteCards() {
         </div>
         <div className="bg-gray-100 p-6 col-span-1 rounded-sm">
           <div className="flex items-center mb-4">
-            <div className="w-8 h-8 mr-3 flex-shrink-0">
-              <Image src="/icons/notitch-icon.svg" alt="NOtitch" width={32} height={32} className="w-full h-full" />
+            <div className="w-[126.13px] h-[43px] mr-3 flex-shrink-0">
+              <Image src="/service/ONS/icon3.svg" alt="NOtitch" width={1000} height={1000} className="w-full h-full" />
             </div>
-            <h3 className="text-lg font-medium text-gray-800">NOtitch</h3>
           </div>
 
           <p className="text-sm text-gray-600 mb-4">

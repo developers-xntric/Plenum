@@ -89,3 +89,16 @@ export const oracle_service_black = {
     para: "Strong financial processes and data insights serve as he foundation for better business performance. Oracle cloud applications ERP is a complete, modern, cloud-based ERP solution that offers advanced capabilities such as AI to automate manual processes analytics to react to market shifts in real-time, automatics updates to stay current and gain a competitive advantage, and data-driven results that reinforce smart decision-making.",
     button: "Get in touch"
 }
+
+export const ons_service = {
+    heading: "Custom NetSuite Solution",
+    Input: ["Expert NetSuite Support", "A suite of NetSuite integrations"],
+    button: "View All",
+    img: "/service/ONS/ONS2.svg"
+}
+
+export const ons_service_black = {
+    heading: "Why Plenum is your preferred NetSuite partner?",
+    para: "Experience the power of real-time insights and reporting with Microsoft Dynamics 365 Business",
+    button: "Get in touch"
+}
