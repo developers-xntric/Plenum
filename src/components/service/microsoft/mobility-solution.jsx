@@ -7,7 +7,7 @@ export default function MobilitySolutions({ solutions, className, card_className
       <div className={`mb-8 ${isCenter ? "text-center" : ""}`}>
         <h2 className="text-2xl md:text-[50px] font-medium text-gray-800 leading-[40px]">{heading1 || "Mobility Solutions For"}</h2>
         <h2 className="text-2xl md:text-[50px] font-medium text-secondary  home-section-headings mb-4">{heading2 || "Microsoft Dynamics"}</h2>
-        <p className={`text-[15px] text-[#101010] opacity-60 ${isCenter && "mx-auto"} max-w-[540px]`}>
+        <p className={`text-[15px] text-[#101010] opacity-60 ${isCenter && "mx-auto max-w-[690px]"} max-w-[540px]`}>
           {para || "Revolutionize your business with turnkey Apps for Dynamics 365, NAV, AX and Business Central provided by Plexian - Certified Microsoft Application Developer."}
         </p>
       </div>

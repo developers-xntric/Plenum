@@ -2,8 +2,9 @@ import Button from '@/components/common/button';
 import IconsSlider from '@/components/common/icons-slider';
 import { finance_opearations_services } from '@/data/brand-slider-icons-data';
 import Image from 'next/image';
+import CustomerStats from '../customer-stats';
 
-const New_Service_Inner_Hero = ({ heading, para, is_space_in_image = true, image, image_className, button_text, button_className }) => {
+const New_Service_Inner_Hero = ({ heading, para, is_space_in_image = true, image, image_className, button_text, button_className, isSlider = false }) => {
     return (
         <div className='overflow-hidden bg-cover xl:h-auto' style={{ backgroundImage: "url('/service/FAO/FAO_hero_bg.svg')" }}>
             {/* Wrapper */}
@@ -26,11 +27,13 @@ const New_Service_Inner_Hero = ({ heading, para, is_space_in_image = true, image
                 </div>
             </div>
             {/* Slider */}
-            <div className='2xl:max-w-[1440px] w-[90%] mx-auto space-y-20 py-14 xl:pb-14 xl:pt-0'>
+            {isSlider && <div className='2xl:max-w-[1440px] w-[90%] mx-auto space-y-20 py-14 xl:pb-14 xl:pt-0'>
                 <IconsSlider
                     text={"Trusted by world's most exciting brands"}
                     brand_icons={finance_opearations_services} />
-            </div>
+            </div>}
+
+            {!isSlider && <CustomerStats />}
         </div>
     )
 }

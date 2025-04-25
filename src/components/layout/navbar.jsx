@@ -21,13 +21,13 @@ const Navbar = () => {
                     title: "Oracle ERP Solutions",
                     isExpanded: true,
                     link: "/service",
-                    items: ["Net Suite", "Fusion Cloud"],
+                    items: [{ title: "Net Suite", link: "/service/" }, { title: "Fusion Cloud", link: "/service/" }],
                 },
                 {
                     title: "Microsoft Dynamics ERP Solutions",
                     isExpanded: true,
                     link: "/service/microsoft-dynamics",
-                    items: ["Business Central", "Finance and Operations"],
+                    items: [{ title: "Business Central", link: "/service/business-central" }, { title: "Finance and Operations", link: "/service/" }],
                 },
             ],
         },
@@ -195,8 +195,8 @@ const Navbar = () => {
                                                                         <ul className="ml-6 space-y-2">
                                                                             {subMenu.items.map((item, itemIndex) => (
                                                                                 <li key={itemIndex} className="hover:text-[#FF6035] transition-colors">
-                                                                                    <Link href="#" className="block w-full">
-                                                                                        {item}
+                                                                                    <Link href={item.link} className="block w-full">
+                                                                                        {item.title}
                                                                                     </Link>
                                                                                 </li>
                                                                             ))}
