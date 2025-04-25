@@ -4,7 +4,6 @@ import { useState, useRef, useEffect } from "react"
 import Link from "next/link"
 import { ArrowRight, ChevronRight } from "lucide-react"
 import Button from "../common/button"
-import { cn } from "@/lib/utils"
 
 const Navbar = () => {
     const [showServicesDropdown, setShowServicesDropdown] = useState(false)
@@ -27,7 +26,7 @@ const Navbar = () => {
                 {
                     title: "Microsoft Dynamics ERP Solutions",
                     isExpanded: true,
-                    link: "/service",
+                    link: "/service/microsoft-dynamics",
                     items: ["Business Central", "Finance and Operations"],
                 },
             ],

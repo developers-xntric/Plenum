@@ -1,5 +1,7 @@
 import BrandSlider from '@/components/common/brand-slider'
 import Service_Inner_Hero from '@/components/service/ERP-Cosultant/hero'
+import MicrosoftDynamic from '@/components/service/microsoft/microsoft-dynamic'
+import MobilitySolutions from '@/components/service/microsoft/mobility-solution'
 import { service_brand_icons } from '@/data/brand-slider-icons-data'
 import React from 'react'
 
@@ -19,6 +21,12 @@ const MicrosoftDynamics = () => {
                 <BrandSlider
                     text={"Trusted by world's most exciting brands"}
                     brand_icons={service_brand_icons} />
+            </div>
+            <div>
+                <MicrosoftDynamic/>
+            </div>
+            <div>
+                <MobilitySolutions/>
             </div>
         </div>
     )
