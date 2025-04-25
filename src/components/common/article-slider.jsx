@@ -5,7 +5,7 @@ import { ChevronRight } from "lucide-react"
 import { cn } from "@/lib/utils"
 import Image from "next/image"
 
-export default function ArticleCarousel() {
+export default function ArticleSlider() {
     const articles = [
         {
             id: 1,
