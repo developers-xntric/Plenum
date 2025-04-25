@@ -3,10 +3,10 @@
 import Image from 'next/image';
 import { useState } from 'react';
 
-export default function OracleResourcePlanning() {
-    const [activeTab, setActiveTab] = useState('Financial Management');
+export default function OrcaleFinancialFeature() {
+    const [activeTab, setActiveTab] = useState('Accounting and Control');
 
-    const tabs = ['Financial Management', 'Project Management', 'Procurement', 'ERP Analytics'];
+    const tabs = ['Accounting and Control', 'Accounting Hub', 'Payables and Expenses', 'Receivable and cash'];
 
     return (
         <div className="text-center py-16 bg-white">
@@ -15,10 +15,10 @@ export default function OracleResourcePlanning() {
                 {/* Headings */}
                 <div className="space-y-6">
                     <h1 className="text-[50px] leading-[55px] font-['Archivo'] text-secondary font-medium home-section-headings">
-                        Oracle Fusion Cloud Enterprise
+                        Financials features and
 
                         <span className="block text-[50px] leading-[55px] font-['Archivo'] text-secondary font-medium">
-                            Resource Planning
+                            capabilities
                         </span>
                     </h1>
                     <p className="text-secondary font-['Archivo'] opacity-75 mx-auto w-[45%] xl:max-w-[40%]">
@@ -44,8 +44,8 @@ export default function OracleResourcePlanning() {
                     </div>
 
                     {/* Tab Content */}
-                    <div className="w-full  mx-auto">
-                        {activeTab === 'Financial Management' && (
+                    <div className="w-full mx-auto">
+                        {activeTab === 'Accounting and Control' && (
                             <div className="w-full ">
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12">
                                     {/* Image Section */}
@@ -63,63 +63,27 @@ export default function OracleResourcePlanning() {
 
                                     {/* Content Section */}
                                     <div className="flex flex-col justify-center space-y-6">
-                                        <div className="space-y-3 max-w-[60%]">
+                                        <div className="space-y-3 max-w-[80%]">
                                             <h2 className="text-[28px] font-['Archivo'] leading-8 text-secondary font-medium home-section-headings text-start">
-                                                Get a clear financial picture to make better decisions
+                                                Accounting and Control
                                             </h2>
                                             <p className=" text-left text-secondary font-['Archivo'] opacity-75 font-medium">
-                                                Oracle Financial gives you a complete view of your financial position and results so you can respond
-                                                quickly to an ever-changing business environment.
+                                                Automate more than 80% of your financial processes, including accounting for intercompany tax, and transfer pricing journals. Eliminate manual effort, create more accurate tax reports, and close your books faster
+                                            </p>
+                                            <p className=" text-left text-secondary font-['Archivo'] opacity-75 font-medium">
+                                                Continually improve exception handling based on past actions and quickly identify issues that present business and audit risks.
+                                            </p>
+                                            <p className=" text-left text-secondary font-['Archivo'] opacity-75 font-medium">
+                                                Standardize your chart of accounts, business processes, data model, security and compliance controls to unify your business for coordinated decisions and action.
                                             </p>
                                         </div>
 
-                                        <div className="space-y-4">
-                                            <h3 className="text-xl font-medium text-start ">Features</h3>
-                                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2">
-                                                <div className="space-y-2 text-secondary font-['Archivo'] opacity-75">
-                                                    <div className="flex items-start gap-2">
-                                                        <div className="mt-0.5 h-5 w-5 flex-none text-secondary font-['Archivo'] opacity-75">•</div>
-                                                        <span>Accounting hub</span>
-                                                    </div>
-                                                    <div className="flex items-start gap-2">
-                                                        <div className="mt-0.5 h-5 w-5 flex-none text-secondary font-['Archivo'] opacity-75">•</div>
-                                                        <span>Reporting and analytics</span>
-                                                    </div>
-                                                    <div className="flex items-start gap-2">
-                                                        <div className="mt-0.5 h-5 w-5 flex-none text-secondary font-['Archivo'] opacity-75">•</div>
-                                                        <span>Payables and Assets</span>
-                                                    </div>
-                                                    <div className="flex items-start gap-2">
-                                                        <div className="mt-0.5 h-5 w-5 flex-none text-secondary font-['Archivo'] opacity-75">•</div>
-                                                        <span>Revenue Management</span>
-                                                    </div>
-                                                </div>
-                                                <div className="space-y-2 text-secondary font-['Archivo'] opacity-75">
-                                                    <div className="flex items-start gap-2">
-                                                        <div className="mt-0.5 h-5 w-5 flex-none text-secondary font-['Archivo'] opacity-75">•</div>
-                                                        <span>Collections</span>
-                                                    </div>
-                                                    <div className="flex items-start gap-2">
-                                                        <div className="mt-0.5 h-5 w-5 flex-none text-secondary font-['Archivo'] opacity-75">•</div>
-                                                        <span>Expense management</span>
-                                                    </div>
-                                                    <div className="flex items-start gap-2">
-                                                        <div className="mt-0.5 h-5 w-5 flex-none text-secondary font-['Archivo'] opacity-75">•</div>
-                                                        <span>Joint venture management</span>
-                                                    </div>
-                                                    <div className="flex items-start gap-2">
-                                                        <div className="mt-0.5 h-5 w-5 flex-none text-secondary font-['Archivo'] opacity-75">•</div>
-                                                        <span>Receivables</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
                         )}
 
-                        {activeTab === 'Project Management' && (
+                        {activeTab === 'Accounting Hub' && (
                             <div className="flex flex-col md:flex-row gap-10 items-center justify-center ">
                                 {/* Left Section - Image */}
                                 <div className="w-full md:w-1/2 xl:w-[60%] p-4">
@@ -144,7 +108,7 @@ export default function OracleResourcePlanning() {
                             </div>
                         )}
 
-                        {activeTab === 'Procurement' && (
+                        {activeTab === 'Payables and Expenses' && (
                             <div className="flex flex-col items-center justify-center h-full bg-gray-100">
                                 <h2 className="text-3xl font-['Archivo'] text-secondary font-medium">
                                     ERP Services in Qatar
@@ -155,7 +119,7 @@ export default function OracleResourcePlanning() {
                             </div>
                         )}
 
-                        {activeTab === 'ERP Analytics' && (
+                        {activeTab === 'Receivable and cash' && (
                             <div className="flex flex-col items-center justify-center h-full bg-gray-100">
                                 <h2 className="text-3xl font-['Archivo'] text-secondary font-medium">
                                     ERP Services in Qatar

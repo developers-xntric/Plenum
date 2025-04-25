@@ -3,10 +3,10 @@
 import Image from 'next/image';
 import { useState } from 'react';
 
-export default function OracleResourcePlanning() {
-    const [activeTab, setActiveTab] = useState('Financial Management');
+export default function OracleOneStopShop() {
+    const [activeTab, setActiveTab] = useState('NetSuite Consultancy');
 
-    const tabs = ['Financial Management', 'Project Management', 'Procurement', 'ERP Analytics'];
+    const tabs = ['NetSuite Consultancy', 'NetSuite Implementation', 'NetSuite Integration', 'NetSuite Customization'];
 
     return (
         <div className="text-center py-16 bg-white">
@@ -15,14 +15,13 @@ export default function OracleResourcePlanning() {
                 {/* Headings */}
                 <div className="space-y-6">
                     <h1 className="text-[50px] leading-[55px] font-['Archivo'] text-secondary font-medium home-section-headings">
-                        Oracle Fusion Cloud Enterprise
-
+                        Your one-stop shop for
                         <span className="block text-[50px] leading-[55px] font-['Archivo'] text-secondary font-medium">
-                            Resource Planning
+                            all things NetSuite
                         </span>
                     </h1>
                     <p className="text-secondary font-['Archivo'] opacity-75 mx-auto w-[45%] xl:max-w-[40%]">
-                        15+ years of experience in working with different Microsoft Dynamics ERPs, CRMs and Modules.
+                        We offer a wide range of NetSuite solutions, built by NetSuite experts, for NetSuite experts.
                     </p>
                 </div>
 
@@ -33,7 +32,7 @@ export default function OracleResourcePlanning() {
                             <button
                                 key={tab}
                                 onClick={() => setActiveTab(tab)}
-                                className={`text-[22px] w-full cursor-pointer font-['Archivo'] text-secondary font-medium home-section-headings ${activeTab === tab
+                                className={`text-[22px] px-20 w-full cursor-pointer font-['Archivo'] text-secondary font-medium home-section-headings ${activeTab === tab
                                     ? 'text-[#FF6035] border-b-2 border-[#FF6035]'
                                     : 'text-gray-400 '
                                     } focus:outline-none`}
@@ -45,14 +44,14 @@ export default function OracleResourcePlanning() {
 
                     {/* Tab Content */}
                     <div className="w-full  mx-auto">
-                        {activeTab === 'Financial Management' && (
+                        {activeTab === 'NetSuite Consultancy' && (
                             <div className="w-full ">
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12">
                                     {/* Image Section */}
                                     <div className="flex items-center justify-center">
                                         <div className="relative w-full aspect-[4/3]  overflow-hidden">
                                             <Image
-                                                src="/images/service/oracle/tab1.png"
+                                                src="/images/service/oracle-net-suite/tab-1.png"
                                                 alt="Financial dashboard with analytics charts and graphs"
                                                 fill
                                                 className="object-cover"
@@ -62,64 +61,23 @@ export default function OracleResourcePlanning() {
                                     </div>
 
                                     {/* Content Section */}
-                                    <div className="flex flex-col justify-center space-y-6">
-                                        <div className="space-y-3 max-w-[60%]">
-                                            <h2 className="text-[28px] font-['Archivo'] leading-8 text-secondary font-medium home-section-headings text-start">
-                                                Get a clear financial picture to make better decisions
+                                    <div className="flex flex-col justify-center space-y-10">
+                                        <div className=" max-w-[80%] space-y-10">
+                                            <h2 className="text-[28px] max-w-[50%] font-['Archivo'] leading-8 text-secondary font-medium home-section-headings text-start">
+                                                NetSuite Implementation
                                             </h2>
                                             <p className=" text-left text-secondary font-['Archivo'] opacity-75 font-medium">
-                                                Oracle Financial gives you a complete view of your financial position and results so you can respond
-                                                quickly to an ever-changing business environment.
+                                                Are you looking to upgrade from legacy systems to NetSuite ERP for integrated financials, CRM, and operations? We are here to help you.
                                             </p>
                                         </div>
+                                        <button className='bg-[#FF6035] w-[80%] xl:w-1/2 text-white py-4 px-2 xl:px-4 rounded-lg'>Explore our Implementation Services</button>
 
-                                        <div className="space-y-4">
-                                            <h3 className="text-xl font-medium text-start ">Features</h3>
-                                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2">
-                                                <div className="space-y-2 text-secondary font-['Archivo'] opacity-75">
-                                                    <div className="flex items-start gap-2">
-                                                        <div className="mt-0.5 h-5 w-5 flex-none text-secondary font-['Archivo'] opacity-75">•</div>
-                                                        <span>Accounting hub</span>
-                                                    </div>
-                                                    <div className="flex items-start gap-2">
-                                                        <div className="mt-0.5 h-5 w-5 flex-none text-secondary font-['Archivo'] opacity-75">•</div>
-                                                        <span>Reporting and analytics</span>
-                                                    </div>
-                                                    <div className="flex items-start gap-2">
-                                                        <div className="mt-0.5 h-5 w-5 flex-none text-secondary font-['Archivo'] opacity-75">•</div>
-                                                        <span>Payables and Assets</span>
-                                                    </div>
-                                                    <div className="flex items-start gap-2">
-                                                        <div className="mt-0.5 h-5 w-5 flex-none text-secondary font-['Archivo'] opacity-75">•</div>
-                                                        <span>Revenue Management</span>
-                                                    </div>
-                                                </div>
-                                                <div className="space-y-2 text-secondary font-['Archivo'] opacity-75">
-                                                    <div className="flex items-start gap-2">
-                                                        <div className="mt-0.5 h-5 w-5 flex-none text-secondary font-['Archivo'] opacity-75">•</div>
-                                                        <span>Collections</span>
-                                                    </div>
-                                                    <div className="flex items-start gap-2">
-                                                        <div className="mt-0.5 h-5 w-5 flex-none text-secondary font-['Archivo'] opacity-75">•</div>
-                                                        <span>Expense management</span>
-                                                    </div>
-                                                    <div className="flex items-start gap-2">
-                                                        <div className="mt-0.5 h-5 w-5 flex-none text-secondary font-['Archivo'] opacity-75">•</div>
-                                                        <span>Joint venture management</span>
-                                                    </div>
-                                                    <div className="flex items-start gap-2">
-                                                        <div className="mt-0.5 h-5 w-5 flex-none text-secondary font-['Archivo'] opacity-75">•</div>
-                                                        <span>Receivables</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
                         )}
 
-                        {activeTab === 'Project Management' && (
+                        {activeTab === 'NetSuite Implementation' && (
                             <div className="flex flex-col md:flex-row gap-10 items-center justify-center ">
                                 {/* Left Section - Image */}
                                 <div className="w-full md:w-1/2 xl:w-[60%] p-4">
@@ -144,7 +102,7 @@ export default function OracleResourcePlanning() {
                             </div>
                         )}
 
-                        {activeTab === 'Procurement' && (
+                        {activeTab === 'NetSuite Integration' && (
                             <div className="flex flex-col items-center justify-center h-full bg-gray-100">
                                 <h2 className="text-3xl font-['Archivo'] text-secondary font-medium">
                                     ERP Services in Qatar
@@ -155,7 +113,7 @@ export default function OracleResourcePlanning() {
                             </div>
                         )}
 
-                        {activeTab === 'ERP Analytics' && (
+                        {activeTab === 'NetSuite Customization' && (
                             <div className="flex flex-col items-center justify-center h-full bg-gray-100">
                                 <h2 className="text-3xl font-['Archivo'] text-secondary font-medium">
                                     ERP Services in Qatar
