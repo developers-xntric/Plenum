@@ -21,6 +21,7 @@ const FinanceOpearations = () => {
                 image={"/service/FAO/FAO_hero.svg"}
                 image_className="md:w-[500px] md:h-[300px] xl:w-[650px] xl:h-[500px]"
                 button_text="Connect with our Experts"
+                isSlider={true}
             />
             <div className='max-w-full 2xl:max-w-[1440px] mx-auto '>
                 <ERPSolutionsBottomSection className='flex justify-center items-center gap-5' bottomSection={fao_service} left={true} blackSection={fao_service_black} />
