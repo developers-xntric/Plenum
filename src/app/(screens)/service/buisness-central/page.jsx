@@ -1,4 +1,5 @@
 import { ERPSolutionsBottomSection } from '@/components/common/solutions'
+import Capabilities from '@/components/service/buisness-central/capabilities'
 import New_Service_Inner_Hero from '@/components/service/finance-and-opearations/hero'
 import MicrosoftDynamic from '@/components/service/microsoft/microsoft-dynamic'
 import MobilitySolutions from '@/components/service/microsoft/mobility-solution'
@@ -28,6 +29,7 @@ const BuisnessCentral = () => {
                 para={"Unlock the full potential of your business with Microsoft Dynamics 365 Business Central.Here's why Microsoft Dynamics 365 Business Central is the solution of choice for organizations worldwide:"}
             />
             <MicrosoftDynamic />
+            <Capabilities />
         </div>
     )
 }
