@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export default function MicrosoftDynamic() {
     return (
-        <main className="flex flex-col items-center justify-center py-16 bg-[#EFEFEF]">
+        <main className="flex flex-col items-center font-['Archivo'] justify-center py-16 bg-[#EFEFEF]">
             <div className="2xl:max-w-[1440px] max-w-[90%] mx-auto">
                 <div className="text-center mb-8 md:mb-12">
                     <h1 className="text-2xl font-medium text-secondary home-section-headings md:text-3xl lg:text-[50px]  ">
