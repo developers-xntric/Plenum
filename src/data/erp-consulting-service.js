@@ -65,14 +65,14 @@ export const bc_service_black = {
 }
 
 export const ocf_service = {
-    heading: "Oracle Fusion Cloud EPM",
-    Input: ["Oracle Fusion Cloud SCM", "Customer Experience (CX)"],
+    heading: "AI-Driven Finance: Capitalizing on an Agentic Landscape",
+    Input: ["Finance teams and AI: The future of efficiency", "Empower financial excellence with AI agents for ERP"],
     button: "View All",
-    img: "/service/OCF/OCF3.svg"
+    img: "/service/oracle/O2.svg"
 }
 
 export const ocf_service_black = {
-    heading: "What is Oracle Fusion Cloud?",
-    para: "Oracle Cloud Fusion application are divided into five software categories: customer relationship management, human capital management, enterprise resource planning, enterprise resource management and supply chain management.",
+    heading: "Improve Business Results + Gain Financial Clarity",
+    para: "Strong financial processes and data insights serve as he foundation for better business performance. Oracle cloud applications ERP is a complete, modern, cloud-based ERP solution that offers advanced capabilities such as AI to automate manual processes analytics to react to market shifts in real-time, automatics updates to stay current and gain a competitive advantage, and data-driven results that reinforce smart decision-making.",
     button: "Get in touch"
 }

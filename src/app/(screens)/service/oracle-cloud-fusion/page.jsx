@@ -20,7 +20,7 @@ const OracleCloudFusion = () => {
                 button_text="Connect with our Experts"
             />
             <div className='max-w-full 2xl:max-w-[1440px] mx-auto '>
-                <ERPSolutionsBottomSection para='We offer robust ERP solutions through Microsoft Dynamics. These solutions are designed to automate financial processes, optimize supply chains, and enhance customer relationship management.' arrow={true} className='flex justify-center items-center gap-5' bottomSection={ocf_service} left={true} blackSection={ocf_service_black} />
+                <ERPSolutionsBottomSection para='More than ever, the management of successful organizations relies on the critical information obtained from business results and operations.' arrow={true} className='flex justify-center items-center gap-5' bottomSection={ocf_service} left={true} blackSection={ocf_service_black} />
             </div>
             <OracleCloudFusionERP />
             <div className='pt-32 pb-20'>
