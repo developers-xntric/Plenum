@@ -15,6 +15,7 @@ import { MicrosoftCarouselData } from '@/data/microsoft-carousel'
 import ArticleSlider from "@/components/common/article-slider";
 import { Blog } from '@/components/homepage/blog'
 import { md_solutions } from '@/data/mobility-solutions'
+import { services } from '@/data/microsoft'
 
 const MicrosoftDynamics = () => {
     return (
@@ -33,7 +34,13 @@ const MicrosoftDynamics = () => {
                     text={"Trusted by world's most exciting brands"}
                     brand_icons={service_brand_icons} />
             </div>
-            <MicrosoftDynamic />
+            <MicrosoftDynamic heading1='Powerful & Proven Business' heading2='Solutions for Microsoft Dynamics' para=' We have been driving customer success by delivering proven technology solutions alongside Microsoft for
+                        almost 20 years.' services={services}
+                button={"Get in touch now"}
+                className='flex flex-col items-center text-center'
+                paraClass='px-4'
+                isCenter={true}
+            />
             <MicrosoftCarousel MicrosoftCarouselData={MicrosoftCarouselData} title={"Connect Your Applications With Microsoft Dynamics"} para={"Plenum provides a smart approach to integration and helps you transform the way you work. Seamlessly connect your apps with Microsoft Dynamics to save time and effort and increase productivity"} />
             <MobilitySolutions className={"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4"} solutions={md_solutions} />
             <MicrosoftPartner />
