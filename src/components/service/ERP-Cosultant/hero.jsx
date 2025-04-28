@@ -9,9 +9,9 @@ const Service_Inner_Hero = ({ heading, para, is_space_in_image = true, image, im
       <div className='2xl:max-w-[1440px] h-full w-[90%] mx-auto my-auto space-y-20 py-16 md:py-28'>
         <div className='flex items-center w-full justify-between'>
           {/* Left Section Heading Text And Buttons */}
-          <div className='w-[377px] space-y-8 mt-12'>
+          <div className='w-[385px] space-y-8 mt-12'>
             {/* Heading */}
-            <h1 className='text-secondary md:text-[35px] xl:text-[48px] font-["Chakra"] md:leading-10 xl:leading-[52px] font-medium home-section-headings'>{heading}</h1>
+            <h1 className='text-secondary md:text-[35px] xl:text-[50px] font-["Chakra"] md:leading-10 xl:leading-[52px] font-semibold home-section-headings'>{heading}</h1>
             {/* Paragraph */}
             <p className='text-secondary font-normal md:text-[14px] xl:text-[18px] opacity-60 w-[95%]'>{para}</p>
             {/* Button */}

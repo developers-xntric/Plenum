@@ -13,7 +13,7 @@ const New_Service_Inner_Hero = ({ heading, para, is_space_in_image = true, image
                     {/* Left Section Heading Text And Buttons */}
                     <div className=' space-y-8 mt-12'>
                         {/* Heading */}
-                        <h1 className='w-[300px] text-secondary md:text-[35px] xl:text-[48px] font-["Chakra"] md:leading-10 xl:leading-[52px] font-medium home-section-headings'>{heading}</h1>
+                        <h1 className='text-secondary md:text-[35px] xl:text-[48px] font-["Chakra"] md:leading-10 xl:leading-[52px] font-semibold   home-section-headings'>{heading}</h1>
                         {/* Paragraph */}
                         <p className='text-secondary font-normal md:text-[14px] xl:text-[18px] opacity-60 w-[45%]'>{para}</p>
                         {/* Button */}

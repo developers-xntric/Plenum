@@ -13,10 +13,10 @@ const servicesData = [
     title: "ERP Consulting & Implementation",
     description: (
       <>
-        <h3 className="text-[17px] font-medium font-['Archivo'] text-secondary">
+        <h3 className="text-[15px] font-medium font-['Archivo'] text-secondary">
           Microsoft Business Central + AI for Intelligent Enterprise Ops
         </h3>
-        <p className="text-[16px] text-secondary opacity-75 mt-2 font-['Archivo']">
+        <p className="text-[15px] font-medium text-secondary opacity-75 mt-2 font-['Archivo']">
           We architect, implement and optimize Microsoft D365 ERP systems, Business Central with a focus on automation, insights, and integrated workflows. With our copilot studio capabilities and our inhouse on premise product SecureGPT® built in, your ERP becomes a smart assistant — empowering finance, operations, and procurement teams.
         </p>
         <Link
@@ -153,13 +153,13 @@ export default function HomeServices() {
                 </h2>
               </div>
               <div className="space-y-5">
-                <p className="text-sm text-secondary xl:max-w-[70%] leading-[20px] font-['Archivo'] opacity-75">
+                <p className="text-[15px] text-secondary xl:max-w-[70%] leading-[20px] font-normal font-['Archivo'] opacity-75">
                   Plenum offers AI solutions to automate workflows, enhance decisions, and boost efficiency. We tailor services to your needs and help you scale confidently.
                 </p>
                 <Button
                   link={"/services"}
                   text={"Explore More"}
-                  className="px-6 py-2 border border-primary text-secondary rounded text-sm transition-colors inline-block font-['Archivo']"
+                  className="px-6 py-2 border border-primary text-secondary rounded text-[15px] font-medium transition-colors inline-block font-['Archivo']"
                 />
               </div>
             </div>

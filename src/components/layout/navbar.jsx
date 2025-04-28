@@ -147,7 +147,7 @@ const Navbar = () => {
                     {/* Links And Button Div */}
                     <div className="flex justify-between gap-[30px] xl:gap-[90px]">
                         {/* Whole Links */}
-                        <ul className="flex justify-between items-center gap-6 xl:gap-8 2xl:gap-10 text-[12px] xl:text-[14px] text-black">
+                        <ul className="flex justify-between items-center gap-6 xl:gap-8 2xl:gap-10 text-[12px] font-semibold xl:text-[14px] text-black">
                             <li>
                                 <Link href={"/"}>Home</Link>
                             </li>
