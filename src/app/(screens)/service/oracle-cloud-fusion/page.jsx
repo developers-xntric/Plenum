@@ -1,5 +1,5 @@
+import { ERPAccordin } from '@/components/common/accordinService'
 import ArticleSlider from '@/components/common/article-slider'
-import { ERPSolutionsBottomSection } from '@/components/common/solutions'
 import { Blog } from '@/components/homepage/blog'
 import Testimonials from '@/components/homepage/testimonial'
 import New_Service_Inner_Hero from '@/components/service/finance-and-opearations/hero'
@@ -20,7 +20,7 @@ const OracleCloudFusion = () => {
                 image_className="md:w-[500px] md:h-[300px] xl:w-[528.08px] xl:h-[400px]"
                 button_text="Connect with our Experts"
             />
-            <ERPSolutionsBottomSection para='More than ever, the management of successful organizations relies on the critical information obtained from business results and operations.' arrow={true} className='flex justify-center items-center gap-5' bottomSection={ocf_service} left={true} blackSection={ocf_service_black} />
+            <ERPAccordin  className='flex justify-center items-center gap-20' bottomSection={ocf_service} left={true} blackSection={ocf_service_black} />
             <OracleCloudFusionERP />
             <OrcaleFinancialFeature />
             <div className='pt-32 pb-20'>

@@ -1,5 +1,5 @@
+import { ERPAccordin } from '@/components/common/accordinService'
 import ArticleSlider from '@/components/common/article-slider'
-import { ERPSolutionsBottomSection } from '@/components/common/solutions'
 import { Blog } from '@/components/homepage/blog'
 import Testimonials from '@/components/homepage/testimonial'
 import Capabilities from '@/components/service/buisness-central/capabilities'
@@ -24,7 +24,7 @@ const BuisnessCentral = () => {
                 button_text="Connect with our Experts"
                 isSlider={true}
             />
-            <ERPSolutionsBottomSection className='flex justify-center items-center gap-5' bottomSection={bc_service} left={true} blackSection={bc_service_black} />
+             <ERPAccordin  className='flex justify-center items-center gap-20' bottomSection={bc_service} left={true} blackSection={bc_service_black} />
             <MobilitySolutions
                 card_className={"w-[300px] h-[200px]"}
                 className={"flex flex-wrap gap-10 justify-center"}

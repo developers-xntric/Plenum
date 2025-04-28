@@ -1,3 +1,4 @@
+import { ERPAccordin } from '@/components/common/accordinService'
 import ArticleSlider from '@/components/common/article-slider'
 import BrandSlider from '@/components/common/brand-slider'
 import { ERPSolutionsBottomSection } from '@/components/common/solutions'
@@ -30,7 +31,7 @@ const Oracle = () => {
                         text={"Trusted by world's most exciting brands"}
                         brand_icons={service_brand_icons} />
                 </div>
-                <ERPSolutionsBottomSection para='Watch this on-demand webinar to discover how AI can drive real business outcomes and prepare your organization for the future of finance. Make AI your competitive edge.' arrow={true} className='flex justify-center items-center gap-5' bottomSection={oracle_service} left={true} blackSection={oracle_service_black} />
+                <ERPAccordin para='Watch this on-demand webinar to discover how AI can drive real business outcomes and prepare your organization for the future of finance. Make AI your competitive edge.' arrow={true} className='flex justify-center items-center gap-20' bottomSection={oracle_service} left={true} blackSection={oracle_service_black} />
                 <OracleResourcePlanning />
                 <div className='py-8'>
                     <Finance_Opearations_Service />

@@ -1,5 +1,5 @@
+import { ERPAccordin } from '@/components/common/accordinService'
 import ArticleSlider from '@/components/common/article-slider'
-import { ERPSolutionsBottomSection } from '@/components/common/solutions'
 import { Blog } from '@/components/homepage/blog'
 import Testimonials from '@/components/homepage/testimonial'
 import New_Service_Inner_Hero from '@/components/service/finance-and-opearations/hero'
@@ -19,11 +19,11 @@ const OracleNetSuite = () => {
             <New_Service_Inner_Hero
                 heading={"Engineering AI-powered NetSuite Solutions"}
                 para={"Helping companies by implementing NetSuite with the latest AI capabilities and customized AI apps."}
-                image={"/service/FAO/FAO_hero.svg"}
-                image_className="md:w-[500px] md:h-[300px] xl:w-[528.08px] xl:h-[400px]"
+                image={"/service/ONS/banner.svg"}
+                image_className="md:w-[500px] md:h-[300px] mt-28 xl:w-[528.08px] xl:h-[400px]"
                 button_text="Connect with our Experts"
             />
-            <ERPSolutionsBottomSection para='Watch this on-demand webinar to discover how AI can drive real business outcomes and prepare your organization for the future of finance. Make AI your competitive edge.' arrow={true} className='flex justify-center items-center gap-5' bottomSection={ons_service} left={true} blackSection={ons_service_black} />
+            <ERPAccordin  className='flex justify-center items-center gap-20' bottomSection={ons_service} left={true} blackSection={ons_service_black} />
             <OracleOneStopShop />
             <NetSuiteCards />
             <MicrosoftCarousel MicrosoftCarouselData={MicrosoftCarouselData} title={"Connect Your Favorite App to NetSuite Instantly"} para={"We offer pre-built NetSuite integrations for eCommerce platforms, CRMs, marketplaces, payment gateways, and 3PLs. Need something custom? We’ve got that too—with fast deployment and minimal coding."} />
