@@ -107,8 +107,6 @@ export default function ArticleSlider() {
 
             for (let i = 0; i < articles.length; i++) {
                 const article = carouselRef.current.children[i]
-                // Calculate how far the article's left edge is from being 100px from the left edge of the container
-                // This matches our goToSlide positioning logic
                 const targetPosition = article.offsetLeft - 100
                 const diff = Math.abs(targetPosition - currentScroll)
 
@@ -127,7 +125,7 @@ export default function ArticleSlider() {
         e.preventDefault()
 
         const x = e.pageX - (carouselRef.current?.offsetLeft || 0)
-        const walk = (x - startX.current) * 1.5
+        const walk = (x - startX.current) * 1.5 
 
         if (carouselRef.current) {
             carouselRef.current.scrollLeft = scrollLeft.current - walk
@@ -157,10 +155,8 @@ export default function ArticleSlider() {
         handleMouseUp()
     }
 
-    // Add padding to the container to ensure the first item is properly positioned
     useEffect(() => {
         if (carouselRef.current) {
-            // Initial scroll to position the first item with partial visibility of previous items
             goToSlide(activeIndex)
         }
     }, [])
@@ -198,7 +194,7 @@ export default function ArticleSlider() {
                                         isActive ? "w-full md:w-[45%]" : "w-[35%] md:w-[30%]",
                                     )}
                                     style={{
-                                        transform: isFirstVisible ? "scale(1)" : "scale(0.95)",
+                                        transform: isFirstVisible ? "scale(1) 2xl:scale(2)" : "scale(0.95)",
                                         opacity: isActive ? 1 : 0.8,
                                     }}
                                 >
@@ -206,7 +202,7 @@ export default function ArticleSlider() {
                                         <div
                                             className={cn(
                                                 "w-full bg-gray-800 overflow-hidden",
-                                                isActive ? "h-[300px] xl:h-[404px]" : "h-[200px] xl:h-[300px]",
+                                                isActive ? "h-[300px] xl:h-[404px] 2xl:h-[480px]" : "h-[200px] xl:h-[300px] 2xl:h-[350px]",
                                             )}
                                         >
                                             <div className="relative w-full h-full">

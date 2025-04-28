@@ -29,7 +29,7 @@ const ERPConsulting = () => {
                 para={"We at Plenum Tech, are honoured to have secured the reputation of being the top most reliable ERP solutions in Dubai and beyond. We uphold a powerful presence in Dubai, Saudi Arabia, and all over the Middle East, providing tailored IT services that enable businesses to reach their maximum potential. We deliver innovation and reliability to every project, offering IT solutions company in the UAE and robust IT infrastructure services."}
             />
             <ERPServicesEast />
-            <div className='max-w-full 2xl:max-w-[1440px] mx-auto '>
+            <div className=''>
                 <ERPSolutionsBottomSection className='flex justify-center items-center gap-5' bottomSection={bottomSection} left={true} blackSection={blackSection}  />
                 <ERPSolutionsBottomSection className='flex flex-row-reverse justify-center items-center gap-20' blackSection={blackSection2} bottomSection={bottomSection2} left={false} />
             </div>
