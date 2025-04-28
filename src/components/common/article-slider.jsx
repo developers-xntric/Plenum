@@ -165,7 +165,7 @@ export default function ArticleSlider() {
         <div className="w-full bg-[#282526] text-white py-16 font-['Archivo']">
             <div className="w-[95%] ms-auto">
                 <div className="max-w-full ms-auto 2xl:max-w-[93%]">
-                    <h2 className="text-3xl font-medium mb-6 text-[50px]">Discover Our Articles</h2>
+                    <h2 className="text-3xl font-semibold mb-6 text-[50px]">Discover Our Articles</h2>
                     <p className="text-[#FFF] opacity-60 text-[15px] mb-10 max-w-xl">
                         Explore our latest posts for insights in design, learning, and innovation. Stay updated with trends and
                         breakthroughs in the creative world.

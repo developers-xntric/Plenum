@@ -22,7 +22,7 @@ export default function ServiceContact() {
                         {/* Stats */}
                         <div className="grid grid-cols-4 gap-8 font-['Archivo']">
                             <div className="stat ">
-                                <h2 className="text-[48px] xl:text-[54px] font-medium font-['Archivo'] opacity-[0.8] text-[#202020]">
+                                <h2 className="text-[48px] xl:text-[54px] font-semibold font-['Archivo'] opacity-[0.8] text-[#202020]">
                                     5000<span className="text-primary font-['Archivo'] ">+</span>
                                 </h2>
                                 <p className="text-secondary opacity-[0.6] relative bottom-2">
@@ -33,7 +33,7 @@ export default function ServiceContact() {
                             </div>
 
                             <div className="stat">
-                                <h2 className="text-[48px] xl:text-[54px] font-medium font-['Archivo'] opacity-[0.8] text-[#202020]">
+                                <h2 className="text-[48px] xl:text-[54px] font-semibold font-['Archivo'] opacity-[0.8] text-[#202020]">
                                     700<span className="text-primary font-['Archivo'] ">+</span>
                                 </h2>
                                 <p className="text-secondary opacity-[0.6] relative bottom-2">
@@ -44,7 +44,7 @@ export default function ServiceContact() {
                             </div>
 
                             <div className="stat">
-                                <h2 className="text-[48px] xl:text-[54px] font-medium font-['Archivo'] opacity-[0.8] text-[#202020]">
+                                <h2 className="text-[48px] xl:text-[54px] font-semibold font-['Archivo'] opacity-[0.8] text-[#202020]">
                                     1000<span className="text-primary font-['Archivo'] ">+</span>
                                 </h2>
                                 <p className="text-secondary opacity-[0.6] relative bottom-2">
@@ -55,7 +55,7 @@ export default function ServiceContact() {
                             </div>
 
                             <div className="stat ">
-                                <h2 className="text-[48px] xl:text-[54px] font-medium font-['Archivo'] opacity-[0.8] text-[#202020]">
+                                <h2 className="text-[48px] xl:text-[54px] font-semibold font-['Archivo'] opacity-[0.8] text-[#202020]">
                                     20<span className="text-primary font-['Archivo'] ">+</span>
                                 </h2>
                                 <p className="text-secondary opacity-[0.6] relative bottom-2">

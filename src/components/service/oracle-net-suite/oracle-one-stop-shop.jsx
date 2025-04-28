@@ -14,9 +14,9 @@ export default function OracleOneStopShop() {
             <div className="2xl:max-w-[1440px] w-[90%] mx-auto space-y-16">
                 {/* Headings */}
                 <div className="space-y-6">
-                    <h1 className="text-[50px] leading-[55px] font-['Archivo'] text-secondary font-medium home-section-headings">
+                    <h1 className="text-[50px] leading-[55px] font-['Archivo'] text-secondary font-semibold home-section-headings">
                         Your one-stop shop for
-                        <span className="block text-[50px] leading-[55px] font-['Archivo'] text-secondary font-medium">
+                        <span className="block text-[50px] leading-[55px] font-['Archivo'] text-secondary font-semibold">
                             all things NetSuite
                         </span>
                     </h1>
@@ -32,7 +32,7 @@ export default function OracleOneStopShop() {
                             <button
                                 key={tab}
                                 onClick={() => setActiveTab(tab)}
-                                className={`text-[22px] px-20 w-full cursor-pointer pb-4 leading-6 font-['Archivo'] text-secondary font-medium home-section-headings ${activeTab === tab
+                                className={`text-[22px] px-20 w-full cursor-pointer pb-4 leading-6 font-['Archivo'] text-secondary font-semibold home-section-headings ${activeTab === tab
                                     ? 'text-[#FF6035] border-b-2 border-[#FF6035]'
                                     : 'text-gray-400 '
                                     } focus:outline-none`}
@@ -63,10 +63,10 @@ export default function OracleOneStopShop() {
                                     {/* Content Section */}
                                     <div className="flex flex-col justify-center space-y-10">
                                         <div className=" max-w-[80%] space-y-10">
-                                            <h2 className="text-[28px] max-w-[50%] font-['Archivo'] leading-8 text-secondary font-medium home-section-headings text-start">
+                                            <h2 className="text-[28px] max-w-[50%] font-['Archivo'] leading-8 text-secondary font-semibold home-section-headings text-start">
                                                 NetSuite Implementation
                                             </h2>
-                                            <p className=" text-left text-secondary font-['Archivo'] opacity-75 font-medium">
+                                            <p className=" text-left text-secondary font-['Archivo'] opacity-75 font-semibold">
                                                 Are you looking to upgrade from legacy systems to NetSuite ERP for integrated financials, CRM, and operations? We are here to help you.
                                             </p>
                                         </div>
@@ -92,7 +92,7 @@ export default function OracleOneStopShop() {
 
                                 {/* Right Section - Text */}
                                 <div className="w-full md:w-1/2 p-4 space-y-4">
-                                    <h1 className="text-3xl  text-start lg:max-w-[80%] 2xl:max-w-[60%] font-['Archivo'] text-secondary font-medium home-section-headings">
+                                    <h1 className="text-3xl  text-start lg:max-w-[80%] 2xl:max-w-[60%] font-['Archivo'] text-secondary font-semibold home-section-headings">
                                         Dynamics 365 CE/CRM solutions by Plenum
                                     </h1>
                                     <p className="text-secondary text-start font-['Archivo'] opacity-75 w-[45% xl:max-w-[85%] ">
@@ -104,7 +104,7 @@ export default function OracleOneStopShop() {
 
                         {activeTab === 'NetSuite Integration' && (
                             <div className="flex flex-col items-center justify-center h-full bg-gray-100">
-                                <h2 className="text-3xl font-['Archivo'] text-secondary font-medium">
+                                <h2 className="text-3xl font-['Archivo'] text-secondary font-semibold">
                                     ERP Services in Qatar
                                 </h2>
                                 <p className="text-secondary font-['Archivo'] opacity-75 mt-4 max-w-md">
@@ -115,7 +115,7 @@ export default function OracleOneStopShop() {
 
                         {activeTab === 'NetSuite Customization' && (
                             <div className="flex flex-col items-center justify-center h-full bg-gray-100">
-                                <h2 className="text-3xl font-['Archivo'] text-secondary font-medium">
+                                <h2 className="text-3xl font-['Archivo'] text-secondary font-semibold">
                                     ERP Services in Qatar
                                 </h2>
                                 <p className="text-secondary font-['Archivo'] opacity-75 mt-4 max-w-md">

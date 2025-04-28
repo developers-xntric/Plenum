@@ -6,7 +6,7 @@ export default function Testimonials({ testimonials }) {
     <section className="bg-white">
       <div className="2xl:max-w-[1440px] w-[90%] mx-auto py-12 xl:py-16 space-y-8">
         <div className='space-y-5'>
-          <h2 className="text-[50px] leading-[55px] font-['Archivo'] text-secondary font-medium home-section-headings">Trusted by Professionals</h2>
+          <h2 className="text-[50px] leading-[55px] font-['Archivo'] text-secondary font-semibold home-section-headings">Trusted by Professionals</h2>
           <p className="text-secondary font-['Archivo'] opacity-75 lg:max-w-[57%] xl:max-w-[40%]">
             As an ERP company, Plenum is trusted by professionals for insight-driven design, branding, and innovation.
           </p>
@@ -23,11 +23,11 @@ export default function Testimonials({ testimonials }) {
             <div className="flex absolute gap-4 left-[95%] mb-10">
               <div className="flex items-center gap-1">
                 <CarouselPrevious className="h-10 w-fit hover:bg-transparent border-none cursor-pointer shadow-none" />
-                {/* <p className="relative -left-3 text-secondary font-medium home-section-headings">Prev</p> */}
+                {/* <p className="relative -left-3 text-secondary font-semibold home-section-headings">Prev</p> */}
               </div>
               <div className="flex items-center">
                 <CarouselNext className="h-10 w-fit hover:bg-transparent border-none cursor-pointer relative left-4 shadow-none" />
-                {/* <p className="relative right-13 text-secondary font-medium home-section-headings">Next</p> */}
+                {/* <p className="relative right-13 text-secondary font-semibold home-section-headings">Next</p> */}
               </div>
             </div>
           </div>

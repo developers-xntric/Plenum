@@ -25,7 +25,7 @@ export const ERPSolutionsBottomSection = ({ bottomSection, className, left, blac
                 <div className={`${className}`}>
                     <div className='w-[50%] 2xl:w-[60%]'>
                         <div className='relative flex items-center justify-start'>
-                            <h2 className='text-[39px] text-secondary font-medium home-section-headings w-[68%]'>{bottomSection.heading}</h2>
+                            <h2 className='text-[39px] text-secondary font-semibold home-section-headings w-[68%]'>{bottomSection.heading}</h2>
                             {arrow && <ArrowUpRight color='#FF6035' size={30} className='ml-14' />}
                         </div>
                         {para && <p className='text-secondary font-["Archivo"] max-w-[91%] my-4 opacity-75'>{para}</p>}
@@ -36,6 +36,7 @@ export const ERPSolutionsBottomSection = ({ bottomSection, className, left, blac
                                         <Link href='/' className='w-[80%] py-2 border-b border-[#BABABA] text-secondary font-medium cursor-pointer  home-section-headings px-2 placeholder:text-secondary placeholder:font-medium placeholder:home-section-headings' >
                                             {item}
                                         </Link>
+                                        <input type="input" placeholder={item} className='w-[80%] py-2 border-b border-[#BABABA] text-secondary font-semibold home-section-headings px-2 placeholder:text-secondary placeholder:font-semibold placeholder:home-section-headings' />
                                     </div>
                                 )
                             })

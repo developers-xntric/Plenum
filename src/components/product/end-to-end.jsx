@@ -6,13 +6,13 @@ const EndToEndAI = () => {
         <div className="py-16 font-['Archivo']">
             <div className="2xl:max-w-[1440px] max-w-[90%] mx-auto text-center mb-8">
                 <div>
-                    <h2 className="text-[50px] leading-[35px] font-medium text-gray-900">Momentum AI</h2>
+                    <h2 className="text-[50px] leading-[35px]  text-secondary font-semibold home-section-headings">Momentum AI</h2>
                 </div>
                 <div className="mb-2">
-                    <h3 className="text-[50px] font-medium text-gray-900">Simplifying End-to-End AI Workflows</h3>
+                    <h3 className="text-[50px]  text-secondary font-semibold home-section-headings">Simplifying End-to-End AI Workflows</h3>
                 </div>
                 <div className="p-2 mx-auto max-w-[60%]">
-                    <p className="text-[15px] text-gray-600 leading-tight">
+                    <p className="text-[15px] text-secondary font-['Archivo'] opacity-75 leading-tight">
                         Momentum AI is a unified platform built to automate every stage of the AI lifecycle — from data ingestion to deployment. Designed for enterprise scalability, it streamlines processes and accelerates AI development with powerful automation tools.
                     </p>
                 </div>
@@ -36,7 +36,7 @@ const EndToEndAI = () => {
                         <div className='mb-5'>
                             <Image src={ele.logo || null} alt="logo" width={50} height={50} />
                         </div>
-                        <h3 className={`${ele.bg === "white" ? "text-[#282526]" : "text-[#FFFFFF]"} font-medium text-[20px] mb-4`}>{ele.title}</h3>
+                        <h3 className={`${ele.bg === "white" ? "text-[#282526]" : "text-[#FFFFFF]"} font-bold leading-5 text-[20px] mb-4`}>{ele.title}</h3>
                         <p className={`${ele.bg == "white" ? "text-[#282526]" : "text-[#FFFFFF]"} text-[12px]`}>{ele.para}</p>
                     </div>
                 ))}
