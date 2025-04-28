@@ -34,13 +34,15 @@ export default function NetSuiteCards() {
               Learn More <ArrowRight className="ml-1 h-4 w-4" />
             </Link>
           </div>
-          <Image
-            src="/service/img1.svg"
-            alt="Propertese screenshot"
-            width={2000}
-            height={2000}
-            className=" w-1/2  h-full"
-          />
+          <div className="w-1/2 h-full flex items-end justify-center">
+            <Image
+              src="/service/img1.svg"
+              alt="Propertese screenshot"
+              width={2000}
+              height={2000}
+              className=" w-full h-full object-contain"
+            />
+          </div>
         </div>
         <div className="bg-gray-100 p-6 col-span-1 rounded-sm">
           <div className="flex items-center mb-4">
@@ -72,7 +74,7 @@ export default function NetSuiteCards() {
               src="/service/img2.svg"
               alt="NS AI Assistant screenshot"
               fill
-              className="object-contain object-left"
+              className="object-contain"
             />
           </div>
         </div>
@@ -100,7 +102,7 @@ export default function NetSuiteCards() {
               src="/service/img3.svg"
               alt="NOtitch screenshot"
               fill
-              className="object-contain object-right"
+              className="object-contain "
             />
           </div>
         </div>
