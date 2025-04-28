@@ -1,0 +1,31 @@
+import Image from "next/image"
+
+export default function StartSmallWithAI() {
+    return (
+        <section className=" py-12">
+            <div className="2xl:max-w-[1440px] mx-auto w-[90%]">
+                <div className="text-center mb-8">
+                    <h2 className="text-[50px] leading-[50px] mx-auto max-w-[55%] xl:max-w-[45%] 2xl:max-w-[50%] font-['Archivo'] text-secondary font-medium home-section-headings mb-6">Start Small and Scale Big
+                        with Momentum AI</h2>
+
+                    <p className="max-w-[80%] xl:max-w-[65%] 2xl:max-w-[55%] mx-auto text-secondary font-['Archivo'] opacity-75">
+                        Momentum AI is a powerful cluster technology designed to grow with your business. As your data volume and processing demands increase, Momentum scales effortlessly—offering unmatched flexibility and performance. It supports deployment across leading cloud platforms like Amazon AWS, Google Cloud, IBM Bluemix/Cloud, and Microsoft Azure, as well as on-premises in private clouds or data centers.
+                    </p>
+
+                </div>
+
+                <div className="bg-black overflow-hidden shadow-xl max-w-[85%] mx-auto">
+                    <div className="relative w-full" style={{ height: "610px" }}>
+                        <Image
+                            src="/service/OCF/OCF_ERP.svg"
+                            alt="Oracle Fusion Cloud ERP Dashboard"
+                            fill
+                            className="object-contain"
+                            priority
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+    )
+}
