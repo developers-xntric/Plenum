@@ -15,10 +15,26 @@
 /* Archivo Regular weight */
 @font-face {
     font-family: 'Archivo';
+    src: url('/fonts/Archivo-Light.woff2') format('woff2'),
+        url('/fonts/Archivo-Light.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Archivo';
     src: url('/fonts/Archivo-Regular.woff2') format('woff2'),
         url('/fonts/Archivo-Regular.woff') format('woff');
     font-weight: 500;
-    font-style: normal;
+    font-style: medium;
+}
+
+@font-face {
+    font-family: 'Archivo';
+    src: url('/fonts/Archivo-Medium.woff2') format('woff2'),
+        url('/fonts/Archivo-Medium.woff') format('woff');
+    font-weight: 600;
+    font-style: semibold;
 }
 
 /* Archivo Bold weight */
@@ -33,25 +49,32 @@
 /* ChakraPetch Thin weight */
 @font-face {
     font-family: 'Chakra';
-    src: url('/fonts/ChakraPetch-Light.ttf') format('truetype');
+    src: url('/fonts/ChakraPetch-Thin.ttf') format('truetype');
     font-weight: 100;
-    font-style: normal;
+    font-style: thin;
 }
 
-/* ChakraPetch Regular weight */
 @font-face {
     font-family: 'Chakra';
-    src: url('/fonts/ChakraPetch-Regular.ttf') format('truetype');
+    src: url('/fonts/ChakraPetch-Light.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
 
+
 /* ChakraPetch Bold weight */
+@font-face {
+    font-family: 'Chakra';
+    src: url('/fonts/ChakraPetch-Medium.ttf') format('truetype');
+    font-weight: 600;
+    font-style: semibold;
+}
+
 @font-face {
     font-family: 'Chakra';
     src: url('/fonts/ChakraPetch-Bold.ttf') format('truetype');
     font-weight: 700;
-    font-style: normal;
+    font-style: bold;
 }
 
 @layer utilities {
@@ -60,7 +83,7 @@
     }
 
     .bg-smoke-text-image {
-        background: linear-gradient(#010101, rgba(255, 255, 255, 0.2)), url("/images/smoke.webp");
+        background: linear-gradient(#010101, rgba(255, 255, 255, 0.2)), url("../../public/images/house-ai-product/smoke.webp");
         background-size: contain;
         background-position: left;
         -webkit-text-fill-color: transparent;
@@ -70,7 +93,7 @@
 
     .home-section-headings {
         opacity: 0.8;
-        background: url("/images/house-ai-prodcut/smoke.webp") rgb(0, 0, 0) 0% 0% / 73.53749871253967px 73.53749871253967px repeat;
+        background: url("../../public/images/house-ai-product/smoke.webp") rgb(0, 0, 0) 0% 0% / 73.53749871253967px 73.53749871253967px repeat;
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -78,7 +101,7 @@
 
     .grayish-gradient {
         opacity: 0.4;
-        background: linear-gradient(to bottom, #010101, rgba(255, 255, 255, 0.2)), url("/images/smoke.webp");
+        background: linear-gradient(to bottom, #010101, rgba(255, 255, 255, 0.2)), url("../../public/images/house-ai-product/smoke.webp");
         background-size: contain;
         background-position: left;
         -webkit-text-fill-color: transparent;
@@ -218,71 +241,83 @@
 }
 
 @keyframes arrow-for-top {
-    0%{
+    0% {
         transform: translateY(5px);
     }
-    100%{
+
+    100% {
         transform: translateY(-5px);
     }
 }
-.arrow-for-top{
+
+.arrow-for-top {
     animation: arrow-for-top 1.5s ease infinite;
 }
 
 .glow-effect {
     position: relative;
     display: inline-block;
-  }
+}
 
-  /* Pseudo-element for the moving circular glow */
-  .glow-effect::before {
+/* Pseudo-element for the moving circular glow */
+.glow-effect::before {
     content: '';
     position: absolute;
-    width: 120px; /* Size of the circular glow */
+    width: 120px;
+    /* Size of the circular glow */
     height: 120px;
-    background: radial-gradient(
-      circle,
-      rgba(200, 200, 200, 0.6) 0%, /* Grayish-white center */
-      rgba(16, 16, 16, 0.4) 50%, /* Dark #101010-like */
-      transparent 70% /* Fade out */
-    );
-    border-radius: 50%; /* Circular shape */
+    background: radial-gradient(circle,
+            rgba(200, 200, 200, 0.6) 0%,
+            /* Grayish-white center */
+            rgba(16, 16, 16, 0.4) 50%,
+            /* Dark #101010-like */
+            transparent 70%
+            /* Fade out */
+        );
+    border-radius: 50%;
+    /* Circular shape */
     z-index: -10;
-    filter: blur(20px); /* Soft glow */
+    filter: blur(20px);
+    /* Soft glow */
     animation: moveGlow 6s ease-in-out infinite;
-    transform: translate(-50%, -50%); /* Center the glow */
-  }
+    transform: translate(-50%, -50%);
+    /* Center the glow */
+}
 
-  /* Animation for moving the glow */
-  @keyframes moveGlow {
+/* Animation for moving the glow */
+@keyframes moveGlow {
     0% {
-      top: 20%;
-      left: 10%;
+        top: 20%;
+        left: 10%;
     }
+
     25% {
-      top: 50%;
-      left: 30%;
+        top: 50%;
+        left: 30%;
     }
+
     50% {
-      top: 80%;
-      left: 60%;
+        top: 80%;
+        left: 60%;
     }
+
     75% {
-      top: 50%;
-      left: 80%;
+        top: 50%;
+        left: 80%;
     }
+
     100% {
-      top: 20%;
-      left: 10%;
+        top: 20%;
+        left: 10%;
     }
-  }
+}
 
-  /* Ensure spans are inline and maintain text flow */
-  .char {
+/* Ensure spans are inline and maintain text flow */
+.char {
     display: inline-block;
-  }
+}
 
-  @theme inline {
+@theme inline {
     --radius-sm: calc(var(--radius) - 4px);
     --radius-md: calc(var(--radius) - 2px);
     --radius-lg: var(--radius);
@@ -320,7 +355,7 @@
     --color-sidebar-ring: var(--sidebar-ring);
 }
 
-  .dark {
+.dark {
     --background: oklch(0.141 0.005 285.823);
     --foreground: oklch(0.985 0 0);
     --card: oklch(0.21 0.006 285.885);
@@ -354,11 +389,12 @@
     --sidebar-ring: oklch(0.552 0.016 285.938);
 }
 
-  @layer base {
-  * {
-    @apply border-border outline-ring/50;
+@layer base {
+    * {
+        @apply border-border outline-ring/50;
     }
-  body {
-    @apply bg-background text-foreground;
+
+    body {
+        @apply bg-background text-foreground;
     }
 }

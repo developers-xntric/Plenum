@@ -23,7 +23,7 @@ const servicesData = [
           href="/service/ERP-consulting"
           className="text-[#FF6035] font-['Archivo'] flex items-center font-semibold text-[17px] mt-2 underline"
         >
-          View Service 
+          View Service
           <ArrowUpRight />
         </Link>
       </>
@@ -44,7 +44,7 @@ const servicesData = [
           href="/services/erp-consulting"
           className="text-[#FF6035] font-['Archivo'] flex items-center font-semibold text-[17px] mt-2 underline"
         >
-          View Service 
+          View Service
           <ArrowUpRight />
         </Link>
       </>
@@ -65,7 +65,7 @@ const servicesData = [
           href="/services/erp-consulting"
           className="text-[#FF6035] font-['Archivo'] flex items-center font-semibold text-[17px] mt-2 underline"
         >
-          View Service 
+          View Service
           <ArrowUpRight />
         </Link>
       </>
@@ -86,7 +86,7 @@ const servicesData = [
           href="/services/erp-consulting"
           className="text-[#FF6035] font-['Archivo'] flex items-center font-semibold text-[17px] mt-2 underline"
         >
-          View Service 
+          View Service
           <ArrowUpRight />
         </Link>
       </>
@@ -107,7 +107,7 @@ const servicesData = [
           href="/services/erp-consulting"
           className="text-[#FF6035] font-['Archivo'] flex items-center font-semibold text-[17px] mt-2 underline"
         >
-          View Service 
+          View Service
           <ArrowUpRight />
         </Link>
       </>
@@ -134,8 +134,8 @@ export default function HomeServices() {
 
         <div className="flex flex-col space-y-16">
           {/* UPPER column - Headline */}
-          <div className=" xl:w-[69%] 2xl:w-[65%] relative z-20">
-            <h2 className="text-[55px] leading-[60px] font-medium font-['Archivo'] relative z-20 bg-[linear-gradient(to_right,_#101010,_#9b9999,_#101010,_#9b9999)] bg-clip-text text-transparent">
+          <div className=" xl:w-[80%] 2xl:w-[65%] relative z-20">
+            <h2 className="text-[59.542px] leading-[60px] font-semibold    font-['Archivo'] relative z-20 bg-[linear-gradient(to_right,_#101010,_#9b9999,_#101010,_#9b9999)] bg-clip-text text-transparent">
               Why AI enabled Enterprise with Plenum? With Plenum gain the tools to unlock deeper insights, automate complex workflows
             </h2>
           </div>
@@ -145,10 +145,10 @@ export default function HomeServices() {
             {/* LEFT */}
             <div className="space-y-6 w-full md:w-[80%]">
               <div className="relative font-medium">
-                <h2 className="text-[52px] text-secondary3 opacity-[0.85] font-['Archivo']">
+                <h2 className="text-[57.375px] font-medium text-secondary opacity-[0.8] font-['Archivo'] tracking-tighter">
                   Our
                 </h2>
-                <h2 className="text-[52px] text-secondary3 opacity-[0.85] font-['Archivo'] mt-[-32px]">
+                <h2 className="text-[57.375px] font-medium text-secondary opacity-[0.8] font-['Archivo'] tracking-tighter mt-[-32px]">
                   Services
                 </h2>
               </div>
