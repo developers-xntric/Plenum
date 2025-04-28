@@ -25,7 +25,7 @@ export default function OracleCloudFusionERP() {
                 </p>
             </div>
 
-            <div className="bg-black rounded-lg overflow-hidden shadow-xl">
+            <div className="bg-black  overflow-hidden shadow-xl max-w-[85%] mx-auto">
                 <div className="relative w-full" style={{ height: "610px" }}>
                     <Image
                         src="/service/OCF/OCF_ERP.svg"
