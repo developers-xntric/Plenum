@@ -9,7 +9,7 @@ export default function AISolutions({ title, paragraph, image }) {
                         <div className="2xl:max-w-[1440px] lg:w-[82%] xl:w-[65%] 2xl:w-[50%] mx-auto flex flex-col py-12">
 
                             <div className='relative flex items-center justify-start'>
-                                <h2 className='text-[36px] text-secondary font-medium home-section-headings leading-10 lg:max-w-[85%] xl:max-w-[90%] 2xl:max-w-[90%]'>{title}</h2>
+                                <h2 className='text-[36px] text-secondary font-medium tracking-tighter home-section-headings leading-10 lg:max-w-[85%] xl:max-w-[90%] 2xl:max-w-[90%]'>{title}</h2>
                             </div>
                             <p className='text-secondary font-["Archivo"] lg:max-w-[95%] xl:max-w-[99%] 2xl:max-w-[90%] my-4 opacity-75'>{paragraph}</p>
 
