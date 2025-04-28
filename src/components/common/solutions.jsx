@@ -36,7 +36,6 @@ export const ERPSolutionsBottomSection = ({ bottomSection, className, left, blac
                                         <Link href='/' className='w-[80%] py-2 border-b border-[#BABABA] text-secondary font-medium cursor-pointer  home-section-headings px-2 placeholder:text-secondary placeholder:font-medium placeholder:home-section-headings' >
                                             {item}
                                         </Link>
-                                        <input type="input" placeholder={item} className='w-[80%] py-2 border-b border-[#BABABA] text-secondary font-semibold home-section-headings px-2 placeholder:text-secondary placeholder:font-semibold placeholder:home-section-headings' />
                                     </div>
                                 )
                             })

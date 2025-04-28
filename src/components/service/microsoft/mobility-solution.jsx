@@ -9,10 +9,13 @@ export default function MobilitySolutions({
   heading2,
   para,
 }) {
+  // Check if className includes the word "flex"
+  const includesFlex = className?.includes("flex");
+
   return (
     <section className="py-12 max-w-[90%] 2xl:max-w-[1440px] font-['Archivo'] mx-auto">
       <div className={`mb-8 ${isCenter ? "text-center" : ""}`}>
-        <h2 className="text-2xl md:text-[50px] font-semibold text-secondary home-section-headings leading-[60px]">
+        <h2 className="text-2xl md:text-[50px] font-semibold text-secondary home-section-headings leading-[40px]">
           {heading1 || "Mobility Solutions For"}
         </h2>
         <h2 className="text-2xl md:text-[50px] font-semibold text-secondary home-section-headings mb-4">
@@ -32,7 +35,11 @@ export default function MobilitySolutions({
         {solutions.map((solution, index) => (
           <div
             key={index}
-            className={`bg-white px-4 py-6 rounded-sm shadow-sm border border-gray-100 gap-4 justify-center flex flex-col w-full sm:w-[300px] xl:w-[calc(25%-1rem)] 2xl:w-[calc(25%-1.25rem)] h-[200px]`}
+            className={`bg-white px-4 py-6 rounded-sm shadow-sm border border-gray-100 gap-4 justify-center flex flex-col ${
+              includesFlex
+                ? "w-full sm:w-[300px] xl:w-[calc(25%-1rem)] 2xl:w-[calc(25%-1.25rem)] h-[200px]"
+                : card_className
+            }`}
           >
             <Image
               src={solution.icon || "/placeholder.svg"}
