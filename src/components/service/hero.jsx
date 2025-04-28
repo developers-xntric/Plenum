@@ -2,16 +2,16 @@ import Image from 'next/image'
 import React from 'react'
 import Button from '../common/button'
 
-const ServiceHero = () => {
+const ServiceHero = ({ bgImage, isLogo=true}) => {
   return (
-    <div className='md:h-screen bg-cover bg-no-repeat overflow-x-hidden' style={{ backgroundImage: "url('/service/sp_herobg.webp')" }}>
+    <div className='md:h-screen bg-cover bg-no-repeat bg-center overflow-x-hidden' style={{ backgroundImage: `url(${bgImage})` }}>
       {/* Wrapper */}
       <div className="2xl:max-w-[1440px] h-full w-[90%] mx-auto space-y-20 py-16 xl:pt-36">
 
         {/* Image Div */}
-        <div className='xl:w-[200px] xl:h-[250px] w-[130px] h-[180px] absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2'>
+       {isLogo && <div className='xl:w-[200px] xl:h-[250px] w-[130px] h-[180px] absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2'>
           <Image src="/service/sp_hero.svg" alt='Plenum AI Logo' width={1500} height={1500} className='w-full h-full object-contain' />
-        </div>
+        </div>}
 
         <div className='w-full h-full flex mt-10 xl:mt-0'>
           {/* Centered Text Below Image */}

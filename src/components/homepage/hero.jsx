@@ -104,7 +104,7 @@ const Hero = () => {
                         })
                     }
                 </div>
-                <div className='w-full  bg-gradient-to-l from-stone-950/10 via-white/10 to-stone-950/10 py-3 xl:py-3  flex justify-center items-center gap-10'>
+                <div className='w-full bg-[#1a1a1a] py-3 flex justify-center items-center gap-10'>
                     <p className='font-["Chakra"] font-normal text-base xl:text-lg text-white' >Ready to experience hyperperformance?</p>
                     <div className='bg-gradient-to-l p-[0.7px] xl:p-[0.5px]  from-red-500 via-orange-700/80 to-red-300 rounded-[8px]'>
                         <Button className='font-["Archivo"] bg-zinc-900 xl:px-8 px-8 xl:py-3 py-2 text-white font-primary xl:text-[10px] text-[14px]' text="Lets Talk" link='/' />

@@ -213,7 +213,7 @@ const Navbar = () => {
                                 )}
                             </li>
                             <li>
-                                <Link href={"/"}>Products</Link>
+                                <Link href={"/product"}>Products</Link>
                             </li>
                             <li>
                                 <Link href={"/"}>Industries</Link>
