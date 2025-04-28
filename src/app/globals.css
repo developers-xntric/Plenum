@@ -83,7 +83,7 @@
     }
 
     .bg-smoke-text-image {
-        background: linear-gradient(#010101, rgba(255, 255, 255, 0.2)), url("/images/smoke.webp");
+        background: linear-gradient(#010101, rgba(255, 255, 255, 0.2)), url("../../public/images/house-ai-product/smoke.webp");
         background-size: contain;
         background-position: left;
         -webkit-text-fill-color: transparent;
@@ -93,7 +93,7 @@
 
     .home-section-headings {
         opacity: 0.8;
-        background: url("/images/house-ai-prodcut/smoke.webp") rgb(0, 0, 0) 0% 0% / 73.53749871253967px 73.53749871253967px repeat;
+        background: url("../../public/images/house-ai-product/smoke.webp") rgb(0, 0, 0) 0% 0% / 73.53749871253967px 73.53749871253967px repeat;
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -101,7 +101,7 @@
 
     .grayish-gradient {
         opacity: 0.4;
-        background: linear-gradient(to bottom, #010101, rgba(255, 255, 255, 0.2)), url("/images/smoke.webp");
+        background: linear-gradient(to bottom, #010101, rgba(255, 255, 255, 0.2)), url("../../public/images/house-ai-product/smoke.webp");
         background-size: contain;
         background-position: left;
         -webkit-text-fill-color: transparent;

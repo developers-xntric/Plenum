@@ -84,7 +84,7 @@ const Hero = () => {
                     <div className="w-[680px] p-[0.8px] h-14 bg-white/5 rounded-xl   inline-flex justify-start items-center">
                         <div className="flex px-4 rounded-xl justify-start items-center gap-2 bg-zinc-900 w-full h-full">
                             <div className="w-2 h-2 bg-red-500 rounded-full" />
-                            <div className="text-white/50 text-sm xl:text-[15.5px] font-semibold font-['Archivo']">What process in your business you would like to enhance with intelligence  </div>
+                            <div className="text-white/50 text-sm xl:text-[15.5px] font-semibold font-['Archivo']">What process in your business you would like to enhance with intelligence </div>
                             <div className="w-2.5 h-7 relative">
                                 <span className="text-lg text-primary animate-blink font-semibold">
                                     ?
