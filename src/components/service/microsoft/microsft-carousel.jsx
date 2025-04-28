@@ -32,7 +32,7 @@ export default function MicrosoftCarousel({ MicrosoftCarouselData, title, para }
   return (
     <section className="w-full py-12 md:py-16 lg:py-20 overflow-hidden">
       <div className="text-center mb-10 md:mb-16 space-y-5">
-        <h2 className="text-[50px] leading-[55px] max-w-[70%] 2xl:max-w-[60%] mx-auto font-['Archivo'] text-secondary font-medium home-section-headings">
+        <h2 className="text-[50px] leading-[55px] max-w-[70%] 2xl:max-w-[60%] mx-auto font-['Archivo'] text-secondary font-semibold home-section-headings">
           {title}
         </h2>
         <p className="text-secondary font-['Archivo'] opacity-75 lg:max-w-[70%] xl:max-w-[60%] 2xl:max-w-[52%]: mx-auto">

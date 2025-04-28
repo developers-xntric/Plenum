@@ -50,7 +50,7 @@ export default function Capabilities() {
     <section className="py-16 md:py-24 bg-white">
       <div className="2xl:max-w-[1440px] w-[90%] mx-auto ">
         <div className="text-center mb-12 md:mb-16 space-y-6">
-          <h2 className="text-[50px] leading-[55px] font-['Archivo'] text-secondary font-medium home-section-headings">Core Capabilities</h2>
+          <h2 className="text-[50px] leading-[55px] font-['Archivo'] text-secondary font-semibold home-section-headings">Core Capabilities</h2>
           <p className="text-secondary font-['Archivo'] opacity-75 xl:max-w-[52%] max-w-[50%] 2xl:max-w-[40%] mx-auto">
             Dynamics 365 Business Central encompasses a wide range of core capabilities to support your business
             operations
@@ -70,7 +70,7 @@ export default function Capabilities() {
                 />
               </div>
               <div className="max-w-[70%]">
-                <h3 className="text-[22px] font-medium text-secondary text-center mb-2 xl:max-w-[60%] mx-auto leading-7 ">{capability.title}</h3>
+                <h3 className="text-[22px] font-semibold text-secondary text-center mb-2 xl:max-w-[60%] mx-auto leading-7 ">{capability.title}</h3>
                 <p className="text-secondary font-['Archivo'] opacity-75 text-center text-sm">{capability.description}</p>
               </div>
             </div>

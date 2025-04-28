@@ -11,7 +11,7 @@ export default function ServicesList({ serviceList }) {
                     {serviceList.map((service, _index) => (
                         <div key={service.id} className="relative ">
                             <div className="flex items-center mb-6">
-                                <div className="flex items-center justify-center w-10 h-[60px] rounded-[208px] border-[0.90px] border-secondary text-lg font-medium">
+                                <div className="flex items-center justify-center w-10 h-[60px] rounded-[208px] border-[0.90px] border-secondary text-lg font-semibold">
                                     <h1 className="text-secondary text-[24px] font-['Archivo']">{service.id}</h1>
                                 </div>
                                 {/* THE BORDER LINE */}
@@ -39,7 +39,7 @@ export default function ServicesList({ serviceList }) {
                                         {/* TITLE */}
                                         <h1>
                                             {service.title.map((title, i) => (
-                                                <p key={i} className="text-3xl font-medium font-['Archivo']">
+                                                <p key={i} className="text-3xl text-secondary font-semibold font-['Archivo']">
                                                     {title}
                                                 </p>
                                             ))}
@@ -53,7 +53,7 @@ export default function ServicesList({ serviceList }) {
                                         {service.names.map((link, i) => (
                                             <div
                                                 key={i}
-                                                className="flex items-center font-medium font-['Archivo'] w-fit transition-colors duration-300 text-[#101010]"
+                                                className="flex items-center font-semibold font-['Archivo'] w-fit transition-colors duration-300 text-[#101010]"
                                             >
                                                 <ArrowRight className="h-4 w-4 mr-2 font-bold text-[#FF6035]" />
                                                 <span>{link}</span>

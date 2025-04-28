@@ -40,7 +40,7 @@ export default function Footer() {
 
             <div className="grid grid-cols-2 gap-x-8 gap-y-2 ">
               <div>
-                <h3 className="text-[#767676] mb-4 text-lg font-semibold font-['Archivo']">Product</h3>
+                <h3 className="text-[#767676] mb-4 text-lg font-bold font-['Archivo']">Product</h3>
                 <ul className="space-y-1 font-normal text-base font-['Archivo']">
                   <li>
                     <Link href="#" className="hover:text-gray-300">
@@ -61,7 +61,7 @@ export default function Footer() {
               </div>
 
               <div>
-                <h3 className="text-[#767676] mb-4 text-lg font-semibold font-['Archivo']">Company</h3>
+                <h3 className="text-[#767676] mb-4 text-lg font-bold font-['Archivo']">Company</h3>
                 <ul className="space-y-1 font-normal text-base font-['Archivo']">
                   <li>
                     <Link href="#" className="hover:text-gray-300">
@@ -99,7 +99,7 @@ export default function Footer() {
           <div className=" mt-[9%] ">
             <div className="flex  gap-x-8 gap-y-2">
               <div>
-                <h3 className="text-[#767676] mb-4 text-lg font-semibold font-['Archivo']">Legal</h3>
+                <h3 className="text-[#767676] mb-4 text-lg font-bold font-['Archivo']">Legal</h3>
                 <ul className="space-y-1 text-base font-['Archivo']">
                   <li>
                     <Link href="#" className="hover:text-gray-300">
@@ -120,7 +120,7 @@ export default function Footer() {
               </div>
 
               <div>
-                <h3 className="text-[#767676] mb-4 text-lg font-semibold font-['Archivo']">Follow Us</h3>
+                <h3 className="text-[#767676] mb-4 text-lg font-bold font-['Archivo']">Follow Us</h3>
                 <ul className="space-y-1 text-base font-['Archivo']">
                   <li>
                     <Link href="#" className="hover:text-gray-300">
