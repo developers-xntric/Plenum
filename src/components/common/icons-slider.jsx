@@ -8,10 +8,14 @@ export default function IconsSlider({ text, brand_icons }) {
     return (
         <div className="relative overflow-hidden flex items-center">
             {/* 1st Text */}
-            <div className="bg-[#F4F7FF] z-20 w-[220px]">
+            <div className="bg-[#F4F7FF] relative z-20 w-[220px]">
                 <h2 className="text-secondary h-[105px] opacity-70 w-[150px] text-base leading-[20px] font-normal font-['Archivo'] flex items-center">
                     {text}
                 </h2>
+
+                {/* SHADOW */}
+                <div className="absolute -right-20 top-0 h-full w-24 bg-gradient-to-r from-[#F4F7FF] via-[#F4F7FF] to-transparent z-20 pointer-events-none" />
+
             </div>
 
             {/* Slider */}
@@ -20,7 +24,7 @@ export default function IconsSlider({ text, brand_icons }) {
                 initial={{ x: 0 }}
                 animate={{ x: "-100%" }}
                 transition={{
-                    duration: 15,
+                    duration: 35,
                     repeat: Infinity,
                     ease: "linear",
                 }}

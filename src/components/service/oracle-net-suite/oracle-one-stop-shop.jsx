@@ -32,7 +32,7 @@ export default function OracleOneStopShop() {
                             <button
                                 key={tab}
                                 onClick={() => setActiveTab(tab)}
-                                className={`text-[22px] px-20 w-full cursor-pointer font-['Archivo'] text-secondary font-medium home-section-headings ${activeTab === tab
+                                className={`text-[22px] px-20 w-full cursor-pointer pb-4 leading-6 font-['Archivo'] text-secondary font-medium home-section-headings ${activeTab === tab
                                     ? 'text-[#FF6035] border-b-2 border-[#FF6035]'
                                     : 'text-gray-400 '
                                     } focus:outline-none`}

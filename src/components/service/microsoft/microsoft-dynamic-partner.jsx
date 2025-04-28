@@ -27,12 +27,12 @@ export default function MicrosoftDynamicPartner() {
 
         <div>
           {/* Tabs Section */}
-          <div className="flex justify-center items-center mb-10 border-b-2 w-full max-w-[95%] mx-auto">
+          <div className="flex justify-center items-center mb-10 border-b-2 w-full max-w-[90%] mx-auto">
             {tabs.map((tab) => (
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}
-                className={`text-[22px] w-full cursor-pointer font-['Archivo'] text-secondary font-medium home-section-headings ${activeTab === tab
+                className={`text-[22px] w-full cursor-pointer pb-4 font-['Archivo'] text-secondary font-medium home-section-headings ${activeTab === tab
                     ? 'text-[#FF6035] border-b-2 border-[#FF6035]'
                     : 'text-gray-400 '
                   } focus:outline-none`}
@@ -43,7 +43,7 @@ export default function MicrosoftDynamicPartner() {
           </div>
 
           {/* Tab Content */}
-          <div className="w-full h-[580px] mx-auto">
+          <div className="w-full h-[60vh]  xl:h-[580px] mx-auto">
             {activeTab === 'Dynamics ERP' && (
               <div className="relative w-full h-full">
                 <Image
@@ -68,7 +68,7 @@ export default function MicrosoftDynamicPartner() {
                     alt="Analytics Dashboard"
                     width={1000}
                     height={1000}
-                    className="object-cover rounded-lg"
+                    className="object-cover "
                   />
                 </div>
 
