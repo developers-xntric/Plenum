@@ -9,7 +9,7 @@ export default function MicrosoftDynamic({ heading1, heading2, para, services, b
                     <h1 className={`text-2xl font-medium opacity-85  ${bgColor === "black" ? "text-white" : "home-section-headings"} md:text-3xl lg:text-[50px]`}>
                         {heading1}
                     </h1>
-                    <h1 className={`text-2xl md:text-3xl lg:text-[50px]  font-medium  ${bgColor === "black" ? "text-white" : "home-section-headings"} mb-4`}>
+                    <h1 className={`text-2xl md:text-3xl lg:text-[50px]  font-semibold  ${bgColor === "black" ? "text-white" : "home-section-headings"} mb-4`}>
                         {heading2}
                     </h1>
                     <p className={`text-sm md:text-base opacity-60 max-w-2xl mx-auto tracking-[1px] ${paraClass}`}>
@@ -29,7 +29,7 @@ export default function MicrosoftDynamic({ heading1, heading2, para, services, b
                                     className="w-full h-full object-contain"
                                 />
                             </div>
-                            <h3 className={`${gridcol ? 'w-full' : 'w-[60%]'}  ${isCenter && 'mx-auto'} text-base md:text-[28px] font-medium ${bgColor === "black" ? "text-white" : "home-section-headings"} mb-[18px] leading-8`}>{service.title}</h3>
+                            <h3 className={`${gridcol ? 'w-full' : 'w-[60%]'}  ${isCenter && 'mx-auto'} text-base md:text-[28px] font-semibold ${bgColor === "black" ? "text-white" : "home-section-headings"} mb-[18px] leading-8`}>{service.title}</h3>
                             <p className={`"text-xs md:text-[15px] opacity-60 tracking-[1px]  ${paraClass} `}>
                                 {service.description}
                             </p>

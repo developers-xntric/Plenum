@@ -14,9 +14,9 @@ export default function ERPServicesEast() {
       <div className="2xl:max-w-[1440px] w-[90%] mx-auto space-y-16">
         {/* Headings */}
         <div className="space-y-6">
-          <h1 className="text-[50px] leading-[55px] font-['Archivo'] text-secondary font-medium home-section-headings">
+          <h1 className="text-[50px] leading-[55px] font-['Archivo'] text-secondary font-semibold home-section-headings">
             Plenum ERP Services{' '}
-            <span className="block text-[50px] leading-[55px] font-['Archivo'] text-secondary font-medium">
+            <span className="block text-[50px] leading-[55px] font-['Archivo'] text-secondary font-semibold">
               in Middle East
             </span>
           </h1>
@@ -33,7 +33,7 @@ export default function ERPServicesEast() {
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}
-                className={`text-[22px] w-full cursor-pointer pb-4 font-['Archivo'] text-secondary font-medium home-section-headings ${
+                className={`text-[22px] w-full cursor-pointer pb-4 font-['Archivo'] text-secondary font-semibold home-section-headings ${
                   activeTab === tab
                     ? 'text-[#FF6035] border-b-2 border-[#FF6035]'
                     : 'text-gray-400 '
@@ -63,7 +63,7 @@ export default function ERPServicesEast() {
 
             {activeTab === 'Saudi Arabia' && (
               <div className="flex flex-col items-center justify-center h-full bg-gray-100">
-                <h2 className="text-3xl font-['Archivo'] text-secondary font-medium">
+                <h2 className="text-3xl font-['Archivo'] text-secondary font-semibold">
                   ERP Services in Saudi Arabia
                 </h2>
                 <p className="text-secondary font-['Archivo'] opacity-75 mt-4 max-w-md">
@@ -74,7 +74,7 @@ export default function ERPServicesEast() {
 
             {activeTab === 'Qatar' && (
               <div className="flex flex-col items-center justify-center h-full bg-gray-100">
-                <h2 className="text-3xl font-['Archivo'] text-secondary font-medium">
+                <h2 className="text-3xl font-['Archivo'] text-secondary font-semibold">
                   ERP Services in Qatar
                 </h2>
                 <p className="text-secondary font-['Archivo'] opacity-75 mt-4 max-w-md">

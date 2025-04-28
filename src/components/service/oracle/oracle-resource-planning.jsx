@@ -14,10 +14,10 @@ export default function OracleResourcePlanning() {
             <div className="2xl:max-w-[1440px] w-[90%] mx-auto space-y-16">
                 {/* Headings */}
                 <div className="space-y-6">
-                    <h1 className="text-[50px] leading-[55px] font-['Archivo'] text-secondary font-medium home-section-headings">
+                    <h1 className="text-[50px] leading-[55px] font-['Archivo'] text-secondary font-semibold home-section-headings">
                         Oracle Fusion Cloud Enterprise
 
-                        <span className="block text-[50px] leading-[55px] font-['Archivo'] text-secondary font-medium">
+                        <span className="block text-[50px] leading-[55px] font-['Archivo'] text-secondary font-semibold">
                             Resource Planning
                         </span>
                     </h1>
@@ -33,7 +33,7 @@ export default function OracleResourcePlanning() {
                             <button
                                 key={tab}
                                 onClick={() => setActiveTab(tab)}
-                                className={`text-[22px] w-full cursor-pointer pb-4 font-['Archivo'] text-secondary font-medium home-section-headings ${activeTab === tab
+                                className={`text-[22px] w-full cursor-pointer pb-4 font-['Archivo'] text-secondary font-semibold home-section-headings ${activeTab === tab
                                     ? 'text-[#FF6035] border-b-2 border-[#FF6035]'
                                     : 'text-gray-400 '
                                     } focus:outline-none`}
@@ -64,17 +64,17 @@ export default function OracleResourcePlanning() {
                                     {/* Content Section */}
                                     <div className="flex flex-col justify-center space-y-6">
                                         <div className="space-y-3 max-w-[60%]">
-                                            <h2 className="text-[28px] font-['Archivo'] leading-8 text-secondary font-medium home-section-headings text-start">
+                                            <h2 className="text-[28px] font-['Archivo'] leading-8 text-secondary font-semibold home-section-headings text-start">
                                                 Get a clear financial picture to make better decisions
                                             </h2>
-                                            <p className=" text-left text-secondary font-['Archivo'] opacity-75 font-medium">
+                                            <p className=" text-left text-secondary font-['Archivo'] opacity-75 font-semibold">
                                                 Oracle Financial gives you a complete view of your financial position and results so you can respond
                                                 quickly to an ever-changing business environment.
                                             </p>
                                         </div>
 
                                         <div className="space-y-4">
-                                            <h3 className="text-xl font-medium text-start ">Features</h3>
+                                            <h3 className="text-xl font-semibold text-start ">Features</h3>
                                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2">
                                                 <div className="space-y-2 text-secondary font-['Archivo'] opacity-75">
                                                     <div className="flex items-start gap-2">
@@ -134,7 +134,7 @@ export default function OracleResourcePlanning() {
 
                                 {/* Right Section - Text */}
                                 <div className="w-full md:w-1/2 p-4 space-y-4">
-                                    <h1 className="text-3xl  text-start lg:max-w-[80%] 2xl:max-w-[60%] font-['Archivo'] text-secondary font-medium home-section-headings">
+                                    <h1 className="text-3xl  text-start lg:max-w-[80%] 2xl:max-w-[60%] font-['Archivo'] text-secondary font-semibold home-section-headings">
                                         Dynamics 365 CE/CRM solutions by Plenum
                                     </h1>
                                     <p className="text-secondary text-start font-['Archivo'] opacity-75 w-[45% xl:max-w-[85%] ">
@@ -146,7 +146,7 @@ export default function OracleResourcePlanning() {
 
                         {activeTab === 'Procurement' && (
                             <div className="flex flex-col items-center justify-center h-full bg-gray-100">
-                                <h2 className="text-3xl font-['Archivo'] text-secondary font-medium">
+                                <h2 className="text-3xl font-['Archivo'] text-secondary font-semibold">
                                     ERP Services in Qatar
                                 </h2>
                                 <p className="text-secondary font-['Archivo'] opacity-75 mt-4 max-w-md">
@@ -157,7 +157,7 @@ export default function OracleResourcePlanning() {
 
                         {activeTab === 'ERP Analytics' && (
                             <div className="flex flex-col items-center justify-center h-full bg-gray-100">
-                                <h2 className="text-3xl font-['Archivo'] text-secondary font-medium">
+                                <h2 className="text-3xl font-['Archivo'] text-secondary font-semibold">
                                     ERP Services in Qatar
                                 </h2>
                                 <p className="text-secondary font-['Archivo'] opacity-75 mt-4 max-w-md">

@@ -4,8 +4,8 @@ export default function Finance_Opearations_Service() {
     return (
         <section className="py-12 lg:px-16 2xl:max-w-[1440px] font-['Archivo'] max-w-[90%] mx-auto">
             <div className="text-center mb-8 md:mb-12">
-                <h2 className="text-2xl md:text-[50px] text-secondary font-medium home-section-headings leading-[40px]">Impact of</h2>
-                <h2 className="text-2xl md:text-[50px] text-secondary font-medium home-section-headings mb-4">Dynamics 365 Finance and Operations</h2>
+                <h2 className="text-2xl md:text-[50px] text-secondary font-semibold home-section-headings leading-[40px]">Impact of</h2>
+                <h2 className="text-2xl md:text-[50px] text-secondary font-semibold home-section-headings mb-4">Dynamics 365 Finance and Operations</h2>
                 <p className="text-[15px] text-[#101010] opacity-60 max-w-xl mx-auto">
                     Explore our latest insights for insights in design, workflow, and innovation. Stay updated with fresh
                     perspectives in the industry world.
@@ -24,7 +24,7 @@ export default function Finance_Opearations_Service() {
                                 className="w-8 h-8"
                             />
                             <div className="">
-                                <h3 className="max-w-[70%] text-[28px] text-secondary font-medium home-section-headings mb-4 leading-[30px]">{item.title}</h3>
+                                <h3 className="max-w-[70%] text-[28px] text-secondary font-semibold home-section-headings mb-4 leading-[30px]">{item.title}</h3>
                                 <p className="text-[16px] opacity-60 text-[#101010]">{item.description}</p>
                             </div>
                         </div>

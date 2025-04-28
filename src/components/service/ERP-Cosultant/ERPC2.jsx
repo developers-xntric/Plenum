@@ -11,7 +11,7 @@ const ERPC2 = ({ heading, para }) => {
                     {/* Part 1 Left */}
                     <div className='w-1/2 space-y-8 relative bottom-8'>
                         <div className='w-[539px] flex flex-col gap-12'>
-                            <h1 className='md:text-[35px] xl:text-[48px] font-["Archivo"] md:leading-10 xl:leading-[52px] flex flex-col text-secondary font-medium home-section-headings'>Smart ERP <span>Solutions</span></h1>
+                            <h1 className='md:text-[35px] xl:text-[48px] font-["Archivo"] md:leading-10 xl:leading-[52px] flex flex-col text-secondary font-semibold home-section-headings'>Smart ERP <span>Solutions</span></h1>
                             <p className='text-secondary font-["Archivo"] opacity-75 font-normal md:text-[14px] xl:text-[18px]'>{para}</p>
                             <div className='flex gap-4'>
                                 <Button text={"Let's Talk"} link={"/contact"} className={"px-10 py-2.5 bg-primary text-white"} />

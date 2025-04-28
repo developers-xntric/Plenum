@@ -8,7 +8,7 @@ export default function TestimonialCard({ quote, author, position, socialLink })
         </blockquote>
         <div className="flex items-center justify-between">
           <div className="-space-y-3">
-            <p className="leading-[55px] font-['Archivo'] text-[20px] text-secondary font-medium home-section-headings">{author}</p>
+            <p className="leading-[55px] font-['Archivo'] text-[20px] text-secondary font-semibold home-section-headings">{author}</p>
             <p className="text-sm text-secondary font-['Archivo'] opacity-75">{position}</p>
           </div>
           <Link href={socialLink} target="_blank" rel="noopener noreferrer">
