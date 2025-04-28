@@ -2,10 +2,10 @@ import Image from "next/image"
 
 export default function StartSmallWithAI() {
     return (
-        <section className=" py-12">
+        <section className=" py-16">
             <div className="2xl:max-w-[1440px] mx-auto w-[90%]">
                 <div className="text-center mb-8">
-                    <h2 className="text-[50px] leading-[50px] mx-auto max-w-[55%] xl:max-w-[45%] 2xl:max-w-[50%] font-['Archivo'] text-secondary font-medium home-section-headings mb-6">Start Small and Scale Big
+                    <h2 className="text-[50px] leading-[50px] mx-auto max-w-[55%] xl:max-w-[45%] font-['Archivo'] text-secondary font-medium home-section-headings mb-6">Start Small and Scale Big
                         with Momentum AI</h2>
 
                     <p className="max-w-[80%] xl:max-w-[65%] 2xl:max-w-[55%] mx-auto text-secondary font-['Archivo'] opacity-75">

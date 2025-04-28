@@ -6,7 +6,7 @@ export default function MicrosoftDynamic({ heading1, heading2, para, services, b
         <main className={`flex flex-col items-center font-['Archivo'] justify-center py-16 ${bgColor === "black" ? "bg-[#282526] text-white" : "bg-[#EFEFEF]"} `}>
             <div className="2xl:max-w-[1440px] max-w-[90%] mx-auto">
                 <div className="text-center mb-8 md:mb-12">
-                    <h1 className={`text-2xl font-medium  ${bgColor === "black" ? "text-white" : "home-section-headings"} md:text-3xl lg:text-[50px]`}>
+                    <h1 className={`text-2xl font-medium opacity-85  ${bgColor === "black" ? "text-white" : "home-section-headings"} md:text-3xl lg:text-[50px]`}>
                         {heading1}
                     </h1>
                     <h1 className={`text-2xl md:text-3xl lg:text-[50px]  font-medium  ${bgColor === "black" ? "text-white" : "home-section-headings"} mb-4`}>
