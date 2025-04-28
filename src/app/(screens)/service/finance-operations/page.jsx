@@ -1,4 +1,3 @@
-import { ERPSolutionsBottomSection } from '@/components/common/solutions';
 import CaseStudies from '@/components/homepage/case-studies';
 import Testimonials from '@/components/homepage/testimonial';
 import FaoDynamicOpearation from '@/components/service/finance-and-opearations/fao-dynamic-opearation';
@@ -11,6 +10,7 @@ import { testimonials } from '@/data/home-testimonials';
 import ArticleSlider from "@/components/common/article-slider";
 import { Blog } from '@/components/homepage/blog';
 import { cardData } from '@/data/home-blog';
+import { ERPAccordin } from '@/components/common/accordinService';
 
 const FinanceOpearations = () => {
     return (
@@ -23,7 +23,7 @@ const FinanceOpearations = () => {
                 button_text="Connect with our Experts"
                 isSlider={true}
             />
-            <ERPSolutionsBottomSection para='We offer robust ERP solutions through Microsoft Dynamics. These solutions are designed to automate financial processes, optimize supply chains, and enhance customer relationship management.' arrow={true} className='flex justify-center items-center gap-5' bottomSection={fao_service} left={true} blackSection={fao_service_black} />
+            <ERPAccordin  className='flex justify-center items-center gap-20' bottomSection={fao_service} left={true} blackSection={fao_service_black} />
             <FaoDynamicOpearation />
             <div className='py-8'>
                 <Finance_Opearations_Service />

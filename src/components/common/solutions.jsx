@@ -2,6 +2,7 @@ import React from 'react'
 import Button from './button'
 import Image from 'next/image'
 import { ArrowUpRight } from 'lucide-react'
+import Link from 'next/link'
 
 
 const ERPSolutions = ({ blackSection }) => {
@@ -32,7 +33,9 @@ export const ERPSolutionsBottomSection = ({ bottomSection, className, left, blac
                             bottomSection.Input.map((item, index) => {
                                 return (
                                     <div key={index} className='flex items-center gap-2 mt-8'>
-                                        <input type="input" placeholder={item} className='w-[80%] py-2 border-b border-[#BABABA] text-secondary font-medium home-section-headings px-2 placeholder:text-secondary placeholder:font-medium placeholder:home-section-headings' />
+                                        <Link href='/' className='w-[80%] py-2 border-b border-[#BABABA] text-secondary font-medium cursor-pointer  home-section-headings px-2 placeholder:text-secondary placeholder:font-medium placeholder:home-section-headings' >
+                                            {item}
+                                        </Link>
                                     </div>
                                 )
                             })
