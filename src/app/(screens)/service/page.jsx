@@ -6,7 +6,6 @@ import ServicesList from '@/components/service/services-list'
 import React from 'react'
 import { ServiceList } from "@/data/service-list";
 import ServiceContact from '@/components/service/service-contact';
-import NetSuiteCards from '@/components/service/oracle-net-suite/netsuite-cards'
 
 const Service = () => {
     return (
@@ -30,7 +29,6 @@ const Service = () => {
                 isVideo={true}
             />
             <ServiceContact />
-            <NetSuiteCards />
         </div>
     )
 }

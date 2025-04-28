@@ -28,12 +28,12 @@ export default function ERPServicesEast() {
 
         <div>
           {/* Tabs Section */}
-          <div className="flex justify-center items-center gap-52 mb-5 border-b-2 w-full">
+          <div className="flex justify-center items-center gap-52 mb-5 border-b-2 ull lg:max-w-[95%] 2xl:max-w-[80%] mx-auto">
             {tabs.map((tab) => (
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}
-                className={`text-[22px] w-full cursor-pointer font-['Archivo'] text-secondary font-medium home-section-headings ${
+                className={`text-[22px] w-full cursor-pointer pb-4 font-['Archivo'] text-secondary font-medium home-section-headings ${
                   activeTab === tab
                     ? 'text-[#FF6035] border-b-2 border-[#FF6035]'
                     : 'text-gray-400 '
@@ -45,7 +45,7 @@ export default function ERPServicesEast() {
           </div>
 
           {/* Tab Content */}
-          <div className="w-full h-[580px] mx-auto">
+          <div className="w-full  h-[60vh]  xl:h-[580px] lg:max-w-[95%] 2xl:max-w-[80%] mx-auto">
             {activeTab === 'United Arab Emirates' && (
               <div className="relative w-full h-full">
                 <Image
@@ -55,7 +55,7 @@ export default function ERPServicesEast() {
                   objectFit="cover"
                   className=""
                 />
-                <button className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-orange-500 text-white rounded-full w-24 h-24 flex items-center justify-center text-lg cursor-pointer font-['Archivo']">
+                <button className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-primary text-white rounded-full w-24 h-24 flex items-center justify-center text-lg cursor-pointer font-['Archivo']">
                   Play
                 </button>
               </div>
