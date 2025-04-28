@@ -17,7 +17,7 @@ const New_Service_Inner_Hero = ({ heading, para, is_space_in_image = true, image
                         {/* Paragraph */}
                         <p className='text-secondary font-normal md:text-[14px] xl:text-[18px] opacity-60 w-[70%]'>{para}</p>
                         {/* Button */}
-                        <Button text={button_text || "Let's Talk"} link={"/contact"} className={button_className ? button_className : "px-10 py-2 bg-primary text-white"} />
+                        <Button text={button_text || "Let's Talk"} link={"/contact"} className={button_className ? button_className : "px-10 py-2.5 bg-primary text-white"} />
                     </div>
                     {/* Right Side Image */}
                     <div className={`${image_className ? image_className : "md:w-[600px] md:h-[400px] xl:w-[813px] xl:h-[663px]"} ${is_space_in_image ? "" : "relative left-[5.55%]"}`}>

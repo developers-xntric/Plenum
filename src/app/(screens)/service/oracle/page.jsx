@@ -30,9 +30,7 @@ const Oracle = () => {
                         text={"Trusted by world's most exciting brands"}
                         brand_icons={service_brand_icons} />
                 </div>
-                <div className='max-w-full 2xl:max-w-[1440px] mx-auto '>
-                    <ERPSolutionsBottomSection para='Watch this on-demand webinar to discover how AI can drive real business outcomes and prepare your organization for the future of finance. Make AI your competitive edge.' arrow={true} className='flex justify-center items-center gap-5' bottomSection={oracle_service} left={true} blackSection={oracle_service_black} />
-                </div>
+                <ERPSolutionsBottomSection para='Watch this on-demand webinar to discover how AI can drive real business outcomes and prepare your organization for the future of finance. Make AI your competitive edge.' arrow={true} className='flex justify-center items-center gap-5' bottomSection={oracle_service} left={true} blackSection={oracle_service_black} />
                 <OracleResourcePlanning />
                 <div className='py-8'>
                     <Finance_Opearations_Service />

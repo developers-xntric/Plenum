@@ -24,9 +24,7 @@ const BuisnessCentral = () => {
                 button_text="Connect with our Experts"
                 isSlider={true}
             />
-            <div className='max-w-full 2xl:max-w-[1440px] mx-auto '>
-                <ERPSolutionsBottomSection className='flex justify-center items-center gap-5' bottomSection={bc_service} left={true} blackSection={bc_service_black} />
-            </div>
+            <ERPSolutionsBottomSection className='flex justify-center items-center gap-5' bottomSection={bc_service} left={true} blackSection={bc_service_black} />
             <MobilitySolutions
                 card_className={"w-[300px] h-[200px]"}
                 className={"flex flex-wrap gap-10 justify-center"}

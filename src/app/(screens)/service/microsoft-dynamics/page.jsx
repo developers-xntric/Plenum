@@ -45,9 +45,7 @@ const MicrosoftDynamics = () => {
             <MicrosoftCarousel MicrosoftCarouselData={MicrosoftCarouselData} title={"Connect Your Applications With Microsoft Dynamics"} para={"Plenum provides a smart approach to integration and helps you transform the way you work. Seamlessly connect your apps with Microsoft Dynamics to save time and effort and increase productivity"} />
             <MobilitySolutions className={"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4"} solutions={md_solutions} />
             <MicrosoftPartner />
-            <div className='max-w-full 2xl:max-w-[1440px] mx-auto '>
-                <ERPSolutionsBottomSection className='flex flex-row-reverse justify-center items-center gap-20' bottomSection={md_service} left={false} blackSection={md_service_black} />
-            </div>
+            <ERPSolutionsBottomSection className='flex flex-row-reverse justify-center items-center gap-20' bottomSection={md_service} left={false} blackSection={md_service_black} />
             <div className='pt-32 pb-20'>
                 <PinkSection
                     heading={"Ready To Supercharge Your AI Workflow?"}

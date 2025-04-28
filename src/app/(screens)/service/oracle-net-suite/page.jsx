@@ -23,9 +23,7 @@ const OracleNetSuite = () => {
                 image_className="md:w-[500px] md:h-[300px] xl:w-[528.08px] xl:h-[400px]"
                 button_text="Connect with our Experts"
             />
-            <div className='max-w-full 2xl:max-w-[1440px] mx-auto '>
-                <ERPSolutionsBottomSection para='Watch this on-demand webinar to discover how AI can drive real business outcomes and prepare your organization for the future of finance. Make AI your competitive edge.' arrow={true} className='flex justify-center items-center gap-5' bottomSection={ons_service} left={true} blackSection={ons_service_black} />
-            </div>
+            <ERPSolutionsBottomSection para='Watch this on-demand webinar to discover how AI can drive real business outcomes and prepare your organization for the future of finance. Make AI your competitive edge.' arrow={true} className='flex justify-center items-center gap-5' bottomSection={ons_service} left={true} blackSection={ons_service_black} />
             <OracleOneStopShop />
             <NetSuiteCards />
             <MicrosoftCarousel MicrosoftCarouselData={MicrosoftCarouselData} title={"Connect Your Favorite App to NetSuite Instantly"} para={"We offer pre-built NetSuite integrations for eCommerce platforms, CRMs, marketplaces, payment gateways, and 3PLs. Need something custom? We’ve got that too—with fast deployment and minimal coding."} />
