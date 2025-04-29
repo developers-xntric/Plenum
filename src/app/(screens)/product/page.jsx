@@ -1,8 +1,8 @@
 import BrandSlider from "@/components/common/brand-slider"
 import AISolutions from "@/components/product/AI-solutions"
 import EndToEndAI from "@/components/product/end-to-end"
+import ProductHero from "@/components/product/product-hero"
 import StartSmallWithAI from "@/components/product/start-small-with-AI"
-import ServiceHero from "@/components/service/hero"
 import MicrosoftDynamic from "@/components/service/microsoft/microsoft-dynamic"
 import PinkSection from "@/components/service/pink-section"
 import ServiceContact from "@/components/service/service-contact"
@@ -12,7 +12,7 @@ import { momentumaiservices } from "@/data/momentum-ai-service"
 const MomentumAI = () => {
     return (
         <div>
-            <ServiceHero isLogo={false} bgImage='/product/m_hero.svg' />
+            <ProductHero isLogo={false} bgImage='/product/m_hero.svg' />
             <div className="2xl:max-w-[1440px] mx-auto w-[93%] xl:w-[90%] 2xl:w-[90%] py-10">
                 <BrandSlider brand_icons={service_brand_icons} text={"Trusted by world's most exciting brands"} />
             </div>
