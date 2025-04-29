@@ -27,10 +27,10 @@ export default function AboutHero() {
       const hideTimer = setTimeout(() => {
         setHideFixed(true)
         document.body.style.overflow = '' // Re-enable scroll
-      }, 2000)
+      }, 3000)
 
       return () => clearTimeout(hideTimer)
-    }, 100)
+    }, 400)
 
     const textInterval = setInterval(() => {
       setCurrentTextIndex((prevIndex) => (prevIndex + 1) % textArray.length)
@@ -49,7 +49,7 @@ export default function AboutHero() {
         <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-4">
           <div className="flex flex-col justify-start items-start -space-y-3 2xl:-space-y-2 xl:mb-6 2xl:mb-8">
             <span className="text-[25px] font-medium text-[#282526] font-['Archivo'] pl-1 ">Welcome to</span>
-            <div className={`transition-all duration-[2000ms] ease-in-out ${isLoaded ? "translate-x-0 text-primary" : "translate-x-40 text-white"} z-[600]`}>
+            <div className={`transition-all duration-[3000ms] ease-in-out ${isLoaded ? "translate-x-0 text-primary" : "translate-x-40 text-white"} z-[600]`}>
               <h1 className="text-20 md:text-5xl lg:text-[75px] xl:text-[97px] 2xl:text-[110px] z-[600] font-['Chakra'] font-medium  tracking-[-5.096px]">Plenum</h1>
             </div>
           </div>
@@ -88,7 +88,7 @@ export default function AboutHero() {
 
                 {/* Fixed scaling container that hides after animation */}
                 {!hideFixed && (
-                  <div className={`fixed w-screen h-screen flex items-center justify-center pointer-events-none z-[500] transition-all duration-2000 ease-out ${isLoaded
+                  <div className={`fixed w-screen h-screen flex items-center justify-center pointer-events-none z-[500] transition-all duration-3000 ease-out ${isLoaded
                     ? "scale-100 translate-y-0"
                     : "scale-[50] translate-y-[-2vh]"
                     }`}>
@@ -114,7 +114,7 @@ export default function AboutHero() {
             </div>
           </div>
           {/* Right Heading */}
-          <div className={`transition-all duration-[2000ms] ease-in-out ${isLoaded ? "translate-x-0 text-secondary" : "-translate-x-40 text-white"} z-[600]`}>
+          <div className={`transition-all duration-[3000ms] ease-in-out ${isLoaded ? "translate-x-0 text-secondary" : "-translate-x-40 text-white"} z-[600]`}>
             <h1 className="text-20 md:text-5xl lg:text-[75px] xl:text-[97px] 2xl:text-[110px] z-[600] font-['Chakra'] font-medium tracking-[-5.096px]">Technologies</h1>
           </div>
         </div>
