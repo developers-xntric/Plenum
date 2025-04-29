@@ -19,7 +19,7 @@ const MomentumAI = () => {
 
             <AISolutions title={"Create Comprehensive AI Solutions Without Coding"}
                 paragraph={"Accelerate digital transformation with Momentum AI by PlenumTech — a no-code platform that streamlines data ingestion, ML model training, deployment, and workflow automation."}
-                image={'/images/product-momentum-ai/AI-solutions.webp'} />
+                image={'/images/product-momentum-AI/AI-solutions.webp'} />
             <EndToEndAI />
             <MicrosoftDynamic heading1='What Can You Do With Momentum?' heading2='' para='Momentum AI is an integrated suite of AI software platforms purpose-built to automate every stage of the AI lifecycle — from data ingestion to model deployment. Designed to support enterprise scalability and flexibility, Momentum empowers businesses with intelligent AI automation tools that streamline processes and reduce development time.' services={momentumaiservices}
                 className='flex flex-col item-ce'
