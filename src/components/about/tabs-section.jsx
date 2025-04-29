@@ -4,11 +4,11 @@ import { useState } from "react"
 import Image from "next/image"
 import { tabImages, values } from "@/data/tabs-section-data"
 
-export default function ValuesSection() {
+export default function TabsSection() {
     const [activeTab, setActiveTab] = useState(0)
     return (
         <section>
-            <div className='2xl:max-w-[1440px] w-[90%] mx-auto space-y-20 py-16 mt-[100px]'>
+            <div className='2xl:max-w-[1440px] w-[90%] mx-auto space-y-20 py-16'>
                 <div className="text-center mb-20">
                     <h2 className="text-[50px] font-['Archivo'] font-medium text-secondary mb-4 tracking-tighter">OUR VALUES</h2>
                     <p className="text-secondary font-['Archivo'] text-[15px] max-w-3xl mx-auto font-normal opacity-60">
