@@ -47,9 +47,9 @@ export default function AboutHero() {
     <section ref={heroRef} className="flex flex-col items-center justify-center py-12 px-4 text-center h-screen relative overflow-hidden">
       <div className="2xl:max-w-[1440px] w-[90%] mx-auto relative z-10">
         <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-4">
-          <div className="flex flex-col justify-start items-start -space-y-3 2xl:-space-y-2 xl:mb-6 2xl:mb-8">
+          <div className="flex flex-col justify-start items-start -space-y-3 2xl:-space-y-2 lg:mb-6 xl:mb-6 2xl:mb-8">
             <span className="text-[25px] font-medium text-[#282526] font-['Archivo'] pl-1 ">Welcome to</span>
-            <div className={`transition-all duration-[3000ms] ease-in-out ${isLoaded ? "translate-x-0 text-primary" : "translate-x-40 text-white"} z-[600]`}>
+            <div className={`transition-all duration-[3000ms] ease-in-out ${isLoaded ? "translate-x-0 text-primary" : "translate-x-30 xl:translate-x-40 text-white"} z-[600]`}>
               <h1 className="text-20 md:text-5xl lg:text-[75px] xl:text-[97px] 2xl:text-[110px] z-[600] font-['Chakra'] font-medium  tracking-[-5.096px]">Plenum</h1>
             </div>
           </div>
@@ -114,7 +114,7 @@ export default function AboutHero() {
             </div>
           </div>
           {/* Right Heading */}
-          <div className={`transition-all duration-[3000ms] ease-in-out ${isLoaded ? "translate-x-0 text-secondary" : "-translate-x-40 text-white"} z-[600]`}>
+          <div className={`transition-all duration-[3000ms] ease-in-out ${isLoaded ? "translate-x-0 text-secondary" : "-translate-x-20 xl:-translate-x-40 text-white"} z-[600]`}>
             <h1 className="text-20 md:text-5xl lg:text-[75px] xl:text-[97px] 2xl:text-[110px] z-[600] font-['Chakra'] font-medium tracking-[-5.096px]">Technologies</h1>
           </div>
         </div>
