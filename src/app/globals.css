@@ -81,6 +81,13 @@
     .greyish-effect {
         @apply opacity-40 text-6xl font-bold font-['Archivo'];
     }
+    .text-balance {
+        text-wrap: balance;
+    }
+      
+    .animate-spin-slow {
+        animation: spinText 20s linear infinite;
+    }
 
     .bg-smoke-text-image {
         background: linear-gradient(#010101, rgba(255, 255, 255, 0.2)), url("../../public/images/house-ai-product/smoke.webp");
@@ -398,3 +405,37 @@
         @apply bg-background text-foreground;
     }
 }
+
+
+@keyframes spinText {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+/* Sliding animation for text of about page */
+@keyframes slide-up {
+    0% {
+      transform: translateY(-20px); 
+      opacity: 0; 
+    }
+    20% {
+      transform: translateY(0); 
+      opacity: 1; 
+    }
+    80% {
+      transform: translateY(0); 
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(20px); 
+      opacity: 0;
+    }
+  }
+  
+  .animate-slide-up {
+    animation: slide-up 3s ease-in-out infinite; 
+  }  
