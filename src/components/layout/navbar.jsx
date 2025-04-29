@@ -222,7 +222,7 @@ const Navbar = () => {
                                 <Link href={"/"}>Resources</Link>
                             </li>
                             <li>
-                                <Link href={"/"}>About Us</Link>
+                                <Link href={"/about"}>About Us</Link>
                             </li>
                             <li>
                                 <Link href={"/"}>Book a Demo</Link>
