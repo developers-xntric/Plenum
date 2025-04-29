@@ -60,7 +60,7 @@ export default function AboutHero() {
                 <svg viewBox="0 0 100 100" className="w-full h-full">
                   <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="none" />
                   <text>
-                    <textPath xlinkHref="#circlePath" className="text-[10.9px] tracking-[1.5px] font-['Archivo'] text-[#282526] font-light">
+                    <textPath xlinkHref="#circlePath" className="text-[10.9px] tracking-[1.5px] font-['Archivo'] text-[#282526] font-thin">
                       We Enable | Augment | Empower |
                     </textPath>
                   </text>
@@ -76,6 +76,7 @@ export default function AboutHero() {
                     width={1000}
                     height={1000}
                     className="w-full h-full object-cover"
+                    style={{ userSelect: "none" }}
                   />
 
                   {/* P LOGO */}
@@ -92,7 +93,9 @@ export default function AboutHero() {
                     ? "scale-100 translate-y-0"
                     : "scale-[50] translate-y-[-2vh]"
                     }`}>
-                    <div className="relative w-24 h-24 lg:w-[120px] xl:w-[166px] lg:h-[120px] xl:h-[166px]">
+                    <div className="relative w-24 h-24 lg:w-[120px] xl:w-[166px] lg:h-[120px] xl:h-[166px]"
+                      style={{ userSelect: "none" }}
+                    >
                       <Image
                         src="/images/about/circle-image.webp"
                         alt="Plenum Logo"
