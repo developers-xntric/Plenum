@@ -219,7 +219,7 @@ const Navbar = () => {
                                 <Link href={"/"}>Industries</Link>
                             </li>
                             <li>
-                                <Link href={"/"}>Resources</Link>
+                                <Link href={"/casestudy"}>Resources</Link>
                             </li>
                             <li>
                                 <Link href={"/about"}>About Us</Link>
