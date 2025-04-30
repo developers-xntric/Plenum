@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export default function LeadershipSection() {
     return (
-        <section className="2xl:max-w-[1440px] w-[90%] mx-auto space-y-20 py-16 mt-[100px] font-['Archivo']">
+        <section className="2xl:max-w-[1440px] w-[90%] mx-auto space-y-20 pb-16 font-['Archivo']">
             <div className="mb-12">
                 <h2 className="text-[50px] font-medium text-secondary tracking-tighter">OUR LEADERSHIP</h2>
             </div>
@@ -12,11 +12,11 @@ export default function LeadershipSection() {
                 {/* Left side - Image */}
                 <div className="w-1/2 h-full">
                     <Image
-                        src="/about/leadership.png" // Adjust path accordingly
+                        src="/about/leadership.webp" 
                         alt="Aasim Shaikh - Group CEO"
                         width={3000}
                         height={3000}
-                        className="w-full h-full rounded-lg shadow-lg"
+                        className="w-full h-full rounded-lg "
                     />
                 </div>
 
