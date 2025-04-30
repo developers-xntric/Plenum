@@ -9,7 +9,7 @@ export default function page() {
 
         {/* HEADING AND DATE */}
         <div className="2xl:max-w-[1440px] w-[90%] mx-auto">
-          <div className="max-w-[70%] 2xl:max-w-[60%] py-10">
+          <div className="max-w-[72%] 2xl:max-w-[60%] py-10">
             <p className="text-[#636363] text-[17px] font-['Archivo'] font-medium">March 9 2023</p>
             <h2 className="text-secondary font['Archivo'] leading-[56px] text-[46px] font-semibold">Why Personalization Became the New Normal — And What’s Next with AI</h2>
           </div>
