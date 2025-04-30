@@ -6,7 +6,7 @@ import React from 'react'
 
 function Contact() {
     return (
-        <div className='pt-20'>
+        <div className='pt-40 xl:pt-20'>
             <div className='2xl:max-w-[1440px] w-[90%] mx-auto '>
                 {/* HERO */}
                 <div className='flex items-center justify-between gap-10 h-screen'>
@@ -29,7 +29,7 @@ function Contact() {
                     </div>
                 </div>
 
-                <div className='w-[80%] mx-auto'>
+                <div className='w-[80%] mx-auto pt-20 xl:pt-0'>
 
                     {/* WORLD MAP */}
                     <WorldMap />
