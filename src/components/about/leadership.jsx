@@ -12,11 +12,11 @@ export default function LeadershipSection() {
                 {/* Left side - Image */}
                 <div className="w-1/2 h-full">
                     <Image
-                        src="/about/leadership.webp" 
+                        src="/about/leadership.webp"
                         alt="Aasim Shaikh - Group CEO"
                         width={3000}
                         height={3000}
-                        className="w-full h-full rounded-lg "
+                        className="w-full h-full rounded-lg"
                     />
                 </div>
 
