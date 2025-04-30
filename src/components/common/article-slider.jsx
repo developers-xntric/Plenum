@@ -4,46 +4,11 @@ import { useEffect, useRef, useState } from "react"
 import { ChevronRight } from "lucide-react"
 import { cn } from "@/lib/utils"
 import Image from "next/image"
+import Link from "next/link"
+import { articles } from "@/data/article"
 
 export default function ArticleSlider() {
-    const articles = [
-        {
-            id: 1,
-            title: "Unlocking AI's Potential in Product Development",
-            date: "March 1, 2023",
-            image: "/home/article1.webp",
-        },
-        {
-            id: 2,
-            title: "The Role of Artificial Intelligence",
-            date: "March 5, 2023",
-            image: "/home/article2.webp",
-        },
-        {
-            id: 3,
-            title: "The Role of Artificial Intelligence in Design",
-            date: "March 8, 2023",
-            image: "/home/article3.webp",
-        },
-        {
-            id: 4,
-            title: "Future Trends in AI Development",
-            date: "March 12, 2023",
-            image: "/home/article1.webp",
-        },
-        {
-            id: 5,
-            title: "How Machine Learning is Changing Industries",
-            date: "March 15, 2023",
-            image: "/home/article2.webp",
-        },
-        {
-            id: 6,
-            title: "How Machine Learning is Changing Industries",
-            date: "March 15, 2023",
-            image: "/home/article3.webp",
-        },
-    ]
+  
 
     const [activeIndex, setActiveIndex] = useState(0)
     const [isAnimating, setIsAnimating] = useState(false)
@@ -221,13 +186,13 @@ export default function ArticleSlider() {
                                             <h3 className={cn("font-semibold mb-1 line-clamp-2 text-xl")}>
                                                 {article.title}
                                             </h3>
-                                            <a
-                                                href="#"
+                                            <Link
+                                                href="/"
                                                 className="text-primary inline-flex items-center text-sm hover:underline"
                                                 aria-label={`Read more about ${article.title}`}
                                             >
                                                 Read More <ChevronRight className="h-4 w-4 ml-1" />
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
