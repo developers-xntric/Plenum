@@ -61,6 +61,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Chakra';
+    src: url('/fonts/ChakraPetch-Regular.ttf') format('truetype');
+    font-weight: 500;
+    font-style: medium;
+}
+
 
 /* ChakraPetch Bold weight */
 @font-face {
