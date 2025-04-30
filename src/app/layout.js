@@ -1,6 +1,6 @@
-import Navbar from "@/components/layout/Navbar";
+import Navbar from "../components/layout/navbar";
 import "./globals.css";
-import Footer from "@/components/layout/footer";
+import Footer from "../components/layout/footer";
 
 export const metadata = {
   title: "Plenum",

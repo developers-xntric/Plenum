@@ -87,7 +87,7 @@ export function ContactForm() {
                         />
                     </div>
 
-                    <button type='submit' className={`bg-primary text-black rounded-full py-1 px-5 flex items-center justify-between gap-2 text-sm hover:bg-gray-100 transition-colors`}>
+                    <button type='submit' className={`bg-primary cursor-pointer text-black rounded-full py-1 px-5 flex items-center justify-between gap-2 text-sm hover:bg-gray-100 transition-colors`}>
                         <div className={`bg-white text-white rounded-full p-2 relative right-4 `}>
                             {/* ARROW ICON */}
                             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
