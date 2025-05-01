@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function AISolutions({ title, paragraph, image }) {
     return (
@@ -13,7 +14,10 @@ export default function AISolutions({ title, paragraph, image }) {
                             </div>
                             <p className='text-secondary font-["Archivo"] lg:max-w-[95%] xl:max-w-[99%] 2xl:max-w-[90%] my-4 opacity-75'>{paragraph}</p>
 
-                            <button className='font-["Archivo"] hover:bg-black ease-in-out duration-500 mt-4 w-44 cursor-pointer bg-[#FF6035] rounded-[8px] xl:px-8 px-4 xl:py-3 py-2 text-white font-primary xl:text-[15px] '  >Request a demo</button>
+
+                            <Link href='/contact' className="w-fit" >
+                                <button className='font-["Archivo"] hover:bg-black ease-in-out duration-500 mt-4 w-44 cursor-pointer bg-[#FF6035] rounded-[8px] xl:px-8 px-4 xl:py-3 py-2 text-white font-primary xl:text-[15px] '  >Request a demo</button>
+                            </Link>
                         </div>
 
                     </div>

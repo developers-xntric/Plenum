@@ -100,7 +100,7 @@ export function ContactForm() {
                                     },
                                 }}
                             >
-                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none" >
                                     <path
                                         d="M15.3395 13.8009V6.31445H7.85305M15.119 6.53429L6.09082 15.5625"
                                         stroke="#FF6035"
@@ -112,7 +112,7 @@ export function ContactForm() {
                             </motion.div>
                         ))}
                     </div>
-                    <span className="text-[16px] font-['Archivo']">Book a free consultation session</span>
+                    <span className="text-[17px] font-semibold font-['Archivo']">Book a free consultation session</span>
                 </motion.button>
             </form>
         </div>
