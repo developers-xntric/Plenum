@@ -13,18 +13,18 @@ import { testimonials } from "@/data/home-testimonials";
 export default function Home() {
   return (
     <div>
-      <Hero />
-      <HomeServices />
-      <CentralizeIntelligence />
-      <HouseAIProduct />
       <CaseStudies
-        title={"Our Case Studies Driving AI Transformation Across Industries"}
+        title={" Our Case Studies Driving AI Transformation Across Industries"}
         paragraph={"Plenum isn't just another ERP provider; we embed AI into your systems to deliver actionable insights and smarter decision-making capabilities."}
         caseStudies={caseStudies}
       />
+      {/* <Hero />
+      <HomeServices />
+      <CentralizeIntelligence />
+      <HouseAIProduct />
       <Testimonials testimonials={testimonials} />
       <ArticleSlider />
-      <Blog heading='Discover Our Blog Articles' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world" cardData={cardData} />
+      <Blog heading='Discover Our Blog Articles' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world" cardData={cardData} /> */}
     </div>
   );
 }
