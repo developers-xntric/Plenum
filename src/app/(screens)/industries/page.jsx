@@ -18,7 +18,7 @@ const Industries = () => {
             />
             <div className='w-full h-10 border-b border-black/20'></div>
             <IndustryShowcase />
-            <div className='py-20'>
+            <div className='pt-16'>
                 <PinkSection
                     heading={"Ready To Supercharge Your AI Workflow?"}
                     text={"Ready to explore the power of AI? Contact us 24×7 to schedule a one-on-one consultation and see how Momentum AI can elevate your AI workflow management and automation journey."}
