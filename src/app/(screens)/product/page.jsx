@@ -28,7 +28,7 @@ const MomentumAI = () => {
                 gridcol='md:grid-cols-2 lg:grid-cols-4'
             />
             <StartSmallWithAI />
-            <div className='py-16'>
+            <div className='py-10'>
                 <PinkSection
                     heading={"Ready To Supercharge Your AI Workflow?"}
                     text={"Ready to explore the power of AI? Contact us 24×7 to schedule a one-on-one consultation and see how Momentum AI can elevate your AI workflow management and automation journey."}
