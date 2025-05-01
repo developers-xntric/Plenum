@@ -20,7 +20,7 @@ const AccordionItem = ({ title, description, isOpen, onToggle, index }) => {
     )
 }
 
-export function Accordion() {
+export function Accordion() {`  `
     const [openIndex, setOpenIndex] = useState(0) // Default first item open
 
     const handleToggle = (index) => {
