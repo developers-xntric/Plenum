@@ -37,7 +37,7 @@ export default function Section2() {
             decision-making.
           </p>
         </div>
-
+{/*  */}
         {/* Feature 2 */}
         <div className="bg-zinc-100 rounded-[20px] p-6 shadow-sm">
           <div className="bg-white rounded-full w-12 h-12 flex items-center justify-center mb-4">
