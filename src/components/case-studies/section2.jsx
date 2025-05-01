@@ -28,7 +28,7 @@ export default function Section2() {
         {/* Feature 1 */}
         <div className="bg-zinc-100 rounded-[20px] p-6 shadow-sm">
           <div className="bg-white rounded-full w-12 h-12 flex items-center justify-center mb-4">
-            <Shield className="w-6 h-6 text-gray-800" />
+            {/* <Shield className="w-6 h-6 text-gray-800" /> */}
           </div>
           <h2 className="text-xl font-semibold mb-3">AI-Driven Data Integration</h2>
           <p className="text-gray-700">
@@ -41,7 +41,7 @@ export default function Section2() {
         {/* Feature 2 */}
         <div className="bg-zinc-100 rounded-[20px] p-6 shadow-sm">
           <div className="bg-white rounded-full w-12 h-12 flex items-center justify-center mb-4">
-            <Shield className="w-6 h-6 text-gray-800" />
+            {/* <Shield className="w-6 h-6 text-gray-800" /> */}
           </div>
           <h2 className="text-xl font-semibold mb-3">Automated Processes</h2>
           <p className="text-gray-700">
@@ -53,7 +53,7 @@ export default function Section2() {
         {/* Feature 3 */}
         <div className="bg-zinc-100 rounded-[20px] p-6 shadow-sm">
           <div className="bg-white rounded-full w-12 h-12 flex items-center justify-center mb-4">
-            <Shield className="w-6 h-6 text-gray-800" />
+            {/* <Shield className="w-6 h-6 text-gray-800" /> */}
           </div>
           <h2 className="text-xl font-semibold mb-3">Business Intelligence Tools</h2>
           <p className="text-gray-700">
