@@ -22,7 +22,7 @@ const PinkSection = ({ heading, text, show_button = false, className, isVideo = 
                 <div className='w-full flex justify-center xl:mt-4 relative'>
                     {show_button && (
                         <Link href='/contact'>
-                            <ArrowButton text={"R equest A Demo"} className={"xl:mt-5"} />
+                            <ArrowButton text={"Request A Demo"} className={"xl:mt-5"} />
                         </Link>
                     )}
                 </div>
