@@ -219,16 +219,16 @@ const Navbar = () => {
                                 <Link href={"/industries"}>Industries</Link>
                             </li>
                             <li>
-                                <Link href={"/casestudy"}>Resources</Link>
+                                <Link href={"/case-studies"}>Resources</Link>
                             </li>
                             <li>
                                 <Link href={"/about"}>About Us</Link>
                             </li>
                             <li>
-                                <Link href={"/"}>Book a Demo</Link>
+                                <Link href={"/article"}>Book a Demo</Link>
                             </li>
                             <li>
-                                <Link href={"/"}>Careers</Link>
+                                <Link href={"/careers"}>Careers</Link>
                             </li>
                         </ul>
                         {/* Button */}
