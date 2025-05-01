@@ -20,7 +20,7 @@ export default function OracleOneStopShop() {
                             all things NetSuite
                         </span>
                     </h1>
-                    <p className="text-secondary font-['Archivo'] opacity-75 mx-auto w-[45%] xl:max-w-[40%]">
+                    <p className="text-secondary font-['Archivo'] opacity-75 mx-auto w-[45%] xl:max-w-[40%] 2xl:max-w-[30%]">
                         We offer a wide range of NetSuite solutions, built by NetSuite experts, for NetSuite experts.
                     </p>
                 </div>
