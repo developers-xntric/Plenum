@@ -40,11 +40,40 @@ export default function HouseAIProduct() {
               <div className='space-y-2'>
                 <div className="flex justify-between items-start ">
                   <h3 className="text-3xl font-medium font-['Archivo']">Momentum AI</h3>
-                  <Link href="#" className="text-primary flex items-center gap-2 underline underline-offset-4 cursor-pointer z-40 ">View Product
-                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
-                      <path d="M0.9375 10.214L9.67107 1.48047M9.67107 1.48047H0.9375M9.67107 1.48047V10.214" stroke="#FF6035" strokeWidth="1.74671" />
-                    </svg>
+                  <Link href="/products">
+                    <motion.div
+                      whileHover="hover"
+                      className="text-primary flex items-center gap-2 underline underline-offset-4 cursor-pointer z-40"
+                    >
+                      View Product
+                      <motion.svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="11"
+                        height="11"
+                        viewBox="0 0 11 11"
+                        fill="none"
+                        className={"mt-1"}
+                        variants={{
+                          hover: {
+                            x: [0, 3, 0],
+                            y: [0, -3, 0],
+                            transition: {
+                              duration: 0.8,
+                              repeat: Infinity,
+                              ease: "easeInOut"
+                            }
+                          }
+                        }}
+                      >
+                        <path
+                          d="M0.9375 10.214L9.67107 1.48047M9.67107 1.48047H0.9375M9.67107 1.48047V10.214"
+                          stroke="#FF6035"
+                          strokeWidth="1.74671"
+                        />
+                      </motion.svg>
+                    </motion.div>
                   </Link>
+
                 </div>
                 <p className="text-[13px] text-white font-['Archivo'] lg:max-w-[80%] xl:w-[60%]">
                   Plenum isn’t just another ERP provider; we embed AI into your systems to deliver actionable insights.
@@ -82,10 +111,38 @@ export default function HouseAIProduct() {
               <div className='space-y-2'>
                 <div className="flex justify-between items-start">
                   <h3 className="text-3xl font-medium font-['Archivo']">Vertical builds</h3>
-                  <Link href="#" className="text-primary flex items-center gap-2 underline underline-offset-4 cursor-pointer z-20">View Product
-                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
-                      <path d="M0.9375 10.214L9.67107 1.48047M9.67107 1.48047H0.9375M9.67107 1.48047V10.214" stroke="#FF6035" strokeWidth="1.74671" />
-                    </svg>
+                  <Link href="/service/ERP-consulting">
+                    <motion.div
+                      whileHover="hover"
+                      className="text-primary flex items-center gap-2 underline underline-offset-4 cursor-pointer z-40"
+                    >
+                      View Product
+                      <motion.svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="11"
+                        height="11"
+                        viewBox="0 0 11 11"
+                        fill="none"
+                        className={"mt-1"}
+                        variants={{
+                          hover: {
+                            x: [0, 3, 0],
+                            y: [0, -3, 0],
+                            transition: {
+                              duration: 0.8,
+                              repeat: Infinity,
+                              ease: "easeInOut"
+                            }
+                          }
+                        }}
+                      >
+                        <path
+                          d="M0.9375 10.214L9.67107 1.48047M9.67107 1.48047H0.9375M9.67107 1.48047V10.214"
+                          stroke="#FF6035"
+                          strokeWidth="1.74671"
+                        />
+                      </motion.svg>
+                    </motion.div>
                   </Link>
                 </div>
                 <p className="text-[13px] text-white font-['Archivo'] lg:max-w-[80%] xl:w-[60%]">

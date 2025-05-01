@@ -40,7 +40,7 @@ const BuisnessCentral = () => {
                 bgColor='black'
             />
             <Capabilities />
-            <div className='pt-32 pb-20'>
+            <div className=''>
                 <PinkSection
                     heading={"Ready To Supercharge Your AI Workflow?"}
                     text={"Discover how Microsoft Dynamics 365 Business Central can streamline your operations, boost productivity, and drive smarter decisions. Connect with our experts to explore tailored ERP solutions for your business, anytime, anywhere."}

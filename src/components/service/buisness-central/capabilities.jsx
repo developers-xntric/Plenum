@@ -51,7 +51,7 @@ export default function Capabilities() {
       <div className="2xl:max-w-[1440px] w-[90%] mx-auto ">
         <div className="text-center mb-12 md:mb-16 space-y-6">
           <h2 className="text-[50px] leading-[55px] font-['Archivo'] text-secondary font-semibold home-section-headings">Core Capabilities</h2>
-          <p className="text-secondary font-['Archivo'] opacity-75 xl:max-w-[52%] max-w-[50%] 2xl:max-w-[40%] mx-auto">
+          <p className="text-secondary font-['Archivo'] opacity-75 xl:max-w-[45%] max-w-[50%] 2xl:max-w-[40%] mx-auto">
             Dynamics 365 Business Central encompasses a wide range of core capabilities to support your business
             operations
           </p>
