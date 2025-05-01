@@ -134,26 +134,26 @@ export default function HomeServices() {
 
         <div className="flex flex-col space-y-16">
           {/* UPPER column - Headline */}
-          <div className=" xl:w-[80%] 2xl:w-[70%] relative z-20">
-            <h2 className="text-[59.542px] leading-[60px] font-semibold    font-['Archivo'] relative z-20 bg-[linear-gradient(to_right,_#101010,_#9b9999,_#101010,_#9b9999)] bg-clip-text text-transparent">
+          <div className="xl:w-[80%] 2xl:w-[70%] relative z-20">
+            <h2 className="text-[30px] md:text-[59.542px] leading-[40px] md:leading-[60px] font-semibold font-['Archivo'] relative z-20 bg-[linear-gradient(to_right,_#101010,_#9b9999,_#101010,_#9b9999)] bg-clip-text text-transparent">
               Why AI enabled Enterprise with Plenum? With Plenum gain the tools to unlock deeper insights, automate complex workflows
             </h2>
           </div>
 
           {/* BOTTOM column - Services */}
-          <div className="flex items-start justify-between xl:max-w-[90%]">
+          <div className="flex md:flex-row flex-col items-start justify-between xl:max-w-[90%]">
             {/* LEFT */}
             <div className="space-y-6 w-full md:w-[80%]">
               <div className="relative font-medium">
-                <h2 className="text-[57.375px] font-semibold text-secondary opacity-[0.8] font-['Archivo'] tracking-tighter">
+                <h2 className="text-[30px] md:text-[57.375px] font-semibold text-secondary opacity-[0.8] inline-block md:block font-['Archivo'] tracking-tighter">
                   Our
                 </h2>
-                <h2 className="text-[57.375px] font-semibold text-secondary opacity-[0.8] font-['Archivo'] tracking-tighter mt-[-32px]">
+                <h2 className="text-[30px] md:text-[57.375px] font-semibold text-secondary opacity-[0.8] inline-block md:block md:mx-0 mx-2 font-['Archivo'] tracking-tighter mt-[-32px]">
                   Services
                 </h2>
               </div>
               <div className="space-y-5">
-                <p className="text-[15px] text-secondary xl:max-w-[70%] leading-[20px] font-normal font-['Archivo'] opacity-75">
+                <p className="text-[14px] md:text-[15px] text-secondary w-full xl:max-w-[70%] leading-[20px] font-normal font-['Archivo'] opacity-75">
                   Plenum offers AI solutions to automate workflows, enhance decisions, and boost efficiency. We tailor services to your needs and help you scale confidently.
                 </p>
                 <Button
@@ -165,7 +165,7 @@ export default function HomeServices() {
             </div>
 
             {/* RIGHT - Accordion */}
-            <div className="w-full md:w-[65% space-y-0">
+            <div className="w-full md:w-[65% space-y-0 md:my-0 my-14">
               {servicesData.map((item) => (
                 <div
                   key={item.id}
@@ -190,7 +190,7 @@ export default function HomeServices() {
                         strokeLinecap="square"
                       />
                     </svg>
-                    <p className="group-hover:text-[#FF6035] font-bold transition-colors duration-500 font-['Archivo']">
+                    <p className="group-hover:text-[#FF6035] font-bold transition-colors w-[90%]  duration-500 font-['Archivo']">
                       {item.title}
                     </p>
                   </div>
