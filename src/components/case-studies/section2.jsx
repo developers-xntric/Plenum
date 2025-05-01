@@ -3,33 +3,33 @@ import Image from "next/image"
 
 export default function Section2() {
   return (
-    <div>
+    <div className="2xl:max-w-[1440px] w-[90%] mx-auto space-y-20 py-16 xl:py-24">
       {/* Consider using a wrapper which adds space to the sides when we move higher from 1440 px screens width */}
       {/* TEXT HEADING 1 */}
-      <div className="text-[39.542px] leading-[40px] font-semibold font-['Archivo'] relative z-20 bg-[linear-gradient(to_right,_#101010,_#9b9999,_#101010,_#9b9999)] bg-clip-text text-transparent px-[100px]">
-        <div className="text-start pt-12 w-[700px] ">
+      <div className="text-[50px] leading-[55px] font-semibold font-['Archivo'] relative z-20 bg-[linear-gradient(to_right,_#101010,_#9b9999,_#101010,_#9b9999)] bg-clip-text text-transparent">
+        <div className="text-start pt-12 w-[840px] ">
           <h1>Unlock Deeper Insights, Automate Workflows, and Drive Efficiency with Plenum’s Cutting-Edge ERP AI Technology.</h1>
         </div>
       </div>
       {/* Two Cols */}
       <div>
         {/* Make thi image center align */}
-        <div className=" flex items-center justify-center m-auto">
+        <div className="flex items-center justify-center w-full h-full">
           <Image
             src="/casestudy/Group.png"
             alt="Group"
-            width="200"
-            height="200"
-            className="xl:w-[200px] xl:h-[200px]"
+            width={1500}
+            height={1500}
+            className="h-full w-full"
           />
         </div>
         {/* Make these three divs as provided in the image write same text and make r4esposnive for larger rscr4ens ti small screen websites  */}
         {/* THREE FEATURE BOXES */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
           {/* Feature 1 */}
           <div className="bg-zinc-100 rounded-[20px] p-6 shadow-sm">
             <div className="bg-white rounded-full w-12 h-12 flex items-center justify-center mb-4">
-              <Shield className="w-6 h-6 text-gray-800" />
+              <Image src={"/casestudy/Icon.svg"} alt="" width={50} height={50} />
             </div>
             <h2 className="text-xl font-semibold mb-3">AI-Driven Data Integration</h2>
             <p className="text-gray-700">
@@ -42,7 +42,7 @@ export default function Section2() {
           {/* Feature 2 */}
           <div className="bg-zinc-100 rounded-[20px] p-6 shadow-sm">
             <div className="bg-white rounded-full w-12 h-12 flex items-center justify-center mb-4">
-              <Shield className="w-6 h-6 text-gray-800" />
+              <Image src={"/casestudy/Icon.svg"} alt="" width={50} height={50} />
             </div>
             <h2 className="text-xl font-semibold mb-3">Automated Processes</h2>
             <p className="text-gray-700">
@@ -54,7 +54,7 @@ export default function Section2() {
           {/* Feature 3 */}
           <div className="bg-zinc-100 rounded-[20px] p-6 shadow-sm">
             <div className="bg-white rounded-full w-12 h-12 flex items-center justify-center mb-4">
-              <Shield className="w-6 h-6 text-gray-800" />
+              <Image src={"/casestudy/Icon.svg"} alt="" width={50} height={50} />
             </div>
             <h2 className="text-xl font-semibold mb-3">Business Intelligence Tools</h2>
             <p className="text-gray-700">
