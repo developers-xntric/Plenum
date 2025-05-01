@@ -70,7 +70,7 @@ export default function OracleOneStopShop() {
                                                 Are you looking to upgrade from legacy systems to NetSuite ERP for integrated financials, CRM, and operations? We are here to help you.
                                             </p>
                                         </div>
-                                        <button className='bg-[#FF6035] w-[80%] xl:w-1/2 text-white py-4 px-2 xl:px-4 rounded-lg'>Explore our Implementation Services</button>
+                                        <button className='bg-[#FF6035] hover:bg-[#101010] cursor-pointer transition-all duration-500 w-[60%] xl:w-1/2 text-white py-3 xl:py-4 px-2 xl:px-4 text-[15px] xl:text-base rounded-lg'>Explore our Implementation Services</button>
 
                                     </div>
                                 </div>
