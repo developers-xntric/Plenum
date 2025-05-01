@@ -14,7 +14,7 @@ export default function MissionSection({ image, title, subtitle, description, bg
                         />
                     </div>
                     <div className="w-full md:w-1/2 xl:w-[45%] flex flex-col justify-center">
-                        <h2 className={`${bg == "white" ? "text-[#282526]" : "text-white"} text-[30px] md:text-[36px] font-bold  mb-4`}>{title}</h2>
+                        <h2 className={`${bg == "white" ? "text-[#282526]" : "text-white"} text-[30px] md:text-[36px] font-semibold  mb-4`}>{title}</h2>
                         <h3 className={`${bg == "white" ? "text-[#282526]" : "text-white"} text-[18px] md:text-[20px] font-medium  mb-4`}>{subtitle}</h3>
                         <div className="space-y-4">
                             {description.map((paragraph, index) => (
