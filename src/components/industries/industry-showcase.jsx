@@ -4,7 +4,7 @@ import { useState, useRef } from "react"
 import Image from "next/image"
 import { ArrowRight } from "lucide-react"
 
-export default function IndustryShowcase() {
+export default function IndustryShowcase({ isTabs = false }) {
   const [activeTab, setActiveTab] = useState("Healthcare")
   const tabsRef = useRef(null)
 
@@ -44,7 +44,7 @@ export default function IndustryShowcase() {
   return (
     <div className="2xl:max-w-[1440px] mx-auto w-[93%] xl:w-[95%] py-10">
       {/* Tabs Carousel */}
-      <div className="relative mb-10 w-[85%] mx-auto">
+      {isTabs ? <div className="relative mb-10 w-[85%] mx-auto">
         <div
           ref={tabsRef}
           className="flex space-x-8 overflow-x-auto scrollbar-hide pb-4 cursor-grab active:cursor-grabbing"
@@ -77,7 +77,10 @@ export default function IndustryShowcase() {
             </svg>
           </button>
         </div>
-      </div>
+      </div> : <div className="flex flex-col gap-3 py-16">
+        <h1 className="font-semibold font-['Archivo'] text-[50px] text-secondary tracking-tight">Explore More Case Studies</h1>
+        <p className="max-w-3xl text-[16px] opacity-60 font-normal font-['Archivo']">Momentum AI is a unified platform built to automate every stage of the AI lifecycle — from data ingestion to deployment. Designed for enterprise scalability, it streamlines processes and accelerates AI.</p>
+      </div>}
 
       {/* Portfolio Grid - Exact layout from the image */}
       <div className="flex gap-4 justify-between">
