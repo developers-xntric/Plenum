@@ -27,7 +27,7 @@ const ProductHero = ({ bgImage, isLogo = true }) => {
                             Our flagship solution, Momentum AI, is designed to simplify and supercharge your AI development process with minimal or no coding—accelerating innovation across industries.
                         </p>
                         {/* Button */}
-                        <Button className={"px-8 py-2.5 tracking-tighter font-semibold bg-[#FF6035] text-[#FFFFFF] rounded"} text={"Request a Demo"} link={"/service"} />
+                        <Button className={"px-8 py-2.5  hover:bg-white transition-all duration-500 hover:text-black tracking-tighter font-semibold bg-[#FF6035] text-[#FFFFFF] rounded"} text={"Request a Demo"} link={"/service"} />
                     </div>
                 </div>
             </div>

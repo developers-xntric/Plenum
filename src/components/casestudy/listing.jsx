@@ -1,7 +1,8 @@
+'use client'
 import { ArrowUpRight } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-
+import { motion } from 'framer-motion';
 const data = [
     {
         title: "Brand OS",
@@ -70,9 +71,53 @@ export default function ListingPage() {
 
                                             <Link
                                                 href={item.link}
-                                                className="inline-flex items-center text-[#FF6035] opacity-[0.9968] text-[20px] font-semibold underline hover:no-underline"
+                                                className="inline-flex relative items-center text-[#FF6035] opacity-[0.9968] text-[20px] font-semibold underline hover:no-underline"
                                             >
-                                                View Project <ArrowUpRight className="ml-1 w-4 h-4" />
+                                                View Project
+                                                <motion.div
+                                                    className="p-2"
+                                                    initial="rest"
+                                                    whileHover="hover"
+                                                    animate="rest"
+                                                    variants={{
+                                                        hover: {
+                                                            transition: {
+                                                                staggerChildren: 0.1,
+                                                            },
+                                                        },
+                                                        rest: {
+                                                            transition: {
+                                                                staggerChildren: 0.1,
+                                                            },
+                                                        },
+                                                    }}
+                                                >
+                                                    {[1, 2, 3].map((_, i) => (
+                                                        <motion.div
+                                                            key={i}
+                                                            className="absolute top-1/4 -right-2"
+                                                            variants={{
+                                                                rest: {
+                                                                    x: 0,
+                                                                    y: 0,
+                                                                    opacity: 1,
+                                                                },
+                                                                hover: {
+                                                                    x: [0, 8, 0],
+                                                                    y: [0, -8, 0],
+                                                                    opacity: 1,
+                                                                    transition: {
+                                                                        duration: 1,
+                                                                        ease: "easeInOut",
+                                                                        repeat: Infinity,
+                                                                    },
+                                                                },
+                                                            }}
+                                                        >
+                                                            <ArrowUpRight className=" w-5 h-5" />
+                                                        </motion.div>
+                                                    ))}
+                                                </motion.div>
                                             </Link>
                                         </div>
                                         {/* Right Side */}

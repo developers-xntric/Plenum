@@ -44,7 +44,7 @@ export default function MicrosoftDynamic({ heading1, heading2, para, services, b
                         <Button
                             text={button}
                             link="/"
-                            className={`px-6 py-2 border border-gray-300 rounded text-sm md:text-base ${bgColor === "black" ? "text-white" : "text-gray-700"} `}
+                            className={`px-6 py-2 border   border-gray-300 rounded text-sm md:text-base ${bgColor === "black" ? "text-white hover:border-[#FF6035] hover:bg-[#FF6035] transition-all duration-700 hover:text-white" : "text-gray-700 hover:bg-[#101010] transition-all duration-700 hover:text-white"} `}
                         />
                     </div>
                 )}

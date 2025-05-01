@@ -10,7 +10,7 @@ const ERPSolutions = ({ blackSection }) => {
             <div className='max-w-[90%] xl:max-w-[75%] 2xl:max-w-[80%]  mx-auto text-center py-16  '>
                 <h2 className='text-[50px] leading-[50px] text-white  xl:w-[95%] 2xl:w-[65%] mx-auto'>{blackSection.heading}</h2>
                 <p className='text-[18px] text-[#FFF] mt-6 opacity-60 w-[80%] mx-auto'>{blackSection.para}</p>
-                <Button text={blackSection.button} className='bg-transparent text-white text-[15px] mt-8 border border-[#FFFFFF] px-9 py-2' link='/' />
+                <Button text={blackSection.button} className='bg-transparent text-white hover:bg-[#FF6035] hover:border-[#FF6035] hover:text-white hover:transition-colors ease-in-out duration-300 text-[15px] mt-8 border border-[#FFFFFF] px-9 py-2' link='/' />
             </div>
         </section>
     )

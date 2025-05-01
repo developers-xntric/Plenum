@@ -11,7 +11,7 @@ const ERPSolutions = ({ blackSection }) => {
             <div className='max-w-[90%] xl:max-w-[75%] 2xl:max-w-[55%]  mx-auto text-center py-16  '>
                 <h2 className='text-[50px] leading-[50px] text-white w-[54%] 2xl:w-[65%] mx-auto'>{blackSection.heading}</h2>
                 <p className='text-[18px] text-[#FFF] mt-6 opacity-60 w-[80%] mx-auto'>{blackSection.para}</p>
-                <Button text={blackSection.button} className='bg-transparent text-white text-[15px] mt-8 border border-[#FFFFFF] px-9 py-2' link='/' />
+                <Button text={blackSection.button} className='bg-transparent text-white hover:bg-[#FF6035] hover:transition-colors ease-in-out duration-300 hover:border-[#FF6035]  text-[15px] mt-8 border border-[#FFFFFF] px-9 py-2' link='/' />
             </div>
         </section>
     )
@@ -40,7 +40,7 @@ export const ERPSolutionsBottomSection = ({ bottomSection, className, left, blac
                                 )
                             })
                         }
-                        <Button text={bottomSection.button} className='bg-transparent cursor-pointer  text-[15px] mt-8
+                        <Button text={bottomSection.button} className='bg-transparent cursor-pointer  hover:bg-black hover:text-white hover:transition-colors ease-in-out duration-300 text-[15px] mt-8
                         border border-[#282526] px-9 py-2.5' link='/' />
                     </div>
                     <div className='w-[50%] 2xl:w-[100%] flex justify-center items-center'>

@@ -107,7 +107,7 @@ const Hero = () => {
                 <div className='w-full  bg-[#1a1a1a] py-3 flex justify-center items-center gap-10'>
                     <p className='font-["Chakra"] font-normal xl:text-[22px] text-white opacity-80' >Ready to experience hyperperformance?</p>
                     <div className='bg-gradient-to-l p-[0.7px] xl:p-[0.5px]  from-red-500 via-orange-700/80 to-red-300 rounded-[8px]'>
-                        <Button className='font-["Archivo"] bg-zinc-900 xl:px-8 px-8 xl:py-3 py-2 text-white font-primary text-[14px]' text="Lets Talk" link='/' />
+                        <Button className='font-["Archivo"] hover:bg-[#FF6035] hover:transition-colors ease-in-out duration-300 bg-zinc-900 xl:px-8 px-8 xl:py-3 py-2 text-white font-primary text-[14px]' text="Lets Talk" link='/' />
                     </div>
                 </div>
             </div>

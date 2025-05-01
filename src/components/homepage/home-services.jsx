@@ -1,5 +1,4 @@
-'use client'; // Since we'll use state for the accordion, this needs to be a client component
-
+'use client'; 
 import { home_brand_icons } from "@/data/brand-slider-icons-data";
 import BrandSlider from "../common/brand-slider";
 import Button from "../common/button";
@@ -159,7 +158,7 @@ export default function HomeServices() {
                 <Button
                   link={"/services"}
                   text={"Explore More"}
-                  className="px-6 py-2 border border-primary text-secondary rounded text-[15px] font-medium transition-colors inline-block font-['Archivo']"
+                  className="px-6 py-2 hover:bg-[#FF6035] hover:transition-colors ease-in-out duration-300 hover:text-white border border-primary rounded text-[15px] font-medium transition-colors inline-block font-['Archivo']"
                 />
               </div>
             </div>

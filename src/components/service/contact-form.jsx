@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react'
-
+import { motion } from 'framer-motion'
 export function ContactForm() {
     const [formData, setFormData] = useState({
         name: "",
@@ -90,9 +90,52 @@ export function ContactForm() {
                     <button type='submit' className={`bg-primary cursor-pointer text-black rounded-full py-1 px-5 flex items-center justify-between gap-2 text-sm hover:bg-gray-100 transition-colors`}>
                         <div className={`bg-white text-white rounded-full p-2 relative right-4 `}>
                             {/* ARROW ICON */}
-                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-                                <path d="M15.3395 13.8009V6.31445H7.85305M15.119 6.53429L6.09082 15.5625" stroke="#FF6035" strokeWidth="1.32114" strokeLinecap="round" strokeLinejoin="round" />
-                            </svg>
+                            <motion.div
+                                className="p-2"
+                                initial="rest"
+                                whileHover="hover"
+                                animate="rest"
+                                variants={{
+                                    hover: {
+                                        transition: {
+                                            staggerChildren: 0.1,
+                                        },
+                                    },
+                                    rest: {
+                                        transition: {
+                                            staggerChildren: 0.1,
+                                        },
+                                    },
+                                }}
+                            >
+                                {[1, 2, 3].map((_, i) => (
+                                    <motion.div
+                                        key={i}
+                                        className="absolute top-1/5 left-1/5"
+                                        variants={{
+                                            rest: {
+                                                x: 0,
+                                                y: 0,
+                                                opacity: 1,
+                                            },
+                                            hover: {
+                                                x: [0, 8, 0],
+                                                y: [0, -8, 0],
+                                                opacity: 1,
+                                                transition: {
+                                                    duration: 1,
+                                                    ease: "easeInOut",
+                                                    repeat: Infinity,
+                                                },
+                                            },
+                                        }}
+                                    >
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                            <path d="M15.3395 13.8009V6.31445H7.85305M15.119 6.53429L6.09082 15.5625" stroke="#FF6035" strokeWidth="1.32114" strokeLinecap="round" strokeLinejoin="round" />
+                                        </svg>
+                                    </motion.div>
+                                ))}
+                            </motion.div>
                         </div>
                         <span className="text-sm font-['Archivo'] relative right-2 text-white">Book a free consultation session</span>
                     </button>

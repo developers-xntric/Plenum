@@ -14,8 +14,8 @@ const ERPC2 = ({ heading, para }) => {
                             <h1 className='md:text-[35px] xl:text-[48px] font-["Archivo"] md:leading-10 xl:leading-[52px] flex flex-col text-secondary font-semibold home-section-headings'>Smart ERP <span>Solutions</span></h1>
                             <p className='text-secondary font-["Archivo"] opacity-75 font-normal md:text-[14px] xl:text-[18px]'>{para}</p>
                             <div className='flex gap-4'>
-                                <Button text={"Let's Talk"} link={"/contact"} className={"px-10 py-2.5 bg-primary text-white"} />
-                                <Button text={"Talk to an Expert"} link={"/contact"} className={"px-10 py-2.5 bg-none border border-secondary text-secondary"} />
+                                <Button text={"Let's Talk"} link={"/contact"} className={"px-10 py-2.5  bg-[#FF6035] hover:bg-black hover:transition-colors ease-in-out duration-300 hover:text-white text-white"} />
+                                <Button text={"Talk to an Expert"} link={"/contact"} className={"px-10 py-2.5 hover:bg-black hover:transition-colors ease-in-out duration-300 hover:text-white bg-none border border-secondary text-black"} />
                             </div>
                         </div>
                     </div>

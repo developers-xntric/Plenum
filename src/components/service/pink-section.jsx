@@ -1,6 +1,8 @@
+'use client'
 import React from 'react';
 import ArrowButton from '../common/arrow-button';
 import Image from 'next/image';
+
 
 const PinkSection = ({ heading, text, show_button = false, className, isVideo = false }) => {
     return (
@@ -16,7 +18,7 @@ const PinkSection = ({ heading, text, show_button = false, className, isVideo = 
                     <p className='text-secondary opacity-60 md:text-[14px] xl:text-[18px] font-normal text-center font-["Archivo"] mt-4'>{text}</p>
                 </div>
                 {/* Arrow Button Optional */}
-                <div className='w-full flex justify-center xl:mt-4'>
+                <div className='w-full flex justify-center xl:mt-4 relative'>
                     {show_button && <ArrowButton text={"Request A Demo"} className={"xl:mt-5"} />}
                 </div>
                 {/* Right Line image */}
