@@ -23,7 +23,7 @@ const OracleCloudFusion = () => {
             <ERPAccordin  className='flex justify-center items-center gap-20' bottomSection={ocf_service} left={true} blackSection={ocf_service_black} />
             <OracleCloudFusionERP />
             <OrcaleFinancialFeature />
-            <div className='pt-32 pb-20'>
+            <div className='pt-20'>
                 <PinkSection
                     heading={"Ready To Supercharge Your AI Workflow?"}
                     text={"Ready to explore the power of AI? Contact us 24×7 to schedule a one-on-one consultation and see how Momentum AI can elevate your AI workflow management and automation journey."}

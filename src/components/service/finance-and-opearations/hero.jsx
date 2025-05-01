@@ -11,13 +11,13 @@ const New_Service_Inner_Hero = ({ heading, para, is_space_in_image = true, image
             <div className='2xl:max-w-[1440px] h-full w-[90%] mx-auto my-auto space-y-20 py-16 md:pt-36 md:pb-0'>
                 <div className='flex w-full justify-between '>
                     {/* Left Section Heading Text And Buttons */}
-                    <div className=' space-y-8 mt-12'>
+                    <div className='w-[540px] space-y-8 mt-12'>
                         {/* Heading */}
-                        <h1 className='text-secondary md:text-[35px] xl:text-[48px] font-["Chakra"] md:leading-10 xl:leading-[52px] font-semibold   home-section-headings'>{heading}</h1>
+                        <h1 className='text-secondary md:text-[35px] xl:text-[48px] font-["Chakra"] md:leading-10 xl:leading-[52px] font-semibold   home-section-headings '>{heading}</h1>
                         {/* Paragraph */}
                         <p className='text-secondary font-normal md:text-[14px] xl:text-[18px] opacity-60 w-[45%]'>{para}</p>
                         {/* Button */}
-                        <Button text={button_text || "Let's Talk"} link={"/contact"} className={button_className ? button_className : "px-10 py-2.5 bg-primary text-white"} />
+                        <Button text={button_text || "Let's Talk"} link={"/contact"} className={button_className ? button_className : "px-10 py-2.5 bg-[#FF6035] hover:bg-[#101010] transition-all duration-700 text-white"} />
                     </div>
                     {/* Right Side Image */}
                     <div className={`${image_className ? image_className : "md:w-[600px] md:h-[400px] xl:w-[813px] xl:h-[663px]"} ${is_space_in_image ? "" : "relative left-[5.55%]"}`}>

@@ -46,7 +46,7 @@ const MicrosoftDynamics = () => {
             <MobilitySolutions className={"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4"} solutions={md_solutions} />
             <MicrosoftPartner />
             <ERPSolutionsBottomSection className='flex flex-row-reverse justify-center items-center gap-20' bottomSection={md_service} left={false} blackSection={md_service_black} />
-            <div className='pt-32 pb-20'>
+            <div className='pt-20'>
                 <PinkSection
                     heading={"Ready To Supercharge Your AI Workflow?"}
                     text={"Ready to explore the power of AI? Contact us 24×7 to schedule a one-on-one consultation and see how Momentum AI can elevate your AI workflow management and automation journey."}

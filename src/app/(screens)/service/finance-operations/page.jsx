@@ -33,7 +33,7 @@ const FinanceOpearations = () => {
                 paragraph={"Plenum isn't just another ERP provider; we embed AI into your systems to deliver actionable insights and smarter decision-making capabilities."}
                 caseStudies={caseStudies}
             />
-            <div className='pt-32 pb-20'>
+            <div className='pt-20'>
                 <PinkSection
                     heading={"Ready To Supercharge Your AI Workflow?"}
                     text={"Ready to explore the power of AI? Contact us 24×7 to schedule a one-on-one consultation and see how Momentum AI can elevate your AI workflow management and automation journey."}
