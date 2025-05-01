@@ -2,6 +2,7 @@
 import React from 'react';
 import ArrowButton from '../common/arrow-button';
 import Image from 'next/image';
+import Link from 'next/link';
 
 
 const PinkSection = ({ heading, text, show_button = false, className, isVideo = false }) => {
@@ -19,7 +20,11 @@ const PinkSection = ({ heading, text, show_button = false, className, isVideo = 
                 </div>
                 {/* Arrow Button Optional */}
                 <div className='w-full flex justify-center xl:mt-4 relative'>
-                    {show_button && <ArrowButton text={"Request A Demo"} className={"xl:mt-5"} />}
+                    {show_button && (
+                        <Link href='/contact'>
+                            <ArrowButton text={"R equest A Demo"} className={"xl:mt-5"} />
+                        </Link>
+                    )}
                 </div>
                 {/* Right Line image */}
                 <div className='h-full w-[180px] absolute right-0 top-0 z-10'>
