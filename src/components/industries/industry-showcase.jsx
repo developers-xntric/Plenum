@@ -59,9 +59,9 @@ export default function IndustryShowcase() {
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}
-                className={`whitespace-nowrap px-[20px] py-[4px] rounded-full text-[18px]  transition-colors ${activeTab === tab
-                  ? "border font-light border-primary text-primary"
-                  : "bg-white text-secondary border border-secondary hover:bg-[#F9FAFB] cursor-pointer"
+                className={`whitespace-nowrap font-['Archivo'] border border-[#10101080] px-[20px] py-[4px] rounded-full text-[18px]  transition-colors ${activeTab === tab
+                  ? " font-medium  text-primary"
+                  : "bg-white text-secondary  hover:bg-[#F9FAFB] cursor-pointer"
                   }`}
               >
                 {tab}
