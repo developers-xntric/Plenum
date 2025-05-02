@@ -26,7 +26,7 @@ export function ContactForm() {
                 {/* Form Inputs (Unchanged) */}
                 {["name", "email", "phone"].map((field, i) => (
                     <div key={i} className="space-y-1">
-                        <label htmlFor={field} className="block text-base text-[#0D0D0D] font-['Archivo'] font-medium">
+                        <label htmlFor={field} className="block text-base text-[#0D0D0D] font-['Archivo'] font-semibold">
                             {field.charAt(0).toUpperCase() + field.slice(1)}
                         </label>
                         <input

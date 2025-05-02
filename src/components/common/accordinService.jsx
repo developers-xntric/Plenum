@@ -30,7 +30,7 @@ export const ERPAccordin = ({ bottomSection, className, left, blackSection, para
                             src={bottomSection.img}
                             alt='img'
                             width={1000}
-                            height={1000}
+                            height={2000}
                             className='w-full h-full'
                         />
                     </div>

@@ -20,11 +20,13 @@ const BuisnessCentral = () => {
                 heading={"Unlocking Business Potential with Microsoft Dynamics 365 Business Central"}
                 para={"Transform Your Business with Microsoft Dynamics 365 Business Central by Plenum."}
                 image={"/service/BC/BC_hero.svg"}
-                image_className="md:w-[500px] md:h-[300px] xl:w-[650px] xl:h-[500px]"
+                image_className="md:w-[500px] md:h-[300px] xl:w-[600px] xl:h-[500px]"
                 button_text="Connect with our Experts"
                 isSlider={true}
+                heading_className={"max-w-[500px]"}
+                para_className={"w-[70%]"}
             />
-             <ERPAccordin  className='flex justify-center items-center gap-20' bottomSection={bc_service} left={true} blackSection={bc_service_black} />
+            <ERPAccordin className='flex justify-center items-center gap-20' bottomSection={bc_service} left={true} blackSection={bc_service_black} />
             <MobilitySolutions
                 card_className={"w-[300px] h-[200px]"}
                 className={"flex flex-wrap gap-10 justify-center"}
