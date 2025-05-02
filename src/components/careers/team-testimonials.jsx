@@ -133,7 +133,7 @@ export default function TeamTestimonials() {
                 onTouchMove={handleDragMove}
                 onTouchEnd={handleDragEnd}
             >
-                <div className="flex items-center justify-center h-[340px] overflow-visible">
+                <div className="flex items-center justify-center h-[220px] overflow-visible">
                     {testimonials.map((testimonial, index) => {
                         const position = index - activeIndex
 
@@ -180,7 +180,7 @@ export default function TeamTestimonials() {
             </div>
 
             {/* Team Photos - Single Image */}
-            <div className="mt-16 mx-auto max-w-4xl">
+            <div className="mt-16 mx-auto max-w-[80%]">
                 <Image
                     src="/careers/grid.svg"
                     alt="Team photo collage"
