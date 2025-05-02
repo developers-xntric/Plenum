@@ -17,7 +17,7 @@ const Industries = () => {
                 para={"We create AI tools that amplify creativity and solve real-world problems. From concept to impact, our technology powers the next wave of innovation."}
             />
             <div className='w-full h-10 border-b border-black/20'></div>
-            <IndustryShowcase />
+            <IndustryShowcase isTabs={true}/>
             <div className='pt-16'>
                 <PinkSection
                     heading={"Ready To Supercharge Your AI Workflow?"}
