@@ -15,7 +15,7 @@ const ProductHero = ({ bgImage, isLogo = true }) => {
 
                 <div className='w-full h-full flex mt-10 xl:mt-0'>
                     {/* Centered Text Below Image */}
-                    <div className="flex flex-col justify-end h-full items-start w-[530px]">
+                    <div className="flex flex-col justify-end h-full items-start w-[530px] xl:w-[600px] ">
                         <h1 className='md:text-[60px] xl:text-[90px] font-["Chakra"] font-[600] text-primary flex flex-col gap-2 md:leading-12 xl:leading-20'>Momentum AI</h1>
                         <p className='mt-8 md:text-[14px] xl:text-[18px] font-normal text-gray-400 w-[450px]'>
                             At Plenum Technologies, we offer cutting-edge AI software platforms tailored to empower data engineers, scientists, analysts, and automation engineers.
