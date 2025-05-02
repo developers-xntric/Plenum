@@ -75,9 +75,9 @@ export function ContactForm() {
                         hover: { transition: { staggerChildren: 0.1 } },
                         rest: { transition: { staggerChildren: 0.1 } },
                     }}
-                    className="group bg-primary cursor-pointer text-white rounded-full py-2 px-6 flex items-center justify-between gap-3 text-sm hover:bg-[#ff784f] transition-colors"
+                    className="group bg-primary cursor-pointer text-white rounded-full py-1 md:py-2 px-4 md:px-6 flex items-center justify-between md:gap-3 text-sm hover:bg-[#ff784f] transition-colors"
                 >
-                    <div className="bg-white rounded-full p-5 relative -left-4">
+                    <div className="bg-white rounded-full p-5 relative -left-3">
                         {[1].map((_, i) => (
                             <motion.div
                                 key={i}
@@ -109,7 +109,7 @@ export function ContactForm() {
                             </motion.div>
                         ))}
                     </div>
-                    <span className="text-[17px] font-semibold font-['Archivo']">Book a free consultation session</span>
+                    <span className="text-[12px] md:text-[17px] font-semibold font-['Archivo']">Book a free consultation session</span>
                 </motion.button>
             </form>
         </div>

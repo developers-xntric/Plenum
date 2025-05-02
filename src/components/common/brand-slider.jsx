@@ -8,13 +8,13 @@ export default function BrandSlider({ text, brand_icons }) {
     return (
         <div className="relative overflow-hidden flex items-center w-full">
             {/* Left side - Text */}
-            <div className="relative z-30 bg-white pl- pr-10 py-2">
+            <div className="relative z-30 md:bg-white pl- pr-10 py-2">
                 <h2 className="text-secondary opacity-70 text-base leading-[20px] font-medium font-['Archivo'] w-[150px] md:block hidden">
                     {text}
                 </h2>
 
                 {/* Left SHADOW (near text) */}
-                <div className="absolute -right-20 top-0 h-full w-20 bg-gradient-to-r from-white via-white/70 to-transparent z-20 pointer-events-none" />
+                <div className="absolute md:-right-20 -top-4 md:top-0 h-32 md:h-full w-10 md:w-20 bg-gradient-to-r from-white via-white/70 to-transparent z-20 pointer-events-none" />
             </div>
 
             {/* Moving Icons */}
