@@ -11,18 +11,18 @@ export default function HouseAIProduct() {
   const isOptimizationInView = useInView(optimizationRef, { once: true });
 
   return (
-    <section className="md:py-12 bg-white ">
-      <div className="2xl:max-w-[1440px] mx-auto w-[90%] space-y-12">
-        <div className='space-y-2 md:space-y-5'>
-          <h2 className="text-[30px] md:text-[50px] leading-[55px] font-['Archivo'] text-secondary font-semibold home-section-headings ">Our In house AI Product</h2>
+    <section className="pb-3 pt-5 md:pt-12 bg-white ">
+      <div className="2xl:max-w-[1440px] mx-auto w-[90%] space-y-8 md:space-y-12">
+        <div className='space-y-3 md:space-y-5'>
+          <h2 className="text-[30px] md:text-[50px] leading-[34px] md:leading-[55px] font-['Archivo'] text-secondary font-semibold home-section-headings ">Our In house AI Product</h2>
           <p className="text-secondary font-['Archivo'] font-medium opacity-75 lg:max-w-[70%] xl:max-w-[52%] text-[12px] md:text-[14px]">
             Plenum isn't just another ERP provider; we embed AI into your systems to deliver actionable insights and smarter decision-making capabilities.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-2 gap-4 lg:gap-8">
 
-          <div className="relative rounded-2xl overflow-hidden shadow-xl">
+          <div className="relative rounded-2xl overflow-hidden ">
             <Image
               src="/images/house-ai-product/smoke.webp"
               width={400}
@@ -75,7 +75,7 @@ export default function HouseAIProduct() {
                   </Link>
 
                 </div>
-                <p className="text-[10px] md:text-[13px] text-white font-['Archivo'] w-[80%] lg:max-w-[80%] xl:w-[60%]">
+                <p className="text-[9px] sm:text-[10px] md:text-[13px] text-white font-['Archivo'] w-[80%] lg:max-w-[80%] xl:w-[60%]">
                   Plenum isn’t just another ERP provider; we embed AI into your systems to deliver actionable insights.
                 </p>
               </div>
@@ -146,11 +146,11 @@ export default function HouseAIProduct() {
                   </Link>
 
                 </div>
-                <p className="text-[10px] md:text-[13px] text-white font-['Archivo'] w-[80%] lg:max-w-[80%] xl:w-[60%]">
+                <p className="text-[9px] sm:text-[10px] md:text-[13px] text-white font-['Archivo'] w-[80%] lg:max-w-[80%] xl:w-[60%]">
                   Plenum isn’t just another ERP provider; we embed AI into your systems to deliver actionable insights.
                 </p>
               </div>
-              <div className='flex items-center justify-center '>
+              <div className='flex items-center justify-center pb-2 md:pb-0 '>
                 <div className="space-y-3 w-[85%] md:w-[55%]">
                   <div className='space-y-2'>
                     <p className="text-sm font-['Archivo']">Process</p>

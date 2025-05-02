@@ -2,14 +2,14 @@ export default function CentralizeIntelligence() {
     return (
         <div className=" bg-white">
 
-            <div className="2xl:max-w-[1440px] mx-auto w-[90%] space-y-20">
+            <div className="2xl:max-w-[1440px] mx-auto w-[90%] space-y-10 md:space-y-20 relative md:static  bottom-5 md:bottom-0">
                 <div className="lg:max-w-[89%] xl:max-w-[70%]">
-                    <h1 className="text-[30px] md:text-[55.312px] leading-[40px] md:leading-[55px] font-['Archivo'] text-secondary font-semibold home-section-headings tracking-tight">
+                    <h1 className="text-[30px] md:text-[55.312px] leading-[34px] md:leading-[55px] font-['Archivo'] text-secondary font-semibold home-section-headings tracking-tight">
                         Centralizing intelligence for the largest telecom provider in Mauritius
                     </h1>
                 </div>
 
-                <div className="flex md:flex-row flex-col items-center justify-between gap-12 md:gap-12">
+                <div className="flex md:flex-row flex-col items-center justify-between gap-5 md:gap-12">
                     {/* Column 1 */}
                     <div className="space-y-4 max-w-[50%">
                         <h2 className="font-medium font-['Archivo'] text-black text-[20px]">Exceptional Designers</h2>
@@ -17,11 +17,11 @@ export default function CentralizeIntelligence() {
                             We only have one rule: Hire senior-level designers and give them the tools to do their best work. Our team
                             spans the globe and comprises of experts across multiple disciplines.
                         </p>
-                        <div className="pt-4">
+                        <div className="md:pt-4">
                             <div className="flex items-center gap-3">
-                                <span className="text-[55.312px] tracking-tight font-medium grayish-gradient font-['Archivo']">10/10</span>
+                                <span className="text-[52px] md:text-[55.312px] tracking-tight font-medium grayish-gradient font-['Archivo']">10/10</span>
                                 <div >
-                                    <p className="text-xs font-medium text-black opacity-[0.6] leading-tight font-['Archivo']">
+                                    <p className="text-[10px] md:text-xs font-semibold text-black opacity-[0.6] leading-tight font-['Archivo']">
                                         Clients say they would
                                         <br />
                                         recommend UI Mech
@@ -38,11 +38,11 @@ export default function CentralizeIntelligence() {
                             Get designs in Figma or we'll jump straight into code depending on what your project needs. Working in
                             weekly sprints, we provide delivery updates every other day on average.
                         </p>
-                        <div className="pt-4">
+                        <div className="md:pt-4">
                             <div className="flex items-center gap-3">
-                                <span className="text-[50px] font-medium grayish-gradient font-['Archivo']">1 Week</span>
+                                <span className="text-[52px] md:text-[55.312px] font-medium grayish-gradient font-['Archivo']">1 Week</span>
                                 <div>
-                                    <p className="text-xs font-medium text-black opacity-[0.6] leading-tight font-['Archivo']">
+                                    <p className="text-[10px] md:text-xs font-semibold text-black opacity-[0.6] leading-tight font-['Archivo']">
                                         Design
                                         <br />
                                         Sprints
@@ -61,9 +61,9 @@ export default function CentralizeIntelligence() {
                         </p>
                         <div className="pt-4">
                             <div className="flex items-center gap3">
-                                <span className="text-[55.312px] tracking-tight font-medium grayish-gradient font-['Archivo']">10+Years</span>
+                                <span className="text-[52px] md:text-[55.312px] tracking-tight font-medium grayish-gradient font-['Archivo']">10+Years</span>
                                 <div className="ml-2">
-                                    <p className="text-xs font-medium text-black opacity-[0.6] leading-tight font-['Archivo']">
+                                    <p className="text-[10px] md:text-xs font-semibold text-black opacity-[0.6] leading-tight font-['Archivo']">
                                         Average
                                         <br />
                                         Years of Experience

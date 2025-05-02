@@ -122,7 +122,7 @@ export default function CaseStudies({ title, paragraph, caseStudies }) {
             <div className="2xl:max-w-[1440px] w-[90%] mx-auto pt-12 xl:pt-16">
                 <div className="mb-8 space-y-6">
                     <div className="lg:max-w-[85%] xl:max-w-[70%] 2xl:max-w-[65%]">
-                        <h2 className="text-[32px] md:text-[50px] leading-[40px] md:leading-[55px] font-['Archivo'] text-secondary font-semibold home-section-headings">
+                        <h2 className="text-[30px] md:text-[50px] leading-[34px] md:leading-[55px] font-['Archivo'] text-secondary font-semibold home-section-headings">
                             {title}
                         </h2>
                     </div>
@@ -148,20 +148,20 @@ export default function CaseStudies({ title, paragraph, caseStudies }) {
                             onScroll={handleScroll}
                         >
                             {caseStudies.map((study, index) => (
-                                <div key={index} className="min-w-full snap-center px-1">
+                                <div key={index} className="min-w-full snap-center md:px-1">
                                     <CaseStudyCard title={study.title} image={study.image} link={study.link} />
                                 </div>
                             ))}
                         </div>
 
                         {/* Dots Indicator */}
-                        <div className="flex justify-center mt-4 gap-2">
+                        <div className="flex justify-center mt-10 gap-2">
                             {caseStudies.map((_, index) => (
                                 <button
                                     key={index}
                                     className={cn(
-                                        "w-2 h-2 rounded-full transition-all",
-                                        activeIndex === index ? "bg-secondary w-4" : "bg-secondary/30",
+                                        "w-[6px] h-[6px] rounded-full transition-all",
+                                        activeIndex === index ? "bg-secondary w-4" : "bg-gray-400",
                                     )}
                                     onClick={() => scrollToIndex(index)}
                                     aria-label={`Go to slide ${index + 1}`}

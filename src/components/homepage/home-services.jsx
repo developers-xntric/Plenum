@@ -12,7 +12,7 @@ const servicesData = [
     title: "ERP Consulting & Implementation",
     description: (
       <>
-        <h3 className="text-[15px] font-medium font-['Archivo'] text-secondary">
+        <h3 className="text-[15px] font-semibold font-['Archivo'] text-secondary">
           Microsoft Business Central + AI for Intelligent Enterprise Ops
         </h3>
         <p className="text-[15px] font-medium text-secondary opacity-75 mt-2 font-['Archivo']">
@@ -20,7 +20,7 @@ const servicesData = [
         </p>
         <Link
           href="/service/ERP-consulting"
-          className="text-[#FF6035] font-['Archivo'] flex items-center font-semibold text-[17px] mt-2 underline"
+          className="text-[#FF6035] font-['Archivo'] flex items-center font-semibold md:text-[17px] mt-2 underline"
         >
           View Service
           <ArrowUpRight />
@@ -33,15 +33,15 @@ const servicesData = [
     title: "AI Consulting, Governance & Implementation",
     description: (
       <>
-        <h3 className="text-[17px] font-medium font-['Archivo'] text-secondary">
+        <h3 className="text-[15px] font-semibold font-['Archivo'] text-secondary">
           Microsoft Business Central + AI for Intelligent Enterprise Ops
         </h3>
-        <p className="text-[16px] text-secondary opacity-75 mt-2 font-['Archivo']">
+        <p className="text-[15px] font-medium text-secondary opacity-75 mt-2 font-['Archivo']">
           We architect, implement and optimize Microsoft D365 ERP systems, Business Central with a focus on automation, insights, and integrated workflows. With our copilot studio capabilities and our inhouse on premise product SecureGPT® built in, your ERP becomes a smart assistant — empowering finance, operations, and procurement teams.
         </p>
         <Link
-          href="/services/erp-consulting"
-          className="text-[#FF6035] font-['Archivo'] flex items-center font-semibold text-[17px] mt-2 underline"
+          href="/service/ERP-consulting"
+          className="text-[#FF6035] font-['Archivo'] flex items-center font-semibold md:text-[17px] mt-2 underline"
         >
           View Service
           <ArrowUpRight />
@@ -54,15 +54,15 @@ const servicesData = [
     title: "Momentum",
     description: (
       <>
-        <h3 className="text-[17px] font-medium font-['Archivo'] text-secondary">
+        <h3 className="text-[15px] font-semibold font-['Archivo'] text-secondary">
           Microsoft Business Central + AI for Intelligent Enterprise Ops
         </h3>
-        <p className="text-[16px] text-secondary opacity-75 mt-2 font-['Archivo']">
+        <p className="text-[15px] font-medium text-secondary opacity-75 mt-2 font-['Archivo']">
           We architect, implement and optimize Microsoft D365 ERP systems, Business Central with a focus on automation, insights, and integrated workflows. With our copilot studio capabilities and our inhouse on premise product SecureGPT® built in, your ERP becomes a smart assistant — empowering finance, operations, and procurement teams.
         </p>
         <Link
-          href="/services/erp-consulting"
-          className="text-[#FF6035] font-['Archivo'] flex items-center font-semibold text-[17px] mt-2 underline"
+          href="/service/ERP-consulting"
+          className="text-[#FF6035] font-['Archivo'] flex items-center font-semibold md:text-[17px] mt-2 underline"
         >
           View Service
           <ArrowUpRight />
@@ -75,15 +75,15 @@ const servicesData = [
     title: "Managed Cloud Services",
     description: (
       <>
-        <h3 className="text-[17px] font-medium font-['Archivo'] text-secondary">
+        <h3 className="text-[15px] font-semibold font-['Archivo'] text-secondary">
           Microsoft Business Central + AI for Intelligent Enterprise Ops
         </h3>
-        <p className="text-[16px] text-secondary opacity-75 mt-2 font-['Archivo']">
+        <p className="text-[15px] font-medium text-secondary opacity-75 mt-2 font-['Archivo']">
           We architect, implement and optimize Microsoft D365 ERP systems, Business Central with a focus on automation, insights, and integrated workflows. With our copilot studio capabilities and our inhouse on premise product SecureGPT® built in, your ERP becomes a smart assistant — empowering finance, operations, and procurement teams.
         </p>
         <Link
-          href="/services/erp-consulting"
-          className="text-[#FF6035] font-['Archivo'] flex items-center font-semibold text-[17px] mt-2 underline"
+          href="/service/ERP-consulting"
+          className="text-[#FF6035] font-['Archivo'] flex items-center font-semibold md:text-[17px] mt-2 underline"
         >
           View Service
           <ArrowUpRight />
@@ -96,15 +96,15 @@ const servicesData = [
     title: "Digital Experience",
     description: (
       <>
-        <h3 className="text-lg font-medium font-['Archivo'] text-secondary">
+        <h3 className="text-[15px] font-semibold font-['Archivo'] text-secondary">
           Microsoft Business Central + AI for Intelligent Enterprise Ops
         </h3>
-        <p className="text-sm text-secondary opacity-75 mt-2 font-['Archivo']">
+        <p className="text-[15px] font-medium text-secondary opacity-75 mt-2 font-['Archivo']">
           We architect, implement and optimize Microsoft D365 ERP systems, Business Central with a focus on automation, insights, and integrated workflows. With our copilot studio capabilities and our inhouse on premise product SecureGPT® built in, your ERP becomes a smart assistant — empowering finance, operations, and procurement teams.
         </p>
         <Link
-          href="/services/erp-consulting"
-          className="text-[#FF6035] font-['Archivo'] flex items-center font-semibold text-[17px] mt-2 underline"
+          href="/service/ERP-consulting"
+          className="text-[#FF6035] font-['Archivo'] flex items-center font-semibold md:text-[17px] mt-2 underline"
         >
           View Service
           <ArrowUpRight />
@@ -124,16 +124,16 @@ export default function HomeServices() {
   return (
     <div className="bg-white">
       {/* Main content */}
-      <div className="2xl:max-w-[1440px] w-[90%] mx-auto space-y-20 py-16 xl:py-24">
+      <div className="2xl:max-w-[1440px] w-[90%] mx-auto space-y-20 md:py-16 xl:py-24">
         {/* BRAND ICONS SLIDER */}
         <BrandSlider
           text={"Trusted by world's most exciting brands"}
           brand_icons={home_brand_icons}
         />
 
-        <div className="flex flex-col space-y-16">
+        <div className="flex flex-col space-y-10 sm:space-y-16">
           {/* UPPER column - Headline */}
-          <div className="xl:w-[80%] 2xl:w-[70%] relative z-20">
+          <div className=" xl:w-[80%] 2xl:w-[70%] relative z-20">
             <h2 className="text-[30px] md:text-[59.542px] leading-[40px] md:leading-[60px] font-semibold font-['Archivo'] relative z-20 bg-[linear-gradient(to_right,_#101010,_#9b9999,_#101010,_#9b9999)] bg-clip-text text-transparent">
               Why AI enabled Enterprise with Plenum? With Plenum gain the tools to unlock deeper insights, automate complex workflows
             </h2>
@@ -142,7 +142,7 @@ export default function HomeServices() {
           {/* BOTTOM column - Services */}
           <div className="flex md:flex-row flex-col items-start justify-between xl:max-w-[90%]">
             {/* LEFT */}
-            <div className="space-y-6 w-full md:w-[80%]">
+            <div className="space-y-2 md:space-y-6 w-full md:w-[80%]">
               <div className="relative font-medium">
                 <h2 className="text-[30px] md:text-[57.375px] font-semibold text-secondary opacity-[0.8] inline-block md:block font-['Archivo'] tracking-tighter">
                   Our
@@ -158,7 +158,7 @@ export default function HomeServices() {
                 <Button
                   link={"/service"}
                   text={"Explore More"}
-                  className="px-6 py-2 hover:bg-[#FF6035] hover:transition-colors ease-in-out duration-300 hover:text-white border border-primary rounded text-[15px] font-medium transition-colors inline-block font-['Archivo']"
+                  className="px-6 py-2 hover:bg-[#FF6035] hover:transition-colors ease-in-out duration-300 hover:text-white border border-primary rounded  sm:text-[15px] font-medium transition-colors inline-block font-['Archivo']"
                 />
               </div>
             </div>
@@ -172,7 +172,7 @@ export default function HomeServices() {
                 >
                   <div
                     onClick={() => toggleAccordion(item.id)}
-                    className="group flex items-center gap-3 font-medium text-secondary text-[21px] cursor-pointer"
+                    className="group flex items-center gap-3 font-medium text-secondary md:text-[21px] cursor-pointer"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -189,7 +189,7 @@ export default function HomeServices() {
                         strokeLinecap="square"
                       />
                     </svg>
-                    <p className="group-hover:text-[#FF6035] font-bold transition-colors w-[90%]  duration-500 font-['Archivo']">
+                    <p className="group-hover:text-[#FF6035] leading font-bold transition-colors w-[90%] leading-[-0.485px]  duration-500 font-['Archivo']">
                       {item.title}
                     </p>
                   </div>
@@ -198,7 +198,7 @@ export default function HomeServices() {
                     className={`overflow-hidden transition-all duration-300 ${openAccordion === item.id ? 'max-h-96 py-4' : 'max-h-0'
                       }`}
                   >
-                    <div className="ml-12 text-left">{item.description}</div>
+                    <div className="ml-10 md:ml-12 text-left">{item.description}</div>
                   </div>
                 </div>
               ))}

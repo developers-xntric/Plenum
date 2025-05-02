@@ -8,7 +8,7 @@ export default function HomeCaseStudyCard({ title, image, link }) {
     return (
         <Link href={link} className="block">
             <motion.div
-                className="rounded-[12px] border-2 border-[#bfbfbf] overflow-hidden h-full p-3"
+                className="rounded-[12px] border-2 border-[#bfbfbf] overflow-hidden h-full p-2 md:p-3"
                 initial="rest"
                 whileHover="hover"
                 animate="rest"

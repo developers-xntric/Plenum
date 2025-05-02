@@ -1,11 +1,12 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
-import { ChevronRight } from "lucide-react"
+import { ArrowUpRight, ChevronRight } from "lucide-react"
 import { cn } from "@/lib/utils"
 import Image from "next/image"
 import Link from "next/link"
 import { articles } from "@/data/article"
+import { motion } from "framer-motion";
 
 export default function ArticleSlider({ bg = "black" }) {
     const [activeIndex, setActiveIndex] = useState(0)
@@ -125,11 +126,11 @@ export default function ArticleSlider({ bg = "black" }) {
     }, [])
 
     return (
-        <div className={`w-full ${bg == "black" ? "bg-[#282526]" : "bg-white"}  text-white py-20 font-['Archivo']`}>
+        <div className={`w-full ${bg == "black" ? "bg-[#282526]" : "bg-white"}  text-white py-14 md:py-20 font-['Archivo']`}>
             <div className="w-[95%] ms-auto">
                 <div className="max-w-full ms-auto 2xl:max-w-[93%]">
-                    <h2 className={` ${bg == "black" ? "text-white" : "text-[#101010]"} text-3xl font-semibold mb-6 text-[50px]`}>Discover Our Articles</h2>
-                    <p className={` ${bg == "black" ? "text-[#FFF]" : "text-[#101010]"}  opacity-60 text-[15px] mb-10 max-w-xl`}>
+                    <h2 className={` ${bg == "black" ? "text-white" : "text-[#101010]"} text-3xl font-semibold mb-6 text-[30px] md:text-[50px]`}>Discover Our Articles</h2>
+                    <p className={` ${bg == "black" ? "text-[#FFF]" : "text-[#101010]"}  opacity-60 text-[14] md:text-[15px] mb-10 max-w-xl`}>
                         Explore our latest posts for insights in design, learning, and innovation. Stay updated with trends and
                         breakthroughs in the creative world.
                     </p>
@@ -184,13 +185,44 @@ export default function ArticleSlider({ bg = "black" }) {
                                                 <h3 className={cn("font-semibold  mb-1 line-clamp-2 text-xl", bg == "black" ? "text-[#FFF]" : "text-[#101010]")}>
                                                     {article.title}
                                                 </h3>
-                                                <Link
+
+                                                <motion.a
                                                     href="/"
-                                                    className="text-primary inline-flex items-center text-sm hover:underline"
+                                                    className="text-primary underline underline-offset-2 inline-flex items-center text-sm group hover:underline"
                                                     aria-label={`Read more about ${article.title}`}
+                                                    initial="rest"
+                                                    whileHover="hover"
+                                                    animate="rest"
                                                 >
-                                                    Read More <ChevronRight className="h-4 w-4 ml-1" />
-                                                </Link>
+                                                    Read More
+                                                    <motion.span
+                                                        className="ml-1"
+                                                        variants={{
+                                                            rest: {
+                                                                x: 0,
+                                                                y: 0,
+                                                                opacity: 1,
+                                                            },
+                                                            hover: {
+                                                                x: [0, 4, 0],
+                                                                y: [0, -4, 0],
+                                                                opacity: 1,
+                                                                transition: {
+                                                                    duration: 1,
+                                                                    ease: "easeInOut",
+                                                                    repeat: Infinity,
+                                                                },
+                                                            },
+                                                        }}
+                                                    >
+                                                        <ArrowUpRight
+                                                            size={10}
+                                                            className="h-5 w-5 text-[#FF6035] cursor-pointer transition-transform duration-200"
+                                                        />
+                                                    </motion.span>
+                                                </motion.a>
+
+
                                             </div>
                                         </div>
                                     </div>

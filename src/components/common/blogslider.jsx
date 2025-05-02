@@ -49,7 +49,7 @@ const BlogSlider = ({ cardData }) => {
                         <li className="splide__slide " key={index}>
                             <Image src={card.img} width={300} height={300} alt="blog 1" className='w-full ' />
                             <div className='max-w-[80%] absolute bottom-6 left-6'>
-                                <span className='text-[#D4D4D8] text-[14px]'>{card.date}</span>
+                                <span className='text-[#D4D4D8] text-[12px] md:text-[14px]'>{card.date}</span>
                                 <p className='text-white text-[16px]'>{card.para}</p>
                             </div>
                         </li>
