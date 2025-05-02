@@ -78,24 +78,21 @@ export function ContactForm() {
                     className="group bg-primary cursor-pointer text-white rounded-full py-2 px-6 flex items-center justify-between gap-3 text-sm hover:bg-[#ff784f] transition-colors"
                 >
                     <div className="bg-white rounded-full p-5 relative -left-4">
-                        {[1, 2, 3].map((_, i) => (
+                        {[1].map((_, i) => (
                             <motion.div
                                 key={i}
                                 className="absolute top-1/5 left-1/5"
                                 variants={{
                                     rest: {
-                                        x: 0,
-                                        y: 0,
+                                        rotate: 0,
                                         opacity: 1,
                                     },
                                     hover: {
-                                        x: [0, 8, 0],
-                                        y: [0, -8, 0],
+                                        rotate: [0, 45],
                                         opacity: 1,
                                         transition: {
-                                            duration: 1,
+                                            duration: 0.5,
                                             ease: "easeInOut",
-                                            repeat: Infinity,
                                         },
                                     },
                                 }}

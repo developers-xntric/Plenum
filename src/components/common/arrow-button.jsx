@@ -22,24 +22,21 @@ const ArrowButton = ({ text, className = "", arrow_class = "" }) => {
             className={`group bg-white cursor-pointer text-black rounded-full py-1 px-5 flex items-center justify-between gap-2 text-sm hover:bg-gray-200 transition-colors ${className}`}
         >
             <div className={`bg-primary text-white rounded-full p-5 relative right-4 ${arrow_class}`}>
-                {[1, 2, 3].map((_, i) => (
+                {[1].map((_, i) => (
                     <motion.div
                         key={i}
                         className="absolute top-1/4 left-1/4"
                         variants={{
                             rest: {
-                                x: 0,
-                                y: 0,
+                                rotate: 0,
                                 opacity: 1,
                             },
                             hover: {
-                                x: [0, 8, 0],
-                                y: [0, -8, 0],
+                                rotate: [0, 45],
                                 opacity: 1,
                                 transition: {
-                                    duration: 1,
+                                    duration: 0.4,
                                     ease: "easeInOut",
-                                    repeat: Infinity,
                                 },
                             },
                         }}
