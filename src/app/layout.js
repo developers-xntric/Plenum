@@ -15,8 +15,8 @@ export default function RootLayout({ children }) {
         className={`antialiased`}
         cz-shortcut-listen="true"
       >
-        <Navbar />
-        <MobileNav />
+        {/* <Navbar />
+        <MobileNav /> */}
         {children}
         <Footer />
       </body>

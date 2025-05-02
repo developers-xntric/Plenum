@@ -13,7 +13,7 @@ import { testimonials } from "@/data/home-testimonials";
 export default function Home() {
   return (
     <div>
-      <Hero />
+      {/* <Hero /> */}
       <HomeServices />
       <CentralizeIntelligence />
       <HouseAIProduct />
