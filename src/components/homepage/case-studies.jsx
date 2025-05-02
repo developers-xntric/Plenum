@@ -122,7 +122,7 @@ export default function CaseStudies({ title, paragraph, caseStudies }) {
             <div className="2xl:max-w-[1440px] w-[90%] mx-auto pt-12 xl:pt-16">
                 <div className="mb-8 space-y-6">
                     <div className="lg:max-w-[85%] xl:max-w-[70%] 2xl:max-w-[65%]">
-                        <h2 className="text-[28px] md:text-[50px] leading-[40px] md:leading-[55px] font-['Archivo'] text-secondary font-semibold home-section-headings">
+                        <h2 className="text-[32px] md:text-[50px] leading-[40px] md:leading-[55px] font-['Archivo'] text-secondary font-semibold home-section-headings">
                             {title}
                         </h2>
                     </div>
