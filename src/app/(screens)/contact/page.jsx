@@ -42,7 +42,7 @@ function Contact() {
 
                     {/* Stats */}
                     <div className="grid grid-cols-4 gap-8 font-['Archivo']">
-                        <div className="stat border-b ">
+                        <div className="stat border-b pb-2">
                             <h2 className="text-[48px] xl:text-[70px] font-semibold font-['Archivo'] text-[#101010]">
                                 5k<span className="text-primary font-['Archivo'] ">+</span>
                             </h2>
