@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function Finance_Opearations_Service() {
     return (
-        <section className="py-12 lg:px-16 2xl:max-w-[1440px] font-['Archivo'] max-w-[90%] mx-auto">
+        <section className="py-20 lg:px-16 2xl:max-w-[1440px] font-['Archivo'] max-w-[90%] mx-auto">
             <div className="text-center mb-8 md:mb-12">
                 <h2 className="text-2xl md:text-[50px] text-secondary font-semibold home-section-headings leading-[40px]">Impact of</h2>
                 <h2 className="text-2xl md:text-[50px] text-secondary font-semibold home-section-headings mb-4">Dynamics 365 Finance and Operations</h2>

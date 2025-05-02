@@ -11,7 +11,7 @@ import OracleResourcePlanning from '@/components/service/oracle/oracle-resource-
 import PinkSection from '@/components/service/pink-section'
 import { service_brand_icons } from '@/data/brand-slider-icons-data'
 import { caseStudies } from '@/data/case-studies-card-data'
-import { oracle_service, oracle_service_black } from '@/data/erp-consulting-service'
+import { blackSection, bottomSection, oracle_service, oracle_service_black } from '@/data/erp-consulting-service'
 import { cardData } from '@/data/home-blog'
 import { testimonials } from '@/data/home-testimonials'
 
@@ -33,14 +33,8 @@ const Oracle = () => {
                 </div>
                 <ERPAccordin para='Watch this on-demand webinar to discover how AI can drive real business outcomes and prepare your organization for the future of finance. Make AI your competitive edge.' arrow={true} className='flex justify-center items-center gap-20' bottomSection={oracle_service} left={true} blackSection={oracle_service_black} />
                 <OracleResourcePlanning />
-                <div className='py-8'>
-                    <Finance_Opearations_Service />
-                </div>
-                <CaseStudies
-                    title={" Our Case Studies Driving AI Transformation Across Industries"}
-                    paragraph={"Plenum isn't just another ERP provider; we embed AI into your systems to deliver actionable insights and smarter decision-making capabilities."}
-                    caseStudies={caseStudies}
-                />
+                <Finance_Opearations_Service />
+                <ERPSolutionsBottomSection className='flex justify-center items-center gap-5' bottomSection={bottomSection} left={true} blackSection={blackSection} />
                 <div className=' pt-20'>
                     <PinkSection
                         heading={"Ready To Supercharge Your AI Workflow?"}

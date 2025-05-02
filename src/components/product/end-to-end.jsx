@@ -3,7 +3,7 @@ import React from 'react'
 
 const EndToEndAI = () => {
     return (
-        <div className="py-16 font-['Archivo']">
+        <div className="py-16 xl:py-20 font-['Archivo']">
             <div className="2xl:max-w-[1440px] max-w-[90%] mx-auto text-center mb-8">
                 <div>
                     <h2 className="text-[50px] leading-[35px]  text-secondary font-semibold home-section-headings">Momentum AI</h2>
@@ -18,7 +18,7 @@ const EndToEndAI = () => {
                 </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 place-items-center lg:grid-cols-3 gap-14 max-w-[75%] 2xl:max-w-[900px] mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 place-items-center lg:grid-cols-3 gap-14 xl:gap-20 max-w-[75%] 2xl:max-w-[900px] mx-auto">
                 {data.map((ele, i) => (
                     <div
                         key={i}
@@ -36,8 +36,8 @@ const EndToEndAI = () => {
                         <div className='mb-5'>
                             <Image src={ele.logo || null} alt="logo" width={50} height={50} />
                         </div>
-                        <h3 className={`${ele.bg === "white" ? "text-[#282526]" : "text-[#FFFFFF]"} font-bold leading-5 text-[20px] mb-4`}>{ele.title}</h3>
-                        <p className={`${ele.bg == "white" ? "text-[#282526]" : "text-[#FFFFFF]"} text-[12px]`}>{ele.para}</p>
+                        <h3 className={`${ele.bg === "white" ? "text-[#282526]" : "text-[#FFFFFF]"} leading-[23.749px] font-bold max-w-[70%] text-[19.999px] mb-4`}>{ele.title}</h3>
+                        <p className={`${ele.bg == "white" ? "text-[#28252680]" : "text-[#E6E6E7]"} text-[12px] font-semibold leading-[15px] `}>{ele.para}</p>
                     </div>
                 ))}
             </div>

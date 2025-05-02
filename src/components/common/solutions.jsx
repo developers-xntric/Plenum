@@ -19,7 +19,7 @@ const ERPSolutions = ({ blackSection }) => {
 
 export const ERPSolutionsBottomSection = ({ bottomSection, className, left, blackSection, para, arrow = false }) => {
     return (
-        <section className='relative font-["Archivo"] '>
+        <section className='relative bg-[#EFEFEF] font-["Archivo"] '>
             <ERPSolutions blackSection={blackSection} />
             <div className={`max-w-[95%] 2xl:max-w-[1610px] ${left ? "ms-auto" : ""}  `}>
                 <div className={`${className}`}>

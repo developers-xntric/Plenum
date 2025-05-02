@@ -9,7 +9,7 @@ export default function OracleResourcePlanning() {
     const tabs = ['Financial Management', 'Project Management', 'Procurement', 'ERP Analytics'];
 
     return (
-        <div className="text-center py-16 bg-white">
+        <div className="text-center pt-16 bg-white">
             {/* WRAPPER */}
             <div className="2xl:max-w-[1440px] w-[90%] mx-auto space-y-16">
                 {/* Headings */}
