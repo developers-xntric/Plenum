@@ -18,7 +18,7 @@ export default function Home() {
       <CentralizeIntelligence />
       <HouseAIProduct />
       <CaseStudies
-        title={"Our Case Studies Driving AI Transformation Across Industries"}
+        title={" Our Case Studies Driving AI Transformation Across Industries"}
         paragraph={"Plenum isn't just another ERP provider; we embed AI into your systems to deliver actionable insights and smarter decision-making capabilities."}
         caseStudies={caseStudies}
       />
