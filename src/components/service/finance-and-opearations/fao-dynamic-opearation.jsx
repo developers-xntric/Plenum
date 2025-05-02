@@ -231,7 +231,7 @@ export default function FaoDynamicOperation() {
                 onTouchEnd={handleDragEnd}
                 style={{ cursor: isDragging ? 'grabbing' : 'grab' }}
             >
-                <div className="relative bg-gray-100 p-2 rounded-lg shadow-md overflow-hidden">
+                <div className="relative overflow-hidden">
                     {/* Carousel slides */}
                     <div className="relative w-full aspect-[16/9] overflow-hidden rounded">
                         {tabContent[activeTab].map((slide, index) => (

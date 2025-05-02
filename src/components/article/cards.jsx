@@ -33,13 +33,13 @@ const Cards = () => {
                                             <h3 className={"font-semibold mb-1 line-clamp-2 text-xl"}>
                                                 {article.title}
                                             </h3>
-                                            <a
-                                                href="#"
+                                            <Link
+                                                href="/"
                                                 className="text-primary inline-flex items-center text-sm hover:underline"
                                                 aria-label={`Read more about ${article.title}`}
                                             >
                                                 Read More <ChevronRight className="h-4 w-4 ml-1" />
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </Link>

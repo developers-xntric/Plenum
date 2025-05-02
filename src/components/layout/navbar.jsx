@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from "react"
 import Link from "next/link"
-import { ArrowRight, ChevronRight } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 import Button from "../common/button"
 
 const Navbar = () => {
@@ -97,7 +97,7 @@ const Navbar = () => {
     }
 
     return (
-        <header className='z-[999] border-[#101010] border 2xl:w-[1300px] w-[80%] xl:w-[85%] font-normal font-["Archivo"] mx-auto fixed -translate-x-1/2 left-1/2 top-6 bg-[#FFFFFF] rounded-[13px]'>
+        <header className='z-[999] border-[#101010] border 2xl:w-[1200px]  lg:w-[80%] xl:w-[85%] font-normal font-["Archivo"] mx-auto hidden md:fixed md:block -translate-x-1/2 left-1/2 top-6 bg-[#FFFFFF] rounded-[13px]'>
             {/* Wrapper */}
             <div className="xl:px-[18px] xl:py-2 py-1.5 px-3">
                 {/* Inner Row Whole Div */}
