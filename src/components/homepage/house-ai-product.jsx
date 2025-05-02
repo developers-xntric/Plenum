@@ -178,7 +178,6 @@ export default function HouseAIProduct() {
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>

@@ -4,7 +4,7 @@ import { finance_opearations_services } from '@/data/brand-slider-icons-data';
 import Image from 'next/image';
 import CustomerStats from '../customer-stats';
 
-const New_Service_Inner_Hero = ({ heading, para, is_space_in_image = true, image, image_className, button_text, button_className, isSlider = false }) => {
+const New_Service_Inner_Hero = ({ heading, para, is_space_in_image = true, image, image_className, button_text, button_className, isSlider = false, heading_className, para_className }) => {
     return (
         <div className='overflow-hidden bg-cover xl:h-auto' style={{ backgroundImage: "url('/service/FAO/FAO_hero_bg.svg')" }}>
             {/* Wrapper */}
@@ -13,9 +13,9 @@ const New_Service_Inner_Hero = ({ heading, para, is_space_in_image = true, image
                     {/* Left Section Heading Text And Buttons */}
                     <div className='w-[540px] space-y-8 mt-12'>
                         {/* Heading */}
-                        <h1 className='text-secondary md:text-[35px] xl:text-[48px] font-["Chakra"] md:leading-10 xl:leading-[52px] font-semibold   home-section-headings '>{heading}</h1>
+                        <h1 className={`text-secondary md:text-[35px] xl:text-[48px] font-["Chakra"] md:leading-10 xl:leading-[52px] font-semibold home-section-headings ${heading_className}`}>{heading}</h1>
                         {/* Paragraph */}
-                        <p className='text-secondary font-normal md:text-[14px] xl:text-[18px] opacity-60 w-[45%]'>{para}</p>
+                        <p className={`text-secondary font-normal md:text-[14px] xl:text-[18px] opacity-60 ${para_className ? para_className : "w-[45%]"}`}>{para}</p>
                         {/* Button */}
                         <Button text={button_text || "Let's Talk"} link={"/contact"} className={button_className ? button_className : "px-10 py-2.5 bg-[#FF6035] hover:bg-[#101010] transition-all duration-700 text-white"} />
                     </div>
