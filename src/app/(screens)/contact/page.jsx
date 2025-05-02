@@ -6,7 +6,7 @@ import React from 'react'
 
 function Contact() {
     return (
-        <div className='pt-40 xl:pt-20'>
+        <div className='pt-40 xl:pt-20 2xl:pt-0'>
             <div className='2xl:max-w-[1440px] w-[90%] mx-auto '>
                 {/* HERO */}
                 <div className='flex items-center justify-between gap-10 h-screen'>
