@@ -1,4 +1,4 @@
-'use client'; 
+'use client';
 import { home_brand_icons } from "@/data/brand-slider-icons-data";
 import BrandSlider from "../common/brand-slider";
 import Button from "../common/button";
@@ -156,7 +156,7 @@ export default function HomeServices() {
                   Plenum offers AI solutions to automate workflows, enhance decisions, and boost efficiency. We tailor services to your needs and help you scale confidently.
                 </p>
                 <Button
-                  link={"/services"}
+                  link={"/service"}
                   text={"Explore More"}
                   className="px-6 py-2 hover:bg-[#FF6035] hover:transition-colors ease-in-out duration-300 hover:text-white border border-primary rounded text-[15px] font-medium transition-colors inline-block font-['Archivo']"
                 />

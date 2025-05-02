@@ -108,9 +108,9 @@ export default function TeamTestimonials() {
     }
 
     return (
-        <section className="py-16 px-4 mx-auto overflow-x-hidden">
+        <section className="py-16 px-4 mx-auto overflow-x-hidden font-['Archivo']">
             <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-[50px] tracking-tight opacity-90 font-['Archivo] font-medium mb-4">
+                <h2 className="text-3xl md:text-[50px] tracking-tight opacity-80 font-['Archivo'] font-semibold mb-4">
                     What our team loves about
                     <br />
                     working at Plenum
@@ -133,7 +133,7 @@ export default function TeamTestimonials() {
                 onTouchMove={handleDragMove}
                 onTouchEnd={handleDragEnd}
             >
-                <div className="flex items-center justify-center h-[220px] overflow-visible">
+                <div className="flex items-center justify-center h-[200px] overflow-visible">
                     {testimonials.map((testimonial, index) => {
                         const position = index - activeIndex
 
@@ -180,7 +180,7 @@ export default function TeamTestimonials() {
             </div>
 
             {/* Team Photos - Single Image */}
-            <div className="mt-16 mx-auto max-w-[80%]">
+            <div className="mt-16 mx-auto max-w-6xl">
                 <Image
                     src="/careers/grid.svg"
                     alt="Team photo collage"

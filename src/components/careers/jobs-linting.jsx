@@ -31,11 +31,11 @@ export default function JobListings() {
     ]
 
     return (
-        <section className="bg-[#282526] text-white p-8 md:p-12">
+        <section className="bg-[#282526] text-white p-8 md:p-12 font-['Archivo']">
             <div className="2xl:max-w-[1440px] mx-auto w-[95%]">
                 <div className="mb-8">
                     <p className="text-[18px] font-normal text-white opacity-60 mb-1">Open roles</p>
-                    <h2 className="text-3xl md:text-[50px] tracking-tight font-['Archivo] font-medium leading-tight">
+                    <h2 className="text-3xl md:text-[50px] tracking-tight font-['Archivo'] font-medium leading-tight">
                         Help us rebalance
                         <br />
                         the planet
@@ -46,7 +46,7 @@ export default function JobListings() {
                     {jobs.map((job) => (
                         <div key={job.id} className="flex items-center justify-between py-5 border-t border-gray-700">
                             <h3 className="text-[24px] font-medium w-[450px]">{job.title}</h3>
-                            <span className="text-white w-[250px] text-[16px]">{job.location}</span>
+                            <span className="text-white w-[250px] text-[16px] opacity-60">{job.location}</span>
                             <div className="flex items-center gap-8">
                                 <Button text={"View Job"} link={"/careers"} className={"px-8 py-2 bg-[#FF5533] hover:bg-[#FF6644] text-white text-[15px]"} />
                             </div>
