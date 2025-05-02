@@ -42,7 +42,7 @@ function Contact() {
 
                     {/* Stats */}
                     <div className="grid grid-cols-4 gap-8 font-['Archivo']">
-                        <div className="stat ">
+                        <div className="stat border-b ">
                             <h2 className="text-[48px] xl:text-[70px] font-semibold font-['Archivo'] text-[#101010]">
                                 5k<span className="text-primary font-['Archivo'] ">+</span>
                             </h2>
@@ -53,7 +53,7 @@ function Contact() {
                             </p>
                         </div>
 
-                        <div className="stat">
+                        <div className="stat border-b">
                             <h2 className="text-[48px] xl:text-[70px] font-semibold font-['Archivo'] text-[#101010]">
                                 700<span className="text-primary font-['Archivo'] ">+</span>
                             </h2>
@@ -64,7 +64,7 @@ function Contact() {
                             </p>
                         </div>
 
-                        <div className="stat">
+                        <div className="stat border-b">
                             <h2 className="text-[48px] xl:text-[70px] font-semibold font-['Archivo'] text-[#101010]">
                                 1k<span className="text-primary font-['Archivo'] ">+</span>
                             </h2>
@@ -75,7 +75,7 @@ function Contact() {
                             </p>
                         </div>
 
-                        <div className="stat ">
+                        <div className="stat border-b">
                             <h2 className="text-[48px] xl:text-[70px] font-semibold font-['Archivo'] text-[#101010]">
                                 20<span className="text-primary font-['Archivo'] ">+</span>
                             </h2>
