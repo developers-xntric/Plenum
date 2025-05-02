@@ -37,7 +37,7 @@ export default function ArticleSlider({ bg = "black" }) {
 
         if (carouselRef.current) {
             const article = carouselRef.current.children[index]
-            const scrollPos = article.offsetLeft - 180 // This offset creates the partial visibility effect
+            const scrollPos = article.offsetLeft - 230
 
             carouselRef.current.scrollTo({ left: scrollPos, behavior: "smooth" })
             setTimeout(() => {
