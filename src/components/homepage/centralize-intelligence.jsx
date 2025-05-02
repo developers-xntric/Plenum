@@ -3,13 +3,13 @@ export default function CentralizeIntelligence() {
         <div className=" bg-white">
 
             <div className="2xl:max-w-[1440px] mx-auto w-[90%] space-y-10 md:space-y-20 relative md:static  bottom-5 md:bottom-0">
-                <div className="lg:max-w-[89%] xl:max-w-[70%]">
+                <div className="lg:max-w-[100%] xl:max-w-[70%]">
                     <h1 className="text-[30px] md:text-[55.312px] leading-[34px] md:leading-[55px] font-['Archivo'] text-secondary font-semibold home-section-headings tracking-tight">
                         Centralizing intelligence for the largest telecom provider in Mauritius
                     </h1>
                 </div>
 
-                <div className="flex md:flex-row flex-col items-center justify-between gap-5 md:gap-12">
+                <div className="flex lg:flex-row flex-col items-center justify-between gap-5 md:gap-12">
                     {/* Column 1 */}
                     <div className="space-y-4 max-w-[50%">
                         <h2 className="font-medium font-['Archivo'] text-black text-[20px]">Exceptional Designers</h2>

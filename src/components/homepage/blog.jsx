@@ -4,7 +4,7 @@ export const Blog = ({ heading, para, cardData }) => {
     return (
         <section className='relative py-14 md:py-20'>
             <div className='max-w-[90%] mx-auto 2xl:max-w-[1440px] '>
-                <div className="flex flex-col gap-4 w-full md:w-[85%] lg:w-[64%] xl:w-[48%] 2xl:w-[90%]">
+                <div className="flex flex-col gap-4 w-full md:w-[90%] lg:w-[70%] xl:w-[48%] 2xl:w-[90%]">
                     <h2 className="font-['Archivo'] text-secondary font-semibold home-section-headings text-[30px] md:text-[50px] leading-[34px] md:leading-[56px] ">{heading}</h2>
                     <p className=" 2xl:w-[50%] text-secondary font-['Archivo'] opacity-75 text-[15px] font-medium">{para}</p>
                 </div>

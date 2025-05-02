@@ -126,7 +126,7 @@ export default function CaseStudies({ title, paragraph, caseStudies }) {
                             {title}
                         </h2>
                     </div>
-                    <p className="text-[14px] text-secondary font-['Archivo'] opacity-75 md:max-w-[55%]">{paragraph}</p>
+                    <p className="text-[14px] text-secondary font-['Archivo'] opacity-75 md:max-w-[65%] lg:max-w-[70%] xl:max-w-[55%]">{paragraph}</p>
                 </div>
 
                 {/* Mobile Carousel */}

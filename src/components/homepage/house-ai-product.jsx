@@ -15,7 +15,7 @@ export default function HouseAIProduct() {
       <div className="2xl:max-w-[1440px] mx-auto w-[90%] space-y-8 md:space-y-12">
         <div className='space-y-3 md:space-y-5'>
           <h2 className="text-[30px] md:text-[50px] leading-[34px] md:leading-[55px] font-['Archivo'] text-secondary font-semibold home-section-headings ">Our In house AI Product</h2>
-          <p className="text-secondary font-['Archivo'] font-medium opacity-75 lg:max-w-[70%] xl:max-w-[52%] text-[12px] md:text-[14px]">
+          <p className="text-secondary font-['Archivo'] font-medium opacity-75 md:max-w-[70%] lg:max-w-[65%] xl:max-w-[52%] text-[12px] md:text-[14px]">
             Plenum isn't just another ERP provider; we embed AI into your systems to deliver actionable insights and smarter decision-making capabilities.
           </p>
         </div>
@@ -36,7 +36,7 @@ export default function HouseAIProduct() {
 
 
             {/* Momentum AI Card */}
-            <div className="text-white p-5 md:p-7 pb-0 h- xl:h-80 rounded-2xl space-y-6 relative z-50">
+            <div className="text-white p-5 lg:p-7 pb-0 xl:h-80 rounded-2xl space-y-6 relative z-50">
               <div className='space-y-2'>
                 <div className="flex justify-between items-start ">
                   <h3 className="text-[22px] md:text-3xl font-medium font-['Archivo']">Momentum AI</h3>
@@ -107,7 +107,7 @@ export default function HouseAIProduct() {
             <div className="absolute inset-0 bg-gradient-to-br from-black opacity-90 to-gray-950 z-20" />
 
 
-            <div className="text-white p-5 md:p-7 h-full rounded-2xl shadow-xl space-y-6  relative z-50">
+            <div className="text-white p-5 lg:p-7 h-full rounded-2xl shadow-xl space-y-6  relative z-50">
               <div className='space-y-2'>
                 <div className="flex justify-between items-start">
                   <h3 className="text-[22px] md:text-3xl font-medium font-['Archivo']">Vertical builds</h3>

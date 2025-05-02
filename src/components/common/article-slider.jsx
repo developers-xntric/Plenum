@@ -130,7 +130,7 @@ export default function ArticleSlider({ bg = "black" }) {
             <div className="w-[95%] ms-auto">
                 <div className="max-w-full ms-auto 2xl:max-w-[93%]">
                     <h2 className={` ${bg == "black" ? "text-white" : "text-[#101010]"} text-3xl font-semibold mb-6 text-[30px] md:text-[50px]`}>Discover Our Articles</h2>
-                    <p className={` ${bg == "black" ? "text-[#FFF]" : "text-[#101010]"}  opacity-60 text-[14] md:text-[15px] mb-10 max-w-xl`}>
+                    <p className={` ${bg == "black" ? "text-[#FFF]" : "text-[#101010]"}  opacity-60 text-[14] md:text-[15px] mb-10 md:max-w-[70%] lg:max-w-xl`}>
                         Explore our latest posts for insights in design, learning, and innovation. Stay updated with trends and
                         breakthroughs in the creative world.
                     </p>
