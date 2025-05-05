@@ -3,8 +3,8 @@
 import { useEffect, useState } from "react"
 import Image from "next/image"
 import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel"
-import { cn } from "@/lib/utils"
 import { useMobile } from "@/hooks/use-mobile"
+import { cn } from "@/lib/utils"
 
 export default function MobilitySolutions({
   solutions,
@@ -18,6 +18,7 @@ export default function MobilitySolutions({
   const isMobile = useMobile()
   const includesFlex = className?.includes("flex")
   const [api, setApi] = useState(null)
+  const [current, setCurrent] = useState(0)
 
   // Set up autoplay for the carousel
   useEffect(() => {
@@ -29,6 +30,20 @@ export default function MobilitySolutions({
 
     return () => clearInterval(autoplayInterval)
   }, [api, isMobile])
+
+  useEffect(() => {
+    if (!api) return
+
+    const onSelect = () => {
+      setCurrent(api.selectedScrollSnap())
+    }
+
+    api.on("select", onSelect)
+
+    return () => {
+      api.off("select", onSelect)
+    }
+  }, [api])
 
   return (
     <section className="py-12 max-w-[90%] 2xl:max-w-[1440px] font-['Archivo'] mx-auto">
@@ -77,6 +92,14 @@ export default function MobilitySolutions({
               </CarouselItem>
             ))}
           </CarouselContent>
+          <div className="flex justify-center mt-4">
+            {solutions.map((_, index) => (
+              <span
+                key={index}
+                className={`h-1.5 rounded-full mx-1 ${current === index ? "w-4 bg-orange-400" : "w-1.5 bg-gray-300"}`}
+              />
+            ))}
+          </div>
         </Carousel>
       ) : (
         // Desktop grid view
