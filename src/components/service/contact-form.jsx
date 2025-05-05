@@ -21,7 +21,7 @@ export function ContactForm() {
     }
 
     return (
-        <div className="bg-[#EFEFEF] rounded-[20px] p-8">
+        <div className="bg-[#EFEFEF] rounded-[20px] p-5 sm:p-8">
             <form onSubmit={handleSubmit} className='space-y-3'>
                 {/* Form Inputs (Unchanged) */}
                 {["name", "email", "phone"].map((field, i) => (
