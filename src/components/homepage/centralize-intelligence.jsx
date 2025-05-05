@@ -4,9 +4,9 @@ export default function CentralizeIntelligence() {
 
             <div className="2xl:max-w-[1440px] mx-auto w-[90%] space-y-10 md:space-y-20 relative md:static  bottom-5 md:bottom-0">
                 <div className="lg:max-w-[100%] xl:max-w-[70%]">
-                    <h1 className="text-[30px] md:text-[55.312px] leading-[34px] md:leading-[55px] font-['Archivo'] text-secondary font-semibold home-section-headings tracking-tight">
+                    <h2 className="text-[30px] lg:text-[55.312px] leading-[34px] lg:leading-[55px] font-['Archivo'] text-secondary font-semibold home-section-headings tracking-tight">
                         Centralizing intelligence for the largest telecom provider in Mauritius
-                    </h1>
+                    </h2>
                 </div>
 
                 <div className="flex lg:flex-row flex-col items-center justify-between gap-5 md:gap-12">

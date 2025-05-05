@@ -14,28 +14,25 @@ export default function OrcaleFinancialFeature() {
             <div className="2xl:max-w-[1440px] w-[90%] mx-auto space-y-16">
                 {/* Headings */}
                 <div className="space-y-6">
-                    <h1 className="text-[50px] leading-[55px] font-['Archivo'] text-secondary font-semibold home-section-headings">
-                        Financials features and
+                    <h2 className="text-[30px] lg:text-[50px] leading-[34px] md:w-[480px] lg:w-[680px] mx-auto lg:leading-[55px] font-['Archivo'] text-secondary font-semibold home-section-headings">
+                        Financials features and capabilities
 
-                        <span className="block text-[50px] leading-[55px] font-['Archivo'] text-secondary font-semibold">
-                            capabilities
-                        </span>
-                    </h1>
-                    <p className="text-secondary font-['Archivo'] opacity-75 mx-auto w-[45%] xl:max-w-[40%]">
+                    </h2>
+                    <p className="text-secondary font-medium font-['Archivo'] sm:text-lg opacity-75 mx-auto md:w-[70%] lg:w-[55%] xl:max-w-[40%]">
                         15+ years of experience in working with different Microsoft Dynamics ERPs, CRMs and Modules.
                     </p>
                 </div>
 
                 <div>
                     {/* Tabs Section */}
-                    <div className="flex justify-center items-center mb-10 border-b-2 w-full max-w-[95%] mx-auto">
-                        {tabs.map((tab) => (
+                    <div className="flex justify-center items-center gap-8 md:gap-10 lg:gap-14 xl:gap-24 2xl:gap-[150px] mb-10 border-b-2 w-full xl:max-w-[90%] mx-auto overflow-x-auto">
+                        {tabs.map((tab,index) => (
                             <button
                                 key={tab}
                                 onClick={() => setActiveTab(tab)}
-                                className={`text-[22px] w-full cursor-pointer pb-4 font-['Archivo'] text-secondary font-semibold home-section-headings ${activeTab === tab
-                                    ? 'text-[#FF6035] border-b-2 border-[#FF6035]'
-                                    : 'text-gray-400 '
+                                className={`text-[15px] lg:text-[19px] xl:text-[22px] flex-shrink-0 ${index === 0 ? "pl-[24rem] md:pl-[0rem] lg:pl-0" : ""} py-2 cursor-pointer pb-4 font-['Archivo'] text-secondary font-semibold home-section-headings ${activeTab === tab
+                                        ? 'text-[#FF6035] border-b-2 border-[#FF6035]'
+                                        : 'text-gray-400'
                                     } focus:outline-none`}
                             >
                                 {tab}
@@ -44,10 +41,10 @@ export default function OrcaleFinancialFeature() {
                     </div>
 
                     {/* Tab Content */}
-                    <div className="w-full  h-[45vh]  xl:h-[400px]  mx-auto">
+                    <div className="w-full h-[75vh] md:h-[104vh]  xl:h-[400px]  mx-auto">
                         {activeTab === 'Accounting and Control' && (
                             <div className="w-full ">
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12">
+                                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12">
                                     {/* Image Section */}
                                     <div className="flex items-center justify-center">
                                         <div className="relative w-full aspect-[4/3]  overflow-hidden">
@@ -63,8 +60,8 @@ export default function OrcaleFinancialFeature() {
 
                                     {/* Content Section */}
                                     <div className="flex flex-col justify-center space-y-6">
-                                        <div className="space-y-3 max-w-[80%]">
-                                            <h2 className="text-[28px] font-['Archivo'] leading-8 text-secondary font-semibold home-section-headings text-start">
+                                        <div className="space-y-3 lg:max-w-[80%] text-[14px] md:text-base">
+                                            <h2 className="text-[25px] md:text-[28px] font-['Archivo'] leading-8 text-secondary font-semibold home-section-headings text-start">
                                                 Accounting and Control
                                             </h2>
                                             <p className=" text-left text-secondary font-['Archivo'] opacity-75 font-semibold">
@@ -84,9 +81,9 @@ export default function OrcaleFinancialFeature() {
                         )}
 
                         {activeTab === 'Accounting Hub' && (
-                            <div className="flex flex-col md:flex-row gap-10 items-center justify-center ">
+                            <div className="flex flex-col lg:flex-row  gap-5 lg:gap-10 items-center justify-center ">
                                 {/* Left Section - Image */}
-                                <div className="w-full md:w-1/2 xl:w-[60%] p-4">
+                                <div className="w-full lg:w-1/2 xl:w-[60%] p-4">
                                     <Image
                                         src="/images/service/microsoft-dynamics/microsoft-tab2.webp"
                                         alt="Analytics Dashboard"
@@ -97,7 +94,7 @@ export default function OrcaleFinancialFeature() {
                                 </div>
 
                                 {/* Right Section - Text */}
-                                <div className="w-full md:w-1/2 p-4 space-y-4">
+                                <div className="w-full lg:w-1/2 p-4 space-y-4">
                                     <h1 className="text-3xl  text-start lg:max-w-[80%] 2xl:max-w-[60%] font-['Archivo'] text-secondary font-semibold home-section-headings">
                                         Dynamics 365 CE/CRM solutions by Plenum
                                     </h1>

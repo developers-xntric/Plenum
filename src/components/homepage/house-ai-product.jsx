@@ -14,7 +14,7 @@ export default function HouseAIProduct() {
     <section className="pb-3 pt-5 md:pt-12 bg-white ">
       <div className="2xl:max-w-[1440px] mx-auto w-[90%] space-y-8 md:space-y-12">
         <div className='space-y-3 md:space-y-5'>
-          <h2 className="text-[30px] md:text-[50px] leading-[34px] md:leading-[55px] font-['Archivo'] text-secondary font-semibold home-section-headings ">Our In house AI Product</h2>
+          <h2 className="text-[30px] lg:text-[50px] leading-[34px] lg:leading-[55px] font-['Archivo'] text-secondary font-semibold home-section-headings ">Our In house AI Product</h2>
           <p className="text-secondary font-['Archivo'] font-medium opacity-75 md:max-w-[70%] lg:max-w-[65%] xl:max-w-[52%] text-[12px] md:text-[14px]">
             Plenum isn't just another ERP provider; we embed AI into your systems to deliver actionable insights and smarter decision-making capabilities.
           </p>
