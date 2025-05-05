@@ -19,11 +19,12 @@ const FinanceOpearations = () => {
                 heading={"Microsoft Dynamics 365 Finance and Operations Implementation Partner"}
                 para={"Delivering tailored IT services for business growth and operational excellence."}
                 image={"/service/FAO/FAO_hero.svg"}
-                image_className="md:w-[500px] md:h-[300px] xl:w-[650px] xl:h-[500px]"
+                image_className="md:w-[500px] md:h-[300px] xl:w-[500] xl:h-[500px]"
                 button_text="Connect with our Experts"
                 isSlider={true}
+                heading_className={"lg:w-[600px] w-[300px]"}
             />
-            <ERPAccordin  className='flex justify-center items-center gap-20' bottomSection={fao_service} left={true} blackSection={fao_service_black} />
+            {/* <ERPAccordin  className='flex justify-center items-center gap-20' bottomSection={fao_service} left={true} blackSection={fao_service_black} />
             <FaoDynamicOpearation />
             <div className='py-8'>
                 <Finance_Opearations_Service />
@@ -44,7 +45,7 @@ const FinanceOpearations = () => {
             </div>
             <Testimonials testimonials={testimonials} />
             <ArticleSlider />
-            <Blog heading='Discover Our Blog' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world" cardData={cardData} />
+            <Blog heading='Discover Our Blog' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world" cardData={cardData} /> */}
         </div>
     )
 }
