@@ -110,12 +110,10 @@ export default function TeamTestimonials() {
     return (
         <section className="py-16 px-4 mx-auto overflow-x-hidden font-['Archivo']">
             <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-[50px] tracking-tight opacity-80 font-['Archivo'] font-semibold mb-4">
-                    What our team loves about
-                    <br />
-                    working at Plenum
+                <h2 className="text-[25px] sm:text-[30px] md:max-w-[80%] lg:max-w-[60%] mx-auto md:text-[50px] tracking-tight opacity-80 xl:max-w-[50%] 2xl:max-w-[25%] font-['Archivo'] font-semibold mb-4">
+                    What our team loves about working at Plenum
                 </h2>
-                <p className="text-secondary font-['Archivo'] max-w-[690px] mx-auto text-[15px] tracking-tight font-normal opacity-60">
+                <p className="text-secondary font-['Archivo'] md:max-w-[690px] mx-auto text-[15px] tracking-tight font-normal opacity-60">
                     Microchips AI is a unified platform built to automate every stage of the AI lifecycle — from data ingestion to
                     deployment. Designed for enterprise scalability, it helps teams accelerate their processes and productivity.
                 </p>
@@ -123,7 +121,7 @@ export default function TeamTestimonials() {
 
             {/* Testimonial Carousel */}
             <div
-                className="relative overflow-visible py-8 cursor-grab active:cursor-grabbing"
+                className="relative overflow-visible py-4 md:py-8 cursor-grab active:cursor-grabbing"
                 ref={carouselRef}
                 onMouseDown={handleDragStart}
                 onMouseMove={handleDragMove}
@@ -141,7 +139,7 @@ export default function TeamTestimonials() {
                             <motion.div
                                 key={testimonial.id}
                                 className={`
-                                    absolute bg-[#EFEFEF] rounded-lg p-6 w-[520px] h-[246px]
+                                    absolute bg-[#EFEFEF] rounded-lg p-4 md:p-6 md:w-[520px] md:h-[246px]
                                     ${Math.abs(position) > 1 ? "opacity-0 pointer-events-none" : "opacity-100"}
                                 `}
                                 animate={{
@@ -155,8 +153,8 @@ export default function TeamTestimonials() {
                                     mass: 0.8,
                                 }}
                             >
-                                <div className="flex flex-col justify-between h-full py-2">
-                                    <p className="text-secondary opacity-80 tracking-tight text-[18px]">"{testimonial.quote}"</p>
+                                <div className="flex flex-col gap-6 md:gap-0 justify-between h-full py-2">
+                                    <p className="text-secondary opacity-80 tracking-tight text-[12.657px] md:text-[18px]">"{testimonial.quote}"</p>
                                     <div className="flex items-center">
                                         <div className="w-10 h-10 rounded-full overflow-hidden mr-3 bg-gray-200">
                                             <Image
@@ -168,7 +166,7 @@ export default function TeamTestimonials() {
                                             />
                                         </div>
                                         <div>
-                                            <p className="font-medium text-[16px]">{testimonial.name}</p>
+                                            <p className="font-medium text-[11.507px] md:text-[16px]">{testimonial.name}</p>
                                             <p className="text-xs text-gray-600">{testimonial.title}</p>
                                         </div>
                                     </div>
