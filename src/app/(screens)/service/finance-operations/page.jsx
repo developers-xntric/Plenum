@@ -24,7 +24,7 @@ const FinanceOpearations = () => {
                 isSlider={true}
                 heading_className={"lg:w-[600px] w-[300px]"}
             />
-            {/* <ERPAccordin  className='flex justify-center items-center gap-20' bottomSection={fao_service} left={true} blackSection={fao_service_black} />
+            <ERPAccordin className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={fao_service} left={true} blackSection={fao_service_black} />
             <FaoDynamicOpearation />
             <div className='py-8'>
                 <Finance_Opearations_Service />
@@ -45,7 +45,7 @@ const FinanceOpearations = () => {
             </div>
             <Testimonials testimonials={testimonials} />
             <ArticleSlider />
-            <Blog heading='Discover Our Blog' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world" cardData={cardData} /> */}
+            <Blog heading='Discover Our Blog' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world" cardData={cardData} />
         </div>
     )
 }

@@ -193,8 +193,8 @@ export default function FaoDynamicOperation() {
     }
 
     return (
-        <section className="max-w-5xl mx-auto text-center px-4 py-20">
-            <h1 className="text-[50px] max-w-2xl mx-auto leading-[55px] font-['Archivo'] text-secondary font-medium home-section-headings mb-4">
+        <section className="max-w-5xl mx-auto text-center px-4 pt-20">
+            <h1 className="text-[30px] lg:text-[50px] max-w-2xl mx-auto leading-10 lg:leading-[55px] font-['Archivo'] text-secondary font-medium home-section-headings mb-4">
                 Dynamics 365 Finance and Operations modules
             </h1>
 
@@ -205,14 +205,14 @@ export default function FaoDynamicOperation() {
             </p>
 
             <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-8">
-                {tabs.map((tab) => (
+                {tabs.map((tab, index) => (
                     <button
                         key={tab}
                         onClick={() => setActiveTab(tab)}
                         className={`px-4 py-2 rounded-full text-sm border ${activeTab === tab
                             ? "bg-white border-orange-400 text-orange-500"
                             : "bg-white border-gray-300 text-gray-700 hover:border-gray-400"
-                            } transition-colors`}
+                            } transition-colors md:block ${index >= 3 && "hidden"}`}
                     >
                         {tab}
                     </button>
