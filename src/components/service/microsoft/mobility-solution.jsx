@@ -1,4 +1,10 @@
-import Image from "next/image";
+"use client"
+
+import { useEffect, useState } from "react"
+import Image from "next/image"
+import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel"
+import { cn } from "@/lib/utils"
+import { useMobile } from "@/hooks/use-mobile"
 
 export default function MobilitySolutions({
   solutions,
@@ -9,8 +15,20 @@ export default function MobilitySolutions({
   heading2,
   para,
 }) {
-  // Check if className includes the word "flex"
-  const includesFlex = className?.includes("flex");
+  const isMobile = useMobile()
+  const includesFlex = className?.includes("flex")
+  const [api, setApi] = useState(null)
+
+  // Set up autoplay for the carousel
+  useEffect(() => {
+    if (!api || !isMobile) return
+
+    const autoplayInterval = setInterval(() => {
+      api.scrollNext()
+    }, 3000)
+
+    return () => clearInterval(autoplayInterval)
+  }, [api, isMobile])
 
   return (
     <section className="py-12 max-w-[90%] 2xl:max-w-[1440px] font-['Archivo'] mx-auto">
@@ -21,42 +39,71 @@ export default function MobilitySolutions({
         <h2 className="text-2xl md:text-[50px] font-semibold text-secondary home-section-headings mb-4">
           {heading2 || "Microsoft Dynamics"}
         </h2>
-        <p
-          className={`text-[15px] text-[#101010] opacity-60 ${
-            isCenter && "mx-auto max-w-[690px]"
-          } max-w-[540px]`}
-        >
+        <p className={cn("text-[15px] text-[#101010] opacity-60 max-w-[540px]", isCenter && "mx-auto max-w-[690px]")}>
           {para ||
             "Revolutionize your business with turnkey Apps for Dynamics 365, NAV, AX and Business Central provided by Plexian - Certified Microsoft Application Developer."}
         </p>
       </div>
 
-      <div className={`${className} gap-5 xl:gap-8 2xl:gap-10`}>
-        {solutions.map((solution, index) => (
-          <div
-            key={index}
-            className={`bg-white px-4 py-6 rounded-sm shadow-sm border border-gray-100 gap-4 justify-center flex flex-col ${
-              includesFlex
+      {isMobile ? (
+        // Mobile carousel view
+        <Carousel
+          setApi={setApi}
+          opts={{
+            align: "start",
+            loop: true,
+            dragFree: true,
+          }}
+          className="w-full"
+        >
+          <CarouselContent>
+            {solutions.map((solution, index) => (
+              <CarouselItem key={index} className="basis-[85%] sm:basis-[300px]">
+                <div
+                  className={`bg-white px-4 py-6 rounded-sm shadow-sm border border-gray-100 gap-4 justify-center flex flex-col h-[200px] ${card_className || ""}`}
+                >
+                  <Image
+                    src={solution.icon || "/placeholder.svg"}
+                    alt={solution.title}
+                    width={40}
+                    height={40}
+                    className="w-10 h-10"
+                  />
+                  <h3 className="text-[20px] font-semibold text-gray-800">{solution.title}</h3>
+                  <p className="text-xs text-[#4D4D56]">
+                    Solution is easy to use and totally customizable to your business needs.
+                  </p>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+        </Carousel>
+      ) : (
+        // Desktop grid view
+        <div className={`${className} gap-5 xl:gap-8 2xl:gap-10`}>
+          {solutions.map((solution, index) => (
+            <div
+              key={index}
+              className={`bg-white px-4 py-6 rounded-sm shadow-sm border border-gray-100 gap-4 justify-center flex flex-col ${includesFlex
                 ? "w-full sm:w-[300px] xl:w-[calc(25%-1rem)] 2xl:w-[calc(25%-1.25rem)] h-[200px]"
                 : card_className
-            }`}
-          >
-            <Image
-              src={solution.icon || "/placeholder.svg"}
-              alt={solution.title}
-              width={40}
-              height={40}
-              className="w-10 h-10"
-            />
-            <h3 className="text-[20px] font-semibold text-gray-800">
-              {solution.title}
-            </h3>
-            <p className="text-xs text-[#4D4D56]">
-              Solution is easy to use and totally customizable to your business needs.
-            </p>
-          </div>
-        ))}
-      </div>
+                }`}
+            >
+              <Image
+                src={solution.icon || "/placeholder.svg"}
+                alt={solution.title}
+                width={40}
+                height={40}
+                className="w-10 h-10"
+              />
+              <h3 className="text-[20px] font-semibold text-gray-800">{solution.title}</h3>
+              <p className="text-xs text-[#4D4D56]">
+                Solution is easy to use and totally customizable to your business needs.
+              </p>
+            </div>
+          ))}
+        </div>
+      )}
     </section>
-  );
+  )
 }
