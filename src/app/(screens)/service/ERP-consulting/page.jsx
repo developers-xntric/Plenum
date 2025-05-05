@@ -29,8 +29,8 @@ const ERPConsulting = () => {
                 para={"We at Plenum Tech, are honoured to have secured the reputation of being the top most reliable ERP solutions in Dubai and beyond. We uphold a powerful presence in Dubai, Saudi Arabia, and all over the Middle East, providing tailored IT services that enable businesses to reach their maximum potential. We deliver innovation and reliability to every project, offering IT solutions company in the UAE and robust IT infrastructure services."}
             />
             <ERPServicesEast />
-            <ERPSolutionsBottomSection className='flex justify-center items-center gap-5' bottomSection={bottomSection} left={true} blackSection={blackSection} />
-            <ERPSolutionsBottomSection className='flex flex-row-reverse justify-center items-center gap-20' blackSection={blackSection2} bottomSection={bottomSection2} left={false} />
+            <ERPSolutionsBottomSection className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={bottomSection} left={true} blackSection={blackSection} />
+            <ERPSolutionsBottomSection className='flex justify-center items-center gap-20 lg:flex-row-reverse flex-col pt-10 lg:py-0' blackSection={blackSection2} bottomSection={bottomSection2} left={false} />
             <Testimonials testimonials={testimonials} />
             <ArticleSlider />
             <Blog heading='Discover Our Blog' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world" cardData={cardData} />
