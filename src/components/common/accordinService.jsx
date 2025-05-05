@@ -7,9 +7,9 @@ import { Accordion } from './accordine';
 const ERPSolutions = ({ blackSection }) => {
     return (
         <section className='relative font-["Archivo"] bg-[#282526]'>
-            <div className='max-w-[90%] xl:max-w-[75%] 2xl:max-w-[80%]  mx-auto text-center py-16  '>
-                <h2 className='text-[50px] leading-[50px] text-white  xl:w-[95%] 2xl:w-[65%] mx-auto'>{blackSection.heading}</h2>
-                <p className='text-[18px] text-[#FFF] mt-6 opacity-60 w-[80%] mx-auto'>{blackSection.para}</p>
+            <div className='max-w-[90%] xl:max-w-[75%] 2xl:max-w-[80%] mx-auto text-center py-16'>
+                <h2 className='text-[30px] lg:text-[50px] lg:leading-[50px] text-white xl:w-[95%] 2xl:w-[65%] mx-auto'>{blackSection.heading}</h2>
+                <p className='text-[18px] font-normal text-[#FFF] mt-6 opacity-60 lg:w-[80%] mx-auto font-["Archivo"]'>{blackSection.para}</p>
                 <Button text={blackSection.button} className='bg-transparent text-white hover:bg-[#FF6035] hover:border-[#FF6035] hover:text-white hover:transition-colors ease-in-out duration-300 text-[15px] mt-8 border border-[#FFFFFF] px-9 py-2' link='/' />
             </div>
         </section>
@@ -20,12 +20,12 @@ export const ERPAccordin = ({ bottomSection, className, left, blackSection, para
     return (
         <section className='relative bg-[#EFEFEF] font-["Archivo"]'>
             <ERPSolutions blackSection={blackSection} />
-            <div className={`max-w-[95%]  2xl:max-w-[1610px] ${left ? "ms-auto" : ""}`}>
+            <div className={`lg:max-w-[95%] 2xl:max-w-[1610px] mx-auto ${left ? "lg:ms-auto" : ""}`}>
                 <div className={`${className}`}>
-                    <div className='w-[50%] 2xl:w-[60%]'>
+                    <div className='px-8 w-full lg:w-[50%] 2xl:w-[60%]'>
                         <Accordion />
                     </div>
-                    <div className='w-[50%] 2xl:w-[100%] flex justify-center items-center'>
+                    <div className='w-full lg:w-[50%] 2xl:w-[100%] flex justify-center items-center'>
                         <Image
                             src={bottomSection.img}
                             alt='img'

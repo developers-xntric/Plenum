@@ -20,8 +20,8 @@ const Oracle = () => {
         <div>
             <div className='mt-10'>
                 <Service_Inner_Hero
-                    heading={"Certified Gold Microsoft Dynamics Partner with Global Presence"}
-                    para={"Top Microsoft Dynamics partner with 300+ Projects completed worldwide. Delivering a single point solution tailored for your business needs."}
+                    heading={"Oracle Enterprise Resource Planning (ERP)"}
+                    para={"Oracle partner with 300+ Projects completed worldwide. Delivering a single point solution tailored for your business needs."}
                     image={"/service/Oracle/oracle.svg"}
                     image_className="md:w-[500px] md:h-[300px] xl:w-[600px] xl:h-[450px]"
                     button_text="Connect with our Experts"
@@ -31,10 +31,10 @@ const Oracle = () => {
                         text={"Trusted by world's most exciting brands"}
                         brand_icons={service_brand_icons} />
                 </div>
-                <ERPAccordin para='Watch this on-demand webinar to discover how AI can drive real business outcomes and prepare your organization for the future of finance. Make AI your competitive edge.' arrow={true} className='flex justify-center items-center gap-20' bottomSection={oracle_service} left={true} blackSection={oracle_service_black} />
+                <ERPAccordin para='Watch this on-demand webinar to discover how AI can drive real business outcomes and prepare your organization for the future of finance. Make AI your competitive edge.' arrow={true} className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={oracle_service} left={true} blackSection={oracle_service_black} />
                 <OracleResourcePlanning />
                 <Finance_Opearations_Service />
-                <ERPSolutionsBottomSection className='flex justify-center items-center gap-5' bottomSection={bottomSection} left={true} blackSection={blackSection} />
+                <ERPSolutionsBottomSection className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={bottomSection} left={true} blackSection={blackSection} />
                 <div className=' pt-20'>
                     <PinkSection
                         heading={"Ready To Supercharge Your AI Workflow?"}

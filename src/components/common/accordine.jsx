@@ -17,7 +17,7 @@ const AccordionItem = ({ title, description, isOpen, onToggle, index }) => {
                     onClick={() => onToggle(index)}
                     className="flex justify-between w-full py-5 text-left"
                 >
-                    <h3 className={`${isOpen ? "text-secondary font-medium home-section-headings" : "opacity-50"} cursor-pointer text-[30px] leading-[40px] max-w-[80%]`}>
+                    <h3 className={`${isOpen ? "text-secondary font-medium home-section-headings" : "opacity-50"} cursor-pointer text-[25px] lg:text-[30px] leading-8 lg:leading-[40px] max-w-[80%]`}>
                         {title}
                     </h3>
 
