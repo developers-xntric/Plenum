@@ -1,29 +1,58 @@
-"use client" // if you're using Next.js and this is a client component
+"use client"
 
-import { useState } from "react"
-import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel"
+import { useEffect, useState } from "react"
+import Autoplay from "embla-carousel-autoplay"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselPrevious,
+  CarouselNext
+} from "@/components/ui/carousel"
 import TestimonialCard from "../common/testimonial-cards"
 
 export default function Testimonials({ testimonials }) {
+  const [plugins, setPlugins] = useState([])
+  const [emblaApi, setEmblaApi] = useState(null)
   const [currentIndex, setCurrentIndex] = useState(0)
+
+  // Enable autoplay plugin on small screens
+  useEffect(() => {
+    if (typeof window !== "undefined" && window.innerWidth < 1024) {
+      setPlugins([Autoplay({ delay: 3000, stopOnInteraction: false })])
+    }
+  }, [])
+
+  // Track current index for dots
+  useEffect(() => {
+    if (!emblaApi) return
+    const onSelect = () => {
+      setCurrentIndex(emblaApi.selectedScrollSnap())
+    }
+    emblaApi.on("select", onSelect)
+    onSelect()
+    return () => emblaApi.off("select", onSelect)
+  }, [emblaApi])
 
   return (
     <section className="bg-white">
       <div className="2xl:max-w-[1440px] w-[90%] mx-auto py-20 space-y-8">
-        <div className='space-y-5'>
-          <h2 className="text-[30px] md:text-[50px] leading-[33px] md:leading-[55px] font-['Archivo'] text-secondary font-semibold home-section-headings">Trusted by Professionals</h2>
+        <div className="space-y-5">
+          <h2 className="text-[30px] md:text-[50px] leading-[33px] md:leading-[55px] font-['Archivo'] text-secondary font-semibold home-section-headings">
+            Trusted by Professionals
+          </h2>
           <p className="text-secondary font-['Archivo'] opacity-75 md:max-w-[60%] lg:max-w-[57%] xl:max-w-[40%]">
             As an ERP company, Plenum is trusted by professionals for insight-driven design, branding, and innovation.
           </p>
         </div>
 
         <Carousel
-          opts={{
-            align: "start",
-            loop: true,
-          }}
+          opts={{ align: "start", loop: true }}
+          plugins={plugins}
+          setApi={setEmblaApi}
           className="w-full"
         >
+          {/* Navigation Buttons */}
           <div className="hidden lg:flex justify-end items-center mb-4">
             <div className="flex absolute gap-4 md:left-[95%] mb-10">
               <div className="flex items-center gap-1">
@@ -34,14 +63,10 @@ export default function Testimonials({ testimonials }) {
               </div>
             </div>
           </div>
-
+          {/* Carousel Slides */}
           <CarouselContent>
             {testimonials.map((testimonial, index) => (
-              <CarouselItem
-                key={testimonial.id}
-                className="md:basis-1/2"
-                onClick={() => setCurrentIndex(index)} // Update index on item click (you can change this to work better with your carousel logic)
-              >
+              <CarouselItem key={testimonial.id} className="md:basis-1/2">
                 <TestimonialCard
                   quote={testimonial.quote}
                   author={testimonial.author}
@@ -52,15 +77,14 @@ export default function Testimonials({ testimonials }) {
             ))}
           </CarouselContent>
 
-          {/* Carousel Dots */}
-          <div className="flex justify-center mt-6 gap-2">
+          {/* Dots (Only show on small screen) */}
+          <div className="flex justify-center mt-6 gap-2 lg:hidden">
             {testimonials.map((_, index) => (
               <button
                 key={index}
-                className={`w-[6px] h-[6px] rounded-full transition-all duration-300 ${
-                  index === currentIndex ? "bg-secondary w-4" : "bg-gray-400"
-                }`}
-                onClick={() => setCurrentIndex(index)}
+                className={`w-[6px] h-[6px] rounded-full transition-all duration-300 ${index === currentIndex ? "bg-secondary w-4" : "bg-gray-400"
+                  }`}
+                onClick={() => emblaApi?.scrollTo(index)}
               />
             ))}
           </div>
