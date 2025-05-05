@@ -16,7 +16,7 @@ import ArticleSlider from "@/components/common/article-slider";
 import { Blog } from '@/components/homepage/blog'
 import { md_solutions } from '@/data/mobility-solutions'
 import { services } from '@/data/microsoft'
-import OracleOneStopShop from '@/components/service/oracle-net-suite/oracle-one-stop-shop'
+// import OracleOneStopShop from '@/components/service/oracle-net-suite/oracle-one-stop-shop'
 
 const MicrosoftDynamics = () => {
     return (
@@ -57,7 +57,6 @@ const MicrosoftDynamics = () => {
             </div>
             <Testimonials testimonials={testimonials} />
             <ArticleSlider />
-            <OracleOneStopShop />
             <Blog heading='Discover Our Blog Articles' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world" cardData={cardData} />
         </div>
     )
