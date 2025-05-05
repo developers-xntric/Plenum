@@ -14,7 +14,7 @@ export default function ERPServicesEast() {
       <div className="2xl:max-w-[1440px] w-[90%] mx-auto space-y-10 md:space-y-16">
         {/* Headings */}
         <div className="space-y-6">
-          <h2 className="text-[30px] md:text-[40px] lg:text-[34px] leading-[40px] md:leading-[50px] lg:leading-[55px] font-['Archivo'] text-secondary font-semibold home-section-headings">
+          <h2 className="text-[30px] md:text-[40px] lg:text-[50px] leading-[40px] md:leading-[50px] lg:leading-[55px] font-['Archivo'] text-secondary font-semibold home-section-headings">
             Plenum ERP Services{' '}
             <span className="block text-[30px] md:text-[40px] lg:text-[50px] leading-[34px] md:leading-[50px] lg:leading-[55px] font-['Archivo'] text-secondary font-semibold">
               in Middle East
