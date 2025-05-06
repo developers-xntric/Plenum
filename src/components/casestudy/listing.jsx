@@ -43,7 +43,7 @@ export default function ListingPage() {
             <div className='2xl:max-w-[1200px] max-w-[90%] mx-auto'>
                 {
                     data.map((item, index) => (
-                        <div key={index} className="flex flex-col lg:flex-row 2xl:gap-12 gap-8 justify-between mb-[100px]">
+                        <Link href={`/case-studies/${index + 1}`} key={index} className="flex flex-col lg:flex-row 2xl:gap-12 gap-8 justify-between mb-[100px]">
                             <div className="w-full lg:w-1/2">
                                 <Image
                                     src={item.image}
@@ -53,17 +53,17 @@ export default function ListingPage() {
                                     className="w-full h-full "
                                 />
                             </div>
-                            <div className="w-full lg:w-1/2 flex flex-col justify-between">
+                            <div className="w-full lg:w-1/2 flex flex-col gap-10 md:gap-0 justify-between">
                                 <div>
-                                    <h2 className="text-3xl sm:text-[32px] font-medium text-[#101010] opacity-[0.9968] mb-3">{item.title}</h2>
-                                    <p className="text-[#989898] text-[17px] max-w-[60%] 2xl:max-w-[50%] mb-6">
+                                    <h2 className="text-[25px] md:text-[32px] font-medium text-[#101010] opacity-[0.9968] mb-3">{item.title}</h2>
+                                    <p className="text-[#989898] text-[15px] md:text-[17px] md:max-w-[60%] 2xl:max-w-[50%] mb-6">
                                         {item.description}
                                     </p>
                                 </div>
                                 <div>
                                     <div className="relative flex justify-between">
                                         {/* Left Side */}
-                                        <div className="space-y-4">
+                                        <div className="space-y-6 md:space-y-4">
                                             <div>
                                                 <p className="text-[14px] font-['Chakra'] text-[#989898] opacity-[0.9968] ">Industry</p>
                                                 <p className="text-[17px] font-normal text-[#101010] opacity-[0.9968] ">{item.industry}</p>
@@ -130,7 +130,7 @@ export default function ListingPage() {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </Link>
                     ))
                 }
             </div>
