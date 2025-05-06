@@ -16,10 +16,10 @@ const Product = () => {
                 isLogo={false}
                 bgImage='/product/m_hero.svg'
             />
-            <div className="2xl:max-w-[1440px] mx-auto w-[93%] xl:w-[90%] 2xl:w-[90%] py-10">
+            <div className="2xl:max-w-[1440px] mx-auto w-[93%] xl:w-[90%] 2xl:w-[90%] py-5 lg:py-10">
                 <BrandSlider brand_icons={service_brand_icons} text={"Trusted by world's most exciting brands"} />
             </div>
-            <div className="pb-20">
+            <div className="pb-5 lg:pb-20">
                 <HouseAIProduct />
             </div>
             <ArticleSlider />
