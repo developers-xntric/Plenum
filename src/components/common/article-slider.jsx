@@ -187,7 +187,7 @@ export default function ArticleSlider({ bg = "black" }) {
                                                 </h3>
 
                                                 <motion.a
-                                                    href="/"
+                                                    href={`/article/${article.id}`}
                                                     className="text-primary underline underline-offset-2 inline-flex items-center text-sm group hover:underline"
                                                     aria-label={`Read more about ${article.title}`}
                                                     initial="rest"
@@ -236,7 +236,7 @@ export default function ArticleSlider({ bg = "black" }) {
                                     key={index}
                                     className={cn(
                                         "w-2 h-2 rounded-full transition-all duration-300",
-                                        index === activeIndex ? "bg-white w-4" : "bg-gray-600 opacity-70 hover:opacity-100",
+                                        index === activeIndex ? `${bg == "white" ? "bg-black" : "bg-white"} w-4` : "bg-gray-600 opacity-70 hover:opacity-100",
                                     )}
                                     onClick={() => goToSlide(index)}
                                     aria-label={`Go to slide ${index + 1}`}

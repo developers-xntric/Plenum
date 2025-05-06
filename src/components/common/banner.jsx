@@ -4,7 +4,7 @@ const Banner = ({ heading, para, button }) => {
     return (
         <section className="bg-black pt-34 md:pt-60 pb-20  text-white">
             <div className='2xl:max-w-[1440px] w-[90%] mx-auto'>
-                <div className="max-w-[70%] 2xl:max-w-[55%] xl:max-w-[65%] ml-2 mx-auto  grid lg:grid-cols-2 items-end">
+                <div className="max-w-[70%] 2xl:max-w-[55%] xl:max-w-[60%] ml-2 mx-auto  grid lg:grid-cols-2 items-center">
                     <div>
                         <h2 className="text-[#FF6035] font-['Chakra'] text-[32px] lg:text-[60px] font-medium">{heading}</h2>
                     </div>
