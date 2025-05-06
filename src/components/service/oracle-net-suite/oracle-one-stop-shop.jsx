@@ -14,25 +14,25 @@ export default function OracleOneStopShop() {
             <div className="2xl:max-w-[1440px] w-[90%] mx-auto space-y-16">
                 {/* Headings */}
                 <div className="space-y-6">
-                    <h1 className="text-[50px] leading-[55px] font-['Archivo'] text-secondary font-semibold home-section-headings">
-                        Your one-stop shop for
-                        <span className="block text-[50px] leading-[55px] font-['Archivo'] text-secondary font-semibold">
+                    <h1 className="text-[30px] lg:text-[50px] leading-[35px] md:w-[350px] lg:w-[550px] mx-auto lg:leading-[55px] font-['Archivo'] text-secondary font-semibold home-section-headings">
+                        Your one-stop shop for all things NetSuite
+                        {/* <span className="block text-[30px] lg:text-[50px] leading-[35px] lg:leading-[55px]  font-['Archivo'] text-secondary font-semibold">
                             all things NetSuite
-                        </span>
+                        </span> */}
                     </h1>
-                    <p className="text-secondary font-['Archivo'] opacity-75 mx-auto w-[45%] xl:max-w-[40%] 2xl:max-w-[30%]">
+                    <p className="text-secondary font-['Archivo'] font-medium opacity-75 mx-auto md:w-[60%] lg:w-[35%] xl:max-w-[40%] 2xl:max-w-[30%]">
                         We offer a wide range of NetSuite solutions, built by NetSuite experts, for NetSuite experts.
                     </p>
                 </div>
 
                 <div>
                     {/* Tabs Section */}
-                    <div className="flex justify-center items-center mb-10 border-b-2 w-full max-w-[95%] mx-auto">
-                        {tabs.map((tab) => (
+                    <div className="flex justify-center items-center gap-10 md:gap-0 mb-10 border-b-2 w-full max-w-[95%] mx-auto overflow-x-auto">
+                        {tabs.map((tab, index) => (
                             <button
                                 key={tab}
                                 onClick={() => setActiveTab(tab)}
-                                className={`text-[22px] px-20 w-full cursor-pointer pb-4 leading-6 font-['Archivo'] text-secondary font-semibold home-section-headings ${activeTab === tab
+                                className={`text-[15px] lg:text-[19px] xl:text-[22px] px-0 md:px-10 xl:px-20 lg:w-full ${index === 0 ? "pl-[14rem] md:pl-[0rem] lg:pl-0" : ""} cursor-pointer pb-4 lg:leading-6 font-['Archivo'] text-secondary font-semibold home-section-headings ${activeTab === tab
                                     ? 'text-[#FF6035] border-b-2 border-[#FF6035]'
                                     : 'text-gray-400 '
                                     } focus:outline-none`}
@@ -40,13 +40,25 @@ export default function OracleOneStopShop() {
                                 {tab}
                             </button>
                         ))}
+                        {/* {tabs.map((tab,index) => (
+                            <button
+                                key={tab}
+                                onClick={() => setActiveTab(tab)}
+                                className={`text-[15px] lg:text-[19px] xl:text-[22px] flex-shrink-0 ${index === 0 ? "pl-[24rem] md:pl-[0rem] lg:pl-0" : ""} py-2 cursor-pointer pb-4 font-['Archivo'] text-secondary font-semibold home-section-headings ${activeTab === tab
+                                        ? 'text-[#FF6035] border-b-2 border-[#FF6035]'
+                                        : 'text-gray-400'
+                                    } focus:outline-none`}
+                            >
+                                {tab}
+                            </button>
+                        ))} */}
                     </div>
 
                     {/* Tab Content */}
                     <div className="w-full  mx-auto">
                         {activeTab === 'NetSuite Consultancy' && (
                             <div className="w-full ">
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12">
+                                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12">
                                     {/* Image Section */}
                                     <div className="flex items-center justify-center">
                                         <div className="relative w-full aspect-[4/3]  overflow-hidden">
@@ -61,16 +73,16 @@ export default function OracleOneStopShop() {
                                     </div>
 
                                     {/* Content Section */}
-                                    <div className="flex flex-col justify-center space-y-10">
-                                        <div className=" max-w-[80%] space-y-10">
-                                            <h2 className="text-[28px] max-w-[50%] font-['Archivo'] leading-8 text-secondary font-semibold home-section-headings text-start">
+                                    <div className="flex flex-col justify-center space-y-5 lg:space-y-10">
+                                        <div className=" lg:max-w-[80%] space-y-5 lg:space-y-10">
+                                            <h2 className="text-[28px] md:max-w-[50%] font-['Archivo'] leading-8 text-secondary font-semibold home-section-headings text-start">
                                                 NetSuite Implementation
                                             </h2>
-                                            <p className=" text-left text-secondary font-['Archivo'] opacity-75 font-semibold">
+                                            <p className=" text-left text-secondary font-['Archivo'] opacity-75 ">
                                                 Are you looking to upgrade from legacy systems to NetSuite ERP for integrated financials, CRM, and operations? We are here to help you.
                                             </p>
                                         </div>
-                                        <button className='bg-[#FF6035] hover:bg-[#101010] cursor-pointer transition-all duration-500 w-[60%] xl:w-1/2 text-white py-3 xl:py-4 px-2 xl:px-4 text-[15px] xl:text-base rounded-lg'>Explore our Implementation Services</button>
+                                        <button className='bg-[#FF6035] hover:bg-[#101010] cursor-pointer transition-all duration-500 w-[70%] md:w-[40%] lg:w-[60%] xl:w-1/2 text-white py-3 xl:py-4 px-2 xl:px-4 text-[11px] md:text-[15px] xl:text-base rounded-lg'>Explore our Implementation Services</button>
 
                                     </div>
                                 </div>
@@ -78,9 +90,9 @@ export default function OracleOneStopShop() {
                         )}
 
                         {activeTab === 'NetSuite Implementation' && (
-                            <div className="flex flex-col md:flex-row gap-10 items-center justify-center ">
+                            <div className="flex flex-col lg:flex-row  gap-5 lg:gap-10 items-center justify-center ">
                                 {/* Left Section - Image */}
-                                <div className="w-full md:w-1/2 xl:w-[60%] p-4">
+                                <div className="w-full lg:w-1/2 xl:w-[60%] md:p-4">
                                     <Image
                                         src="/images/service/microsoft-dynamics/microsoft-tab2.webp"
                                         alt="Analytics Dashboard"
@@ -91,8 +103,8 @@ export default function OracleOneStopShop() {
                                 </div>
 
                                 {/* Right Section - Text */}
-                                <div className="w-full md:w-1/2 p-4 space-y-4">
-                                    <h1 className="text-3xl  text-start lg:max-w-[80%] 2xl:max-w-[60%] font-['Archivo'] text-secondary font-semibold home-section-headings">
+                                <div className="w-full lg:w-1/2 md:p-4 space-y-4">
+                                    <h1 className="text-[28px] lg:text-3xl  text-start lg:max-w-[80%] 2xl:max-w-[60%] font-['Archivo'] text-secondary font-semibold home-section-headings">
                                         Dynamics 365 CE/CRM solutions by Plenum
                                     </h1>
                                     <p className="text-secondary text-start font-['Archivo'] opacity-75 w-[45% xl:max-w-[85%] ">
@@ -104,7 +116,7 @@ export default function OracleOneStopShop() {
 
                         {activeTab === 'NetSuite Integration' && (
                             <div className="flex flex-col items-center justify-center h-full bg-gray-100">
-                                <h2 className="text-3xl font-['Archivo'] text-secondary font-semibold">
+                                <h2 className="md:text-3xl font-['Archivo'] text-secondary font-semibold">
                                     ERP Services in Qatar
                                 </h2>
                                 <p className="text-secondary font-['Archivo'] opacity-75 mt-4 max-w-md">
@@ -115,7 +127,7 @@ export default function OracleOneStopShop() {
 
                         {activeTab === 'NetSuite Customization' && (
                             <div className="flex flex-col items-center justify-center h-full bg-gray-100">
-                                <h2 className="text-3xl font-['Archivo'] text-secondary font-semibold">
+                                <h2 className="md:text-3xl font-['Archivo'] text-secondary font-semibold">
                                     ERP Services in Qatar
                                 </h2>
                                 <p className="text-secondary font-['Archivo'] opacity-75 mt-4 max-w-md">

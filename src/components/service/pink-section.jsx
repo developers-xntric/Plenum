@@ -15,11 +15,11 @@ const PinkSection = ({ heading, text, show_button = false, className, isVideo = 
                 </div>
 
                 {/* IMAGE FOR MOBILE  left    */}
-                <div className='h-full md:hidden block  absolute -left-10 top-0 -z-10'>
+                <div className='h-full md:hidden block  absolute -left-12 top-0 -z-10'>
                     {isVideo && <Image src={"/service/pink_mob1.png"} alt='Russian' width={1000} height={1000} className='w-full h-full object-cover' />}
                 </div>
                 {/* IMAGE FOR MOBILE  right   */}
-                <div className='h-full md:hidden block absolute -right-5 top-0 -z-10'>
+                <div className='h-full md:hidden block absolute -right-8 top-0 -z-10'>
                     {isVideo && <Image src={"/service/pink_mob2.png"} alt='Russian' width={1000} height={1000} className='w-full h-full object-cover' />}
                 </div>
 

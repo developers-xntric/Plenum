@@ -83,7 +83,7 @@ export default function OrcaleFinancialFeature() {
                         {activeTab === 'Accounting Hub' && (
                             <div className="flex flex-col lg:flex-row  gap-5 lg:gap-10 items-center justify-center ">
                                 {/* Left Section - Image */}
-                                <div className="w-full lg:w-1/2 xl:w-[60%] p-4">
+                                <div className="w-full lg:w-1/2 xl:w-[60%] md:p-4">
                                     <Image
                                         src="/images/service/microsoft-dynamics/microsoft-tab2.webp"
                                         alt="Analytics Dashboard"
@@ -94,10 +94,10 @@ export default function OrcaleFinancialFeature() {
                                 </div>
 
                                 {/* Right Section - Text */}
-                                <div className="w-full lg:w-1/2 p-4 space-y-4">
-                                    <h1 className="text-3xl  text-start lg:max-w-[80%] 2xl:max-w-[60%] font-['Archivo'] text-secondary font-semibold home-section-headings">
+                                <div className="w-full lg:w-1/2 md:p-4 space-y-4">
+                                    <h2 className="text-3xl  text-start lg:max-w-[80%] 2xl:max-w-[60%] font-['Archivo'] text-secondary font-semibold home-section-headings">
                                         Dynamics 365 CE/CRM solutions by Plenum
-                                    </h1>
+                                    </h2>
                                     <p className="text-secondary text-start font-['Archivo'] opacity-75 w-[45% xl:max-w-[85%] ">
                                         Plenum is a Microsoft Dynamics partner that offers cloud-based Dynamics 365 CE/CRM business solutions geared towards improving sales productivity through better-managed customer interactions. You can add value to your social media marketing, improve business intelligence, and manage your entire campaign all from one location.
                                     </p>
