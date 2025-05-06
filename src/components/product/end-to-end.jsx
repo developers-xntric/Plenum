@@ -4,25 +4,25 @@ import React from 'react'
 const EndToEndAI = () => {
     return (
         <div className="py-16 xl:py-20 font-['Archivo']">
-            <div className="2xl:max-w-[1440px] max-w-[90%] mx-auto text-center mb-8">
+            <div className="2xl:max-w-[1440px] max-w-[90%] mx-auto lg:text-center mb-8">
                 <div>
-                    <h2 className="text-[50px] leading-[35px]  text-secondary font-semibold home-section-headings">Momentum AI</h2>
+                    <h2 className="text-[30px] lg:text-[50px] leading-[35px]  text-secondary font-semibold home-section-headings">Momentum AI</h2>
                 </div>
                 <div className="mb-2">
-                    <h3 className="text-[50px]  text-secondary font-semibold home-section-headings">Simplifying End-to-End AI Workflows</h3>
+                    <h3 className="text-[30px] lg:text-[50px] text-secondary font-semibold home-section-headings w-[90%] lg:w-auto">Simplifying End-to-End AI Workflows</h3>
                 </div>
-                <div className="p-2 mx-auto max-w-[60%]">
+                <div className="lg:p-2 mx-auto lg:max-w-[60%]">
                     <p className="text-[15px] text-secondary font-['Archivo'] opacity-75 leading-tight">
                         Momentum AI is a unified platform built to automate every stage of the AI lifecycle — from data ingestion to deployment. Designed for enterprise scalability, it streamlines processes and accelerates AI development with powerful automation tools.
                     </p>
                 </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 place-items-center lg:grid-cols-3 gap-14 xl:gap-20 max-w-[75%] 2xl:max-w-[900px] mx-auto">
+            <div className="grid grid-cols-1 place-items-center lg:grid-cols-3 gap-10 xl:gap-16 max-w-[90%] lg:max-w-[75%] 2xl:max-w-[900px] mx-auto">
                 {data.map((ele, i) => (
                     <div
                         key={i}
-                        className="rounded-[30px] px-8 pt-6 w-[260px] h-[308px] flex flex-col"
+                        className="rounded-[30px] px-8 pt-6 w-auto h-[240px]  md:w-[260px] md:h-[390px] xl:w-[315px] xl:h-[380px] flex flex-col"
                         style={{
                             background: ele.bg === "white"
                                 ? "#EFEFEF"
@@ -33,11 +33,11 @@ const EndToEndAI = () => {
                                 : undefined,
                         }}
                     >
-                        <div className='mb-5'>
+                        <div className='mb-5 flex lg:flex-col gap-3 lg:gap-6'>
                             <Image src={ele.logo || null} alt="logo" width={50} height={50} />
+                            <h3 className={`${ele.bg === "white" ? "text-[#282526]" : "text-[#FFFFFF]"} leading-[23.749px] font-bold max-w-[70%] relative top-3 lg:static text-[19.999px] mb-4 h-full`}>{ele.title}</h3>
                         </div>
-                        <h3 className={`${ele.bg === "white" ? "text-[#282526]" : "text-[#FFFFFF]"} leading-[23.749px] font-bold max-w-[70%] text-[19.999px] mb-4`}>{ele.title}</h3>
-                        <p className={`${ele.bg == "white" ? "text-[#28252680]" : "text-[#E6E6E7]"} text-[12px] font-semibold leading-[15px] `}>{ele.para}</p>
+                        <p className={`${ele.bg == "white" ? "text-[#28252680]" : "text-[#E6E6E7]"} text-[14px] font-semibold leading-5`}>{ele.para}</p>
                     </div>
                 ))}
             </div>

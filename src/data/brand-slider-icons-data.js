@@ -14,10 +14,18 @@ export const service_brand_icons = [
     "/images/brand-logos/tangent.webp",
 ];
 
+export const product_brand_icons = [
+    "/product/i1.svg",
+    "/product/i2.svg",
+    "/product/i3.svg",
+    "/product/i4.svg",
+    "/product/i5.svg",
+];
+
 export const finance_opearations_services = [{
     src: "/service/FAO/icon1.svg",
     width: "189.073",
-    height:"45.333"
+    height: "45.333"
 }, {
     src: "/service/FAO/icon2.svg",
     width: "97.362",
