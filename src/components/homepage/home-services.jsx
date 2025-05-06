@@ -134,7 +134,7 @@ export default function HomeServices() {
         <div className="flex flex-col space-y-10 sm:space-y-16">
           {/* UPPER column - Headline */}
           <div className=" xl:w-[80%] 2xl:w-[70%] relative z-20">
-            <h2 className="text-[30px] md:text-[50px] lg:text-[59.542px] leading-[40px] md:leading-[60px] font-semibold font-['Archivo'] relative z-20 bg-[linear-gradient(to_right,_#101010,_#9b9999,_#101010,_#9b9999)] bg-clip-text text-transparent">
+            <h2 className="text-[30px] lg:text-[50px] xl:text-[59.542px] leading-[40px] lg:leading-[60px] font-semibold font-['Archivo'] relative z-20 bg-[linear-gradient(to_right,_#101010,_#9b9999,_#101010,_#9b9999)] bg-clip-text text-transparent">
               Why AI enabled Enterprise with Plenum? With Plenum gain the tools to unlock deeper insights, automate complex workflows
             </h2>
           </div>
@@ -144,10 +144,10 @@ export default function HomeServices() {
             {/* LEFT */}
             <div className="space-y-2 md:space-y-6 w-full md:w-[80%]">
               <div className="relative font-medium">
-                <h2 className="text-[30px] md:text-[50px] lg:text-[57.375px] font-semibold text-secondary opacity-[0.8] inline-block md:block font-['Archivo'] tracking-tighter">
+                <h2 className="text-[30px] lg:text-[50px] xl:text-[57.375px] font-semibold text-secondary opacity-[0.8] inline-block md:block font-['Archivo'] tracking-tighter">
                   Our
                 </h2>
-                <h2 className="text-[30px] md:text-[50px] lg:text-[57.375px] font-semibold text-secondary opacity-[0.8] inline-block md:block md:mx-0 mx-2 font-['Archivo'] tracking-tighter mt-[-32px]">
+                <h2 className="text-[30px] lg:text-[50px] xl:text-[57.375px] font-semibold text-secondary opacity-[0.8] inline-block lg:block md:mx-0 mx-2 font-['Archivo'] tracking-tighter mt-[-32px]">
                   Services
                 </h2>
               </div>
@@ -172,7 +172,7 @@ export default function HomeServices() {
                 >
                   <div
                     onClick={() => toggleAccordion(item.id)}
-                    className="group flex items-center gap-3 font-medium text-secondary md:text-[21px] cursor-pointer"
+                    className="group flex items-center gap-3 font-medium text-secondary lg:text-[21px] cursor-pointer"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

@@ -27,14 +27,14 @@ export default function MicrosoftDynamicPartner() {
 
         <div>
           {/* Tabs Section */}
-          <div className="flex justify-center items-center mb-10 border-b-2 w-full sm:max-w-[90%] mx-auto">
-            {tabs.map((tab) => (
+          <div className="flex justify-center items-center gap-16 sm:gap-1 xl:gap-1 mb-10 border-b-2 w-full sm:max-w-[90%] mx-auto overflow-x-auto">
+            {tabs.map((tab, index) => (
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}
-                className={`text-[9px] md:text-base lg:text-[22px] w-full cursor-pointer pb-4 font-['Archivo'] text-secondary font-semibold home-section-headings ${activeTab === tab
+                className={`text-[15px] lg:text-[22px] w md:w-[33%]  xl:w-[33%] flex-shrink-0 ${index === 0 ? "pl-[15rem] md:pl-[0rem] lg:pl-0" : ""} py-2 cursor-pointer pb-4 font-['Archivo'] text-secondary font-semibold home-section-headings ${activeTab === tab
                   ? 'text-[#FF6035] border-b-2 border-[#FF6035]'
-                  : 'text-gray-400 '
+                  : 'text-gray-400'
                   } focus:outline-none`}
               >
                 {tab}
@@ -59,7 +59,7 @@ export default function MicrosoftDynamicPartner() {
 
                 {/* Right Section - Text */}
                 <div className="w-full lg:w-1/2 lg:p-4 space-y-4">
-                <h2 className="text-3xl  text-start lg:max-w-[80%] 2xl:max-w-[60%] font-['Archivo'] text-secondary font-semibold opacity-95">
+                  <h2 className="text-[25px] md:text-3xl  text-start lg:max-w-[80%] 2xl:max-w-[60%] font-['Archivo'] text-secondary font-semibold opacity-95">
                     Dynamics 365 CE/CRM solutions by Plenum
                   </h2>
                   <p className="text-secondary text-start font-medium font-['Archivo'] opacity-75 w-[45% xl:max-w-[85%] ">
