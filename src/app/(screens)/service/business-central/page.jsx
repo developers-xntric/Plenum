@@ -23,10 +23,10 @@ const BuisnessCentral = () => {
                 image_className="md:w-[500px] md:h-[300px] xl:w-[600px] xl:h-[500px]"
                 button_text="Connect with our Experts"
                 isSlider={true}
-                heading_className={"max-w-[500px]"}
-                para_className={"w-[70%]"}
+                heading_className={"w-[55%] mt-10 lg:mt-0 lg:max-w-[500px]"}
+                para_className={"w-[60%] lg:w-[70%]"}
             />
-            <ERPAccordin className='flex justify-center items-center gap-20' bottomSection={bc_service} left={true} blackSection={bc_service_black} />
+            <ERPAccordin className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={bc_service} left={true} blackSection={bc_service_black} />
             <MobilitySolutions
                 card_className={"w-[300px] h-[200px]"}
                 className={"flex flex-wrap gap-10 justify-center"}

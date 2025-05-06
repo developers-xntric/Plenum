@@ -19,8 +19,8 @@ const OracleCloudFusion = () => {
                 image={"/service/OCF/OCF_hero.svg"}
                 image_className="md:w-[500px] md:h-[300px] xl:w-[528.08px] xl:h-[400px]"
                 button_text="Connect with our Experts"
-                heading_className={"w-[50%] text-[45px] leading-14"}
-                para_className={"w-[55%] text-md"}
+                heading_className={"w-[50%] leading-14"}
+                para_className={"w-[55%] lg:w-[60%] text-md"}
             />
             <ERPAccordin className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={ocf_service} left={true} blackSection={ocf_service_black} />
             <OracleCloudFusionERP />
