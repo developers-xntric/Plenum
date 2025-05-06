@@ -4,30 +4,26 @@ import Button from '@/components/common/button';
 import Image from 'next/image';
 import React from 'react';
 
+export function useWindowWidth() {
+  const [width, setWidth] = useState(0);
 
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    // Set initial width
+    setWidth(window.innerWidth);
+
+    const handleResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return width;
+}
 
 const Service_Inner_Hero = ({ heading, para, is_space_in_image = true, image, image_className, button_text, button_className }) => {
-
-  function useWindowWidth() {
-    const [width, setWidth] = useState(0);
-
-    useEffect(() => {
-      if (typeof window === "undefined") return;
-
-      // Set initial width
-      setWidth(window.innerWidth);
-
-      const handleResize = () => setWidth(window.innerWidth);
-      window.addEventListener("resize", handleResize);
-
-      return () => window.removeEventListener("resize", handleResize);
-    }, []);
-
-    return width;
-  }
-
   const width = useWindowWidth();
-
   return (
     <div className='h-screen 2xl:h-[800px] overflow-hidden'>
       {/* Wrapper */}
