@@ -7,8 +7,15 @@ import Button from "../common/button"
 
 const Navbar = () => {
     const [showServicesDropdown, setShowServicesDropdown] = useState(false)
+    const [showProductsDropdown, setShowProductsDropdown] = useState(false)
+    const [showIndustriesDropdown, setShowIndustriesDropdown] = useState(false)
+    const [showResourcesDropdown, setShowResourcesDropdown] = useState(false)
+
     const servicesRef = useRef(null)
-    const dropdownRef = useRef(null)
+    const productsRef = useRef(null)
+    const industriesRef = useRef(null)
+    const resourcesRef = useRef(null)
+
     const timeoutRef = useRef(null)
 
     const servicesMenuItems = [
@@ -21,13 +28,19 @@ const Navbar = () => {
                     title: "Oracle ERP Solutions",
                     isExpanded: true,
                     link: "/service/oracle",
-                    items: [{ title: "Net Suite", link: "/service/oracle-net-suite" }, { title: "Fusion Cloud", link: "/service/oracle-cloud-fusion" }],
+                    items: [
+                        { title: "Net Suite", link: "/service/oracle-net-suite" },
+                        { title: "Fusion Cloud", link: "/service/oracle-cloud-fusion" },
+                    ],
                 },
                 {
                     title: "Microsoft Dynamics ERP Solutions",
                     isExpanded: true,
                     link: "/service/microsoft-dynamics",
-                    items: [{ title: "Business Central", link: "/service/business-central" }, { title: "Finance and Operations", link: "/service/finance-operations" }],
+                    items: [
+                        { title: "Business Central", link: "/service/business-central" },
+                        { title: "Finance and Operations", link: "/service/finance-operations" },
+                    ],
                 },
             ],
         },
@@ -48,63 +61,150 @@ const Navbar = () => {
         },
     ]
 
-    // Debounce function to limit event handler calls
-    const debounce = (func, wait) => {
-        let timeout
-        return (...args) => {
-            clearTimeout(timeout)
-            timeout = setTimeout(() => func(...args), wait)
+    const productsMenuItems = [
+        {
+            title: "Momentum AI",
+            isExpanded: true,
+            link: "/product",
+        },
+        {
+            title: "Vertical Builds",
+            isExpanded: false,
+            link: "/product",
         }
+    ]
+
+    const industriesMenuItems = [
+        {
+            title: "Healthcare Industry",
+            isExpanded: true,
+            link: "/industries",
+        },
+        {
+            title: "BioTech Industries",
+            isExpanded: false,
+            link: "/industries",
+        },
+        {
+            title: "Consumer Banking",
+            isExpanded: false,
+            link: "/industries",
+        },
+        {
+            title: "Construction Industry",
+            isExpanded: false,
+            link: "/industries",
+        },
+        {
+            title: "Agriculture & Food Industries",
+            isExpanded: false,
+            link: "/industries",
+        },
+        {
+            title: "Business & Enterprise Banking",
+            isExpanded: false,
+            link: "/industries",
+        },
+    ]
+
+    const resourcesMenuItems = [
+        {
+            title: "Case Studies",
+            isExpanded: true,
+            link: "/case-studies",
+        },
+        {
+            title: "Blog",
+            isExpanded: false,
+            link: "/blog",
+        },
+        {
+            title: "News",
+            isExpanded: false,
+            link: "/case-studies",
+        },
+        {
+            title: "Video & Podcasts",
+            isExpanded: false,
+            link: "/case-studies",
+        },
+    ]
+
+    const closeAllDropdowns = () => {
+        setShowServicesDropdown(false)
+        setShowProductsDropdown(false)
+        setShowIndustriesDropdown(false)
+        setShowResourcesDropdown(false)
     }
 
-    // Position the dropdown under the Services link
-    const updateDropdownPosition = () => {
-        if (showServicesDropdown && servicesRef.current && dropdownRef.current) {
-            const rect = servicesRef.current.getBoundingClientRect()
-            dropdownRef.current.style.top = `${rect.bottom}px` // Added 8px offset
-            dropdownRef.current.style.left = `${30}%`
-        }
-    }
-
-    // Update position on showServicesDropdown change, scroll, or resize
-    useEffect(() => {
-        updateDropdownPosition()
-        const debouncedUpdate = debounce(updateDropdownPosition, 50)
-        window.addEventListener("scroll", debouncedUpdate)
-        window.addEventListener("resize", debouncedUpdate)
-
-        return () => {
-            window.removeEventListener("scroll", debouncedUpdate)
-            window.removeEventListener("resize", debouncedUpdate)
-            if (timeoutRef.current) {
-                clearTimeout(timeoutRef.current)
-            }
-        }
-    }, [showServicesDropdown])
-
-    const handleMouseEnter = () => {
+    const handleMouseEnter = (setShowDropdown) => {
         if (timeoutRef.current) {
             clearTimeout(timeoutRef.current)
             timeoutRef.current = null
         }
-        setShowServicesDropdown(true)
+        closeAllDropdowns()
+        setShowDropdown(true)
     }
 
-    const handleMouseLeave = () => {
+    const handleMouseLeave = (setShowDropdown) => {
         timeoutRef.current = setTimeout(() => {
-            setShowServicesDropdown(false)
-        }, 100)
+            setShowDropdown(false)
+        }, 300)
     }
+
+    const renderDropdown = (showDropdown, menuItems, setShowDropdown) => (
+        <div
+            className={`absolute top-10 left-0 bg-[#4C4C4CE5] text-white p-6 w-[340px] shadow-lg z-[1000]  transition-all duration-300 ease-in-out ${showDropdown ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2 pointer-events-none'}`}
+            onMouseEnter={() => handleMouseEnter(setShowDropdown)}
+            onMouseLeave={() => handleMouseLeave(setShowDropdown)}
+        >
+            <ul className="space-y-3">
+                {menuItems.map((item, index) => (
+                    <li key={index} className="space-y-2 text-[14px]">
+                        <Link
+                            href={item.link || "#"}
+                            className="flex items-center text-left w-full hover:text-[#FF6035] transition-colors"
+                        >
+                            <ArrowRight className="mr-2" size={16} />
+                            <span>{item.title}</span>
+                        </Link>
+                        {item.isExpanded && item.subMenus && (
+                            <ul className="ml-6 space-y-2">
+                                {item.subMenus.map((subMenu, subIndex) => (
+                                    <li key={subIndex} className="space-y-2">
+                                        <Link
+                                            href={subMenu.link || "#"}
+                                            className="flex items-center text-left w-full hover:text-[#FF6035] transition-colors"
+                                        >
+                                            <ArrowRight className="mr-2" size={16} />
+                                            {subMenu.title}
+                                        </Link>
+                                        {subMenu.isExpanded && subMenu.items && (
+                                            <ul className="ml-6 space-y-2">
+                                                {subMenu.items.map((item, itemIndex) => (
+                                                    <li key={itemIndex} className="hover:text-[#FF6035] transition-colors">
+                                                        <Link href={item.link} className="block w-full">
+                                                            {item.title}
+                                                        </Link>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        )}
+                                    </li>
+                                ))}
+                            </ul>
+                        )}
+                    </li>
+                ))}
+            </ul>
+        </div>
+    )
 
     return (
-        <header className='z-[999] border-[#E2E2E2] border 2xl:w-[1200px]  lg:w-[80%] xl:w-[85%] font-normal font-["Archivo"] mx-auto hidden md:fixed md:block -translate-x-1/2 left-1/2 top-6 bg-[#FFFFFF] rounded-[13px]'>
-            {/* Wrapper */}
+        <header className='z-[999] border-[#E2E2E2] border 2xl:w-[1200px] lg:w-[85%] xl:w-[85%] font-normal font-["Archivo"] mx-auto hidden lg:block fixed -translate-x-1/2 left-1/2 top-6 bg-[#FFFFFF] rounded-[13px]'>
             <div className="xl:px-[18px] xl:py-2 py-1.5 px-3">
-                {/* Inner Row Whole Div */}
                 <div className="flex justify-between items-center">
-                    {/* Logo Div */}
                     <Link href={"/"} className="w-[100px]">
-                        {/* Logo Svg */}
                         <svg xmlns="http://www.w3.org/2000/svg" width="89" height="19" viewBox="0 0 89 19" fill="none">
                             <g clipPath="url(#clip0_1140_1867)">
                                 <path
@@ -144,82 +244,54 @@ const Navbar = () => {
                             </defs>
                         </svg>
                     </Link>
-                    {/* Links And Button Div */}
                     <div className="flex justify-between gap-[30px] xl:gap-[90px]">
-                        {/* Whole Links */}
                         <ul className="flex justify-between items-center gap-6 xl:gap-8 2xl:gap-10 text-[12px] font-semibold xl:text-[14px] text-black">
                             <li>
                                 <Link href={"/"}>Home</Link>
                             </li>
                             <li
+                                className="relative"
                                 ref={servicesRef}
-                                onMouseEnter={handleMouseEnter}
-                                onMouseLeave={handleMouseLeave}
+                                onMouseEnter={() => handleMouseEnter(setShowServicesDropdown)}
+                                onMouseLeave={() => handleMouseLeave(setShowServicesDropdown)}
                             >
                                 <Link href={"/service"} className="flex items-center">
                                     Services
                                 </Link>
-                                {/* Services Dropdown */}
-                                {showServicesDropdown && (
-                                    <div
-                                        ref={dropdownRef}
-                                        className="absolute top-10 bg-[#4C4C4CE5] text-white p-6 w-[358px] shadow-lg z-[1000] transition-opacity duration-500 ease-in-out"
-                                        onMouseEnter={handleMouseEnter}
-                                        onMouseLeave={handleMouseLeave}
-                                        style={{ opacity: showServicesDropdown ? 1 : 0 }}
-                                    >
-                                        <ul className="space-y-3">
-                                            {servicesMenuItems.map((item, index) => (
-                                                <li key={index} className="space-y-2 text-[14px]">
-                                                    <Link
-                                                        href={item.link || "#"}
-                                                        className="flex items-center text-left w-full hover:text-[#FF6035] transition-colors"
-                                                    >
-                                                        <ArrowRight className="mr-2" size={16} />
-                                                        <span>{item.title}</span>
-                                                    </Link>
-
-                                                    {item.isExpanded && item.subMenus && (
-                                                        <ul className="ml-6 space-y-2">
-                                                            {item.subMenus.map((subMenu, subIndex) => (
-                                                                <li key={subIndex} className="space-y-2">
-                                                                    <Link
-                                                                        href={subMenu.link || "#"}
-                                                                        className="flex items-center text-left w-full hover:text-[#FF6035] transition-colors"
-                                                                    >
-                                                                        <ArrowRight className="mr-2" size={16} />
-                                                                        {subMenu.title}
-                                                                    </Link>
-
-                                                                    {subMenu.isExpanded && subMenu.items && (
-                                                                        <ul className="ml-6 space-y-2">
-                                                                            {subMenu.items.map((item, itemIndex) => (
-                                                                                <li key={itemIndex} className="hover:text-[#FF6035] transition-colors">
-                                                                                    <Link href={item.link} className="block w-full">
-                                                                                        {item.title}
-                                                                                    </Link>
-                                                                                </li>
-                                                                            ))}
-                                                                        </ul>
-                                                                    )}
-                                                                </li>
-                                                            ))}
-                                                        </ul>
-                                                    )}
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    </div>
-                                )}
+                                {renderDropdown(showServicesDropdown, servicesMenuItems, setShowServicesDropdown)}
                             </li>
-                            <li>
-                                <Link href={"/product"}>Products</Link>
+                            <li
+                                className="relative"
+                                ref={productsRef}
+                                onMouseEnter={() => handleMouseEnter(setShowProductsDropdown)}
+                                onMouseLeave={() => handleMouseLeave(setShowProductsDropdown)}
+                            >
+                                <Link href={"/product"} className="flex items-center">
+                                    Products
+                                </Link>
+                                {renderDropdown(showProductsDropdown, productsMenuItems, setShowProductsDropdown)}
                             </li>
-                            <li>
-                                <Link href={"/industries"}>Industries</Link>
+                            <li
+                                className="relative"
+                                ref={industriesRef}
+                                onMouseEnter={() => handleMouseEnter(setShowIndustriesDropdown)}
+                                onMouseLeave={() => handleMouseLeave(setShowIndustriesDropdown)}
+                            >
+                                <Link href={"/industries"} className="flex items-center">
+                                    Industries
+                                </Link>
+                                {renderDropdown(showIndustriesDropdown, industriesMenuItems, setShowIndustriesDropdown)}
                             </li>
-                            <li>
-                                <Link href={"/case-studies"}>Resources</Link>
+                            <li
+                                className="relative"
+                                ref={resourcesRef}
+                                onMouseEnter={() => handleMouseEnter(setShowResourcesDropdown)}
+                                onMouseLeave={() => handleMouseLeave(setShowResourcesDropdown)}
+                            >
+                                <Link href={"/case-studies"} className="flex items-center">
+                                    Resources
+                                </Link>
+                                {renderDropdown(showResourcesDropdown, resourcesMenuItems, setShowResourcesDropdown)}
                             </li>
                             <li>
                                 <Link href={"/about"}>About Us</Link>
@@ -231,7 +303,6 @@ const Navbar = () => {
                                 <Link href={"/careers"}>Careers</Link>
                             </li>
                         </ul>
-                        {/* Button */}
                         <Button
                             text={"Contact Us"}
                             link="/contact"
@@ -242,7 +313,6 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-
         </header>
     )
 }

@@ -3,7 +3,6 @@ import Section2 from "@/components/case-studies/section2"
 import CaseDetailHero from "@/components/case-studies/case-details-hero"
 import Personalization from "@/components/case-studies/personalization"
 import AISolutions from "@/components/product/AI-solutions"
-import TeamTestimonials from "@/components/careers/team-testimonials"
 import IndustryShowcase from "@/components/industries/industry-showcase"
 
 export default function BrandOSPage() {
@@ -19,7 +18,7 @@ export default function BrandOSPage() {
           image={'/casestudy/cs4.svg'} />
       </div>
       <div className="2xl:max-w-[1440px] lg:w-[82%] xl:w-[65%] 2xl:w-[50%] mx-auto py-20">
-        <div className="w-[700px] mx-auto flex flex-col gap-10">
+        <div className="md:w-[700px] mx-auto flex flex-col gap-10">
           <div className="w-full h-[70px] flex justify-center">
             <Image src={"/images/brand-logos/momentum.webp"} alt="Logo" width={1500} height={1500} className="w-[196.083px]" />
           </div>

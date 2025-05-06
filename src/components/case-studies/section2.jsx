@@ -1,4 +1,3 @@
-import { Shield } from "lucide-react"
 import Image from "next/image"
 
 export default function Section2() {
@@ -6,8 +5,8 @@ export default function Section2() {
     <div className="2xl:max-w-[1440px] w-[90%] mx-auto space-y-20 py-16 xl:py-24">
       {/* Consider using a wrapper which adds space to the sides when we move higher from 1440 px screens width */}
       {/* TEXT HEADING 1 */}
-      <div className="text-[50px] leading-[55px] font-semibold font-['Archivo'] relative z-20 bg-[linear-gradient(to_right,_#101010,_#9b9999,_#101010,_#9b9999)] bg-clip-text text-transparent">
-        <div className="text-start pt-12 w-[840px] ">
+      <div className=" text-[30px] md:text-[50px] leading-[40px] md:leading-[55px] font-semibold font-['Archivo'] relative z-20 bg-[linear-gradient(to_right,_#101010,_#9b9999,_#101010,_#9b9999)] bg-clip-text text-transparent">
+        <div className="text-start pt-12 md:w-[840px] ">
           <h1>Unlock Deeper Insights, Automate Workflows, and Drive Efficiency with Plenum’s Cutting-Edge ERP AI Technology.</h1>
         </div>
       </div>
