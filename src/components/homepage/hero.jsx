@@ -120,8 +120,8 @@ const Hero = () => {
                 </div>
                 <div className='w-full bg-[#1a1a1a] py-3 flex justify-center items-center gap-10'>
                     <p className='font-["Chakra"] font-normal sm:text-[16px] text-[14px] md:text-[22px] text-white opacity-80' >Ready to experience hyperperformance?</p>
-                    <div className='bg-gradient-to-l p-[0.7px] xl:p-[0.5px]  from-red-500 via-orange-700/80 to-red-300 rounded-[8px]'>
-                        <Button className='font-["Archivo"] hover:bg-[#FF6035] hover:transition-colors ease-in-out duration-300 bg-zinc-900 xl:px-8 px-4 w-[100px] md:w-[110px] md:px-8 xl:py-3 py-2 text-white font-primary text-[10px] md:text-[14px]' text="Lets Talk" link='/' />
+                    <div className='bg-gradient-to-l relative right-3 p-[1.4px] xl:p-[1.2px]  from-red-500 via-orange-700/80 to-red-300 rounded-[8px]'>
+                        <Button className='font-["Archivo"] hover:bg-[#FF6035] hover:transition-colors ease-in-out duration-300 bg-zinc-900 xl:px-8 px-4 w-[100px] md:w-full xl:w-full md:px-8 md:py-2 py-2 text-white font-primary text-[10px] md:text-[14px]' text="Lets Talk" link='/' />
                     </div>
                 </div>
             </div>
