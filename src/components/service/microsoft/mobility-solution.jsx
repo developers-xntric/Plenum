@@ -48,13 +48,13 @@ export default function MobilitySolutions({
   return (
     <section className="py-12 max-w-[90%] 2xl:max-w-[1440px] font-['Archivo'] mx-auto">
       <div className={`mb-8 ${isCenter ? "text-center" : ""}`}>
-        <h2 className="text-2xl md:text-[50px] font-semibold text-secondary home-section-headings leading-[40px]">
+        <h2 className="text-2xl lg:text-[50px] font-semibold text-secondary home-section-headings leading-[40px]">
           {heading1 || "Mobility Solutions For"}
         </h2>
-        <h2 className="text-2xl md:text-[50px] font-semibold text-secondary home-section-headings mb-4">
+        <h2 className="text-2xl lg:text-[50px] font-semibold text-secondary home-section-headings mb-4">
           {heading2 || "Microsoft Dynamics"}
         </h2>
-        <p className={cn("text-[15px] text-[#101010] opacity-60 max-w-[540px]", isCenter && "mx-auto max-w-[690px]")}>
+        <p className={cn("text-[15px] text-[#101010] font-medium opacity-60 max-w-[540px]", isCenter && "mx-auto max-w-[690px]")}>
           {para ||
             "Revolutionize your business with turnkey Apps for Dynamics 365, NAV, AX and Business Central provided by Plexian - Certified Microsoft Application Developer."}
         </p>
@@ -73,7 +73,7 @@ export default function MobilitySolutions({
         >
           <CarouselContent>
             {solutions.map((solution, index) => (
-              <CarouselItem key={index} className="basis-[85%] sm:basis-[300px]">
+              <CarouselItem key={index} className="basis-[92%] sm:basis-[300px]">
                 <div
                   className={`bg-white px-4 py-6 rounded-sm shadow-sm border border-gray-100 gap-4 justify-center flex flex-col h-[200px] ${card_className || ""}`}
                 >

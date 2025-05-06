@@ -124,7 +124,7 @@ export default function HomeServices() {
   return (
     <div className="bg-white">
       {/* Main content */}
-      <div className="2xl:max-w-[1440px] w-[90%] mx-auto space-y-20 md:py-16 xl:py-24">
+      <div className="2xl:max-w-[1440px] w-[90%] mx-auto space-y-10 md:space-y-20 py-8 md:py-16 xl:py-24">
         {/* BRAND ICONS SLIDER */}
         <BrandSlider
           text={"Trusted by world's most exciting brands"}

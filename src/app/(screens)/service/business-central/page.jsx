@@ -38,7 +38,7 @@ const BuisnessCentral = () => {
             />
             <MicrosoftDynamic heading1='One-stop Solution For Microsoft' heading2='Dynamics 365 Services' para='Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world' services={services2}
                 button={"Get in touch now"}
-                className='flex flex-col items-start text-start'
+                className='flex flex-col items-center md:items-start text-center md:text-start'
                 bgColor='black'
             />
             <Capabilities />
