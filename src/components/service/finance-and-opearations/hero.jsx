@@ -13,9 +13,9 @@ const New_Service_Inner_Hero = ({ heading, para, is_space_in_image = true, image
                     {/* Left Section Heading Text And Buttons */}
                     <div className='w-[540px] space-y-8 mt-12'>
                         {/* Heading */}
-                        <h1 className={`text-secondary text-[35px] xl:text-[48px] font-["Chakra"] leading-11 xl:leading-[52px] font-semibold home-section-headings ${heading_className}`}>{heading}</h1>
+                        <h1 className={`text-secondary text-[45px] lg:text-[48px] font-["Chakra"] leading-11 xl:leading-[52px] font-semibold home-section-headings ${heading_className}`}>{heading}</h1>
                         {/* Paragraph */}
-                        <p className={`text-secondary font-normal md:text-[14px] xl:text-[18px] opacity-60 ${para_className ? para_className : "w-[45%]"}`}>{para}</p>
+                        <p className={`text-secondary font-normal md:text-[14px] xl:text-[18px] opacity-60 ${para_className ? para_className : "lg:w-[45%]"}`}>{para}</p>
                         {/* Button */}
                         <Button text={button_text || "Let's Talk"} link={"/contact"} className={button_className ? button_className : "px-10 py-2.5 bg-[#FF6035] hover:bg-[#101010] transition-all duration-700 text-white"} />
                     </div>
