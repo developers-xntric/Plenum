@@ -6,13 +6,13 @@ export default function MicrosoftDynamic({ heading1, heading2, para, services, b
         <main className={`flex flex-col items-center font-['Archivo'] justify-center py-16 xl:py-20 ${bgColor === "black" ? "bg-[#282526] text-white" : "bg-[#EFEFEF]"} `}>
             <div className="2xl:max-w-[1300px] max-w-[90%] mx-auto">
                 <div className="text-left md:text-center  mb-8 md:mb-12">
-                    <h1 className={`text-[30px] text-left md:text-center font-semibold leading-[34px] md:leading-[55px] opacity-85  ${bgColor === "black" ? "text-white" : "home-section-headings"} md:text-3xl lg:text-[50px]`}>
+                    <h1 className={`text-[30px]  font-semibold leading-[34px] md:leading-[55px] opacity-85  ${bgColor === "black" ? "text-white text-center" : "home-section-headings text-left md:text-center"} md:text-3xl lg:text-[50px]`}>
                         {heading1}
                     </h1>
-                    <h1 className={`text-3xl text-left md:text-center opacity-85 lg:text-[50px]  font-semibold  ${bgColor === "black" ? "text-white" : "home-section-headings"} mb-4`}>
+                    <h1 className={`text-3xl  opacity-85 lg:text-[50px]  font-semibold  ${bgColor === "black" ? "text-white text-center" : "home-section-headings text-left md:text-center"} mb-4`}>
                         {heading2}
                     </h1>
-                    <p className={`text-sm text-left md:text-center md:static relative -left-3 md:text-base font-medium opacity-60 md:max-w-2xl mx-auto  ${paraClass}`}>
+                    <p className={`text-sm  md:static relative  md:text-base font-medium ${bgColor === "black" ? "text-center " : " -left-3 text-left md:text-center"} opacity-60 md:max-w-2xl mx-auto  ${paraClass}`}>
                         {para}
                     </p>
                 </div>
@@ -29,8 +29,8 @@ export default function MicrosoftDynamic({ heading1, heading2, para, services, b
                                     className="w-full h-full object-contain"
                                 />
                             </div>
-                            <h3 className={`${gridcol ? 'w-full' : 'w-[85%]  md:w-[90%] lg:w-[80%] xl:w-[85%]'}  ${isCenter && 'mx-auto'} text-[20px] md:text-[28px] font-semibold ${bgColor === "black" ? "text-white" : "home-section-heading"} mb-[18px] md:leading-8`}>{service.title}</h3>
-                            <p className={`"text-xs md:text-[15px] opacity-60  font-medium  ${paraClass} `}>
+                            <h3 className={`${gridcol ? 'w-full' : 'w-[85%]  md:w-[90%] lg:w-[80%] xl:w-[85%]'}  ${isCenter && 'mx-auto'} text-[20px] lg:text-[28px] font-semibold ${bgColor === "black" ? "text-white" : "home-section-heading"} mb-[18px] lg:leading-8`}>{service.title}</h3>
+                            <p className={`"text-xs lg:text-[15px] opacity-60  font-medium  ${paraClass} `}>
                                 {service.description}
                             </p>
                         </div>
