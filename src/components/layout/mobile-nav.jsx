@@ -1,12 +1,14 @@
 "use client"
 
 import Link from "next/link"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Menu, ArrowDown, X, ArrowRight } from "lucide-react"
+import { useRouter } from "next/navigation"
 
 const MobileNav = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [expandedItems, setExpandedItems] = useState({})
+  const router = useRouter()
 
   const menuItems = [
     { name: "Home", link: "/" },
@@ -122,10 +124,21 @@ const MobileNav = () => {
       </ul>
     )
   }
+
+  // Close menu on route change
+  useEffect(() => {
+    const handleRouteChange = () => {
+      setIsOpen(false)
+    }
+    return () => {
+      router.events.off("routeChangeStart", handleRouteChange)
+    }
+  }, [router.events])
+
   return (
     <div className="relative font-['Archivo'] lg:hidden z-[999]">
       <header className="border-[#101010] border font-normal font-['Archivo'] mx-auto p-4 fixed -translate-x-1/2 left-1/2 top-6 bg-[#FFFFFF] rounded-[13px] w-[90%] 2xl:w-[1300px]">
-        <div className="flex justify-between items-center ">
+        <div className="flex justify-between items-center">
           <Link href={"/"} className="w-[100px]">
             <svg xmlns="http://www.w3.org/2000/svg" width="89" height="19" viewBox="0 0 89 19" fill="none">
               <g clipPath="url(#clip0_1140_1867)">
@@ -227,6 +240,7 @@ const MobileNav = () => {
                     href={item.link}
                     className={`text-[18px] text-[#101010] font-semibold ${item.subItems ? (expandedItems[item.name] ? 'opacity-100' : 'opacity-60') : 'opacity-60'
                       } group-hover:text-[#FF6035]`}
+                    onClick={() => setIsOpen(false)}
                   >
                     {item.name}
                   </Link>
@@ -243,7 +257,7 @@ const MobileNav = () => {
                 </div>
                 {item.subItems && (
                   <div
-                    className={`overflow-hidden transition-all duration-300 ease-in-out ${expandedItems[item.name] ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                    className={`overflow-hidden transition-all duration-500 ease-in-out ${expandedItems[item.name] ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
                       }`}
                   >
                     {renderSubItems(item.subItems)}
