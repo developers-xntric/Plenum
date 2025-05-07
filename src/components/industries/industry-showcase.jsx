@@ -40,7 +40,7 @@ export default function IndustryShowcase({ isTabs = false }) {
     const walk = (x - startX) * 2
     tabsRef.current.scrollLeft = scrollLeft - walk
   }
-
+// Thus qhsjqhs
   return (
     <div className="2xl:max-w-[1440px] md:block hidden mx-auto w-[93%] xl:w-[95%] py-10">
       {/* Tabs Carousel */}
