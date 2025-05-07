@@ -65,7 +65,7 @@ export default function ServicesList({ serviceList }) {
 
                                     <Link
                                         href={service.link}
-                                        className="flex items-center text-[#FF6035] opacity-[0.9968] mt-6 font-semibold font-['Archivo'] underline text-[17.467px]"
+                                        className="flex items-center w-fit text-[#FF6035] opacity-[0.9968] mt-6 font-semibold font-['Archivo'] underline text-[17.467px]"
                                     >
                                         <motion.div
                                             whileHover="hover"
