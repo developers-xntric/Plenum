@@ -22,7 +22,7 @@ export const ERPAccordin = ({ bottomSection, className, left, blackSection, para
             <ERPSolutions blackSection={blackSection} />
             <div className={`lg:max-w-[95%] 2xl:max-w-[1610px] ${left ? "lg:ms-auto mx-auto lg:mx-0" : ""}`}>
                 <div className={`${className}`}>
-                    <div className='px-8 w-full lg:w-[50%] 2xl:w-[60%]'>
+                    <div className='md:px-8 px-4 w-full lg:w-[50%] 2xl:w-[60%]'>
                         <Accordion />
                     </div>
                     <div className='w-full lg:w-[50%] 2xl:w-[100%] flex justify-center items-center'>
