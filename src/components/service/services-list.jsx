@@ -1,7 +1,7 @@
 "use client"
 import Link from "next/link";
-import { ArrowRight} from "lucide-react";
-import {motion} from "framer-motion"
+import { ArrowRight } from "lucide-react";
+import { motion } from "framer-motion"
 
 
 export default function ServicesList({ serviceList }) {
@@ -35,7 +35,7 @@ export default function ServicesList({ serviceList }) {
                             <div className="flex items-center justify-center">
                                 <div className="max-w-[95%] md:max-w-[80%]">
                                     {/* LOGO   */}
-                                    <div className="mb-4 flex md:justify-start justify-center items-center">{service.icon}</div>
+                                    <div className="mb-4  flex md:justify-start justify-center items-center">{service.icon}</div>
 
                                     <div className="space-y-4">
                                         {/* TITLE */}
