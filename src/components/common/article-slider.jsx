@@ -38,7 +38,7 @@ export default function ArticleSlider({ bg = "black" }) {
 
         if (carouselRef.current) {
             const article = carouselRef.current.children[index]
-            const scrollPos = article.offsetLeft - 230
+            const scrollPos = article.offsetLeft - 250
 
             carouselRef.current.scrollTo({ left: scrollPos, behavior: "smooth" })
             setTimeout(() => {
@@ -230,7 +230,7 @@ export default function ArticleSlider({ bg = "black" }) {
                             })}
                         </div>
 
-                        <div className="flex justify-center gap-1 mt-2">
+                        <div className="flex justify-center items-center gap-1 mt-2">
                             {articles.map((_, index) => (
                                 <button
                                     key={index}
