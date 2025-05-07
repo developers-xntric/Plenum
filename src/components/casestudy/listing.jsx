@@ -1,6 +1,7 @@
 'use client'
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 const data = [
     {
         title: "Brand OS",
@@ -8,7 +9,6 @@ const data = [
         industry: "Finance",
         deliverables: ["Web Design", "Brand Identity", "Product Design"],
         image: "/casestudy/case1.svg",
-        link: "/",
     },
     {
         title: "NovaChem Industries",
@@ -16,7 +16,6 @@ const data = [
         industry: "Finance",
         deliverables: ["Web Design", "Brand Identity", "Product Design"],
         image: "/casestudy/case2.svg",
-        link: "/",
     },
     {
         title: "Lunaris Apparel Co",
@@ -24,7 +23,6 @@ const data = [
         industry: "Apparel",
         deliverables: ["Web Design", "Brand Identity", "Product Design"],
         image: "/casestudy/case3.svg",
-        link: "/",
     },
     {
         title: "GreenHaven Foods",
@@ -32,7 +30,6 @@ const data = [
         industry: "Foods",
         deliverables: ["Web Design", "Brand Identity", "Product Design"],
         image: "/casestudy/case4.svg",
-        link: "/",
     },
 ]
 export default function ListingPage() {
@@ -67,8 +64,8 @@ export default function ListingPage() {
                                                 <p className="text-[17px] font-normal text-[#101010] opacity-[0.9968] ">{item.industry}</p>
                                             </div>
 
-                                            <a
-                                                href={item.link}
+                                            <Link
+                                                href={`/case-studies/${index + 1}`}
                                                 className="inline-flex relative items-center text-[#FF6035] opacity-[0.9968] text-[20px] font-semibold underline underline-offset-3"
                                             >
                                                 <motion.div
@@ -102,7 +99,7 @@ export default function ListingPage() {
                                                         />
                                                     </motion.svg>
                                                 </motion.div>
-                                            </a>
+                                            </Link>
                                         </div>
                                         {/* Right Side */}
                                         <div className="text-right">
