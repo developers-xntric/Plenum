@@ -1,7 +1,5 @@
 'use client'
-import { ArrowUpRight } from 'lucide-react';
 import Image from 'next/image';
-import Link from 'next/link';
 import { motion } from 'framer-motion';
 const data = [
     {
@@ -43,7 +41,7 @@ export default function ListingPage() {
             <div className='2xl:max-w-[1200px] max-w-[90%] mx-auto'>
                 {
                     data.map((item, index) => (
-                        <Link href={`/case-studies/${index + 1}`} key={index} className="flex flex-col lg:flex-row 2xl:gap-12 gap-8 justify-between mb-[100px]">
+                        <div key={index} className="flex flex-col lg:flex-row 2xl:gap-12 gap-8 justify-between mb-[100px]">
                             <div className="w-full lg:w-1/2">
                                 <Image
                                     src={item.image}
@@ -69,56 +67,42 @@ export default function ListingPage() {
                                                 <p className="text-[17px] font-normal text-[#101010] opacity-[0.9968] ">{item.industry}</p>
                                             </div>
 
-                                            <Link
+                                            <a
                                                 href={item.link}
-                                                className="inline-flex relative items-center text-[#FF6035] opacity-[0.9968] text-[20px] font-semibold underline hover:no-underline"
+                                                className="inline-flex relative items-center text-[#FF6035] opacity-[0.9968] text-[20px] font-semibold underline underline-offset-3"
                                             >
-                                                View Project
                                                 <motion.div
-                                                    className="p-2"
-                                                    initial="rest"
                                                     whileHover="hover"
-                                                    animate="rest"
-                                                    variants={{
-                                                        hover: {
-                                                            transition: {
-                                                                staggerChildren: 0.1,
-                                                            },
-                                                        },
-                                                        rest: {
-                                                            transition: {
-                                                                staggerChildren: 0.1,
-                                                            },
-                                                        },
-                                                    }}
+                                                    className="text-primary flex items-center gap-2 cursor-pointer z-40"
                                                 >
-                                                    {[1, 2, 3].map((_, i) => (
-                                                        <motion.div
-                                                            key={i}
-                                                            className="absolute top-1/4 -right-2"
-                                                            variants={{
-                                                                rest: {
-                                                                    x: 0,
-                                                                    y: 0,
-                                                                    opacity: 1,
-                                                                },
-                                                                hover: {
-                                                                    x: [0, 8, 0],
-                                                                    y: [0, -8, 0],
-                                                                    opacity: 1,
-                                                                    transition: {
-                                                                        duration: 1,
-                                                                        ease: "easeInOut",
-                                                                        repeat: Infinity,
-                                                                    },
-                                                                },
-                                                            }}
-                                                        >
-                                                            <ArrowUpRight className=" w-5 h-5" />
-                                                        </motion.div>
-                                                    ))}
+                                                    View Project
+                                                    <motion.svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="11"
+                                                        height="11"
+                                                        viewBox="0 0 11 11"
+                                                        fill="none"
+                                                        className={"mt-1"}
+                                                        variants={{
+                                                            hover: {
+                                                                x: [0, 3, 0],
+                                                                y: [0, -3, 0],
+                                                                transition: {
+                                                                    duration: 0.8,
+                                                                    repeat: Infinity,
+                                                                    ease: "easeInOut"
+                                                                }
+                                                            }
+                                                        }}
+                                                    >
+                                                        <path
+                                                            d="M0.9375 10.214L9.67107 1.48047M9.67107 1.48047H0.9375M9.67107 1.48047V10.214"
+                                                            stroke="#FF6035"
+                                                            strokeWidth="1.74671"
+                                                        />
+                                                    </motion.svg>
                                                 </motion.div>
-                                            </Link>
+                                            </a>
                                         </div>
                                         {/* Right Side */}
                                         <div className="text-right">
@@ -130,7 +114,7 @@ export default function ListingPage() {
                                     </div>
                                 </div>
                             </div>
-                        </Link>
+                        </div>
                     ))
                 }
             </div>

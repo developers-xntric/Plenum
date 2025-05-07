@@ -111,7 +111,7 @@ export default function HouseAIProduct() {
               <div className='space-y-2'>
                 <div className="flex justify-between items-start">
                   <h3 className="text-[22px] md:text-3xl font-medium font-['Archivo']">Vertical builds</h3>
-                  <Link href="product" className="text-primary flex items-center gap-2 underline underline-offset-4 cursor-pointer z-40 text-[11.279px] md:text-[14px] my-auto">
+                  <Link href="/product" className="text-primary flex items-center gap-2 underline underline-offset-4 cursor-pointer z-40 text-[11.279px] md:text-[14px] my-auto">
                     <motion.div
                       whileHover="hover"
                       className="text-primary flex items-center gap-2 underline underline-offset-4 cursor-pointer z-40"

@@ -1,5 +1,7 @@
+"use client"
 import Link from "next/link";
-import { ArrowRight, ArrowUpRight } from "lucide-react";
+import { ArrowRight} from "lucide-react";
+import {motion} from "framer-motion"
 
 
 export default function ServicesList({ serviceList }) {
@@ -37,13 +39,13 @@ export default function ServicesList({ serviceList }) {
 
                                     <div className="space-y-4">
                                         {/* TITLE */}
-                                        <h1>
+                                        <h2>
                                             {service.title.map((title, i) => (
                                                 <p key={i} className="text-3xl text-secondary font-semibold font-['Archivo']">
                                                     {title}
                                                 </p>
                                             ))}
-                                        </h1>
+                                        </h2>
 
                                         <p className="text-secondary text-[17px] opacity-[0.6] font-['Archivo'] mb-6 lg:max-w-[92%] xl:max-w-[78%] 2xl:max-w-[80%]">{service.description}</p>
                                     </div>
@@ -65,8 +67,37 @@ export default function ServicesList({ serviceList }) {
                                         href={service.link}
                                         className="flex items-center text-[#FF6035] opacity-[0.9968] mt-6 font-semibold font-['Archivo'] underline text-[17.467px]"
                                     >
-                                        <span>View All</span>
-                                        <ArrowUpRight className="h-4 w-4 ml-1" />
+                                        <motion.div
+                                            whileHover="hover"
+                                            className="text-primary flex items-center gap-2 cursor-pointer z-40"
+                                        >
+                                            View Service
+                                            <motion.svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="11"
+                                                height="11"
+                                                viewBox="0 0 11 11"
+                                                fill="none"
+                                                className={"mt-1"}
+                                                variants={{
+                                                    hover: {
+                                                        x: [0, 3, 0],
+                                                        y: [0, -3, 0],
+                                                        transition: {
+                                                            duration: 0.8,
+                                                            repeat: Infinity,
+                                                            ease: "easeInOut"
+                                                        }
+                                                    }
+                                                }}
+                                            >
+                                                <path
+                                                    d="M0.9375 10.214L9.67107 1.48047M9.67107 1.48047H0.9375M9.67107 1.48047V10.214"
+                                                    stroke="#FF6035"
+                                                    strokeWidth="1.74671"
+                                                />
+                                            </motion.svg>
+                                        </motion.div>
                                     </Link>
                                 </div>
                             </div>
