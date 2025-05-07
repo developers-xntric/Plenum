@@ -456,3 +456,28 @@
         top: 250px;
     }
 }
+
+
+.swiper-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    width: 100%;
+  }
+  
+  .swiper-pagination .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background-color: #21212166;
+    border-radius: 50%;
+    opacity: 1;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #FF6035;
+     width: 10px;
+    height: 10px;
+    border-radius: 4px;
+  }

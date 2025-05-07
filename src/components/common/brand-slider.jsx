@@ -8,7 +8,7 @@ export default function BrandSlider({ text, brand_icons, width }) {
     return (
         <div className="relative overflow-hidden flex items-center w-full">
             {/* Left side - Text */}
-            <div className="relative z-30 md:bg-white pl- pr-10 py-2">
+            <div className="relative z-30 md:bg-white pr-10 py-2">
                 <h2 className="text-secondary opacity-70 text-base leading-[20px] font-medium font-['Archivo'] w-[150px] md:block hidden">
                     {text}
                 </h2>
