@@ -48,7 +48,7 @@ export default function Testimonials({ testimonials }) {
         </div>
 
         <Carousel
-          opts={{ align: "start", loop: true }}
+          opts={{ align: "start", loop: false }}
           plugins={plugins}
           setApi={setEmblaApi}
           className="w-full"

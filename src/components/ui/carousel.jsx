@@ -149,23 +149,38 @@ function CarouselPrevious({
   ...props
 }) {
   const { orientation, scrollPrev, canScrollPrev } = useCarousel()
+  console.log(canScrollPrev)
 
   return (
     <Button
       data-slot="carousel-previous"
       variant={variant}
       size={size}
-      className={cn("absolute size-8 rounded-full", orientation === "horizontal"
-        ? "top-1/2 -left-14 -translate-y-1/2"
-        : "-top-12 left-1/2 -translate-x-1/2 rotate-90", className)}
+      className={cn(
+        "absolute size-8 rounded-full flex items-center gap-2 group",
+        orientation === "horizontal"
+          ? "top-1/2 -left-14 -translate-y-1/2"
+          : "-top-12 left-1/2 -translate-x-1/2 rotate-90",
+        !canScrollPrev ? "text-gray-400 cursor-not-allowed" : "text-secondary cursor-pointer",
+        className
+      )}
       disabled={!canScrollPrev}
       onClick={scrollPrev}
-      {...props}>
-      <ArrowLeft className="relative right-1"/>
-      <p className="relative -left-2 text-secondary font-medium home-section-headings">Prev</p>
+      {...props}
+    >
+      <ArrowLeft className={cn("relative -left-[13px] top-[1px]", !canScrollPrev && "text-gray-600")} />
+      <p
+        className={cn(
+          "relative -left-4 font-medium home-section-headings",
+          !canScrollPrev ? "text-gray-300" : "text-secondary"
+        )}
+      >
+        Prev
+      </p>
     </Button>
-  );
+  )
 }
+
 
 function CarouselNext({
   className,
@@ -180,17 +195,30 @@ function CarouselNext({
       data-slot="carousel-next"
       variant={variant}
       size={size}
-      className={cn("absolute size-8 rounded-full", orientation === "horizontal"
-        ? "top-1/2 -right-12 -translate-y-1/2"
-        : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90", className)}
+      className={cn(
+        "absolute size-8 rounded-full flex items-center gap-2 group",
+        orientation === "horizontal"
+          ? "top-1/2 -right-12 -translate-y-1/2"
+          : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90",
+        !canScrollNext ? "text-gray-300 cursor-not-allowed" : "text-secondary cursor-pointer",
+        className
+      )}
       disabled={!canScrollNext}
       onClick={scrollNext}
-      {...props}>
-      <ArrowRight />
-      <p className="relative right-14 text-secondary font-medium home-section-headings">Next</p>
-
+      {...props}
+    >
+      <ArrowRight className={cn("relative -right-1 top-[1px]", !canScrollNext && "text-gray-600")} />
+      <p
+        className={cn(
+          "relative right-14 font-medium home-section-headings",
+          !canScrollNext ? "text-gray-300" : "text-secondary"
+        )}
+      >
+        Next
+      </p>
     </Button>
-  );
+  )
 }
+
 
 export { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext };
