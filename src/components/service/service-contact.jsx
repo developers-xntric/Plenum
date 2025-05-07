@@ -44,7 +44,7 @@ export default function ServiceContact() {
                             </div>
                         </div>
                         {/* Stats */}
-                        <div ref={statsRef} className="grid grid-cols-4 gap-8 font-['Archivo']">
+                        <div ref={statsRef} className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-8 font-['Archivo'] place-items-center md:place-items-start">
                             <div className="stat ">
                                 <h2 className="text-[28px] md:text-[48px] xl:text-[60px] font-semibold flex items-center font-['Archivo'] text-[#202020] opacity-[0.8]">
                                     {startCount ? <CountUp start={0} end={5000} duration={1} separator="" /> : '0'} <span className="text-primary font-['Archivo'] ">+</span>

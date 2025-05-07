@@ -11,7 +11,7 @@ const Service = () => {
     return (
         <div>
             <ServiceHero bgImage='/service/sp_herobg.webp' />
-            <div className='2xl:max-w-[1440px] h-full w-[90%] mx-auto space-y-20 py-16'>
+            <div className='2xl:max-w-[1440px] h-full w-[90%] mx-auto space-y-20 py-6  md:py-16'>
                 <BrandSlider
                     text={"Trusted by world's most exciting brands"}
                     brand_icons={service_brand_icons} />

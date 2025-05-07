@@ -67,7 +67,7 @@ function Contact() {
                     <div className="md:w-[383px] h-[118px] justify-center text-[#0f0f0f] text-[30px] md:text-[36.82px] font-semibold font-['Archivo'] leading-[36px] md:leading-10">Get Started with Plenum: Unlock the Power of Advanced AI</div>
 
                     {/* Stats */}
-                    <div ref={statsRef} className="grid grid-cols-4 gap-8 font-['Archivo']">
+                    <div ref={statsRef} className="grid grid-cols-2 md:grid-cols-4 place-items-center md:place-items-start  gap-4 md:gap-8 font-['Archivo']">
                         <div className="stat md:border-b pb-2">
                             <h2 className="text-[33px] md:text-[48px] xl:text-[70px] font-semibold font-['Archivo'] text-[#101010]">
                                 {startCount ? <CountUp start={0} end={5} duration={1} separator="," /> : '0'}k
