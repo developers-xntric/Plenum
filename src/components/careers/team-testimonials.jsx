@@ -178,9 +178,18 @@ export default function TeamTestimonials() {
             </div>
 
             {/* Team Photos - Single Image */}
-            <div className="mt-16 mx-auto max-w-6xl">
+            <div className="mt-16 md:block hidden mx-auto max-w-6xl">
                 <Image
                     src="/careers/grid.svg"
+                    alt="Team photo collage"
+                    width={1500}
+                    height={1500}
+                    className="w-full h-auto object-cover"
+                />
+            </div>
+            <div className="mt-10 block md:hidden">
+                <Image
+                    src="/careers/col.svg"
                     alt="Team photo collage"
                     width={1500}
                     height={1500}
