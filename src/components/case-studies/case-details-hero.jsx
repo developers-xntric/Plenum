@@ -4,7 +4,7 @@ import React from 'react'
 const CaseDetailHero = () => {
     return (
         <div className='bg-cover bg-no-repeat' style={{ backgroundImage: "url('/casestudy/casestudy-hero1.png')" }}>
-            <div className="2xl:max-w-[1440px] w-[85%] mx-auto space-y-20 py-16 xl:py-24 h-screen 2xl:h-[900px]">
+            <div className="2xl:max-w-[1440px] w-[85%] mx-auto space-y-20 py-16 xl:py-24  md:h-screen 2xl:h-[900px]">
 
                 <div className="container mx-auto md:px-4 pt-20 md:pt-40">
                     <div className="mb-6">
