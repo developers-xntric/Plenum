@@ -105,16 +105,15 @@ const MobileNav = () => {
               {!item.subItems && <span className="w-4 mr-1"></span>}
               <Link
                 href={item.link}
-                className={`text-[15px] text-[#101010] ${item.subItems ? (expandedItems[item.name] ? 'opacity-100' : 'opacity-60') : 'opacity-100'
-                  } group-hover:text-[#FF6035]`}
+                className={`text-[15px] text-[#101010] ${item.subItems ? (expandedItems[item.name] ? 'opacity-100' : 'opacity-60') : 'opacity-100'} group-hover:text-[#FF6035]`}
+                onClick={() => setIsOpen(false)}
               >
                 {item.name}
               </Link>
             </div>
             {item.subItems && (
               <div
-                className={`overflow-hidden transition-all duration-300 ease-in-out ${expandedItems[item.name] ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-                  }`}
+                className={`overflow-hidden transition-all duration-300 ease-in-out ${expandedItems[item.name] ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}
               >
                 {renderSubItems(item.subItems, level + 1)}
               </div>
@@ -184,8 +183,7 @@ const MobileNav = () => {
       </header>
 
       <div
-        className={`fixed top-0 left-0 w-full h-full bg-white overflow-y-auto transition-transform duration-500 ease-in-out z-50 ${isOpen ? "translate-y-0" : "-translate-y-full"
-          }`}
+        className={`fixed top-0 left-0 w-full h-full bg-white overflow-y-auto transition-transform duration-500 ease-in-out z-50 ${isOpen ? "translate-y-0" : "-translate-y-full"}`}
       >
         <div className="p-6 pt-8">
           <div className="flex justify-between items-center border p-3 border-[#E2E2E2] rounded-[13px] mb-8">
@@ -235,16 +233,15 @@ const MobileNav = () => {
           <ul className="space-y-4">
             {menuItems.map((item, index) => (
               <li key={index} className="py-2 border-b border-[#E2E2E2] last:border-0 group">
-                <div className="flex items-center justify-between">
-                  <Link
-                    href={item.link}
-                    className={`text-[18px] text-[#101010] font-semibold ${item.subItems ? (expandedItems[item.name] ? 'opacity-100' : 'opacity-60') : 'opacity-60'
-                      } group-hover:text-[#FF6035]`}
-                    onClick={() => setIsOpen(false)}
-                  >
-                    {item.name}
-                  </Link>
-                  {item.subItems && (
+                {item.subItems ? (
+                  <div className="flex items-center justify-between">
+                    <Link
+                      href={item.link}
+                      className={`text-[18px] text-[#101010] font-semibold ${expandedItems[item.name] ? 'opacity-100' : 'opacity-60'} group-hover:text-[#FF6035]`}
+                      onClick={() => setIsOpen(false)}
+                    >
+                      {item.name}
+                    </Link>
                     <span className="cursor-pointer" onClick={() => toggleExpand(item.name)}>
                       {expandedItems[item.name] ? (
                         <ArrowDown size={18} className="text-[#FF6035]" />
@@ -252,13 +249,20 @@ const MobileNav = () => {
                         <ArrowRight size={18} className="text-[#101010]" />
                       )}
                     </span>
-                  )}
-                  {!item.subItems && <ArrowRight size={18} className="text-[#101010] group-hover:text-[#FF6035]" />}
-                </div>
+                  </div>
+                ) : (
+                  <Link
+                    href={item.link}
+                    className="flex items-center justify-between"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    <span className="text-[18px] text-[#101010] font-semibold opacity-60 group-hover:text-[#FF6035]">{item.name}</span>
+                    <ArrowRight size={18} className="text-[#101010] group-hover:text-[#FF6035]" />
+                  </Link>
+                )}
                 {item.subItems && (
                   <div
-                    className={`overflow-hidden transition-all duration-500 ease-in-out ${expandedItems[item.name] ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-                      }`}
+                    className={`overflow-hidden transition-all duration-500 ease-in-out ${expandedItems[item.name] ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}
                   >
                     {renderSubItems(item.subItems)}
                   </div>
