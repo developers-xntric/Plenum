@@ -4,6 +4,7 @@ import CaseDetailHero from "@/components/case-studies/case-details-hero"
 import Personalization from "@/components/case-studies/personalization"
 import AISolutions from "@/components/product/AI-solutions"
 import IndustryShowcase from "@/components/industries/industry-showcase"
+import CaseStudiesSlider from "@/components/industries/mobile-industry"
 
 export default function BrandOSPage() {
   return (
@@ -41,6 +42,7 @@ export default function BrandOSPage() {
         </div>
       </div>
       <IndustryShowcase />
+      <CaseStudiesSlider/>
     </main>
   )
 }
