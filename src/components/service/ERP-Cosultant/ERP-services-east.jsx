@@ -28,16 +28,15 @@ export default function ERPServicesEast() {
 
         <div>
           {/* Tabs Section */}
-          <div className="flex justify-center items-center lg:gap-10 xl:gap-52 mb-5 border-b-2 lg:max-w-[95%] 2xl:max-w-[80%] mx-auto">
-            {tabs.map((tab) => (
+          <div className="flex justify-center items-center gap-16 sm:gap-1 xl:gap-1 mb-10 border-b-2 w-full sm:max-w-[90%] mx-auto overflow-x-auto">
+            {tabs.map((tab, index) => (
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}
-                className={`text-[10px] md:text-[22px] w-full cursor-pointer pb-4 font-['Archivo'] text-secondary font-semibold home-section-headings ${
-                  activeTab === tab
-                    ? 'text-[#FF6035] border-b-2 border-[#FF6035]'
-                    : 'text-gray-400 '
-                } focus:outline-none`}
+                className={`text-[15px] lg:text-[22px] w md:w-[33%]  xl:w-[33%] flex-shrink-0 ${index === 0 ? "pl-[10rem] md:pl-[0rem] lg:pl-0" : ""} py-2 cursor-pointer pb-4 font-['Archivo'] text-secondary font-semibold home-section-headings ${activeTab === tab
+                  ? 'text-[#FF6035] border-b-2 border-[#FF6035]'
+                  : 'text-gray-400'
+                  } focus:outline-none`}
               >
                 {tab}
               </button>

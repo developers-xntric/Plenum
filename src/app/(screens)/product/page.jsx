@@ -15,6 +15,8 @@ const Product = () => {
                 heading={"Plenum <br/> AI Products"}
                 isLogo={false}
                 bgImage='/product/m_hero.svg'
+                mobileBgImage={'/product/m_hero_mobile.svg'}
+
             />
             <div className="2xl:max-w-[1440px] mx-auto w-[93%] xl:w-[90%] 2xl:w-[90%] py-5 lg:py-10">
                 <BrandSlider brand_icons={service_brand_icons} text={"Trusted by world's most exciting brands"} />

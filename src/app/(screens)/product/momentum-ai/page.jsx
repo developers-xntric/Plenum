@@ -1,4 +1,6 @@
+import ArticleSlider from "@/components/common/article-slider"
 import BrandSlider from "@/components/common/brand-slider"
+import { Blog } from "@/components/homepage/blog"
 import AISolutions from "@/components/product/AI-solutions"
 import EndToEndAI from "@/components/product/end-to-end"
 import ProductHero from "@/components/product/product-hero"
@@ -7,12 +9,13 @@ import MicrosoftDynamic from "@/components/service/microsoft/microsoft-dynamic"
 import PinkSection from "@/components/service/pink-section"
 import ServiceContact from "@/components/service/service-contact"
 import { service_brand_icons } from "@/data/brand-slider-icons-data"
+import { cardData } from "@/data/home-blog"
 import { momentumaiservices } from "@/data/momentum-ai-service"
 
 const MomentumAI = () => {
     return (
         <div>
-            <ProductHero isLogo={false} bgImage='/product/m_hero.svg' />
+            <ProductHero isLogo={false} bgImage='/product/m_hero.svg' mobileBgImage={'/product/m_hero_mobile.svg'} />
             <div className="2xl:max-w-[1440px] mx-auto w-[93%] xl:w-[90%] 2xl:w-[90%] py-10">
                 <BrandSlider brand_icons={service_brand_icons} text={"Trusted by world's most exciting brands"} />
             </div>
@@ -26,6 +29,7 @@ const MomentumAI = () => {
                 bgColor='black'
                 paraClass={'lg:max-w-[90%] xl:max-w-[80%] 2xl:max-w-[70%]'}
                 gridcol='md:grid-cols-2 lg:grid-cols-4'
+                oneCardMobile={true}
             />
             <StartSmallWithAI />
             <div className='py-10'>
@@ -37,6 +41,8 @@ const MomentumAI = () => {
                     isVideo={true}
                 />
             </div>
+            <ArticleSlider />
+            <Blog heading='Discover Our Blog Articles' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world" cardData={cardData} />
             <ServiceContact />
 
         </div>

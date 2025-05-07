@@ -4,12 +4,12 @@ import React from 'react'
 const EndToEndAI = () => {
     return (
         <div className="py-16 xl:py-20 font-['Archivo']">
-            <div className="2xl:max-w-[1440px] max-w-[90%] mx-auto lg:text-center mb-8">
+            <div className="2xl:max-w-[1440px] max-w-[90%] mx-auto lg:text-center mb-8 space-y-2 lg:space-y-4">
                 <div>
-                    <h2 className="text-[30px] lg:text-[50px] leading-[35px]  text-secondary font-semibold home-section-headings">Momentum AI</h2>
+                    <h2 className="text-[30px] lg:text-[50px] leading-[26px] lg:leading-[35px]  text-secondary font-semibold home-section-headings">Momentum AI</h2>
                 </div>
                 <div className="mb-2">
-                    <h3 className="text-[30px] lg:text-[50px] text-secondary font-semibold home-section-headings w-[90%] lg:w-auto">Simplifying End-to-End AI Workflows</h3>
+                    <h3 className="text-[30px] lg:text-[50px] leading-[34px] lg:leading-[50px]  text-secondary font-semibold home-section-headings w-[90%] lg:w-auto">Simplifying End-to-End AI Workflows</h3>
                 </div>
                 <div className="lg:p-2 mx-auto lg:max-w-[60%]">
                     <p className="text-[15px] text-secondary font-['Archivo'] opacity-75 leading-tight">
@@ -18,11 +18,11 @@ const EndToEndAI = () => {
                 </div>
             </div>
 
-            <div className="grid grid-cols-1 place-items-center lg:grid-cols-3 gap-10 xl:gap-16 max-w-[90%] lg:max-w-[75%] 2xl:max-w-[900px] mx-auto">
+            <div className="grid grid-cols-1 place-items-center md:grid-cols-2 lg:grid-cols-3 gap-10 xl:gap-16 max-w-[90%] lg:max-w-[75%] 2xl:max-w-[900px] mx-auto">
                 {data.map((ele, i) => (
                     <div
                         key={i}
-                        className="rounded-[30px] px-8 pt-6 w-auto h-[240px]  md:w-[260px] md:h-[390px] xl:w-[315px] xl:h-[380px] flex flex-col"
+                        className="rounded-[30px] px-8 pt-6 w-auto h-[280px] md:h-[300px]  md:w-[260px] lg:h-[390px] xl:w-[315px] xl:h-[380px] flex flex-col"
                         style={{
                             background: ele.bg === "white"
                                 ? "#EFEFEF"
