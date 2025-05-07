@@ -78,7 +78,7 @@ export default function ServiceContact() {
                                 </p>
                             </div>
 
-                            <div className="stat ">
+                            <div className="stat pl-4 md:pl-0">
                                 <h2 className="text-[28px] md:text-[48px] xl:text-[60px] font-semibold font-['Archivo'] text-[#202020] opacity-[0.8]">
                                 {startCount ? <CountUp start={0} end={20} duration={1} separator="" /> : '0'}<span className="text-primary font-['Archivo'] ">+</span>
                                 </h2>

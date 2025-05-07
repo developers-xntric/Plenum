@@ -9,12 +9,12 @@ export default function ServicesList({ serviceList }) {
     return (
         <section className="bg-white ">
             <div className="2xl:max-w-[1440px] w-[90%] mx-auto py-12">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 xl:gap-8 font-['Archivo']">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-20 xl:gap-8 font-['Archivo']">
                     {serviceList.map((service, _index) => (
                         <div key={service.id} className="relative ">
                             <div className="flex items-center mb-6">
-                                <div className="flex items-center justify-center lg:w-10 w-18 h-[60px] rounded-[208px] border-[0.90px] border-secondary text-lg font-semibold">
-                                    <h1 className="text-secondary text-[24px] font-['Archivo']">{service.id}</h1>
+                                <div className="flex items-center justify-center lg:w-10 w-14 md:w-18 h-[50px] md:h-[60px] rounded-[208px] border-[0.90px] border-secondary text-lg font-semibold">
+                                    <h1 className="text-secondary text-[20px] md:text-[24px] font-['Archivo']">{service.id}</h1>
                                 </div>
                                 {/* THE BORDER LINE */}
                                 <svg
@@ -33,21 +33,21 @@ export default function ServicesList({ serviceList }) {
                             </div>
 
                             <div className="flex items-center justify-center">
-                                <div className="max-w-[80%]">
+                                <div className="max-w-[95%] md:max-w-[80%]">
                                     {/* LOGO   */}
-                                    <div className="mb-4">{service.icon}</div>
+                                    <div className="mb-4 flex md:justify-start justify-center items-center">{service.icon}</div>
 
                                     <div className="space-y-4">
                                         {/* TITLE */}
                                         <h2>
                                             {service.title.map((title, i) => (
-                                                <p key={i} className="text-3xl text-secondary font-semibold font-['Archivo']">
+                                                <p key={i} className="text-xl lg:text-3xl text-secondary text-center md:text-left font-semibold font-['Archivo']">
                                                     {title}
                                                 </p>
                                             ))}
                                         </h2>
 
-                                        <p className="text-secondary text-[17px] opacity-[0.6] font-['Archivo'] mb-6 lg:max-w-[92%] xl:max-w-[78%] 2xl:max-w-[80%]">{service.description}</p>
+                                        <p className="text-secondary text-[15px] lg:text-[17px] text-center md:text-left opacity-[0.6] font-['Archivo'] mb-6 lg:max-w-[92%] xl:max-w-[78%] 2xl:max-w-[80%]">{service.description}</p>
                                     </div>
 
 
@@ -55,7 +55,7 @@ export default function ServicesList({ serviceList }) {
                                         {service.names.map((link, i) => (
                                             <div
                                                 key={i}
-                                                className="flex items-center font-semibold font-['Archivo'] w-fit transition-colors duration-300 text-[#101010] text-[16px]"
+                                                className="flex items-center font-semibold font-['Archivo'] w-fit transition-colors duration-300 text-[#101010] text-[15px] lg:text-[16px]"
                                             >
                                                 <ArrowRight className="h-4 w-4 mr-2 font-bold text-[#FF6035]" />
                                                 <span>{link}</span>
@@ -65,11 +65,11 @@ export default function ServicesList({ serviceList }) {
 
                                     <Link
                                         href={service.link}
-                                        className="flex items-center w-fit text-[#FF6035] opacity-[0.9968] mt-6 font-semibold font-['Archivo'] underline text-[17.467px]"
+                                        className="flex items-center  justify-center md:justify-start w-full md:w-fit text-[#FF6035] opacity-[0.9968] mt-6 font-semibold font-['Archivo'] underline text-[15px] lg:text-[17.467px]"
                                     >
                                         <motion.div
                                             whileHover="hover"
-                                            className="text-primary flex items-center gap-2 cursor-pointer z-40"
+                                            className="text-primary flex  items-center gap-2 cursor-pointer z-40"
                                         >
                                             View Service
                                             <motion.svg

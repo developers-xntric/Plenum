@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const PinkSection = ({ heading, text, show_button = false, className, isVideo = false }) => {
     return (
-        <div className={`bg-[#EFEFEF] md:h-[280px] ${className}`}>
+        <div className={`bg-[#EFEFEF] md:h-[280px] overflow-hidden ${className}`}>
             <div className='2xl:max-w-[1440px] h-full w-[90%] z-20 mx-auto space-y-20 py-16 relative'>
                 {/* first Image Line */}
                 <div className='h-full md:block hidden w-[180px] absolute top-0 z-10'>
