@@ -161,7 +161,7 @@ function CarouselPrevious({
       disabled={!canScrollPrev}
       onClick={scrollPrev}
       {...props}>
-      <ArrowLeft />
+      <ArrowLeft className="relative right-1"/>
       <p className="relative -left-2 text-secondary font-medium home-section-headings">Prev</p>
     </Button>
   );

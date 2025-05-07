@@ -15,6 +15,7 @@ export default function Testimonials({ testimonials }) {
   const [plugins, setPlugins] = useState([])
   const [emblaApi, setEmblaApi] = useState(null)
   const [currentIndex, setCurrentIndex] = useState(0)
+  
 
   // Enable autoplay plugin on small screens
   useEffect(() => {
