@@ -1,10 +1,36 @@
+"use client"
 import BrandSlider from '@/components/common/brand-slider'
 import WorldMap from '@/components/common/world-map'
 import { ContactForm } from '@/components/service/contact-form'
 import { service_brand_icons } from '@/data/brand-slider-icons-data'
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
+import CountUp from 'react-countup'
 
 function Contact() {
+
+    const statsRef = useRef(null)
+    const [startCount, setStartCount] = useState(false)
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        setStartCount(true)
+                        observer.disconnect() 
+                    }
+                })
+            },
+            { threshold: 0.3 } 
+        )
+
+        if (statsRef.current) {
+            observer.observe(statsRef.current)
+        }
+
+        return () => observer.disconnect()
+    }, [])
+
     return (
         <div className='pt-36 md:pt-40 lg:pt-32 xl:pt-20 2xl:pt-0'>
             <div className='2xl:max-w-[1440px] w-[90%] mx-auto '>
@@ -41,10 +67,11 @@ function Contact() {
                     <div className="md:w-[383px] h-[118px] justify-center text-[#0f0f0f] text-[30px] md:text-[36.82px] font-semibold font-['Archivo'] leading-[36px] md:leading-10">Get Started with Plenum: Unlock the Power of Advanced AI</div>
 
                     {/* Stats */}
-                    <div className="grid grid-cols-4 gap-8 font-['Archivo']">
+                    <div ref={statsRef} className="grid grid-cols-4 gap-8 font-['Archivo']">
                         <div className="stat md:border-b pb-2">
                             <h2 className="text-[33px] md:text-[48px] xl:text-[70px] font-semibold font-['Archivo'] text-[#101010]">
-                                5k<span className="text-primary font-['Archivo'] ">+</span>
+                                {startCount ? <CountUp start={0} end={5} duration={1} separator="," /> : '0'}k
+                                <span className="text-primary font-['Archivo'] ">+</span>
                             </h2>
                             <p className="text-secondary opacity-[0.6] relative text-[13px] md:text-[18px] bottom-2 leading-[16px] md:leading-[21px] font-['Archivo'] font-medium">
                                 Projects
@@ -55,7 +82,8 @@ function Contact() {
 
                         <div className="stat md:border-b">
                             <h2 className="text-[33px] md:text-[48px] xl:text-[70px] font-semibold font-['Archivo'] text-[#101010]">
-                                700<span className="text-primary font-['Archivo'] ">+</span>
+                                {startCount ? <CountUp start={0} end={700} duration={1} separator="," /> : '0'}
+                                <span className="text-primary font-['Archivo'] ">+</span>
                             </h2>
                             <p className="text-secondary opacity-[0.6] relative text-[13px] md:text-[18px] bottom-2 leading-[16px] md:leading-[21px] font-['Archivo'] font-medium">
                                 Global
@@ -66,7 +94,8 @@ function Contact() {
 
                         <div className="stat md:border-b">
                             <h2 className="text-[33px] md:text-[48px] xl:text-[70px] font-semibold font-['Archivo'] text-[#101010]">
-                                1k<span className="text-primary font-['Archivo'] ">+</span>
+                                {startCount ? <CountUp start={0} end={1} duration={1} separator="," /> : '0'}k
+                                <span className="text-primary font-['Archivo'] ">+</span>
                             </h2>
                             <p className="text-secondary opacity-[0.6] relative text-[13px] md:text-[18px] bottom-2 leading-[16px] md:leading-[21px] font-['Archivo'] font-medium">
                                 Companies
@@ -77,7 +106,8 @@ function Contact() {
 
                         <div className="stat md:border-b">
                             <h2 className="text-[33px] md:text-[48px] xl:text-[70px] font-semibold font-['Archivo'] text-[#101010]">
-                                20<span className="text-primary font-['Archivo'] ">+</span>
+                                {startCount ? <CountUp start={0} end={20} duration={1} separator="," /> : '0'}
+                                <span className="text-primary font-['Archivo'] ">+</span>
                             </h2>
                             <p className="text-secondary opacity-[0.6] relative text-[13px] md:text-[18px] bottom-2 leading-[16px] md:leading-[21px] font-['Archivo'] font-medium">
                                 Global Awards
