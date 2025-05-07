@@ -4,7 +4,7 @@ import BrandSlider from "../common/brand-slider";
 import Button from "../common/button";
 import { useState } from 'react';
 import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
+import { motion } from 'framer-motion';
 
 const servicesData = [
   {
@@ -22,8 +22,37 @@ const servicesData = [
           href="/service/ERP-consulting"
           className="text-[#FF6035] font-['Archivo'] flex items-center font-semibold md:text-[17px] mt-2 underline"
         >
-          View Service
-          <ArrowUpRight />
+          <motion.div
+            whileHover="hover"
+            className="text-primary flex items-center gap-2  cursor-pointer z-40"
+          >
+            View Service
+            <motion.svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="11"
+              height="11"
+              viewBox="0 0 11 11"
+              fill="none"
+              className={"mt-1"}
+              variants={{
+                hover: {
+                  x: [0, 3, 0],
+                  y: [0, -3, 0],
+                  transition: {
+                    duration: 0.8,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }
+                }
+              }}
+            >
+              <path
+                d="M0.9375 10.214L9.67107 1.48047M9.67107 1.48047H0.9375M9.67107 1.48047V10.214"
+                stroke="#FF6035"
+                strokeWidth="1.74671"
+              />
+            </motion.svg>
+          </motion.div>
         </Link>
       </>
     ),
@@ -43,8 +72,37 @@ const servicesData = [
           href="/service/ERP-consulting"
           className="text-[#FF6035] font-['Archivo'] flex items-center font-semibold md:text-[17px] mt-2 underline"
         >
-          View Service
-          <ArrowUpRight />
+          <motion.div
+            whileHover="hover"
+            className="text-primary flex items-center gap-2  cursor-pointer z-40"
+          >
+            View Service
+            <motion.svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="11"
+              height="11"
+              viewBox="0 0 11 11"
+              fill="none"
+              className={"mt-1"}
+              variants={{
+                hover: {
+                  x: [0, 3, 0],
+                  y: [0, -3, 0],
+                  transition: {
+                    duration: 0.8,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }
+                }
+              }}
+            >
+              <path
+                d="M0.9375 10.214L9.67107 1.48047M9.67107 1.48047H0.9375M9.67107 1.48047V10.214"
+                stroke="#FF6035"
+                strokeWidth="1.74671"
+              />
+            </motion.svg>
+          </motion.div>
         </Link>
       </>
     ),
@@ -64,8 +122,37 @@ const servicesData = [
           href="/service/ERP-consulting"
           className="text-[#FF6035] font-['Archivo'] flex items-center font-semibold md:text-[17px] mt-2 underline"
         >
-          View Service
-          <ArrowUpRight />
+          <motion.div
+            whileHover="hover"
+            className="text-primary flex items-center gap-2  cursor-pointer z-40"
+          >
+            View Service
+            <motion.svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="11"
+              height="11"
+              viewBox="0 0 11 11"
+              fill="none"
+              className={"mt-1"}
+              variants={{
+                hover: {
+                  x: [0, 3, 0],
+                  y: [0, -3, 0],
+                  transition: {
+                    duration: 0.8,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }
+                }
+              }}
+            >
+              <path
+                d="M0.9375 10.214L9.67107 1.48047M9.67107 1.48047H0.9375M9.67107 1.48047V10.214"
+                stroke="#FF6035"
+                strokeWidth="1.74671"
+              />
+            </motion.svg>
+          </motion.div>
         </Link>
       </>
     ),
@@ -85,8 +172,37 @@ const servicesData = [
           href="/service/ERP-consulting"
           className="text-[#FF6035] font-['Archivo'] flex items-center font-semibold md:text-[17px] mt-2 underline"
         >
-          View Service
-          <ArrowUpRight />
+          <motion.div
+            whileHover="hover"
+            className="text-primary flex items-center gap-2  cursor-pointer z-40"
+          >
+            View Service
+            <motion.svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="11"
+              height="11"
+              viewBox="0 0 11 11"
+              fill="none"
+              className={"mt-1"}
+              variants={{
+                hover: {
+                  x: [0, 3, 0],
+                  y: [0, -3, 0],
+                  transition: {
+                    duration: 0.8,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }
+                }
+              }}
+            >
+              <path
+                d="M0.9375 10.214L9.67107 1.48047M9.67107 1.48047H0.9375M9.67107 1.48047V10.214"
+                stroke="#FF6035"
+                strokeWidth="1.74671"
+              />
+            </motion.svg>
+          </motion.div>
         </Link>
       </>
     ),
@@ -106,8 +222,37 @@ const servicesData = [
           href="/service/ERP-consulting"
           className="text-[#FF6035] font-['Archivo'] flex items-center font-semibold md:text-[17px] mt-2 underline"
         >
-          View Service
-          <ArrowUpRight />
+          <motion.div
+            whileHover="hover"
+            className="text-primary flex items-center gap-2  cursor-pointer z-40"
+          >
+            View Service
+            <motion.svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="11"
+              height="11"
+              viewBox="0 0 11 11"
+              fill="none"
+              className={"mt-1"}
+              variants={{
+                hover: {
+                  x: [0, 3, 0],
+                  y: [0, -3, 0],
+                  transition: {
+                    duration: 0.8,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }
+                }
+              }}
+            >
+              <path
+                d="M0.9375 10.214L9.67107 1.48047M9.67107 1.48047H0.9375M9.67107 1.48047V10.214"
+                stroke="#FF6035"
+                strokeWidth="1.74671"
+              />
+            </motion.svg>
+          </motion.div>
         </Link>
       </>
     ),
@@ -164,7 +309,7 @@ export default function HomeServices() {
             </div>
 
             {/* RIGHT - Accordion */}
-            <div className="w-full md:w-[65% space-y-0 md:my-0 my-14">
+            <div className="w-full md:w-[65% space-y-0 md:my-0 my-14 font-['Archivo']">
               {servicesData.map((item) => (
                 <div
                   key={item.id}
@@ -195,10 +340,10 @@ export default function HomeServices() {
                   </div>
                   {/* Accordion Content */}
                   <div
-                    className={`overflow-hidden transition-all duration-300 ${openAccordion === item.id ? 'max-h-96 py-4' : 'max-h-0'
+                    className={`overflow-hidden transition-all font-['Archivo'] duration-300 ${openAccordion === item.id ? 'max-h-96 py-4' : 'max-h-0'
                       }`}
                   >
-                    <div className="ml-10 md:ml-12 text-left">{item.description}</div>
+                    <div className="ml-10 md:ml-12 text-left font-['Archivo']">{item.description}</div>
                   </div>
                 </div>
               ))}
