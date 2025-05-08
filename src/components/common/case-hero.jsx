@@ -2,7 +2,7 @@ import React from 'react'
 
 const CaseHero = ({ heading, para }) => {
     return (
-        <section className='relative pt-44'>
+        <section className='relative pt-44 2xl:pt-60'>
             <div className='flex justify-center items-center'>
                 <div className='md:max-w-[52%] max-w-[90%] xl:max-w-[45%] 2xl:max-w-[40%] mx-auto'>
                     <h1 className='text-[30px] md:text-[60px] font-["Chakra"] font-semibold leading-[35px] md:leading-[65px] text-center tracking-[-2.771px] text-[#FF6035]'>{heading || "Fueling Innovation with AI-Powered Possibilities"}</h1>
