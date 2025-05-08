@@ -24,37 +24,27 @@ export default function OurPeopleSection() {
   ])
 
   return (
-    <section className="py-16 px-4 md:px-8 lg:px-16 max-w-7xl mx-auto">
+    <section className="py-20 font-['Archivo']">
       <div className="text-center mb-16">
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Our People</h2>
-        <p className="text-gray-600 max-w-3xl mx-auto text-lg">
+        <h2 className="text-[36px] md:text-[64px] mb-2 md:mb-4">Our People</h2>
+        <p className="text-[15px] md:text-[16px] text-[#101010] opacity-60 md:max-w-2xl max-w-[90%] mx-auto text-lg">
           Our vision goes beyond just providing IT services; we aim to empower businesses in the Middle East to be
           self-sufficient and prepared for the technological changes in the new age.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 w-[94%] mx-auto 2xl:max-w-[1440px] gap-4 lg:grid-cols-4">
         {teamMembers.map((member) => (
           <div
             key={member.id}
-            className="group bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300"
-          >
-            <div className="relative aspect-[3/4] w-full overflow-hidden">
-              <Image
-                src={member.image || "/placeholder.svg"}
-                alt="Team member"
-                fill
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
-                className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                priority={member.id <= 2}
-                quality={90}
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="font-semibold text-xl mb-1 group-hover:text-[#F26B44] transition-colors duration-300">
-                &nbsp;
-              </h3>
-            </div>
+            className="relative w-full h-[400px]">
+            <Image
+              src={member.image || "/placeholder.svg"}
+              alt="Team member"
+              width={310}
+              height={400}
+              className="w-full h-full transition-transform duration-500 group-hover:scale-105"
+            />
           </div>
         ))}
       </div>
