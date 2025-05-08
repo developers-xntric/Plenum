@@ -4,6 +4,8 @@ import MissionSection from '@/components/about/mission'
 import TabsSection from '@/components/about/tabs-section'
 import BrandSlider from '@/components/common/brand-slider'
 import { service_brand_icons } from '@/data/brand-slider-icons-data'
+import About4 from '@/components/about/about-4'
+import OurPeopleSection from '@/components/about/our-people'
 import React from 'react'
 
 const About = () => {
@@ -17,6 +19,8 @@ const About = () => {
       <MissionSection title='Our Vision' description={['Our vision goes beyond just providing IT services; we aim to empower businesses in the Middle East to be self-sufficient and prepared for the technological changes in the new age. At Plenum, we harness the power of AI to turn data into foresight, empowering businesses to act with confidence, agility, and precision. Our predictive analytics enable proactive decision-making that fuels sustainable growth and long-term success.', 'Join us on this journey towards a brighter tomorrow, where possibilities are limitless, and innovation is the driving force.']} subtitle='Enabling Proactive Decision-Making with AI-Powered Predictive Analytics' image='/about/vission.svg' left={true} bg='black' />
       <TabsSection />
       <LeadershipSection />
+      <About4/>
+      <OurPeopleSection/>
     </div>
   )
 }
