@@ -39,7 +39,7 @@ export default function ListingPage() {
                 {
                     data.map((item, index) => (
                         <div key={index} className="flex flex-col lg:flex-row 2xl:gap-12 gap-8 justify-between mb-[100px]">
-                            <div className="w-full lg:w-1/2">
+                            <div className="w-full lg:w-1/2 2xl:max-w-[55%]">
                                 <Image
                                     src={item.image}
                                     alt={item.title}
@@ -48,7 +48,7 @@ export default function ListingPage() {
                                     className="w-full h-full "
                                 />
                             </div>
-                            <div className="w-full lg:w-1/2 flex flex-col gap-10 md:gap-0 justify-between">
+                            <div className="w-full lg:w-1/2 2xl:w-[45%] flex flex-col gap-10 md:gap-0 justify-between">
                                 <div>
                                     <h2 className="text-[25px] md:text-[32px] font-medium text-[#101010] opacity-[0.9968] mb-3">{item.title}</h2>
                                     <p className="text-[#989898] text-[15px] md:text-[17px] md:max-w-[60%] 2xl:max-w-[50%] mb-6">
