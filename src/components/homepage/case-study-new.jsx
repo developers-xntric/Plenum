@@ -154,7 +154,7 @@ export default function IndustryShowcase() {
                                     <div className="flex flex-col md:flex-row gap-8">
                                         {/* Image Section */}
                                         <div className="md:w-1/2 relative">
-                                            <div className="bg-gray-800 rounded-lg overflow-hidden">
+                                            <div className="">
                                                 <img
                                                     src={industry.image || "/placeholder.svg"}
                                                     alt={industry.title}
@@ -204,17 +204,17 @@ export default function IndustryShowcase() {
                 {/* Navigation Buttons */}
                 <button
                     onClick={scrollPrev}
-                    className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 p-2 rounded-full"
+                    className="absolute left-2 top-1/2 -translate-y-1/2 p-2"
                     aria-label="Previous slide"
                 >
-                    <ChevronLeft className="h-6 w-6" />
+                    <ChevronLeft className="h-6 w-6" color="#FFFFFF80" />
                 </button>
                 <button
                     onClick={scrollNext}
-                    className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 p-2 rounded-full"
+                    className="absolute right-2 top-1/2 -translate-y-1/2 p-2"
                     aria-label="Next slide"
                 >
-                    <ChevronRight className="h-6 w-6" />
+                    <ChevronRight className="h-6 w-6" color="#FFFFFF80" />
                 </button>
             </div>
         </div>
