@@ -36,12 +36,15 @@ const Service_Inner_Hero = ({ heading, para, is_space_in_image = true, image, im
             {/* Paragraph */}
             <p className='text-secondary font-normal text-[18px] opacity-60 w-[95%]'>{para}</p>
             {/* Button */}
-            <Button text={button_text || "Let's Talk"} link={"/contact"} className={button_className ? button_className : "px-10 py-2.5 bg-[#FF6035]  hover:bg-black hover:transition-colors ease-in-out duration-300 hover:text-white text-white"} />
+            <Button text={button_text || "Let's Talk"} link={"/contact"} className={button_className ? button_className : "px-10 py-2.5 bg-[#FF6035]  hover:bg-black md:block hidden hover:transition-colors ease-in-out duration-300 hover:text-white text-white"} />
           </div>
           {/* Right Side Image */}
           <div className={`${image_className ? image_className : "lg:w-[600px] lg:h-[400px] xl:w-[813px] xl:h-[663px]"} ${is_space_in_image ? "" : "lg:relative left-[5.55%]"}`}>
             {/* Image */}
             <Image src={image} alt='ERPC' width={1500} height={1500} />
+          </div>
+          <div className='w-full text-center flex justify-center'>
+          <Button text={button_text || "Let's Talk"} link={"/contact"} className={button_className ? button_className : "px-10 py-2.5 bg-[#FF6035]  hover:bg-black block md:hidden hover:transition-colors ease-in-out duration-300 hover:text-white text-white"} />
           </div>
         </div>
       </div>

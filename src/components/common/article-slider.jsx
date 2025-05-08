@@ -38,7 +38,7 @@ export default function ArticleSlider({ bg = "black" }) {
 
         if (carouselRef.current) {
             const article = carouselRef.current.children[index]
-            const scrollPos = article.offsetLeft - 230
+            const scrollPos = article.offsetLeft - 250
 
             carouselRef.current.scrollTo({ left: scrollPos, behavior: "smooth" })
             setTimeout(() => {
@@ -230,23 +230,23 @@ export default function ArticleSlider({ bg = "black" }) {
                             })}
                         </div>
 
-                        <div className="flex justify-center gap-1 mt-2">
-                            {articles.map((_, index) => (
-                                <button
-                                    key={index}
-                                    className={cn(
-                                        "w-2 h-2 rounded-full transition-all duration-300",
-                                        index === activeIndex ? `${bg == "white" ? "bg-black" : "bg-white"} w-4` : "bg-gray-600 opacity-70 hover:opacity-100",
-                                    )}
-                                    onClick={() => goToSlide(index)}
-                                    aria-label={`Go to slide ${index + 1}`}
-                                    disabled={isAnimating}
-                                />
-                            ))}
-                        </div>
                     </div>
                 </div>
 
+            </div>
+            <div className="flex justify-center items-center gap-1 mt-2">
+                {articles.map((_, index) => (
+                    <button
+                        key={index}
+                        className={cn(
+                            "w-2 h-2 rounded-full transition-all duration-300",
+                            index === activeIndex ? `${bg == "white" ? "bg-black" : "bg-white"} w-4` : "bg-gray-600 opacity-70 hover:opacity-100",
+                        )}
+                        onClick={() => goToSlide(index)}
+                        aria-label={`Go to slide ${index + 1}`}
+                        disabled={isAnimating}
+                    />
+                ))}
             </div>
         </div>
     )
