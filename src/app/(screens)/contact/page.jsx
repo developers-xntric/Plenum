@@ -41,7 +41,7 @@ function Contact() {
                         {/* HEADING AND PARA*/}
                         <div className='space-y-3 md:space-y-5'>
                             <h2 className='text-[30px] md:text-4xl lg:text-5xl xl:text-[60px] font-["Chakra"] tracking-[-2.771px] font-semibold text-primary'>Contact us</h2>
-                            <p className="lg:w-[100%] xl:w-[436px] opacity-60 justify-center text-[#0f0f0f] text-[15px] md:text-lg font-medium font-['Archivo'] leading-[22px] md:leading-[27px]">At Plenum Technologies, we offer cutting-edge AI software platforms tailored to empower data engineers, scientists, analysts, and automation engineers.</p>
+                            <p className="lg:w-[100%] xl:w-[436px] opacity-60 justify-center text-[#0f0f0f] text-[15px] md:text-lg font-medium font-['Archivo'] leading-[22px] md:leading-[27px]">Ready to boost operational efficiency and drive innovation at scale? Get in touch with us to explore strategic solutions built for enterprise success.</p>
                         </div>
 
                         <div>
