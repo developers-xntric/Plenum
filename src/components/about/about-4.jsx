@@ -75,9 +75,9 @@ export default function About4() {
               style={{ userSelect: "none" }}
               unoptimized
               />
+            </div>
           </div>
         </div>
-      </div>
     </section>
   )
 }

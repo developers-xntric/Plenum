@@ -33,7 +33,7 @@ export default function OurPeopleSection() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 w-[94%] mx-auto 2xl:max-w-[1440px] gap-4 lg:grid-cols-4">
         {teamMembers.map((member) => (
           <div
             key={member.id}
