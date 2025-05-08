@@ -11,15 +11,15 @@ export default function Personalization({heading1, para1, para2, number1, number
                     </h2>
                     <div className="text-[15px] text-secondary  font-normal flex flex-col gap-2">
                         {!para1 && (
-                            <div className='flex gap-3'>
-                                <div className='w-5 h-1 mt-2 bg-primary rounded-full '></div>
+                            <div className='flex md:gap-3'>
+                                <div className='w-7 md:w-5 h-1 mt-2 bg-primary rounded-full '></div>
 
                                 <p className='opacity-60 font-medium font-["Archivo"]'>{para1 || 'At our core is a branded operating system that synthesizes every fiber of your brand, from strategies and business plans.'}</p>
                             </div>
                         )}
                         {!para2 && (
-                            <div className='flex gap-3'>
-                                <div className='w-5 h-1 mt-2 bg-primary rounded-full '></div>
+                            <div className='flex md:gap-3'>
+                                <div className='w-7 md:w-5 h-1 mt-2 bg-primary rounded-full '></div>
                                 <p className='opacity-60 font-medium font-["Archivo"]'> {para2 || 'At our core is a branded operating system that synthesizes every fiber of your brand, from strategies and business plans.'}</p>
                             </div>
                         )}
