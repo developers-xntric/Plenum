@@ -77,37 +77,37 @@ export default function OracleResourcePlanning() {
                                             <h3 className="md:text-xl font-semibold text-start ">Features</h3>
                                             <div className="grid grid-cols-2 md:gap-x-6 md:gap-y-2">
                                                 <div className="space-y-2 text-secondary font-['Archivo'] opacity-75">
-                                                    <div className="flex items-start md:gap-2 text-[11px] md:text-base">
+                                                    <div className="flex items-start md:gap-2 text-[12.5px] md:text-base">
                                                         <div className="mt-0.5 h-3 md:h-5 w-3 md:w-5 flex-none text-secondary font-['Archivo'] opacity-75">•</div>
                                                         <span>Accounting hub</span>
                                                     </div>
-                                                    <div className="flex items-start md:gap-2 text-[11px] md:text-base">
+                                                    <div className="flex items-start md:gap-2 text-[12.5px] md:text-base">
                                                         <div className="mt-0.5 h-3 md:h-5 w-3 md:w-5 flex-none text-secondary font-['Archivo'] opacity-75">•</div>
                                                         <span>Reporting and analytics</span>
                                                     </div>
-                                                    <div className="flex items-start md:gap-2 text-[11px] md:text-base">
+                                                    <div className="flex items-start md:gap-2 text-[12.5px] md:text-base">
                                                         <div className="mt-0.5 h-3 md:h-5 w-3 md:w-5 flex-none text-secondary font-['Archivo'] opacity-75">•</div>
                                                         <span>Payables and Assets</span>
                                                     </div>
-                                                    <div className="flex items-start  md:gap-2 text-[11px] md:text-base">
+                                                    <div className="flex items-start  md:gap-2 text-[12.5px] md:text-base">
                                                         <div className="mt-0.5 h-3 md:h-5 w-3 md:w-5 flex-none text-secondary font-['Archivo'] opacity-75">•</div>
                                                         <span>Revenue Management</span>
                                                     </div>
                                                 </div>
                                                 <div className="space-y-2 text-secondary font-['Archivo'] opacity-75">
-                                                    <div className="flex items-start  md:gap-2 text-[11px] md:text-base">
+                                                    <div className="flex items-start  md:gap-2 text-[12.5px] md:text-base">
                                                         <div className="mt-0.5 h-3 md:h-5 w-3 md:w-5 flex-none text-secondary font-['Archivo'] opacity-75">•</div>
                                                         <span>Collections</span>
                                                     </div>
-                                                    <div className="flex items-start  md:gap-2 text-[11px] md:text-base">
+                                                    <div className="flex items-start  md:gap-2 text-[12.5px] md:text-base">
                                                         <div className="mt-0.5 h-3 md:h-5 w-3 md:w-5 flex-none text-secondary font-['Archivo'] opacity-75">•</div>
                                                         <span>Expense management</span>
                                                     </div>
-                                                    <div className="flex items-start  md:gap-2 text-[11px] md:text-base">
+                                                    <div className="flex items-start  md:gap-2 text-[12.5px] md:text-base">
                                                         <div className="mt-0.5 h-3 md:h-5 w-3 md:w-5 flex-none text-secondary font-['Archivo'] opacity-75">•</div>
                                                         <span>Joint management</span>
                                                     </div>
-                                                    <div className="flex items-start  md:gap-2 text-[11px] md:text-base">
+                                                    <div className="flex items-start  md:gap-2 text-[12.5px] md:text-base">
                                                         <div className="mt-0.5 h-3 md:h-5 w-3 md:w-5 flex-none text-secondary font-['Archivo'] opacity-75">•</div>
                                                         <span>Receivables</span>
                                                     </div>

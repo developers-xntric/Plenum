@@ -43,7 +43,7 @@ export default function MicrosoftDynamicPartner() {
           </div>
 
           {/* Tab Content */}
-          <div className="w-full h-[80vh] md:h-[90vh] lg:h-[40vh]  xl:h-[450px] 2xl:h-[580px] mx-auto">
+          <div className="w-full h-[80%] md:h-[90vh] lg:h-[40vh]  xl:h-[450px] 2xl:h-[580px] mx-auto">
             {activeTab === 'Dynamics ERP' && (
               <div className="flex flex-col lg:flex-row gap-8 lg:gap-10 items-center justify-center ">
                 {/* Left Section - Image */}
@@ -84,7 +84,7 @@ export default function MicrosoftDynamicPartner() {
 
                 {/* Right Section - Text */}
                 <div className="w-full lg:w-1/2 lg:p-4 space-y-4">
-                  <h2 className="text-3xl  text-start lg:max-w-[80%] 2xl:max-w-[60%] font-['Archivo'] text-secondary font-semibold opacity-95">
+                  <h2 className="text-[25px] md:text-3xl  text-start lg:max-w-[80%] 2xl:max-w-[60%] font-['Archivo'] text-secondary font-semibold opacity-95">
                     Dynamics 365 CE/CRM solutions by Plenum
                   </h2>
                   <p className="text-secondary text-start font-medium font-['Archivo'] opacity-75 w-[45% xl:max-w-[85%] ">

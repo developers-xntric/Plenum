@@ -15,9 +15,9 @@ const AccordionItem = ({ title, description, isOpen, onToggle, index }) => {
             >
                 <button
                     onClick={() => onToggle(index)}
-                    className="flex justify-between w-full py-5 text-left"
+                    className="flex items-center justify-between w-full py-5 text-left"
                 >
-                    <h3 className={`${isOpen ? "text-secondary font-medium home-section-headings" : "opacity-50"} cursor-pointer text-[25px] lg:text-[30px] leading-8 lg:leading-[40px] max-w-[80%]`}>
+                    <h3 className={`${isOpen ? "text-secondary font-semibold text-[30px] lg:text-[30px] home-section-headings" : "opacity-50"} cursor-pointer text-[25px] lg:text-[30px] leading-[30px] lg:leading-[40px] font-semibold max-w-[80%]`}>
                         {title}
                     </h3>
 
@@ -39,7 +39,7 @@ const AccordionItem = ({ title, description, isOpen, onToggle, index }) => {
                         >
                             <ArrowUpRight
                                 size={14}
-                                className="h-10 w-10 text-[#FF6035] cursor-pointer transition-transform duration-200"
+                                className="h-8 md:h-10 w-8 md:w-10 text-[#FF6035] cursor-pointer transition-transform duration-200"
                             />
                         </motion.div>
                     )}
@@ -57,7 +57,7 @@ const AccordionItem = ({ title, description, isOpen, onToggle, index }) => {
                 transition={{ duration: 0.4, ease: "easeInOut" }}
                 className="overflow-hidden"
             >
-                <div className="pb-5 text-[#101010] opacity-60 text-[18px]">
+                <div className="pb-5 text-[#101010] font-['Archivo'] font-medium opacity-60 mt-4 text-[18px]">
                     <p>{description}</p>
                 </div>
             </motion.div>
