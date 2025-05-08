@@ -1,24 +1,7 @@
 "use client"
 import { useState } from "react";
 
-export default function HomeServices({ servicesData = [
-    {
-        id: 1,
-        title: "ERP Consulting & Implementation",
-    },
-    {
-        id: 2,
-        title: "AI Consulting, Governance & Implementation",
-    },
-    {
-        id: 3,
-        title: "Momentum",
-    },
-    {
-        id: 4,
-        title: "Managed Cloud Services",
-    },
-] }) {
+export default function HomeServices({ servicesData }) {
     const [openAccordion, setOpenAccordion] = useState(null);
 
     const toggleAccordion = (id) => {
@@ -39,7 +22,7 @@ export default function HomeServices({ servicesData = [
                                 <h2 className="text-[30px] lg:text-[50px] xl:text-[50px] font-semibold text-secondary opacity-[0.8] inline-block md:block font-['Archivo'] tracking-tighter">
                                     Technologies
                                 </h2>
-                                <h2 className="text-[30px] lg:text-[50px] xl:text-[50px] font-semibold text-secondary opacity-[0.8] inline-block lg:block md:mx-0 mx-2 font-['Archivo'] tracking-tighter mt-[-32px]">
+                                <h2 className="text-[30px] lg:text-[50px] xl:text-[50px] font-semibold text-secondary opacity-[0.8] inline-block lg:block md:mx-0 mx-2 font-['Archivo'] tracking-tighter mt-[-24px]">
                                     Implemented
                                 </h2>
                             </div>
@@ -49,15 +32,15 @@ export default function HomeServices({ servicesData = [
                         <div className="w-full md:w-[65%] space-y-0 md:my-0 my-14 font-['Archivo']">
                             {servicesData.map((item) => (
                                 <div
-                                    key={item.id}
+                                    key={item}
                                     className="border-t-[2.5px] border-[#e7e7e7] py-5"
                                 >
                                     <div
-                                        onClick={() => toggleAccordion(item.id)}
+                                        onClick={() => toggleAccordion(item)}
                                         className="group flex items-center gap-3 font-medium text-secondary lg:text-[21px] cursor-pointer"
                                     >
                                         <p className="group-hover:text-[#FF6035] leading font-bold transition-colors w-[90%] leading-[-0.485px]  duration-500 font-['Archivo']">
-                                            {item.title}
+                                            {item}
                                         </p>
                                     </div>
                                 </div>

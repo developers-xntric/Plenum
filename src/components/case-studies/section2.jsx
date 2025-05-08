@@ -1,13 +1,12 @@
 import Image from "next/image"
 
-export default function Section2() {
+export default function Section2({ heading, heading_className, image, case_studies }) {
   return (
     <div className="2xl:max-w-[1440px] w-[90%] mx-auto space-y-20 py-16 xl:py-24">
-      {/* Consider using a wrapper which adds space to the sides when we move higher from 1440 px screens width */}
       {/* TEXT HEADING 1 */}
       <div className=" text-[30px] lg:text-[50px] leading-[40px] lg:leading-[55px] font-semibold font-['Archivo'] relative z-20 bg-[linear-gradient(to_right,_#101010,_#9b9999,_#101010,_#9b9999)] bg-clip-text text-transparent">
-        <div className="text-start pt-12 lg:w-[840px] ">
-          <h1>Unlock Deeper Insights, Automate Workflows, and Drive Efficiency with Plenum’s Cutting-Edge ERP AI Technology.</h1>
+        <div className={`text-start pt-12 ${heading_className}`}>
+          <h1>{heading}</h1>
         </div>
       </div>
       {/* Two Cols */}
@@ -15,14 +14,13 @@ export default function Section2() {
         {/* Make thi image center align */}
         <div className="flex items-center justify-center w-full h-full">
           <Image
-            src="/casestudy/Group.png"
+            src={image || "/casestudy/Group.png"}
             alt="Group"
-            width={1500}
-            height={1500}
+            width={3000}
+            height={3000}
             className="h-full w-full"
           />
         </div>
-        {/* Make these three divs as provided in the image write same text and make r4esposnive for larger rscr4ens ti small screen websites  */}
         {/* THREE FEATURE BOXES */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-10">
           {/* Feature 1 */}
@@ -30,12 +28,10 @@ export default function Section2() {
             <div className="bg-white rounded-full w-12 h-12 flex items-center justify-center mb-4">
               <Image src={"/casestudy/Icon.svg"} alt="" width={50} height={50} />
             </div>
-            <h2 className="text-xl font-semibold mb-3">AI-Driven Data Integration</h2>
-            <p className="text-gray-700">
-              We integrated AI to centralize data across departments, ensuring real-time access to accurate and consistent
-              information. This eliminated data silos and improved collaboration, leading to faster and more informed
-              decision-making.
-            </p>
+            <h2 className="text-xl font-semibold mb-3">Business Challenges</h2>
+            <ul className="space-y-2">
+              {case_studies[0].map((val, index) => <li key={index} className="flex items-center gap-5 text-[16px]"><div className="min-w-4 h-1 rounded-2xl bg-primary opacity-100"></div>{val}</li>)}
+            </ul>
           </div>
           {/*  */}
           {/* Feature 2 */}
@@ -43,11 +39,10 @@ export default function Section2() {
             <div className="bg-white rounded-full w-12 h-12 flex items-center justify-center mb-4">
               <Image src={"/casestudy/Icon.svg"} alt="" width={50} height={50} />
             </div>
-            <h2 className="text-xl font-semibold mb-3">Automated Processes</h2>
-            <p className="text-gray-700">
-              AI-powered automation streamlined routine tasks like order processing and inventory management. By reducing
-              manual labor, we freed up resources and improved efficiency across the organization.
-            </p>
+            <h2 className="text-xl font-semibold mb-3">Plenum’s Solution</h2>
+            <ul className="space-y-2">
+              {case_studies[1].map((val, index) => <li key={index} className="flex items-center gap-5 text-[16px]"><div className="min-w-4 h-1 rounded-2xl bg-primary opacity-100"></div>{val}</li>)}
+            </ul>
           </div>
 
           {/* Feature 3 */}
@@ -55,11 +50,10 @@ export default function Section2() {
             <div className="bg-white rounded-full w-12 h-12 flex items-center justify-center mb-4">
               <Image src={"/casestudy/Icon.svg"} alt="" width={50} height={50} />
             </div>
-            <h2 className="text-xl font-semibold mb-3">Business Intelligence Tools</h2>
-            <p className="text-gray-700">
-              We integrated advanced BI tools to provide real-time insights and analytics. This enabled data-driven
-              decision-making, helping managers track performance and adjust strategies proactively.
-            </p>
+            <h2 className="text-xl font-semibold mb-3">Key Capabilities Used</h2>
+            <ul className="space-y-2">
+              {case_studies[2].map((val, index) => <li key={index} className="flex items-center gap-5 text-[16px]"><div className="min-w-4 h-1 rounded-2xl bg-primary"></div>{val}</li>)}
+            </ul>
           </div>
         </div>
       </div>
