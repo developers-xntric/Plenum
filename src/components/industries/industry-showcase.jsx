@@ -42,7 +42,7 @@ export default function IndustryShowcase({ isTabs = false }) {
   }
   // Thus qhsjqhs
   return (
-    <div className="2xl:max-w-[1440px] mx-auto w-[93%] xl:w-[95%] py-10 overflow-hidden">
+    <div className="2xl:max-w-[1440px] mx-auto w-[93%] xl:w-[95%] pt-10 pb-20 2xl:pb-28 overflow-hidden">
       {/* Tabs Carousel */}
       {isTabs ? <div className="relative mb-10 w-[95%] md:w-[85%] mx-auto">
         <div
