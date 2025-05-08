@@ -46,8 +46,8 @@ export default function MobilitySolutions({
   }, [api])
 
   return (
-    <section className="py-12 max-w-[90%] 2xl:max-w-[1440px] font-['Archivo'] mx-auto">
-      <div className={`mb-8 ${isCenter ? "text-center" : ""}`}>
+    <section className="md:pb-12 pb-6 py-12 max-w-[90%] 2xl:max-w-[1440px] font-['Archivo'] mx-auto">
+      <div className={`mb-12 md:mb-8 ${isCenter ? "text-center" : ""}`}>
         <h2 className="text-2xl lg:text-[50px] font-semibold text-secondary home-section-headings leading-[40px]">
           {heading1 || "Mobility Solutions For"}
         </h2>
@@ -75,7 +75,7 @@ export default function MobilitySolutions({
             {solutions.map((solution, index) => (
               <CarouselItem key={index} className="basis-[92%] sm:basis-[300px]">
                 <div
-                  className={`bg-white px-4 py-6 rounded-sm shadow-sm border border-gray-100 gap-4 justify-center flex flex-col h-[200px] ${card_className || ""}`}
+                  className={`bg-white px-4 ml-5 py-6 rounded-sm shadow-md border border-gray-100 gap-4 justify-center flex flex-col h-[200px] ${card_className || ""}`}
                 >
                   <Image
                     src={solution.icon || "/placeholder.svg"}
@@ -93,12 +93,33 @@ export default function MobilitySolutions({
             ))}
           </CarouselContent>
           <div className="flex justify-center mt-4">
-            {solutions.map((_, index) => (
-              <span
-                key={index}
-                className={`h-1.5 rounded-full mx-1 ${current === index ? "w-4 bg-orange-400" : "w-1.5 bg-gray-300"}`}
-              />
-            ))}
+            {(() => {
+              const maxDots = 5
+              const total = solutions.length
+              let start = 0
+
+              if (total > maxDots) {
+                start = Math.min(Math.max(current - Math.floor(maxDots / 2), 0), total - maxDots)
+              }
+
+              const dotsToRender = solutions.slice(start, start + Math.min(maxDots, total))
+
+              return (
+                <div className="flex justify-center mt-4">
+                  {dotsToRender.map((_, index) => {
+                    const actualIndex = start + index
+                    return (
+                      <span
+                        key={actualIndex}
+                        className={`h-1.5 rounded-full mx-1 transition-all duration-300 ${current === actualIndex ? "w-1.5 bg-orange-400" : "w-1.5 bg-gray-300"
+                          }`}
+                      />
+                    )
+                  })}
+                </div>
+              )
+            })()}
+
           </div>
         </Carousel>
       ) : (
