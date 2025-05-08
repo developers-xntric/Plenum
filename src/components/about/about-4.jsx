@@ -5,7 +5,7 @@ export default function About4() {
   return (
     <section className="bg-[#1E1E1E] font-['Archivo'] py-20  relative">
       <div className="2xl:max-w-[1440px] w-[85%] lg:w-[90%] mx-auto">
-        <div className="flex flex-col lg:flex-row items-center text-center lg:text-start lg:items-start lg:justify-evenly mb-16 lg:mb-20 relative">
+        <div className="flex flex-col lg:flex-row items-center text-center lg:text-start  lg:justify-evenly mb-16 lg:mb-20 relative">
           <div className="w-full lg:w-1/3 relative mb-6 lg:mb-0">
             <div className="relative flex justify-center">
               <Image
@@ -31,7 +31,7 @@ export default function About4() {
         </div>
 
         {/* Mission Section */}
-        <div className="flex flex-col lg:flex-row items-center text-center lg:text-start lg:items-start justify-between  relative">
+        <div className="flex flex-col lg:flex-row items-center text-center lg:text-start  justify-between  relative">
           {/* Left side - Mission Content */}
           <div className="w-full lg:w-[70%]">
             <h2 className="text-[39px] lg:text-[60px] xl:text-7xl font-light text-[#FFF] mb-4">
