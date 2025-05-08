@@ -62,6 +62,62 @@ const industries = [
         expertise: ["Mobile Banking", "Brand Identity", "Product Design"],
         industry: "Banking",
     },
+    {
+        id: "agriculture",
+        name: "Agriculture & Food Industries",
+        title: "Agriculture & Food Industries",
+        description:
+            "At our core is a hybrid operating system that synthesizes every fiber of your brand, from strategy and technical plans.",
+        image: "/casestudy/case1.svg",
+        brandName: "Farm Tech",
+        expertise: ["Supply Chain", "Brand Identity", "Product Design"],
+        industry: "Agriculture",
+    },
+    {
+        id: "biotech",
+        name: "Biotech Industry",
+        title: "Biotech Industry",
+        description:
+            "At our core is a hybrid operating system that synthesizes every fiber of your brand, from strategy and technical plans.",
+        image: "/casestudy/case2.svg",
+        brandName: "Brand OS",
+        expertise: ["AI Solutions", "Brand Identity", "Product Design"],
+        industry: "Finance",
+    },
+    {
+        id: "investment",
+        name: "Alternative Investment Industry",
+        title: "Alternative Investment Industry",
+        description:
+            "At our core is a hybrid operating system that synthesizes every fiber of your brand, from strategy and technical plans.",
+        image: "/casestudy/case3.svg",
+        brandName: "Invest Plus",
+        expertise: ["Portfolio Management", "Brand Identity", "Product Design"],
+        industry: "Investment",
+    },
+    {
+        id: "enterprise",
+        name: "Business & Enterprise Banking",
+        title: "Business & Enterprise Banking",
+        title: "Business & Enterprise Banking",
+        description:
+            "At our core is a hybrid operating system that synthesizes every fiber of your brand, from strategy and technical plans.",
+        image: "/casestudy/case4.svg",
+        brandName: "Enterprise OS",
+        expertise: ["Banking Solutions", "Brand Identity", "Product Design"],
+        industry: "Banking",
+    },
+    {
+        id: "consumer",
+        name: "Consumer Banking",
+        title: "Consumer Banking",
+        description:
+            "At our core is a hybrid operating system that synthesizes every fiber of your brand, from strategy and technical plans.",
+        image: "/casestudy/case4.svg",
+        brandName: "Consumer OS",
+        expertise: ["Mobile Banking", "Brand Identity", "Product Design"],
+        industry: "Banking",
+    },
 ]
 
 export default function IndustryShowcase() {
