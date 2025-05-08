@@ -6,10 +6,10 @@ const ServiceHero = ({ bgImage, isLogo = true }) => {
   return (
     <div className='lg:h-screen bg-cover bg-no-repeat bg-center overflow-x-hidden' style={{ backgroundImage: `url(${bgImage})` }}>
       {/* Wrapper */}
-      <div className="2xl:max-w-[1440px] h-full w-[90%] mx-auto space-y-20 py-16 pt-[55vh] md:pt-[60vh] lg:pt-36">
+      <div className="2xl:max-w-[1440px] h-full w-[90%] mx-auto space-y-20 py-16 pt-[64vh] md:pt-[60vh] lg:pt-36">
 
         {/* Image Div */}
-        {isLogo && <div className='xl:w-[200px] xl:h-[250px] w-[130px] h-[180px] absolute left-1/2 lg:top-1/2 md:top-[40%] top-[35%] transform -translate-x-1/2 -translate-y-1/2'>
+        {isLogo && <div className='xl:w-[200px] xl:h-[250px] w-[185px] md:w-[130px] h-[240px] md:h-[180px] absolute left-1/2 lg:top-1/2 md:top-[40%] top-[38%] transform -translate-x-1/2 -translate-y-1/2'>
           <Image src="/service/sp_hero.svg" alt='Plenum AI Logo' width={1500} height={1500} className='w-full h-full object-contain' />
         </div>}
 

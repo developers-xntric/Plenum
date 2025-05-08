@@ -26,7 +26,7 @@ const FinanceOpearations = () => {
             />
             <ERPAccordin className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={fao_service} left={true} blackSection={fao_service_black} />
             <FaoDynamicOpearation />
-            <div className='py-8'>
+            <div className=''>
                 <Finance_Opearations_Service />
             </div>
             <CaseStudies

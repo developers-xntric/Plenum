@@ -193,26 +193,26 @@ export default function FaoDynamicOperation() {
     }
 
     return (
-        <section className="max-w-5xl mx-auto text-center px-4 pt-20">
-            <h1 className="text-[30px] lg:text-[50px] max-w-2xl mx-auto leading-10 lg:leading-[55px] font-['Archivo'] text-secondary font-medium home-section-headings mb-4">
+        <section className="max-w-5xl mx-auto text-center px-4 py-14 md:pt-20 font-['Archivo']">
+            <h1 className="text-[30px] lg:text-[50px] max-w-2xl mx-auto leading-[34px] lg:leading-[55px] font-['Archivo'] text-secondary font-medium home-section-headings mb-4">
                 Dynamics 365 Finance and Operations modules
             </h1>
 
-            <p className="text-secondary font-['Archivo'] opacity-75 max-w-4xl mx-auto mb-8">
+            <p className="text-secondary font-['Archivo'] font-medium opacity-75 max-w-4xl mx-auto mb-8">
                 Enhance your business efficiency and adapt quickly to changing market conditions by optimizing your financial
                 processes and streamlining your finance operations with real-time insights and analytics that enable informed
                 decision-making.
             </p>
 
-            <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-8">
+            <div className="flex flex-wrap md:justify-center gap-2 md:gap-4 mb-8">
                 {tabs.map((tab, index) => (
                     <button
                         key={tab}
                         onClick={() => setActiveTab(tab)}
-                        className={`px-4 py-2 rounded-full text-sm border ${activeTab === tab
-                            ? "bg-white border-orange-400 text-orange-500"
-                            : "bg-white border-gray-300 text-gray-700 hover:border-gray-400"
-                            } transition-colors md:block ${index >= 3 && "hidden"}`}
+                        className={`px-4 py-2 border  border-[#808080] font-medium font-['Archivo'] rounded-full text-sm  ${activeTab === tab
+                            ? "bg-white  text-primary "
+                            : "bg-white text-[#101010] hover:border-gray-400"
+                            } transition-colors md:block `}
                     >
                         {tab}
                     </button>
@@ -257,7 +257,7 @@ export default function FaoDynamicOperation() {
                 </div>
             </div>
 
-            <p className="text-secondary font-['Archivo'] opacity-75 max-w-2xl mx-auto">
+            <p className="text-secondary font-['Archivo'] max-w-2xl font-medium mx-auto">
                 {tabContent[activeTab][currentSlide].caption}
             </p>
 

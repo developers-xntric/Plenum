@@ -27,7 +27,7 @@ const New_Service_Inner_Hero = ({ heading, para, is_space_in_image = true, image
                 </div>
             </div>
             {/* Slider */}
-            {isSlider && <div className='2xl:max-w-[1440px] w-[90%] mx-auto space-y-20 py-14 xl:pb-14 xl:pt-0'>
+            {isSlider && <div className='2xl:max-w-[1440px] w-[90%] mx-auto space-y-20 py-8 md:py-14 xl:pb-14 xl:pt-0'>
                 <IconsSlider
                     text={"Trusted by world's most exciting brands"}
                     brand_icons={finance_opearations_services} />

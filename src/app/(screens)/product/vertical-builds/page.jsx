@@ -38,6 +38,7 @@ const VerticalBuilds = () => {
                 bgColor='black'
                 paraClass={'lg:max-w-[90%] xl:max-w-[80%] 2xl:max-w-[70%]'}
                 gridcol='md:grid-cols-2 lg:grid-cols-4'
+                oneCardMobile={true}
             />
             <StartSmallWithAI />
             <div className='py-10'>

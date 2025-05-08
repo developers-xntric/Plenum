@@ -35,7 +35,7 @@ export default function BrandSlider({ text, brand_icons, width }) {
             {/* Moving Icons */}
             <motion.div
                 key={duration}
-                className="flex gap-8 md:gap-16 md:ml-4 w-full"
+                className="flex gap-4 md:gap-16 md:ml-4 w-full"
                 initial={{ x: 0 }}
                 animate={{ x: "-100%" }}
                 transition={{
