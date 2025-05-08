@@ -3,7 +3,7 @@ import Image from 'next/image'
 export default function Personalization({heading1, para1, para2, number1, number2, circlePara1, circlePara2 }) {
     return (
         <div className="2xl:max-w-[1440px] w-[90%] mx-auto space-y-20 lg:pb-16 overflow-hidden">
-            <div className=" w-full flex lg::flex-row flex-col justify-between items-center space-y-6 lg:space-y-0">
+            <div className=" w-full flex lg:flex-row flex-col justify-between items-center space-y-6 lg:space-y-0">
                 {/* Left Side Content */}
                 <div className="flex flex-col space-y-4 lg:w-[40%] w-[95%] text-center md:text-start mx-auto md:ml-0">
                     <h2 className="text-[30px] md:text-[40px] font-semibold opacity-[0.8] text-secondary font-['Archivo'] leading-[35px] md:leading-[50px] tracking-[-1.5px] ">
