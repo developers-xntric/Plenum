@@ -26,12 +26,11 @@ export default function HomeServices({ servicesData = [
     };
 
     return (
-        <div className="bg-white">
+        <div className="bg-white h-[450px]">
             {/* Main content */}
             <div className="2xl:max-w-[1440px] w-[90%] mx-auto space-y-10 md:space-y-20 py-8 md:py-16 xl:py-24">
 
                 <div className="flex flex-col space-y-10 sm:space-y-16">
-
                     {/* BOTTOM column - Services */}
                     <div className="flex md:flex-row flex-col items-start justify-between xl:max-w-[90%]">
                         {/* LEFT */}

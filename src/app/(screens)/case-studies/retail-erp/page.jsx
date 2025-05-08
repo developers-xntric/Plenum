@@ -12,7 +12,13 @@ import CaseStudyList from "@/components/case-studies/case-studies-list"
 export default function BrandOSPage() {
   return (
     <main>
-      <CaseDetailHero />
+      <CaseDetailHero
+        tags={"Finance"}
+        heading={"Retail ERP Transformation Finance & Operations Implementation"}
+        para={"Modernized a retail group's operations using Microsoft Dynamics 365 F&O for finance, procurement, HR, and POS integration."}
+        heading_className={"lg:max-w-[800px]"}
+        para_className={"lg:max-w-[620px]"}
+      />
       <Section2 />
       <Personalization />
       <CaseStudyList serviceList={ServiceList} />
