@@ -12,10 +12,10 @@ export default function About4() {
             {/* This is where you would place your SVG */}
           <Image
           alt="Circle"
-          src="/images/about/circle1.svg"
-          width={1000}
-          height={1000}
-          className="w-full h-full object-cover"
+          src="/about/circle1.svg"
+          width={700}
+          height={700}
+          className="w-[] h-full object-cover"
           style={{ userSelect: "none" }}
           unoptimized
           />
@@ -24,10 +24,10 @@ export default function About4() {
 
         {/* Right side - Vision Content */}
         <div className="w-full lg:w-1/2">
-          <h2 className="text-5xl lg:text-6xl xl:text-7xl font-light mb-8">
+          <h2 className="text-5xl lg:text-6xl xl:text-7xl font-light mb-8 text-secondary">
             Our <span className="text-[#F26B44]">Vision</span>
           </h2>
-          <p className="text-lg lg:text-xl leading-relaxed text-gray-300">
+          <p className="text-lg lg:text-xl leading-relaxed text-secondary opacity-60">
             To be a future-ready technology partner transforming enterprise operations through AI-powered ERP systems
             that empower every person and department within a company. We anticipate a future where businesses of all
             sizes embrace intelligent technologies as part of their operations, driving innovation, agility, scale, and
@@ -59,9 +59,9 @@ export default function About4() {
             {/* This is where you would place your SVG */}
             <Image
               alt="Arc"
-              src="/images/about/circle2.svg"
-              width={1000}
-              height={1000}
+              src="/about/circle2.svg"
+              width={700}
+              height={700}
               className="w-full h-full object-cover"
               style={{ userSelect: "none" }}
               unoptimized

@@ -1,9 +1,18 @@
 export const home_brand_icons = [
-    "/images/brand-logos/achieve.webp",
-    "/images/brand-logos/midfunnel.webp",
-    "/images/brand-logos/momentum.webp",
-    "/images/brand-logos/obscura.webp",
-    "/images/brand-logos/tangent.webp",
+    "/images/Plenum-Client-Logos/image 152.png",
+    "/images/Plenum-Client-Logos/image 153.png",
+    "/images/Plenum-Client-Logos/image 154.png",
+    "/images/Plenum-Client-Logos/image 155.png",
+    "/images/Plenum-Client-Logos/image 156.png",
+    "/images/Plenum-Client-Logos/image 157.png",
+    "/images/Plenum-Client-Logos/image 156.png",
+    "/images/Plenum-Client-Logos/image 158.png",
+    "/images/Plenum-Client-Logos/image 159.png",
+    "/images/Plenum-Client-Logos/image 160.png",
+    "/images/Plenum-Client-Logos/image 161.png",
+    "/images/Plenum-Client-Logos/image 162.png",
+    "/images/Plenum-Client-Logos/image 163.png",
+    "/images/Plenum-Client-Logos/image 164.png",
 ];
 
 export const service_brand_icons = [
