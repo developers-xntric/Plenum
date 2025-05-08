@@ -5,8 +5,8 @@ export default function Section2() {
     <div className="2xl:max-w-[1440px] w-[90%] mx-auto space-y-20 py-16 xl:py-24">
       {/* Consider using a wrapper which adds space to the sides when we move higher from 1440 px screens width */}
       {/* TEXT HEADING 1 */}
-      <div className=" text-[30px] md:text-[50px] leading-[40px] md:leading-[55px] font-semibold font-['Archivo'] relative z-20 bg-[linear-gradient(to_right,_#101010,_#9b9999,_#101010,_#9b9999)] bg-clip-text text-transparent">
-        <div className="text-start pt-12 md:w-[840px] ">
+      <div className=" text-[30px] lg:text-[50px] leading-[40px] lg:leading-[55px] font-semibold font-['Archivo'] relative z-20 bg-[linear-gradient(to_right,_#101010,_#9b9999,_#101010,_#9b9999)] bg-clip-text text-transparent">
+        <div className="text-start pt-12 lg:w-[840px] ">
           <h1>Unlock Deeper Insights, Automate Workflows, and Drive Efficiency with Plenum’s Cutting-Edge ERP AI Technology.</h1>
         </div>
       </div>
@@ -24,7 +24,7 @@ export default function Section2() {
         </div>
         {/* Make these three divs as provided in the image write same text and make r4esposnive for larger rscr4ens ti small screen websites  */}
         {/* THREE FEATURE BOXES */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-10">
           {/* Feature 1 */}
           <div className="bg-zinc-100 rounded-[20px] p-6 shadow-sm">
             <div className="bg-white rounded-full w-12 h-12 flex items-center justify-center mb-4">
