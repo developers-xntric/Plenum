@@ -56,14 +56,14 @@ export default function MicrosoftCarousel({ MicrosoftCarouselData, title, para }
                     {slide.logos.slice(0, 3).map((logo, index) => (
                       <div
                         key={logo.name}
-                        className="flex items-center justify-center p-4 bg-white h-32 border border-gray-100"
+                        className="flex items-center justify-center p-5 bg-white  h-32 border border-gray-100"
                       >
                         <Image
                           src={logo.src || "/placeholder.svg"}
                           alt={logo.alt}
                           width={1000}
                           height={1000}
-                          className={`${index === 0 ? "w-16" : "w-20"} object-contain`}
+                          className={`${index === 0 ? "w-14" : "w-20"} object-contain`}
                         />
                       </div>
                     ))}
