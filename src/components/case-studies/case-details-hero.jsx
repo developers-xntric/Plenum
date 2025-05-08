@@ -1,8 +1,8 @@
-const CaseDetailHero = ({ tags, heading, para, heading_className, para_className }) => {
+const CaseDetailHero = ({ tags, heading, para, heading_className, para_className, bg_image }) => {
   return (
     <div
       className="bg-cover bg-center bg-no-repeat relative"
-      style={{ backgroundImage: "url('/casestudy/casestudy-hero1.png')" }}
+      style={{ backgroundImage: `url(${bg_image || '/casestudy/casestudy-hero1.png'})` }}
     >
       <div className="w-full h-full min-h-[600px] md:min-h-screen xl:min-h-[900px] 2xl:min-h-[1000px] flex items-center">
         <div className="container mx-auto px-6 md:px-8 xl:px-12 2xl:px-16">
