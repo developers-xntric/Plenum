@@ -1,9 +1,7 @@
 "use client"
-import { motion } from "framer-motion";
-import Link from "next/link";
 import { useState } from "react";
 
-const servicesData = [
+export default function HomeServices({ servicesData = [
     {
         id: 1,
         title: "ERP Consulting & Implementation",
@@ -20,8 +18,7 @@ const servicesData = [
         id: 4,
         title: "Managed Cloud Services",
     },
-];
-export default function HomeServices() {
+] }) {
     const [openAccordion, setOpenAccordion] = useState(null);
 
     const toggleAccordion = (id) => {
@@ -40,10 +37,10 @@ export default function HomeServices() {
                         {/* LEFT */}
                         <div className="space-y-2 md:space-y-6 w-full md:w-[80%]">
                             <div className="relative font-medium">
-                                <h2 className="text-[30px] lg:text-[50px] xl:text-[57.375px] font-semibold text-secondary opacity-[0.8] inline-block md:block font-['Archivo'] tracking-tighter">
+                                <h2 className="text-[30px] lg:text-[50px] xl:text-[50px] font-semibold text-secondary opacity-[0.8] inline-block md:block font-['Archivo'] tracking-tighter">
                                     Technologies
                                 </h2>
-                                <h2 className="text-[30px] lg:text-[50px] xl:text-[57.375px] font-semibold text-secondary opacity-[0.8] inline-block lg:block md:mx-0 mx-2 font-['Archivo'] tracking-tighter mt-[-32px]">
+                                <h2 className="text-[30px] lg:text-[50px] xl:text-[50px] font-semibold text-secondary opacity-[0.8] inline-block lg:block md:mx-0 mx-2 font-['Archivo'] tracking-tighter mt-[-32px]">
                                     Implemented
                                 </h2>
                             </div>
