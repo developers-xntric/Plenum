@@ -13,15 +13,15 @@ import React from 'react'
 const About = () => {
   return (
     <div>
-      {/* <AboutHero /> */}
-      <div className="2xl:max-w-[1440px] mx-auto w-[90%]">
+      <AboutHero />
+      <div className="2xl:max-w-[1440px] mx-auto w-[90%] py-10 md:py-14">
         <BrandSlider brand_icons={service_brand_icons} text={"Trusted by world's most exciting brands"} />
       </div>
       <WhoWeAre/>
       <OurPurpose/>
+      <About4/>
       <TabsSection />
       <LeadershipSection />
-      <About4/>
       <OurPeopleSection/>
     </div>
   )

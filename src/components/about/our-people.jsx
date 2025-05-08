@@ -24,10 +24,10 @@ export default function OurPeopleSection() {
   ])
 
   return (
-    <section className="py-16 px-4 md:px-8 lg:px-16 max-w-7xl mx-auto">
+    <section className="py-16 px-4 md:px-8 lg:px-16 max-w-7xl mx-auto font-['Archivo']">
       <div className="text-center mb-16">
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Our People</h2>
-        <p className="text-gray-600 max-w-3xl mx-auto text-lg">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl mb-6 text-[#101010]">Our People</h2>
+        <p className="text-secondary opacity-[0.6] font-medium max-w-3xl mx-auto text-lg">
           Our vision goes beyond just providing IT services; we aim to empower businesses in the Middle East to be
           self-sufficient and prepared for the technological changes in the new age.
         </p>
@@ -50,11 +50,7 @@ export default function OurPeopleSection() {
                 quality={90}
               />
             </div>
-            <div className="p-6">
-              <h3 className="font-semibold text-xl mb-1 group-hover:text-[#F26B44] transition-colors duration-300">
-                &nbsp;
-              </h3>
-            </div>
+            
           </div>
         ))}
       </div>

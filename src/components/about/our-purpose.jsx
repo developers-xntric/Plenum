@@ -3,7 +3,7 @@ import React from 'react'
 
 function OurPurpose() {
     return (
-        <section className={`w-full py-12 md:pb-16 pb-0 md:py-16 lg:py-20 font-["Archivo"] `}>
+        <section className={`w-full py-12 md:pb-16 pb-14 md:py-16 lg:py-20 font-["Archivo"] `}>
             <div className="max-w-[90%] 2xl:max-w-[1440px] mx-auto">
                 <div className={`flex flex-col lg:flex-row gap-8 md:gap-12 lg:gap-12 xl:gap-20  `}>
                     <div className="w-full lg:w-1/2">
