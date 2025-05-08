@@ -30,9 +30,9 @@ export default function Personalization({heading1, para1, para2, number1, number
                 <div className="flex items-center  gap-5">
 
                     {/* LEFT CIRCLE */}
-                    <div className='md:w-60 w-[50%] h-[130px] md:h-60 overflow-hidden rounded-full bg-[#F6F6F6] border-[0.9px] border-white relative flex items-center justify-center'>
+                    <div className='md:w-60 w-[50%] h-[130px] md:h-60 overflow-hidden rounded-full blurd-2xl bg-[#F6F6F6] border-[0.9px] border-white relative flex items-center justify-center'>
                         {/* Blurred background */}
-                        <div className="absolute md:w-40 w-20 h-36 md:h-40 rounded-full bg-[#FFB9A6] blur-xl opacity-70" />
+                        <div className="absolute md:w-40 w-20 h-20 md:h-40 rounded-full bg-[#FFB9A6] blur-xl opacity-70" />
 
                         {/* Text content */}
                         <div className="relative z-10 flex flex-col items-center justify-center text-center">
@@ -46,7 +46,7 @@ export default function Personalization({heading1, para1, para2, number1, number
 
                     <div className='md:w-60 w-[50%] h-[130px] md:h-60 overflow-hidden rounded-full bg-[#F6F6F6] border-[0.9px] border-white relative flex items-center justify-center'>
                         {/* Blurred background */}
-                        <div className="absolute md:w-40 w-20 h-36 md:h-40 rounded-full bg-[#87ECBA] blur-xl opacity-70" />
+                        <div className="absolute md:w-40 w-20 h-20 md:h-40 rounded-full bg-[#87ECBA] blur-xl opacity-70" />
 
                         {/* Text content */}
                         <div className="relative z-10 flex flex-col items-center justify-center text-center">
