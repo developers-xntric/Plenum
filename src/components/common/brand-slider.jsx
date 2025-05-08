@@ -23,9 +23,9 @@ export default function BrandSlider({ text, brand_icons, width }) {
     }, []);
 
     return (
-        <div className="relative overflow-hidden flex items-center w-full">
+        <div className="relative overflow-hidden flex items-center w-full h-full">
             {/* Left side - Text */}
-            <div className="relative z-30 md:bg-white pr-10 py-2">
+            <div className="relative z-30 -top-0 md:bg-white pr-10 py-2">
                 <h2 className="text-secondary opacity-70 text-base leading-[20px] font-medium font-['Archivo'] w-[150px] md:block hidden">
                     {text}
                 </h2>
@@ -35,7 +35,7 @@ export default function BrandSlider({ text, brand_icons, width }) {
             {/* Moving Icons */}
             <motion.div
                 key={duration}
-                className="flex gap-4 md:gap-16 md:ml-4 w-full"
+                className="flex gap-8 md:gap-16 md:ml-4 w-full"
                 initial={{ x: 0 }}
                 animate={{ x: "-100%" }}
                 transition={{
@@ -47,7 +47,7 @@ export default function BrandSlider({ text, brand_icons, width }) {
 
                 {loopIcons.map((icon, index) => (
                     <div key={index} className="flex-shrink-0">
-                        <Image src={icon} alt={`Icon ${index}`} width={width ? width : 190} height={170} />
+                        <Image src={icon} alt={`Icon ${index}`} width={width ? width : 170} height={1} />
                     </div>
                 ))}
             </motion.div>
