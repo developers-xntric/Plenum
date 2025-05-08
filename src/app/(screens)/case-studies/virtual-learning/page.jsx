@@ -36,8 +36,8 @@ export default function BrandOSPage() {
                 tags={"Education"}
                 heading={"Virtual Learning Platform – Custom LMS for Digital Education "}
                 para={"Designed and launched a fully functional, mobile-first Learning Management System with automated grading, video lessons, and parent insights. "}
-                heading_className={"lg:max-w-[870px]"}
-                para_className={"lg:max-w-[620px]"}
+                heading_className={"lg:max-w-[800px]"}
+                para_className={"lg:max-w-[680px]"}
                 bg_image={"/casestudy/casestudy-hero4.png"}
             />
             <Section2
