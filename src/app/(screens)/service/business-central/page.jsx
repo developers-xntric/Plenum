@@ -28,10 +28,7 @@ const BuisnessCentral = () => {
                 heading_className={"w-[88%] mt-10 lg:mt-0 lg:max-w-[95%]"}
                 para_className={"w-[60%] lg:w-[65%]"}
             />
-            <ERPAccordin items={Oracleitems} className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={bc_service} left={true} blackSection={bc_service_black} />
-            <ERPAccordin data={businessSer} className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={bc_service} left={true} blackSection={bc_service_black} />
-
-            <ERPAccordin data={businessSer} className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={bc_service} left={true} blackSection={bc_service_black} />
+            <ERPAccordin items={businessSer} className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={bc_service} left={true} blackSection={bc_service_black} />
             <MobilitySolutions
                 card_className={"w-[300px] h-[200px]"}
                 className={"flex flex-wrap gap-10 justify-center"}

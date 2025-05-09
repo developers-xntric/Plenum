@@ -1,13 +1,6 @@
 "use client"
 import { ArrowUpRight } from "lucide-react"
 import { useState } from "react"
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 import { motion } from "framer-motion";
 const AccordionItem = ({ title, description, isOpen, onToggle, index }) => {
     return (
@@ -72,17 +65,9 @@ const AccordionItem = ({ title, description, isOpen, onToggle, index }) => {
 };
 
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-export function Accordion({items}) {
-=======
-export function Accordion({data}) {
->>>>>>> Stashed changes
-=======
-export function Accordion({data}) {
->>>>>>> Stashed changes
-    `  `
-    const [openIndex, setOpenIndex] = useState(0) // Default first item open
+
+export function Accordion({ items }) {
+    const [openIndex, setOpenIndex] = useState(0)
 
     const handleToggle = (index) => {
         setOpenIndex(openIndex === index ? index : index)
@@ -91,7 +76,7 @@ export function Accordion({data}) {
     return (
         <div className="space-y-6">
             <div className="space-y-1">
-                {data.map((item, index) => (
+                {items.map((item, index) => (
                     <AccordionItem
                         key={index}
                         index={index}
