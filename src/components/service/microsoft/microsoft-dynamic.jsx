@@ -57,13 +57,13 @@ export default function MicrosoftDynamic({
       <div className="2xl:max-w-[1300px] max-w-[90%] mx-auto">
         {/* Headings */}
         <div className="text-left md:text-center mb-8 md:mb-12">
-          <h1 className={`text-[30px] font-semibold leading-[34px] md:leading-[55px] opacity-85 ${bgColor === "black" ? "text-white text-center" : "home-section-headings text-left md:text-center"} md:text-3xl lg:text-[50px]`}>
+          <h1 className={`text-[30px] font-semibold leading-[34px] md:leading-[55px] opacity-85 ${bgColor === "black" ? "text-white text-center" : "home-section-headings text-center"} md:text-3xl lg:text-[50px]`}>
             {heading1}
           </h1>
-          <h1 className={`text-3xl opacity-85 lg:text-[50px] font-semibold ${bgColor === "black" ? "text-white text-center" : "home-section-headings text-left md:text-center"} mb-4`}>
+          <h1 className={`text-3xl opacity-85 lg:text-[50px] font-semibold ${bgColor === "black" ? "text-white text-center" : "home-section-headings text-center"} mb-4`}>
             {heading2}
           </h1>
-          <p className={`text-sm md:text-base font-medium ${bgColor === "black" ? "text-center" : "text-left md:text-center"} opacity-60 md:max-w-2xl mx-auto ${paraClass}`}>
+          <p className={`text-sm md:text-base font-medium ${bgColor === "black" ? "text-center" : "text-center"} opacity-60 lg:max-w-[60%] mx-auto ${paraClass}`}>
             {para}
           </p>
         </div>

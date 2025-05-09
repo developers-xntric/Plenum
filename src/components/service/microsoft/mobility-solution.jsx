@@ -85,8 +85,8 @@ export default function MobilitySolutions({
                     className="w-10 h-10"
                   />
                   <h3 className="text-[20px] font-semibold text-gray-800">{solution.title}</h3>
-                  <p className="text-xs text-[#4D4D56]">
-                    Solution is easy to use and totally customizable to your business needs.
+                  <p className="text-xs 2xl:text-base text-[#4D4D56]">
+                    {solution.description || "Solution is easy to use and totally customizable to your business needs."}
                   </p>
                 </div>
               </CarouselItem>
@@ -124,7 +124,7 @@ export default function MobilitySolutions({
         </Carousel>
       ) : (
         // Desktop grid view
-        <div className={`${className} gap-5 xl:gap-8 2xl:gap-10`}>
+        <div className={`${className} gap-5 xl:gap-8 2xl:gap-10 md:mt-14`}>
           {solutions.map((solution, index) => (
             <div
               key={index}
@@ -141,9 +141,9 @@ export default function MobilitySolutions({
                 className="w-10 h-10"
               />
               <h3 className="text-[20px] font-semibold text-gray-800">{solution.title}</h3>
-              <p className="text-xs text-[#4D4D56]">
-                Solution is easy to use and totally customizable to your business needs.
-              </p>
+              <p className="text-xs 2xl:text-base text-[#4D4D56]">
+                    {solution.description || "Solution is easy to use and totally customizable to your business needs."}
+                  </p>
             </div>
           ))}
         </div>

@@ -46,8 +46,8 @@ export const md_service = {
 }
 
 export const md_service_black = {
-    heading: "Innovation That Powers Your Potential",
-    para: "Plenum’s smart, adaptable solutions are built to transform how businesses operate. We focus on simplifying complexity and enabling scalable, strategic growth across industries.",
+    heading: "Your Trusted Microsoft Dynamics Partner",
+    para: "We help deliver tailored solutions across the Microsoft Dynamics ecosystem, including ERPs, CRMs, industry-specific modules, and advanced analytics dashboards.",
     button: "Get in touch"
 }
 

@@ -25,7 +25,7 @@ export function useWindowWidth() {
 const Service_Inner_Hero = ({ heading, para, is_space_in_image = true, image, image_className, button_text, button_className, isERP = false, isBottomButton = true }) => {
   const width = useWindowWidth();
   return (
-    <div className='md:h-screen 2xl:h-[800px] overflow-hidden'>
+    <div className='lg:h-screen xl:h-[800px] 2xl:h-[800px] overflow-hidden'>
       {/* Wrapper */}
       <div className='2xl:max-w-[1440px] h-full lg:w-[90%] mx-auto my-auto space-y-20 pt-16 md:py-16 lg:py-28'>
         <div className='flex lg:flex-row flex-col items-center md:items-start lg:items-center w-full justify-between gap-8 lg:gap-0 mt-12 lg:mt-0'>
@@ -34,7 +34,7 @@ const Service_Inner_Hero = ({ heading, para, is_space_in_image = true, image, im
             {/* Heading */}
             <h1 className={`text-secondary ${width < 350 && "text-[38px]"} text-[39px] lg:text-[50px] font-["Chakra"] leading-[42px] md:leading-[55px] font-semibold home-section-headings`}>{heading}</h1>
             {/* Paragraph */}
-            <p className='text-secondary font-normal text-[18px] opacity-60 w-[95%]'>{para}</p>
+            <p className='text-secondary font-medium text-[18px] opacity-60 font-["Archivo"] w-[80%]'>{para}</p>
             {/* Button */}
             {!isBottomButton && <Button text={button_text || "Let's Talk"} link={"/contact"} className={button_className ? button_className : "px-10 py-2.5 bg-[#FF6035]  hover:bg-black hover:transition-colors ease-in-out duration-300 hover:text-white text-white"} />}
           </div>
@@ -48,7 +48,7 @@ const Service_Inner_Hero = ({ heading, para, is_space_in_image = true, image, im
           {/* Image */}
           <Image src={image} alt='ERPC' width={1500} height={1500} />
         </div>}
-        <div className="flex justify-center">
+        <div className="flex justify-center lg:justify-start">
           {isBottomButton && <Button text={button_text || "Let's Talk"} link={"/contact"} className={button_className ? button_className : "px-10 py-2.5 bg-[#FF6035]  hover:bg-black hover:transition-colors ease-in-out duration-300 hover:text-white text-white"} />}
         </div>
       </div>

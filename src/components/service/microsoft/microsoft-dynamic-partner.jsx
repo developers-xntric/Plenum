@@ -6,7 +6,7 @@ import { useState } from 'react';
 export default function MicrosoftDynamicPartner() {
   const [activeTab, setActiveTab] = useState('Dynamics 365 CE/CRM');
 
-  const tabs = ['Dynamics ERP', 'Dynamics 365 CE/CRM', 'Dynamics Modules'];
+  const tabs = ['Modular Solutions', 'Dynamics ERP Solutions', 'Dynamics 365 CE/CRM'];
 
   return (
     <div className="text-center py-16 bg-white">
@@ -15,13 +15,13 @@ export default function MicrosoftDynamicPartner() {
         {/* Headings */}
         <div className="space-y-6">
           <h1 className="text-[30px] lg:text-[50px] leading-[34px] lg:leading-[55px] sm:w-[400px] lg:w-[700px] mx-auto text-center font-['Archivo'] text-secondary font-semibold home-section-headings">
-            Microsoft Dynamics Partner with Diverse Expertise
+            Your Trusted Microsoft Dynamics Partner
             {/* <span className="block text-[30px] lg:text-[50px] leading-[34px] lg:leading-[55px] font-['Archivo'] text-secondary font-semibold">
               with Diverse Expertise
             </span> */}
           </h1>
-          <p className="text-secondary font-medium font-['Archivo'] sm:text-lg opacity-75 mx-auto md:w-[70%] lg:w-[55%] xl:max-w-[40%]">
-            15+ years of experience in working with different Microsoft Dynamics ERPs, CRMs and Modules.
+          <p className="text-secondary font-medium font-['Archivo'] sm:text-lg opacity-75 mx-auto lg:w-[70%] lg:w-[70%] xl:max-w-[50%]">
+          With over 15 years of hands-on experience, Plenum specializes in delivering tailored solutions across the Microsoft Dynamics ecosystem, including ERPs, CRMs, industry-specific modules, and advanced analytics dashboards.
           </p>
         </div>
 
@@ -44,7 +44,7 @@ export default function MicrosoftDynamicPartner() {
 
           {/* Tab Content */}
           <div className="w-full h-[80%] md:h-[90vh] lg:h-[40vh]  xl:h-[450px] 2xl:h-[580px] mx-auto">
-            {activeTab === 'Dynamics ERP' && (
+            {activeTab === 'Modular Solutions' && (
               <div className="flex flex-col lg:flex-row gap-8 lg:gap-10 items-center justify-center ">
                 {/* Left Section - Image */}
                 <div className="w-full lg:w-1/2 xl:w-[60%] lg:p-4">
@@ -60,41 +60,41 @@ export default function MicrosoftDynamicPartner() {
                 {/* Right Section - Text */}
                 <div className="w-full lg:w-1/2 lg:p-4 space-y-4">
                   <h2 className="text-[25px] md:text-3xl  text-start lg:max-w-[80%] 2xl:max-w-[60%] font-['Archivo'] text-secondary font-semibold opacity-95">
-                    Dynamics 365 CE/CRM solutions by Plenum
+                  Dynamics ERP Solutions
                   </h2>
                   <p className="text-secondary text-start font-medium font-['Archivo'] opacity-75 w-[45% xl:max-w-[85%] ">
-                    Plenum is a Microsoft Dynamics partner that offers cloud-based Dynamics 365 CE/CRM business solutions geared towards improving sales productivity through better-managed customer interactions. You can add value to your social media marketing, improve business intelligence, and manage your entire campaign all from one location.
+                  Streamline core business operations with powerful, scalable ERP systems. Enhance productivity, unify departments, and make smarter decisions with real-time data and automation.
+                  </p>
+                </div>
+              </div>
+            )}
+
+            {activeTab === 'Dynamics ERP Solutions' && (
+              <div className="flex flex-col lg:flex-row gap-8 lg:gap-10 items-center justify-center ">
+                {/* Left Section - Image */}
+                <div className="w-full lg:w-1/2 xl:w-[60%] lg:p-4">
+                  <Image
+                    src="/images/service/microsoft-dynamics/microsoft-tab2.webp"
+                    alt="Analytics Dashboard"
+                    width={1000}
+                    height={1000}
+                    className="object-cover "
+                  />
+                </div>
+
+                {/* Right Section - Text */}
+                <div className="w-full lg:w-1/2 lg:p-4 space-y-4">
+                  <h2 className="text-[25px] md:text-3xl  text-start lg:max-w-[80%] 2xl:max-w-[60%] font-['Archivo'] text-secondary font-semibold opacity-95">
+                  Dynamics ERP Solutions
+                  </h2>
+                  <p className="text-secondary text-start font-medium font-['Archivo'] opacity-75 w-[45% xl:max-w-[85%] ">
+                  Streamline core business operations with powerful, scalable ERP systems. Enhance productivity, unify departments, and make smarter decisions with real-time data and automation.
                   </p>
                 </div>
               </div>
             )}
 
             {activeTab === 'Dynamics 365 CE/CRM' && (
-              <div className="flex flex-col lg:flex-row gap-8 lg:gap-10 items-center justify-center ">
-                {/* Left Section - Image */}
-                <div className="w-full lg:w-1/2 xl:w-[60%] lg:p-4">
-                  <Image
-                    src="/images/service/microsoft-dynamics/microsoft-tab2.webp"
-                    alt="Analytics Dashboard"
-                    width={1000}
-                    height={1000}
-                    className="object-cover "
-                  />
-                </div>
-
-                {/* Right Section - Text */}
-                <div className="w-full lg:w-1/2 lg:p-4 space-y-4">
-                  <h2 className="text-[25px] md:text-3xl  text-start lg:max-w-[80%] 2xl:max-w-[60%] font-['Archivo'] text-secondary font-semibold opacity-95">
-                    Dynamics 365 CE/CRM solutions by Plenum
-                  </h2>
-                  <p className="text-secondary text-start font-medium font-['Archivo'] opacity-75 w-[45% xl:max-w-[85%] ">
-                    Plenum is a Microsoft Dynamics partner that offers cloud-based Dynamics 365 CE/CRM business solutions geared towards improving sales productivity through better-managed customer interactions. You can add value to your social media marketing, improve business intelligence, and manage your entire campaign all from one location.
-                  </p>
-                </div>
-              </div>
-            )}
-
-            {activeTab === 'Dynamics Modules' && (
               <div className="flex flex-col items-center justify-center h-full bg-gray-100">
                 <h2 className="text-3xl font-['Archivo'] text-secondary font-semibold">
                   ERP Services in Qatar
