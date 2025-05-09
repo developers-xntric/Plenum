@@ -14,14 +14,14 @@ export const bottomSection2 = {
 }
 
 export const blackSection = {
-    heading: "Why Businesses in the Middle East Choose Our ERP Services",
-    para: "With rapid economic diversification and digital transformation shaping the region, organizations in the GCC require localized, agile ERP solutions. Our services are designed to support regional regulations, Arabic interfaces, and sector-specific requirements, making us a trusted partner for ERP implementation services in the Gulf",
+    heading: "Ready to Transform Your Business?",
+    para: "We help businesses unlock their full potential with expert ERP consulting and implementation. Whether you're seeking strategic ERP consultation or full-scale deployment, we’re here to guide you every step of the way.",
     button: "Get in touch"
 }
 
 export const blackSection2 = {
-    heading: "Ready to Transform Your Business?",
-    para: "We help businesses unlock their full potential with expert ERP consulting and implementation. Whether you're seeking strategic ERP consultation or full-scale deployment, we’re here to guide you every step of the way",
+    heading: "Why Businesses in the Middle East Choose Our ERP Services",
+    para: "With rapid economic diversification and digital transformation shaping the region, organizations in the GCC require localized, agile ERP solutions. Our services are designed to support regional regulations, Arabic interfaces, and sector-specific requirements, making us a trusted partner for ERP implementation services in the Gulf.",
     button: "Get in touch"
 }
 
