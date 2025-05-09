@@ -40,7 +40,7 @@ export default function HouseAIProduct({ heading , paragraph, card1Para, card2Pa
               <div className='space-y-2'>
                 <div className="flex justify-between items-start ">
                   <h3 className="text-[22px] md:text-[30.816px] font-medium font-['Archivo']">Momentum AI</h3>
-                  <Link href="product" className="text-primary flex items-center gap-2 underline underline-offset-4 cursor-pointer z-40 text-[11.279px] md:text-[13.696px] my-auto">
+                  <Link href="/product/momentum-ai" className="text-primary flex items-center gap-2 underline underline-offset-4 cursor-pointer z-40 text-[11.279px] md:text-[13.696px] my-auto">
                     <motion.div
                       whileHover="hover"
                       className="text-primary flex items-center gap-2 underline underline-offset-4 cursor-pointer z-40"
@@ -111,7 +111,7 @@ export default function HouseAIProduct({ heading , paragraph, card1Para, card2Pa
               <div className='space-y-2'>
                 <div className="flex justify-between items-start">
                   <h3 className="text-[22px] md:text-[30.816px] font-medium font-['Archivo']">Vertical builds</h3>
-                  <Link href="/product" className="text-primary flex items-center gap-2 underline underline-offset-4 cursor-pointer z-40 text-[11.279px] md:text-[14px] my-auto">
+                  <Link href="/product/vertical-builds" className="text-primary flex items-center gap-2 underline underline-offset-4 cursor-pointer z-40 text-[11.279px] md:text-[14px] my-auto">
                     <motion.div
                       whileHover="hover"
                       className="text-primary flex items-center gap-2 underline underline-offset-4 cursor-pointer z-40"
