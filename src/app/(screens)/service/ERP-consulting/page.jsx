@@ -23,7 +23,7 @@ const ERPConsulting = () => {
                 isERP={true}
                 isBottomButton={false}
             />
-            <div className='2xl:max-w-[1440px] h-full w-[90%] mx-auto space-y-20 py-16'>
+            <div className='2xl:max-w-[1440px] h-full w-[90%] mx-auto space-y-20 lg:pb-16 pb-10  lg:py-16'>
                 <BrandSlider
                     text={"Trusted by world's most exciting brands"}
                     brand_icons={service_brand_icons} />
@@ -38,8 +38,6 @@ const ERPConsulting = () => {
             <Testimonials testimonials={testimonials} />
             <ERPSolutionsBottomSection className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={bottomSection} left={true} blackSection={blackSection} />
             <ArticleSlider />
-            
-  
            
             <Blog heading='Discover Our Blog' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world" cardData={cardData} />
         </div>
