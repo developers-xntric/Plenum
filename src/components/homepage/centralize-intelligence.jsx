@@ -13,7 +13,7 @@ export default function CentralizeIntelligence() {
                 <div className="flex lg:flex-row flex-col text-center md:text-left items-center justify-between gap-5 md:gap-12">
                     {/* Column 1 */}
                     <div className="space-y-4 max-w-[50%">
-                        <h2 className="font-medium font-['Archivo'] text-black text-[20px]">Exceptional Design Meets Enterprise Functionality</h2>
+                        <h2 className="font-semibold font-['Archivo'] xl:w-[60%] 2xl:w-[70%] text-black text-[20px]">Exceptional Design Meets Enterprise Functionality</h2>
                         <p className="text-[15.232px] font-medium tracking-tight text-black opacity-[0.6]  xl:max-w-[80%]">
                             At Plenum, we don’t compromise on talent. We only hire senior-level designers with deep expertise across disciplines from UX to business systems so your project is always in the hands of specialists.
                         </p>
@@ -33,7 +33,7 @@ export default function CentralizeIntelligence() {
 
                     {/* Column 2 */}
                     <div className="space-y-4 max-w-[50%">
-                        <h2 className="font-medium font-['Archivo'] text-black text-[20px]">Speed That Doesn’t Sacrifice Quality</h2>
+                        <h2 className="font-semibold  font-['Archivo'] text-black text-[20px]">Speed That Doesn’t Sacrifice Quality</h2>
                         <p className="text-[15.232px] font-medium tracking-tight text-black opacity-[0.6]  xl:max-w-[80%]">
                             Need high-impact designs fast? Whether it’s wireframes in Figma or full product UIs, we deliver with lightning speed. Our weekly design sprints ensure constant progress, delivering updates every other day
                         </p>
@@ -53,7 +53,7 @@ export default function CentralizeIntelligence() {
 
                     {/* Column 3 */}
                     <div className="space-y-4 ">
-                        <h2 className="font-medium font-['Archivo'] text-black text-[20px]">Like Having Your Own Expert Team On-Demand</h2>
+                        <h2 className="font-semibold xl:w-[90%] 2xl:w-[80%]  font-['Archivo'] text-black text-[20px]">Like Having Your Own Expert Team On-Demand</h2>
                         <p className="text-[15.232px] font-medium tracking-tight text-black opacity-[0.6] lg:max-w-[80%]">
                             Think of us as an extension of your in-house team. Our flexible engagement model means you can scale up, shift focus, or pivot as your needs evolve—without breaking the bank.
                         </p>

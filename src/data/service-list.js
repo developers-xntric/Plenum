@@ -3,10 +3,10 @@ export const ServiceList = [
         id: 1,
         title: ["Managed Cloud", "Services"],
         description:
-            "We offer robust ERP solutions through Microsoft Dynamics. These solutions are designed to automate financial processes, optimize supply chains, and enhance customer relationship management.",
+            "With our extensive managed cloud services, you can simplify your infrastructure management and cloud migration.",
         names: [
-            "ERP consulting and implementation",
-            "ERP consulting and implementation",
+            "Microsoft Dynamics ERP Solutions",
+            "Oracle ERP Solutions",
         ],
         icon: (
             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
@@ -44,14 +44,17 @@ export const ServiceList = [
                 </defs>
             </svg>
         ),
-        link: "/service/ERP-consulting",
+        link: "/service",
     },
     {
         id: 2,
         title: ["ERP consulting and", "implementation"],
         description:
-            "We offer robust ERP solutions through Microsoft Dynamics. These solutions are designed to automate financial processes, optimize supply chains, and enhance customer relationship management.",
-        names: ["Oracle ERP Solutions", "Microsoft Dynamics ERP Solutions"],
+            "We create and implement ERP systems in a way that supports your changing needs while maximizing your technology investments. ",
+            names: [
+                "Microsoft Dynamics ERP Solutions",
+                "Oracle ERP Solutions",
+            ],
         icon: (
             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                 <g clipPath="url(#clip0_1267_33400)">
@@ -96,13 +99,13 @@ export const ServiceList = [
                 </defs>
             </svg>
         ),
-        link: "/service/ERP-consulting",
+        link: "/service",
     },
     {
         id: 3,
         title: ["AI consulting, governance", "and implementation"],
         description:
-            "We offer robust ERP solutions through Microsoft Dynamics. These solutions are designed to automate financial processes, optimize supply chains, and enhance customer relationship management.",
+            "Our AI solutions provide fast and actionable insights in real-time, regulatory compliance, and allow your teams to make better and faster decisions. ",
         names: [
             "ERP consulting and implementation",
             "ERP consulting and implementation",
@@ -148,13 +151,13 @@ export const ServiceList = [
                 </defs>
             </svg>
         ),
-        link: "/services/ai-consulting",
+        link: "/services",
     },
     {
         id: 4,
         title: ["Digital", "Experiences"],
         description:
-            "We offer robust ERP solutions through Microsoft Dynamics. These solutions are designed to automate financial processes, optimize supply chains, and enhance customer relationship management.",
+            "We craft immersive digital journeys that blend innovation, design, and technology to captivate users and elevate enterprises. ",
         names: [
             "ERP consulting and implementation",
             "ERP consulting and implementation",
@@ -200,6 +203,6 @@ export const ServiceList = [
                 </defs>
             </svg>
         ),
-        link: "/services/digita-experiences",
+        link: "/services",
     },
 ];

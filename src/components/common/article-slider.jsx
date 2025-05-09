@@ -8,7 +8,7 @@ import Link from "next/link"
 import { articles } from "@/data/article"
 import { motion } from "framer-motion";
 
-export default function ArticleSlider({ bg = "black" }) {
+export default function ArticleSlider({ bg = "black",title , paragraph }) {
     const [activeIndex, setActiveIndex] = useState(0)
     const [isAnimating, setIsAnimating] = useState(false)
     const carouselRef = useRef(null)
@@ -128,11 +128,10 @@ export default function ArticleSlider({ bg = "black" }) {
     return (
         <div className={`w-full ${bg == "black" ? "bg-[#282526]" : "bg-white"}  text-white py-14 lg:py-20 font-['Archivo']`}>
             <div className="w-[95%] ms-auto">
-                <div className="max-w-full ms-auto 2xl:max-w-[93%]">
-                    <h2 className={` ${bg == "black" ? "text-white" : "text-[#101010]"} text-3xl md:text-left text-center font-semibold mb-6 md:mb-2 lg:mb-6 text-[30px] lg:text-[50px]`}>Discover Our Articles</h2>
-                    <p className={` ${bg == "black" ? "text-[#FFF]" : "text-[#101010]"}  md:text-left text-center opacity-60 text-[14] md:text-[15px] mb-10 md:max-w-[70%] lg:max-w-xl`}>
-                        Explore our latest posts for insights in design, learning, and innovation. Stay updated with trends and
-                        breakthroughs in the creative world.
+                <div className="max-w-full ms-auto ">
+                    <h2 className={` ${bg == "black" ? "text-white" : "text-[#101010]"} text-3xl md:text-left text-center font-semibold mb-6 md:mb-2 lg:mb-6 text-[30px] lg:text-[50px]`}>{title || "Discover Our Articles"}</h2>
+                    <p className={` ${bg == "black" ? "text-[#FFF]" : "text-[#101010]"}  md:text-left text-center opacity-60 text-[14] md:text-[15px] mb-10 md:w-[420px] `}>
+                        {paragraph || "Explore our latest posts for insights in design, learning, and innovation. Stay updated with trends breakthroughs in the creative world."}
                     </p>
                     <div className="relative">
                         <div

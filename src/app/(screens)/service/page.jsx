@@ -6,19 +6,23 @@ import ServicesList from '@/components/service/services-list'
 import React from 'react'
 import { ServiceList } from "@/data/service-list";
 import ServiceContact from '@/components/service/service-contact';
+import ArticleSlider from '@/components/common/article-slider'
+import { Blog } from '@/components/homepage/blog'
+import { cardData } from '@/data/home-blog'
 
 const Service = () => {
     return (
         <div>
             <ServiceHero bgImage='/service/sp_herobg.webp' />
-            <div className='2xl:max-w-[1440px] h-full w-[90%] mx-auto space-y-20 py-6  md:py-16'>
+            <div className='2xl:max-w-[1440px] h-full w-[90%] mx-auto space-y-20 py-6  md:py-8'>
                 <BrandSlider
                     text={"Trusted by world's most exciting brands"}
                     brand_icons={service_brand_icons} />
             </div>
             <PinkSection
                 heading={"Scalable Expertise When You Need It"}
-                text={"Plenum Tech delivers advanced Enterprise Technology Platforms tailored to streamline operations and optimize workflows. Our solutions are designed to drive business growth and scalability across industries."}
+                text={"With smart, scalable solutions catered to your company's specific requirements, you can revolutionize the way you operate and empower your employees across departments."}
+
             />
             <ServicesList serviceList={ServiceList} />
             <PinkSection
@@ -28,6 +32,8 @@ const Service = () => {
                 className="xl:h-[340px]"
                 isVideo={true}
             />
+            <ArticleSlider  title={"Discover Our Articles"} paragraph={"Insights & practical knowledge designed to help you navigate the digital landscape effectively. "}/>
+            <Blog heading='Discover Our Blogs' para="Stay updated with our ongoing blogs inclusive of tips, case study examples and expert views around the usage of AI, cloud services and ERP solutions to support business growth and operational effectiveness." cardData={cardData} />
             <ServiceContact />
         </div>
     )

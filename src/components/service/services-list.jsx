@@ -47,7 +47,7 @@ export default function ServicesList({ serviceList }) {
                                             ))}
                                         </h2>
 
-                                        <p className="text-secondary text-[15px] lg:text-[17px] text-center md:text-left opacity-[0.6] font-['Archivo'] mb-6 lg:max-w-[92%] xl:max-w-[78%] 2xl:max-w-[80%]">{service.description}</p>
+                                        <p className="text-secondary text-[15px] lg:text-[17px] text-center md:text-left opacity-[0.6] font-['Archivo'] mb-6 lg:max-w-[92%] xl:max-w-[78%] font-medium 2xl:max-w-[80%]">{service.description}</p>
                                     </div>
 
 
@@ -71,7 +71,7 @@ export default function ServicesList({ serviceList }) {
                                             whileHover="hover"
                                             className="text-primary flex  items-center gap-2 cursor-pointer z-40"
                                         >
-                                            View Service
+                                            View All
                                             <motion.svg
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 width="11"
