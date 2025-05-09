@@ -11,7 +11,7 @@ const ERPC2 = ({ heading, para }) => {
                     {/* Part 1 Left */}
                     <div className='lg:w-1/2 space-y-8 relative lg:bottom-8 py-14 lg:py-0'>
                         <div className=' xl:w-[539px] flex flex-col gap-4 lg:gap-12'>
-                            <h2 className='text-[30px] md:text-[35px] lg:w-[300px] xl:text-[48px] font-["Archivo"] md:leading-10 xl:leading-[55px] flex flex-col text-secondary font-semibold home-section-headings'>Smart ERP Solution</h2>
+                            <h2 className='text-[30px] md:text-[35px] lg:w-[500px] xl:text-[48px] font-["Archivo"] md:leading-10 xl:leading-[55px] flex flex-col text-secondary font-semibold home-section-headings'>Top Notch ERP Consulting and Implementation Services</h2>
                             <p className='text-secondary font-["Archivo"] opacity-75 font-medium text-[14px] md:text-[14px] xl:text-[18px]'>{para}</p>
                             <div className='flex gap-4'>
                                 <Button text={"Read More"} link={"/contact"} className={"px-8 sm:px-10 py-2.5  bg-[#FF6035] hover:bg-black hover:transition-colors ease-in-out duration-300 hover:text-white text-white"} />
