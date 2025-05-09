@@ -43,10 +43,10 @@ export default function Footer() {
               <div className="">
                 <Image src="/layout/footer-circle.webp" width={420} height={450} alt="footer-circle" className="" />
                 <div className="flex flex-col items-center justify-center text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full">
-                  <h3 className="text-3xl md:text-xl lg:text-3xl font-medium lg:mb-1 font-['Archivo']">Got a project?</h3>
-                  <p className="text-3xl md:text-xl lg:text-3xl  font-medium mb-7 font-['Archivo']">Want to collaborate?</p>
+                  <h3 className="text-3xl md:text-xl lg:text-3xl font-medium lg:mb-1 font-['Archivo']">Transform vision</h3>
+                  <p className="text-3xl md:text-xl lg:text-3xl  font-medium mb-7 font-['Archivo']">into impact</p>
                   <Link href="/contact" className="w-fit" >
-                  <ArrowButton text={"Discuss your project"} />
+                  <ArrowButton text={"Let's talk strategy"} />
                 </Link>
                 </div>
               </div>
@@ -102,10 +102,10 @@ export default function Footer() {
             <div className="">
               <Image src="/layout/footer-circle.webp" width={420} height={450} alt="footer-circle" className="" />
               <div className="flex flex-col items-center justify-center text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full">
-                <h3 className="md:text-xl lg:text-4xl font-semibold lg:mb-1 font-['Archivo']">Got a project?</h3>
-                <p className="md:text-xl lg:text-4xl  font-semibold mb-7 font-['Archivo']">Want to collaborate?</p>
+                <h3 className="md:text-xl lg:text-4xl font-semibold lg:mb-1 font-['Archivo']">Transform vision</h3>
+                <p className="md:text-xl lg:text-4xl  font-semibold mb-7 font-['Archivo']">into impact</p>
                 <Link href="/contact" className="w-fit" >
-                  <ArrowButton text={"Discuss your project"} />
+                  <ArrowButton text={"Let's talk strategy"} />
                 </Link>
               </div>
             </div>

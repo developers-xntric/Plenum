@@ -57,10 +57,10 @@ export default function Testimonials({ testimonials }) {
           <div className="hidden lg:flex justify-end items-center mb-4">
             <div className="flex absolute gap-4 md:left-[95%] mb-10">
               <div className="flex items-center gap-1">
-                <CarouselPrevious className="h-10 w-fit opacity-60 hover:bg-transparent border-none cursor-pointer shadow-none" />
+                <CarouselPrevious className="h-10 w-fit opacity-60 hover:bg-white border-none cursor-pointer shadow-none" />
               </div>
               <div className="flex items-center">
-                <CarouselNext className="h-10 w-fit hover:bg-transparent border-none cursor-pointer relative left-4 shadow-none" />
+                <CarouselNext className="h-10 w-fit hover:bg-white border-none cursor-pointer relative left-4 shadow-none" />
               </div>
             </div>
           </div>

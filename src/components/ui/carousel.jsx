@@ -161,7 +161,7 @@ function CarouselPrevious({
         orientation === "horizontal"
           ? "top-1/2 -left-14 -translate-y-1/2"
           : "-top-12 left-1/2 -translate-x-1/2 rotate-90",
-        !canScrollPrev ? "text-gray-400 cursor-not-allowed" : "text-secondary cursor-pointer",
+        !canScrollPrev ? "text-gray-900 cursor-not-allowed" : "text-secondary cursor-pointer",
         className
       )}
       disabled={!canScrollPrev}
@@ -171,8 +171,8 @@ function CarouselPrevious({
       <ArrowLeft className={cn("relative -left-[13px] top-[1px]", !canScrollPrev && "text-gray-600")} />
       <p
         className={cn(
-          "relative -left-4 font-medium home-section-headings",
-          !canScrollPrev ? "text-gray-300" : "text-secondary"
+          "relative -left-4 font-medium home-section-heading",
+          !canScrollPrev ? "text-black/50" : "text-secondary"
         )}
       >
         Prev
@@ -207,7 +207,7 @@ function CarouselNext({
       onClick={scrollNext}
       {...props}
     >
-      <ArrowRight className={cn("relative -right-1 top-[1px]", !canScrollNext && "text-gray-600")} />
+      <ArrowRight className={cn("relative -right-1 top-[1px]", !canScrollNext && "text-gray-500")} />
       <p
         className={cn(
           "relative right-14 font-medium home-section-headings",
