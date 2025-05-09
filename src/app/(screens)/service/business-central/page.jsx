@@ -11,38 +11,43 @@ import { Oracleitems } from '@/data/accordineData'
 import { bc_service, bc_service_black } from '@/data/erp-consulting-service'
 import { cardData } from '@/data/home-blog'
 import { testimonials } from '@/data/home-testimonials'
-import { services2 } from '@/data/microsoft'
+import { businessPage } from '@/data/microsoft'
 import { bc_solution } from '@/data/mobility-solutions'
+import { businessSer, capabilities } from '@/data/services'
 
 const BuisnessCentral = () => {
     return (
         <div>
             <New_Service_Inner_Hero
-                heading={"Unlocking Business Potential with Microsoft Dynamics 365 Business Central"}
-                para={"Transform Your Business with Microsoft Dynamics 365 Business Central by Plenum."}
+                heading={"Streamline Your Business With Dynamics 365 Business Central"}
+                para={"Dynamics 365 Business Central is a comprehensive cloud-based ERP solution designed to help small and medium-sized businesses manage finances, streamline operations, and improve customer interactions all from one unified platform."}
                 image={"/service/BC/BC_hero.svg"}
-                image_className="md:w-[500px] md:h-[300px] xl:w-[600px] xl:h-[500px]"
+                image_className="w-full"
                 button_text="Connect with our Experts"
                 isSlider={true}
-                heading_className={"w-[55%] mt-10 lg:mt-0 lg:max-w-[500px]"}
-                para_className={"w-[60%] lg:w-[70%]"}
+                heading_className={"w-[88%] mt-10 lg:mt-0 lg:max-w-[95%]"}
+                para_className={"w-[60%] lg:w-[65%]"}
             />
+<<<<<<< Updated upstream
             <ERPAccordin items={Oracleitems} className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={bc_service} left={true} blackSection={bc_service_black} />
+=======
+            <ERPAccordin data={businessSer} className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={bc_service} left={true} blackSection={bc_service_black} />
+>>>>>>> Stashed changes
             <MobilitySolutions
                 card_className={"w-[300px] h-[200px]"}
                 className={"flex flex-wrap gap-10 justify-center"}
                 solutions={bc_solution}
                 isCenter={true}
-                heading1={"Why Microsoft Dynamics"}
-                heading2={"365 Business Central?"}
-                para={"Unlock the full potential of your business with Microsoft Dynamics 365 Business Central.Here's why Microsoft Dynamics 365 Business Central is the solution of choice for organizations worldwide:"}
+                heading1={"Why Choose Microsoft Dynamics 365"}
+                heading2={"Business Central in Dubai?"}
+                para={"Working with a Microsoft Dynamics 365 Business Central Partner in the UAE ensures personalized implementation, tailored solutions, and local support to help your business grow confidently."}
             />
-            <MicrosoftDynamic heading1='One-stop Solution For Microsoft' heading2='Dynamics 365 Services' para='Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world' services={services2}
-                button={"Get in touch now"}
+            <MicrosoftDynamic heading1='Who Needs Microsoft Dynamics 365 Business Central?' para='Microsoft Dynamics 365 Business Central is an ideal solution for a wide range of businesses.' services={businessPage}
+                button={"Free consultation"}
                 className='flex flex-col items-center md:items-start text-center md:text-start'
                 bgColor='black'
             />
-            <Capabilities />
+            <Capabilities capabilities={capabilities} />
             <div className=''>
                 <PinkSection
                     heading={"Ready To Supercharge Your AI Workflow?"}

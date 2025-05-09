@@ -47,11 +47,11 @@ export default function MobilitySolutions({
 
   return (
     <section className="md:pb-12 pb-6 py-12 max-w-[90%] 2xl:max-w-[1440px] font-['Archivo'] mx-auto">
-      <div className={`mb-12 md:mb-8 ${isCenter ? "text-center" : "text-center md:text-left"}`}>
+      <div className={`mb-12 md:mb-12 ${isCenter ? "text-center" : "text-center md:text-left"}`}>
         <h2 className="text-2xl lg:text-[50px] font-semibold text-secondary home-section-headings leading-[40px]">
           {heading1 || "Mobility Solutions For"}
         </h2>
-        <h2 className="text-2xl lg:text-[50px] font-semibold text-secondary home-section-headings mb-4">
+        <h2 className="text-2xl lg:text-[50px] font-semibold text-secondary home-section-headings mb-6">
           {heading2 || "Microsoft Dynamics"}
         </h2>
         <p className={cn("text-[15px] text-[#101010] font-medium opacity-60 max-w-[540px]", isCenter && "mx-auto max-w-[690px]")}>
@@ -85,8 +85,13 @@ export default function MobilitySolutions({
                     className="w-10 h-10"
                   />
                   <h3 className="text-[20px] font-semibold text-gray-800">{solution.title}</h3>
+<<<<<<< Updated upstream
                   <p className="text-xs 2xl:text-base text-[#4D4D56]">
                     {solution.description || "Solution is easy to use and totally customizable to your business needs."}
+=======
+                  <p className="text-xs text-[#4D4D56]">
+                   {solution.para}
+>>>>>>> Stashed changes
                   </p>
                 </div>
               </CarouselItem>
