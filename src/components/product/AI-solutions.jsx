@@ -1,7 +1,23 @@
-import Image from "next/image";
+'use client'
+
 import Link from "next/link";
+import { useRef, useState } from "react";
+
 
 export default function AISolutions({ title, paragraph, image }) {
+    const [isPlaying, setIsPlaying] = useState(false)
+    const videoRef = useRef(null)
+    const togglePlay = () => {
+      if (videoRef.current) {
+        if (isPlaying) {
+          videoRef.current.pause()
+        } else {
+          videoRef.current.play()
+        }
+        setIsPlaying(!isPlaying)
+      }
+    }
+
     return (
         <section className='relative font-["Archivo"] bg-[#EFEFEF]'>
             <div className={` `}>
@@ -21,19 +37,22 @@ export default function AISolutions({ title, paragraph, image }) {
                         </div>
 
                     </div>
-                    <div className=' flex justify-center relative items-center md:w-[80%] 2xl:w-[50%] '>
-                        <Image src={image} alt='img' width={1000} height={1000} className='w-full h-72 md:h-full' />
-                        <div className="absolute inset-0 flex items-center justify-center">
-                            <button
-                                className="bg-white rounded-full cursor-pointer w-24 h-24 flex items-center justify-center shadow-lg hover:scale-105 transition-transform"
-                                aria-label="Play video"
-                            >
-                                <span className="text-gray-800 font-medium text-xs md:text-sm">Play</span>
-                            </button>
-                        </div>
+                    <div className="flex justify-center relative items-center md:w-[80%] 2xl:w-[50%]">
+                        <video
+                            ref={videoRef}
+                            className="w-full h-72 md:h-full object-cover"
+                            src="/product/momentum.mp4"
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                        />
                     </div>
+
                 </div>
+               <div>
             </div>
+        </div>
         </section>
     );
 }

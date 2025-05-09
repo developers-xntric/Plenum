@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback } from "react"
 import useEmblaCarousel from "embla-carousel-react"
-import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react"
+import { ChevronLeft, ChevronRight, ArrowUpRight } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 const industries = [
@@ -99,61 +99,35 @@ const industries = [
 ]
 
 export default function IndustryShowcase() {
-    const [currentIndex, setCurrentIndex] = useState(0)
-    const [emblaRefNav, emblaApiNav] = useEmblaCarousel({
-        loop: true,
-        dragFree: true,
-        containScroll: "keepSnaps",
-        align: "start",
-    })
+  const [currentIndex, setCurrentIndex] = useState(0)
+  const [emblaRefMain, emblaApiMain] = useEmblaCarousel({
+    loop: true,
+    draggable: false,
+  })
 
-    const [emblaRefMain, emblaApiMain] = useEmblaCarousel({
-        loop: true,
-        draggable: false,
-    })
+  const scrollPrev = useCallback(() => {
+    if (emblaApiMain) emblaApiMain.scrollPrev()
+  }, [emblaApiMain])
 
-    const scrollPrev = useCallback(() => {
-        if (emblaApiMain) emblaApiMain.scrollPrev()
-    }, [emblaApiMain])
+  const scrollNext = useCallback(() => {
+    if (emblaApiMain) emblaApiMain.scrollNext()
+  }, [emblaApiMain])
 
-    const scrollNext = useCallback(() => {
-        if (emblaApiMain) emblaApiMain.scrollNext()
-    }, [emblaApiMain])
+  // Sync the main carousel with the current index
+  useEffect(() => {
+    if (!emblaApiMain) return
 
-    // Auto-scroll the top navigation
-    useEffect(() => {
-        if (!emblaApiNav) return
+    const onSelect = () => {
+      setCurrentIndex(emblaApiMain.selectedScrollSnap())
+    }
 
-        const interval = setInterval(() => {
-            emblaApiNav.scrollNext()
-        }, 3000)
+    emblaApiMain.on("select", onSelect)
+    return () => {
+      emblaApiMain.off("select", onSelect)
+    }
+  }, [emblaApiMain])
 
-        return () => clearInterval(interval)
-    }, [emblaApiNav])
-
-    // Sync the main carousel with the current index
-    useEffect(() => {
-        if (!emblaApiMain) return
-
-        const onSelect = () => {
-            setCurrentIndex(emblaApiMain.selectedScrollSnap())
-        }
-
-        emblaApiMain.on("select", onSelect)
-        return () => {
-            emblaApiMain.off("select", onSelect)
-        }
-    }, [emblaApiMain])
-
-    // Sync the nav carousel with the main carousel
-    useEffect(() => {
-        if (!emblaApiNav || !emblaApiMain) return
-
-        emblaApiMain.on("select", () => {
-            const index = emblaApiMain.selectedScrollSnap()
-            emblaApiNav.scrollTo(index)
-        })
-    }, [emblaApiNav, emblaApiMain])
+  const N = industries.length
 
     return (
         <div className="2xl:max-w-[1440px] md:max-w-[90%] mx-auto md:rounded-3xl font-['Archivo'] md:mb-20 bg-secondary text-white overflow-hidden">
