@@ -6,6 +6,7 @@ import New_Service_Inner_Hero from '@/components/service/finance-and-opearations
 import OracleCloudFusionERP from '@/components/service/oracle-cloud-fusion/ocf-erp'
 import OrcaleFinancialFeature from '@/components/service/oracle-cloud-fusion/oracle-financial-feature'
 import PinkSection from '@/components/service/pink-section'
+import { Oracleitems } from '@/data/accordineData'
 import { ocf_service, ocf_service_black } from '@/data/erp-consulting-service'
 import { cardData } from '@/data/home-blog'
 import { testimonials } from '@/data/home-testimonials'
@@ -22,7 +23,7 @@ const OracleCloudFusion = () => {
                 heading_className={"w-[50%] leading-14"}
                 para_className={"w-[55%] lg:w-[60%] text-md"}
             />
-            <ERPAccordin className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={ocf_service} left={true} blackSection={ocf_service_black} />
+            <ERPAccordin items={Oracleitems} className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={ocf_service} left={true} blackSection={ocf_service_black} />
             <OracleCloudFusionERP />
             <OrcaleFinancialFeature />
             <div className='pt-20'>

@@ -7,6 +7,7 @@ import New_Service_Inner_Hero from '@/components/service/finance-and-opearations
 import MicrosoftDynamic from '@/components/service/microsoft/microsoft-dynamic'
 import MobilitySolutions from '@/components/service/microsoft/mobility-solution'
 import PinkSection from '@/components/service/pink-section'
+import { Oracleitems } from '@/data/accordineData'
 import { bc_service, bc_service_black } from '@/data/erp-consulting-service'
 import { cardData } from '@/data/home-blog'
 import { testimonials } from '@/data/home-testimonials'
@@ -26,7 +27,7 @@ const BuisnessCentral = () => {
                 heading_className={"w-[55%] mt-10 lg:mt-0 lg:max-w-[500px]"}
                 para_className={"w-[60%] lg:w-[70%]"}
             />
-            <ERPAccordin className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={bc_service} left={true} blackSection={bc_service_black} />
+            <ERPAccordin items={Oracleitems} className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={bc_service} left={true} blackSection={bc_service_black} />
             <MobilitySolutions
                 card_className={"w-[300px] h-[200px]"}
                 className={"flex flex-wrap gap-10 justify-center"}

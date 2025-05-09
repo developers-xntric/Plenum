@@ -14,8 +14,8 @@ export const bottomSection2 = {
 }
 
 export const blackSection = {
-    heading: "Powerful ERP Solutions Built for Growth",
-    para: "Plenum delivers intelligent, integrated platforms built to streamline processes, improve efficiency, and support strategic decision-making. Our premium solutions are tailored to accelerate business growth and ensure long-term scalability across industries.",
+    heading: "Unmatched Oracle ERP Solutions",
+    para: "Our core expertise lies in seamless ERP integration, specializing in Oracle ERP cloud solutions. From system implementation and legacy migration to workflow automation, data synchronization, and real-time analytics, our services are designed to enhance operational efficiency, reduce costs, and drive strategic growth.",
     button: "Get in touch"
 }
 
@@ -85,8 +85,8 @@ export const oracle_service = {
 }
 
 export const oracle_service_black = {
-    heading: "Improve Business Results + Gain Financial Clarity",
-    para: "Strong financial processes and data insights serve as he foundation for better business performance. Oracle cloud applications ERP is a complete, modern, cloud-based ERP solution that offers advanced capabilities such as AI to automate manual processes analytics to react to market shifts in real-time, automatics updates to stay current and gain a competitive advantage, and data-driven results that reinforce smart decision-making.",
+    heading: "Why Oracle Cloud Solutions are the Future of ERP",
+    para: "The Oracle Cloud ecosystem is built to modernize how organizations run their businesses. With smart automation, AI-driven insights, and scalable infrastructure, Oracle Cloud solutions provide more than just operational support—they enable strategic growth.",
     button: "Get in touch"
 }
 

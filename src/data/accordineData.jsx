@@ -1,17 +1,17 @@
-export const items = [
+export const Oracleitems = [
     {
         title: "AI-Driven Finance: Capitalizing on an Agentic Landscape",
         description:
-            "Watch this on-demand webinar to discover how AI can drive real business outcomes and prepare your organization for the future of finance. Make AI your competitive edge.",
+            "From procurement to financial planning, Oracle ERP modules offer functionality that spans every corner of your enterprise. Combined with our expertise, you’ll have a customized tech stack aligned with your goals.",
     },
     {
-        title: "Finance teams and AI: The future of efficiency",
+        title: "Streamline Operations with Oracle ERP’s End-to-End Solutions",
         description:
-            "Learn how finance teams are leveraging AI to streamline operations, reduce manual tasks, and focus on strategic decision-making.",
+        "From procurement to financial planning, Oracle ERP modules offer functionality that spans every corner of your enterprise. Combined with our expertise, you’ll have a customized tech stack aligned with your goals.",
     },
     {
-        title: "Empower financial excellence with AI agents for ERP",
+        title: "Empower Every Department with Oracle’s Integrated ERP Modules",
         description:
-            "Discover how AI agents can transform your ERP systems, providing intelligent automation and insights for financial operations.",
+        "From procurement to financial planning, Oracle ERP modules offer functionality that spans every corner of your enterprise. Combined with our expertise, you’ll have a customized tech stack aligned with your goals.",
     },
 ]

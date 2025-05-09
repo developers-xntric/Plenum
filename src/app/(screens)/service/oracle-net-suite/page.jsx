@@ -7,6 +7,7 @@ import MicrosoftCarousel from '@/components/service/microsoft/microsft-carousel'
 import NetSuiteCards from '@/components/service/oracle-net-suite/netsuite-cards'
 import OracleOneStopShop from '@/components/service/oracle-net-suite/oracle-one-stop-shop'
 import PinkSection from '@/components/service/pink-section'
+import { Oracleitems } from '@/data/accordineData'
 import { ons_service, ons_service_black, oracle_service, oracle_service_black } from '@/data/erp-consulting-service'
 import { cardData } from '@/data/home-blog'
 import { testimonials } from '@/data/home-testimonials'
@@ -25,7 +26,7 @@ const OracleNetSuite = () => {
                 heading_className={"w-[55%] mt-10 lg:mt-0 lg:max-w-[500px] leading-12"}
                 para_className={"w-[60%] lg:w-[70%]"}
             />
-            <ERPAccordin className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={ons_service} left={true} blackSection={ons_service_black} />
+            <ERPAccordin items={Oracleitems} className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={ons_service} left={true} blackSection={ons_service_black} />
             <OracleOneStopShop />
             <NetSuiteCards />
             <MicrosoftCarousel MicrosoftCarouselData={MicrosoftCarouselData} title={"Connect Your Favorite App to NetSuite Instantly"} para={"We offer pre-built NetSuite integrations for eCommerce platforms, CRMs, marketplaces, payment gateways, and 3PLs. Need something custom? We’ve got that too—with fast deployment and minimal coding."} />

@@ -6,36 +6,36 @@ import { useState } from 'react';
 export default function OracleResourcePlanning() {
     const [activeTab, setActiveTab] = useState('Financial Management');
 
-    const tabs = ['Financial Management', 'Project Management', 'Procurement', 'ERP Analytics'];
+    const tabs = ['Seamless Service Integration', 'Connected Cloud Platforms', 'Real-time Financial Insights', 'Tailored Workflow Automation'];
 
     return (
-        <div className="text-center pt-16 bg-white">
+        <div className="text-center pb-6 pt-16 bg-white">
             {/* WRAPPER */}
             <div className="2xl:max-w-[1440px] w-[90%] mx-auto space-y-8 lg:space-y-16">
                 {/* Headings */}
                 <div className="space-y-6">
                     <h2 className="text-[30px] lg:text-[50px] leading-[34px] md:w-[480px] lg:w-[680px] mx-auto lg:leading-[55px] font-['Archivo'] text-secondary font-semibold home-section-headings">
-                        Oracle Fusion Cloud Enterprise Resource Planning
+                        Oracle ERP Services For Best of Both Worldsing
 
                         {/* <span className="block text-[34px] lg:text-[50px] leading-[34px] lg:leading-[55px] font-['Archivo'] text-secondary font-semibold">
                             Resource Planning
                         </span> */}
                     </h2>
-                    <p className="text-secondary font-medium font-['Archivo'] sm:text-lg opacity-75 mx-auto md:w-[70%] lg:w-[55%] xl:max-w-[40%]">
-                        15+ years of experience in working with different Microsoft Dynamics ERPs, CRMs and Modules.
+                    <p className="text-secondary font-medium font-['Archivo'] sm:text-lg opacity-75 mx-auto lg:w-[70%]  xl:max-w-[60%]">
+                    Plenum's proprietary method seamlessly aligns with Oracle ERP Cloud, ideal for businesses seeking flexible integration and future-ready solutions.
                     </p>
                 </div>
 
                 <div>
                     {/* Tabs Section */}
-                    <div className="flex justify-center items-center gap-5 md:gap-14 lg:gap-14 xl:gap-32 2xl:gap-44 mb-10 border-b-2 w-full xl:max-w-[90%] mx-auto overflow-x-auto">
-                        {tabs.map((tab,index) => (
+                    <div className="flex justify-center items-center gap-5 md:gap-5 lg:gap-5 xl:gap-8 2xl:gap-10 mb-10 border-b-2 w-full xl:max-w-[90%] mx-auto overflow-x-auto">
+                        {tabs.map((tab, index) => (
                             <button
                                 key={tab}
                                 onClick={() => setActiveTab(tab)}
-                                className={`text-[15px] lg:text-[22px] flex-shrink-0 ${index === 0 ? "pl-[16rem] md:pl-[2rem] lg:pl-0" : ""} py-2 cursor-pointer pb-4 font-['Archivo'] text-secondary font-semibold home-section-headings ${activeTab === tab
-                                        ? 'text-[#FF6035] border-b-2 border-[#FF6035]'
-                                        : 'text-gray-400'
+                                className={`text-[15px] lg:text-[22px] flex-shrink-0 ${index === 0 ? "pl-[34rem] md:pl-[10rem] lg:pl-14" : ""} py-2 cursor-pointer pb-4 font-['Archivo'] text-secondary font-semibold home-section-headings ${activeTab === tab
+                                    ? 'text-[#FF6035] border-b-2 border-[#FF6035]'
+                                    : 'text-gray-400'
                                     } focus:outline-none`}
                             >
                                 {tab}

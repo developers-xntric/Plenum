@@ -24,7 +24,7 @@ const PinkSection = ({ heading, text, show_button = false, className, isVideo = 
                 </div>
 
                 {/* center heading and text */}
-                <div className='md:w-[720px] xl:w-[913px] mx-auto my-auto h-[141px]'>
+                <div className='md:w-[740px] xl:w-[955px] 2xl:w-[950px] mx-auto my-auto h-[141px]'>
                     <h2 className='text-secondary text-[30px] lg:text-[32px] lg:text-4xl xl:text-[45px] font-["Archivo"] text-center leading-[34px] md:leading-[55px] font-semibold home-section-headings'>{heading}</h2>
                     <p className='text-secondary opacity-60 md:text-[14px] xl:text-[18px] font-medium text-center font-["Archivo"] mt-4'>{text}</p>
                 </div>

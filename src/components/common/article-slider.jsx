@@ -127,7 +127,7 @@ export default function ArticleSlider({ bg = "black",title , paragraph }) {
 
     return (
         <div className={`w-full ${bg == "black" ? "bg-[#282526]" : "bg-white"}  text-white py-14 lg:py-20 font-['Archivo']`}>
-            <div className="w-[95%] ms-auto">
+            <div className="w-[95%] 2xl:w-[88%] ms-auto">
                 <div className="max-w-full ms-auto ">
                     <h2 className={` ${bg == "black" ? "text-white" : "text-[#101010]"} text-3xl md:text-left text-center font-semibold mb-6 md:mb-2 lg:mb-6 text-[30px] lg:text-[50px]`}>{title || "Discover Our Articles"}</h2>
                     <p className={` ${bg == "black" ? "text-[#FFF]" : "text-[#101010]"}  md:text-left text-center opacity-60 text-[14] md:text-[15px] mb-10 md:w-[70%] lg:w-[60%] xl:w-[40%] 2xl:w-[500px] `}>
