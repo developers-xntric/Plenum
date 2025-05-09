@@ -12,7 +12,12 @@ import { Blog } from '@/components/homepage/blog';
 import { cardData } from '@/data/home-blog';
 import { ERPAccordin } from '@/components/common/accordinService';
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 import { Oracleitems } from '@/data/accordineData';
+=======
+import IndustryShowcase from '@/components/homepage/case-study-new';
+import { finance } from '@/data/services';
+>>>>>>> Stashed changes
 =======
 import IndustryShowcase from '@/components/homepage/case-study-new';
 import { finance } from '@/data/services';
@@ -32,7 +37,11 @@ const FinanceOpearations = () => {
                 para_className={'lg:w-[80%]'}
             />
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             <ERPAccordin items={Oracleitems} className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={fao_service} left={true} blackSection={fao_service_black} />
+=======
+            <ERPAccordin data={finance}  className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={fao_service} left={true} blackSection={fao_service_black} />
+>>>>>>> Stashed changes
 =======
             <ERPAccordin data={finance}  className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={fao_service} left={true} blackSection={fao_service_black} />
 >>>>>>> Stashed changes

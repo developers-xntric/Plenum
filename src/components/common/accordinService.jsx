@@ -9,7 +9,11 @@ const ERPSolutions = ({ blackSection }) => {
         <section className='relative font-["Archivo"] bg-[#282526]'>
             <div className='max-w-[90%] xl:max-w-[75%] 2xl:max-w-[80%] mx-auto text-center py-16'>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                 <h2 className='text-[30px] lg:text-[50px] lg:leading-[50px] text-white xl:w-[85%] 2xl:w-[55%] mx-auto'>{blackSection.heading}</h2>
+=======
+                <h2 className='text-[30px] lg:text-[50px] lg:leading-[50px] text-white w-[80%] xl:w-[95%] 2xl:w-[65%] mx-auto'>{blackSection.heading}</h2>
+>>>>>>> Stashed changes
 =======
                 <h2 className='text-[30px] lg:text-[50px] lg:leading-[50px] text-white w-[80%] xl:w-[95%] 2xl:w-[65%] mx-auto'>{blackSection.heading}</h2>
 >>>>>>> Stashed changes
@@ -21,7 +25,11 @@ const ERPSolutions = ({ blackSection }) => {
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 export const ERPAccordin = ({ bottomSection, className, left, blackSection, items, para, arrow = false }) => {
+=======
+export const ERPAccordin = ({ bottomSection,data, className, left, blackSection, para, arrow = false }) => {
+>>>>>>> Stashed changes
 =======
 export const ERPAccordin = ({ bottomSection,data, className, left, blackSection, para, arrow = false }) => {
 >>>>>>> Stashed changes
@@ -32,7 +40,11 @@ export const ERPAccordin = ({ bottomSection,data, className, left, blackSection,
                 <div className={`${className}`}>
                     <div className='md:px-8 px-4 w-full lg:w-[50%] 2xl:w-[60%]'>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                         <Accordion items={items} />
+=======
+                        <Accordion data={data} />
+>>>>>>> Stashed changes
 =======
                         <Accordion data={data} />
 >>>>>>> Stashed changes

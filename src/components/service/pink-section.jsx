@@ -25,8 +25,13 @@ const PinkSection = ({ heading, text, show_button = false, className, isVideo = 
 
                 {/* center heading and text */}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                 <div className='md:w-[740px] xl:w-[955px] 2xl:w-[950px] mx-auto my-auto h-[141px]'>
                     <h2 className='text-secondary text-[30px] lg:text-[32px] lg:text-4xl xl:text-[45px] font-["Archivo"] text-center leading-[34px] md:leading-[55px] font-semibold home-section-headings'>{heading}</h2>
+=======
+                <div className='md:w-[720px] xl:w-[913px] mx-auto my-auto'>
+                    <h2 className='text-secondary text-[30px] lg:text-[40px]  xl:text-[45px] font-["Archivo"] text-center leading-[34px] md:leading-[56px] font-semibold home-section-headings'>{heading}</h2>
+>>>>>>> Stashed changes
 =======
                 <div className='md:w-[720px] xl:w-[913px] mx-auto my-auto'>
                     <h2 className='text-secondary text-[30px] lg:text-[40px]  xl:text-[45px] font-["Archivo"] text-center leading-[34px] md:leading-[56px] font-semibold home-section-headings'>{heading}</h2>

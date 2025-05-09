@@ -91,6 +91,9 @@ export default function MobilitySolutions({
 =======
                   <p className="text-xs text-[#4D4D56]">
                    {solution.para}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
                   </p>
                 </div>

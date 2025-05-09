@@ -2,7 +2,10 @@
 import { ArrowUpRight } from "lucide-react"
 import { useState } from "react"
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 import { motion } from "framer-motion";
@@ -70,7 +73,11 @@ const AccordionItem = ({ title, description, isOpen, onToggle, index }) => {
 
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 export function Accordion({items}) {
+=======
+export function Accordion({data}) {
+>>>>>>> Stashed changes
 =======
 export function Accordion({data}) {
 >>>>>>> Stashed changes

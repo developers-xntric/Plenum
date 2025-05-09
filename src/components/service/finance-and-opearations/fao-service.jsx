@@ -76,6 +76,7 @@ export default function Finance_Opearations_Service({ heading, para }) {
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 const impactItems = [
     {
         title: "Improved data security & accessibility",
@@ -102,5 +103,7 @@ const impactItems = [
         icon: "/service/MD/fao4.svg",
     },
 ]
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes

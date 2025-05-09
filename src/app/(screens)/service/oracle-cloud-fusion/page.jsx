@@ -25,7 +25,11 @@ const OracleCloudFusion = () => {
                 para_className={"w-[55%] lg:w-[45%] text-md"}
             />
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             <ERPAccordin items={Oracleitems} className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={ocf_service} left={true} blackSection={ocf_service_black} />
+=======
+            <ERPAccordin data={fusion} className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={ocf_service} left={true} blackSection={ocf_service_black} />
+>>>>>>> Stashed changes
 =======
             <ERPAccordin data={fusion} className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={ocf_service} left={true} blackSection={ocf_service_black} />
 >>>>>>> Stashed changes
