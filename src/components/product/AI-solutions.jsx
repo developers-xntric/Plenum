@@ -42,27 +42,17 @@ export default function AISolutions({ title, paragraph, image }) {
                             ref={videoRef}
                             className="w-full h-72 md:h-full object-cover"
                             src="/product/momentum.mp4"
-                            autoPlay={true}
-                            onEnded={() => setIsPlaying(false)}
-                            onPause={() => setIsPlaying(false)}
-                            onPlay={() => setIsPlaying(true)}
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
                         />
-                        <div className="absolute inset-0 flex items-center justify-center">
-                            <button
-                                className="bg-white rounded-full cursor-pointer w-24 h-24 flex items-center justify-center shadow-lg hover:scale-105 transition-transform"
-                                aria-label={isPlaying ? "Pause video" : "Play video"}
-                                onClick={togglePlay}
-                            >
-                                {isPlaying ? (
-                                    <Pause className="text-gray-800 h-8 w-8" />
-                                ) : (
-                                    <span className="text-gray-800 font-medium text-xs md:text-sm">Play</span>
-                                )}
-                            </button>
-                        </div>
                     </div>
+
                 </div>
+               <div>
             </div>
+        </div>
         </section>
     );
 }
