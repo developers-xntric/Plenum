@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 
 export default function MicrosoftDynamicPartner() {
-  const [activeTab, setActiveTab] = useState('Dynamics 365 CE/CRM');
+  const [activeTab, setActiveTab] = useState('Dynamics ERP Solutions');
 
   const tabs = ['Modular Solutions', 'Dynamics ERP Solutions', 'Dynamics 365 CE/CRM'];
 
@@ -20,7 +20,7 @@ export default function MicrosoftDynamicPartner() {
               with Diverse Expertise
             </span> */}
           </h1>
-          <p className="text-secondary font-medium font-['Archivo'] sm:text-lg opacity-75 mx-auto lg:w-[70%] lg:w-[70%] xl:max-w-[50%]">
+          <p className="text-secondary font-medium font-['Archivo'] sm:text-lg opacity-75 mx-auto  lg:w-[70%] xl:max-w-[50%]">
           With over 15 years of hands-on experience, Plenum specializes in delivering tailored solutions across the Microsoft Dynamics ecosystem, including ERPs, CRMs, industry-specific modules, and advanced analytics dashboards.
           </p>
         </div>

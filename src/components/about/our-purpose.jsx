@@ -10,15 +10,17 @@ function OurPurpose() {
                         <Image
                             src={"/about/our-purpose.svg"}
                             alt="Team photo"
-                            width={1000}
-                            height={1000}
+                            width={2000}
+                            height={2000}
+                            quality={100}
                             className="w-full h-full md:block hidden"
                         />
                         <Image
                             src={"/about/our-porpose-mob.png"}
                             alt="Team photo"
-                            width={1000}
-                            height={1000}
+                            width={2000}
+                            height={2000}
+                            quality={100}
                             className="w-full h-full md:hidden block"
                         />
 

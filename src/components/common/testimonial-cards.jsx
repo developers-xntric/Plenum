@@ -4,7 +4,7 @@ export default function TestimonialCard({ quote, author, position, socialLink })
   return (
     <div className="bg-[#EFEFEF] p-4 md:p-6 relative transition-all duration-300 ease-in-out h-full">
       <blockquote className="mb-6">
-        <p className="text-secondary font-['Archivo'] opacity-75 w-full xl:max-w-[90%] 2xl:max-w-[78%]">{`"${quote}"`}</p>
+        <p className="text-secondary font-['Archivo'] opacity-75 w-full xl:max-w-[90%] 2xl:max-w-[78%]">{`${quote}`}</p>
       </blockquote>
       <div className="flex items-center justify-between">
         <div className="-space-y-3">
