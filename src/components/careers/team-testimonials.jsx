@@ -113,9 +113,8 @@ export default function TeamTestimonials() {
                 <h2 className="text-[25px] sm:text-[30px] md:max-w-[80%] lg:max-w-[60%] mx-auto md:text-[50px] tracking-tight opacity-80 xl:max-w-[50%] 2xl:max-w-[35%] font-['Archivo'] leading-[50px] font-semibold mb-4">
                     What our team loves about working at Plenum
                 </h2>
-                <p className="text-secondary font-['Archivo'] md:max-w-[690px] mx-auto text-[15px] tracking-tight font-normal opacity-60">
-                    Microchips AI is a unified platform built to automate every stage of the AI lifecycle — from data ingestion to
-                    deployment. Designed for enterprise scalability, it helps teams accelerate their processes and productivity.
+                <p className="text-secondary font-['Archivo'] md:max-w-[800px] mx-auto text-[15px] 2xl:text-[18px] tracking-tight font-medium opacity-60">
+                Hear from our people about the culture, collaboration, and opportunities that make Plenum a place to thrive.
                 </p>
             </div>
 

@@ -59,7 +59,7 @@ export default function JobListings() {
                     <p className="mt-1">
                         Send an email to{" "}
                         <a href="mailto:recruiting@system.com" className="underline hover:text-white">
-                            recruiting@system.com
+                        recruiting@plenum.com 
                         </a>{" "}
                         and we&apos;ll let you know if there&apos;s a fit.
                     </p>
