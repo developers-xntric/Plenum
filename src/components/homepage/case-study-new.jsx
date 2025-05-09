@@ -8,116 +8,94 @@ import { cn } from "@/lib/utils"
 const industries = [
     {
         id: "agriculture",
-        name: "Agriculture & Food Industries",
-        title: "Agriculture & Food Industries",
-        description:
-            "At our core is a hybrid operating system that synthesizes every fiber of your brand, from strategy and technical plans.",
-        image: "/casestudy/case1.svg",
+        name: "Retail ERP Transformation Finance & Operations Implementation",
+        title: "Retail ERP Transformation Finance & Operations Implementation",
+        description: "Modernized a retail group's operations using Microsoft Dynamics 365 F&O for finance, procurement, HR, and POS integration.",
+        image: "/casestudy/Group.png",
         brandName: "Farm Tech",
-        expertise: ["Supply Chain", "Brand Identity", "Product Design"],
-        industry: "Agriculture",
+        expertise: ["Microsoft Dynamics 365 F&O", "Power BI", "POS Middleware","HRMS Module"],
+        industry: "Finance",
+        link: "/retail-erp",
     },
     {
         id: "biotech",
-        name: "Biotech Industry",
+        name: "Unified Retail Experience – ERP-Integrated eCommerce & Mobile App Platform ",
         title: "Biotech Industry",
-        description:
-            "At our core is a hybrid operating system that synthesizes every fiber of your brand, from strategy and technical plans.",
-        image: "/casestudy/case2.svg",
+        description: "Launched an ERP-integrated eCommerce store with inventory sync, customer segmentation, delivery tracking, and loyalty logic. ",
+        image: "/casestudy/Group2.png",
         brandName: "Brand OS",
-        expertise: ["AI Solutions", "Brand Identity", "Product Design"],
+        expertise: ["WooCommerce ", "WordPress", "REST APIs", "Microsoft Dynamics 365 BC", "Flutter Mobile App"],
         industry: "Finance",
+        link: "/unified-retail",
     },
     {
         id: "investment",
-        name: "Alternative Investment Industry",
+        name: "Retail ERP Transformation Finance & Operations Implementation",
         title: "Alternative Investment Industry",
-        description:
-            "At our core is a hybrid operating system that synthesizes every fiber of your brand, from strategy and technical plans.",
-        image: "/casestudy/case3.svg",
+        description: "Designed and launched a fully functional, mobile-first Learning Management System with automated grading, video lessons, and parent insights.",
+        image: "/casestudy/Group3.png",
         brandName: "Invest Plus",
         expertise: ["Portfolio Management", "Brand Identity", "Product Design"],
         industry: "Investment",
+        link: "/manufacturing-erp",
     },
     {
         id: "enterprise",
-        name: "Business & Enterprise Banking",
+        name: "Virtual Learning",
         title: "Business & Enterprise Banking",
         title: "Business & Enterprise Banking",
-        description:
-            "At our core is a hybrid operating system that synthesizes every fiber of your brand, from strategy and technical plans.",
-        image: "/casestudy/case4.svg",
+        description: "Designed and launched a fully functional, mobile-first Learning Management System with automated grading, video lessons, and parent insights.",
+        image: "/casestudy/Group4.png",
         brandName: "Enterprise OS",
         expertise: ["Banking Solutions", "Brand Identity", "Product Design"],
         industry: "Banking",
+        link: "/virtual-learning",
     },
     {
         id: "consumer",
-        name: "Consumer Banking",
+        name: "AI Driven Property",
         title: "Consumer Banking",
-        description:
-            "At our core is a hybrid operating system that synthesizes every fiber of your brand, from strategy and technical plans.",
-        image: "/casestudy/case4.svg",
+        description: "Designed and launched a fully functional, mobile-first Learning Management System with automated grading, video lessons, and parent insights.",
+        image: "/casestudy/Group5.png",
         brandName: "Consumer OS",
         expertise: ["Mobile Banking", "Brand Identity", "Product Design"],
         industry: "Banking",
+        link: "/ai-driven-property",
     },
     {
         id: "agriculture1",
-        name: "Agriculture & Food Industries",
+        name: "Proper Finance Intelligence",
         title: "Agriculture & Food Industries",
-        description:
-            "At our core is a hybrid operating system that synthesizes every fiber of your brand, from strategy and technical plans.",
-        image: "/casestudy/case1.svg",
+        description: "Designed and launched a fully functional, mobile-first Learning Management System with automated grading, video lessons, and parent insights.",
+        image: "/casestudy/Group6.png",
         brandName: "Farm Tech",
         expertise: ["Supply Chain", "Brand Identity", "Product Design"],
         industry: "Agriculture",
+        link: "/proper-finance-intelligence",
     },
     {
         id: "biotech1",
-        name: "Biotech Industry",
+        name: "AI Powered Sentiment",
         title: "Biotech Industry",
-        description:
-            "At our core is a hybrid operating system that synthesizes every fiber of your brand, from strategy and technical plans.",
-        image: "/casestudy/case2.svg",
+        description: "Designed and launched a fully functional, mobile-first Learning Management System with automated grading, video lessons, and parent insights.",
+        image: "/casestudy/Group7.png",
         brandName: "Brand OS",
         expertise: ["AI Solutions", "Brand Identity", "Product Design"],
         industry: "Finance",
+        link: "/ai-powered-sentiment",
     },
     {
         id: "investment1",
-        name: "Alternative Investment Industry",
+        name: "Commision Fraud Detection",
         title: "Alternative Investment Industry",
-        description:
-            "At our core is a hybrid operating system that synthesizes every fiber of your brand, from strategy and technical plans.",
-        image: "/casestudy/case3.svg",
+        description: "Designed and launched a fully functional, mobile-first Learning Management System with automated grading, video lessons, and parent insights.",
+        image: "/casestudy/Group8.png",
         brandName: "Invest Plus",
         expertise: ["Portfolio Management", "Brand Identity", "Product Design"],
         industry: "Investment",
+        link: "/commision-fraud-detection",
     },
-    {
-        id: "enterprise1",
-        name: "Business & Enterprise Banking",
-        title: "Business & Enterprise Banking",
-        title: "Business & Enterprise Banking",
-        description:
-            "At our core is a hybrid operating system that synthesizes every fiber of your brand, from strategy and technical plans.",
-        image: "/casestudy/case4.svg",
-        brandName: "Enterprise OS",
-        expertise: ["Banking Solutions", "Brand Identity", "Product Design"],
-        industry: "Banking",
-    },
-    {
-        id: "consumer1",
-        name: "Consumer Banking",
-        title: "Consumer Banking",
-        description:
-            "At our core is a hybrid operating system that synthesizes every fiber of your brand, from strategy and technical plans.",
-        image: "/casestudy/case4.svg",
-        brandName: "Consumer OS",
-        expertise: ["Mobile Banking", "Brand Identity", "Product Design"],
-        industry: "Banking",
-    },
+   
 ]
 
 export default function IndustryShowcase() {
@@ -178,7 +156,7 @@ export default function IndustryShowcase() {
     }, [emblaApiNav, emblaApiMain])
 
     return (
-        <div className="2xl:max-w-[1440px] max-w-[90%] mx-auto rounded-3xl font-['Archivo'] mb-20 bg-black text-white overflow-hidden">
+        <div className="2xl:max-w-[1440px] md:max-w-[90%] mx-auto md:rounded-3xl font-['Archivo'] md:mb-20 bg-secondary text-white overflow-hidden">
             {/* Top Navigation Carousel */}
             <div className="overflow-hidden border-[#FFFFFF] border-b" ref={emblaRefNav}>
                 <div className="flex">
@@ -205,9 +183,10 @@ export default function IndustryShowcase() {
                     <div className="flex max-w-[95%] mx-auto">
                         {industries.map((industry) => (
                             <div key={industry.id} className="flex-[0_0_100%] min-w-0">
-                                <div className=" py-8 md:p-12">
-                                    <div className="text-[#FF6035] text-[30px] font-semibold mb-6">{industry.name}</div>
-                                    <div className="flex flex-col md:flex-row gap-8">
+                                <div className=" py-8 px-5 md:px-0 md:p-12">
+                                    <div className="text-gray-400  md:text-left text-center">Industry</div>
+                                    <div className="text-[#FF6035] text-[24px] md:text md:text-[30px] md:text-left text-center leading-[30px] md:leading-[40px] font-semibold mb-6">{industry.industry}</div>
+                                    <div className="flex flex-col md:flex-row gap-8  ">
                                         {/* Image Section */}
                                         <div className="md:w-1/2 relative">
                                             <div className="">
@@ -222,8 +201,8 @@ export default function IndustryShowcase() {
                                         {/* Content Section */}
                                         <div className="md:w-1/2 flex flex-col justify-between">
                                             <div>
-                                                <h3 className="text-[28px] text-[#FFFFFF] font-semibold mb-3">{industry.brandName}</h3>
-                                                <p className="text-[#989898] max-w-[60%] text-[14.547px] mb-8">{industry.description}</p>
+                                                <h3 className="text-[18px] md:text-[28px] text-[#FFFFFF] leading-[25px] md:leading-[40px] font-semibold mb-3">{industry.name}</h3>
+                                                <p className="text-[#989898] md:max-w-[60%] text-[14.547px] mb-8">{industry.description}</p>
                                             </div>
 
                                             <div className="flex flex-col md:flex-row justify-between mt-auto">
@@ -231,7 +210,7 @@ export default function IndustryShowcase() {
                                                     <div className="text-[12px] text-[#989898] mb-1">Industry</div>
                                                     <div className="text-white text-[14px]">{industry.industry}</div>
                                                     <div className="mt-6 md:mt-auto">
-                                                        <a href="#" className="text-[#FF6035] text-[17px] flex items-center group">
+                                                        <a href={`/case-studies/${industry.link}`} className="text-[#FF6035] text-[17px] flex items-center group">
                                                             View Project
                                                             <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
                                                         </a>
@@ -255,19 +234,34 @@ export default function IndustryShowcase() {
                             </div>
                         ))}
                     </div>
+                    {/* Pagination Dots (Mobile Only) */}
+                    <div className="flex justify-center gap-2 md:hidden py-6 relative bottom-10">
+                        {industries.map((_, index) => (
+                            <button
+                                key={index}
+                                onClick={() => emblaApiMain && emblaApiMain.scrollTo(index)}
+                                className={cn(
+                                    "w-2 h-2 rounded-full transition-colors",
+                                    currentIndex === index ? "bg-white" : "bg-gray-400"
+                                )}
+                                aria-label={`Go to slide ${index + 1}`}
+                            />
+                        ))}
+                    </div>
+
                 </div>
 
                 {/* Navigation Buttons */}
                 <button
                     onClick={scrollPrev}
-                    className="absolute left-2 top-1/2 -translate-y-1/2 p-2"
+                    className="absolute left-2 top-1/2 -translate-y-1/2 p-2 md:block hidden"
                     aria-label="Previous slide"
                 >
                     <ChevronLeft className="h-6 w-6" color="#FFFFFF80" />
                 </button>
                 <button
                     onClick={scrollNext}
-                    className="absolute right-2 top-1/2 -translate-y-1/2 p-2"
+                    className="absolute right-2 top-1/2 -translate-y-1/2 p-2 md:block hidden"
                     aria-label="Next slide"
                 >
                     <ChevronRight className="h-6 w-6" color="#FFFFFF80" />
