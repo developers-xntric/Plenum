@@ -63,7 +63,7 @@ const industries = [
         industry: "Banking",
     },
     {
-        id: "agriculture",
+        id: "agriculture1",
         name: "Agriculture & Food Industries",
         title: "Agriculture & Food Industries",
         description:
@@ -74,7 +74,7 @@ const industries = [
         industry: "Agriculture",
     },
     {
-        id: "biotech",
+        id: "biotech1",
         name: "Biotech Industry",
         title: "Biotech Industry",
         description:
@@ -85,7 +85,7 @@ const industries = [
         industry: "Finance",
     },
     {
-        id: "investment",
+        id: "investment1",
         name: "Alternative Investment Industry",
         title: "Alternative Investment Industry",
         description:
@@ -96,7 +96,7 @@ const industries = [
         industry: "Investment",
     },
     {
-        id: "enterprise",
+        id: "enterprise1",
         name: "Business & Enterprise Banking",
         title: "Business & Enterprise Banking",
         title: "Business & Enterprise Banking",
@@ -108,7 +108,7 @@ const industries = [
         industry: "Banking",
     },
     {
-        id: "consumer",
+        id: "consumer1",
         name: "Consumer Banking",
         title: "Consumer Banking",
         description:
