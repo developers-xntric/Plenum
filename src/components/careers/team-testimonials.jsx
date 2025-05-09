@@ -110,7 +110,7 @@ export default function TeamTestimonials() {
     return (
         <section className="py-16 px-4 mx-auto overflow-x-hidden font-['Archivo']">
             <div className="text-center mb-12">
-                <h2 className="text-[25px] sm:text-[30px] md:max-w-[80%] lg:max-w-[60%] mx-auto md:text-[50px] tracking-tight opacity-80 xl:max-w-[50%] 2xl:max-w-[25%] font-['Archivo'] font-semibold mb-4">
+                <h2 className="text-[25px] sm:text-[30px] md:max-w-[80%] lg:max-w-[60%] mx-auto md:text-[50px] tracking-tight opacity-80 xl:max-w-[50%] 2xl:max-w-[35%] font-['Archivo'] leading-[50px] font-semibold mb-4">
                     What our team loves about working at Plenum
                 </h2>
                 <p className="text-secondary font-['Archivo'] md:max-w-[690px] mx-auto text-[15px] tracking-tight font-normal opacity-60">

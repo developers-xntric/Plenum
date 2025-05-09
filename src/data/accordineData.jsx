@@ -22,19 +22,19 @@ export const finance = [
     },
 ]
 
-export const OracleNetSuiteitems = [
+export const Oracleitems = [
     {
-        title: "NetSuite ERP Implementation",
+        title: "AI-Driven Finance: Capitalizing on an Agentic Landscape",
         description:
-            "As experienced NetSuite implementation partners, we design and deploy ERP solutions that align with your operational goals. Our phased implementation approach minimizes downtime and ensures smooth migration.",
+            "From procurement to financial planning, Oracle ERP modules offer functionality that spans every corner of your enterprise. Combined with our expertise, you’ll have a customized tech stack aligned with your goals.",
     },
     {
-        title: "NetSuite Consulting Services",
+        title: "Streamline Operations with Oracle ERP’s End-to-End Solutions",
         description:
         "From procurement to financial planning, Oracle ERP modules offer functionality that spans every corner of your enterprise. Combined with our expertise, you’ll have a customized tech stack aligned with your goals.",
     },
     {
-        title: "Oracle NetSuite in Dubai and the UAE",
+        title: "Empower Every Department with Oracle’s Integrated ERP Modules",
         description:
         "From procurement to financial planning, Oracle ERP modules offer functionality that spans every corner of your enterprise. Combined with our expertise, you’ll have a customized tech stack aligned with your goals.",
     },

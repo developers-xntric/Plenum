@@ -36,9 +36,9 @@ export default function JobListings() {
                 <div className="mb-8">
                     <p className="text-[18px] font-normal text-white opacity-60 mb-1">Open roles</p>
                     <h2 className="text-[30px] md:text-[50px] tracking-tight font-['Archivo'] font-medium leading-tight">
-                        Help us rebalance
+                    Find the role where your expertise 
                         <br />
-                        the planet
+                        can shape the future
                     </h2>
                 </div>
 
