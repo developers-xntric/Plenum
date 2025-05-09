@@ -44,33 +44,33 @@ const Navbar = () => {
                 },
             ],
         },
-        {
-            title: "Managed Cloud Services",
-            isExpanded: false,
-            link: "/service",
-        },
-        {
-            title: "AI consulting, governance and implementation",
-            isExpanded: false,
-            link: "/service",
-        },
-        {
-            title: "Digital Experiences",
-            isExpanded: false,
-            link: "/service",
-        },
+        // {
+        //     title: "Managed Cloud Services",
+        //     isExpanded: false,
+        //     link: "/service/ERP-Cosultant",
+        // },
+        // {
+        //     title: "AI consulting, governance and implementation",
+        //     isExpanded: false,
+        //     link: "/service/",
+        // },
+        // {
+        //     title: "Digital Experiences",
+        //     isExpanded: false,
+        //     link: "/service",
+        // },
     ]
 
     const productsMenuItems = [
         {
             title: "Momentum AI",
             isExpanded: true,
-            link: "/product",
+            link: "/product/momentum-ai",
         },
         {
             title: "Vertical Builds",
             isExpanded: false,
-            link: "/product",
+            link: "/product/vertical-builds",
         }
     ]
 
@@ -118,16 +118,16 @@ const Navbar = () => {
             isExpanded: false,
             link: "/blog",
         },
-        {
-            title: "News",
-            isExpanded: false,
-            link: "/case-studies",
-        },
-        {
-            title: "Video & Podcasts",
-            isExpanded: false,
-            link: "/case-studies",
-        },
+        
+        //     title: "News",
+        //     isExpanded: false,
+        //     link: "/case-studies",
+        // },
+        // {
+        //     title: "Video & Podcasts",
+        //     isExpanded: false,
+        //     link: "/case-studies",
+        // },
     ]
 
     const closeAllDropdowns = () => {
@@ -297,7 +297,7 @@ const Navbar = () => {
                                 <Link href={"/about"}>About Us</Link>
                             </li>
                             <li>
-                                <Link href={"/article"}>Book a Demo</Link>
+                                <Link href={"/article"}>Articles</Link>
                             </li>
                             <li>
                                 <Link href={"/careers"}>Careers</Link>

@@ -65,13 +65,12 @@ const AccordionItem = ({ title, description, isOpen, onToggle, index }) => {
 };
 
 
-export function Accordion({ items }) {
-    `  `
-    const [openIndex, setOpenIndex] = useState(0) // Default first item open
+export function Accordion({ items = [] }) {
+    const [openIndex, setOpenIndex] = useState(0);
 
     const handleToggle = (index) => {
-        setOpenIndex(openIndex === index ? index : index)
-    }
+        setOpenIndex(openIndex === index ? index : index);
+    };
 
     return (
         <div className="space-y-6">
@@ -88,5 +87,6 @@ export function Accordion({ items }) {
                 ))}
             </div>
         </div>
-    )
+    );
+
 }
