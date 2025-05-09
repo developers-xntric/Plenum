@@ -14,14 +14,14 @@ export const bottomSection2 = {
 }
 
 export const blackSection = {
-    heading: "Unmatched Oracle ERP Solutions",
-    para: "Plenum delivers intelligent, integrated platforms built to streamline processes, improve efficiency, and support strategic decision-making. Our premium solutions are tailored to accelerate business growth and ensure long-term scalability across industries.",
+    heading: "Why Businesses in the Middle East Choose Our ERP Services",
+    para: "With rapid economic diversification and digital transformation shaping the region, organizations in the GCC require localized, agile ERP solutions. Our services are designed to support regional regulations, Arabic interfaces, and sector-specific requirements, making us a trusted partner for ERP implementation services in the Gulf",
     button: "Get in touch"
 }
 
 export const blackSection2 = {
-    heading: "Innovation That Powers Your Potential",
-    para: "Plenum’s smart, adaptable solutions are built to transform how businesses operate. We focus on simplifying complexity and enabling scalable, strategic growth across industries.",
+    heading: "Ready to Transform Your Business?",
+    para: "We help businesses unlock their full potential with expert ERP consulting and implementation. Whether you're seeking strategic ERP consultation or full-scale deployment, we’re here to guide you every step of the way",
     button: "Get in touch"
 }
 
@@ -33,8 +33,8 @@ export const fao_service = {
 }
 
 export const fao_service_black = {
-    heading: "The Next-Generation ERP Solution for Financial Excellence",
-    para: "Microsoft Dynamics 365 Finance and operations is a cloud-based ERP solution built for businesses with complex financial & operational needs. It unifies all processes including finance, supply chain, manufacturing, inventory, and procurement into a single source of truth to provide real-time business intelligence. Powered by Azure, D365 F&O delivers a powerful data-first solution to transform your financial and operating models and achieve real-time data availability and data exchange across applications.",
+    heading: "Empower Your Business with Microsoft Dynamics 365 Finance and Operations",
+    para: "This powerful platform enables organizations to manage various aspects of finance, supply chain, production, and sales, all within a unified environment. By automating key functions, Dynamics 365 Finance and Operations helps businesses make smarter decisions, reduce costs, and scale with ease.",
     button: "Get in touch"
 }
 
@@ -59,8 +59,8 @@ export const bc_service = {
 }
 
 export const bc_service_black = {
-    heading: "Gain Real-Time Insights & Reporting with Business Central, the ERP for SMBs/SMEs",
-    para: "Experience the power of real-time insights and reporting with Microsoft Dynamics 365 Business",
+    heading: "What is Microsoft Dynamics 365 Business Central?",
+    para: "Microsoft Dynamics 365 Business Central is an all-in-one enterprise resource planning (ERP) platform that integrates seamlessly with Microsoft tools like Office 365 and Power BI.",
     button: "Get in touch"
 }
 
@@ -73,7 +73,7 @@ export const ocf_service = {
 
 export const ocf_service_black = {
     heading: "What is Oracle Fusion Cloud?",
-    para: "Oracle Cloud Fusion application are divided into five software categories: customer relationship management, human capital management, enterprise resource planning, enterprise resource management and supply chain management.",
+    para: "Oracle Fusion Cloud is a collection of integrated software programs offered via the cloud supporting different corporate operations. It covers a broad spectrum of products including Oracle Fusion ERP, Oracle Fusion HCM, Oracle Fusion SCM, and others.",
     button: "Get in touch"
 }
 

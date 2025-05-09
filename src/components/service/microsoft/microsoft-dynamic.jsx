@@ -54,7 +54,7 @@ export default function MicrosoftDynamic({
 
   return (
     <main className={`flex flex-col items-center font-['Archivo'] justify-center py-16 xl:py-20 ${bgColor === "black" ? "bg-[#282526] text-white" : "bg-[#EFEFEF]"}`}>
-      <div className="2xl:max-w-[1300px] max-w-[90%] mx-auto">
+      <div className="2xl:max-w-[1440px] max-w-[90%] mx-auto">
         {/* Headings */}
         <div className="text-left md:text-center mb-8 md:mb-12">
           <h1 className={`text-[30px] font-semibold leading-[34px] md:leading-[55px] opacity-85 ${bgColor === "black" ? "text-white text-center" : "home-section-headings text-center"} md:text-3xl lg:text-[50px]`}>
@@ -74,7 +74,7 @@ export default function MicrosoftDynamic({
             <div className="overflow-hidden mt-20" ref={emblaRef}>
               <div className="flex">
                 {services?.map((service, index) => (
-                  <div className="min-w-full px-3 md:px-6" key={index}>
+                  <div className="" key={index}>
                     <div className={`text-center ${className}`}>
                       <div className="w-12 h-12 mb-5 mx-auto">
                         <Image

@@ -1,7 +1,6 @@
 "use client"
 import { ArrowUpRight } from "lucide-react"
 import { useState } from "react"
-
 import { motion } from "framer-motion";
 const AccordionItem = ({ title, description, isOpen, onToggle, index }) => {
     return (
@@ -66,9 +65,9 @@ const AccordionItem = ({ title, description, isOpen, onToggle, index }) => {
 };
 
 
-export function Accordion({items}) {
-    `  `
-    const [openIndex, setOpenIndex] = useState(0) // Default first item open
+
+export function Accordion({ items }) {
+    const [openIndex, setOpenIndex] = useState(0)
 
     const handleToggle = (index) => {
         setOpenIndex(openIndex === index ? index : index)
