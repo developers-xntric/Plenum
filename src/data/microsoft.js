@@ -62,3 +62,35 @@ export const services2 = [
         description: "Implementing Dynamics 365 alone is never easy. As your Microsoft Dynamics partner, you can rest assured that we will support you every step of the way be it customization or turn- key integration solutions."
     },
 ]
+export const businessPage = [
+    {
+        title: "Small and Medium-Sized Businesses (SMBs)",
+        icon: "/service/MD/image1.svg",
+        description: "SMBs that are looking to automate and integrate their financial, sales, supply chain, and customer service operations will find Dynamics 365 Business Central an invaluable tool."
+    },
+    {
+        title: "Manufacturers",
+        icon: "/service/MD/image2.svg",
+        description: "Business Central provides tools for demand forecasting, managing production orders, and tracking raw materials and finished goods in real-time—making it an ideal choice for manufacturing businesses."
+    },
+    {
+        title: "Retailers",
+        icon: "/service/MD/image3.svg",
+        description: "Microsoft Dynamics 365 Business Central helps retailers manage inventory, sales, procurement, and customer relationships, ensuring smooth operations and enhanced customer satisfaction."
+    },
+    {
+        title: "Distributors",
+        icon: "/service/MD/image4.svg",
+        description: "Distributors who need to manage inventory across multiple warehouses, track shipments, and optimize their supply chain operations can benefit greatly from Dynamics 365 Business Central."
+    },
+    {
+        title: "Service-Based Businesses",
+        icon: "/service/MD/image5.svg",
+        description: "Business Central offers the necessary tools to manage projects, allocate resources, and monitor profitability, ensuring better project delivery and customer satisfaction."
+    },
+    {
+        title: "Businesses Expanding into New Markets",
+        icon: "/service/MD/image6.svg",
+        description: "Companies looking to expand into new regions, such as Dubai or the broader UAE market, benefit from Business Central’s multi-currency, multi-language, and localization features."
+    },
+]

@@ -43,23 +43,28 @@ export const md_solutions = [
 
 export const bc_solution = [
     {
-        title: "Dynamics CRM Application",
+        title: "Comprehensive Business Management",
         icon: "/service/MD/icon1.svg",
+        para: 'Manage finance, operations, and projects seamlessly within a unified ERP system.',
     },
     {
-        title: "Workflow Approvals Application",
+        title: "Real-Time Insights",
         icon: "/service/MD/icon2.svg",
+        para: 'Access up-to-date data and analytics to make faster, more informed business decisions.',
     },
     {
-        title: "Retail Management Application",
+        title: "Streamlined Financial Management",
         icon: "/service/MD/icon3.svg",
+        para: 'Simplify budgeting, forecasting, and compliance with powerful financial tools.',
     },
     {
-        title: "Warehouse Management Application",
+        title: "Scalability to Grow",
         icon: "/service/MD/icon4.svg",
+        para: 'Expand effortlessly with solutions that adapt to your company’s growth and complexity.',
     },
     {
-        title: "Timesheet Application",
+        title: "Cloud Flexibility & Security",
         icon: "/service/MD/icon5.svg",
+        para: 'Leverage secure, cloud-based infrastructure that ensures flexibility, uptime, and data protection.',
     },
 ]
