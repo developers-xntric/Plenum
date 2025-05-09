@@ -52,7 +52,7 @@ export default function Footer() {
               </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-x-22 md:gap-x-8 gap-y-2 2xl:max-w-[1440px] w-[75%] md:w-[100%] mx-auto ">
+            <div className="grid grid-cols-2 gap-x-12 md:gap-x-8 gap-y-2 2xl:max-w-[1440px] w-[85%] md:w-[100%] mx-auto ">
               <div>
                 <h3 className="text-[#767676] mb-4 text-lg md:text-base xl:text-lg font-bold font-['Archivo']">Product</h3>
                 <ul className="space-y-1 font-normal md:text-sm xl:text-base font-['Archivo']">
@@ -98,7 +98,7 @@ export default function Footer() {
           </div>
 
           {/* Center CTA for desktop */}
-          <div className=" hidden md:flex justify-center relative font-['Archivo']">
+          <div className=" hidden md:flex justify-center relative lg:left-[2%] font-['Archivo']">
             <div className="">
               <Image src="/layout/footer-circle.webp" width={420} height={450} alt="footer-circle" className="" />
               <div className="flex flex-col items-center justify-center text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full">
@@ -113,7 +113,7 @@ export default function Footer() {
 
           {/* Right Links */}
           <div className=" mt-[9%] 2xl:max-w-[1440px] w-full sm:w-[70%] md:w-auto mx-auto md:mx-0 ">
-            <div className="flex gap-x-[17.5%]  sm:gap-x-8 md:gap-x-8 gap-y-2 mx-auto md:mx-0 max-w-[75%] md:max-w-[100%]">
+            <div className="flex gap-x-[17.5%]  sm:gap-x-8 md:gap-x-8 gap-y-2 mx-auto md:mx-0 max-w-[85%] md:max-w-[100%]">
               <div>
                 <h3 className="text-[#767676] mb-4 text-lg md:text-base xl:text-lg font-bold font-['Archivo']">Legal</h3>
                 <ul className="space-y-1 md:text-sm xl:text-base font-['Archivo']">
@@ -136,16 +136,16 @@ export default function Footer() {
               </div>
 
               <div>
-                <h3 className="text-[#767676] mb-4 text-lg md:text-base xl:text-lg font-bold font-['Archivo'] leading-5">Follow Us</h3>
+                <h3 className="text-[#767676] mb-4 text-lg md:text-base xl:text-lg font-bold font-['Archivo'] leading-5">Contact Us</h3>
                 <ul className="space-y-1 md:text-sm xl:text-base font-['Archivo']">
                   <li>
                     <Link href="#" className="hover:text-gray-300">
-                      Instagram
+                    info@plenum-tech.com
                     </Link>
                   </li>
                   <li>
                     <Link href="#" className="hover:text-gray-300">
-                      Twitter
+                    +971 54 30 89222
                     </Link>
                   </li>
                 </ul>

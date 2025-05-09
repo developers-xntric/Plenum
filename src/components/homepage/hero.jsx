@@ -63,10 +63,14 @@ const Hero = () => {
                 <Image src='/home/shade.png' priority height={1000} width={1000} alt='img' className='w-full h-full' />
             </div>
             {/* //hero section main heading */}
-            <div className='flex w-full md:w-[750px] xl:w-[950px] 2xl:w-[980px] mx-auto justify-center h-[80vh] md:h-screen mt-32 md:mt-40'>
+            <div className='flex w-full md:w-[750px] xl:w-[950px] 2xl:w-[1200px] mx-auto justify-center h-[80vh] md:h-screen mt-32 md:mt-40'>
                 <div className='w-full mx-auto flex flex-col gap-4'>
-                    <h1 className=' max-w-[90%] md:max-w-[80%] 2xl:max-w-[80%] mx-auto text-white 2xl:text-[75px] text-[40px] sm:text-[55px] font-semibold xl:text-[70px] leading-[50px] xl:leading-[71px] font-["Chakra"] text-center'>ERP with <span className='text-primary'>Intelligence</span> at Its Core</h1>
-                    <p className='font-["Archivo"] font-normal text-[16px] lg:text-lg xl:text-[19px] text-center text-white md:max-w-full max-w-[92%] mx-auto '>Plenum isn’t just another ERP provider; we embed AI into your systems to deliver actionable insights and smarter decision-making capabilities.</p>
+                    <h1 className='max-w-[90%] md:max-w-[100%] 2xl:max-w-[100%] mx-auto text-white 2xl:text-[75px] text-[40px] sm:text-[55px] font-semibold xl:text-[70px] leading-[40px] md:leading-[60px] xl:leading-[71px] 2xl:leading-[80px] font-["Chakra"] text-center'>
+                        Empowering<span className='text-primary'> Enterprises</span> with<br />
+                        Smart ERP Intelligence
+                    </h1>
+
+                    <p className='font-["Archivo"] font-normal text-[16px] lg:text-lg xl:text-[19px] text-center text-white md:max-w-full max-w-[92%] mx-auto '>With Plenum, you don’t just get an ERP solution, you gain a competitive edge through automation, real-time analytics, and agile scalability.</p>
                 </div>
             </div>
             {/* //video */}
