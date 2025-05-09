@@ -9,14 +9,11 @@ import { motion } from 'framer-motion';
 const servicesData = [
   {
     id: 1,
-    title: "ERP Consulting & Implementation",
+    title: "AI Consulting, Governance & Deployment",
     description: (
       <>
-        <h3 className="text-[15px] font-semibold font-['Archivo'] text-secondary">
-          Microsoft Business Central + AI for Intelligent Enterprise Ops
-        </h3>
         <p className="text-[15px] font-medium text-secondary opacity-75 mt-2 font-['Archivo']">
-          We architect, implement and optimize Microsoft D365 ERP systems, Business Central with a focus on automation, insights, and integrated workflows. With our copilot studio capabilities and our inhouse on premise product SecureGPT® built in, your ERP becomes a smart assistant — empowering finance, operations, and procurement teams.
+          Harness the power of machine learning across your value chain. We help define the right AI roadmap, ensuring ethical governance and robust compliance. Our specialists deploy intelligent algorithms to automate, predict, and optimize workflows. Empower smarter, faster decisions with real-time, data-driven insights.
         </p>
         <Link
           href="/service/ERP-consulting"
@@ -59,64 +56,58 @@ const servicesData = [
   },
   {
     id: 2,
-    title: "AI Consulting, Governance & Implementation",
+    title: "Momentum – Our In-House AI Product",
     description: (
       <>
-        <h3 className="text-[15px] font-semibold font-['Archivo'] text-secondary">
-          Microsoft Business Central + AI for Intelligent Enterprise Ops
-        </h3>
-        <p className="text-[15px] font-medium text-secondary opacity-75 mt-2 font-['Archivo']">
-          We architect, implement and optimize Microsoft D365 ERP systems, Business Central with a focus on automation, insights, and integrated workflows. With our copilot studio capabilities and our inhouse on premise product SecureGPT® built in, your ERP becomes a smart assistant — empowering finance, operations, and procurement teams.
-        </p>
-        <Link
-          href="/service/ERP-consulting"
-          className="text-[#FF6035] font-['Archivo'] flex items-center font-semibold md:text-[17px] mt-2 underline"
+      <p className="text-[15px] font-medium text-secondary opacity-75 mt-2 font-['Archivo']">
+        Harness the power of machine learning across your value chain. We help define the right AI roadmap, ensuring ethical governance and robust compliance. Our specialists deploy intelligent algorithms to automate, predict, and optimize workflows. Empower smarter, faster decisions with real-time, data-driven insights.
+      </p>
+      <Link
+        href="/service/ERP-consulting"
+        className="text-[#FF6035] font-['Archivo'] flex items-center font-semibold md:text-[17px] mt-2 underline"
+      >
+        <motion.div
+          whileHover="hover"
+          className="text-primary flex items-center gap-2  cursor-pointer z-40"
         >
-          <motion.div
-            whileHover="hover"
-            className="text-primary flex items-center gap-2  cursor-pointer z-40"
-          >
-            View Service
-            <motion.svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="11"
-              height="11"
-              viewBox="0 0 11 11"
-              fill="none"
-              className={"mt-1"}
-              variants={{
-                hover: {
-                  x: [0, 3, 0],
-                  y: [0, -3, 0],
-                  transition: {
-                    duration: 0.8,
-                    repeat: Infinity,
-                    ease: "easeInOut"
-                  }
+          View Service
+          <motion.svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="11"
+            height="11"
+            viewBox="0 0 11 11"
+            fill="none"
+            className={"mt-1"}
+            variants={{
+              hover: {
+                x: [0, 3, 0],
+                y: [0, -3, 0],
+                transition: {
+                  duration: 0.8,
+                  repeat: Infinity,
+                  ease: "easeInOut"
                 }
-              }}
-            >
-              <path
-                d="M0.9375 10.214L9.67107 1.48047M9.67107 1.48047H0.9375M9.67107 1.48047V10.214"
-                stroke="#FF6035"
-                strokeWidth="1.74671"
-              />
-            </motion.svg>
-          </motion.div>
-        </Link>
-      </>
+              }
+            }}
+          >
+            <path
+              d="M0.9375 10.214L9.67107 1.48047M9.67107 1.48047H0.9375M9.67107 1.48047V10.214"
+              stroke="#FF6035"
+              strokeWidth="1.74671"
+            />
+          </motion.svg>
+        </motion.div>
+      </Link>
+    </>
     ),
   },
   {
     id: 3,
-    title: "Momentum",
+    title: "Managed Cloud Services",
     description: (
       <>
-        <h3 className="text-[15px] font-semibold font-['Archivo'] text-secondary">
-          Microsoft Business Central + AI for Intelligent Enterprise Ops
-        </h3>
         <p className="text-[15px] font-medium text-secondary opacity-75 mt-2 font-['Archivo']">
-          We architect, implement and optimize Microsoft D365 ERP systems, Business Central with a focus on automation, insights, and integrated workflows. With our copilot studio capabilities and our inhouse on premise product SecureGPT® built in, your ERP becomes a smart assistant — empowering finance, operations, and procurement teams.
+          Harness the power of machine learning across your value chain. We help define the right AI roadmap, ensuring ethical governance and robust compliance. Our specialists deploy intelligent algorithms to automate, predict, and optimize workflows. Empower smarter, faster decisions with real-time, data-driven insights.
         </p>
         <Link
           href="/service/ERP-consulting"
@@ -159,14 +150,11 @@ const servicesData = [
   },
   {
     id: 4,
-    title: "Managed Cloud Services",
+    title: "Digital Experience Transformation",
     description: (
       <>
-        <h3 className="text-[15px] font-semibold font-['Archivo'] text-secondary">
-          Microsoft Business Central + AI for Intelligent Enterprise Ops
-        </h3>
         <p className="text-[15px] font-medium text-secondary opacity-75 mt-2 font-['Archivo']">
-          We architect, implement and optimize Microsoft D365 ERP systems, Business Central with a focus on automation, insights, and integrated workflows. With our copilot studio capabilities and our inhouse on premise product SecureGPT® built in, your ERP becomes a smart assistant — empowering finance, operations, and procurement teams.
+          Harness the power of machine learning across your value chain. We help define the right AI roadmap, ensuring ethical governance and robust compliance. Our specialists deploy intelligent algorithms to automate, predict, and optimize workflows. Empower smarter, faster decisions with real-time, data-driven insights.
         </p>
         <Link
           href="/service/ERP-consulting"
@@ -207,56 +195,7 @@ const servicesData = [
       </>
     ),
   },
-  {
-    id: 5,
-    title: "Digital Experience",
-    description: (
-      <>
-        <h3 className="text-[15px] font-semibold font-['Archivo'] text-secondary">
-          Microsoft Business Central + AI for Intelligent Enterprise Ops
-        </h3>
-        <p className="text-[15px] font-medium text-secondary opacity-75 mt-2 font-['Archivo']">
-          We architect, implement and optimize Microsoft D365 ERP systems, Business Central with a focus on automation, insights, and integrated workflows. With our copilot studio capabilities and our inhouse on premise product SecureGPT® built in, your ERP becomes a smart assistant — empowering finance, operations, and procurement teams.
-        </p>
-        <Link
-          href="/service/ERP-consulting"
-          className="text-[#FF6035] font-['Archivo'] flex items-center font-semibold md:text-[17px] mt-2 underline"
-        >
-          <motion.div
-            whileHover="hover"
-            className="text-primary flex items-center gap-2  cursor-pointer z-40"
-          >
-            View Service
-            <motion.svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="11"
-              height="11"
-              viewBox="0 0 11 11"
-              fill="none"
-              className={"mt-1"}
-              variants={{
-                hover: {
-                  x: [0, 3, 0],
-                  y: [0, -3, 0],
-                  transition: {
-                    duration: 0.8,
-                    repeat: Infinity,
-                    ease: "easeInOut"
-                  }
-                }
-              }}
-            >
-              <path
-                d="M0.9375 10.214L9.67107 1.48047M9.67107 1.48047H0.9375M9.67107 1.48047V10.214"
-                stroke="#FF6035"
-                strokeWidth="1.74671"
-              />
-            </motion.svg>
-          </motion.div>
-        </Link>
-      </>
-    ),
-  },
+
 ];
 
 export default function HomeServices() {
@@ -278,16 +217,16 @@ export default function HomeServices() {
 
         <div className="flex flex-col space-y-10 sm:space-y-16">
           {/* UPPER column - Headline */}
-          <div className=" xl:w-[80%] 2xl:w-[70%] relative z-20">
+          <div className=" xl:w-[80%] 2xl:w-[70%] text-center md:text-left relative z-20">
             <h2 className="text-[30px] lg:text-[50px] xl:text-[59.542px] leading-[40px] lg:leading-[60px] font-semibold font-['Archivo'] relative z-20 bg-[linear-gradient(to_right,_#101010,_#9b9999,_#101010,_#9b9999)] bg-clip-text text-transparent">
-              Why AI enabled Enterprise with Plenum? With Plenum gain the tools to unlock deeper insights, automate complex workflows
+              Why Choose Plenum's AI-Enabled Enterprise Solutions?
             </h2>
           </div>
 
           {/* BOTTOM column - Services */}
-          <div className="flex md:flex-row flex-col items-start justify-between xl:max-w-[90%]">
+          <div className="flex lg:flex-row flex-col items-start justify-between xl:max-w-[90%]">
             {/* LEFT */}
-            <div className="space-y-2 md:space-y-6 w-full md:w-[80%]">
+            <div className="space-y-2 lg:space-y-6 text-center md:text-left w-full lg:w-[80%]">
               <div className="relative font-medium">
                 <h2 className="text-[30px] lg:text-[50px] xl:text-[57.375px] font-semibold text-secondary opacity-[0.8] inline-block md:block font-['Archivo'] tracking-tighter">
                   Our
@@ -298,7 +237,14 @@ export default function HomeServices() {
               </div>
               <div className="space-y-5">
                 <p className="text-[14px] md:text-[15px] text-secondary w-full md:w-[80%]  xl:max-w-[70%] leading-[20px] font-normal font-['Archivo'] opacity-75">
-                  Plenum offers AI solutions to automate workflows, enhance decisions, and boost efficiency. We tailor services to your needs and help you scale confidently.
+                  At Plenum, our suite of services is designed to digitally transform and future-proof your enterprise:
+                </p>
+                <p className="text-[14px] md:text-[15px] text-secondary w-full lg:w-[90%] leading-[20px] font-normal font-['Archivo'] opacity-75">
+
+
+                  Looking for scalable ERP solutions in Dubai or anywhere in the UAE? We specialize in delivering custom ERP business software solutions that align seamlessly with your unique operational needs. Our ERP systems are enhanced with artificial intelligence to drive efficiency, accuracy, and growth.
+                  As a trusted provider of ERP solutions UAE businesses rely on, we begin with a thorough analysis of your current systems, identify operational gaps, and design a tailored ERP roadmap that addresses your specific goals. Whether you’re a small enterprise or a large corporation, our ERP platforms are built to scale with your business.
+                  Our end-to-end ERP consulting & implementation services cover everything from process mapping and customization to integration, testing, and post-deployment support. With intelligent automation and seamless integration, we help you streamline operations, reduce manual workloads, and improve decision-making.
                 </p>
                 <Button
                   link={"/service"}
@@ -309,7 +255,7 @@ export default function HomeServices() {
             </div>
 
             {/* RIGHT - Accordion */}
-            <div className="w-full md:w-[65% space-y-0 md:my-0 my-14 font-['Archivo']">
+            <div className="w-full lg:w-[65%] space-y-0 lg:my-0 my-14 font-['Archivo']">
               {servicesData.map((item) => (
                 <div
                   key={item.id}

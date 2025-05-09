@@ -25,11 +25,11 @@ export default function BrandSlider({ text, brand_icons, width }) {
     return (
         <div className="relative overflow-hidden flex items-center w-full h-full">
             {/* Left side - Text */}
-            <div className="relative z-30 -top-0 md:bg-white pr-10 py-2">
-                <h2 className="text-secondary opacity-70 text-base leading-[20px] font-medium font-['Archivo'] w-[150px] md:block hidden">
+            <div className="relative z-30 -top-0 md:bg-white pr- py-2">
+                <h2 className="text- text-white  opacity-0 blur-2xl text-base leading-[20px] font-medium font-['Archivo'] w-[10px] md:block hidden">
                     {text}
                 </h2>
-                <div className="absolute md:-right-20 -top-4 md:top-0 h-32 md:h-full w-10 md:w-20 bg-gradient-to-r from-white via-white/70 to-transparent z-20 pointer-events-none" />
+                <div className="absolute md:-right-20 -top-4 md:top-0 h-32 md:h-96 w-10 md:w-20 bg-gradient-to-r from-white via-white/70 to-transparent z-20 pointer-events-none" />
             </div>
 
             {/* Moving Icons */}
