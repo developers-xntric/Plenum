@@ -1,6 +1,6 @@
 
 export const bottomSection = {
-    heading: "Why Businesses in the Middle East Choose Our ERP Services",
+    heading: "Oracle Solutions",
     Input: ["Net Suite", "Fusion Cloud"],
     button: "View All",
     img: "/service/ERPC/service.webp"
