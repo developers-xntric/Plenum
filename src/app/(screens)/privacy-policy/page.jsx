@@ -6,7 +6,7 @@ const PrivacyPolicy = () => {
         <div>
             <div className='lg:h-screen bg-cover bg-no-repeat bg-center overflow-x-hidden' style={{ backgroundImage: `url('/service/sp_herobg.webp')` }}>
                 {/* Wrapper */}
-                <div className="2xl:max-w-[1440px] h-full w-[90%] mx-auto space-y-20 py-16 pt-[64vh] md:pt-[60vh] lg:pt-36">
+                <div className="2xl:max-w-[1440px] h-full w-[90%] mx-auto py-16 pt-[64vh] md:pt-[60vh] lg:pt-36">
 
                     {/* Image Div */}
                     <div className='xl:w-[200px] xl:h-[250px] w-[185px] md:w-[130px] h-[240px] md:h-[180px] absolute left-1/2 lg:top-1/2 md:top-[40%] top-[38%] transform -translate-x-1/2 -translate-y-1/2'>
@@ -30,359 +30,177 @@ const PrivacyPolicy = () => {
 
 export default PrivacyPolicy
 
-
 function PrivacyPolicyTexts() {
     return (
-        <div className="container mx-auto px-4 py-8 max-w-[95%] 2xl:max-w-[1440px]">
+        <div className="container mx-auto px-4 py-8 max-w-[95%] 2xl:max-w-[1440px] font-['Archivo']">
             <div className="mb-8">
-                <h1 className="text-3xl font-bold mb-4">Privacy Policy</h1>
-                <p className="text-gray-600">
-                    Landmark Hospitality Holding Investment LLC, a company incorporated under the laws of Dubai, United Arab
-                    Emirates (referred to herein as "Citymax Hotels", "we", "our" or "us") is committed to protecting your privacy
-                    online.
+                <p className="text-[#000000] text-[18px] font-medium">
+                    Plenum Tech FZCO, a company incorporated under the laws of Dubai Silicon Oasis, United Arab Emirates (referred
+                    to herein as "Plenum", "we", "our" or "us") is committed to protecting your privacy online. <br />This Privacy
+                    Policy discloses the privacy practices for Plenum Tech's website and affiliated platforms, including all
+                    related sub-domains, services, and tools (jointly referred to as the "Website"). It describes the ways in
+                    which we collect, store, use, and protect the information you provide through our digital platforms. By
+                    interacting with our Website, you expressly consent to our handling of your personal data in accordance with
+                    the terms of this Privacy Policy.
                 </p>
             </div>
 
             <div className="space-y-8">
                 <section>
-                    <h2 className="text-2xl font-semibold mb-4">Introduction</h2>
-                    <p className="mb-4">
-                        This Privacy Policy discloses the privacy practices for participating websites of Citymax Hotels and its
-                        affiliated Landmark Group Entities, and their related sub-domains, sites, services and tools, or any
-                        successor site (jointly or severally referred as "Participating Website", as the context so require). The
-                        number of Participating Website may also vary in the course of time.
-                    </p>
-                    <p className="mb-4">
-                        This Privacy Policy (the "Privacy Policy") describes the ways in which we collect, store, use and protect
-                        the information collected due to your use of Participating Website. By providing us with your information on
-                        the website and mobile applications, you expressly consent to us processing your personal information in
-                        accordance with the terms of the Privacy Policy.
-                    </p>
-                    <p className="font-bold mb-4">
-                        PLEASE READ THIS PRIVACY POLICY CAREFULLY. BY ACCESSING OR USING OUR WEBSITE, MOBILE APPLICATION AND
-                        PARTICIPATING WEBSITE, YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTAND, AND AGREE TO BE BOUND TO ALL THE
-                        TERMS OF THIS PRIVACY POLICY AND OUR PARTICIPATING WEBSITE TERMS OF USE.
-                    </p>
-                    <p>
-                        IF YOU DO NOT AGREE TO THESE TERMS AND CONDITIONS SET FORTH IN THE PRIVACY POLICY, EXIT THIS PAGE /MOBILE
-                        APPLICATION AND DO NOT ACCESS OR USE THE WEBSITE/ PARTICIPATING WEBSITE. If you still have any questions,
-                        please contact us directly at info@citymaxhotels.com, and we will be pleased to assist you with your
-                        concerns.
+                    <h1 className="text-2xl font-bold italic mb-4">PLEASE READ THIS POLICY CAREFULLY</h1>
+                    <p className='text-[#000000] text-[18px] font-medium'>
+                        By accessing or using our Website, you acknowledge that you have read, understood, and agreed to be bound by
+                        this Privacy Policy and the Terms of Use. If you do not agree, please exit the Website and do not use our
+                        services. For any questions, contact us at info@plenum-tech.com.
                     </p>
                 </section>
 
                 <section>
-                    <h2 className="text-2xl font-semibold mb-4">Your Express Consent to Collection & Use of Information</h2>
-                    <p className="mb-4">
-                        We collect information when you register online or update your account, log-in, place an order, communicate
-                        with our customer service representatives, shop online, request a catalog, opt-in to receive our e-mails,
-                        participate in a contest, promotion or survey or join our social networking sites. We may also collect
-                        information from you in our stores or through our catalogs or other marketing material.
+                    <h2 className="text-2xl font-bold italic mb-4">YOUR EXPRESS CONSENT TO COLLECTION & USE OF INFORMATION</h2>
+                    <p className='text-[#000000] text-[18px] font-medium'>We may collect information when you:</p>
+                    <ul className="list-disc pl-6">
+                        <li className='text-[18px] font-medium text-[#000000]'>Visit or browse our Website</li>
+                        <li className='text-[18px] font-medium text-[#000000]'>Sign up for newsletters or events</li>
+                        <li className='text-[18px] font-medium text-[#000000]'>Submit contact or inquiry forms</li>
+                        <li className='text-[18px] font-medium text-[#000000]'>Participate in surveys or feedback activities</li>
+                        <li className='text-[18px] font-medium text-[#000000]'>Interact with our support or sales teams</li>
+                    </ul>
+                    <p className='text-[#000000] text-[18px] font-medium'>
+                        By doing so, you grant Plenum the right to collect, store, process, and use your personal information,
+                        including but not limited to:
                     </p>
-                    <p className="mb-4">
-                        By visiting our Website mobile application and participating website, submitting information, using our
-                        services, purchasing any products and /or accepting the Terms of Use & Privacy Policy, you unconditionally
-                        grant your consent to Citymax Hotels to collect, retain, use and disclose your other personal information
-                        including not limited to your name, email address, addresses, telephone contact numbers, date of birth and
-                        transaction details etc. as well as demographic, transactional and profile data such as IP address, internet
-                        domain or browser, referrer or user agent information or other relevant information that we use as part of
-                        our data collection process on the Web Sites/Apps or via the Other Channels, such as the use of cookies or
-                        certain other information you may provide to us, etc. ("Personal Information") and consent to collect,
-                        retain, use and disclose above information for the following purposes:
-                    </p>
-                    <ul className="list-disc pl-6 mb-4 space-y-2">
-                        <li>To ensure the efficient running of the website and mobile application</li>
-                        <li>To provide information about the products</li>
-                        <li>To develop/offer new products and services</li>
-                        <li>For accounting and audit purposes</li>
-                        <li>For marketing and market research and analysis purposes</li>
-                        <li>
-                            To send you communications (or to contact you) via SMS, email, push or any other channel about promotions,
-                            services, products and facilities offered by Citymax Hotels.
-                        </li>
-                        <li>
-                            provide you with offers (including for financial products and/or services), personalized services and
-                            recommendations and improve your experience on our website and mobile application.
-                        </li>
-                        <li>operate, evaluate and improve our business, website and mobile application.</li>
-                        <li>
-                            generate aggregated data to prepare insights to enable us to understand customer behavior, patterns and
-                            trends with a view to learning more about your preferences or other characteristics.
-                        </li>
-                        <li>provide privileges and benefits to you, marketing and promotional campaigns based on your profile.</li>
-                        <li>in connection with loyalty programs owned and operated by us or by other Landmark Group Entities.</li>
-                        <li>
-                            communicate with you (including to respond to your requests, questions, feedback, claims or disputes) and
-                            to customize and improve our services.
-                        </li>
-                        <li>
-                            to enhance your shopping experience and bring you access to membership programs, rewards and offers across
-                            Citymax Hotels and Landmark entities.
-                        </li>
-                        <li>enforce the terms of use of our website and mobile application.</li>
-                        <li>
-                            protect against and prevent fraud, illegal activity, harm, financial loss and other legal or information
-                            security risks; and serve other purposes for which we provide specific notice at the time of collection,
-                            and as otherwise authorized or required by applicable law.
-                        </li>
-                        <li>for shipment and delivery of products and services.</li>
+                    <ul className="list-disc pl-6">
+                        <li className='text-[18px] font-medium text-[#000000]'>Full name</li>
+                        <li className='text-[18px] font-medium text-[#000000]'>Email address</li>
+                        <li className='text-[18px] font-medium text-[#000000]'>Phone number</li>
+                        <li className='text-[18px] font-medium text-[#000000]'>Company name</li>
+                        <li className='text-[18px] font-medium text-[#000000]'>Job title</li>
+                        <li className='text-[18px] font-medium text-[#000000]'>IP address, device/browser type, and usage data</li>
+                    </ul>
+                    <p className='text-[#000000] text-[18px] font-medium'>We use this information to:</p>
+                    <ul className="list-disc pl-6">
+                        <li className='text-[18px] font-medium text-[#000000]'>Respond to inquiries and provide requested services</li>
+                        <li className='text-[18px] font-medium text-[#000000]'>Improve our website and user experience</li>
+                        <li className='text-[18px] font-medium text-[#000000]'>Send product, service, and marketing updates (with consent)</li>
+                        <li className='text-[18px] font-medium text-[#000000]'>Analyze usage trends and business performance</li>
+                        <li className='text-[18px] font-medium text-[#000000]'>Meet legal, compliance, or security requirements</li>
                     </ul>
                 </section>
 
                 <section>
-                    <h2 className="text-2xl font-semibold mb-4">Data Shared by You</h2>
-                    <p className="mb-4">
-                        Citymax Hotels may collect your Data in several ways from your use of our stores, website or mobile
-                        application. For instance:
-                    </p>
-                    <ul className="list-disc pl-6 mb-4 space-y-2">
-                        <li>when you register with us to receive our products and/or services.</li>
-                        <li>
-                            when you conduct a transaction with us or attempt a transaction at our stores, on our website or mobile
-                            application.
-                        </li>
-                        <li>when you complete surveys conducted by or for us.</li>
-                        <li>when you elect to receive any communications (including promotional offers) from us.</li>
-                        <li>from the information gathered by your visit to our stores, website or mobile application.</li>
+                    <h2 className="text-2xl font-bold italic mb-4">DATA SHARED BY YOU</h2>
+                    <p className='text-[#000000] text-[18px] font-medium'>Plenum collects data in the following ways:</p>
+                    <ul className="list-disc pl-6">
+                        <li className='text-[18px] font-medium text-[#000000]'>When you fill out a contact or service request form</li>
+                        <li className='text-[18px] font-medium text-[#000000]'>When you subscribe to updates or submit an inquiry</li>
+                        <li className='text-[18px] font-medium text-[#000000]'>When you download resources or participate in a digital event</li>
                     </ul>
                 </section>
 
                 <section>
-                    <h2 className="text-2xl font-semibold mb-4">Sharing of Data</h2>
-                    <p className="mb-4">
-                        We will not sell your Personal Information to third parties. We may, however, share selected customer
-                        information with the following third parties:
+                    <h2 className="text-2xl font-bold italic mb-4">DATA COLLECTED AUTOMATICALLY</h2>
+                    <p className='text-[#000000] text-[18px] font-medium'>
+                        We may use cookies, analytics tools, and server logs to automatically gather data such as:
                     </p>
-                    <ul className="list-disc pl-6 mb-4 space-y-2">
-                        <li>our group companies</li>
-                        <li>our franchisors</li>
-                        <li>
-                            Service Providers- Examples include storing and analyzing Data, protecting and securing our systems,
-                            providing search results and links, providing customer service, credit analysis, processing your
-                            information for profiling, user analysis, Software service providers and payment processing, warehousing
-                            service providers and delivery companies for the purposes of processing your payment and managing your
-                            order, including delivery and returns and in such circumstances these Service Providers will be provided
-                            access to only such Personal Information required to fulfill their functions (and only on the agreement
-                            that they not use your Personal Information for any other purposes)
-                        </li>
-                        <li>sourcing partners and supplier of products and services.</li>
-                        <li>
-                            purchasers and their advisors following a sale of all or part of our business, so that they can continue
-                            to provide services to you
-                        </li>
-                        <li>third party databases to which Citymax Hotels and/or one of our brands subscribes</li>
-                        <li>
-                            government bodies or other authorities if necessary to comply with regulations or law or to assist with
-                            law enforcement, or to protect our property and other rights
-                        </li>
-                        <li>
-                            agencies who help us collate statistics about site traffic, sales, demographics and other commercial
-                            information to enable us to tailor the services we provide to you and other customers
-                        </li>
-                        <li>
-                            Purposes intended to deliver publications to you, verify your account information, verify access to
-                            publications, determine whether you meet the minimum system requirements for use of the Service, provide
-                            you tailored content and instructions, targeted promotions, provide customer support, and seek your input
-                            regarding Citymax Hotels and/or the Participating Website
-                        </li>
+                    <ul className="list-disc pl-6">
+                        <li className='text-[18px] font-medium text-[#000000]'>IP address</li>
+                        <li className='text-[18px] font-medium text-[#000000]'>Device type and browser</li>
+                        <li className='text-[18px] font-medium text-[#000000]'>Pages visited</li>
+                        <li className='text-[18px] font-medium text-[#000000]'>Session duration</li>
+                        <li className='text-[18px] font-medium text-[#000000]'>Referral URL</li>
                     </ul>
-                    <p>
-                        We will retain your Personal Information for as long as it is legally required, and to support the business
-                        purposes for which it was obtained – we will then dispose of it promptly and securely.
+                    <p className='text-[#000000] text-[18px] font-medium'>
+                        This helps us enhance content and performance and ensure the security of our systems. For more information,
+                        please review our Cookie Policy [if applicable or coming soon].
                     </p>
                 </section>
 
                 <section>
-                    <h2 className="text-2xl font-semibold mb-4">Data That is Collected Automatically</h2>
-                    <p className="mb-4">
-                        We automatically collect some information when you visit our website or use our mobile application. This
-                        information helps us to make improvements to our content and navigation. The information collected
-                        automatically includes your IP address.
+                    <h2 className="text-2xl font-bold italic mb-4">SHARING OF DATA</h2>
+                    <p className='text-[#000000] text-[18px] font-medium'>
+                        Plenum does not sell your personal data to third parties. We may share selected data under strict
+                        confidentiality with:
                     </p>
-                    <p className="mb-4">
-                        Our web servers or affiliates who provide analytics and performance enhancement services collect IP
-                        addresses, operating system details, browsing details, device details and language settings. This
-                        information is aggregated to measure the number of visits, average time spent on the site, pages viewed and
-                        similar information. Citymax Hotels uses this information to measure the site usage, improve content and to
-                        ensure safety and security, as well as enhance performance of our website or mobile application.
-                    </p>
-                    <p>
-                        We may collect your Data automatically via Cookies, pixels and similar technologies in line with settings on
-                        your browser. For more information about Cookies, please see the section below, titled "Cookies".
-                    </p>
-                </section>
-
-                <section>
-                    <h2 className="text-2xl font-semibold mb-4">Marketing Opt-In and Opt-Out Provisions</h2>
-                    <p className="mb-4">
-                        When you register at Citymax Hotels, you are consenting to receiving promotional communication from us. You
-                        have the option to opt-out or unsubscribe from our marketing communications for products, new products,
-                        offers and promotions.
-                    </p>
-                    <p>
-                        If any user who receives an e-mail from the Site or SMS or any other channel would prefer not to receive
-                        marketing related communications in the future, you can do so by following the OPT-OUT instructions in the
-                        e-mails or SMS or any other channel. In addition, at any time you may access the OPT OUT section on the Site
-                        and choose to unsubscribe (opt-out) or send an e-mail to our customer care – info@citymaxhotels.com. We will
-                        make commercially reasonable efforts to implement your opt-out requests promptly, but you may still receive
-                        communications from us for up to ten business days as we process your request.
-                    </p>
-                </section>
-
-                <section>
-                    <h2 className="text-2xl font-semibold mb-4">Protection of Personal Information</h2>
-                    <p className="mb-4">
-                        We store all Personal Information on a secure server and we seek to use procedures designed to protect
-                        Personal Information from accidental or unauthorized access, destruction, use, modification or disclosure.
-                        We will seek to ensure that your Personal Information is kept confidential and secure in accordance with
-                        this Privacy Policy, and that the appropriate technical and organizational measures to prevent unlawful or
-                        accidental destruction, accidental loss, unauthorized disclosure or access or other unlawful forms of
-                        processing are implemented.
-                    </p>
-                    <p className="mb-4">
-                        Although we will strive to take commercially reasonable security precautions regarding all Personal
-                        Information, visitors or users to the Web Sites/Apps acknowledge and agree that Citymax Hotels does not
-                        control the transfer of information or data via the Web Sites/Apps or over any other electronic facilities
-                        or media.
-                    </p>
-                    <p className="mb-4">
-                        We take all steps reasonably necessary to protect against the unauthorized access, use, alteration,
-                        disclosure or destruction of Personal Information. If Citymax Hotels is sold to a third party, or Citymax
-                        Hotels otherwise becomes subject to a merger, consolidation or acquisition, it would become necessary for us
-                        to transfer your Personal Information to a third party, and in such case Citymax Hotels would require that
-                        the third party handles your Personal Information with no less care than taken by us.
-                    </p>
-                    <p>
-                        To keep your Personal Information safe, we ensure that sensitive and private data exchanges between you and
-                        Participating Website happen over a Secure Sockets Layer (SSL)-secured communication channel and are
-                        encrypted and protected with digital signatures. SSL-secured communication channels are specially designed
-                        to protect personal and sensitive information (payment details), which is sent over the internet.
-                    </p>
-                </section>
-
-                <section>
-                    <h2 className="text-2xl font-semibold mb-4">Your Rights and Choices</h2>
-                    <p className="mb-4">
-                        When we process Data about you, we do so with your consent and/or as necessary to operate our business, meet
-                        our contractual and legal obligations, protect the security of our systems and our customers, or fulfil
-                        other legitimate interests Of Citymax Hotels as described in this Privacy Policy.
-                    </p>
-                    <p className="mb-4">
-                        You have the following rights in relation to your personal information and you can exercise it by submitting
-                        a request info@citymaxhotels.com below.
-                    </p>
-                    <ul className="list-disc pl-6 mb-4 space-y-2">
-                        <li>Right to Access, Review, Modify and Delete</li>
-                        <li>Right to Correction</li>
-                        <li>Right to Withdraw Consent</li>
+                    <ul className="list-disc pl-6">
+                        <li className='text-[18px] font-medium text-[#000000]'>Technology partners and service providers (e.g., hosting, analytics, CRM)</li>
+                        <li className='text-[18px] font-medium text-[#000000]'>Regulatory or legal authorities (if required by law)</li>
+                        <li className='text-[18px] font-medium text-[#000000]'>Third-party platforms used to improve our services (e.g., email campaign providers, chat support)</li>
                     </ul>
-                    <p>
-                        It is important that the Data we hold about you is accurate and current. Please keep us informed if your
-                        personal information changes during the period for which we hold it.
+                    <p className='text-[#000000] text-[18px] font-medium'>
+                        All third-party access is granted under data processing agreements and only for essential business purposes.
                     </p>
                 </section>
 
                 <section>
-                    <h2 className="text-2xl font-semibold mb-4">Treatment of General Information</h2>
-                    <p>
-                        Citymax Hotels also collects your General Information to allow us, amongst other things, to better
-                        understand our users and improve the layout and functionality of the Website. Citymax Hotels may use and
-                        disclose anonymous information, including aggregate anonymous information derived from your Personal
-                        Information, to inform publishers, partners, trusted affiliates, advertisers, and other interested parties
-                        as to the usage habits or characteristics of Citymax Hotels customer base, and to serve any other business
-                        purposes.
+                    <h2 className="text-2xl font-bold italic mb-4">DATA RETENTION</h2>
+                    <p className='text-[#000000] text-[18px] font-medium'>
+                        We retain personal data for as long as necessary to fulfill the purpose it was collected for, including
+                        legal, accounting, or reporting requirements. When no longer needed, data is securely deleted or anonymized.
                     </p>
                 </section>
 
                 <section>
-                    <h2 className="text-2xl font-semibold mb-4">Cookies</h2>
-                    <p className="mb-4">
-                        Citymax Hotels may use cookies, or other technologies, to remember Personal Information or General
-                        Information when you use the Participating Website. Cookies are small files or records that Citymax Hotels
-                        may place on your web browser for collecting information about your activities on the Participating Website,
-                        preparing reports, assessing trends, in order to determine relevant interest-based advertisements to serve
-                        the customers and otherwise monitoring the way in which the Participating Website is being used. Citymax
-                        Hotels may also use services hosted by third parties, to assist for these matters which may collect
-                        information, such as your IP address, sent by your browser or via cookies.
+                    <h2 className="text-2xl font-bold italic mb-4">MARKETING COMMUNICATIONS</h2>
+                    <p className='text-[#000000] text-[18px] font-medium'>
+                        If you subscribe to receive updates from us, you agree to receive emails and occasional messages. You may
+                        opt-out at any time via the "unsubscribe" link or by emailing info@plenum-tech.com.
                     </p>
-                    <p className="mb-4">
-                        This is intended to enhance convenience for you, and to assist Citymax Hotels to run an efficient operation.
-                        The use of cookies is relatively standard. Most browsers are initially set up to accept cookies. However, if
-                        you prefer not to store cookies, you can choose to:
+                </section>
+
+                <section>
+                    <h2 className="text-2xl font-bold italic mb-4">SECURITY MEASURES</h2>
+                    <p className='text-[#000000] text-[18px] font-medium'>
+                        We take security seriously. All data is stored on secured servers using industry-standard protocols,
+                        including encryption, firewalls, and access control. However, no online platform can be 100% secure. Users
+                        share data at their own risk and are encouraged to reach out if they suspect a breach.
                     </p>
-                    <ul className="list-disc pl-6 mb-4 space-y-2">
-                        <li>not use Participating Site</li>
-                        <li>set your browser to notify you when you receive a cookie</li>
-                        <li>set your browser to refuse to accept cookies</li>
-                        <li>delete our cookies after visiting Participating Site</li>
-                        <li>browse our site using your browser's anonymous usage setting</li>
+                </section>
+
+                <section>
+                    <h2 className="text-2xl font-bold italic mb-4">YOUR RIGHTS</h2>
+                    <p className='text-[#000000] text-[18px] font-medium'>You have the right to:</p>
+                    <ul className="list-disc pl-6">
+                        <li className='text-[18px] font-medium text-[#000000]'>Access, correct, or delete your data</li>
+                        <li className='text-[18px] font-medium text-[#000000]'>Withdraw consent at any time</li>
+                        <li className='text-[18px] font-medium text-[#000000]'>Request data portability</li>
+                        <li className='text-[18px] font-medium text-[#000000]'>Object to data processing for direct marketing</li>
                     </ul>
-                    <p>
-                        By accepting the Terms, you confirm your consent to Citymax Hotels's use of cookies, and other such
-                        technologies, for these purposes. Any information that we collect and store that is personally identifiable
-                        is protected using appropriate means, and although Citymax Hotels does so, it will not be held responsible
-                        for any unauthorised access by third parties.
+                    <p className='text-[#000000] text-[18px] font-medium'>To exercise your rights, contact info@plenum-tech.com.</p>
+                </section>
+
+                <section>
+                    <h2 className="text-2xl font-bold italic mb-4">COOKIES</h2>
+                    <p className='text-[#000000] text-[18px] font-medium'>
+                        We may use cookies to personalize your experience, analyze usage, and support functionality. You can control
+                        or disable cookies through your browser settings. Continued use of the Website implies consent to our cookie
+                        usage.
                     </p>
                 </section>
 
                 <section>
-                    <h2 className="text-2xl font-semibold mb-4">Single Sign On</h2>
-                    <p className="mb-4">
-                        Each of our Participating Website offer a single-sign-on i.e. after a one-time registration on one of the
-                        Participating Website, you can sign on (login) to each of the Participating Website with uniform
-                        credentials, without having to go through a separate registration and sign-on process each time.
-                        ("Single-Sign-On"). Single-Sign-On provides a single identity – the basis for Participating Website you wish
-                        to use recognizing and verifying you.
-                    </p>
-                    <p className="mb-4">
-                        Further after logging into any of our Participating Website you can easily visit any or all of our
-                        Participating Website through links in the Participating Website. You can update your account data at any
-                        time. For the purpose of Single-Sign-On, certain personal data is stored centrally in a database and is
-                        available to our affiliates and service providers connected with the operation of Participating Websites.
+                    <h2 className="text-2xl font-bold italic mb-4">THIRD-PARTY LINKS</h2>
+                    <p className='text-[#000000] text-[18px] font-medium'>
+                        Our Website may contain links to third-party websites. Plenum is not responsible for the privacy practices
+                        or content of external sites. We encourage users to read the privacy policies of every site they visit.
                     </p>
                 </section>
 
                 <section>
-                    <h2 className="text-2xl font-semibold mb-4">Change in the Privacy Policy</h2>
-                    <p>
-                        Changes in law or changes in Citymax Hotels's business may require changes to be made to the terms of this
-                        Privacy Policy from time to time so Citymax Hotels encourages you to review this Privacy Policy periodically
-                        for any such changes. It is your responsibility to carefully read, agree with the Privacy Policy on each
-                        occasion you use the Participating Website and your continued use of the Participating Website shall signify
-                        your acceptance to be bound by the latest Privacy Policy. If you have any questions or feedback about the
-                        Privacy Policy, contact us at info@citymaxhotels.com
+                    <h2 className="text-2xl font-bold italic mb-4">CHANGES TO THIS POLICY</h2>
+                    <p className='text-[#000000] text-[18px] font-medium'>
+                        Plenum reserves the right to modify this Privacy Policy as needed. Any updates will be posted on this page
+                        with a revised effective date. Continued use of our Website after changes constitutes acceptance of the
+                        revised policy.
                     </p>
                 </section>
 
                 <section>
-                    <h2 className="text-2xl font-semibold mb-4">Limitation of Liability</h2>
-                    <p>
-                        In no event will Citymax Hotels, its affiliates, partners, and their respective employees, officers,
-                        directors or insurers be liable to you or to any other person for any costs, damages (including any special,
-                        incidental, exemplary, indirect or consequential damages), or liability of any nature, arising or resulting
-                        from the collection, use, transfer, processing or storage of personal information obtained by us and
-                        resulting from your access to and use of the web sites/apps or collected via the other channels.
-                    </p>
-                </section>
-
-                <section>
-                    <h2 className="text-2xl font-semibold mb-4">Governing Law & Jurisdiction</h2>
-                    <p>
-                        This privacy policy will be governed by the laws of the relevant country in which your personal information
-                        is registered with Citymax Hotels ("the applicable territory"). For the avoidance of doubt, the relevant
-                        applicable territory may only include those countries in which Citymax Hotels operates stores or the
-                        websites/apps as the case may be. The exclusive jurisdiction for any claim, action or dispute with Citymax
-                        Hotels under this privacy policy will be in the appropriate courts of the applicable territory.
-                    </p>
-                </section>
-
-                <section>
-                    <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
-                    <p className="mb-4">Citymax Hotels UAE: (800-2489629) info@citymaxhotels.com</p>
-                    <p>
-                        BY POST: Landmark Two Investments in Tourist LLC Business Bay Al Khaleej Al Tejari 2nd street Dubai, United
-                        Arab Emirates PO Box: 116121
-                    </p>
+                    <h2 className="text-2xl font-bold italic mb-4">CONTACT US</h2>
+                    <p className='text-[#000000] text-[18px] font-medium'>Plenum Tech FZCO</p>
+                    <p className='text-[#000000] text-[18px] font-medium'>Dubai Digital Park, Dubai Silicon Oasis</p>
+                    <p className='text-[#000000] text-[18px] font-medium'>Dubai, United Arab Emirates</p>
+                    <p className='text-[#000000] text-[18px] font-medium'>Email: info@plenum-tech.com</p>
+                    <p className='text-[#000000] text-[18px] font-medium'>Website: www.plenum-tech.com</p>
                 </section>
             </div>
         </div>
