@@ -7,8 +7,8 @@ export default function NetSuiteCards() {
     <div className="2xl:max-w-[1440px] max-w-[90%] mx-auto md:px-4 md:py-8 space-y-20">
       {/* center heading and text */}
       <div className=' xl:w-[90%] mx-auto my-auto h-[141px]'>
-        <h2 className='text-secondary text-[30px] lg:text-[32px] lg:text-4xl xl:text-[45px] font-["Archivo"] md:max-w-[95%] lg:max-w-[80%] xl:max-w-[80%] mx-auto text-center leading-[34px] xl:leading-[55px] font-semibold home-section-headings'>Expertly crafted NetSuite solutions for niche industries and NetSuite users</h2>
-        <p className='text-secondary opacity-60 text-[14px] md:text-[14px] xl:text-[18px] font-medium text-center md:max-w-[95%] mx-auto lg:max-w-[90%] xl:max-w-[85%] 2xl:w-[80%] font-["Archivo"] mt-4'>While NetSuite SuiteSuccess offers robust features, some functionalities are not available out of the box and require custom development. We’ve created custom features for various SuiteSuccess editions, including AFA and Real Estate, transforming them into comprehensive products with enhanced capabilities tailored to meet unique business needs.</p>
+        <h2 className='text-secondary text-[30px] lg:text-[32px] lg:text-4xl xl:text-[45px] font-["Archivo"] md:max-w-[95%] lg:max-w-[80%] xl:max-w-[75%] mx-auto text-center leading-[34px] xl:leading-[55px] font-semibold home-section-headings'>Get Started with Plenum – Your NetSuite Solution Partner</h2>
+        <p className='text-secondary opacity-60 text-[14px] md:text-[14px] xl:text-[18px] font-medium text-center md:max-w-[95%] mx-auto lg:max-w-[90%] xl:max-w-[100%] 2xl-max-w-[100%] font-["Archivo"] mt-4'>Ready to upgrade your business operations with Oracle NetSuite? Speak to our experts today to explore how we can tailor an ERP solution that fuels your growth. With years of experience as Oracle NetSuite partners, our approach combines technology, strategy, and hands-on execution to drive digital transformation across your enterprise.</p>
       </div>
       <div className="grid grid-cols-1  md:grid-cols-2 gap-6 mt-56 md:mt-16 lg:mt-24 xl:mt-32">
         <div className="bg-gray-100 flex md:flex-row flex-col p-6 md:col-span-2 rounded-sm md:text-left text-center">
@@ -25,11 +25,8 @@ export default function NetSuiteCards() {
               </div>
             </div>
 
-            <p className="text-sm text-gray-600 md:max-w-[90%] mb-4">
-              Cloud-based property management solution that automates leasing, maintenance, and financial workflows.
-              Integrating with ERPs, like NetSuite for robust financial management. It supports residential and commercial
-              properties with features like tenant/vendor management, subsidiary management, custom templates, and much
-              more.
+            <p className="text-[15px] text-secondary opacity-60 md:max-w-[80%] 2xl:max-w-[70%] mb-4">
+              Cloud-based property management solution that automates leasing, maintenance, and financial workflows, integrating with ERPs like NetSuite for robust financial management. It supports residential and commercial properties with features like tenant/vendor management, subsidiary management, custom templates, and much more.
             </p>
 
             <Link
@@ -62,7 +59,7 @@ export default function NetSuiteCards() {
             </div>
           </div>
 
-          <p className="text-sm text-gray-600 mb-4">
+          <p className="text-[15px] text-secondary opacity-60 mb-4 max-w-[85%] 2xl:max-w-[75%]">
             Effortlessly create sales orders, streamline workflows, visualize saved searches, and master SuiteQL—all
             with a single prompt.
           </p>
@@ -90,7 +87,7 @@ export default function NetSuiteCards() {
             </div>
           </div>
 
-          <p className="text-sm text-gray-600 mb-4">
+          <p className="text-[15px] max-w-[90%] text-secondary opacity-60 mb-4 2xl:max-w-[75%]">
             Custom NetSuite solution, optimizes the Cut-Make-Trim (CMT) process and supports Full Package Production
             (FPP) for outsourced manufacturing, enabling brands to focus on design and distribution.
           </p>

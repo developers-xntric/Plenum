@@ -15,7 +15,7 @@ export default function HouseAIProduct({ heading , paragraph, card1Para, card2Pa
       <div className="2xl:max-w-[1440px] mx-auto w-[90%] space-y-8 md:space-y-12">
         <div className='space-y-3 md:space-y-5 text-center md:text-left'>
           <h2 className="text-[30px] lg:text-[50px] leading-[34px] lg:w-[500px] lg:leading-[55px] font-['Archivo'] text-secondary font-semibold home-section-headings ">{heading || "Our In house AI Product"}</h2>
-          <p className="text-secondary font-['Archivo'] font-medium opacity-75 md:max-w-[80%] lg:max-w-[75%] xl:max-w-[60%] 2xl:max-w-[50%] text-[12px] md:text-[15px]">
+          <p className="text-secondary font-['Archivo'] font-medium opacity-75 md:max-w-[80%] lg:max-w-[75%] xl:max-w-[60%] 2xl:max-w-[60%] text-[12px] md:text-[15px]">
             {paragraph || "Plenum integrates intelligence into your business in addition to providing ERP systems. Our proprietary AI solutions are designed to help all organizational levels get deeper insights, increase productivity, and make more informed business decisions."}
           </p>
         </div>

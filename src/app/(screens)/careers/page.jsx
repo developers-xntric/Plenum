@@ -8,8 +8,8 @@ const Careers = () => {
         <div>
             <CareerHero
                 heading={"Join Us in Building the Future of Intelligence"}
-                para={"We're looking for talented and open-minded individuals from all backgrounds who are passionate about advancing human creativity."}
-                para2={"We have offices in New York, San Francisco, London, and Seattle. With team members working remotely from all over the world."}
+                para={"Join a team driving the next generation of intelligent solutions, where innovation is powered by the people behind it."}
+                para2={"Join Plenum Tech, where a culture driven by innovation and curiosity empowers our team to deliver smart ERP solutions across the Middle East. Be part of a dynamic environment that values fresh ideas and continuous learning to shape the future of enterprise technology"}
             />
             <JobListings />
             <TeamTestimonials />

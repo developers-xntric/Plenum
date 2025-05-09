@@ -25,7 +25,7 @@ export default function TabsSection() {
 
                                 <div
                                     key={index}
-                                    className={`p-4 md:p-6 cursor-pointer transition-all duration-200 hover:bg-[#F4F4F4] ${activeTab === index ? "bg-[#EFEFEF] rounded-[20px] shadow-lg" : ""}`}
+                                    className={`p-4 md:p-6 cursor-pointer transition-all duration-200 hover:bg-[#F4F4F4] ${activeTab === index ? "bg-[#EFEFEF] rounded-[20px]" : ""}`}
                                     onClick={() => setActiveTab(index)}
                                 >
                                     <h3 className="text-[20px] lg:text-[26px] tracking-tighter font-semibold home-section-headings text-secondary">

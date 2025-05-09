@@ -14,14 +14,14 @@ export const bottomSection2 = {
 }
 
 export const blackSection = {
-    heading: "Unmatched Oracle ERP Solutions",
-    para: "Our core expertise lies in seamless ERP integration, specializing in Oracle ERP cloud solutions. From system implementation and legacy migration to workflow automation, data synchronization, and real-time analytics, our services are designed to enhance operational efficiency, reduce costs, and drive strategic growth.",
+    heading: "Ready to Transform Your Business?",
+    para: "We help businesses unlock their full potential with expert ERP consulting and implementation. Whether you're seeking strategic ERP consultation or full-scale deployment, we’re here to guide you every step of the way.",
     button: "Get in touch"
 }
 
 export const blackSection2 = {
-    heading: "Innovation That Powers Your Potential",
-    para: "Plenum’s smart, adaptable solutions are built to transform how businesses operate. We focus on simplifying complexity and enabling scalable, strategic growth across industries.",
+    heading: "Why Businesses in the Middle East Choose Our ERP Services",
+    para: "With rapid economic diversification and digital transformation shaping the region, organizations in the GCC require localized, agile ERP solutions. Our services are designed to support regional regulations, Arabic interfaces, and sector-specific requirements, making us a trusted partner for ERP implementation services in the Gulf.",
     button: "Get in touch"
 }
 
@@ -91,14 +91,14 @@ export const oracle_service_black = {
 }
 
 export const ons_service = {
-    heading: "Custom NetSuite Solution",
-    Input: ["Expert NetSuite Support", "A suite of NetSuite integrations"],
+    heading: "NetSuite ERP Implementation",
+    Input: ["NetSuite Consulting Services", "Oracle NetSuite in Dubai and the UAE"],
     button: "View All",
     img: "/service/ONS/ONS2.svg"
 }
 
 export const ons_service_black = {
-    heading: "Why Plenum is your preferred NetSuite partner?",
-    para: "Experience the power of real-time insights and reporting with Microsoft Dynamics 365 Business",
-    button: "Get in touch"
+    heading: "Why Choose Plenum as Your Oracle NetSuite Partner?",
+    para: "As a certified NetSuite solution provider, we offer end-to-end NetSuite ERP services.",
+    button: "Get in touch with us now"
 }

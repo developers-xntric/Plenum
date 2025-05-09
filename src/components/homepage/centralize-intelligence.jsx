@@ -4,10 +4,10 @@ export default function CentralizeIntelligence() {
 
             <div className="2xl:max-w-[1440px] mx-auto w-[90%] space-y-10 md:space-y-20 relative md:static  bottom-5 md:bottom-0">
                 <div className="flex lg:flex-row flex-col lg:items-center text-center md:text-left justify-between space-y-5 lg:space-y-0">
-                    <h2 className="text-[30px] xl:max-w-[600px] lg:text-[55.312px] leading-[34px] lg:leading-[55px] font-['Archivo'] text-secondary font-semibold home-section-headings tracking-tight">
-                        Built for Intelligence. Powered by Experience.
+                    <h2 className="text-[30px] xl:max-w-[500px] lg:text-[55.312px] leading-[34px] lg:leading-[55px] font-['Archivo'] text-secondary font-semibold home-section-headings tracking-tight">
+                    Smart Products, Smarter Enterprises 
                     </h2>
-                    <p className=" text-secondary font-medium font-['Archivo'] opacity-75 lg:w-[45%] ">We’ve helped the largest telecom provider in Mauritius centralize their enterprise intelligence, optimize operations, and unlock smarter decision-making, proving the power of intelligent ERP in action.</p>
+                    {/* <p className=" text-secondary font-medium font-['Archivo'] opacity-75 lg:w-[45%] ">We’ve helped the largest telecom provider in Mauritius centralize their enterprise intelligence, optimize operations, and unlock smarter decision-making, proving the power of intelligent ERP in action.</p> */}
                 </div>
 
                 <div className="flex lg:flex-row flex-col text-center md:text-left items-center justify-between gap-5 md:gap-12">
