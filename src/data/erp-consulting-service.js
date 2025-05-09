@@ -1,6 +1,6 @@
 
 export const bottomSection = {
-    heading: "Oracle Solutions",
+    heading: "Why Businesses in the Middle East Choose Our ERP Services",
     Input: ["Net Suite", "Fusion Cloud"],
     button: "View All",
     img: "/service/ERPC/service.webp"
@@ -14,13 +14,13 @@ export const bottomSection2 = {
 }
 
 export const blackSection = {
-    heading: "Unmatched Oracle ERP Solutions",
+    heading: "Why Businesses in the Middle East Choose Our ERP Services",
     para: "Our core expertise lies in seamless ERP integration, specializing in Oracle ERP cloud solutions. From system implementation and legacy migration to workflow automation, data synchronization, and real-time analytics, our services are designed to enhance operational efficiency, reduce costs, and drive strategic growth.",
     button: "Get in touch"
 }
 
 export const blackSection2 = {
-    heading: "Innovation That Powers Your Potential",
+    heading: "Why Businesses in the Middle East Choose Our ERP Services",
     para: "Plenum’s smart, adaptable solutions are built to transform how businesses operate. We focus on simplifying complexity and enabling scalable, strategic growth across industries.",
     button: "Get in touch"
 }
