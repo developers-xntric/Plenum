@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback } from "react"
 import useEmblaCarousel from "embla-carousel-react"
-import { ChevronLeft, ChevronRight, ArrowUpRight } from "lucide-react"
+import { ChevronLeft, ChevronRight, ArrowUpRight, ArrowRight } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 const industries = [
@@ -132,7 +132,7 @@ export default function IndustryShowcase() {
     return (
         <div className="2xl:max-w-[1440px] md:max-w-[90%] mx-auto md:rounded-3xl font-['Archivo'] md:mb-20 bg-secondary text-white overflow-hidden">
             {/* Top Navigation Carousel */}
-            <div className="overflow-hidden border-[#FFFFFF] border-b" ref={emblaRefNav}>
+            <div className="overflow-hidden border-[#FFFFFF] border-b" >
                 <div className="flex">
                     {industries.map((industry, index) => (
                         <button
