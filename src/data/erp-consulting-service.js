@@ -15,7 +15,7 @@ export const bottomSection2 = {
 
 export const blackSection = {
     heading: "Unmatched Oracle ERP Solutions",
-    para: "Our core expertise lies in seamless ERP integration, specializing in Oracle ERP cloud solutions. From system implementation and legacy migration to workflow automation, data synchronization, and real-time analytics, our services are designed to enhance operational efficiency, reduce costs, and drive strategic growth.",
+    para: "Plenum delivers intelligent, integrated platforms built to streamline processes, improve efficiency, and support strategic decision-making. Our premium solutions are tailored to accelerate business growth and ensure long-term scalability across industries.",
     button: "Get in touch"
 }
 
