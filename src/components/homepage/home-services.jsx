@@ -237,15 +237,15 @@ export default function HomeServices() {
               </div>
               <div className="space-y-5">
                 <p className="text-[14px] md:text-[15px] text-secondary w-full md:w-[80%]  xl:max-w-[70%] leading-[20px] font-normal font-['Archivo'] opacity-75">
-                  At Plenum, our suite of services is designed to digitally transform and future-proof your enterprise:
+                We specialize in crafting innovative digital, AI, and ERP solutions customized to meet the unique needs of your business. Our services span from developing seamless digital experiences that engage and retain users, to implementing advanced AI technologies that drive intelligent decision-making. We also offer robust ERP solutions that streamline operations, enhance data management, and improve financial oversight. By combining industry expertise with advanced technology, we empower enterprises to stay ahead in a fast-evolving digital landscape. 
                 </p>
-                <p className="text-[14px] md:text-[15px] text-secondary w-full lg:w-[90%] leading-[20px] font-normal font-['Archivo'] opacity-75">
+                {/* <p className="text-[14px] md:text-[15px] text-secondary w-full lg:w-[90%] leading-[20px] font-normal font-['Archivo'] opacity-75">
 
 
                   Looking for scalable ERP solutions in Dubai or anywhere in the UAE? We specialize in delivering custom ERP business software solutions that align seamlessly with your unique operational needs. Our ERP systems are enhanced with artificial intelligence to drive efficiency, accuracy, and growth.
                   As a trusted provider of ERP solutions UAE businesses rely on, we begin with a thorough analysis of your current systems, identify operational gaps, and design a tailored ERP roadmap that addresses your specific goals. Whether you’re a small enterprise or a large corporation, our ERP platforms are built to scale with your business.
                   Our end-to-end ERP consulting & implementation services cover everything from process mapping and customization to integration, testing, and post-deployment support. With intelligent automation and seamless integration, we help you streamline operations, reduce manual workloads, and improve decision-making.
-                </p>
+                </p> */}
                 <Button
                   link={"/service"}
                   text={"Explore More"}
