@@ -4,48 +4,82 @@ import ArrowButton from '../common/arrow-button';
 import Image from 'next/image';
 import Link from 'next/link';
 
-
 const PinkSection = ({ heading, text, show_button = false, className, isVideo = false }) => {
-    return (
-        <div className={`bg-[#EFEFEF] md:h-[280px] overflow-hidden py-8 ${className}`}>
-            <div className='2xl:max-w-[1440px] w-[90%] z-20 mx-auto space-y-20 relative'>
-                {/* first Image Line */}
-                <div className='h-full md:block hidden w-[180px] absolute top-0 z-10'>
-                    {isVideo && <Image src={"/service/pink_link.svg"} alt='Russian' width={1000} height={1000} className='w-full h-full object-cover' />}
-                </div>
-
-                {/* IMAGE FOR MOBILE  left    */}
-                <div className='h-full md:hidden block  absolute -left-12 top-0 -z-10'>
-                    {isVideo && <Image src={"/service/pink_mob1.png"} alt='Russian' width={1000} height={1000} className='w-full h-full object-cover' />}
-                </div>
-                {/* IMAGE FOR MOBILE  right   */}
-                <div className='h-full md:hidden block absolute -right-8 top-0 -z-10'>
-                    {isVideo && <Image src={"/service/pink_mob2.png"} alt='Russian' width={1000} height={1000} className='w-full h-full object-cover' />}
-                </div>
-                <div className='md:w-[740px] xl:w-[955px] 2xl:w-[950px] mx-auto my-auto h-[141px]'>
-                    <div className='md:w-[720px] xl:w-[913px] mx-auto my-auto'>
-                        <div className='md:w-[720px] xl:w-[913px] mx-auto my-auto'>
-                            <h2 className='text-secondary text-[30px] lg:text-[40px]  xl:text-[45px] font-["Archivo"] text-center leading-[34px] md:leading-[56px] font-semibold home-section-headings'>{heading}</h2>
-                            <p className='text-secondary opacity-60 md:text-[14px] xl:text-[18px] font-medium text-center font-["Archivo"] mt-4'>{text}</p>
-                        </div>
-                        {/* Arrow Button Optional */}
-                        <div className='w-full flex justify-center top-24 md:top-0 md:mt-4 xl:mt-4 relative'>
-                            {show_button && (
-                                <Link href='/contact'>
-                                    <ArrowButton text={"Request A Demo"} className={"xl:mt-5"} />
-                                </Link>
-                            )}
-                        </div>
-                        {/* Right Line image */}
-                        <div className='h-full md:block hidden w-[180px] absolute right-0 top-0 z-10'>
-                            {isVideo && <Image src={"/service/pink_link.svg"} alt='Russian' width={1000} height={1000} className='w-full h-full object-cover' />}
-                        </div>
-                    </div>
-                </div>
+  return (
+    <section className="bg-[#EFEFEF]">
+      <div className={`relative h-[500px] md:h-[300px] xl:h-[340px] overflow-hidden ${className}`}>
+        {/* Wrapper for max width */}
+        <div className="relative max-w-[1440px] w-full mx-auto h-full">
+          {/* Desktop Left Image */}
+          {isVideo && (
+            <div className="hidden md:block absolute top-0 left-0 h-full w-[180px] z-10">
+              <Image
+                src="/service/pink_link.svg"
+                alt="Left Decoration"
+                width={1000}
+                height={1000}
+                className="w-full h-full object-cover"
+              />
             </div>
-        </div>
-    );
-}
+          )}
 
+          {/* Desktop Right Image */}
+          {isVideo && (
+            <div className="hidden md:block absolute top-0 right-0 h-full w-[250px] z-10">
+              <Image
+                src="/service/pink_link.svg"
+                alt="Right Decoration"
+                width={1000}
+                height={1000}
+                className="w-full h-full object-cover"
+              />
+            </div>
+          )}
+
+          {/* Mobile Images */}
+          {isVideo && (
+            <>
+              <div className="md:hidden absolute -left-20 top-0 z-0 w-[120px] h-full">
+                <Image
+                  src="/service/pink_mob1.png"
+                  alt="Mobile Left"
+                  width={1000}
+                  height={1000}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="md:hidden absolute -right-1 -top-16 z-0 w-20 h-full">
+                <Image
+                  src="/service/pink_mob2.png"
+                  alt="Mobile Right"
+                  width={1000}
+                  height={1000}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </>
+          )}
+
+          {/* Centered Content */}
+          <div className="relative z-20 h-full flex flex-col justify-center items-center text-center px-4">
+            <h2 className="text-secondary text-[30px] lg:text-[40px] xl:text-[45px] font-['Archivo'] font-semibold home-section-headings leading-[34px] md:leading-[56px]">
+              {heading}
+            </h2>
+            <p className="text-secondary opacity-60 md:text-[14px] xl:text-[18px] font-medium mt-4 font-['Archivo'] max-w-3xl">
+              {text}
+            </p>
+            {show_button && (
+              <div className="mt-6">
+                <Link href="/contact">
+                  <ArrowButton text="Request A Demo" />
+                </Link>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
 
 export default PinkSection;

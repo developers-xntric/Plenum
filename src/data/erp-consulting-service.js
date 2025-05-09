@@ -1,6 +1,6 @@
 
 export const bottomSection = {
-    heading: "Why Businesses in the Middle East Choose Our ERP Services",
+    heading: "Oracle Solutions",
     Input: ["Net Suite", "Fusion Cloud"],
     button: "View All",
     img: "/service/ERPC/service.webp"
@@ -14,14 +14,14 @@ export const bottomSection2 = {
 }
 
 export const blackSection = {
-    heading: "Why Businesses in the Middle East Choose Our ERP Services",
-    para: "Our core expertise lies in seamless ERP integration, specializing in Oracle ERP cloud solutions. From system implementation and legacy migration to workflow automation, data synchronization, and real-time analytics, our services are designed to enhance operational efficiency, reduce costs, and drive strategic growth.",
+    heading: "Ready to Transform Your Business?",
+    para: "We help businesses unlock their full potential with expert ERP consulting and implementation. Whether you're seeking strategic ERP consultation or full-scale deployment, we’re here to guide you every step of the way.",
     button: "Get in touch"
 }
 
 export const blackSection2 = {
     heading: "Why Businesses in the Middle East Choose Our ERP Services",
-    para: "Plenum’s smart, adaptable solutions are built to transform how businesses operate. We focus on simplifying complexity and enabling scalable, strategic growth across industries.",
+    para: "With rapid economic diversification and digital transformation shaping the region, organizations in the GCC require localized, agile ERP solutions. Our services are designed to support regional regulations, Arabic interfaces, and sector-specific requirements, making us a trusted partner for ERP implementation services in the Gulf.",
     button: "Get in touch"
 }
 
