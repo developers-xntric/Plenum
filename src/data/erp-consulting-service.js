@@ -91,14 +91,14 @@ export const oracle_service_black = {
 }
 
 export const ons_service = {
-    heading: "Custom NetSuite Solution",
-    Input: ["Expert NetSuite Support", "A suite of NetSuite integrations"],
+    heading: "NetSuite ERP Implementation",
+    Input: ["NetSuite Consulting Services", "Oracle NetSuite in Dubai and the UAE"],
     button: "View All",
     img: "/service/ONS/ONS2.svg"
 }
 
 export const ons_service_black = {
-    heading: "Why Plenum is your preferred NetSuite partner?",
-    para: "Experience the power of real-time insights and reporting with Microsoft Dynamics 365 Business",
-    button: "Get in touch"
+    heading: "Why Choose Plenum as Your Oracle NetSuite Partner?",
+    para: "As a certified NetSuite solution provider, we offer end-to-end NetSuite ERP services.",
+    button: "Get in touch with us now"
 }

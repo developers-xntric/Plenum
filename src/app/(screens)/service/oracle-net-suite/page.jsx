@@ -7,8 +7,8 @@ import MicrosoftCarousel from '@/components/service/microsoft/microsft-carousel'
 import NetSuiteCards from '@/components/service/oracle-net-suite/netsuite-cards'
 import OracleOneStopShop from '@/components/service/oracle-net-suite/oracle-one-stop-shop'
 import PinkSection from '@/components/service/pink-section'
-import { Oracleitems } from '@/data/accordineData'
-import { ons_service, ons_service_black, oracle_service, oracle_service_black } from '@/data/erp-consulting-service'
+import { OracleNetSuiteitems } from '@/data/accordineData'
+import { ons_service, ons_service_black } from '@/data/erp-consulting-service'
 import { cardData } from '@/data/home-blog'
 import { testimonials } from '@/data/home-testimonials'
 import { MicrosoftCarouselData } from '@/data/microsoft-carousel'
@@ -18,22 +18,28 @@ const OracleNetSuite = () => {
     return (
         <div>
             <New_Service_Inner_Hero
-                heading={"Engineering AI-powered NetSuite Solutions"}
-                para={"Helping companies by implementing NetSuite with the latest AI capabilities and customized AI apps."}
+                heading={"Oracle NetSuite: Powerful ERP for Growth"}
+                para={"Whether you're a growing SME or an established enterprise, our Oracle NetSuite services streamline operations, boost productivity, and improve visibility."}
                 image={"/service/ONS/banner.svg"}
                 image_className="md:w-[500px] md:h-[300px] mt-6 xl:w-[480.08px] xl:h-[500px]"
-                button_text="Connect with our Experts"
-                heading_className={"w-[55%] mt-10 lg:mt-0 lg:max-w-[500px] leading-12"}
+                button_text="Consult our experts today"
+                heading_className={"w-[85%] mt-10 lg:mt-0 lg:max-w-[600px] leading-12"}
                 para_className={"w-[60%] lg:w-[70%]"}
             />
-            <ERPAccordin items={Oracleitems} className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={ons_service} left={true} blackSection={ons_service_black} />
+            <ERPAccordin
+                items={OracleNetSuiteitems}
+                className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0'
+                para={"As experienced NetSuite implementation partners, we design and deploy ERP solutions that align with your operational goals. Our phased implementation approach minimizes downtime and ensures smooth migration."}
+                bottomSection={ons_service} left={true} blackSection={ons_service_black}
+            />
             <OracleOneStopShop />
             <NetSuiteCards />
-            <MicrosoftCarousel MicrosoftCarouselData={MicrosoftCarouselData} title={"Connect Your Favorite App to NetSuite Instantly"} para={"We offer pre-built NetSuite integrations for eCommerce platforms, CRMs, marketplaces, payment gateways, and 3PLs. Need something custom? We’ve got that too—with fast deployment and minimal coding."} />
+            <MicrosoftCarousel MicrosoftCarouselData={MicrosoftCarouselData} title={"Seamless Oracle NetSuite Integration with Leading Business Apps"} para={"Accelerate your operations by connecting Oracle NetSuite with your favorite tools, eCommerce platforms, CRMs, marketplaces, payment gateways, and 3PLs."}
+            />
             <div className='pt-20'>
                 <PinkSection
                     heading={"Ready To Supercharge Your AI Workflow?"}
-                    text={"Ready to explore the power of AI? Contact us 24×7 to schedule a one-on-one consultation and see how Momentum AI can elevate your AI workflow management and automation journey."}
+                    text={"Unlock the full potential of your business with smarter AI automation. Contact us anytime—our team is available 24×7 to schedule a personalized consultation and show you how Momentum AI can elevate your workflow, efficiency, and performance."}
                     show_button={true}
                     className="xl:h-[340px]"
                     isVideo={true}

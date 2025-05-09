@@ -16,7 +16,7 @@ const AccordionItem = ({ title, description, isOpen, onToggle, index }) => {
                     onClick={() => onToggle(index)}
                     className="flex items-center justify-between w-full py-5 text-left"
                 >
-                    <h3 className={`${isOpen ? "text-secondary font-semibold text-[30px] lg:text-[30px] home-section-headings" : "opacity-50"} cursor-pointer text-[25px] lg:text-[30px] leading-[30px] lg:leading-[40px] font-semibold max-w-[80%]`}>
+                    <h3 className={`${isOpen ? "text-secondary font-semibold text-[30px] lg:text-[30px] home-section-headings" : "opacity-50"} cursor-pointer text-[25px] lg:text-[26px] xl:text-[30px] leading-[30px] lg:leading-[40px] font-semibold max-w-[100%]`}>
                         {title}
                     </h3>
 
@@ -56,7 +56,7 @@ const AccordionItem = ({ title, description, isOpen, onToggle, index }) => {
                 transition={{ duration: 0.4, ease: "easeInOut" }}
                 className="overflow-hidden"
             >
-                <div className="pb-5 text-[#101010] font-['Archivo'] font-medium opacity-60 mt-4 text-[18px]">
+                <div className="pb-5 text-[#101010] font-['Archivo'] font-medium opacity-60 mt-4 text-[18px] w-[90%]">
                     <p>{description}</p>
                 </div>
             </motion.div>
@@ -65,9 +65,9 @@ const AccordionItem = ({ title, description, isOpen, onToggle, index }) => {
 };
 
 
-
 export function Accordion({ items }) {
-    const [openIndex, setOpenIndex] = useState(0)
+    `  `
+    const [openIndex, setOpenIndex] = useState(0) // Default first item open
 
     const handleToggle = (index) => {
         setOpenIndex(openIndex === index ? index : index)
