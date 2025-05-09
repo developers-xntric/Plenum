@@ -1,7 +1,6 @@
 "use client"
 import { ArrowUpRight } from "lucide-react"
 import { useState } from "react"
-
 import { motion } from "framer-motion";
 const AccordionItem = ({ title, description, isOpen, onToggle, index }) => {
     return (

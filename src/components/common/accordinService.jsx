@@ -16,7 +16,7 @@ const ERPSolutions = ({ blackSection }) => {
     )
 }
 
-export const ERPAccordin = ({ bottomSection, className, left, blackSection, items, para, arrow = false }) => {
+export const ERPAccordin = ({ bottomSection, items, className, left, blackSection, para, arrow = false }) => {
     return (
         <section className='relative bg-[#EFEFEF] font-["Archivo"]'>
             <ERPSolutions blackSection={blackSection} />

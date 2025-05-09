@@ -3,36 +3,33 @@
 import Image from 'next/image';
 import { useState } from 'react';
 
-export default function OrcaleFinancialFeature() {
-    const [activeTab, setActiveTab] = useState('Accounting and Control');
-
-    const tabs = ['Accounting and Control', 'Accounting Hub', 'Payables and Expenses', 'Receivable and cash'];
+export default function OrcaleFinancialFeature({ tabs,heading,para }) {
+    const [activeTab, setActiveTab] = useState(tabs[0]);
 
     return (
-        <div className="text-center py-16 bg-white">
+        <div className="text-center bg-white pb-16 2xl:pb-20">
             {/* WRAPPER */}
             <div className="2xl:max-w-[1440px] w-[90%] mx-auto space-y-16">
                 {/* Headings */}
                 <div className="space-y-6">
                     <h2 className="text-[30px] lg:text-[50px] leading-[34px] md:w-[480px] lg:w-[680px] mx-auto lg:leading-[55px] font-['Archivo'] text-secondary font-semibold home-section-headings">
-                        Financials features and capabilities
-
+                        {heading}
                     </h2>
                     <p className="text-secondary font-medium font-['Archivo'] sm:text-lg opacity-75 mx-auto md:w-[70%] lg:w-[55%] xl:max-w-[40%]">
-                        15+ years of experience in working with different Microsoft Dynamics ERPs, CRMs and Modules.
+                        {para}
                     </p>
                 </div>
 
                 <div>
                     {/* Tabs Section */}
-                    <div className="flex justify-center items-center gap-8 md:gap-10 lg:gap-14 xl:gap-24 2xl:gap-[150px] mb-10 border-b-2 w-full xl:max-w-[90%] mx-auto overflow-x-auto">
-                        {tabs.map((tab,index) => (
+                    <div className="flex justify-center items-center gap-4 md:gap-10 lg:gap-14 xl:gap-24 2xl:gap-0 mb-10 border-b-2 w-[90%] xl:max-w-[90%] mx-auto overflow-x-auto">
+                        {tabs.map((tab, index) => (
                             <button
                                 key={tab}
                                 onClick={() => setActiveTab(tab)}
-                                className={`text-[15px] lg:text-[19px] xl:text-[22px] flex-shrink-0 ${index === 0 ? "pl-[24rem] md:pl-[0rem] lg:pl-0" : ""} py-2 cursor-pointer pb-4 font-['Archivo'] text-secondary font-semibold home-section-headings ${activeTab === tab
-                                        ? 'text-[#FF6035] border-b-2 border-[#FF6035]'
-                                        : 'text-gray-400'
+                                className={`text-[15px] md:max-w-[20%] mx-auto lg:text-[19px] xl:text-[22px] flex-shrink-0 ${index === 0 ? "pl-[40rem] md:pl-[0rem] lg:pl-0" : ""} py-2 cursor-pointer pb-4 font-['Archivo'] text-secondary font-semibold home-section-headings ${activeTab === tab
+                                    ? 'text-[#FF6035] border-b-2 border-[#FF6035]'
+                                    : 'text-gray-400'
                                     } focus:outline-none`}
                             >
                                 {tab}
@@ -41,8 +38,8 @@ export default function OrcaleFinancialFeature() {
                     </div>
 
                     {/* Tab Content */}
-                    <div className="w-full h-[75vh] md:h-[104vh]  xl:h-[400px]  mx-auto">
-                        {activeTab === 'Accounting and Control' && (
+                    <div className="w-full  mx-auto">
+                        {activeTab === tabs[0] && (
                             <div className="w-full ">
                                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12">
                                     {/* Image Section */}

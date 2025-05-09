@@ -9,9 +9,9 @@ const New_Service_Inner_Hero = ({ heading, para, is_space_in_image = true, image
         <div className='overflow-hidden bg-cover xl:h-auto' style={{ backgroundImage: "url('/service/FAO/FAO_hero_bg.svg')" }}>
             {/* Wrapper */}
             <div className='2xl:max-w-[1440px] h-full w-[90%] mx-auto my-auto space-y-20 py-16 md:pt-36 md:pb-0'>
-                <div className='flex lg:flex-row flex-col w-full justify-between lg:gap-0 gap-10'>
+                <div className='flex lg:flex-row flex-col w-full items-center justify-between lg:gap-0 gap-10'>
                     {/* Left Section Heading Text And Buttons */}
-                    <div className='w-[540px] space-y-8 mt-12'>
+                    <div className='space-y-8 mt-12'>
                         {/* Heading */}
                         <h1 className={`text-secondary text-[45px] lg:text-[48px] font-["Chakra"] leading-11 xl:leading-[52px] font-semibold home-section-headings ${heading_className}`}>{heading}</h1>
                         {/* Paragraph */}

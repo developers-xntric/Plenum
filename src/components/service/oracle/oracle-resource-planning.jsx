@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 
 export default function OracleResourcePlanning() {
-    const [activeTab, setActiveTab] = useState('Financial Management');
+    const [activeTab, setActiveTab] = useState('Seamless Service Integration');
 
     const tabs = ['Seamless Service Integration', 'Connected Cloud Platforms', 'Real-time Financial Insights', 'Tailored Workflow Automation'];
 
@@ -22,13 +22,13 @@ export default function OracleResourcePlanning() {
                         </span> */}
                     </h2>
                     <p className="text-secondary font-medium font-['Archivo'] sm:text-lg opacity-75 mx-auto lg:w-[70%]  xl:max-w-[60%]">
-                    Plenum's proprietary method seamlessly aligns with Oracle ERP Cloud, ideal for businesses seeking flexible integration and future-ready solutions.
+                        Plenum's proprietary method seamlessly aligns with Oracle ERP Cloud, ideal for businesses seeking flexible integration and future-ready solutions.
                     </p>
                 </div>
 
                 <div>
                     {/* Tabs Section */}
-                    <div className="flex justify-center items-center gap-5 md:gap-5 lg:gap-5 xl:gap-8 2xl:gap-10 mb-10 border-b-2 w-full xl:max-w-[90%] mx-auto overflow-x-auto">
+                    <div className="flex justify-center items-center gap-5 md:gap-5 lg:gap-5 xl:gap-8 2xl:gap-10 mb-10 border-b-2 w-full xl:max-w-[95vw] 2xl:max-w-[92%] mx-auto overflow-x-auto xl:overflow-x-hidden">
                         {tabs.map((tab, index) => (
                             <button
                                 key={tab}
@@ -42,84 +42,38 @@ export default function OracleResourcePlanning() {
                             </button>
                         ))}
                     </div>
-
+                    {/* src="/images/service/oracle/tab1.png" */}
                     {/* Tab Content */}
                     <div className="w-full  mx-auto">
-                        {activeTab === 'Financial Management' && (
+                        {activeTab === 'Seamless Service Integration' && (
                             <div className="w-full ">
-                                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12">
-                                    {/* Image Section */}
-                                    <div className="flex items-center justify-center">
-                                        <div className="relative w-full aspect-[4/3]  overflow-hidden">
-                                            <Image
-                                                src="/images/service/oracle/tab1.png"
-                                                alt="Financial dashboard with analytics charts and graphs"
-                                                fill
-                                                className="object-cover"
-                                                priority
-                                            />
-                                        </div>
+                                <div className="flex flex-col lg:flex-row gap-6 lg:gap-10 lg:items-center justify-center ">
+                                    {/* Left Section - Image */}
+                                    <div className="w-full lg:w-1/2 xl:w-[60%] lg:p-4">
+                                        <Image
+                                            src="/images/service/oracle/tab1.png"
+                                            alt="Analytics Dashboard"
+                                            width={1000}
+                                            height={1000}
+                                            className="object-cover rounded-lg"
+                                        />
                                     </div>
 
-                                    {/* Content Section */}
-                                    <div className="flex flex-col justify-center space-y-6">
-                                        <div className="space-y-3 xl:max-w-[60%]">
-                                            <h2 className="text-[25px] lg:text-[28px] font-['Archivo'] leading-8 text-secondary font-semibold home-section-headings text-start">
-                                                Get a clear financial picture to make better decisions
-                                            </h2>
-                                            <p className="text-[14px] lg:text-base text-left text-secondary font-['Archivo'] opacity-75 font-semibold">
-                                                Oracle Financial gives you a complete view of your financial position and results so you can respond
-                                                quickly to an ever-changing business environment.
-                                            </p>
-                                        </div>
-
-                                        <div className="space-y-4">
-                                            <h3 className="md:text-xl font-semibold text-start ">Features</h3>
-                                            <div className="grid grid-cols-2 md:gap-x-6 md:gap-y-2">
-                                                <div className="space-y-2 text-secondary font-['Archivo'] opacity-75">
-                                                    <div className="flex items-start md:gap-2 text-[12.5px] md:text-base">
-                                                        <div className="mt-0.5 h-3 md:h-5 w-3 md:w-5 flex-none text-secondary font-['Archivo'] opacity-75">•</div>
-                                                        <span>Accounting hub</span>
-                                                    </div>
-                                                    <div className="flex items-start md:gap-2 text-[12.5px] md:text-base">
-                                                        <div className="mt-0.5 h-3 md:h-5 w-3 md:w-5 flex-none text-secondary font-['Archivo'] opacity-75">•</div>
-                                                        <span>Reporting and analytics</span>
-                                                    </div>
-                                                    <div className="flex items-start md:gap-2 text-[12.5px] md:text-base">
-                                                        <div className="mt-0.5 h-3 md:h-5 w-3 md:w-5 flex-none text-secondary font-['Archivo'] opacity-75">•</div>
-                                                        <span>Payables and Assets</span>
-                                                    </div>
-                                                    <div className="flex items-start  md:gap-2 text-[12.5px] md:text-base">
-                                                        <div className="mt-0.5 h-3 md:h-5 w-3 md:w-5 flex-none text-secondary font-['Archivo'] opacity-75">•</div>
-                                                        <span>Revenue Management</span>
-                                                    </div>
-                                                </div>
-                                                <div className="space-y-2 text-secondary font-['Archivo'] opacity-75">
-                                                    <div className="flex items-start  md:gap-2 text-[12.5px] md:text-base">
-                                                        <div className="mt-0.5 h-3 md:h-5 w-3 md:w-5 flex-none text-secondary font-['Archivo'] opacity-75">•</div>
-                                                        <span>Collections</span>
-                                                    </div>
-                                                    <div className="flex items-start  md:gap-2 text-[12.5px] md:text-base">
-                                                        <div className="mt-0.5 h-3 md:h-5 w-3 md:w-5 flex-none text-secondary font-['Archivo'] opacity-75">•</div>
-                                                        <span>Expense management</span>
-                                                    </div>
-                                                    <div className="flex items-start  md:gap-2 text-[12.5px] md:text-base">
-                                                        <div className="mt-0.5 h-3 md:h-5 w-3 md:w-5 flex-none text-secondary font-['Archivo'] opacity-75">•</div>
-                                                        <span>Joint management</span>
-                                                    </div>
-                                                    <div className="flex items-start  md:gap-2 text-[12.5px] md:text-base">
-                                                        <div className="mt-0.5 h-3 md:h-5 w-3 md:w-5 flex-none text-secondary font-['Archivo'] opacity-75">•</div>
-                                                        <span>Receivables</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    {/* Right Section - Text */}
+                                    <div className="w-full lg:w-1/2 lg:p-4 space-y-4">
+                                        <h1 className="text-[25px] lg:text-[28px]  text-start lg:max-w-[80%] 2xl:max-w-[60%] font-['Archivo'] text-secondary font-semibold home-section-headings">
+                                        Seamless Service Integration
+                                        </h1>
+                                        <p className="text-secondary text-start font-['Archivo'] opacity-75 w-[45% xl:max-w-[85%] ">
+                                        Unify your business functions with Oracle ERP's seamless service integration. Break down data silos and connect departments effortlessly across your enterprise. Experience smoother workflows and enhanced productivity from end to end.
+                                        </p>
                                     </div>
                                 </div>
+
                             </div>
                         )}
 
-                        {activeTab === 'Project Management' && (
+                        {activeTab === 'Connected Cloud Platforms' && (
                             <div className="flex flex-col lg:flex-row gap-6 lg:gap-10 lg:items-center justify-center ">
                                 {/* Left Section - Image */}
                                 <div className="w-full lg:w-1/2 xl:w-[60%] lg:p-4">
@@ -144,7 +98,7 @@ export default function OracleResourcePlanning() {
                             </div>
                         )}
 
-                        {activeTab === 'Procurement' && (
+                        {activeTab === 'Real-time Financial Insights' && (
                             <div className="flex flex-col items-center justify-center h-full bg-gray-100">
                                 <h2 className="text-3xl font-['Archivo'] text-secondary font-semibold">
                                     ERP Services in Qatar
@@ -155,7 +109,7 @@ export default function OracleResourcePlanning() {
                             </div>
                         )}
 
-                        {activeTab === 'ERP Analytics' && (
+                        {activeTab === 'Tailored Workflow Automation' && (
                             <div className="flex flex-col items-center justify-center h-full bg-gray-100">
                                 <h2 className="text-3xl font-['Archivo'] text-secondary font-semibold">
                                     ERP Services in Qatar
