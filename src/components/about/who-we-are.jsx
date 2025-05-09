@@ -15,12 +15,11 @@ function WhoWeAre() {
                             </div>
                             <p className='text-secondary lg:text-left text-center font-["Archivo"] lg:max-w-[95%] xl:max-w-[99%] 2xl:max-w-[96%] my-4 opacity-75 text-[15px] xl:text-[18px]'>Plenum is an intelligent technology solutions provider focused on delivering enterprise-grade technology solutions that increase efficiency, scalability, and informed decision-making. With strong expertise in AI consulting, cloud managed IT services and ERP implementation and consulting, we help organizations transform their operations and grow faster.</p>
 
-
                         </div>
 
                     </div>
                     <div className=' flex justify-center relative items-center lg:w-[2100px] 2xl:w-[70%] '>
-                        <Image src={"/about/Who-we-are.png"} alt='img' width={1000} height={1000} className='w-full  md:h-full' />
+                        <Image src={"/about/Who-we-are.png"} alt='img' width={2000} height={2000} className='w-full  md:h-full' />
 
                     </div>
                 </div>
