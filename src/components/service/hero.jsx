@@ -17,7 +17,7 @@ const ServiceHero = ({ bgImage, isLogo = true }) => {
           {/* Centered Text Below Image */}
           <div className="flex flex-col justify-end h-full items-center md:items-start lg:w-[530px]">
             <h1 className='text-[40px] lg:text-[60px] xl:text-[90px] font-["Chakra"] font-[600] text-primary flex flex-col gap-2 leading-10 lg:leading-12 xl:leading-20'>Plenum <span>AI Services</span></h1>
-            <p className='mt-8 text-[17px] lg:text-[14px] xl:text-[18px] font-normal text-gray-400 max-w-[480px] pr-10'>
+            <p className='mt-8 text-[17px] lg:text-[14px] xl:text-[18px] font-normal text-gray-400 md:max-w-[480px] md:pr-10'>
               Transform your business with scalable, intelligent AI services that are specifically designed to improve decision-making, streamline operations, and accelerate growth in a variety of sectors.
             </p>
 
