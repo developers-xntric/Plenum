@@ -15,13 +15,10 @@ export default function OracleOneStopShop() {
                 {/* Headings */}
                 <div className="space-y-6">
                     <h1 className="text-[30px] lg:text-[50px] leading-[35px] md:w-[350px] lg:w-[550px] mx-auto lg:leading-[55px] font-['Archivo'] text-secondary font-semibold home-section-headings">
-                        Your one-stop shop for all things NetSuite
-                        {/* <span className="block text-[30px] lg:text-[50px] leading-[35px] lg:leading-[55px]  font-['Archivo'] text-secondary font-semibold">
-                            all things NetSuite
-                        </span> */}
+                        Trusted Oracle NetSuite Partners in the Region
                     </h1>
                     <p className="text-secondary font-['Archivo'] font-medium opacity-75 mx-auto md:w-[60%] lg:w-[35%] xl:max-w-[40%] 2xl:max-w-[30%]">
-                        We offer a wide range of NetSuite solutions, built by NetSuite experts, for NetSuite experts.
+                        Whether you're looking for NetSuite consulting partners or full-service ERP support, we’ve got you covered.
                     </p>
                 </div>
 
@@ -40,18 +37,6 @@ export default function OracleOneStopShop() {
                                 {tab}
                             </button>
                         ))}
-                        {/* {tabs.map((tab,index) => (
-                            <button
-                                key={tab}
-                                onClick={() => setActiveTab(tab)}
-                                className={`text-[15px] lg:text-[19px] xl:text-[22px] flex-shrink-0 ${index === 0 ? "pl-[24rem] md:pl-[0rem] lg:pl-0" : ""} py-2 cursor-pointer pb-4 font-['Archivo'] text-secondary font-semibold home-section-headings ${activeTab === tab
-                                        ? 'text-[#FF6035] border-b-2 border-[#FF6035]'
-                                        : 'text-gray-400'
-                                    } focus:outline-none`}
-                            >
-                                {tab}
-                            </button>
-                        ))} */}
                     </div>
 
                     {/* Tab Content */}
@@ -75,11 +60,11 @@ export default function OracleOneStopShop() {
                                     {/* Content Section */}
                                     <div className="flex flex-col justify-center space-y-5 lg:space-y-10">
                                         <div className=" lg:max-w-[80%] space-y-5 lg:space-y-10">
-                                            <h2 className="text-[28px] md:max-w-[50%] font-['Archivo'] leading-8 text-secondary font-semibold home-section-headings text-start">
-                                                NetSuite Implementation
+                                            <h2 className="lg:text-[24px] xl:text-[28px] md:max-w-[50%] font-['Archivo'] leading-6 xl:leading-8 text-secondary font-semibold home-section-headings text-start">
+                                                Unified Business Management
                                             </h2>
-                                            <p className=" text-left text-secondary font-['Archivo'] opacity-75 ">
-                                                Are you looking to upgrade from legacy systems to NetSuite ERP for integrated financials, CRM, and operations? We are here to help you.
+                                            <p className="text-left text-secondary font-['Archivo'] opacity-75 xl:w-[92%] 2xl:w-[84.5%]">
+                                                Oracle NetSuite connects all core business functions—finance, CRM, inventory, HR, and eCommerce, into one cloud-based platform. This unified approach ensures data consistency, improves team collaboration, and eliminates the need for multiple disconnected tools.
                                             </p>
                                         </div>
                                         <button className='bg-[#FF6035] hover:bg-[#101010] cursor-pointer transition-all duration-500 w-[70%] md:w-[40%] lg:w-[60%] xl:w-1/2 text-white py-3 xl:py-4 px-2 xl:px-4 text-[11px] md:text-[15px] xl:text-base rounded-lg'>Explore our Implementation Services</button>

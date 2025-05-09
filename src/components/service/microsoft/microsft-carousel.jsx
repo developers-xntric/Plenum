@@ -32,10 +32,10 @@ export default function MicrosoftCarousel({ MicrosoftCarouselData, title, para }
   return (
     <section className="w-full pt-16 md:pt-16 lg:pt-20  overflow-hidden">
       <div className="text-center mb-10 md:mb-16 space-y-5">
-        <h2 className="text-[30px] lg:text-[50px] leading-[34px] lg:leading-[55px] max-w-[96%] md:max-w-[70%] 2xl:max-w-[80%] mx-auto font-['Archivo'] text-secondary font-semibold home-section-headings">
+        <h2 className={`text-[30px] lg:text-[50px] leading-[34px] lg:leading-[55px] max-w-[96%] md:max-w-[65%] 2xl:max-w-[60%]   mx-auto font-['Archivo'] text-secondary font-semibold home-section-headings`}>
           {title}
         </h2>
-        <p className="text-secondary font-['Archivo'] text-[14px] lg:text-lg font-medium opacity-75 max-w-[90%] lg:max-w-[75%] xl:max-w-[60%] 2xl:max-w-[45%] mx-auto">
+        <p className="text-secondary font-['Archivo'] text-[14px] lg:text-lg font-medium opacity-75 max-w-[90%] lg:max-w-[75%] xl:max-w-[60%] 2xl:max-w-[55%] mx-auto">
           {para}
         </p>
       </div>
