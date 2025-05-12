@@ -1,4 +1,4 @@
-'use client'; // Since we'll use state for tabs, this needs to be a client component
+'use client'; 
 
 import Image from 'next/image';
 import { useState } from 'react';
