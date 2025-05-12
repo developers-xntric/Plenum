@@ -67,17 +67,17 @@ const Navbar = () => {
         {
             title: "Managed Cloud Services",
             isExpanded: false,
-            link: "/service/ERP-Cosultant",
+            link: "/service/manage-cloud",
         },
         {
             title: "AI consulting, governance and implementation",
             isExpanded: false,
-            link: "/service/",
+            link: "/service/ai-consulting",
         },
         {
             title: "Digital Experiences",
             isExpanded: false,
-            link: "/service",
+            link: "/service/digital-experiences",
         },
     ]
 

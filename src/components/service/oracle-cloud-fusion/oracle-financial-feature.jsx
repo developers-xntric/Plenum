@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { useState } from 'react';
 
-export default function OrcaleFinancialFeature({ tabs,heading,para }) {
+export default function OrcaleFinancialFeature({ tabs, heading, para }) {
     const [activeTab, setActiveTab] = useState(tabs[0]);
 
     return (
@@ -22,7 +22,7 @@ export default function OrcaleFinancialFeature({ tabs,heading,para }) {
 
                 <div>
                     {/* Tabs Section */}
-                    <div className="flex justify-center items-center gap-4 md:gap-10 lg:gap-14 xl:gap-24 2xl:gap-0 mb-10 border-b-2 w-[90%] xl:max-w-[90%] mx-auto overflow-x-auto">
+                    <div className="flex justify-center items-center gap-4 md:gap-10 lg:gap-14 xl:gap-16 2xl:gap-0 mb-10 border-b-2 w-[90%] xl:max-w-[90%] mx-auto overflow-x-auto">
                         {tabs.map((tab, index) => (
                             <button
                                 key={tab}
@@ -58,17 +58,12 @@ export default function OrcaleFinancialFeature({ tabs,heading,para }) {
                                     {/* Content Section */}
                                     <div className="flex flex-col justify-center space-y-6">
                                         <div className="space-y-3 lg:max-w-[80%] text-[14px] md:text-base">
-                                            <h2 className="text-[25px] md:text-[28px] font-['Archivo'] leading-8 text-secondary font-semibold home-section-headings text-start">
-                                                Accounting and Control
+                                            <h2 className="text-[25px] md:text-[28px] font-['Archivo'] leading-8 text-secondary font-semibold h text-start">
+                                                Real-time Financial Reporting
                                             </h2>
+
                                             <p className=" text-left text-secondary font-['Archivo'] opacity-75 font-semibold">
-                                                Automate more than 80% of your financial processes, including accounting for intercompany tax, and transfer pricing journals. Eliminate manual effort, create more accurate tax reports, and close your books faster
-                                            </p>
-                                            <p className=" text-left text-secondary font-['Archivo'] opacity-75 font-semibold">
-                                                Continually improve exception handling based on past actions and quickly identify issues that present business and audit risks.
-                                            </p>
-                                            <p className=" text-left text-secondary font-['Archivo'] opacity-75 font-semibold">
-                                                Standardize your chart of accounts, business processes, data model, security and compliance controls to unify your business for coordinated decisions and action.
+                                                Oracle Fusion Cloud delivers real-time insights into financial data, enabling businesses to generate accurate reports instantly. This ensures that decision-makers have access to the most up-to-date financial information to make informed choices quickly.
                                             </p>
                                         </div>
 
@@ -77,50 +72,102 @@ export default function OrcaleFinancialFeature({ tabs,heading,para }) {
                             </div>
                         )}
 
-                        {activeTab === 'Accounting Hub' && (
-                            <div className="flex flex-col lg:flex-row  gap-5 lg:gap-10 items-center justify-center ">
-                                {/* Left Section - Image */}
-                                <div className="w-full lg:w-1/2 xl:w-[60%] md:p-4">
-                                    <Image
-                                        src="/images/service/microsoft-dynamics/microsoft-tab2.webp"
-                                        alt="Analytics Dashboard"
-                                        width={1000}
-                                        height={1000}
-                                        className="object-cover rounded-lg"
-                                    />
-                                </div>
+                        {activeTab === 'Automated Invoice Processing' && (
+                            <div className="w-full ">
+                                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12">
+                                    {/* Image Section */}
+                                    <div className="flex items-center justify-center">
+                                        <div className="relative w-full aspect-[4/3]  overflow-hidden">
+                                            <Image
+                                                src="/service/OCF/tab2.png"
+                                                alt="Financial dashboard with analytics charts and graphs"
+                                                fill
+                                                className="object-cover"
+                                                priority
+                                            />
+                                        </div>
+                                    </div>
 
-                                {/* Right Section - Text */}
-                                <div className="w-full lg:w-1/2 md:p-4 space-y-4">
-                                    <h2 className="text-3xl  text-start lg:max-w-[80%] 2xl:max-w-[60%] font-['Archivo'] text-secondary font-semibold home-section-headings">
-                                        Dynamics 365 CE/CRM solutions by Plenum
-                                    </h2>
-                                    <p className="text-secondary text-start font-['Archivo'] opacity-75 w-[45% xl:max-w-[85%] ">
-                                        Plenum is a Microsoft Dynamics partner that offers cloud-based Dynamics 365 CE/CRM business solutions geared towards improving sales productivity through better-managed customer interactions. You can add value to your social media marketing, improve business intelligence, and manage your entire campaign all from one location.
-                                    </p>
+                                    {/* Content Section */}
+                                    <div className="flex flex-col justify-center space-y-6">
+                                        <div className="space-y-3 lg:max-w-[80%] text-[14px] md:text-base">
+                                            <h2 className="text-[25px] md:text-[28px] font-['Archivo'] leading-8 text-secondary font-semibold h text-start">
+                                                Automated Invoice Processing
+                                            </h2>
+
+                                            <p className=" text-left text-secondary font-['Archivo'] opacity-75 font-semibold">
+                                                The platform automated invoice processing, reducing the time spent on manual tasks and minimizing human error. With automated workflows, businesses can process and track invoices more efficiently, improving cash flow and vendor relationships.
+                                            </p>
+                                        </div>
+
+                                    </div>
                                 </div>
                             </div>
                         )}
 
-                        {activeTab === 'Payables and Expenses' && (
-                            <div className="flex flex-col items-center justify-center h-full bg-gray-100">
-                                <h2 className="text-3xl font-['Archivo'] text-secondary font-semibold">
-                                    ERP Services in Qatar
-                                </h2>
-                                <p className="text-secondary font-['Archivo'] opacity-75 mt-4 max-w-md">
-                                    Our Qatar team specializes in Microsoft Dynamics ERP and customized IT infrastructure for businesses.
-                                </p>
+                        {activeTab === 'Budgeting and Forecasting Tools' && (
+                            <div className="w-full ">
+                                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12">
+                                    {/* Image Section */}
+                                    <div className="flex items-center justify-center">
+                                        <div className="relative w-full aspect-[4/3]  overflow-hidden">
+                                            <Image
+                                              src="/service/OCF/tab3.png"
+                                                alt="Financial dashboard with analytics charts and graphs"
+                                                fill
+                                                className="object-cover"
+                                                priority
+                                            />
+                                        </div>
+                                    </div>
+
+                                    {/* Content Section */}
+                                    <div className="flex flex-col justify-center space-y-6">
+                                        <div className="space-y-3 lg:max-w-[80%] text-[14px] md:text-base">
+                                            <h2 className="text-[25px] md:text-[28px] font-['Archivo'] leading-8 text-secondary font-semibold h text-start">
+                                                Budgeting and Forecasting Tools
+                                            </h2>
+
+                                            <p className=" text-left text-secondary font-['Archivo'] opacity-75 font-semibold">
+                                                Oracle Fusion Cloud provides advanced budgeting and forecasting features, allowing businesses to plan for the future with greater accuracy. By analyzing historical data and trends, organizations can create more reliable financial projections and allocate resources effectively.
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
                             </div>
                         )}
 
-                        {activeTab === 'Receivable and cash' && (
-                            <div className="flex flex-col items-center justify-center h-full bg-gray-100">
-                                <h2 className="text-3xl font-['Archivo'] text-secondary font-semibold">
-                                    ERP Services in Qatar
-                                </h2>
-                                <p className="text-secondary font-['Archivo'] opacity-75 mt-4 max-w-md">
-                                    Our Qatar team specializes in Microsoft Dynamics ERP and customized IT infrastructure for businesses.
-                                </p>
+                        {activeTab === 'Integrated Financial Management' && (
+                            <div className="w-full ">
+                                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12">
+                                    {/* Image Section */}
+                                    <div className="flex items-center justify-center">
+                                        <div className="relative w-full aspect-[4/3]  overflow-hidden">
+                                            <Image
+                                                 src="/service/OCF/tab4.png"
+                                                alt="Financial dashboard with analytics charts and graphs"
+                                                fill
+                                                className="object-cover"
+                                                priority
+                                            />
+                                        </div>
+                                    </div>
+
+                                    {/* Content Section */}
+                                    <div className="flex flex-col justify-center space-y-6">
+                                        <div className="space-y-3 lg:max-w-[80%] text-[14px] md:text-base">
+                                            <h2 className="text-[25px] md:text-[28px] font-['Archivo'] leading-8 text-secondary font-semibold h text-start">
+                                                Integrated Financial Management
+                                            </h2>
+
+                                            <p className=" text-left text-secondary font-['Archivo'] opacity-75 font-semibold">
+                                               With integrated financial management, businesses can seamlessly connect all financial processes across the enterprise, from accounts payable to general ledger. This integration improves accuracy, efficiency, and consistency, ensuring financial data is always aligned with business operations.
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
                             </div>
                         )}
                     </div>
