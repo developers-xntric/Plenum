@@ -127,12 +127,12 @@ export default function MobilitySolutions({
         </Carousel>
       ) : (
         // Desktop grid view
-        <div className={`${className} gap-5 xl:gap-8 2xl:gap-10 md:mt-14`}>
+        <div className={`${className} gap-5 xl:gap-8 2xl:gap-[70px] md:mt-14`}>
           {solutions.map((solution, index) => (
             <div
               key={index}
               className={`bg-white px-4 py-6 rounded-sm shadow-sm border border-gray-100 gap-4 justify-center flex flex-col ${includesFlex
-                ? "w-full sm:w-[300px] xl:w-[calc(25%-1rem)] 2xl:w-[calc(25%-1.25rem)] h-[200px]"
+                ? "w-full sm:w-[310px] xl:w-[310px] 2xl:w-[310px] h-[200px]"
                 : card_className
                 }`}
             >
