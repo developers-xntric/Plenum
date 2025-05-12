@@ -70,7 +70,7 @@ const Hero = () => {
 
                     </h1>
 
-                    <p className='font-["Archivo"] font-normal text-[14px] lg:text-lg xl:text-[19px] text-center text-white md:max-w-full max-w-[92%] mx-auto '>We create intelligent enterprise ecosystems by integrating AI, data engineering, ERP, and digital experiences-helping your business think smarter, operate faster, and connect better across all functions.</p>
+                    <p className='font-["Archivo"] font-normal text-[14px] lg:text-lg xl:text-[19px] text-center text-white 2xl:max-w-[72%] md:max-w-[75%] max-w-[92%] mx-auto '>We create intelligent enterprise ecosystems by integrating AI, data engineering, ERP, and digital experiences-helping your business think smarter, operate faster, and connect better across all functions.</p>
                 </div>
             </div>
             {/* //video */}
