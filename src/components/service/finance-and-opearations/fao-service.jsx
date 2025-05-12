@@ -5,7 +5,7 @@ export default function Finance_Opearations_Service({ heading, para }) {
   return (
     <section className="py-10 lg:py-10 lg:px-16 2xl:max-w-[1440px] font-['Archivo'] max-w-[90%] mx-auto">
       <div className="text-center mb-8 md:mb-12">
-        <h2 className="text-[30px] max-w-[70%] mx-auto lg:text-[50px] text-secondary font-semibold home-section-headings leading-[34px] lg:leading-[40px]">{heading}</h2>
+        <h2 className="text-[30px] md:max-w-[70%] mx-auto lg:text-[50px] text-secondary font-semibold home-section-headings leading-[34px] lg:leading-[40px]">{heading}</h2>
         <p className="mt-8 text-[15px] text-[#101010] opacity-60 max-w-xl mx-auto">
           {para}
         </p>
