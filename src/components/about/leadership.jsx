@@ -13,7 +13,7 @@ export default function LeadershipSection() {
                 {/* Left side - Image */}
                 <div className="lg:w-[45%] h-full">
                     <Image
-                        src="/about/leadership.webp"
+                        src="/about/leader.svg"
                         alt="Aasim Shaikh - Group CEO"
                         width={3000}
                         height={3000}
