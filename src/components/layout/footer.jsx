@@ -54,21 +54,23 @@ export default function Footer() {
 
             <div className="grid grid-cols-2 gap-x-12 md:gap-x-8 gap-y-2 2xl:max-w-[1440px] w-[85%] md:w-[100%] mx-auto ">
               <div>
-                <h3 className="text-[#767676] mb-4 text-lg md:text-base xl:text-lg font-bold font-['Archivo']">Product</h3>
+                <h3 className="text-[#767676] mb-4 text-lg md:text-base xl:text-lg font-bold font-['Archivo']">Products</h3>
                 <ul className="space-y-1 font-normal md:text-sm xl:text-base font-['Archivo']">
                   <li>
-                    <Link href="#" className="hover:text-gray-300">
-                      Global Accounts
+                    <Link href="/product/momentum-ai" className="hover:text-gray-300">
+                      {/* Global Accounts */}
+                      Momentum AI
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/product/vertical-builds" className="hover:text-gray-300">
+                      {/* Payments */}
+                      Vertical Builds 
                     </Link>
                   </li>
                   <li>
                     <Link href="#" className="hover:text-gray-300">
-                      Payments
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#" className="hover:text-gray-300">
-                      Transfer
+                      {/* Transfer */}
                     </Link>
                   </li>
                 </ul>
@@ -118,7 +120,7 @@ export default function Footer() {
                 <h3 className="text-[#767676] mb-4 text-lg md:text-base xl:text-lg font-bold font-['Archivo']">Legal</h3>
                 <ul className="space-y-1 md:text-sm xl:text-base font-['Archivo']">
                   <li>
-                    <Link href="/terms" className="hover:text-gray-300">
+                    <Link href="/terms" className="hover:text-gray-300 ">
                       Terms & Conditions
                     </Link>
                   </li>
@@ -128,9 +130,9 @@ export default function Footer() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="#" className="hover:text-gray-300">
+                    {/* <Link href="#" className="hover:text-gray-300">
                       Regulatory
-                    </Link>
+                    </Link> */}
                   </li>
                 </ul>
               </div>

@@ -5,7 +5,7 @@ const CareerHero = ({ heading, para, para2 }) => {
     return (
         <section className='relative  pt-36 md:pt-44 pb-16 md:pb-28 font-["Archivo"]'>
             <div className='flex flex-col justify-center items-center'>
-                <div className='max-w-[90%] md:max-w-[55%] xl:max-w-[50%]  2xl:max-w-[40%] mx-auto'>
+                <div className='max-w-[90%] lg:max-w-[60%] xl:max-w-[50%]  2xl:max-w-[40%] mx-auto my-auto'>
                     <h1 className='text-[30px] md:text-[60px] font-["Chakra"] font-semibold leading-[35px] md:leading-[65px] text-center tracking-[-2.771px] text-[#FF6035]'>{heading || "Fueling Innovation with AI-Powered Possibilities"}</h1>
                     <p className='text-center text-[15px] font-medium md:text-[18px] mt-4 text-[#151515] opacity-60'>{para || "We create AI tools that amplify creativity and solve real-world problems. From concept to impact, our technology powers the next wave of innovation."}</p>
                 </div>
