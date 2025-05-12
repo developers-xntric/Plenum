@@ -139,12 +139,12 @@ export default function Footer() {
                 <h3 className="text-[#767676] mb-4 text-lg md:text-base xl:text-lg font-bold font-['Archivo'] leading-5">Contact Us</h3>
                 <ul className="space-y-1 md:text-sm xl:text-base font-['Archivo']">
                   <li>
-                    <Link href="#" className="hover:text-gray-300">
+                    <Link href="mailto:info@plenum-tech.com"  className="hover:text-gray-300">
                     info@plenum-tech.com
                     </Link>
                   </li>
                   <li>
-                    <Link href="#" className="hover:text-gray-300">
+                    <Link href="tel:+971543089222" className="hover:text-gray-300">
                     +971 54 30 89222
                     </Link>
                   </li>
