@@ -44,7 +44,7 @@ const Service_Inner_Hero = ({ heading, para, is_space_in_image = true, image, im
             <Image src={image} alt='ERPC' width={1500} height={1500} />
           </div>}
         </div>
-        {isERP && width > 1440 && <div className={`${image_className ? image_className : "lg:w-[600px] lg:h-[400px] xl:w-[800px] 2xl:w-[850px]"}  ${isERP ? "2xl:absolute right-0 lg:top-[14%] 2xl:top-[8%]" : "2xl:absolute right-0 lg:top-[14%] 2xl:top-[2%]"}`}>
+        {isERP && width > 1440 && <div className={`${image_className ? image_className : "lg:w-[600px] lg:h-[400px] xl:w-[800px] 2xl:w-[850px]"}  ${isERP ? "2xl:absolute right-0 lg:top-[14%] 2xl:top-[10%]" : "2xl:absolute right-0 lg:top-[14%] 2xl:top-[2%]"}`}>
           {/* Image */}
           <Image src={image} alt='ERPC' width={1500} height={1500} />
         </div>}
