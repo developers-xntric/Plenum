@@ -4,16 +4,16 @@ import React from 'react'
 const EndToEndAI = () => {
     return (
         <div className="py-16 xl:py-20 font-['Archivo']">
-            <div className="2xl:max-w-[1440px] max-w-[90%] mx-auto lg:text-center mb-8 space-y-2 lg:space-y-4">
+            <div className="2xl:max-w-[1440px] max-w-[90%] mx-auto text-center mb-8 space-y-2 lg:space-y-4">
                 <div>
                     <h2 className="text-[30px] lg:text-[50px] leading-[26px] lg:leading-[35px]  text-secondary font-semibold home-section-headings">Momentum AI</h2>
                 </div>
                 <div className="mb-2">
-                    <h3 className="text-[30px] lg:text-[50px] leading-[34px] lg:leading-[50px]  text-secondary font-semibold home-section-headings w-[90%] lg:w-auto">Simplifying End-to-End AI Workflows</h3>
+                    <h3 className="text-[30px] lg:text-[50px] leading-[34px] lg:leading-[50px]  text-secondary font-semibold home-section-headings lg:w-auto">Simplifying End-to-End AI Workflows</h3>
                 </div>
                 <div className="lg:p-2 mx-auto lg:max-w-[60%]">
                     <p className="text-[15px] text-secondary font-['Archivo'] opacity-75 leading-tight">
-                        Momentum AI is a unified platform built to automate every stage of the AI lifecycle — from data ingestion to deployment. Designed for enterprise scalability, it streamlines processes and accelerates AI development with powerful automation tools.
+                        Momentum AI is a unified platform built to automate every stage of the AI lifecycle from data ingestion to deployment. Designed for enterprise scalability, it streamlines processes and accelerates AI development with powerful automation tools.
                     </p>
                 </div>
             </div>

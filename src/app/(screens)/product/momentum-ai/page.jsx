@@ -33,6 +33,8 @@ const MomentumAI = () => {
                 
             />
             <StartSmallWithAI />
+            <ArticleSlider />
+            <Blog heading='Discover Our Blog Articles' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world" cardData={cardData} />
             <div className='py-10'>
                 <PinkSection
                     heading={"Ready To Supercharge Your AI Workflow?"}
@@ -42,8 +44,6 @@ const MomentumAI = () => {
                     isVideo={true}
                 />
             </div>
-            <ArticleSlider />
-            <Blog heading='Discover Our Blog Articles' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world" cardData={cardData} />
             <ServiceContact />
 
         </div>
