@@ -1,71 +1,98 @@
 export const finance = [
-    {
-        title: "Improved Operational Efficiency",
-        description:
-            "With Dynamics 365 Finance and Operations, businesses can automate routine tasks, improve workflows, and reduce human error.",
-        icon: "/service/MD/fao1.svg",
-    },
-    {
-        title: "Better Financial Control and Compliance",
-        description:
-            "The system ensures compliance with local tax laws, generates accurate financial reports, and facilitates real-time tracking of financial transactions, helping companies stay on top of their financial health.",
-        icon: "/service/MD/fao2.svg",
-    },
-    {
-        title: "Scalable and Flexible",
-        description:
-            "Microsoft Dynamics 365 Finance and Operations is scalable, meaning it can grow with your business. Whether you're a small business looking to automate basic processes or a large enterprise requiring complex solutions, the system can be customized to meet your needs.",
-        icon: "/service/MD/fao3.svg",
-    },
-    {
-        title: "Data-Driven Decision Making",
-        description:
-            "With the power of analytics and reporting tools, Dynamics 365 Finance and Operations helps businesses make informed decisions",
-        icon: "/service/MD/fao4.svg",
-    },
-]
+  {
+    title: "Improved Operational Efficiency",
+    description:
+      "With Dynamics 365 Finance and Operations, businesses can automate routine tasks, improve workflows, and reduce human error.",
+    icon: "/service/MD/fao1.svg",
+  },
+  {
+    title: "Better Financial Control and Compliance",
+    description:
+      "The system ensures compliance with local tax laws, generates accurate financial reports, and facilitates real-time tracking of financial transactions, helping companies stay on top of their financial health.",
+    icon: "/service/MD/fao2.svg",
+  },
+  {
+    title: "Scalable and Flexible",
+    description:
+      "Microsoft Dynamics 365 Finance and Operations is scalable, meaning it can grow with your business. Whether you're a small business looking to automate basic processes or a large enterprise requiring complex solutions, the system can be customized to meet your needs.",
+    icon: "/service/MD/fao3.svg",
+  },
+  {
+    title: "Data-Driven Decision Making",
+    description:
+      "With the power of analytics and reporting tools, Dynamics 365 Finance and Operations helps businesses make informed decisions",
+    icon: "/service/MD/fao4.svg",
+  },
+];
 export const fusion = [
-    {
-        title: "Unified Cloud Platform",
-        description:
-            "Oracle Fusion Cloud combines ERP, HCM, SCM, and CX into one integrated suite. Eliminate silos and enable seamless data flow across departments. Drive productivity with a consistent user experience and centralized data access.",
-        icon: "/service/MD/fao1.svg",
-    },
-    {
-        title: "Built-in AI and Advanced Analytics",
-        description:
-            "The system ensures compliance with local tax laws, generates accurate financial reports, and facilitates real-time tracking of financial transactions, helping companies stay on top of their financial health.",
-        icon: "/service/MD/fao2.svg",
-    },
-    {
-        title: "Continuous Innovation and Scalability",
-        description:
-            "Microsoft Dynamics 365 Finance and Operations is scalable, meaning it can grow with your business. Whether you're a small business looking to automate basic processes or a large enterprise requiring complex solutions, the system can be customized to meet your needs.",
-        icon: "/service/MD/fao3.svg",
-    },
-]
+  {
+    title: "Unified Cloud Platform",
+    description:
+      "Oracle Fusion Cloud combines ERP, HCM, SCM, and CX into one integrated suite. Eliminate silos and enable seamless data flow across departments. Drive productivity with a consistent user experience and centralized data access.",
+    icon: "/service/MD/fao1.svg",
+  },
+  {
+    title: "Built-in AI and Advanced Analytics",
+    description:
+      "The system ensures compliance with local tax laws, generates accurate financial reports, and facilitates real-time tracking of financial transactions, helping companies stay on top of their financial health.",
+    icon: "/service/MD/fao2.svg",
+  },
+  {
+    title: "Continuous Innovation and Scalability",
+    description:
+      "Microsoft Dynamics 365 Finance and Operations is scalable, meaning it can grow with your business. Whether you're a small business looking to automate basic processes or a large enterprise requiring complex solutions, the system can be customized to meet your needs.",
+    icon: "/service/MD/fao3.svg",
+  },
+];
 export const businessSer = [
-    {
-        title: "Financial Management",
-        description:
-            "Gain real-time insights into your finances, track performance, and ensure compliance. Automate accounting processes and make data-driven decisions that enhance profitability.",
-        icon: "/service/MD/fao1.svg",
-    },
-    {
-        title: "Supply Chain Optimization",
-        description:
-            "The system ensures compliance with local tax laws, generates accurate financial reports, and facilitates real-time tracking of financial transactions, helping companies stay on top of their financial health.",
-        icon: "/service/MD/fao2.svg",
-    },
-    {
-        title: "Project Management",
-        description:
-            "Microsoft Dynamics 365 Finance and Operations is scalable, meaning it can grow with your business. Whether you're a small business looking to automate basic processes or a large enterprise requiring complex solutions, the system can be customized to meet your needs.",
-        icon: "/service/MD/fao3.svg",
-    },
-]
+  {
+    title: "Financial Management",
+    description:
+      "Gain real-time insights into your finances, track performance, and ensure compliance. Automate accounting processes and make data-driven decisions that enhance profitability.",
+    icon: "/service/MD/fao1.svg",
+  },
+  {
+    title: "Supply Chain Optimization",
+    description:
+      "The system ensures compliance with local tax laws, generates accurate financial reports, and facilitates real-time tracking of financial transactions, helping companies stay on top of their financial health.",
+    icon: "/service/MD/fao2.svg",
+  },
+  {
+    title: "Project Management",
+    description:
+      "Microsoft Dynamics 365 Finance and Operations is scalable, meaning it can grow with your business. Whether you're a small business looking to automate basic processes or a large enterprise requiring complex solutions, the system can be customized to meet your needs.",
+    icon: "/service/MD/fao3.svg",
+  },
+];
+export const oracleNetSuite = [
+  {
+    title: "NetSuite ERP Implementation",
+    description:
+      "As experienced NetSuite implementation partners, we design and deploy ERP solutions that align with your operational goals. Our phased implementation approach minimizes downtime and ensures smooth migration.",
+    icon: "/service/MD/fao1.svg",
+  },
+  {
+    title: "NetSuite Consulting Services",
+    description:
+      "As experienced NetSuite implementation partners, we design and deploy ERP solutions that align with your operational goals. Our phased implementation approach minimizes downtime and ensures smooth migration.",
+    icon: "/service/MD/fao2.svg",
+  },
+  {
+    title: "Oracle NetSuite in Dubai and the UAE",
+    description:
+      "As experienced NetSuite implementation partners, we design and deploy ERP solutions that align with your operational goals. Our phased implementation approach minimizes downtime and ensures smooth migration.",
+    icon: "/service/MD/fao3.svg",
+  },
+];
 
-export const fusionTabs = ['Real-time Financial Reporting', 'Automated Invoice Processing', 'Budgeting and Forecasting Tools', 'Integrated Financial Management'];
+// export const
+
+export const fusionTabs = [
+  "Real-time Financial Reporting",
+  "Automated Invoice Processing",
+  "Budgeting and Forecasting Tools",
+  "Integrated Financial Management",
+];
 
 export const capabilities = [
   {
@@ -110,4 +137,4 @@ export const capabilities = [
     description:
       "Tailor the system to meet your unique business needs with customizations and seamless integrations with other Microsoft tools and third-party applications.",
   },
-]
+];

@@ -234,19 +234,25 @@ export default function ArticleSlider({ bg = "black",title , paragraph }) {
 
             </div>
             <div className="flex justify-center items-center gap-1 mt-2">
-                {articles.map((_, index) => (
-                    <button
-                        key={index}
-                        className={cn(
-                            "w-2 h-2 rounded-full transition-all duration-300",
-                            index === activeIndex ? `${bg == "white" ? "bg-black" : "bg-white"} w-4` : "bg-gray-600 opacity-70 hover:opacity-100",
-                        )}
-                        onClick={() => goToSlide(index)}
-                        aria-label={`Go to slide ${index + 1}`}
-                        disabled={isAnimating}
-                    />
-                ))}
+                {[0, 1, 2, 3].map((dotIndex) => {
+                    const mappedIndex = Math.round((dotIndex / 3) * (articles.length - 1))
+                    return (
+                        <button
+                            key={dotIndex}
+                            className={cn(
+                                "w-2 h-2 rounded-full transition-all duration-300",
+                                Math.round((activeIndex / (articles.length - 1)) * 3) === dotIndex
+                                    ? `${bg == "white" ? "bg-black" : "bg-white"} w-4`
+                                    : "bg-gray-600 opacity-70 hover:opacity-100"
+                            )}
+                            onClick={() => goToSlide(mappedIndex)}
+                            aria-label={`Go to slide group ${dotIndex + 1}`}
+                            disabled={isAnimating}
+                        />
+                    )
+                })}
             </div>
+
         </div>
     )
 }
