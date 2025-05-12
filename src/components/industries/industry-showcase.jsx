@@ -2,7 +2,6 @@
 
 import { useState, useRef } from "react"
 import Image from "next/image"
-import { ArrowRight } from "lucide-react"
 
 export default function IndustryShowcase({ isTabs = false }) {
   const [activeTab, setActiveTab] = useState("Healthcare")
@@ -87,14 +86,14 @@ export default function IndustryShowcase({ isTabs = false }) {
             ))}
           </div>
 
-          <button
+          {/* <button
             onClick={scrollTabs}
             className="absolute md:-right-8 lg:-right-10 xl:right-0 top-3 md:block hidden"
           >
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="12" viewBox="0 0 24 12" fill="none">
               <path d="M16.4041 0.243345C16.327 0.319824 16.2658 0.410812 16.224 0.511062C16.1823 0.611313 16.1608 0.718841 16.1608 0.827444C16.1608 0.936046 16.1823 1.04357 16.224 1.14382C16.2658 1.24407 16.327 1.33506 16.4041 1.41154L20.1884 5.19584H0.822673C0.604487 5.19584 0.395237 5.28251 0.240955 5.43679C0.0866742 5.59108 0 5.80033 0 6.01851C0 6.2367 0.0866742 6.44595 0.240955 6.60023C0.395237 6.75451 0.604487 6.84119 0.822673 6.84119H20.172L16.4041 10.6008C16.2509 10.7549 16.1649 10.9634 16.1649 11.1808C16.1649 11.3981 16.2509 11.6066 16.4041 11.7608C16.5582 11.914 16.7668 12 16.9841 12C17.2014 12 17.4099 11.914 17.5641 11.7608L22.7963 6.52857C22.8667 6.461 22.9227 6.3799 22.961 6.29012C22.9993 6.20035 23.019 6.10377 23.019 6.00617C23.019 5.90858 22.9993 5.81199 22.961 5.72222C22.9227 5.63245 22.8667 5.55134 22.7963 5.48377L17.5723 0.243345C17.4958 0.166238 17.4048 0.105036 17.3046 0.0632695C17.2043 0.0215034 17.0968 0 16.9882 0C16.8796 0 16.7721 0.0215034 16.6718 0.0632695C16.5716 0.105036 16.4806 0.166238 16.4041 0.243345Z" fill="#101010" />
             </svg>
-          </button>
+          </button> */}
         </div>
       </div> : <div className="flex flex-col gap-3 py-16">
         <h1 className="font-semibold font-['Archivo'] text-[50px] text-secondary tracking-tight">Explore More Case Studies</h1>
