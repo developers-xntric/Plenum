@@ -119,7 +119,7 @@ export default function IndustryShowcase() {
                           <div className="text-white text-[14px]">{industry.industry}</div>
                           <div className="mt-12 md:mt-auto">
                             <Link
-                              href={`/case-studies/${index + 1}`}
+                              href={`/case-studies/${industry.link}`}
                               className="text-[#FF6035] text-[15px] md:text-[17px] flex items-center group"
                             >
                               View Project
