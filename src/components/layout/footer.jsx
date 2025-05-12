@@ -52,7 +52,7 @@ export default function Footer() {
               </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-x-12 md:gap-x-8 gap-y-2 2xl:max-w-[1440px] w-[85%] md:w-[100%] mx-auto ">
+            <div className="flex justify-between lg:flex-row md:flex-col  gap-x-16 md:gap-x-12 gap-y-2 p-6 md:p-0">
               <div>
                 <h3 className="text-[#767676] mb-4 text-lg md:text-base xl:text-lg font-bold font-['Archivo']">Company</h3>
                 <ul className="space-y-1 font-normal md:text-sm xl:text-base font-['Archivo']">
@@ -80,45 +80,41 @@ export default function Footer() {
                 <h3 className="text-[#767676] mb-4 text-lg md:text-base xl:text-lg font-bold font-['Archivo']">Services</h3>
                 <ul className="space-y-1 font-normal md:text-sm xl:text-base font-['Archivo']">
                   <li>
-                    <Link href="#" className="hover:text-gray-300">
+                    <Link href="/service/ERP-consulting" className="hover:text-gray-300">
                      ERP Consulting 
                     </Link>
                   </li>
                   <li>
-                    <Link href="#" className="hover:text-gray-300">
+                    <Link href="/service/manage-cloud" className="hover:text-gray-300">
                       Managed Cloud Services
                     </Link>
                   </li>
                   <li>
-                    <Link href="#" className="hover:text-gray-300">
-                     AI Consulting Governance & Implementaion 
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#" className="hover:text-gray-300">
-                     Digital Experiences
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#" className="hover:text-gray-300">
-                      Oracle ERP Solutions
+                    <Link href="/service/ai-consulting" className="hover:text-gray-300">
+                     AI Consulting Governance <br/> & Implementaion 
                     </Link>
                   </li>
                   {/* <li>
                     <Link href="#" className="hover:text-gray-300">
-                      Press
+                     Digital Experiences
                     </Link>
                   </li> */}
+                  <li>
+                    <Link href="/service/oracle" className="hover:text-gray-300">
+                      Oracle ERP Solutions
+                    </Link>
+                  </li>
+                
                 </ul>
               </div>
             </div>
           </div>
 
           {/* Center CTA for desktop */}
-          <div className=" hidden md:flex justify-center relative lg:left-[2%] xl:left-[4%] 2xl:left-[3%] font-['Archivo'] z-20 ">
+          <div className=" hidden md:flex justify-center relative xl:-right-[1%] 2xl:-right-[1%] font-['Archivo'] z-20 ">
             <div className="">
               <Image src="/layout/footer-circle.webp" width={420} height={450} alt="footer-circle" className="" />
-              <div className="flex flex-col items-center justify-center text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full">
+              <div className="flex flex-col items-center justify-center text-center absolute bottom-[45%] lg:bottom-[0%] xl:bottom-0 lg:top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full">
                 <h3 className="md:text-xl lg:text-4xl font-semibold lg:mb-1 font-['Archivo']">Transform vision</h3>
                 <p className="md:text-xl lg:text-4xl  font-semibold mb-7 font-['Archivo']">into impact</p>
                 <Link href="/contact" className="w-fit" >
@@ -129,7 +125,7 @@ export default function Footer() {
           </div>
 
           {/* Right Links */}
-          <div className=" mt-[9%] 2xl:max-w-[1440px] w-full sm:w-[70%] md:w-auto mx-auto md:mx-0 ">
+          <div className="md:mt-[20%] lg:mt-[15%] xl:mt-[9%] 2xl:max-w-[1440px] w-full sm:w-[70%] md:w-auto mx-auto md:mx-0 ">
             <div className="flex gap-x-[17.5%]  sm:gap-x-8 md:gap-x-8 gap-y-2 mx-auto md:mx-0 max-w-[85%] md:max-w-[100%]">
               <div>
                 <h3 className="text-[#767676] mb-4 text-lg md:text-base xl:text-lg font-bold font-['Archivo']">Legal</h3>
