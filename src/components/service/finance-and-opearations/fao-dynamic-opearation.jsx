@@ -38,76 +38,59 @@ export default function FaoDynamicOperation() {
         ],
         "Supply Chain": [
             {
-                image: "/service/FAO/FAO-DO.svg",
+                image: "/service/FAO/supply-chain.svg",
                 caption: "Optimize inventory management with real-time visibility across your entire supply chain",
             },
             {
-                image: "/service/FAO/FAO-DO.svg",
+                image: "/service/FAO/supply-chain.svg",
                 caption: "Improve demand forecasting accuracy with AI-powered predictive analytics",
             },
             {
-                image: "/service/FAO/FAO-DO.svg",
+                image: "/service/FAO/supply-chain.svg",
                 caption: "Streamline procurement processes with automated vendor management",
             },
             {
-                image: "/service/FAO/FAO-DO.svg",
+                image: "/service/FAO/supply-chain.svg",
                 caption: "Enhance logistics operations with route optimization and delivery tracking",
             },
         ],
         "Human Resources": [
             {
-                image: "/service/FAO/FAO-DO.svg",
+                image: "/service/FAO/human-resource.svg",
                 caption: "Simplify employee onboarding and management with comprehensive HR tools",
             },
             {
-                image: "/service/FAO/FAO-DO.svg",
+                image: "/service/FAO/human-resource.svg",
                 caption: "Track performance metrics and employee development with intuitive dashboards",
             },
             {
-                image: "/service/FAO/FAO-DO.svg",
+            image: "/service/FAO/human-resource.svg",
                 caption: "Manage compensation and benefits administration efficiently",
             },
             {
-                image: "/service/FAO/FAO-DO.svg",
+              image: "/service/FAO/human-resource.svg",
                 caption: "Streamline recruitment processes with applicant tracking and analytics",
             },
         ],
         Manufacturing: [
             {
-                image: "/service/FAO/FAO-DO.svg",
+                image: "/service/FAO/manufacturing.svg",
                 caption: "Monitor production efficiency with real-time manufacturing insights",
             },
             {
-                image: "/service/FAO/FAO-DO.svg",
+               image: "/service/FAO/manufacturing.svg",
                 caption: "Optimize resource allocation and reduce production bottlenecks",
             },
             {
-                image: "/service/FAO/FAO-DO.svg",
+                image: "/service/FAO/manufacturing.svg",
                 caption: "Improve quality control with comprehensive testing and reporting tools",
             },
             {
-                image: "/service/FAO/FAO-DO.svg",
+                 image: "/service/FAO/manufacturing.svg",
                 caption: "Enhance equipment maintenance scheduling and reduce downtime",
             },
         ],
-        Others: [
-            {
-                image: "/service/FAO/FAO-DO.svg",
-                caption: "Customize modules to fit your specific business requirements",
-            },
-            {
-                image: "/service/FAO/FAO-DO.svg",
-                caption: "Integrate with other business systems for seamless data flow",
-            },
-            {
-                image: "/service/FAO/FAO-DO.svg",
-                caption: "Access insights from anywhere with mobile-friendly dashboards",
-            },
-            {
-                image: "/service/FAO/FAO-DO.svg",
-                caption: "Scale your solution as your business grows with flexible configuration options",
-            },
-        ],
+       
     }
 
     // Reset current slide when tab changes
@@ -257,11 +240,11 @@ export default function FaoDynamicOperation() {
                 </div>
             </div>
 
-            <p className="text-secondary font-['Archivo'] max-w-2xl font-medium mx-auto">
+            {/* <p className="text-secondary font-['Archivo'] max-w-2xl font-medium mx-auto">
                 {tabContent[activeTab][currentSlide].caption}
-            </p>
+            </p> */}
 
-            <div className="flex justify-center mt-6 space-x-1">
+            {/* <div className="flex justify-center mt-6 space-x-1">
                 {tabContent[activeTab].map((_, index) => (
                     <button
                         key={index}
@@ -271,7 +254,7 @@ export default function FaoDynamicOperation() {
                         aria-label={`Go to slide ${index + 1}`}
                     />
                 ))}
-            </div>
+            </div> */}
         </section>
     )
 }

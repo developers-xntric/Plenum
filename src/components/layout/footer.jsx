@@ -115,7 +115,7 @@ export default function Footer() {
           </div>
 
           {/* Center CTA for desktop */}
-          <div className=" hidden md:flex justify-center relative lg:left-[2%] font-['Archivo'] z-20 ">
+          <div className=" hidden md:flex justify-center relative lg:left-[2%] xl:left-[4%] 2xl:left-[3%] font-['Archivo'] z-20 ">
             <div className="">
               <Image src="/layout/footer-circle.webp" width={420} height={450} alt="footer-circle" className="" />
               <div className="flex flex-col items-center justify-center text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full">
