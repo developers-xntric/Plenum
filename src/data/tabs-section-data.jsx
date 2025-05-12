@@ -1,9 +1,9 @@
 export const tabImages = [
     "/about/1.svg",
-    "/about/2.svg",
-    "/about/3.svg",
-    "/about/4.svg",
-    "/about/5.svg",
+    "/about/tab2.svg",
+    "/about/tab3.svg",
+    "/about/tab4.svg",
+    "/about/tab5.svg",
 ]
 
 export const values = [
