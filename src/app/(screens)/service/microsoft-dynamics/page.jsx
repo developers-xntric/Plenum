@@ -28,6 +28,9 @@ const MicrosoftDynamics = () => {
                     image={"/service/MD/MD_hero.svg"}
                     image_className="lg:w-[500px] lg:h-[300px] xl:w-[650px] xl:h-[500px]"
                     button_text="Connect with our Experts"
+                    heading_className={"lg:max-w-[350px] 2xl:max-w-[370px] "}
+                    para_className={"lg:max-w-[400px] xl:max-w-[390px]"}
+
                 />
             </div>
             <div className='2xl:max-w-[1440px] h-full w-[90%] mx-auto space-y-20 py-10'>

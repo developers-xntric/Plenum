@@ -22,10 +22,11 @@ const Oracle = () => {
                     heading={"Oracle ERP Solutions Empowered by Oracle Cloud ERP"}
                     para={"Whether you're upgrading legacy systems or embarking on your digital transformation journey, our tailored solutions enhanced by Oracle Cloud ensure you stay competitive in an evolving marketplace."}
                     image={"/service/Oracle/oracle.svg"}
-                    image_className="md:w-[500px] md:h-[300px] xl:w-[600px] xl:h-[450px]"
+                    image_className="lg:w-[500px] md:h-[300px] xl:w-[600px] xl:h-[450px]"
                     button_text="Connect with our Experts"
+                    heading_className={"lg:max-w-[400px] 2xl:max-w-[500px] "}
                 />
-                <div className='2xl:max-w-[1440px] h-full w-[90%] mx-auto space-y-20 py-10'>
+                <div className='2xl:max-w-[1440px] h-full w-[90%] mx-auto space-y-20 pt-10 lg:pt-5 pb-10'>
                     <BrandSlider
                         text={"Trusted by world's most exciting brands"}
                         brand_icons={service_brand_icons} />
