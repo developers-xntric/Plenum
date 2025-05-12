@@ -44,41 +44,41 @@ const Navbar = () => {
                         { title: "Fusion Cloud", link: "/service/oracle-cloud-fusion" },
                     ],
                 },
-                 {
-                    title: "Managed Cloud Services",
-                    link:"/service/manage-cloud",
-                    // isExpanded: true,
-                    // link: "/service/oracle",
-                    // items: [
-                    //     { title: "Net Suite", link: "/service/oracle-net-suite" },
-                    //     { title: "Fusion Cloud", link: "/service/oracle-cloud-fusion" },
-                    // ],
-                },
-                {
-                    title:"AI Consulting, Governance and Implementation",
-                    link: "/service/ai-consulting",
-                },
-                {
-                    title:"Digital Experiences",
-                    link:"service/digital-experiences",
-                }
+                //  {
+                //     title: "Managed Cloud Services",
+                //     link:"/service/manage-cloud",
+                //     // isExpanded: true,
+                //     // link: "/service/oracle",
+                //     // items: [
+                //     //     { title: "Net Suite", link: "/service/oracle-net-suite" },
+                //     //     { title: "Fusion Cloud", link: "/service/oracle-cloud-fusion" },
+                //     // ],
+                // },
+                // {
+                //     title:"AI Consulting, Governance and Implementation",
+                //     link: "/service/ai-consulting",
+                // },
+                // {
+                //     title:"Digital Experiences",
+                //     link:"service/digital-experiences",
+                // }
             ],
         },
-        // {
-        //     title: "Managed Cloud Services",
-        //     isExpanded: false,
-        //     link: "/service/ERP-Cosultant",
-        // },
-        // {
-        //     title: "AI consulting, governance and implementation",
-        //     isExpanded: false,
-        //     link: "/service/",
-        // },
-        // {
-        //     title: "Digital Experiences",
-        //     isExpanded: false,
-        //     link: "/service",
-        // },
+        {
+            title: "Managed Cloud Services",
+            isExpanded: false,
+            link: "/service/ERP-Cosultant",
+        },
+        {
+            title: "AI consulting, governance and implementation",
+            isExpanded: false,
+            link: "/service/",
+        },
+        {
+            title: "Digital Experiences",
+            isExpanded: false,
+            link: "/service",
+        },
     ]
 
     const productsMenuItems = [
@@ -202,7 +202,7 @@ const Navbar = () => {
                                         {subMenu.isExpanded && subMenu.items && (
                                             <ul className="ml-6 space-y-2">
                                                 {subMenu.items.map((item, itemIndex) => (
-                                                    <li key={itemIndex} className="hover:text-[#FF6035] transition-colors">
+                                                    <li key={itemIndex} className="hover:text-[#FF6035] pl-3 transition-colors">
                                                         <Link href={item.link} className="block w-full">
                                                             {item.title}
                                                         </Link>
