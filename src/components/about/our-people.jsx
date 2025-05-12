@@ -59,8 +59,8 @@ export default function OurPeopleSection() {
               />
             </div>
             <div className="md:flex mt-4 justify-start hidden flex-col gap-1 font-['Archivo']">
-              <h4 className="text-[22px] text-[#000000]">{member.name}</h4>
-              <p className="text-[17px] max-w-[90%] text-[#000000B2]">{member.postion}</p>
+              <h4 className="text-[22px] text-[#000000] font-medium">{member.name}</h4>
+              <p className="text-[17px] max-w-[90%] text-[#000000B2] font-medium">{member.postion}</p>
             </div>
           </div>
         ))}
