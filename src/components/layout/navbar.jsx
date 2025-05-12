@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from "react"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import Button from "../common/button"
+// import { link } from "fs"
 
 const Navbar = () => {
     const [showServicesDropdown, setShowServicesDropdown] = useState(false)
@@ -24,15 +25,7 @@ const Navbar = () => {
             isExpanded: true,
             link: "/service/ERP-consulting",
             subMenus: [
-                {
-                    title: "Oracle ERP Solutions",
-                    isExpanded: true,
-                    link: "/service/oracle",
-                    items: [
-                        { title: "Net Suite", link: "/service/oracle-net-suite" },
-                        { title: "Fusion Cloud", link: "/service/oracle-cloud-fusion" },
-                    ],
-                },
+               
                 {
                     title: "Microsoft Dynamics ERP Solutions",
                     isExpanded: true,
@@ -42,6 +35,33 @@ const Navbar = () => {
                         { title: "Finance and Operations", link: "/service/finance-operations" },
                     ],
                 },
+                 {
+                    title: "Oracle ERP Solutions",
+                    isExpanded: true,
+                    link: "/service/oracle",
+                    items: [
+                        { title: "Net Suite", link: "/service/oracle-net-suite" },
+                        { title: "Fusion Cloud", link: "/service/oracle-cloud-fusion" },
+                    ],
+                },
+                 {
+                    title: "Managed Cloud Services",
+                    link:"/service/manage-cloud",
+                    // isExpanded: true,
+                    // link: "/service/oracle",
+                    // items: [
+                    //     { title: "Net Suite", link: "/service/oracle-net-suite" },
+                    //     { title: "Fusion Cloud", link: "/service/oracle-cloud-fusion" },
+                    // ],
+                },
+                {
+                    title:"AI Consulting, Governance and Implementation",
+                    link: "/service/ai-consulting",
+                },
+                {
+                    title:"Digital Experiences",
+                    link:"service/digital-experiences",
+                }
             ],
         },
         // {
