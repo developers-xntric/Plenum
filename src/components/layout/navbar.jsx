@@ -75,36 +75,36 @@ const Navbar = () => {
     ]
 
     const industriesMenuItems = [
-        {
-            title: "Healthcare Industry",
-            isExpanded: true,
-            link: "/industries",
-        },
-        {
-            title: "BioTech Industries",
-            isExpanded: false,
-            link: "/industries",
-        },
-        {
-            title: "Consumer Banking",
-            isExpanded: false,
-            link: "/industries",
-        },
-        {
-            title: "Construction Industry",
-            isExpanded: false,
-            link: "/industries",
-        },
-        {
-            title: "Agriculture & Food Industries",
-            isExpanded: false,
-            link: "/industries",
-        },
-        {
-            title: "Business & Enterprise Banking",
-            isExpanded: false,
-            link: "/industries",
-        },
+        // {
+        //     title: "Healthcare Industry",
+        //     isExpanded: true,
+        //     link: "/industries",
+        // },
+        // {
+        //     title: "BioTech Industries",
+        //     isExpanded: false,
+        //     link: "/industries",
+        // },
+        // {
+        //     title: "Consumer Banking",
+        //     isExpanded: false,
+        //     link: "/industries",
+        // },
+        // {
+        //     title: "Construction Industry",
+        //     isExpanded: false,
+        //     link: "/industries",
+        // },
+        // {
+        //     title: "Agriculture & Food Industries",
+        //     isExpanded: false,
+        //     link: "/industries",
+        // },
+        // {
+        //     title: "Business & Enterprise Banking",
+        //     isExpanded: false,
+        //     link: "/industries",
+        // },
     ]
 
     const resourcesMenuItems = [
@@ -118,7 +118,7 @@ const Navbar = () => {
             isExpanded: false,
             link: "/blog",
         },
-        
+
         //     title: "News",
         //     isExpanded: false,
         //     link: "/case-studies",
@@ -280,7 +280,7 @@ const Navbar = () => {
                                 <Link href={"/industries"} className="flex items-center">
                                     Industries
                                 </Link>
-                                {renderDropdown(showIndustriesDropdown, industriesMenuItems, setShowIndustriesDropdown)}
+                                {industriesMenuItems.length > 0 && renderDropdown(showIndustriesDropdown, industriesMenuItems, setShowIndustriesDropdown)}
                             </li>
                             <li
                                 className="relative"
