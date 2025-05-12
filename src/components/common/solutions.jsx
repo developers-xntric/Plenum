@@ -8,9 +8,9 @@ import Link from 'next/link'
 const ERPSolutions = ({ blackSection }) => {
     return (
         <section className='relative font-["Archivo"] bg-[#282526]'>
-            <div className='max-w-[90%] xl:max-w-[95%] 2xl:max-w-[75%]  mx-auto text-center py-16  '>
-                <h2 className='text-[30px] lg:text-[50px] leading-[35px] lg:leading-[50px] text-white lg:w-[70%] 2xl:w-[60%] mx-auto'>{blackSection.heading}</h2>
-                <p className='text-[15px] lg:text-[18px] text-[#FFF] mt-6 opacity-60 lg:w-[60%] 2xl:w-[70%] mx-auto'>{blackSection.para}</p>
+            <div className='max-w-[90%] xl:max-w-[95%] 2xl:max-w-[75%]  mx-auto text-center py-16 '>
+                <h2 className='text-[30px] lg:text-[50px] leading-[35px] lg:leading-[50px] text-white lg:w-[60%] 2xl:w-[70%] mx-auto'>{blackSection.heading}</h2>
+                <p className='text-[15px] lg:text-[18px] text-[#FFF] mt-6 opacity-60  xl:w-[900px] mx-auto'>{blackSection.para}</p>
                 <Button text={blackSection.button} className='bg-transparent text-white hover:bg-[#FF6035] hover:transition-colors ease-in-out duration-300 hover:border-[#FF6035]  text-[15px] mt-8 border border-[#FFFFFF] px-9 py-2' link='/' />
             </div>
         </section>

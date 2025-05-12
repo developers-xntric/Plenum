@@ -3,15 +3,15 @@
 import Image from "next/image"
 import { useState } from "react"
 
-export default function TabImageGallery() {
-  const [activeTab, setActiveTab] = useState("United Arab Emirates")
+export default function TabImageGallery({ activeState }) {
+  const [activeTab, setActiveTab] = useState(activeState || "UAE")
 
   // Define tabs
-  const tabs = ["United Arab Emirates", "Saudi Arabia", "Canada", "Egypt", "United Kingdom"]
+  const tabs = ["UAE", "Saudi Arabia", "Egypt", "United Kingdom", "Qatar"]
 
   // Unified data for each tab
   const tabData = {
-    "United Arab Emirates": {
+    "UAE": {
       src: "/service/UAE.png",
       alt: "Dubai Skyline with Burj Khalifa",
       address: "Unit #47, Plot #1479, Feeder Commercial Centre, Me’Asiem First, Dubai Production City, Dubai"
@@ -19,19 +19,19 @@ export default function TabImageGallery() {
     "Saudi Arabia": {
       src: "/service/Saudi-arabia.png",
       alt: "Saudi Arabia Landscape",
-      address: "3141 Anas Ibn Malik Rd, Al Malqa, Riyadh 13521"
+      address: "3141 Anas Ibn Malik Rd,Al Malqa, Riyadh 13521"
     },
     "Egypt": {
       src: "/service/egypt.png",
       alt: "Egyptian Landmarks",
-      address: "3141 Anas Ibn Malik Rd, Al Malqa, Riyadh 13521 Saudi Arabia"
+      address: "3141 Anas Ibn Malik Rd,Al Malqa, Riyadh 13521 Saudi Arabia"
     },
     "United Kingdom": {
       src: "/service/UK.png",
       alt: "United Kingdom Cityscape",
       address: "3 Rushton’s Yard, Ashby de la Zouch, Leicestershire, LE65 1AL, United Kingdom"
     },
-    "Canada": {
+    "Qatar": {
       src: "/service/canada.png",
       alt: "Qatar Modern Architecture",
       address: "3895 Manatee Way, Mississauga, Ontario L5M6P7"
