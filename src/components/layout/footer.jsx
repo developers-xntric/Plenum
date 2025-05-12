@@ -52,7 +52,7 @@ export default function Footer() {
               </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-x-12 md:gap-x-8 gap-y-2 2xl:max-w-[1440px] w-[85%] md:w-[100%] mx-auto ">
+            <div className="grid grid-cols-2 gap-x-12  md:gap-x-0 gap-y-2 2xl:max-w-[1440px] w-[70%] md:w-[100%] mx-[0.5px]">
               <div>
                 <h3 className="text-[#767676] mb-4 text-lg md:text-base xl:text-lg font-bold font-['Archivo']">Company</h3>
                 <ul className="space-y-1 font-normal md:text-sm xl:text-base font-['Archivo']">
@@ -80,28 +80,28 @@ export default function Footer() {
                 <h3 className="text-[#767676] mb-4 text-lg md:text-base xl:text-lg font-bold font-['Archivo']">Services</h3>
                 <ul className="space-y-1 font-normal md:text-sm xl:text-base font-['Archivo']">
                   <li>
-                    <Link href="#" className="hover:text-gray-300">
+                    <Link href="/service/ERP-consulting" className="hover:text-gray-300">
                      ERP Consulting 
                     </Link>
                   </li>
                   <li>
-                    <Link href="#" className="hover:text-gray-300">
-                      Managed Cloud Services
+                    <Link href="/service/finance-operations" className="hover:text-gray-300">
+                     Finance & Operations
                     </Link>
                   </li>
                   <li>
-                    <Link href="#" className="hover:text-gray-300">
-                     AI Consulting Governance & Implementaion 
+                    <Link href="/service/manage-cloud" className="hover:text-gray-300">
+                     Managed Cloud Services
                     </Link>
                   </li>
                   <li>
-                    <Link href="#" className="hover:text-gray-300">
+                    <Link href="/service/digital-experiences" className="hover:text-gray-300">
                      Digital Experiences
                     </Link>
                   </li>
                   <li>
-                    <Link href="#" className="hover:text-gray-300">
-                      Oracle ERP Solutions
+                    <Link href="/services/oracle" className="hover:text-gray-300">
+                      Oracle
                     </Link>
                   </li>
                   {/* <li>
