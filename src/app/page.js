@@ -23,7 +23,7 @@ export default function Home() {
       /> */}
       <Testimonials testimonials={testimonials} paragraph={"As an ERP company, Plenum is trusted by professionals for insight-driven design, branding, and innovation."}  />
       <IndustryShowcase />
-      <ArticleSlider title={"Discover Articles"} paragraph={"Insights & practical knowledge designed to help you navigate the digital landscape effectively. "} />
+      <ArticleSlider title={"Discover Our Articles"} paragraph={"Insights & practical knowledge designed to help you navigate the digital landscape effectively. "} />
       <Blog heading='Discover Our Blog ' para="Stay updated with our ongoing blogs inclusive of tips, case study examples and expert views around the usage of AI, cloud services and ERP solutions to support business growth and operational effectiveness." cardData={cardData} />
     </div>
   );
