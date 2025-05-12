@@ -30,8 +30,11 @@ const MomentumAI = () => {
                 paraClass={'lg:max-w-[90%] xl:max-w-[80%] 2xl:max-w-[70%]'}
                 gridcol='md:grid-cols-2 lg:grid-cols-4'
                 oneCardMobile={true}
+                
             />
             <StartSmallWithAI />
+            <ArticleSlider />
+            <Blog heading='Discover Our Blog Articles' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world" cardData={cardData} />
             <div className='py-10'>
                 <PinkSection
                     heading={"Ready To Supercharge Your AI Workflow?"}
@@ -41,8 +44,6 @@ const MomentumAI = () => {
                     isVideo={true}
                 />
             </div>
-            <ArticleSlider />
-            <Blog heading='Discover Our Blog Articles' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world" cardData={cardData} />
             <ServiceContact />
 
         </div>

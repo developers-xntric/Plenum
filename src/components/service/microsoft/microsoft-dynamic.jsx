@@ -21,7 +21,7 @@ export default function MicrosoftDynamic({
   oneCardMobile = false,
 }) {
   const width = useWindowWidth()
-  const isMobile = width < 768
+  const isMobile = width < 1024
 
   // Embla carousel refs
   const [emblaRef, emblaApi] = useEmblaCarousel(
@@ -57,7 +57,7 @@ export default function MicrosoftDynamic({
       <div className="2xl:max-w-[1440px] max-w-[90%] mx-auto">
         {/* Headings */}
         <div className="text-left md:text-center mb-8 md:mb-12">
-          <h1 className={`text-[30px] font-semibold leading-[34px] md:leading-[55px] opacity-85 ${bgColor === "black" ? "text-white mx-auto md:w-[900px] text-center" : "home-section-headings text-center"} md:text-3xl lg:text-[50px]`}>
+          <h1 className={`text-[30px] font-semibold leading-[34px] md:leading-[55px] opacity-85 ${bgColor === "black" ? "text-white mx-auto lg:w-[900px] text-center" : "home-section-headings text-center"} md:text-3xl lg:text-[50px]`}>
             {heading1}
           </h1>
           <h1 className={`text-3xl opacity-85 lg:text-[50px] font-semibold ${bgColor === "black" ? "text-white text-center" : "home-section-headings text-center"} mb-4`}>
@@ -74,8 +74,9 @@ export default function MicrosoftDynamic({
             <div className="overflow-hidden mt-20" ref={emblaRef}>
               <div className="flex">
                 {services?.map((service, index) => (
-                  <div className="" key={index}>
-                    <div className={`text-center ${className}`}>
+                  <div className="min-w-full flex-shrink-0 px-4" key={index}>
+
+                   <div className={`text-center max-w-[30%] mx-auto ${className}`}>
                       <div className="w-12 h-12 mb-5 mx-auto">
                         <Image
                           src={service.icon || "/placeholder.svg"}
@@ -88,7 +89,7 @@ export default function MicrosoftDynamic({
                       <h3 className="text-[22px] lg:text-[28px] font-semibold mb-[18px] lg:leading-8">
                         {service.title}
                       </h3>
-                      <p className="text-[15px] opacity-60 font-medium">{service.description}</p>
+                      <p className="text-[15px]  opacity-60 font-medium">{service.description}</p>
                     </div>
                   </div>
                 ))}
