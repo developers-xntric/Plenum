@@ -8,18 +8,26 @@ export default function OurPeopleSection() {
     {
       id: 1,
       image: "/about/Nindi.png",
+      name: "Nindi Sharma",
+      postion: "Head Of Government Partnerships & Special Projects"
     },
     {
       id: 2,
       image: "/about/P2.png",
+      name: "Sarvesh Gaokar",
+      postion: "Marketing Manager"
     },
     {
       id: 3,
       image: "/about/P4.png",
+      name: "Sammas Sulaiman",
+      postion: "Senior Sales Executive"
     },
     {
       id: 4,
-      image: "/about/P3.png",
+      image: "/about/people.svg",
+      name: "Nitin Kumar",
+      postion: "Head of Delivery"
     },
   ])
 
@@ -50,7 +58,10 @@ export default function OurPeopleSection() {
                 quality={90}
               />
             </div>
-            
+            <div className="md:flex mt-4 justify-start hidden flex-col gap-1 font-['Archivo']">
+              <h4 className="text-[22px] text-[#000000]">{member.name}</h4>
+              <p className="text-[17px] max-w-[90%] text-[#000000B2]">{member.postion}</p>
+            </div>
           </div>
         ))}
       </div>

@@ -4,7 +4,7 @@ import { motion, useInView } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image';
 
-export default function HouseAIProduct({ heading , paragraph, card1Para, card2Para,  }) {
+export default function HouseAIProduct({ heading, paragraph, card1Para, card2Para, }) {
   const processRef = useRef(null);
   const optimizationRef = useRef(null);
   const isProcessInView = useInView(processRef, { once: true });
@@ -14,8 +14,8 @@ export default function HouseAIProduct({ heading , paragraph, card1Para, card2Pa
     <section className="pb-3 pt-5 md:pt-12 bg-white ">
       <div className="2xl:max-w-[1440px] mx-auto w-[90%] space-y-8 md:space-y-12">
         <div className='space-y-3 md:space-y-5 text-center md:text-left'>
-          <h2 className="text-[30px] lg:text-[50px] leading-[34px] lg:w-[500px] lg:leading-[55px] font-['Archivo'] text-secondary font-semibold home-section-headings ">{heading || "Our In house AI Product"}</h2>
-          <p className="text-secondary font-['Archivo'] font-medium opacity-75 md:max-w-[80%] lg:max-w-[75%] xl:max-w-[60%] 2xl:max-w-[60%] text-[12px] md:text-[15px]">
+          <h2 className="text-[30px] lg:text-[50px] leading-[34px] lg:w-[500px] lg:leading-[55px] font-['Archivo'] text-secondary font-semibold home-section-headings ">{heading || "AI Products "}</h2>
+          <p className="text-secondary font-['Archivo'] font-medium opacity-75 md:max-w-[80%] lg:max-w-[75%] xl:max-w-[50%] 2xl:max-w-[45%] text-[12px] md:text-[15px]">
             {paragraph || "Plenum integrates intelligence into your business in addition to providing ERP systems. Our proprietary AI solutions are designed to help all organizational levels get deeper insights, increase productivity, and make more informed business decisions."}
           </p>
         </div>
@@ -76,7 +76,7 @@ export default function HouseAIProduct({ heading , paragraph, card1Para, card2Pa
 
                 </div>
                 <p className="text-[9px] sm:text-[10px] md:text-[13px] text-white font-['Archivo'] w-[98%] lg:max-w-[95%] xl:w-[75%]">
-                  {card1Para || "Plenum isn’t just another ERP provider; we embed AI into your systems to deliver actionable insights."}
+                  {card1Para || "Momentum AI empowers your business with actionable insights,forecast trends, and real-time analytics. "}
                 </p>
               </div>
 
@@ -147,7 +147,7 @@ export default function HouseAIProduct({ heading , paragraph, card1Para, card2Pa
 
                 </div>
                 <p className="text-[9px] sm:text-[10px] md:text-[13px] text-white font-['Archivo'] w-[98%] lg:max-w-[95%] xl:w-[75%]">
-                 {card2Para || "Plenum isn’t just another ERP provider; we embed AI into your systems to deliver actionable insights."}
+                  {card2Para || "Scalable AI models for retail, industrial, and enterprise supply chain operations are provided by Vertical Builds;these models are made for easy integration and quantifiable effects at scale. "}
                 </p>
               </div>
               <div className='flex items-center justify-center pb-2 md:pb-0 '>
