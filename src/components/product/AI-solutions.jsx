@@ -8,14 +8,14 @@ export default function AISolutions({ title, paragraph, image }) {
     const [isPlaying, setIsPlaying] = useState(false)
     const videoRef = useRef(null)
     const togglePlay = () => {
-      if (videoRef.current) {
-        if (isPlaying) {
-          videoRef.current.pause()
-        } else {
-          videoRef.current.play()
+        if (videoRef.current) {
+            if (isPlaying) {
+                videoRef.current.pause()
+            } else {
+                videoRef.current.play()
+            }
+            setIsPlaying(!isPlaying)
         }
-        setIsPlaying(!isPlaying)
-      }
     }
 
     return (
@@ -26,9 +26,9 @@ export default function AISolutions({ title, paragraph, image }) {
                         <div className="2xl:max-w-[1440px] lg:w-[82%] max-w-[90%] xl:w-[65%] 2xl:w-[50%] mx-auto flex items-center md:items-start flex-col md:flex-col py-12">
 
                             <div className='relative flex items-center justify-start'>
-                                <h2 className='text-[30px] md:text-left text-center md:text-[36px] text-secondary font-semibold tracking-[-1.5px] md:tracking-tight home-section-headings leading-[34px] md:leading-10 lg:max-w-[85%] xl:max-w-[90%] 2xl:max-w-[90%]'>{title}</h2>
+                                <h2 className='text-[30px] md:text-left text-center md:text-[36px] text-secondary font-semibold tracking-[-1.5px] md:tracking-tight home-section-headings leading-[34px] md:leading-10 lg:max-w-[85%] xl:max-w-[100%] 2xl:max-w-[90%]'>{title}</h2>
                             </div>
-                            <p className='text-secondary md:text-left text-center font-["Archivo"] lg:max-w-[95%] xl:max-w-[99%] 2xl:max-w-[90%] my-4 opacity-75 text-[15px]'>{paragraph}</p>
+                            <p className='text-secondary md:text-left text-center font-["Archivo"] lg:max-w-[95%] xl:max-w-[88%] 2xl:max-w-[90%] my-4 opacity-75 text-[15px]'>{paragraph}</p>
 
 
                             <Link href='/contact' className=" md:text-left text-center w-fit " >
@@ -50,9 +50,9 @@ export default function AISolutions({ title, paragraph, image }) {
                     </div>
 
                 </div>
-               <div>
+                <div>
+                </div>
             </div>
-        </div>
         </section>
     );
 }
