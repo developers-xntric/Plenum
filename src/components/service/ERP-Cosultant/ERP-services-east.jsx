@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { useState } from 'react';
 import TabImageGallery from './Tabs-images';
-export default function ERPServicesEast({heading, para}) {
+export default function ERPServicesEast({heading, para,classNamePara}) {
   // const [activeTab, setActiveTab] = useState('United Arab Emirates');
 
   // const tabs = ["United Arab Emirates", "Saudi Arabia", "Qatar", "Egypt", "United Kingdom"]
@@ -48,7 +48,7 @@ export default function ERPServicesEast({heading, para}) {
       <div className="2xl:max-w-[1440px] w-[90%] mx-auto space-y-10 md:space-y-16">
         {/* Headings */}
         <div className="space-y-6">
-          <h2 className="text-[30px] md:text-[40px] lg:text-[50px] leading-[40px] md:leading-[50px] lg:leading-[55px] font-['Archivo'] text-secondary font-semibold home-section-headings">
+          <h2 className={`text-[30px] max-w-[65%] ${classNamePara} mx-auto md:text-[40px] lg:text-[50px] leading-[40px] md:leading-[50px] lg:leading-[55px] font-['Archivo'] text-secondary font-semibold home-section-headings`}>
           {heading || "Plenum Managed Cloud Services"}
             {/* <span className="block text-[30px] md:text-[40px] lg:text-[50px] leading-[34px] md:leading-[50px] lg:leading-[55px] font-['Archivo'] text-secondary font-semibold">
             in the Middle East
