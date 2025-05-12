@@ -38,9 +38,9 @@ const MobileNav = () => {
             },
           ],
         },
-        { name: "Managed Cloud Services", link: "/service" },
-        { name: "AI consulting, governance and implementation", link: "/service" },
-        { name: "Digital Experiences", link: "/service" },
+        // { name: "Managed Cloud Services", link: "/service" },
+        // { name: "AI consulting, governance and implementation", link: "/service" },
+        // { name: "Digital Experiences", link: "/service" },
       ],
     },
     {
@@ -55,12 +55,12 @@ const MobileNav = () => {
       name: "Industries",
       link: "/industries",
       subItems: [
-        { name: "Healthcare Industry", link: "/industries" },
-        { name: "BioTech Industries", link: "/industries" },
-        { name: "Consumer Banking", link: "/industries" },
-        { name: "Construction Industry", link: "/industries" },
-        { name: "Agriculture & Food Industries", link: "/industries" },
-        { name: "Business & Enterprise Banking", link: "/industries" },
+        // { name: "Healthcare Industry", link: "/industries" },
+        // { name: "BioTech Industries", link: "/industries" },
+        // { name: "Consumer Banking", link: "/industries" },
+        // { name: "Construction Industry", link: "/industries" },
+        // { name: "Agriculture & Food Industries", link: "/industries" },
+        // { name: "Business & Enterprise Banking", link: "/industries" },
       ],
     },
     {
@@ -69,12 +69,13 @@ const MobileNav = () => {
       subItems: [
         { name: "Case Studies", link: "/case-studies" },
         { name: "Blog", link: "/blog" },
-        { name: "News", link: "/case-studies" },
-        { name: "Video & Podcasts", link: "/case-studies" },
+        { name: "Article", link: "/article" },
+        // { name: "News", link: "/case-studies" },
+        // { name: "Video & Podcasts", link: "/case-studies" },
       ],
     },
     { name: "About Us", link: "/about" },
-    { name: "Book a Demo", link: "/article" },
+    // { name: "Book a Demo", link: "/article" },
     { name: "Careers", link: "/careers" },
   ]
 
@@ -233,7 +234,7 @@ const MobileNav = () => {
           <ul className="space-y-4">
             {menuItems.map((item, index) => (
               <li key={index} className="py-2 border-b border-[#E2E2E2] last:border-0 group">
-                {item.subItems ? (
+                {item.subItems?.length > 0 && item.subItems ? (
                   <div className="flex items-center justify-between">
                     <Link
                       href={item.link}
