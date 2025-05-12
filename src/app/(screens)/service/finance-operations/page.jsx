@@ -21,7 +21,7 @@ const FinanceOpearations = () => {
                 image_className="md:w-[500px] md:h-[300px] xl:w-[500] xl:h-[500px]"
                 button_text="Connect with our Experts"
                 isSlider={true}
-                heading_className={"lg:w-[600px] w-[300px]"}
+                heading_className={"lg:w-[600px] md:w-[300px]"}
                 para_className={'lg:w-[50%]'}
             />
             <ERPAccordin items={finance} className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={fao_service} left={true} blackSection={fao_service_black} />

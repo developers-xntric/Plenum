@@ -17,13 +17,15 @@ const New_Service_Inner_Hero = ({ heading, para, is_space_in_image = true, image
                         {/* Paragraph */}
                         <p className={`text-secondary font-medium font-["Archivo"] md:text-[14px] xl:text-[18px] opacity-60 ${para_className ? para_className : "lg:w-[45%]"}`}>{para}</p>
                         {/* Button */}
-                        <Button text={button_text || "Let's Talk"} link={"/contact"} className={button_className ? button_className : "px-10 py-2.5 bg-[#FF6035] hover:bg-[#101010] transition-all duration-700 text-white"} />
+                        <Button text={button_text || "Let's Talk"} link={"/contact"} className={button_className ? button_className : "px-10 py-2.5 bg-[#FF6035] hover:bg-[#101010] transition-all duration-700 text-white md:block hidden"} />
                     </div>
                     {/* Right Side Image */}
                     <div className={`${image_className ? image_className : "md:w-[600px] md:h-[400px] xl:w-[813px] xl:h-[663px]"} ${is_space_in_image ? "" : "relative left-[5.55%]"}`}>
                         {/* Image */}
                         <Image src={image} alt='ERPC' width={1500} height={1500} />
                     </div>
+                    {/* Button */}
+                    <Button text={button_text || "Let's Talk"} link={"/contact"} className={button_className ? button_className : "px-10 py-2.5 bg-[#FF6035] hover:bg-[#101010] transition-all duration-700 text-white md:hidden block"} />
                 </div>
             </div>
             {/* Slider */}

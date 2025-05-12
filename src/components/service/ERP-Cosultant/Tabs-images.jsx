@@ -58,7 +58,7 @@ export default function TabImageGallery({ activeState }) {
       </div>
 
       {/* Image Display Area */}
-      <div className="w-full h-[40vh] md:h-[60vh] xl:h-[580px] lg:max-w-[95%] 2xl:max-w-[95%] mx-auto">
+      <div className="w-full h-[40vh] md:h-[60vh] xl:h-[680px] lg:max-w-[95%] 2xl:max-w-[95%] mx-auto">
         <div className="relative w-full h-full overflow-hidden">
           <Image
             src={tabData[activeTab].src}

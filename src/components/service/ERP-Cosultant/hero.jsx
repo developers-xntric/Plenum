@@ -25,7 +25,7 @@ export function useWindowWidth() {
 const Service_Inner_Hero = ({ heading, para, is_space_in_image = true, image, image_className, button_text, button_className, isERP = false, isBottomButton = true, heading_className, para_className }) => {
   const width = useWindowWidth();
   return (
-    <div className=' lg:h-[110vh] xl:h-[800px] 2xl:h-[795px] overflow-hidden'>
+    <div className=' lg:h-[110vh] xl:h-[800px] 2xl:h-[815px] overflow-hidden'>
       {/* Wrapper */}
       <div className='2xl:max-w-[1440px] lg:w-[90%] mx-auto my-auto space-y-20 pt-10 md:py-16 lg:py-28'>
         <div className='flex lg:flex-row flex-col items-center md:items-start lg:items-center w-full h-full justify-between gap-8 lg:gap-0 mt-12 lg:mt-0 2xl:mt-20'>
@@ -44,7 +44,7 @@ const Service_Inner_Hero = ({ heading, para, is_space_in_image = true, image, im
             <Image src={image} alt='ERPC' width={1500} height={1500} />
           </div>}
         </div>
-        {isERP && width > 1440 && <div className={`${image_className ? image_className : "lg:w-[600px] lg:h-[400px] xl:w-[800px] 2xl:w-[850px]"}  ${isERP ? "2xl:absolute right-0 lg:top-[14%] 2xl:top-[10%]" : "2xl:absolute right-0 lg:top-[14%] 2xl:top-[2%]"}`}>
+        {isERP && width > 1440 && <div className={`${image_className ? image_className : "lg:w-[600px] lg:h-[400px] xl:w-[800px] 2xl:w-[850px]"}  ${isERP ? "2xl:absolute right-0 lg:top-[14%] 2xl:top-[8%]" : "2xl:absolute right-0 lg:top-[14%] 2xl:top-[2%]"}`}>
           {/* Image */}
           <Image src={image} alt='ERPC' width={1500} height={1500} />
         </div>}
