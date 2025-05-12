@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { useState } from 'react';
 import TabImageGallery from './Tabs-images';
-export default function ERPServicesEast() {
+export default function ERPServicesEast({heading, para}) {
   // const [activeTab, setActiveTab] = useState('United Arab Emirates');
 
   // const tabs = ["United Arab Emirates", "Saudi Arabia", "Qatar", "Egypt", "United Kingdom"]
@@ -49,13 +49,13 @@ export default function ERPServicesEast() {
         {/* Headings */}
         <div className="space-y-6">
           <h2 className="text-[30px] md:text-[40px] lg:text-[50px] leading-[40px] md:leading-[50px] lg:leading-[55px] font-['Archivo'] text-secondary font-semibold home-section-headings">
-          Plenum Managed Cloud Services
+          {heading || "Plenum Managed Cloud Services"}
             {/* <span className="block text-[30px] md:text-[40px] lg:text-[50px] leading-[34px] md:leading-[50px] lg:leading-[55px] font-['Archivo'] text-secondary font-semibold">
             in the Middle East
             </span> */}
           </h2>
           <p className="text-secondary font-medium font-['Archivo'] opacity-75 mx-auto md:w-[75%] lg:w-[60%] xl:max-w-[50%]">
-          We’ve carefully structured our service offerings to cater to both technical and business teams, ensuring clarity, usability, and long-term value.
+          {para || "We’ve carefully structured our service offerings to cater to both technical and business teams, ensuring clarity, usability, and long-term value."}
           </p>
         </div>
         <TabImageGallery/>
