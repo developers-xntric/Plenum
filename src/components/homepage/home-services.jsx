@@ -1,10 +1,10 @@
 'use client';
 import { home_brand_icons } from "@/data/brand-slider-icons-data";
+import { motion } from 'framer-motion';
+import Link from "next/link";
+import { useState } from 'react';
 import BrandSlider from "../common/brand-slider";
 import Button from "../common/button";
-import { useState } from 'react';
-import Link from "next/link";
-import { motion } from 'framer-motion';
 
 const servicesData = [
   {
