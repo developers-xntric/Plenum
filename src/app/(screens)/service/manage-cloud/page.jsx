@@ -16,14 +16,14 @@ const ERPConsulting = () => {
     return (
         <div>
             <Service_Inner_Hero
-                heading={"ERP Consulting and Implementation in Dubai and Middle East"}
-                para={"Our ERP consulting and implementation services are designed to transform your business operations through streamlined, scalable, and fully integrated enterprise resource planning (ERP) solutions."}
-                image={"/service/ERPC/ERPC-Hero.svg"}
+                heading={"Managed Cloud Services in Dubai and Middle East"}
+                para={"At Plenum, our Managed Cloud Services are built to empower enterprises with a powerful combination of Amazon Web Services (AWS) and Momentum, the no-code AI platform developed by Plenum."}
+                image={"/service/MC/hero.png"}
                 is_space_in_image={false}
                 isERP={true}
                 isBottomButton={false}
                 heading_className={"xl:max-w-[600px]"}
-                para_className={"xl:w-[90%]"}
+                para_className={"xl:w-[88%]"}
             />
             <div className='2xl:max-w-[1440px] h-full w-[90%] mx-auto space-y-20 lg:pb-16 pb-10  lg:py-16'>
                 <BrandSlider
