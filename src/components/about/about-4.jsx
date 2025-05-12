@@ -29,7 +29,7 @@ export default function About4() {
             src="/about/vission2.svg"
             width={1000}
             height={1000}
-            className="w-52 mx-auto h-full object-cover lg:hidden block"
+            className="w-40 mx-auto h-full object-cover lg:hidden block"
             style={{ userSelect: "none" }}
             unoptimized
           />
@@ -68,7 +68,7 @@ export default function About4() {
 
         {/* Right side - SVG Semi-Circle Element */}
         <div className="w-full lg:w-1/3 relative mb-2 lg:mb-0 flex justify-end">
-          <div className="relative h-60 w-60 md:w-80 lg:h-80 mx-auto lg:mx-0">
+          <div className="relative h-40 w-40 md:w-80 lg:h-80 mx-auto lg:mx-0">
             {/* This is where you would place your SVG */}
             <Image
               alt="Arc"

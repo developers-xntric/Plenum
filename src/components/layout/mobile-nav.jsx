@@ -21,14 +21,6 @@ const MobileNav = () => {
           link: "/service/ERP-consulting",
           subItems: [
             {
-              name: "Oracle ERP Solutions",
-              link: "/service/oracle",
-              subItems: [
-                { name: "Net Suite", link: "/service/oracle-net-suite" },
-                { name: "Fusion Cloud", link: "/service/oracle-cloud-fusion" },
-              ],
-            },
-            {
               name: "Microsoft Dynamics ERP Solutions",
               link: "/service/microsoft-dynamics",
               subItems: [
@@ -36,11 +28,19 @@ const MobileNav = () => {
                 { name: "Finance and Operations", link: "/service/finance-operations" },
               ],
             },
+            {
+              name: "Oracle ERP Solutions",
+              link: "/service/oracle",
+              subItems: [
+                { name: "Net Suite", link: "/service/oracle-net-suite" },
+                { name: "Fusion Cloud", link: "/service/oracle-cloud-fusion" },
+              ],
+            },
           ],
         },
-        // { name: "Managed Cloud Services", link: "/service" },
-        // { name: "AI consulting, governance and implementation", link: "/service" },
-        // { name: "Digital Experiences", link: "/service" },
+        { name: "Managed Cloud Services", link: "/service" },
+        { name: "AI consulting, governance and implementation", link: "/service" },
+        { name: "Digital Experiences", link: "/service" },
       ],
     },
     {
@@ -114,7 +114,7 @@ const MobileNav = () => {
             </div>
             {item.subItems && (
               <div
-                className={`overflow-hidden transition-all duration-300 ease-in-out ${expandedItems[item.name] ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}
+                className={`overflow-hidden pl-1 transition-all duration-300 ease-in-out ${expandedItems[item.name] ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}
               >
                 {renderSubItems(item.subItems, level + 1)}
               </div>
