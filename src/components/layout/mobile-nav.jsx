@@ -38,9 +38,9 @@ const MobileNav = () => {
             },
           ],
         },
-        { name: "Managed Cloud Services", link: "/service" },
-        { name: "AI consulting, governance and implementation", link: "/service" },
-        { name: "Digital Experiences", link: "/service" },
+        { name: "Managed Cloud Services", link: "/service/manage-cloud" },
+        { name: "AI consulting, governance and implementation", link: "/service/ai-consulting" },
+        { name: "Digital Experiences", link: "/service/digital-experiences" },
       ],
     },
     {

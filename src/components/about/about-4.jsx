@@ -15,7 +15,7 @@ export default function About4() {
               src="/about/vission2.svg"
               width={1000}
               height={1000}
-              className="w-80 h-full object-cover lg:block hidden"
+              className="w-72 h-full object-cover lg:block hidden"
               style={{ userSelect: "none" }}
               unoptimized
             />
@@ -52,7 +52,7 @@ export default function About4() {
       {/* Mission Section */}
       <div className="flex flex-col lg:flex-row items-center 2xl:max-w-[1440px] w-[90%] mx-auto lg:items-start justify-between gap-16 relative">
         {/* Left side - Mission Content */}
-        <div className="w-full lg:w-[80%]">
+        <div className="w-full lg:w-[85%]">
           <h2 className="text-[39px] md:text-left text-center md:px-0 px-12 leading-[45px] md:leading-[40px] lg:text-6xl xl:text-7xl mb-8 mt-10 lg:mt-0">
             Our <span className="text-[#F26B44]">Mission</span>
           </h2>
@@ -61,14 +61,14 @@ export default function About4() {
             processes, simplify real-time analytics, and allow organizations to stay compliant. We strive to democratize
             AI through no-code intelligent platforms and cloud-managed services that empower business and IT teams to
             work together. Our consulting, custom services, and ongoing operational support help organizations in
-            diverse industries—including manufacturing, logistics, and healthcare—reach their digital transformation
+            diverse industries including manufacturing, logistics, and healthcare reach their digital transformation
             goals with assurance.
           </p>
         </div>
 
         {/* Right side - SVG Semi-Circle Element */}
         <div className="w-full lg:w-1/3 relative mb-2 lg:mb-0 flex justify-end">
-          <div className="relative h-40 w-40 md:w-80 lg:h-80 mx-auto lg:mx-0">
+          <div className="relative h-40 w-40 md:w-72 lg:h-72 mx-auto lg:mx-0">
             {/* This is where you would place your SVG */}
             <Image
               alt="Arc"
