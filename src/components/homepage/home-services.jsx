@@ -13,7 +13,7 @@ const servicesData = [
     description: (
       <>
         <p className="text-[15px] font-medium text-secondary opacity-75 mt-2 font-['Archivo']">
-          Harness the power of machine learning across your value chain. We help define the right AI roadmap, ensuring ethical governance and robust compliance. Our specialists deploy intelligent algorithms to automate, predict, and optimize workflows. Empower smarter, faster decisions with real-time, data-driven insights.
+          Guiding enterprises through the responsible adoption of AI with strategic consulting, robust governance frameworks, and efficient deployment for real-world impact.
         </p>
         <Link
           href="/service/ERP-consulting"
@@ -59,46 +59,46 @@ const servicesData = [
     title: "Momentum – Our In-House AI Product",
     description: (
       <>
-      <p className="text-[15px] font-medium text-secondary opacity-75 mt-2 font-['Archivo']">
-        Harness the power of machine learning across your value chain. We help define the right AI roadmap, ensuring ethical governance and robust compliance. Our specialists deploy intelligent algorithms to automate, predict, and optimize workflows. Empower smarter, faster decisions with real-time, data-driven insights.
-      </p>
-      <Link
-        href="/service/ERP-consulting"
-        className="text-[#FF6035] font-['Archivo'] flex items-center font-semibold md:text-[17px] mt-2 underline"
-      >
-        <motion.div
-          whileHover="hover"
-          className="text-primary flex items-center gap-2  cursor-pointer z-40"
+        <p className="text-[15px] font-medium text-secondary opacity-75 mt-2 font-['Archivo']">
+          Harness the power of machine learning across your value chain. We help define the right AI roadmap, ensuring ethical governance and robust compliance. Our specialists deploy intelligent algorithms to automate, predict, and optimize workflows. Empower smarter, faster decisions with real-time, data-driven insights.
+        </p>
+        <Link
+          href="/service/ERP-consulting"
+          className="text-[#FF6035] font-['Archivo'] flex items-center font-semibold md:text-[17px] mt-2 underline"
         >
-          View Service
-          <motion.svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="11"
-            height="11"
-            viewBox="0 0 11 11"
-            fill="none"
-            className={"mt-1"}
-            variants={{
-              hover: {
-                x: [0, 3, 0],
-                y: [0, -3, 0],
-                transition: {
-                  duration: 0.8,
-                  repeat: Infinity,
-                  ease: "easeInOut"
-                }
-              }
-            }}
+          <motion.div
+            whileHover="hover"
+            className="text-primary flex items-center gap-2  cursor-pointer z-40"
           >
-            <path
-              d="M0.9375 10.214L9.67107 1.48047M9.67107 1.48047H0.9375M9.67107 1.48047V10.214"
-              stroke="#FF6035"
-              strokeWidth="1.74671"
-            />
-          </motion.svg>
-        </motion.div>
-      </Link>
-    </>
+            View Service
+            <motion.svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="11"
+              height="11"
+              viewBox="0 0 11 11"
+              fill="none"
+              className={"mt-1"}
+              variants={{
+                hover: {
+                  x: [0, 3, 0],
+                  y: [0, -3, 0],
+                  transition: {
+                    duration: 0.8,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }
+                }
+              }}
+            >
+              <path
+                d="M0.9375 10.214L9.67107 1.48047M9.67107 1.48047H0.9375M9.67107 1.48047V10.214"
+                stroke="#FF6035"
+                strokeWidth="1.74671"
+              />
+            </motion.svg>
+          </motion.div>
+        </Link>
+      </>
     ),
   },
   {
@@ -237,15 +237,8 @@ export default function HomeServices() {
               </div>
               <div className="space-y-5">
                 <p className="text-[14px] md:text-[15px] text-secondary w-full md:w-[80%]  xl:max-w-[70%] leading-[20px] font-normal font-['Archivo'] opacity-75">
-                We specialize in crafting innovative digital, AI, and ERP solutions customized to meet the unique needs of your business. Our services span from developing seamless digital experiences that engage and retain users, to implementing advanced AI technologies that drive intelligent decision-making. We also offer robust ERP solutions that streamline operations, enhance data management, and improve financial oversight. By combining industry expertise with advanced technology, we empower enterprises to stay ahead in a fast-evolving digital landscape. 
+                  We specialize in crafting innovative digital, AI, and ERP solutions customized to meet the unique needs of your business. Our services span from developing seamless digital experiences that engage and retain users, to implementing advanced AI technologies that drive intelligent decision-making. We also offer robust ERP solutions that streamline operations, enhance data management, and improve financial oversight. By combining industry expertise with advanced technology, we empower enterprises to stay ahead in a fast-evolving digital landscape.
                 </p>
-                {/* <p className="text-[14px] md:text-[15px] text-secondary w-full lg:w-[90%] leading-[20px] font-normal font-['Archivo'] opacity-75">
-
-
-                  Looking for scalable ERP solutions in Dubai or anywhere in the UAE? We specialize in delivering custom ERP business software solutions that align seamlessly with your unique operational needs. Our ERP systems are enhanced with artificial intelligence to drive efficiency, accuracy, and growth.
-                  As a trusted provider of ERP solutions UAE businesses rely on, we begin with a thorough analysis of your current systems, identify operational gaps, and design a tailored ERP roadmap that addresses your specific goals. Whether you’re a small enterprise or a large corporation, our ERP platforms are built to scale with your business.
-                  Our end-to-end ERP consulting & implementation services cover everything from process mapping and customization to integration, testing, and post-deployment support. With intelligent automation and seamless integration, we help you streamline operations, reduce manual workloads, and improve decision-making.
-                </p> */}
                 <Button
                   link={"/service"}
                   text={"Explore More"}
@@ -289,7 +282,7 @@ export default function HomeServices() {
                     className={`overflow-hidden transition-all font-['Archivo'] duration-300 ${openAccordion === item.id ? 'max-h-96 py-4' : 'max-h-0'
                       }`}
                   >
-                    <div className="ml-10 md:ml-12 text-left font-['Archivo']">{item.description}</div>
+                    <div className="ml-10 text-left font-['Archivo']">{item.description}</div>
                   </div>
                 </div>
               ))}
