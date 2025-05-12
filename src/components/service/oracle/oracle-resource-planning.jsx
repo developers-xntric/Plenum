@@ -16,10 +16,6 @@ export default function OracleResourcePlanning() {
                 <div className="space-y-6">
                     <h2 className="text-[30px] lg:text-[50px] leading-[34px] md:w-[480px] lg:w-[680px] mx-auto lg:leading-[55px] font-['Archivo'] text-secondary font-semibold home-section-headings">
                         Oracle ERP Services For Best of Both Worldsing
-
-                        {/* <span className="block text-[34px] lg:text-[50px] leading-[34px] lg:leading-[55px] font-['Archivo'] text-secondary font-semibold">
-                            Resource Planning
-                        </span> */}
                     </h2>
                     <p className="text-secondary font-medium font-['Archivo'] sm:text-lg opacity-75 mx-auto lg:w-[70%]  xl:max-w-[60%]">
                         Plenum's proprietary method seamlessly aligns with Oracle ERP Cloud, ideal for businesses seeking flexible integration and future-ready solutions.
@@ -42,7 +38,6 @@ export default function OracleResourcePlanning() {
                             </button>
                         ))}
                     </div>
-                    {/* src="/images/service/oracle/tab1.png" */}
                     {/* Tab Content */}
                     <div className="w-full  mx-auto">
                         {activeTab === 'Seamless Service Integration' && (
@@ -62,10 +57,10 @@ export default function OracleResourcePlanning() {
                                     {/* Right Section - Text */}
                                     <div className="w-full lg:w-1/2 lg:p-4 space-y-4">
                                         <h1 className="text-[25px] lg:text-[28px]  text-start lg:max-w-[80%] 2xl:max-w-[60%] font-['Archivo'] text-secondary font-semibold home-section-headings">
-                                        Seamless Service Integration
+                                            Seamless Service Integration
                                         </h1>
                                         <p className="text-secondary text-start font-['Archivo'] opacity-75 w-[45% xl:max-w-[85%] ">
-                                        Unify your business functions with Oracle ERP's seamless service integration. Break down data silos and connect departments effortlessly across your enterprise. Experience smoother workflows and enhanced productivity from end to end.
+                                            Unify your business functions with Oracle ERP's seamless service integration. Break down data silos and connect departments effortlessly across your enterprise. Experience smoother workflows and enhanced productivity from end to end.
                                         </p>
                                     </div>
                                 </div>
@@ -78,7 +73,7 @@ export default function OracleResourcePlanning() {
                                 {/* Left Section - Image */}
                                 <div className="w-full lg:w-1/2 xl:w-[60%] lg:p-4">
                                     <Image
-                                        src="/images/service/microsoft-dynamics/microsoft-tab2.webp"
+                                        src="/service/Oracle/image.png"
                                         alt="Analytics Dashboard"
                                         width={1000}
                                         height={1000}
@@ -89,34 +84,62 @@ export default function OracleResourcePlanning() {
                                 {/* Right Section - Text */}
                                 <div className="w-full lg:w-1/2 lg:p-4 space-y-4">
                                     <h1 className="text-[25px] lg:text-[28px]  text-start lg:max-w-[80%] 2xl:max-w-[60%] font-['Archivo'] text-secondary font-semibold home-section-headings">
-                                        Dynamics 365 CE/CRM solutions by Plenum
+                                        Connected Cloud Platforms
                                     </h1>
                                     <p className="text-secondary text-start font-['Archivo'] opacity-75 w-[45% xl:max-w-[85%] ">
-                                        Plenum is a Microsoft Dynamics partner that offers cloud-based Dynamics 365 CE/CRM business solutions geared towards improving sales productivity through better-managed customer interactions. You can add value to your social media marketing, improve business intelligence, and manage your entire campaign all from one location.
+                                        Harness the power of connected cloud platforms with Oracle ERP.  Enable flexible, scalable operations across locations and teams. Stay agile with real-time data access and unified business management
                                     </p>
                                 </div>
                             </div>
                         )}
 
                         {activeTab === 'Real-time Financial Insights' && (
-                            <div className="flex flex-col items-center justify-center h-full bg-gray-100">
-                                <h2 className="text-3xl font-['Archivo'] text-secondary font-semibold">
-                                    ERP Services in Qatar
-                                </h2>
-                                <p className="text-secondary font-['Archivo'] opacity-75 mt-4 max-w-md">
-                                    Our Qatar team specializes in Microsoft Dynamics ERP and customized IT infrastructure for businesses.
-                                </p>
+                            <div className="flex flex-col lg:flex-row gap-6 lg:gap-10 lg:items-center justify-center ">
+                                {/* Left Section - Image */}
+                                <div className="w-full lg:w-1/2 xl:w-[60%] lg:p-4">
+                                    <Image
+                                        src="/service/Oracle/image-1.png"
+                                        alt="Analytics Dashboard"
+                                        width={1000}
+                                        height={1000}
+                                        className="object-cover rounded-lg"
+                                    />
+                                </div>
+
+                                {/* Right Section - Text */}
+                                <div className="w-full lg:w-1/2 lg:p-4 space-y-4">
+                                    <h1 className="text-[25px] lg:text-[28px]  text-start lg:max-w-[80%] 2xl:max-w-[60%] font-['Archivo'] text-secondary font-semibold home-section-headings">
+                                        Real-time Financial Insights
+                                    </h1>
+                                    <p className="text-secondary text-start font-['Archivo'] opacity-75 w-[45% xl:max-w-[85%] ">
+                                        Make smarter decisions with real-time financial insights at your fingertips. Track budgets, forecasts, and performance metrics as they happen. Empower your finance team with up-to-date, actionable intelligence.
+                                    </p>
+                                </div>
                             </div>
                         )}
 
                         {activeTab === 'Tailored Workflow Automation' && (
-                            <div className="flex flex-col items-center justify-center h-full bg-gray-100">
-                                <h2 className="text-3xl font-['Archivo'] text-secondary font-semibold">
-                                    ERP Services in Qatar
-                                </h2>
-                                <p className="text-secondary font-['Archivo'] opacity-75 mt-4 max-w-md">
-                                    Our Qatar team specializes in Microsoft Dynamics ERP and customized IT infrastructure for businesses.
-                                </p>
+                            <div className="flex flex-col lg:flex-row gap-6 lg:gap-10 lg:items-center justify-center ">
+                                {/* Left Section - Image */}
+                                <div className="w-full lg:w-1/2 xl:w-[60%] lg:p-4">
+                                    <Image
+                                        src="/service/Oracle/image-2.png"
+                                        alt="Analytics Dashboard"
+                                        width={1000}
+                                        height={1000}
+                                        className="object-cover rounded-lg"
+                                    />
+                                </div>
+
+                                {/* Right Section - Text */}
+                                <div className="w-full lg:w-1/2 lg:p-4 space-y-4">
+                                    <h1 className="text-[25px] lg:text-[28px]  text-start lg:max-w-[80%] 2xl:max-w-[60%] font-['Archivo'] text-secondary font-semibold home-section-headings">
+                                        Tailored Workflow Automation
+                                    </h1>
+                                    <p className="text-secondary text-start font-['Archivo'] opacity-75 w-[45% xl:max-w-[85%] ">
+                                        Automate repetitive tasks with workflows designed around your needs. Increase efficiency, reduce human error, and save valuable time. Customize processes to match your business model and scale effortlessly.
+                                    </p>
+                                </div>
                             </div>
                         )}
                     </div>
