@@ -18,7 +18,7 @@ export default function CentralizeIntelligence() {
                             At Plenum, we don’t compromise on talent. We only hire senior-level designers with deep expertise across disciplines from UX to business systems so your project is always in the hands of specialists.
                         </p>
                         <div className="md:pt-4">
-                            <div className="flex items-center gap-3">
+                            <div className="flex items-center justify-center md:justify-start gap-3">
                                 <span className="text-[52px] md:text-[55.312px] tracking-tight font-medium grayish-gradient font-['Archivo']">10/10</span>
                                 <div >
                                     <p className="text-[10px] md:text-xs font-semibold text-black opacity-[0.6] leading-tight font-['Archivo']">
@@ -38,7 +38,7 @@ export default function CentralizeIntelligence() {
                             Need high-impact designs fast? Whether it’s wireframes in Figma or full product UIs, we deliver with lightning speed. Our weekly design sprints ensure constant progress, delivering updates every other day
                         </p>
                         <div className="md:pt-4">
-                            <div className="flex items-center gap-3">
+                            <div className="flex items-center justify-center md:justify-start gap-3">
                                 <span className="text-[52px] md:text-[55.312px] font-medium grayish-gradient font-['Archivo']">1 Week</span>
                                 <div>
                                     <p className="text-[10px] md:text-xs font-semibold text-black opacity-[0.6] leading-tight font-['Archivo']">
@@ -58,7 +58,7 @@ export default function CentralizeIntelligence() {
                             Think of us as an extension of your in-house team. Our flexible engagement model means you can scale up, shift focus, or pivot as your needs evolve—without breaking the bank.
                         </p>
                         <div className="pt-4">
-                            <div className="flex items-center gap3">
+                            <div className="flex items-center justify-center md:justify-start gap3">
                                 <span className="text-[52px] md:text-[55.312px] tracking-tight font-medium grayish-gradient font-['Archivo']">10+Years</span>
                                 <div className="ml-2">
                                     <p className="text-[10px] md:text-xs font-semibold text-black opacity-[0.6] leading-tight font-['Archivo']">

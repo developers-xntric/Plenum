@@ -63,9 +63,9 @@ const Hero = () => {
                 <Image src='/home/shade.png' priority height={1000} width={1000} alt='img' className='w-full h-full' />
             </div>
             {/* //hero section main heading */}
-            <div className='flex w-full md:w-[750px] xl:w-[950px] 2xl:w-[1200px] mx-auto justify-center h-[80vh] md:h-screen mt-32 md:mt-40'>
+            <div className='flex w-full md:w-[90%] lg:w-[85%] xl:w-[80%] 2xl:w-[1200px] mx-auto justify-center h-[80vh] md:h-screen mt-32 md:mt-40'>
                 <div className='w-full mx-auto flex flex-col gap-4'>
-                    <h1 className='max-w-[90%] md:max-w-[100%] 2xl:max-w-[100%] mx-auto text-white 2xl:text-[75px] text-[32px] sm:text-[55px] font-semibold xl:text-[70px] leading-[36px] md:leading-[40px] xl:leading-[71px] 2xl:leading-[80px] font-["Chakra"] text-center'>
+                    <h1 className='max-w-[98%] md:max-w-[100%] 2xl:max-w-[100%] mx-auto text-white 2xl:text-[75px] text-[32px] sm:text-[55px] font-semibold xl:text-[70px] leading-[36px] md:leading-[50px] xl:leading-[71px] 2xl:leading-[80px] font-["Chakra"] text-center'>
                         Discover your<span className='text-primary'> Enterprises</span>  to think and grow  smarter  automatically
 
                     </h1>
@@ -98,7 +98,7 @@ const Hero = () => {
             </div>
             {/* //section section of hero section */}
             <div className='flex justify-center items-center flex-col text-center'>
-                <AnimatedBorder className='hidden md:block'>
+                <AnimatedBorder className='hidden lg:block'>
                     <div className="w-[680px] p-[0.8px] h-14 bg-white/5 rounded-xl inline-flex justify-start items-center">
                         <div className="flex px-4 rounded-xl justify-start items-center gap-2 bg-zinc-900 w-full h-full">
                             <div className="w-2 h-2 bg-red-500 rounded-full" />
@@ -111,7 +111,7 @@ const Hero = () => {
                         </div>
                     </div>
                 </AnimatedBorder>
-                <div className='md:flex hidden mt-10 2xl:max-w-[1440px] pb-10 leading-[15px] w-[1000px] mx-auto justify-center items-center gap-8 flex-wrap'>
+                <div className='lg:flex hidden mt-10 2xl:max-w-[1440px] pb-10 leading-[15px] w-[1000px] mx-auto justify-center items-center gap-8 flex-wrap'>
                     {
                         links.map((ele, ind) => {
                             return (

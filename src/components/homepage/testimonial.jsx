@@ -18,11 +18,11 @@ export default function Testimonials({ testimonials, title , paragraph }) {
   
 
   // Enable autoplay plugin on small screens
-  useEffect(() => {
-    if (typeof window !== "undefined" && window.innerWidth < 1024) {
-      setPlugins([Autoplay({ delay: 3000, stopOnInteraction: false })])
-    }
-  }, [])
+  // useEffect(() => {
+  //   if (typeof window !== "undefined" && window.innerWidth < 1024) {
+  //     setPlugins([Autoplay({ delay: 3000, stopOnInteraction: false })])
+  //   }
+  // }, [])
 
   // Track current index for dots
   useEffect(() => {
