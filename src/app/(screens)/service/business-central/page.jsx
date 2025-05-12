@@ -25,8 +25,8 @@ const BuisnessCentral = () => {
                 image_className="w-full"
                 button_text="Connect with our Experts"
                 isSlider={true}
-                heading_className={"w-[88%] mt-10 lg:mt-0 lg:max-w-[95%]"}
-                para_className={"w-[60%] lg:w-[65%]"}
+                heading_className={"lg:w-[88%] mt-10 lg:mt-0 lg:max-w-[550px]"}
+                para_className={"lg:w-[60%] lg:w-[70%] 2xl:w-[65%]"}
             />
             <ERPAccordin items={businessSer} className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={bc_service} left={true} blackSection={bc_service_black} />
             <MobilitySolutions
@@ -42,6 +42,7 @@ const BuisnessCentral = () => {
                 button={"Free consultation"}
                 className='flex flex-col items-center md:items-start text-center md:text-start'
                 bgColor='black'
+
             />
             <Capabilities capabilities={capabilities} />
             <div className=''>

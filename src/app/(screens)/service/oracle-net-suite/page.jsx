@@ -7,11 +7,12 @@ import MicrosoftCarousel from '@/components/service/microsoft/microsft-carousel'
 import NetSuiteCards from '@/components/service/oracle-net-suite/netsuite-cards'
 import OracleOneStopShop from '@/components/service/oracle-net-suite/oracle-one-stop-shop'
 import PinkSection from '@/components/service/pink-section'
-import { OracleNetSuiteitems } from '@/data/accordineData'
-import { ons_service, ons_service_black } from '@/data/erp-consulting-service'
+import { oracleNetSuite } from '@/data/services'
+import { bc_service, bc_service_black, ons_service, ons_service_black } from '@/data/erp-consulting-service'
 import { cardData } from '@/data/home-blog'
 import { testimonials } from '@/data/home-testimonials'
 import { MicrosoftCarouselData } from '@/data/microsoft-carousel'
+import { businessSer } from '@/data/services'
 import React from 'react'
 
 const OracleNetSuite = () => {
@@ -23,15 +24,16 @@ const OracleNetSuite = () => {
                 image={"/service/ONS/banner.svg"}
                 image_className="md:w-[500px] md:h-[300px] mt-6 xl:w-[480.08px] xl:h-[500px]"
                 button_text="Consult our experts today"
-                heading_className={"w-[85%] mt-10 lg:mt-0 lg:max-w-[600px] leading-12"}
-                para_className={"w-[60%] lg:w-[70%]"}
+                heading_className={"lg:w-[85%] mt-10 lg:mt-0 lg:max-w-[600px] leading-12"}
+                para_className={" lg:w-[350px]"}
             />
             <ERPAccordin
-                items={OracleNetSuiteitems}
+                items={oracleNetSuite}
                 className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0'
                 para={"As experienced NetSuite implementation partners, we design and deploy ERP solutions that align with your operational goals. Our phased implementation approach minimizes downtime and ensures smooth migration."}
                 bottomSection={ons_service} left={true} blackSection={ons_service_black}
             />
+         
             <OracleOneStopShop />
             <NetSuiteCards />
             <MicrosoftCarousel MicrosoftCarouselData={MicrosoftCarouselData} title={"Seamless Oracle NetSuite Integration with Leading Business Apps"} para={"Accelerate your operations by connecting Oracle NetSuite with your favorite tools, eCommerce platforms, CRMs, marketplaces, payment gateways, and 3PLs."}

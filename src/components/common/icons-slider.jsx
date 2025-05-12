@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export default function IconsSlider({ text, brand_icons }) {
-    const loopIcons = [...brand_icons, ...brand_icons];
+    const loopIcons = [...brand_icons, ...brand_icons, ...brand_icons];
     const [duration, setDuration] = useState(20); // default desktop
 
     useEffect(() => {
