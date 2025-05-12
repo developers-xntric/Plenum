@@ -13,10 +13,10 @@ const servicesData = [
     description: (
       <>
         <p className="text-[15px] font-medium text-secondary opacity-75 mt-2 font-['Archivo']">
-          Guiding enterprises through the responsible adoption of AI with strategic consulting, robust governance frameworks, and efficient deployment for real-world impact.
+          Plenum helps you deploy AI responsibly with custom roadmaps. We align AI strategy with your goals, identifying automation use cases and the right models for real-world impact.
         </p>
         <Link
-          href="/service/ERP-consulting"
+          href="/service/ai-consulting"
           className="text-[#FF6035] font-['Archivo'] flex items-center font-semibold md:text-[17px] mt-2 underline"
         >
           <motion.div
@@ -56,14 +56,14 @@ const servicesData = [
   },
   {
     id: 2,
-    title: "Momentum – Our In-House AI Product",
+    title: "Managed Cloud Services",
     description: (
       <>
         <p className="text-[15px] font-medium text-secondary opacity-75 mt-2 font-['Archivo']">
-          Harness the power of machine learning across your value chain. We help define the right AI roadmap, ensuring ethical governance and robust compliance. Our specialists deploy intelligent algorithms to automate, predict, and optimize workflows. Empower smarter, faster decisions with real-time, data-driven insights.
+          Focus on innovation while we manage your cloud. Our certified experts deliver secure, scalable solutions with tailored SLAs and full transparency across AWS, Azure, GCP, and more.
         </p>
         <Link
-          href="/service/ERP-consulting"
+          href="/service/manage-cloud"
           className="text-[#FF6035] font-['Archivo'] flex items-center font-semibold md:text-[17px] mt-2 underline"
         >
           <motion.div
@@ -103,14 +103,14 @@ const servicesData = [
   },
   {
     id: 3,
-    title: "Managed Cloud Services",
+    title: "Digital Experience",
     description: (
       <>
         <p className="text-[15px] font-medium text-secondary opacity-75 mt-2 font-['Archivo']">
-          Harness the power of machine learning across your value chain. We help define the right AI roadmap, ensuring ethical governance and robust compliance. Our specialists deploy intelligent algorithms to automate, predict, and optimize workflows. Empower smarter, faster decisions with real-time, data-driven insights.
+          Today’s digital world demands more than just presence—exceptional user experiences are essential for engagement, growth, and long-term success.
         </p>
         <Link
-          href="/service/ERP-consulting"
+          href="/service/digital-experiences"
           className="text-[#FF6035] font-['Archivo'] flex items-center font-semibold md:text-[17px] mt-2 underline"
         >
           <motion.div
@@ -150,11 +150,11 @@ const servicesData = [
   },
   {
     id: 4,
-    title: "Digital Experience Transformation",
+    title: "ERP Consulting and Implementation",
     description: (
       <>
         <p className="text-[15px] font-medium text-secondary opacity-75 mt-2 font-['Archivo']">
-          Harness the power of machine learning across your value chain. We help define the right AI roadmap, ensuring ethical governance and robust compliance. Our specialists deploy intelligent algorithms to automate, predict, and optimize workflows. Empower smarter, faster decisions with real-time, data-driven insights.
+          We offer ERP consulting and implementation services to streamline and scale your business operations. Our integrated solutions ensure efficiency and seamless process management
         </p>
         <Link
           href="/service/ERP-consulting"
