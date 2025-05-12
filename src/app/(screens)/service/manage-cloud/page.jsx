@@ -12,7 +12,7 @@ import ArticleSlider from "@/components/common/article-slider";
 import ERPC2 from '@/components/service/ERP-Cosultant/ERPC2';
 
 
-const ERPConsulting = () => {
+const ManageCloud = () => {
     return (
         <div>
             <Service_Inner_Hero
@@ -90,4 +90,4 @@ const ERPConsulting = () => {
     )
 }
 
-export default ERPConsulting;
+export default ManageCloud;
