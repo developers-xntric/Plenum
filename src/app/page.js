@@ -21,7 +21,7 @@ export default function Home() {
         paragraph={"Plenum isn't just another ERP provider; we embed AI into your systems to deliver actionable insights and smarter decision-making capabilities."}
         caseStudies={caseStudies}
       /> */}
-      <Testimonials testimonials={testimonials} paragraph={"As an ERP company, Plenum is trusted by professionals for insight-driven design, branding, and innovation."}  />
+      <Testimonials title={"What Our Clients Say"} testimonials={testimonials} paragraph={"As an ERP company, Plenum is trusted by professionals for insight-driven design, branding, and innovation."}  />
       <IndustryShowcase />
       <ArticleSlider title={"Discover Articles"} paragraph={"Insights & practical knowledge designed to help you navigate the digital landscape effectively. "} />
       <Blog heading='Discover Our Blog ' para="Stay updated with our ongoing blogs inclusive of tips, case study examples and expert views around the usage of AI, cloud services and ERP solutions to support business growth and operational effectiveness." cardData={cardData} />
