@@ -1,4 +1,3 @@
-
 "use client"
 import Image from "next/image"
 import React from "react"
@@ -10,43 +9,30 @@ export default function About4() {
         {/* Left side - SVG Circle Element */}
         {/* FOR DESKTOP */}
         <div className="w-full lg:w-1/3 relative left-[5%] mb-10 lg:mb-0 lg:block hidden">
-          {/* <div className="relative h-full w-full flex items-center justify-center mx-auto lg:mx-0"> */}
-          {/* This is where you would place your SVG */}
-          {/* <Image
+          <div className="relative h-full w-full flex items-center justify-center mx-auto lg:mx-0">
+            <Image
               alt="Circle"
-              src="/about/circle1.svg"
+              src="/about/vission2.svg"
               width={1000}
               height={1000}
               className="w-80 h-full object-cover lg:block hidden"
               style={{ userSelect: "none" }}
               unoptimized
-            /> */}
-          {/* </div> */}
-          {/* Background orange circle */}
-          <div className="w-[180px] h-[180px] rounded-full left-[97px] top-0 absolute bg-[#ff6035]" />
-          {/* Invisible base layer (can be skipped if unused) */}
-          <div className="w-[180px] h-[180px] rounded-full left-0 top-0 absolute" />
-          {/* Glass effect circle */}
-          <div className="w-[180px] h-[180px] rounded-full bg-gradient-to-br from-[#ffcdbf]/20 via-[#ffcdbf]/20 to-[#ffcdbf]/20 backdrop-blur-[10px]" />
+            />
+          </div>
         </div>
 
 
-        {/* <div className=" mb-6 relative">
+        <div className=" mb-6 relative">
           <Image
             alt="Circle"
-            src="/about/Icons.svg"
+            src="/about/vission2.svg"
             width={1000}
             height={1000}
             className="w-52 mx-auto h-full object-cover lg:hidden block"
             style={{ userSelect: "none" }}
             unoptimized
           />
-        </div> */}
-
-        {/* FOR MOBILE */}
-        <div className="w-[277px] rounded-full h-[180px] relative block lg:hidden">
-          <div className="w-[140px] h-[140px] rounded-full left-[97px] top-0 absolute bg-[#ff6035]" />
-          <div className="w-[140px] h-[140px] rounded-full left-10 top-0 absolute bg-gradient-to-br from-[#ffcdbf]/20 via-[#ffcdbf]/20 to-[#ffcdbf]/20 backdrop-blur-[15px]" />
         </div>
 
         {/* Right side - Vision Content */}
@@ -64,7 +50,7 @@ export default function About4() {
       </div>
 
       {/* Mission Section */}
-      <div className="flex flex-col lg:flex-row items-center 2xl:max-w-[1440px] w-[90%] mx-auto lg:items-start justify-between relative">
+      <div className="flex flex-col lg:flex-row items-center 2xl:max-w-[1440px] w-[90%] mx-auto lg:items-start justify-between gap-16 relative">
         {/* Left side - Mission Content */}
         <div className="w-full lg:w-[80%]">
           <h2 className="text-[39px] md:text-left text-center md:px-0 px-12 leading-[45px] md:leading-[40px] lg:text-6xl xl:text-7xl mb-8 mt-10 lg:mt-0">
@@ -86,7 +72,7 @@ export default function About4() {
             {/* This is where you would place your SVG */}
             <Image
               alt="Arc"
-              src="/about/circle2.svg"
+              src="/about/mission2.svg"
               width={1000}
               height={1000}
               className="w-full h-full object-cover"
@@ -94,7 +80,7 @@ export default function About4() {
               unoptimized
             />
           </div>
-          
+
         </div>
       </div>
     </section>
