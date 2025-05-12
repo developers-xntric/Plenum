@@ -9,7 +9,7 @@ export default function ERPServicesEast({ heading, para, classNamePara, activeSt
       <div className="2xl:max-w-[1440px] w-[90%] mx-auto space-y-10 md:space-y-16">
         {/* Headings */}
         <div className="space-y-6">
-          <h2 className={`text-[30px] max-w-[65%] ${classNamePara} mx-auto md:text-[40px] lg:text-[50px] leading-[40px] md:leading-[50px] lg:leading-[55px] font-['Archivo'] text-secondary font-semibold home-section-headings`}>
+          <h2 className={`text-[30px] lg:max-w-[65%] ${classNamePara} mx-auto md:text-[40px] lg:text-[50px] leading-[40px] md:leading-[50px] lg:leading-[55px] font-['Archivo'] text-secondary font-semibold home-section-headings`}>
             {heading || "Plenum Managed Cloud Services"}
           </h2>
           <p className="text-secondary font-medium font-['Archivo'] opacity-75 mx-auto md:w-[75%] lg:w-[60%] xl:max-w-[50%]">

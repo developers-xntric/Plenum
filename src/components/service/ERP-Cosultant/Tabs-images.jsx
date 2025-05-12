@@ -41,13 +41,13 @@ export default function TabImageGallery({ activeState }) {
   return (
     <div className="w-full">
       {/* Tabs Navigation */}
-      <div className="flex justify-center items-center gap-16 sm:gap-1 xl:gap-2 mb-10 border-b-2 w-full max-w-[90%] mx-auto overflow-x-auto 2xl:overflow-x-hidden">
+      <div className="flex justify-center items-center gap-10 sm:gap-1 xl:gap-2 mb-10 border-b-2 w-full max-w-[90%] mx-auto overflow-x-auto 2xl:overflow-x-hidden">
         {tabs.map((tab, index) => (
           <button
             key={tab}
             onClick={() => setActiveTab(tab)}
             className={`text-[15px] lg:text-[22px] md:w-[33%] xl:w-[19%] flex-shrink-0 
-              ${index === 0 ? "pl-20rem] md:pl-[0rem] lg:pl-0" : ""} 
+              ${index === 0 ? "pl-[16rem] md:pl-[0rem] lg:pl-0" : ""} 
               py-2 cursor-pointer pb-4 font-['Archivo'] text-secondary font-semibold home-section-headings 
               ${activeTab === tab ? 'text-[#FF6035] border-b-2 border-[#FF6035]' : 'text-gray-400'} 
               focus:outline-none transition-colors duration-300`}

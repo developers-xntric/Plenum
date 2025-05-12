@@ -24,6 +24,7 @@ const ERPConsulting = () => {
                 isBottomButton={false}
                 heading_className={"xl:max-w-[600px]"}
                 para_className={"xl:w-[90%]"}
+                
             />
             <div className='2xl:max-w-[1440px] h-full w-[90%] mx-auto space-y-20 lg:pb-16 pb-10  lg:py-16'>
                 <BrandSlider
