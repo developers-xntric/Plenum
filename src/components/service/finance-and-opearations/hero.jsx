@@ -8,14 +8,14 @@ const New_Service_Inner_Hero = ({ heading, para, is_space_in_image = true, image
     return (
         <div className='overflow-hidden bg-cover xl:h-auto' style={{ backgroundImage: "url('/service/FAO/FAO_hero_bg.svg')" }}>
             {/* Wrapper */}
-            <div className='2xl:max-w-[1440px] h-full w-[90%] mx-auto my-auto space-y-20 py-16 md:pt-36 md:pb-0'>
+            <div className='2xl:max-w-[1440px] h-full w-[90%] mx-auto my-auto space-y-20 py-16 md:pt-36 lg:pb-0'>
                 <div className='flex lg:flex-row flex-col w-full items-center justify-between lg:gap-0 gap-10'>
                     {/* Left Section Heading Text And Buttons */}
-                    <div className='space-y-8 mt-12'>
+                    <div className='space-y-8 mt-12 md:text-left text-center'>
                         {/* Heading */}
                         <h1 className={`text-secondary text-[45px] lg:text-[48px] font-["Chakra"] leading-11 xl:leading-[52px] font-semibold home-section-headings ${heading_className}`}>{heading}</h1>
                         {/* Paragraph */}
-                        <p className={`text-secondary font-normal md:text-[14px] xl:text-[18px] opacity-60 ${para_className ? para_className : "lg:w-[45%]"}`}>{para}</p>
+                        <p className={`text-secondary font-medium font-["Archivo"] md:text-[14px] xl:text-[18px] opacity-60 ${para_className ? para_className : "lg:w-[45%]"}`}>{para}</p>
                         {/* Button */}
                         <Button text={button_text || "Let's Talk"} link={"/contact"} className={button_className ? button_className : "px-10 py-2.5 bg-[#FF6035] hover:bg-[#101010] transition-all duration-700 text-white"} />
                     </div>
@@ -27,7 +27,7 @@ const New_Service_Inner_Hero = ({ heading, para, is_space_in_image = true, image
                 </div>
             </div>
             {/* Slider */}
-            {isSlider && <div className='2xl:max-w-[1440px] w-[90%] mx-auto space-y-20 py-8 md:py-14 xl:pb-14 xl:pt-0'>
+            {isSlider && <div className='2xl:max-w-[1440px] w-[90%] mx-auto space-y-20 py-8 md:py-14 xl:pb-14 xl:pt-12'>
                 <IconsSlider
                     text={"Trusted by world's most exciting brands"}
                     brand_icons={finance_opearations_services} />

@@ -9,7 +9,6 @@ import ArticleSlider from "@/components/common/article-slider";
 import { Blog } from '@/components/homepage/blog';
 import { cardData } from '@/data/home-blog';
 import { ERPAccordin } from '@/components/common/accordinService';
-import IndustryShowcase from '@/components/homepage/case-study-new';
 import { finance } from '@/data/services';
 
 const FinanceOpearations = () => {
@@ -23,7 +22,7 @@ const FinanceOpearations = () => {
                 button_text="Connect with our Experts"
                 isSlider={true}
                 heading_className={"lg:w-[600px] w-[300px]"}
-                para_className={'lg:w-[80%]'}
+                para_className={'lg:w-[50%]'}
             />
             <ERPAccordin items={finance} className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={fao_service} left={true} blackSection={fao_service_black} />
             <FaoDynamicOpearation />
@@ -31,7 +30,6 @@ const FinanceOpearations = () => {
                 heading='Benefits of Microsoft Dynamics 365 Finance and Operations'
                 para='Get real-time insights into your financial data to make faster, data-driven decisions. Track cash flow, profitability, and financial performance across global operations.'
             />
-            <IndustryShowcase />
             <div className='pt-20'>
                 <PinkSection
                     heading={"Ready To Choose Microsoft Dynamics 365 Finance and Operations?"}
