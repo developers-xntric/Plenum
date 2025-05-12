@@ -18,7 +18,7 @@ const EndToEndAI = () => {
                 </div>
             </div>
 
-            <div className="grid grid-cols-1 place-items-center md:grid-cols-2 lg:grid-cols-3 gap-10 xl:gap-16 max-w-[90%] lg:max-w-[75%] 2xl:max-w-[900px] mx-auto">
+            <div className="grid grid-cols-1 place-items-center md:grid-cols-2 lg:grid-cols-3 gap-10 xl:gap-16 2xl:gap-x-60 max-w-[90%] lg:max-w-[75%] 2xl:max-w-[900px] mx-auto">
                 {data.map((ele, i) => (
                     <div
                         key={i}
