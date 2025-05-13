@@ -128,7 +128,7 @@ export default function Footer() {
           <div className="md:mt-[20%] lg:mt-[15%] xl:mt-[9%] 2xl:max-w-[1440px] w-full sm:w-[70%] md:w-auto mx-auto md:mx-0 ">
             <div className="flex gap-x-[17.5%]  sm:gap-x-8 md:gap-x-8 gap-y-2 mx-auto md:mx-0 max-w-[85%] md:max-w-[100%]">
               <div>
-                <h3 className="text-[#767676] mb-4 text-lg md:text-base xl:text-lg font-bold font-['Archivo']">Legal</h3>
+                <h3 className="text-[#767676] mb-2 text-lg md:text-base xl:text-lg font-bold font-['Archivo']">Legal</h3>
                 <ul className="space-y-1 md:text-sm xl:text-base font-['Archivo']">
                   <li>
                     <Link href="/terms" className="hover:text-gray-300 ">
@@ -149,7 +149,7 @@ export default function Footer() {
               </div>
 
               <div>
-                <h3 className="text-[#767676] mb-4 text-lg md:text-base xl:text-lg font-bold font-['Archivo'] leading-5">Contact Us</h3>
+                <h3 className="text-[#767676] relative top-1 mb-4 text-lg md:text-base xl:text-lg font-bold font-['Archivo'] leading-5">Contact Us</h3>
                 <ul className="space-y-1 md:text-sm xl:text-base font-['Archivo']">
                   <li>
                     <Link href="mailto:info@plenum-tech.com"  className="hover:text-gray-300">

@@ -87,7 +87,7 @@ function TabsSection() {
         <section>
             <div className='2xl:max-w-[1440px] w-[90%] mx-auto lg:space-y-20 py-16 md:py-10 lg:py-16'>
                 <div className="text-center mb-20">
-                    <h2 className='text-[36px] text-center lg:text-[50px] text-secondary font-semibold tracking-[-1.5px] md:tracking-tight home-section-headings leading-14 mx-auto max-w-[50%]'>Purpose-Built Platforms. Less Code. Smarter Results</h2>
+                    <h2 className='text-[36px] text-center lg:text-[50px] text-secondary font-semibold tracking-[-1.5px] md:tracking-tight home-section-headings  leading-[38px] lg:leading-14 mx-auto md:max-w-[50%]'>Purpose-Built Platforms. Less Code. Smarter Results</h2>
                     <p className='text-secondary text-center font-["Archivo"] lg:max-w-[95%] xl:max-w-[48.5%] mx-auto 2xl:max-w-[50%] my-4 opacity-75 text-[15px] xl:text-[18px]'>
                         Vertical Builds delivers custom-fit solutions for diverse industries, faster, smarter, and more efficiently. Empower your teams to launch scalable systems without the complexity of traditional development.
                     </p>
