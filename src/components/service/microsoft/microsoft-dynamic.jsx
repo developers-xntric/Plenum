@@ -63,7 +63,7 @@ export default function MicrosoftDynamic({
           <h1 className={`text-3xl opacity-85 lg:text-[50px] font-semibold ${bgColor === "black" ? "text-white text-center" : "home-section-headings text-center"} mb-4`}>
             {heading2}
           </h1>
-          <p className={`text-sm md:text-base font-medium ${bgColor === "black" ? "text-center" : "text-center"} opacity-60 lg:max-w-[60%] mx-auto ${paraClass}`}>
+          <p className={`text-sm md:text-base font-normal ${bgColor === "black" ? "text-center" : "text-center"} opacity-60 lg:max-w-[60%] mx-auto ${paraClass}`}>
             {para}
           </p>
         </div>
@@ -123,7 +123,7 @@ export default function MicrosoftDynamic({
                 <h3 className={`text-[20px] lg:text-[28px] font-semibold mb-[18px] lg:leading-8 ${isCenter && 'mx-auto'} ${bgColor === "black" ? "text-white" : "home-section-heading"}`}>
                   {service.title}
                 </h3>
-                <p className={`text-xs lg:text-[15px] opacity-60 font-medium ${paraClass}`}>
+                <p className={`text-xs lg:text-[15px] opacity-60 font-normal ${paraClass}`}>
                   {service.description}
                 </p>
               </div>
