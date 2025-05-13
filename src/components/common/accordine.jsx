@@ -13,13 +13,13 @@ const AccordionItem = ({ title, description, isOpen, onToggle, index }) => {
                 className="w-full"
             >
                 <button
-                    onClick={() => onToggle(index)}
-                    className="flex items-center justify-between w-full py-5 text-left"
+                    // onClick={() => onToggle(index)}
+                    className="flex items-center justify-between w-full py-5 text-secondary text-left"
                 >
-                    <h3 className={`${isOpen ? "text-secondary font-semibold text-[30px] lg:text-[30px] home-section-headings" : "opacity-50"} cursor-pointer text-[25px] lg:text-[26px] xl:text-[30px] leading-[30px] lg:leading-[40px] font-semibold max-w-[100%]`}>
+                    <h3 className={` text-[26px] lg:text-[30px] home-section-headings  xl:text-[30px] leading-[30px] lg:leading-[40px] font-semibold max-w-[100%]`}>
                         {title}
                     </h3>
-
+{/* 
                     {isOpen && (
                         <motion.div
                             variants={{
@@ -41,12 +41,12 @@ const AccordionItem = ({ title, description, isOpen, onToggle, index }) => {
                                 className="h-8 md:h-10 w-8 md:w-10 text-[#FF6035] cursor-pointer transition-transform duration-200"
                             />
                         </motion.div>
-                    )}
+                    )} */}
                 </button>
             </motion.div>
 
             {/* Animated Accordion Content */}
-            <motion.div
+            {/* <motion.div
                 initial="collapsed"
                 animate={isOpen ? "open" : "collapsed"}
                 variants={{
@@ -59,7 +59,7 @@ const AccordionItem = ({ title, description, isOpen, onToggle, index }) => {
                 <div className="pb-5 text-[#101010] font-['Archivo'] font-medium opacity-60 mt-4 text-[18px] w-[90%]">
                     <p>{description}</p>
                 </div>
-            </motion.div>
+            </motion.div> */}
         </div>
     );
 };
