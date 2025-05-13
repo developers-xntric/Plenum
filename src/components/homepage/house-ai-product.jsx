@@ -142,7 +142,7 @@ export default function HouseAIProduct({ heading, paragraph, card1Para, card2Par
                     </motion.div>
                   </Link>
                 </div>
-                <p className="text-[11px] sm:text-[12px] md:text-[13px] text-white font-['Archivo'] w-full max-w-[100%] lg:max-w-[95%] xl:max-w-[75%] break-words">
+                <p className="text-[11px] sm:text-[12px] md:text-[13px] text-white font-['Archivo'] w-full max-w-[100%] lg:max-w-[95%] xl:max-w-[85%] break-words">
                   {card2Para ||
                     "Scalable AI models for retail, industrial, and enterprise supply chain operations are provided by Vertical Builds; these models are made for easy integration and quantifiable effects at scale."}
                 </p>
