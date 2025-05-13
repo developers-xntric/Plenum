@@ -35,8 +35,8 @@ export const blackSection3 = {
 }
 
 export const blackSection2 = {
-    heading: "Why Plenum? A 360° Growth Engine Fueled by Next-Gen Digital Expertise.",
-    para: "At Plenum, we blend technical expertise with brand insight to craft digital strategies that do more than drive clicks. We don’t just refine campaigns; we create experiences that are intuitive for users and strategic for businesses. Our digital frameworks are flexible, scalable, and powered by real-time insights, ensuring your brand stays ahead of the curve.",
+    heading: "Plenum’s Powerful Infrastructure Management",
+    para: "Managing your infrastructure after migration is essential for performance, security, and continuity. Plenum takes care of your AWS environment end-to-end so your enterprise can stay focused on growth and innovation.",
     button: "Get in touch"
 }
 
@@ -72,10 +72,54 @@ export const bc_service = {
     button: "View All",
     img: "/service/BC/BC_2.svg"
 }
+export const cloudbottom1 = {
+    heading: "Dynamics 365 Business Central",
+    Input: ["About Dynamics 365 Business Central"],
+    button: "View All",
+    img: "/service/BC/1.svg"
+}
+export const cloudbottom2 = {
+    heading: "Dynamics 365 Business Central",
+    Input: ["About Dynamics 365 Business Central"],
+    button: "View All",
+    img: "/service/BC/2.svg"
+}
+export const digitalBottom1 = {
+    heading: "Dynamics 365 Business Central",
+    Input: ["About Dynamics 365 Business Central"],
+    button: "View All",
+    img: "/service/BC/digital1.svg"
+}
+export const digitalBottom2 = {
+    heading: "Dynamics 365 Business Central",
+    Input: ["About Dynamics 365 Business Central"],
+    button: "View All",
+    img: "/service/BC/digital2.svg"
+}
 
 export const bc_service_black = {
     heading: "What is Microsoft Dynamics 365 Business Central?",
     para: "Microsoft Dynamics 365 Business Central is an all-in-one enterprise resource planning (ERP) platform that integrates seamlessly with Microsoft tools like Office 365 and Power BI.",
+    button: "Get in touch"
+}
+export const cloud1 = {
+    heading: "Plenum’s Powerful Infrastructure Management",
+    para: "Managing your infrastructure after migration is essential for performance, security, and continuity. Plenum takes care of your AWS environment end-to-end so your enterprise can stay focused on growth and innovation.",
+    button: "Get in touch"
+}
+export const cloud2 = {
+    heading: "Cost Optimization, Use the Cloud Smartly",
+    para: "Cloud should give you flexibility and cost efficiency—but only if managed right. At Plenum, we help enterprises optimize every dollar they spend on AWS by combining FinOps best practices with the intelligence of Momentum.",
+    button: "Get in touch"
+}
+export const digital1 = {
+    heading: "Fueled by Next-Gen Digital Expertise",
+    para: "We don’t just build websites or apps—we craft secure, scalable, and intelligent digital experiences. With deep integration across AI, cloud, ERP, and analytics, At Plenum, we help you create journeys that are simple, smart, and enterprise ready. ",
+    button: "Get in touch"
+}
+export const digital2 = {
+    heading: "Let’s Shape the Future of Digital Together",
+    para: "If you're ready to scale smarter, target more precisely, and achieve stronger performance. Plenum is your digital partner. We don’t just rely on algorithms; we create systems that drive lasting brand impact. From strategy to execution, we craft digital experiences that are intuitive, intelligent, and designed to grow with every interaction.",
     button: "Get in touch"
 }
 

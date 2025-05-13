@@ -32,7 +32,7 @@ const Oracle = () => {
                         text={"Trusted by world's most exciting brands"}
                         brand_icons={service_brand_icons} />
                 </div>
-                <ERPAccordin items={Oracleitems} para='From procurement to financial planning, Oracle ERP modules offer functionality that spans every corner of your enterprise. Combined with our expertise, you’ll have a customized tech stack aligned with your goals.' arrow={true} className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={oracle_service} left={true} blackSection={oracle_service_black} />
+                <ERPAccordin items={Oracleitems} para='From procurement to financial planning, Oracle ERP modules offer functionality that spans every corner of your enterprise. Combined with our expertise, you’ll have a customized tech stack aligned with your goals.' arrow={true} className='flex justify-center items-center gap-10 lg:gap-5 2xl:gap-10 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={oracle_service} left={true} blackSection={oracle_service_black} />
                 <OracleResourcePlanning />
 
                 <Finance_Opearations_Service data={OracleServiceItems} heading={"Impact of Oracle Cloud ERP and Oracle Fusion Finance"} para={"Explore our latest insights on Oracle’s innovation in enterprise resource planning, financial management, and workflow optimization. Stay ahead with fresh perspectives that shape the future of business."} />

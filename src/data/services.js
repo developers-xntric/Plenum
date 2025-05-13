@@ -93,50 +93,72 @@ export const businessSer = [
     icon: "/service/MD/fao3.svg",
   },
 ];
-export const financeOpearations = [
+export const cloud = [
   {
-    title: "Unified Financial Management",
+    title: "Cloud Infrastructure Design",
     description:
-      "Gain real-time insights into your finances, track performance, and ensure compliance. Automate accounting processes and make data-driven decisions that enhance profitability.",
+      "Managing your infrastructure after migration is essential for performance, security, and continuity. Plenum takes care of your AWS environment end-to-end so your enterprise can stay focused on growth and innovation.",
     icon: "/service/MD/fao1.svg",
   },
   {
-    title: "Optimized Supply Chain and Inventory",
+    title: "Cloud cost optimization",
     description:
-      "The system ensures compliance with local tax laws, generates accurate financial reports, and facilitates real-time tracking of financial transactions, helping companies stay on top of their financial health.",
+      "We help you reduce cloud spend by identifying unused resources, right-sizing infrastructure, and automating cost controls. With detailed usage insights and Momentum’s AI-driven recommendations, we ensure maximum ROI from every cloud dollar.",
     icon: "/service/MD/fao2.svg",
-  },
-  {
-    title: "Scalable Operations and Business Agility",
-    description:
-      "Microsoft Dynamics 365 Finance and Operations is scalable, meaning it can grow with your business. Whether you're a small business looking to automate basic processes or a large enterprise requiring complex solutions, the system can be customized to meet your needs.",
-    icon: "/service/MD/fao3.svg",
   },
 ];
-export const OracleServiceItems = [
- {
-    title: "Improved Data Security & Accessibility",
+export const cloudAccor2 = [
+  {
+    title: "Disaster Recovery & Backup",
     description:
-      "Oracle Cloud ERP offers enterprise-grade security with built-in governance and compliance features. With multi-layered encryption, role-based access, and global data residency options, your sensitive financial and operational data remains protected—while remaining accessible to authorized users anytime, anywhere.",
+      "We ensure business continuity with automated backups, rapid failover systems, and multi-region disaster recovery on AWS. Our strategies safeguard data integrity, minimize downtime, and meet compliance with enterprise-grade resilience.",
     icon: "/service/MD/fao1.svg",
   },
   {
-    title: "Cost-Effective Cloud Solution",
+    title: "AI Compute Optimization",
     description:
-      "By automating manual processes and centralizing your operations on the cloud, Oracle Fusion Finance reduces overhead costs and enhances operational efficiency. Cloud-native architecture minimizes infrastructure expenses, while seamless updates and integrations drive long-term value for your business.",
+      "We optimizes AI workloads by intelligently managing compute resources across AWS, reducing latency and cloud spend. Using Momentum’s orchestration engine, we auto-scale GPU/CPU usage for peak efficiency, performance, and cost control. ( AI Compute",
+    icon: "/service/MD/fao2.svg",
+  },
+];
+export const digitalItem1 = [
+  {
+    title: "Customer & Employee Portals",
+    description:
+      "We build secure, responsive portals designed for customers and employees, offering seamless access, role-based controls, and unified experiences. From self-service dashboards to internal tools, our solutions enhance productivity, engagement, and operational efficiency.",
+    icon: "/service/MD/fao1.svg",
+  },
+  {
+    title: "Mobile-First Business Apps",
+    description:
+      "We build native and cross-platform apps designed for performance, offline access, and secure enterprise integration. From intuitive UIs to gesture controls, we ensure seamless access across all devices, anytime, anywhere.",
     icon: "/service/MD/fao2.svg",
   },
   {
-    title: "Optimized Business Operations",
+    title: "Conversational Interfaces with SecureGPT",
     description:
-      "Oracle’s intelligent ERP ecosystem streamlines critical business functions—from finance and supply chain to procurement and HR. With real-time process automation, predictive analytics, and AI-powered workflows, you can make smarter decisions, faster.",
-    icon: "/service/MD/fao3.svg",
+      "We create AI-powered chat interfaces using SecureGPT for real-time, context-aware support across business functions. These intelligent assistants handle queries, automate responses, and enhance self-service for both customers and employees.",
+    icon: "/service/MD/fao2.svg",
+  },
+];
+export const digitalItem2 = [
+  {
+    title: "Embedded Dashboards & BI",
+    description:
+      "We design embedded dashboards that bring real-time insights directly into your digital interfaces, powered by Inset BI. These visual analytics tools support smarter decisions with contextual, actionable data across roles and workflows.",
+    icon: "/service/MD/fao1.svg",
   },
   {
-    title: "Enhanced Visibility and Control",
+    title: "Internal Process Automation",
     description:
-      "With Oracle ERP Cloud, gain real-time insights through unified dashboards and powerful analytics. Consolidate data from across your enterprise and turn it into actionable intelligence, improving planning, forecasting, and executive-level control over every business area.",
-    icon: "/service/MD/fao4.svg",
+      "We streamline repetitive workflows through automation, boosting efficiency and reducing manual overhead. From approvals to notifications, we embed smart logic into portals and apps to accelerate internal operations.",
+    icon: "/service/MD/fao2.svg",
+  },
+  {
+    title: "UX Optimization & Analytics",
+    description:
+      "We measure and enhance user experience with heatmaps, A/B testing, and AI-based behavior insights.Our data-driven approach ensures your digital platforms evolve with user needs and drive measurable results.",
+    icon: "/service/MD/fao2.svg",
   },
 ];
 export const oracleNetSuite = [

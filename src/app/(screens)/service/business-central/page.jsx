@@ -29,7 +29,7 @@ const BuisnessCentral = () => {
                 heading_className={"lg:w-[88%] mt-10 lg:mt-0 lg:max-w-[550px]"}
                 para_className={"lg:w-[60%] lg:w-[70%] 2xl:w-[65%]"}
             />
-            <ERPAccordin isbottom={true} outside={true} items={businessSer} className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={bc_service} left={true} blackSection={bc_service_black} />
+            <ERPAccordin isbottom={true} isAccordin={true} outside={true} items={businessSer} className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={bc_service} left={true} blackSection={bc_service_black} />
             <Testimonials testimonials={testimonials} />
             <ERPSolutionsAlone/>
             
