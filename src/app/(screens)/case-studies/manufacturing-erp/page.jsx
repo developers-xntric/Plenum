@@ -32,7 +32,7 @@ export default function BrandOSPage() {
     return (
         <main>
             <CaseDetailHero
-                tags={"Finance"}
+                tags={"Manufacturing"}
                 heading={"Manufacturing ERP Modernization – Business Central for Steel Fabrication "}
                 para={"Implemented Microsoft Dynamics 365 Business Central for end-to-end material tracking, procurement, and production management. "}
                 heading_className={"lg:max-w-[870px]"}

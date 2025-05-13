@@ -30,7 +30,7 @@ export default function AiPoweredSentiment() {
     return (
         <main>
             <CaseDetailHero
-                tags={"Finance"}
+                tags={"Banking & Finance"}
                 heading={"Commission Fraud Detection – AI for DSA Auditing "}
                 para={"Built an anomaly detection engine to audit Direct Selling Agent commissions and detect overpayments and irregular behavior."}
                 heading_className={"lg:max-w-[650px]"}

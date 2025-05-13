@@ -30,7 +30,7 @@ export default function BrandOSPage() {
     return (
         <main>
             <CaseDetailHero
-                tags={"Real Estate"}
+                tags={"Banking & Finance"}
                 heading={"AI-Driven Property Valuation – Automated Valuation Model (AVM)"}
                 para={"Developed an ML-powered rental AVM system to estimate property values and flag anomalies for a leading financial institution. "}
                 heading_className={"lg:max-w-[800px]"}

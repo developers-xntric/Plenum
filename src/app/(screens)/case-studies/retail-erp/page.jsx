@@ -34,7 +34,7 @@ export default function BrandOSPage() {
   return (
     <main>
       <CaseDetailHero
-        tags={"Finance"}
+        tags={"Banking & Finance"}
         heading={"Retail ERP Transformation Finance & Operations Implementation"}
         para={"Modernized a retail group's operations using Microsoft Dynamics 365 F&O for finance, procurement, HR, and POS integration."}
         heading_className={"lg:max-w-[800px]"}

@@ -30,7 +30,7 @@ export default function AiPoweredSentiment() {
     return (
         <main>
             <CaseDetailHero
-                tags={"Finance"}
+                tags={"Banking & Finance"}
                 heading={"AI-Powered Sentiment Analysis – Client Experience Intelligence "}
                 para={"Implemented enterprise-grade sentiment tracking from unstructured communication to help reduce churn and identify at-risk clients."}
                 heading_className={"lg:max-w-[800px]"}

@@ -107,7 +107,7 @@ export default function IndustryShowcase() {
                     {/* Content Section */}
                     <div className="w-[90%] mx-auto md:w-1/2 flex flex-col justify-between">
                       <div>
-                        <h3 className="text-[23px] md:text-[28px]  text-[#FFFFFF] font-semibold mb-3">
+                        <h3 className="text-[23px] md:text-[28px]  text-[#FFFFFF] font-semibold mb-3 leading-[30px] md:leading-[35px]">
                           {industry.title}
                         </h3>
                         <p className="text-[#989898] md:max-w-[90%] text-[15px] mb-8">{industry.description}</p>

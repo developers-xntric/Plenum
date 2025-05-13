@@ -20,50 +20,50 @@ const data = [
         link: "/unified-retail",
     },
     {
-        title: "Retail ERP Transformation Finance & Operations Implementation",
+        title: "Manufacturing ERP Modernization – Business Central for Steel Fabrication ",
         description: "Implemented Microsoft Dynamics 365 Business Central for end-to-end material tracking, procurement, and production management.",
-        industry: "Finance",
+        industry: "Manufacturing",
         deliverables: ["Microsoft Dynamics 365 Business Central ", "Power BI", "Production & MRP Module", "Procurement Automation"],
         image: "/casestudy/Group3.png",
         link: "/manufacturing-erp",
     },
     {
-        title: "Retail ERP Transformation Finance & Operations Implementation",
+        title: "Virtual Learning Platform – Custom LMS for Digital Education",
         description: "Designed and launched a fully functional, mobile-first Learning Management System with automated grading, video lessons, and parent insights.",
         industry: "Education",
         deliverables: ["Microsoft Dynamics 365 Business Central ", "Power BI", "Production & MRP Module", "Procurement Automation"],
         image: "/casestudy/Group4.png",
         link: "/virtual-learning",
     },
+    // {
+    //     title: "AI-Driven Property Valuation – Automated Valuation Model (AVM)",
+    //     description: "Developed an ML-powered rental AVM system to estimate property values and flag anomalies for a leading financial institution. ",
+    //     industry: "Real Estate",
+    //     deliverables: ["Databricks ", "Power BI", " Momentum AI", "MLflow", "Python", "Delta Tables"],
+    //     image: "/casestudy/Group5.png",
+    //     link: "/ai-driven-property",
+    // },
     {
-        title: "Retail ERP Transformation Finance & Operations Implementation",
-        description: "Designed and launched a fully functional, mobile-first Learning Management System with automated grading, video lessons, and parent insights.",
-        industry: "Education",
-        deliverables: ["Microsoft Dynamics 365 Business Central ", "Power BI", "Production & MRP Module", "Procurement Automation"],
-        image: "/casestudy/Group5.png",
-        link: "/ai-driven-property",
-    },
-    {
-        title: "Retail ERP Transformation Finance & Operations Implementation",
-        description: "Designed and launched a fully functional, mobile-first Learning Management System with automated grading, video lessons, and parent insights.",
-        industry: "Education",
+        title: "Personal Finance Intelligence – Behavioral Analytics for Engagement ",
+        description: "Built AI-powered behavioral models to identify high-potential customers, link entity structures, and personalize financial offerings.",
+        industry: "Banking & Finance",
         deliverables: ["Microsoft Dynamics 365 Business Central ", "Power BI", "Production & MRP Module", "Procurement Automation"],
         image: "/casestudy/Group6.png",
         link: "/proper-finance-intelligence",
     },
     {
-        title: "Retail ERP Transformation Finance & Operations Implementation",
-        description: "Designed and launched a fully functional, mobile-first Learning Management System with automated grading, video lessons, and parent insights.",
-        industry: "Education",
-        deliverables: ["Microsoft Dynamics 365 Business Central ", "Power BI", "Production & MRP Module", "Procurement Automation"],
+        title: "AI-Powered Sentiment Analysis – Client Experience Intelligence",
+        description: "Implemented enterprise-grade sentiment tracking from unstructured communication to help reduce churn and identify at-risk clients. ",
+        industry: "Banking & Finance",
+        deliverables: ["GPT-4 ", "Qwen 2.5", "Inset BI", "Momentum Connect","Secure APIs"],
         image: "/casestudy/Group7.png",
         link: "/ai-powered-sentiment",
     },
     {
-        title: "Retail ERP Transformation Finance & Operations Implementation",
-        description: "Designed and launched a fully functional, mobile-first Learning Management System with automated grading, video lessons, and parent insights.",
-        industry: "Education",
-        deliverables: ["Microsoft Dynamics 365 Business Central ", "Power BI", "Production & MRP Module", "Procurement Automation"],
+        title: "Commission Fraud Detection – AI for DSA Auditing",
+        description: "Built an anomaly detection engine to audit Direct Selling Agent commissions and detect overpayments and irregular behavior. .",
+        industry: "Banking & Finance",
+        deliverables: ["Momentum AI ", "PCA", "Sklearn", "Inset BI"],
         image: "/casestudy/Group8.png",
         link: "/commision-fraud-detection",
     },
@@ -86,8 +86,8 @@ export default function ListingPage() {
                             </div>
                             <div className="w-full lg:w-1/2 2xl:w-[45%] flex flex-col gap-10 md:gap-0 justify-between">
                                 <div>
-                                    <h2 className="text-[25px] md:text-[32px] max-w-[80%] font-medium text-[#101010] leading-[40px] opacity-[0.9968] mb-3">{item.title}</h2>
-                                    <p className="text-[#989898] text-[15px] md:text-[17px] md:max-w-[60%] 2xl:max-w-[50%] mb-6">
+                                    <h2 className="text-[25px] md:text-[32px] md:max-w-[80%] xl:max-w-[90%] 2xl:max-w-[95%] font-medium text-[#101010] leading-[30px] md:leading-[40px] opacity-[0.9968] mb-3">{item.title}</h2>
+                                    <p className="text-[#989898] text-[15px] md:text-[17px] lg:max-w-[80%] 2xl:max-w-[80%] mb-6">
                                         {item.description}
                                     </p>
                                 </div>
@@ -102,7 +102,7 @@ export default function ListingPage() {
 
                                             <Link
                                                 href={`/case-studies${item?.link}`}
-                                                className="inline-flex relative items-center text-[#FF6035] opacity-[0.9968] text-[20px] font-semibold underline underline-offset-3"
+                                                className="inline-flex relative items-center text-[#FF6035] opacity-[0.9968] text-[13px] md:text-[20px] font-semibold underline underline-offset-3"
                                             >
                                                 <motion.div
                                                     whileHover="hover"
@@ -139,9 +139,9 @@ export default function ListingPage() {
                                         </div>
                                         {/* Right Side */}
                                         <div className="text-right">
-                                            <p className="text-[14px] font-medium font-['Archivo'] text-[#989898] opacity-[0.9968] ">Technologies Implemented</p>
+                                            <p className="text-[13px] md:text-[14px] font-medium font-['Archivo'] text-[#989898] opacity-[0.9968] ">Technologies Implemented</p>
                                             {item.deliverables.map((deliverable, index) => (
-                                                <p key={index} className="text-[17px] font-normal text-[#101010] opacity-[0.9968] ">{deliverable}</p>
+                                                <p key={index} className="text-[15px] md:text-[17px] font-normal text-[#101010] opacity-[0.9968] ">{deliverable}</p>
                                             ))}
                                         </div>
                                     </div>
