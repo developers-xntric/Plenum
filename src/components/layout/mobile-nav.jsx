@@ -51,18 +51,18 @@ const MobileNav = () => {
         { name: "Vertical Builds", link: "/product" },
       ],
     },
-    {
-      name: "Industries",
-      link: "/industries",
-      subItems: [
-        // { name: "Healthcare Industry", link: "/industries" },
-        // { name: "BioTech Industries", link: "/industries" },
-        // { name: "Consumer Banking", link: "/industries" },
-        // { name: "Construction Industry", link: "/industries" },
-        // { name: "Agriculture & Food Industries", link: "/industries" },
-        // { name: "Business & Enterprise Banking", link: "/industries" },
-      ],
-    },
+    // {
+    //   name: "Industries",
+    //   link: "/industries",
+    //   subItems: [
+    //     // { name: "Healthcare Industry", link: "/industries" },
+    //     // { name: "BioTech Industries", link: "/industries" },
+    //     // { name: "Consumer Banking", link: "/industries" },
+    //     // { name: "Construction Industry", link: "/industries" },
+    //     // { name: "Agriculture & Food Industries", link: "/industries" },
+    //     // { name: "Business & Enterprise Banking", link: "/industries" },
+    //   ],
+    // },
     {
       name: "Resources",
       link: "/case-studies",
