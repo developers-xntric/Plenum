@@ -19,7 +19,7 @@ export const testimonials = [
     id: 3,
     quote:
       "“Plenum’s approach to design and innovation has transformed how we operate. Their team consistently delivers exceptional results.”",
-    author: "Balasubramanian Rajendran",
+    author: "John Doe",
     position: "Lead - AI",
     socialLink: "https://linkedin.com",
   },
@@ -27,7 +27,7 @@ export const testimonials = [
     id: 4,
     quote:
       "“Working with Plenum has been a game-changer for our business. Their insight-driven approach has helped us reach new heights.”",
-    author: "Shashank Kanangi",
+    author: "Eric",
     position: "Data Scientist ",
     socialLink: "https://linkedin.com",
   },

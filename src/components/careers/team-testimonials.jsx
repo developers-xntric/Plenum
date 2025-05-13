@@ -9,67 +9,48 @@ export default function TeamTestimonials() {
         {
             id: 1,
             quote:
-                "In my early stage Plenum years ago, I was dynamic, interesting, and impactful. It has delivered on all fronts, and I plan to do so as we work to rebalance the planet.",
-            name: "Marcus Hagen",
-            title: "Product Designer",
+                "The combination of brilliant colleagues, great work environment, and a purpose-driven mission makes Plenum an incredible place to be working. It's inspiring to know our work will impact in an industry that truly matters.",
+            name: "Balasubramanian Rajendran",
+            title: "Lead - AI",
             image: "/careers/p1.svg",
         },
         {
             id: 2,
             quote:
-                "The talent bar at Plenum is extremely high, and there is something electric and deeply fulfilling about working with a team that is so passionate about our mission and what we do.",
-            name: "Marcus Hagen",
-            title: "Product Designer",
+                "Working at Plenum has been the highlight of my career. The collaborative culture and innovative approach to solving problems is unmatched.",
+            name: "Lavanya",
+            title: "Data Scientist",
             image: "/careers/p2.svg",
         },
         {
             id: 3,
             quote:
-                "The combination of brilliant colleagues, great work environment, and a purpose-driven mission makes Plenum an incredible place to be working. It's inspiring to know our work will impact in an industry that truly matters.",
-            name: "Rachel Larson",
-            title: "Software Engineer",
-            image: "/careers/p1.svg",
+                "When I joined a very early stage Plenum years ago, I was looking for a dynamic, interesting, and impactful experience. Patch has delivered on all fronts, and I expect it to continue to do so as we work to rebalance the planet.",
+            name: "Hayden Pirkle",
+            title: "Group CEOr",
+            image: "/careers/p2.svg",
         },
+      
+      
         {
             id: 4,
             quote:
-                "Working at Plenum has been the highlight of my career. The collaborative culture and innovative approach to solving problems is unmatched.",
-            name: "Alex Chen",
-            title: "Data Scientist",
-            image: "/careers/p2.svg",
+                "The combination of brilliant colleagues, great work environment, and a purpose-driven mission makes Plenum an incredible place to be working. It's inspiring to know our work will impact in an industry that truly matters.",
+            name: "Balasubramanian Rajendran",
+            title: "Lead - AI",
+            image: "/careers/p1.svg",
         },
         {
             id: 5,
             quote:
-                "In my early stage Plenum years ago, I was dynamic, interesting, and impactful. It has delivered on all fronts, and I plan to do so as we work to rebalance the planet.",
-            name: "Marcus Hagen",
-            title: "Product Designer",
-            image: "/careers/p1.svg",
-        },
-        {
-            id: 6,
-            quote:
-                "The talent bar at Plenum is extremely high, and there is something electric and deeply fulfilling about working with a team that is so passionate about our mission and what we do.",
-            name: "Marcus Hagen",
-            title: "Product Designer",
-            image: "/careers/p2.svg",
-        },
-        {
-            id: 7,
-            quote:
-                "The combination of brilliant colleagues, great work environment, and a purpose-driven mission makes Plenum an incredible place to be working. It's inspiring to know our work will impact in an industry that truly matters.",
-            name: "Rachel Larson",
-            title: "Software Engineer",
-            image: "/careers/p1.svg",
-        },
-        {
-            id: 8,
-            quote:
                 "Working at Plenum has been the highlight of my career. The collaborative culture and innovative approach to solving problems is unmatched.",
-            name: "Alex Chen",
+            name: "Lavanya",
             title: "Data Scientist",
             image: "/careers/p2.svg",
         },
+     
+      
+      
     ]
 
     const [activeIndex, setActiveIndex] = useState(1)

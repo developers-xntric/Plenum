@@ -214,7 +214,6 @@ export const industries = [
 export const buttonArray = [
   'Retail',
   'Manufacturing',
-  'Logistics & Warehous',
   'Education',
   'Healthcare',
   'Banking & Finance',
