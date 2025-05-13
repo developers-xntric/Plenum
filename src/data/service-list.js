@@ -5,8 +5,8 @@ export const ServiceList = [
         description:
             "With our extensive managed cloud services, you can simplify your infrastructure management and cloud migration.",
         names: [
-            "Microsoft Dynamics ERP Solutions",
-            "Oracle ERP Solutions",
+            "Cloud Infrastructure Design",
+            "Cloud Cost Optimization",
         ],
         icon: (
             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
@@ -44,13 +44,13 @@ export const ServiceList = [
                 </defs>
             </svg>
         ),
-        link: "/service",
+        link: "/service/manage-cloud",
     },
     {
         id: 2,
         title: ["ERP consulting and", "implementation"],
         description:
-            "We create and implement ERP systems in a way that supports your changing needs while maximizing your technology investments. ",
+            "We create and implement ERP systems in a way that supports your changing needs while maximizing your technology investments.",
             names: [
                 "Microsoft Dynamics ERP Solutions",
                 "Oracle ERP Solutions",
@@ -99,7 +99,7 @@ export const ServiceList = [
                 </defs>
             </svg>
         ),
-        link: "/service",
+        link: "/service/ERP-consulting",
     },
     {
         id: 3,
@@ -107,8 +107,8 @@ export const ServiceList = [
         description:
             "Our AI solutions provide fast and actionable insights in real-time, regulatory compliance, and allow your teams to make better and faster decisions. ",
         names: [
-            "ERP consulting and implementation",
-            "ERP consulting and implementation",
+            "AI Opportunity Identification",
+            "AI Policy & Governance Framework",
         ],
         icon: (
             <svg xmlns="http://www.w3.org/2000/svg" width="44" height="40" viewBox="0 0 44 40" fill="none">
@@ -151,16 +151,16 @@ export const ServiceList = [
                 </defs>
             </svg>
         ),
-        link: "/services",
+        link: "/service/ai-consulting",
     },
     {
         id: 4,
         title: ["Digital", "Experiences"],
         description:
-            "We craft immersive digital journeys that blend innovation, design, and technology to captivate users and elevate enterprises. ",
+            "We craft immersive digital journeys that blend innovation, design, and technology to captivate users and elevate enterprises.",
         names: [
-            "ERP consulting and implementation",
-            "ERP consulting and implementation",
+            "Mobile-First Business Apps",
+            "Conversational Interfaces with SecureGPT",
         ],
         icon: (
             <svg xmlns="http://www.w3.org/2000/svg" width="60" height="40" viewBox="0 0 60 40" fill="none">
@@ -203,6 +203,6 @@ export const ServiceList = [
                 </defs>
             </svg>
         ),
-        link: "/services",
+        link: "/service/digital-experiences",
     },
 ];
