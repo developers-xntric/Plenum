@@ -179,7 +179,7 @@ const MobileNav = () => {
               </defs>
             </svg>
           </Link>
-          <Menu onClick={() => setIsOpen(!isOpen)} size={24} />
+          <Menu className="cursor-pointer" onClick={() => setIsOpen(!isOpen)} size={24} />
         </div>
       </header>
 
@@ -228,7 +228,7 @@ const MobileNav = () => {
                 </defs>
               </svg>
             </Link>
-            <X onClick={() => setIsOpen(!isOpen)} size={24} />
+            <X className="cursor-pointer" onClick={() => setIsOpen(!isOpen)} size={24} />
           </div>
 
           <ul className="space-y-4">
