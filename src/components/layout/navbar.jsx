@@ -221,7 +221,7 @@ const Navbar = () => {
     )
 
     return (
-        <header className='z-[999] border-[#E2E2E2] border 2xl:w-[1200px] lg:w-[85%] xl:w-[85%] font-normal font-["Archivo"] mx-auto hidden lg:block fixed -translate-x-1/2 left-1/2 top-6 bg-[#FFFFFF] rounded-[13px]'>
+        <header className='z-[999] border-[#E2E2E2] border 2xl:w-[1200px] lg:w-[85%] xl:w-[65%] font-normal font-["Archivo"] mx-auto hidden lg:block fixed -translate-x-1/2 left-1/2 top-6 bg-[#FFFFFF] rounded-[13px]'>
             <div className="xl:px-[18px] xl:py-2 py-1.5 px-3">
                 <div className="flex justify-between items-center">
                     <Link href={"/"} className="w-[100px]">
@@ -264,8 +264,8 @@ const Navbar = () => {
                             </defs>
                         </svg>
                     </Link>
-                    <div className="flex justify-between gap-[30px] xl:gap-[90px]">
-                        <ul className="flex justify-between items-center gap-6 xl:gap-8 2xl:gap-10 text-[12px] font-semibold xl:text-[14px] text-black">
+                    <div className="flex justify-start gap-[5px] xl:gap-[40px] mx-auto">
+                        <ul className="flex justify-start items-center gap-4 xl:gap-4 2xl:gap-10 text-[12px] font-semibold xl:text-[14px] text-black">
                             <li>
                                 <Link href={"/"}>Home</Link>
                             </li>
@@ -291,7 +291,7 @@ const Navbar = () => {
                                 </Link>
                                 {renderDropdown(showProductsDropdown, productsMenuItems, setShowProductsDropdown)}
                             </li>
-                            <li
+                            {/* <li
                                 className="relative"
                                 ref={industriesRef}
                                 onMouseEnter={() => handleMouseEnter(setShowIndustriesDropdown)}
@@ -301,7 +301,7 @@ const Navbar = () => {
                                     Industries
                                 </Link>
                                 {industriesMenuItems.length > 0 && renderDropdown(showIndustriesDropdown, industriesMenuItems, setShowIndustriesDropdown)}
-                            </li>
+                            </li> */}
                             <li
                                 className="relative"
                                 ref={resourcesRef}
