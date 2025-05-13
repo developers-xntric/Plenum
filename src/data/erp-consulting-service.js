@@ -12,6 +12,18 @@ export const bottomSection2 = {
     button: "View All",
     img: "/service/ERPC/service2.svg"
 }
+export const aiSection1 = {
+    heading: "Our AI Services",
+    Input: ["AI Opportunity Identification", "AI Policy & Governance Framework"],
+    button: "View All",
+    img: "/service/ERPC/1.svg"
+}
+export const aiSection2 = {
+    heading: "AI Products",
+    Input: ["Momentum AI", "SecureGPT"],
+    button: "View All",
+    img: "/service/ERPC/2.svg"
+}
 
 export const blackSection = {
     heading: "Let’s Shape the Future of Digital Together.",
@@ -32,6 +44,16 @@ export const blackSection3 = {
 export const blackSection2 = {
     heading: "Plenum’s Powerful Infrastructure Management",
     para: "Managing your infrastructure after migration is essential for performance, security, and continuity. Plenum takes care of your AWS environment end-to-end so your enterprise can stay focused on growth and innovation.",
+    button: "Get in touch"
+}
+export const ai1 = {
+    heading: "Operationalize Responsible AI Designed for the Enterprise",
+    para: "AI shouldn't be a dazzling experiment or a last consideration. It should be an operational layer that complements your governance rules, fits your company structure, and lets your teams do more—with less work.",
+    button: "Get in touch"
+}
+export const ai2 = {
+    heading: "Why Plenum?",
+    para: "We combine enterprise-grade AI consulting with a no-code platform that accelerates delivery and ensures full lifecycle control. With AWS infrastructure, Plenum expertise, and Momentum’s intelligence layer, your enterprise doesn’t just adopt AI—it operationalizes it across the board.",
     button: "Get in touch"
 }
 
