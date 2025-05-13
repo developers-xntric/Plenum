@@ -19,7 +19,7 @@ function WhoWeAre() {
 
                     </div>
                     <div className=' flex justify-center relative items-center lg:w-[2100px] 2xl:w-[70%] '>
-                        <Image src={"/about/Who-we-are.png"} alt='img' width={2000} height={2000} className='w-full  md:h-full' />
+                        <Image src={"/about/group_1.svg"} alt='img' width={2000} height={2000} className='w-full  md:h-full' />
 
                     </div>
                 </div>
