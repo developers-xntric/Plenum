@@ -2,7 +2,7 @@ export default function CentralizeIntelligence() {
     return (
         <div className=" bg-white">
 
-            <div className="2xl:max-w-[1440px] mx-auto w-[90%] space-y-10 md:space-y-20 relative md:static  bottom-5 md:bottom-0">
+            <div className="2xl:max-w-[1440px] mx-auto w-[90%] space-y-10 md:space-y-20 relative md:static  bottom-5 md:bottom-0 lg:py-10">
                 <div className="flex lg:flex-row flex-col lg:items-center text-center md:text-left justify-between space-y-5 lg:space-y-0">
                     <h2 className="text-[30px] xl:max-w-[500px] lg:text-[55.312px] leading-[34px] lg:leading-[55px] font-['Archivo'] text-secondary font-semibold home-section-headings tracking-tight">
                         Smart Products, Smarter Enterprises
