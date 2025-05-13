@@ -5,7 +5,7 @@ import Testimonials from '@/components/homepage/testimonial';
 import ERPServicesEast from '@/components/service/ERP-Cosultant/ERP-services-east';
 import Service_Inner_Hero from '@/components/service/ERP-Cosultant/hero';
 import { service_brand_icons } from '@/data/brand-slider-icons-data';
-import { blackSection, blackSection2, bottomSection, bottomSection2 } from '@/data/erp-consulting-service';
+import { ai1, ai2, aiSection1, aiSection2, blackSection, blackSection2, bottomSection, bottomSection2 } from '@/data/erp-consulting-service';
 import { cardData } from '@/data/home-blog';
 import { testimonials } from '@/data/home-testimonials';
 import ArticleSlider from "@/components/common/article-slider";
@@ -16,9 +16,9 @@ const AiConsulting = () => {
     return (
         <div>
             <Service_Inner_Hero
-                heading={"Managed Cloud Services in Dubai and Middle East"}
-                para={"Our ERP consulting and implementation services are designed to transform your business operations through streamlined, scalable, and fully integrated enterprise resource planning (ERP) solutions."}
-                image={"/service/AC/hero.png"}
+                heading={"AI Consulting, Governance and Implementation Services"}
+                para={"At Plenum, we guide enterprises through every phase of their AI journey from defining strategy to building scalable models, setting up governance, and enabling real-time decision-making."}
+                image={"/service/AC/image3.svg"}
                 is_space_in_image={false}
                 isERP={true}
                 isBottomButton={false}
@@ -31,13 +31,17 @@ const AiConsulting = () => {
                     brand_icons={service_brand_icons} />
             </div>
             <ERPC2
-                para={"We believe that ERP implementation isn’t just a software installation, it’s a strategic business transformation. Our seasoned consultants understand industry-specific challenges and align ERP solutions with your business goals to optimize workflows, increase efficiency, and improve ROI. Whether you’re adopting a new system or upgrading your current one, our expert ERP consultants help you make informed decisions, ensuring a seamless transition and long-term value."}
+                image={'/service/AC/ai.svg'}
+                heading={'AI Strategy & Readiness Laying the Right Foundation'}
+                para={"Successful AI starts with alignment. Our strategy workshops and AI readiness assessments help you identify high-impact use cases, assess data availability, and build a phased, ROI-driven roadmap."}
+
+                para2={'This ensures you’re not just deploying AI—you’re doing it where it matters, with buy-in from every stakeholder.'}
             />
-            <ERPServicesEast para={"Our ERP implementation experts provide the strategic guidance and technical expertise needed to modernize operations, increase efficiency, and achieve long-term success."} heading={"ERP Consulting and Implementation in the Middle East"} activeState={"Qatar"} />
-            <ERPSolutionsBottomSection className='flex justify-center items-center gap-20 lg:flex-row-reverse flex-col pt-10 lg:py-0' blackSection={blackSection2} bottomSection={bottomSection2} left={false} />
-            <ERPSolutionsBottomSection className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={bottomSection} left={true} blackSection={blackSection} />
+            <ERPServicesEast para={"At Plenum, we enable companies to use artificial intelligence to release actual economic value. We start with high-impact use cases, then risk analyses, artificial intelligence policy development, and platform architecture."} heading={"Plenum AI Advisory, Governance & Execution"} activeState={"Qatar"} />
+            <ERPSolutionsBottomSection className='flex justify-center items-center gap-20 lg:flex-row-reverse flex-col pt-10 lg:py-0' blackSection={ai1} bottomSection={aiSection1} left={false} />
             <Testimonials testimonials={testimonials} />
-            <ERPSolutionsBottomSection className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={bottomSection} left={true} blackSection={blackSection} />
+            <ERPSolutionsBottomSection className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={aiSection2} left={true} blackSection={ai2} />
+
             <ArticleSlider />
             <Blog heading='Discover Our Blog' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world." cardData={cardData} />
         </div>
