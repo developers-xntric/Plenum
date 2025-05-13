@@ -160,16 +160,52 @@ export default function TeamTestimonials() {
             {/* Team Photos - Single Image */}
             <div className="mt-16 md:block hidden mx-auto max-w-6xl">
                 <Image
-                    src="/careers/grid.svg"
+                    src="/careers/careers-group.svg"
+                    alt="Team photo collage"
+                    width={1500}
+                    height={1500}
+                    className="w-full h-auto object-cover"
+                    priority
+                />
+            </div>
+            <div className="mt-10 md:hidden flex flex-col gap-3">
+                <Image
+                    src="/careers/image.svg"
                     alt="Team photo collage"
                     width={1500}
                     height={1500}
                     className="w-full h-auto object-cover"
                 />
-            </div>
-            <div className="mt-10 block md:hidden">
                 <Image
-                    src="/careers/col.svg"
+                    src="/careers/image-1.svg"
+                    alt="Team photo collage"
+                    width={1500}
+                    height={1500}
+                    className="w-full h-auto object-cover"
+                />
+                <Image
+                    src="/careers/image-2.svg"
+                    alt="Team photo collage"
+                    width={1500}
+                    height={1500}
+                    className="w-full h-auto object-cover"
+                />
+                <Image
+                    src="/careers/image-3.svg"
+                    alt="Team photo collage"
+                    width={1500}
+                    height={1500}
+                    className="w-full h-auto object-cover"
+                />
+                <Image
+                    src="/careers/image-4.svg"
+                    alt="Team photo collage"
+                    width={1500}
+                    height={1500}
+                    className="w-full h-auto object-cover"
+                />
+                <Image
+                    src="/careers/image-5.svg"
                     alt="Team photo collage"
                     width={1500}
                     height={1500}

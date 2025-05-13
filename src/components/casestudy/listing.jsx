@@ -95,7 +95,7 @@ export default function ListingPage() {
                     if (!prevItem || prevItem.sectionId !== item.sectionId) {
                         acc.push(
                             <div key={`section-${index}`} id={item.sectionId} className="mb-8">
-                                <h2 className="text-[28px] md:text-[36px] font-semibold text-[#101010] opacity-[0.9968]">
+                                <h2 className="text-[28px] md:text-[36px] font-semibold text-[#101010] opacity-[0]">
                                     {item.industry}
                                 </h2>
                             </div>
