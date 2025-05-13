@@ -73,7 +73,7 @@ export default function OracleResourcePlanning() {
                                 {/* Left Section - Image */}
                                 <div className="w-full lg:w-1/2 xl:w-[60%] lg:p-4">
                                     <Image
-                                        src="/service/Oracle/image.png"
+                                        src="/service/image.png"
                                         alt="Analytics Dashboard"
                                         width={1000}
                                         height={1000}
@@ -98,7 +98,7 @@ export default function OracleResourcePlanning() {
                                 {/* Left Section - Image */}
                                 <div className="w-full lg:w-1/2 xl:w-[60%] lg:p-4">
                                     <Image
-                                        src="/service/Oracle/image-1.png"
+                                        src="/service/image-1.png"
                                         alt="Analytics Dashboard"
                                         width={1000}
                                         height={1000}
@@ -123,7 +123,7 @@ export default function OracleResourcePlanning() {
                                 {/* Left Section - Image */}
                                 <div className="w-full lg:w-1/2 xl:w-[60%] lg:p-4">
                                     <Image
-                                        src="/service/Oracle/image-2.png"
+                                        src="/service/image-2.png"
                                         alt="Analytics Dashboard"
                                         width={1000}
                                         height={1000}
