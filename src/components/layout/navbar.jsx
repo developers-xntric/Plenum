@@ -180,7 +180,7 @@ const Navbar = () => {
         >
             <ul className="space-y-3">
                 {menuItems.map((item, index) => (
-                    <li key={index} className="space-y-2 text-[14px]">
+                    <li key={index} className="space-y-2 text-[14px] ">
                         <Link
                             href={item.link || "#"}
                             className="flex items-center text-left w-full hover:text-[#FF6035] transition-colors"
@@ -266,11 +266,11 @@ const Navbar = () => {
                     </Link>
                     <div className="flex justify-between items-center gap-[5px] xl:gap-[40px] mx-auto">
                         <ul className="flex justify-end items-center gap-6 2xl:gap-8 text-[12px] font-semibold xl:text-[14px] text-black">
-                            <li>
+                            <li className="hover:text-[#FF6035] transition-colors">
                                 <Link href={"/"}>Home</Link>
                             </li>
                             <li
-                                className="relative"
+                                className="relative hover:text-[#FF6035] transition-colors"
                                 ref={servicesRef}
                                 onMouseEnter={() => handleMouseEnter(setShowServicesDropdown)}
                                 onMouseLeave={() => handleMouseLeave(setShowServicesDropdown)}
@@ -281,7 +281,7 @@ const Navbar = () => {
                                 {renderDropdown(showServicesDropdown, servicesMenuItems, setShowServicesDropdown)}
                             </li>
                             <li
-                                className="relative"
+                                className="relative hover:text-[#FF6035] transition-colors"
                                 ref={productsRef}
                                 onMouseEnter={() => handleMouseEnter(setShowProductsDropdown)}
                                 onMouseLeave={() => handleMouseLeave(setShowProductsDropdown)}
@@ -303,7 +303,7 @@ const Navbar = () => {
                                 {industriesMenuItems.length > 0 && renderDropdown(showIndustriesDropdown, industriesMenuItems, setShowIndustriesDropdown)}
                             </li> */}
                             <li
-                                className="relative"
+                                className="relative hover:text-[#FF6035] transition-colors"
                                 ref={resourcesRef}
                                 onMouseEnter={() => handleMouseEnter(setShowResourcesDropdown)}
                                 onMouseLeave={() => handleMouseLeave(setShowResourcesDropdown)}
@@ -313,13 +313,13 @@ const Navbar = () => {
                                 </Link>
                                 {renderDropdown(showResourcesDropdown, resourcesMenuItems, setShowResourcesDropdown)}
                             </li>
-                            <li>
+                            <li className="hover:text-[#FF6035] transition-colors">
                                 <Link href={"/about"}>About Us</Link>
                             </li>
-                            <li>
+                            <li className="hover:text-[#FF6035] transition-colors">
                                 <Link href={"/article"}>Articles</Link>
                             </li>
-                            <li>
+                            <li className="hover:text-[#FF6035] transition-colors">
                                 <Link href={"/careers"}>Careers</Link>
                             </li>
                         </ul>
