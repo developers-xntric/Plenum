@@ -30,7 +30,7 @@ export default function MicrosoftCarousel({ MicrosoftCarouselData, title, para }
   }, [autoplay, nextSlide])
 
   return (
-    <section className="w-full pt-16 md:pt-16 lg:pt-20  overflow-hidden">
+    <section className="w-full pt-16 md:pt-16 lg:pt-20  pb-16 md:pb-16 lg:pb-20 overflow-hidden">
       <div className="text-center mb-10 md:mb-16 space-y-5">
         <h2 className={`text-[30px] lg:text-[50px] leading-[34px] lg:leading-[55px] max-w-[96%] md:max-w-[65%] 2xl:max-w-[60%]   mx-auto font-['Archivo'] text-secondary font-semibold home-section-headings`}>
           {title}

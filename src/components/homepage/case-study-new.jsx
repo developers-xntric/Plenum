@@ -38,7 +38,7 @@ export default function IndustryShowcase() {
   const N = industries2.length
 
   return (
-    <div className="2xl:max-w-[1440px] md:max-w-[90%] mx-auto md:rounded-3xl font-['Archivo'] mb-20 bg-[#101010] text-white overflow-hidden">
+    <div className="2xl:max-w-[1440px] md:max-w-[90%] mx-auto md:rounded-3xl font-['Archivo'] mt-5 mb-24 bg-[#101010] text-white overflow-hidden">
       {/* Top Navigation - Continuous Scrolling */}
       <div className="overflow-hidden border-[#FFFFFF] border-b">
         <div className="ticker">

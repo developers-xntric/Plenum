@@ -39,7 +39,7 @@ const Hero = () => {
             </div>
             <div className='flex w-full md:w-[100%] lg:w-[95%] xl:w-[80%] 2xl:w-[1200px] mx-auto justify-center h-[80vh] md:h-screen mt-32 md:mt-40'>
                 <div className='w-full mx-auto flex flex-col gap-4'>
-                    <h1 className='max-w-[98%] md:max-w-[100%] lg:max-w-[800px] xl:max-w-[90%] mx-auto text-white 2xl:text-[75px] text-[32px] sm:text-[55px] font-semibold xl:text-[70px] leading-[36px] md:leading-[50px] xl:leading-[71px] 2xl:leading-[80px] font-["Chakra"] text-center'>
+                    <h1 className='max-w-[98%] md:max-w-[100%] lg:max-w-[800px] xl:max-w-[90%] mx-auto text-white 2xl:text-[70px] text-[32px] sm:text-[55px] font-semibold xl:text-[70px] leading-[36px] md:leading-[50px] xl:leading-[71px] 2xl:leading-[75px] font-["Chakra"] text-center'>
                         Empower your<span className='text-primary'> enterprise</span> to think smarter, operate faster, and grow intelligently
                     </h1>
                     <p className='font-["Archivo"] font-normal text-[14px] lg:text-lg xl:text-[19px] text-center text-white 2xl:max-w-[73%] xl:max-w-[77%] lg:max-w-[90%] max-w-[92%] mx-auto'>

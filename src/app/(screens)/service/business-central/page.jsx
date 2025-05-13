@@ -71,7 +71,7 @@ const ERPSolutionsAlone = ({ blackSection }) => {
     return (
         <section className='relative font-["Archivo"] bg-[#282526]'>
             <div className={`max-w-[90%] xl:max-w-[75%] 2xl:max-w-[80%] mx-auto text-center py-16`}>
-                <h2 className='text-[30px] lg:text-[50px] lg:leading-[55px] text-white lg:w-[80%] 2xl:w-[75%] mx-auto'>What is Microsoft Dynamics 365 Business Central?</h2>
+                <h2 className='text-[30px] lg:text-[50px] leading-[36px] text-white lg:w-[80%] 2xl:w-[75%] mx-auto'>What is Microsoft Dynamics 365 Business Central?</h2>
                 <p className='text-[18px] font-normal text-[#FFF] mt-6 opacity-60 lg:w-[80%] mx-auto font-["Archivo"]'>Microsoft Dynamics 365 Business Central is an all-in-one enterprise resource planning (ERP) platform that integrates seamlessly with Microsoft tools like Office 365 and Power BI.</p>
                 <Button text={"Get in touch with us"} className='bg-transparent text-white hover:bg-[#FF6035] hover:border-[#FF6035] hover:text-white hover:transition-colors ease-in-out duration-300 text-[15px] mt-8 border border-[#FFFFFF] px-9 py-2' link='/contact' />
             </div>
