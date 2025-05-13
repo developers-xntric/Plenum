@@ -57,13 +57,13 @@ export default function Footer() {
                 <h3 className="text-[#767676] mb-4 text-lg md:text-base xl:text-lg font-bold font-['Archivo']">Company</h3>
                 <ul className="space-y-1 font-normal md:text-sm xl:text-base font-['Archivo']">
                   <li>
-                    <Link href="/product/momentum-ai" className="hover:text-gray-300">
+                    <Link href="/about" className="hover:text-gray-300">
                       {/* Global Accounts */}
                      About Us
                     </Link>
                   </li>
                   <li>
-                    <Link href="/product/vertical-builds" className="hover:text-gray-300">
+                    <Link href="/careers" className="hover:text-gray-300">
                       {/* Payments */}
                       Careers 
                     </Link>
