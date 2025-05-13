@@ -21,7 +21,7 @@ export const ERPSolutionsBottomSection = ({ bottomSection, className, left, blac
     return (
         <section className='relative bg-[#EFEFEF] font-["Archivo"] '>
             <ERPSolutions blackSection={blackSection} />
-            <div className={`lg:max-w-[95%] 2xl:max-w-[1610px] ${left ? "ms-auto" : ""}  `}>
+            <div className={`lg:max-w-[95%] 2xl:max-w-[1440px] ${left ? "ms-auto 2xl:mx-auto" : "2xl:mx-auto"}  `}>
                 <div className={`${className}`}>
                     <div className='w-[95%] lg:w-[50%] 2xl:w-[60%]'>
                         <div className='relative flex items-center justify-start'>

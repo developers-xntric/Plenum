@@ -21,7 +21,7 @@ export const ERPAccordin = ({ bottomSection, outside, isbottom, items, className
         <section className='relative bg-[#EFEFEF] font-["Archivo"]'>
             {!isbottom && !outside && <ERPSolutions blackSection={blackSection} />}
 
-            <div className={`lg:max-w-[95%] 2xl:max-w-[1610px] ${left ? "lg:ms-auto mx-auto lg:mx-0" : ""}`}>
+            <div className={`lg:max-w-[95%] 2xl:max-w-[1610px] ${left ? "lg:ms-auto 2xl:mx-auto lg:mx-0" : "2xl:mx-auto"}`}>
                 <div className={`${className}`}>
                     <div className='md:px-8 px-4 w-full lg:w-[50%] 2xl:w-[80%]'>
                         <Accordion items={items} isAccordin={isAccordin} />
