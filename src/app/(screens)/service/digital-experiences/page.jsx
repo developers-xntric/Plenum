@@ -16,8 +16,8 @@ const DigitalExperiences = () => {
     return (
         <div>
             <Service_Inner_Hero
-                heading={"Digital Experiences in Dubai and Middle East"}
-                para={"Our ERP consulting and implementation services are designed to transform your business operations through streamlined, scalable, and fully integrated enterprise resource planning (ERP) solutions."}
+                heading={"Engineered for Performance, Crafted for Evolution"}
+                para={"We believe that in a world where digital shapes first impressions, experience is paramount. Digital is more than just a tool for performance, it’s a strategic ecosystem. From SEO and paid media to data-driven optimization, we craft digital strategies that evolve in real-time, foster meaningful connections, and drive measurable growth."}
                 image={"/service/DE/hero.png"}
                 is_space_in_image={false}
                 isERP={true}
@@ -31,14 +31,17 @@ const DigitalExperiences = () => {
                     brand_icons={service_brand_icons} />
             </div>
             <ERPC2
-                para={"We believe that ERP implementation isn’t just a software installation, it’s a strategic business transformation. Our seasoned consultants understand industry-specific challenges and align ERP solutions with your business goals to optimize workflows, increase efficiency, and improve ROI. Whether you’re adopting a new system or upgrading your current one, our expert ERP consultants help you make informed decisions, ensuring a seamless transition and long-term value."}
+            para2={"Our custom digital learning modules are designed for mobile-first use, micro-learning, AI assistants, gamification, progress analytics, and LMS integration."}
+                para={"In the digital era, it's not just about visibility. It’s about being discovered, staying relevant, and leaving a lasting impression. Through precise targeting and seamless omni-channel storytelling, we ensure brands appear with purpose and grow with impact. This is digital redefined: powered by performance, driven by content, and guided by insights."}
                 image={"/service/DE/DE2.svg"}
                 para_className={"xl:w-[120%]"}
+                heading={"The Future is Our Strength. 360° is Our Mastery."}
             />
-            <ERPServicesEast para={"Our ERP implementation experts provide the strategic guidance and technical expertise needed to modernize operations, increase efficiency, and achieve long-term success."} heading={"ERP Consulting and Implementation in the Middle East"} activeState={"Egypt"} />
+            <ERPServicesEast  para={"Plenum crafts fast, secure digital experiences for the Middle East and UK—built for mobile, bilingual use, and local compliance."} heading={"Digital Experiences Tailored for the Middle East and UK Markets"} activeState={"Egypt"} />
+
             <ERPSolutionsBottomSection className='flex justify-center items-center gap-20 lg:flex-row-reverse flex-col pt-10 lg:py-0' blackSection={blackSection2} bottomSection={{
-                heading: "Microsoft Dynamics",
-                Input: ["Business Central", "Finance and Operations"],
+                heading: "Custom Digital Solutions",
+                Input: ["Mobile-First Business Apps", "Conversational Interfaces with SecureGPT"],
                 button: "View All",
                 img: "/service/DE/service2.svg"
             }} left={false} />
@@ -78,13 +81,13 @@ const DigitalExperiences = () => {
 
             ]} />
             <ERPSolutionsBottomSection className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={{
-                heading: "Oracle Solutions",
-                Input: ["Net Suite", "Fusion Cloud"],
+                heading: "Data-Driven and Efficient Business Operations",
+                Input: ["Embedded Dashboards & BI", "UX Optimization & Analytics"],
                 button: "View All",
                 img: "/service/DE/service.svg"
             }} left={true} blackSection={blackSection} />
             <ArticleSlider />
-            <Blog heading='Discover Our Blog' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world." cardData={cardData} />
+            <Blog heading='Discover Our Blog' para="Stay updated with our ongoing blogs inclusive of tips, case study examples and expert views around the usage of AI, cloud services and ERP solutions to support business growth and operational effectiveness." cardData={cardData} />
         </div>
     )
 }
