@@ -16,15 +16,15 @@ const ERPSolutions = ({ blackSection }) => {
     )
 }
 
-export const ERPAccordin = ({ bottomSection, outside ,isbottom, items, className, left, blackSection, para, arrow = false }) => {
+export const ERPAccordin = ({ bottomSection, outside, isbottom, items, className, left, blackSection, para, arrow = false, isAccordin }) => {
     return (
         <section className='relative bg-[#EFEFEF] font-["Archivo"]'>
             {!isbottom && !outside && <ERPSolutions blackSection={blackSection} />}
-       
+
             <div className={`lg:max-w-[95%] 2xl:max-w-[1610px] ${left ? "lg:ms-auto mx-auto lg:mx-0" : ""}`}>
                 <div className={`${className}`}>
-                    <div className='md:px-8 px-4 w-full lg:w-[50%] 2xl:w-[60%]'>
-                        <Accordion items={items} />
+                    <div className='md:px-8 px-4 w-full lg:w-[50%] 2xl:w-[80%]'>
+                        <Accordion items={items} isAccordin={isAccordin} />
                     </div>
                     <div className='w-full lg:w-[50%] 2xl:w-[100%] flex justify-center items-center'>
                         <Image

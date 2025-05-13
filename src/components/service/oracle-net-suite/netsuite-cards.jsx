@@ -11,7 +11,7 @@ export default function NetSuiteCards() {
         <p className='text-secondary opacity-60 text-[14px] md:text-[14px] xl:text-[18px] font-medium text-center md:max-w-[95%] mx-auto lg:max-w-[90%] xl:max-w-[100%] 2xl-max-w-[100%] font-["Archivo"] mt-4'>Ready to upgrade your business operations with Oracle NetSuite? Speak to our experts today to explore how we can tailor an ERP solution that fuels your growth. With years of experience as Oracle NetSuite partners, our approach combines technology, strategy, and hands-on execution to drive digital transformation across your enterprise.</p>
       </div>
       <div className="grid grid-cols-1  md:grid-cols-2 gap-6 mt-56 md:mt-16 lg:mt-24 xl:mt-32">
-        <div className="bg-gray-100 flex md:flex-row flex-col p-6 md:col-span-2 rounded-sm md:text-left text-center">
+        <div className="bg-gray-100 lg:bg-[url('/service/img1.svg')] bg-right-bottom bg-no-repeat flex md:flex-row flex-col p-6 2xl:p-8 md:col-span-2 rounded-sm md:text-left text-center">
           <div className="md:w-1/2">
             <div className="flex md:flex-row flex-col items-center mb-4">
               <div className="md:w-[203px] h-8 md:h-[43px] md:mr-3 ">
@@ -36,7 +36,7 @@ export default function NetSuiteCards() {
               Learn More <ArrowRight className="ml-1 h-4 w-4" />
             </Link>
           </div>
-          <div className="md:w-1/2 h-full flex items-end justify-center">
+          <div className="md:w-1/2 h-full lg:hidden flex items-end justify-center">
             <Image
               src="/service/img1.svg"
               alt="Propertese screenshot"

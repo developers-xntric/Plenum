@@ -2,7 +2,7 @@
 import { ArrowUpRight } from "lucide-react"
 import { useState } from "react"
 import { motion } from "framer-motion";
-const AccordionItem = ({ title, description, isOpen, onToggle, index }) => {
+const AccordionItem = ({ title, description, isOpen, isAccordin, onToggle, index }) => {
     return (
         <div className="border-b border-[#BABABA] relative overflow-hidden">
             {/* Hover wrapper for both title and arrow */}
@@ -13,14 +13,14 @@ const AccordionItem = ({ title, description, isOpen, onToggle, index }) => {
                 className="w-full"
             >
                 <button
-                    // onClick={() => onToggle(index)}
+                    onClick={() => onToggle(index)}
                     className="flex items-center justify-between w-full py-5 text-secondary text-left"
                 >
-                    <h3 className={` text-[26px] lg:text-[30px] home-section-headings  xl:text-[30px] leading-[30px] lg:leading-[40px] font-semibold max-w-[100%]`}>
+                    <h3 className={` text-[26px] lg:text-[30px] home-section-headings 2xl:text-[40px]  xl:text-[30px] leading-[30px] lg:leading-[40px] font-semibold max-w-[100%]`}>
                         {title}
                     </h3>
-{/* 
-                    {isOpen && (
+
+                    {isAccordin && isOpen && (
                         <motion.div
                             variants={{
                                 rest: { x: 0, y: 0, opacity: 1 },
@@ -41,12 +41,12 @@ const AccordionItem = ({ title, description, isOpen, onToggle, index }) => {
                                 className="h-8 md:h-10 w-8 md:w-10 text-[#FF6035] cursor-pointer transition-transform duration-200"
                             />
                         </motion.div>
-                    )} */}
+                    )}
                 </button>
             </motion.div>
 
             {/* Animated Accordion Content */}
-            {/* <motion.div
+            {isAccordin && <motion.div
                 initial="collapsed"
                 animate={isOpen ? "open" : "collapsed"}
                 variants={{
@@ -59,13 +59,13 @@ const AccordionItem = ({ title, description, isOpen, onToggle, index }) => {
                 <div className="pb-5 text-[#101010] font-['Archivo'] font-medium opacity-60 mt-4 text-[18px] w-[90%]">
                     <p>{description}</p>
                 </div>
-            </motion.div> */}
+            </motion.div>}
         </div>
     );
 };
 
 
-export function Accordion({ items = [] }) {
+export function Accordion({ items = [], isAccordin }) {
     const [openIndex, setOpenIndex] = useState(0);
 
     const handleToggle = (index) => {
@@ -77,6 +77,7 @@ export function Accordion({ items = [] }) {
             <div className="space-y-1">
                 {items.map((item, index) => (
                     <AccordionItem
+                        isAccordin={isAccordin}
                         key={index}
                         index={index}
                         title={item.title}

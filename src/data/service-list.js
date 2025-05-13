@@ -51,10 +51,10 @@ export const ServiceList = [
         title: ["ERP consulting and", "implementation"],
         description:
             "We create and implement ERP systems in a way that supports your changing needs while maximizing your technology investments.",
-            names: [
-                "Microsoft Dynamics ERP Solutions",
-                "Oracle ERP Solutions",
-            ],
+        names: [
+            "Microsoft Dynamics ERP Solutions",
+            "Oracle ERP Solutions",
+        ],
         icon: (
             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                 <g clipPath="url(#clip0_1267_33400)">

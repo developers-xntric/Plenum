@@ -33,7 +33,7 @@ export const ERPSolutionsBottomSection = ({ bottomSection, className, left, blac
                             bottomSection.Input.map((item, index) => {
                                 return (
                                     <div key={index} className='flex items-center gap-2 mt-8'>
-                                        <p className='w-full lg:w-[90%] py-2 border-b border-[#BABABA] text-secondary font-medium cursor-pointer  home-section-headings px-2 placeholder:text-secondary placeholder:font-medium placeholder:home-section-headings text-[25px]' >
+                                        <p className='w-full lg:w-[90%] py-2 border-b border-[#BABABA] text-secondary font-medium cursor-pointer  home-section-headings px-2 placeholder:text-secondary placeholder:font-medium placeholder:home-section-headings text-[25px] 2xl:text-[30px]' >
                                             {item}
                                         </p>
                                     </div>
