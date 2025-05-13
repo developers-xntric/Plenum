@@ -44,7 +44,7 @@ export const ServiceList = [
                 </defs>
             </svg>
         ),
-        link: "/service",
+        link: "/service/manage-cloud",
     },
     {
         id: 2,
@@ -99,7 +99,7 @@ export const ServiceList = [
                 </defs>
             </svg>
         ),
-        link: "/service",
+        link: "/service/ERP-consulting",
     },
     {
         id: 3,
@@ -151,7 +151,7 @@ export const ServiceList = [
                 </defs>
             </svg>
         ),
-        link: "/services",
+        link: "/service/ai-consulting",
     },
     {
         id: 4,
@@ -203,6 +203,6 @@ export const ServiceList = [
                 </defs>
             </svg>
         ),
-        link: "/services",
+        link: "/service/digital-experiences",
     },
 ];
