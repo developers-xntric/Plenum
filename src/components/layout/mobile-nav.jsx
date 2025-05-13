@@ -137,7 +137,7 @@ const MobileNav = () => {
 
   return (
     <div className="relative font-['Archivo'] lg:hidden z-[999]">
-      <header className="border-[#101010] border font-normal font-['Archivo'] mx-auto p-4 fixed -translate-x-1/2 left-1/2 top-6 bg-[#FFFFFF] rounded-[13px] w-[90%] 2xl:w-[1300px]">
+      <header className="border-[#E2E2E2] border font-normal font-['Archivo'] mx-auto p-4 fixed -translate-x-1/2 left-1/2 top-6 bg-[#FFFFFF] rounded-[13px] w-[90%] 2xl:w-[1300px]">
         <div className="flex justify-between items-center">
           <Link href={"/"} className="w-[100px]">
             <svg xmlns="http://www.w3.org/2000/svg" width="89" height="19" viewBox="0 0 89 19" fill="none">

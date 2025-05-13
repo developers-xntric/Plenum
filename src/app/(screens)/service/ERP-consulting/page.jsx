@@ -5,7 +5,7 @@ import Testimonials from '@/components/homepage/testimonial';
 import ERPServicesEast from '@/components/service/ERP-Cosultant/ERP-services-east';
 import Service_Inner_Hero from '@/components/service/ERP-Cosultant/hero';
 import { service_brand_icons } from '@/data/brand-slider-icons-data';
-import { blackSection, blackSection2, bottomSection, bottomSection2 } from '@/data/erp-consulting-service';
+import { blackSection, blackSection2, blackSection3, bottomSection, bottomSection2 } from '@/data/erp-consulting-service';
 import { cardData } from '@/data/home-blog';
 import { testimonials } from '@/data/home-testimonials';
 import ArticleSlider from "@/components/common/article-slider";
@@ -36,8 +36,8 @@ const ERPConsulting = () => {
             />
             <ERPServicesEast para={"Our ERP implementation experts provide the strategic guidance and technical expertise needed to modernize operations, increase efficiency, and achieve long-term success."} heading={"ERP Consulting and Implementation in the Middle East"} />
             {/* <ERPSolutionsBottomSection className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={bottomSection} left={true} blackSection={blackSection} /> */}
-            <ERPSolutionsBottomSection className='flex justify-center items-center gap-20 lg:flex-row-reverse flex-col pt-10 lg:py-0' blackSection={blackSection2} bottomSection={bottomSection2} left={false} />
-            <ERPSolutionsBottomSection className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={bottomSection} left={true} blackSection={blackSection} />
+            <ERPSolutionsBottomSection className='flex justify-center items-center gap-20 lg:flex-row-reverse flex-col pt-10 lg:py-0' blackSection={blackSection3} bottomSection={bottomSection2} left={false} />
+        
             <Testimonials testimonials={testimonials} />
             <ERPSolutionsBottomSection className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={bottomSection} left={true} blackSection={blackSection} />
             <ArticleSlider />
