@@ -8,8 +8,8 @@ export default function ServicesList({ serviceList }) {
 
     return (
         <section className="bg-white ">
-            <div className="2xl:max-w-[1440px] w-[90%] mx-auto py-12">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-20 xl:gap-8 font-['Archivo']">
+            <div className="2xl:max-w-[1440px] w-[90%] mx-auto py-16 md:py-20">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 lg:gap-x-20 gap-y-16 xl:gap-x-52 xl:max-w-[85%] mx-auto font-['Archivo']">
                     {serviceList.map((service, _index) => (
                         <div key={service.id} className="relative ">
                             <div className="flex items-center mb-6">

@@ -46,7 +46,7 @@ export default function MobilitySolutions({
   }, [api])
 
   return (
-    <section className="md:pb-12 pb-6 py-12 max-w-[90%] 2xl:max-w-[1440px] font-['Archivo'] mx-auto">
+    <section className="md:pb-16 pb-20 py-20 max-w-[90%] 2xl:max-w-[1440px] font-['Archivo'] mx-auto">
       <div className={`mb-12 md:mb-12 ${isCenter ? "text-center" : "text-center md:text-left"}`}>
         <h2 className="text-2xl lg:text-[50px] font-semibold text-secondary home-section-headings leading-[40px]">
           {heading1 || "Mobility Solutions For"}

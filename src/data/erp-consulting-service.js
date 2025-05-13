@@ -18,6 +18,11 @@ export const blackSection = {
     para: "If you're ready to scale smarter, target more precisely, and achieve stronger performance. Plenum is your digital partner. We don’t just rely on algorithms; we create systems that drive lasting brand impact. From strategy to execution, we craft digital experiences that are intuitive, intelligent, and designed to grow with every interaction.",
     button: "Get in touch"
 }
+export const OracleBlack = {
+    heading: "Unmatched Oracle ERP Solutions",
+    para: "Our core expertise lies in seamless ERP integration, specializing in Oracle ERP cloud solutions. From system implementation and legacy migration to workflow automation, data synchronization, and real-time analytics, our services are designed to enhance operational efficiency, reduce costs, and drive strategic growth.",
+    button: "Get in touch"
+}
 export const blackSection4 = {
     heading: "Ready to Transform Your Business?",
     para: "We help businesses unlock their full potential with expert ERP consulting and implementation. Whether you're seeking strategic ERP consultation or full-scale deployment, we’re here to guide you every step of the way.",

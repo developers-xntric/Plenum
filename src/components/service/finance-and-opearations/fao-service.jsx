@@ -1,9 +1,9 @@
-import { finance } from "@/data/services"
+import { financeOperations } from "@/data/services"
 import Image from "next/image"
 
-export default function Finance_Opearations_Service({ heading, para }) {
+export default function Finance_Opearations_Service({ heading, para ,data}) {
   return (
-    <section className="py-10 lg:py-10 lg:pb-16 lg:px-16 2xl:max-w-[1440px] font-['Archivo'] max-w-[90%] mx-auto">
+    <section className="py-10 lg:py-20 lg:pb-20 lg:px-16 2xl:max-w-[1440px] font-['Archivo'] max-w-[90%] mx-auto">
       <div className="text-center mb-8 md:mb-12">
         <h2 className="text-[30px] md:max-w-[70%] mx-auto lg:text-[50px] text-secondary font-semibold home-section-headings leading-[34px] lg:leading-[48px]">{heading}</h2>
         <p className="mt-8 text-[15px] text-[#101010] opacity-60 max-w-xl mx-auto">
@@ -12,7 +12,7 @@ export default function Finance_Opearations_Service({ heading, para }) {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-x-28 md:gap-y-16">
-        {finance.map((item, index) => (
+        {data?.map((item, index) => (
           <div key={index} className="flex flex-col md:flex-row md:items-start gap-4 md:gap-6 w-full">
             <div className="flex flex-col gap-4 items-center md:items-start text-center md:text-left w-full">
               <Image

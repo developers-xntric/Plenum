@@ -50,6 +50,8 @@ const VerticalBuilds = () => {
                 isLogo={false}
                 bgImage='/product/m_hero.svg'
                 mobileBgImage={'/product/m_hero_mobile.svg'}
+                para1={"Driving operational excellence across diverse industries with innovative solutions, from streamlined project execution and intelligent patient care systems to data-driven SEO strategies that deliver measurable growth."}
+                para2={"Vertical Builds is engineered to simplify and accelerate digital solution development across industries. We deliver low-code systems that address the unique needs of each business vertical."}
             />
             <div className="2xl:max-w-[1440px] mx-auto w-[93%] xl:w-[90%] 2xl:w-[90%] py-10">
                 <BrandSlider

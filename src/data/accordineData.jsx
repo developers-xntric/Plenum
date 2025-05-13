@@ -24,7 +24,7 @@ export const finance = [
 
 export const Oracleitems = [
     {
-        title: "AI-Driven Finance: Capitalizing on an Agentic Landscape",
+        title: "Oracle ERP Modules Tailored for Every Function",
         description:
             "From procurement to financial planning, Oracle ERP modules offer functionality that spans every corner of your enterprise. Combined with our expertise, you’ll have a customized tech stack aligned with your goals.",
     },

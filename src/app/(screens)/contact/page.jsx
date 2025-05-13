@@ -70,7 +70,7 @@ function Contact() {
                     <div ref={statsRef} className="grid grid-cols-2 md:grid-cols-4 place-items-center md:place-items-start  gap-4 md:gap-8 font-['Archivo']">
                         <div className="stat md:border-b pb-2">
                             <h2 className="text-[38px] md:text-[48px] xl:text-[70px] font-semibold font-['Archivo'] text-[#101010]">
-                                {startCount ? <CountUp start={0} end={5} duration={1} separator="," /> : '0'}k
+                                {startCount ? <CountUp start={0} end={1} duration={1} separator="," /> : '0'}k
                                 <span className="text-primary font-['Archivo'] ">+</span>
                             </h2>
                             <p className="text-secondary opacity-[0.6] relative text-[13px] md:text-[18px] bottom-2 leading-[16px] md:leading-[21px] font-['Archivo'] font-medium">
@@ -82,7 +82,7 @@ function Contact() {
 
                         <div className="stat md:border-b">
                             <h2 className="text-[38px] md:text-[48px] xl:text-[70px] font-semibold font-['Archivo'] text-[#101010]">
-                                {startCount ? <CountUp start={0} end={700} duration={1} separator="," /> : '0'}
+                                {startCount ? <CountUp start={0} end={50} duration={1} separator="," /> : '0'}
                                 <span className="text-primary font-['Archivo'] ">+</span>
                             </h2>
                             <p className="text-secondary opacity-[0.6] relative text-[13px] md:text-[18px] bottom-2 leading-[16px] md:leading-[21px] font-['Archivo'] font-medium">
@@ -94,7 +94,7 @@ function Contact() {
 
                         <div className="stat md:border-b">
                             <h2 className="text-[38px] md:text-[48px] xl:text-[70px] font-semibold font-['Archivo'] text-[#101010]">
-                                {startCount ? <CountUp start={0} end={1} duration={1} separator="," /> : '0'}k
+                                {startCount ? <CountUp start={0} end={200} duration={1} separator="," /> : '0'}
                                 <span className="text-primary font-['Archivo'] ">+</span>
                             </h2>
                             <p className="text-secondary opacity-[0.6] relative text-[13px] md:text-[18px] bottom-2 leading-[16px] md:leading-[21px] font-['Archivo'] font-medium">
@@ -106,7 +106,7 @@ function Contact() {
 
                         <div className="stat md:border-b">
                             <h2 className="text-[38px] md:text-[48px] xl:text-[70px] font-semibold font-['Archivo'] text-[#101010]">
-                                {startCount ? <CountUp start={0} end={20} duration={1} separator="," /> : '0'}
+                                {startCount ? <CountUp start={0} end={8} duration={1} separator="," /> : '0'}
                                 <span className="text-primary font-['Archivo'] ">+</span>
                             </h2>
                             <p className="text-secondary opacity-[0.6] relative text-[13px] md:text-[18px] bottom-2 leading-[16px] md:leading-[21px] font-['Archivo'] font-medium">

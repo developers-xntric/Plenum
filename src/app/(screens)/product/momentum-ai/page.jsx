@@ -15,13 +15,13 @@ import { momentumaiservices } from "@/data/momentum-ai-service"
 const MomentumAI = () => {
     return (
         <div>
-            <ProductHero isLogo={false} bgImage='/product/m_hero.svg' mobileBgImage={'/product/m_hero_mobile.svg'} />
+            <ProductHero isLogo={false} bgImage='/product/m_hero.svg' mobileBgImage={'/product/m_hero_mobile.svg'} para1={"Unlock enterprise-grade AI solutions that will fuel accuracy, speed, and additional intelligent decision-making and are designed to grow with your supply chain, retail, and industrial operations."} />
             <div className="2xl:max-w-[1440px] mx-auto w-[93%] xl:w-[90%] 2xl:w-[90%] py-10">
                 <BrandSlider brand_icons={service_brand_icons} text={"Trusted by world's most exciting brands"} />
             </div>
 
             <AISolutions title={"Create Comprehensive AI Solutions Without Coding"}
-                paragraph={"Accelerate digital transformation with Momentum AI by PlenumTech — a no-code platform that streamlines data ingestion, ML model training, deployment, and workflow automation."}
+                paragraph={"Turn ideas into intelligent solutions, without any technical expertise. Build and launch AI-driven processes with ease, all through a user-friendly no-code interface."}
                 image={'/images/product-momentum-AI/AI-solutions.webp'} />
             <EndToEndAI />
             <MicrosoftDynamic heading1='What Can You Do With Momentum?' heading2='' para='Momentum AI is an integrated suite of AI software platforms purpose-built to automate every stage of the AI lifecycle — from data ingestion to model deployment. Designed to support enterprise scalability and flexibility, Momentum empowers businesses with intelligent AI automation tools that streamline processes and reduce development time.' services={momentumaiservices}

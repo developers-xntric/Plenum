@@ -10,9 +10,10 @@ import OracleResourcePlanning from '@/components/service/oracle/oracle-resource-
 import PinkSection from '@/components/service/pink-section'
 import { Oracleitems } from '@/data/accordineData'
 import { service_brand_icons } from '@/data/brand-slider-icons-data'
-import { blackSection, bottomSection, oracle_service, oracle_service_black } from '@/data/erp-consulting-service'
+import { blackSection, bottomSection, oracle_service, oracle_service_black, OracleBlack } from '@/data/erp-consulting-service'
 import { cardData } from '@/data/home-blog'
 import { testimonials } from '@/data/home-testimonials'
+import { OracleServiceItems } from '@/data/services'
 
 const Oracle = () => {
     return (
@@ -33,8 +34,10 @@ const Oracle = () => {
                 </div>
                 <ERPAccordin items={Oracleitems} para='From procurement to financial planning, Oracle ERP modules offer functionality that spans every corner of your enterprise. Combined with our expertise, you’ll have a customized tech stack aligned with your goals.' arrow={true} className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={oracle_service} left={true} blackSection={oracle_service_black} />
                 <OracleResourcePlanning />
-                <Finance_Opearations_Service heading={"Impact of Oracle Cloud ERP and Oracle Fusion Finance"} para={"Explore our latest insights on Oracle’s innovation in enterprise resource planning, financial management, and workflow optimization. Stay ahead with fresh perspectives that shape the future of business."} />
-                <ERPSolutionsBottomSection className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={bottomSection} left={true} blackSection={blackSection} />
+
+                <Finance_Opearations_Service data={OracleServiceItems} heading={"Impact of Oracle Cloud ERP and Oracle Fusion Finance"} para={"Explore our latest insights on Oracle’s innovation in enterprise resource planning, financial management, and workflow optimization. Stay ahead with fresh perspectives that shape the future of business."} />
+                
+                <ERPSolutionsBottomSection className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={bottomSection} left={true} blackSection={OracleBlack} />
                 <div className=' pt-20'>
                     <PinkSection
                         heading={"Ready To Use The Best Oracle ERP Solutions?"}

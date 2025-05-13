@@ -1,5 +1,54 @@
 export const finance = [
   {
+  title: "Unified Financial Management",
+    description:
+      "With Dynamics 365 Finance and Operations, businesses can automate routine tasks, improve workflows, and reduce human error.",
+    icon: "/service/MD/fao1.svg",
+  },
+  {
+    title: "Optimized Supply Chain and Inventory",
+    description:
+      "The system ensures compliance with local tax laws, generates accurate financial reports, and facilitates real-time tracking of financial transactions, helping companies stay on top of their financial health.",
+    icon: "/service/MD/fao2.svg",
+  },
+  {
+  title: "Scalable Operations and Business Agility",
+    description:
+      "Microsoft Dynamics 365 Finance and Operations is scalable, meaning it can grow with your business. Whether you're a small business looking to automate basic processes or a large enterprise requiring complex solutions, the system can be customized to meet your needs.",
+    icon: "/service/MD/fao3.svg",
+  },
+  // {
+  //   title: "Continuous Innovation and Scalability",
+  //   description:
+  //     "With the power of analytics and reporting tools, Dynamics 365 Finance and Operations helps businesses make informed decisions",
+  //   icon: "/service/MD/fao4.svg",
+  // },
+];
+
+export const fusion = [
+  {
+    title: "Unified Cloud Platform",
+    description:
+      "With Dynamics 365 Finance and Operations, businesses can automate routine tasks, improve workflows, and reduce human error.",
+    icon: "/service/MD/fao1.svg",
+  },
+  {
+    title: "Built-in AI and Advanced Analyticse",
+    description:
+      "The system ensures compliance with local tax laws, generates accurate financial reports, and facilitates real-time tracking of financial transactions, helping companies stay on top of their financial health.",
+    icon: "/service/MD/fao2.svg",
+  },
+  {
+    title: "Continuous Innovation and Scalability",
+    description:
+      "Microsoft Dynamics 365 Finance and Operations is scalable, meaning it can grow with your business. Whether you're a small business looking to automate basic processes or a large enterprise requiring complex solutions, the system can be customized to meet your needs.",
+    icon: "/service/MD/fao3.svg",
+  },
+ 
+];
+
+export const financeOperations = [
+  {
     title: "Improved Operational Efficiency",
     description:
       "With Dynamics 365 Finance and Operations, businesses can automate routine tasks, improve workflows, and reduce human error.",
@@ -24,26 +73,6 @@ export const finance = [
     icon: "/service/MD/fao4.svg",
   },
 ];
-export const fusion = [
-  {
-    title: "Unified Cloud Platform",
-    description:
-      "Oracle Fusion Cloud combines ERP, HCM, SCM, and CX into one integrated suite. Eliminate silos and enable seamless data flow across departments. Drive productivity with a consistent user experience and centralized data access.",
-    icon: "/service/MD/fao1.svg",
-  },
-  {
-    title: "Built-in AI and Advanced Analytics",
-    description:
-      "The system ensures compliance with local tax laws, generates accurate financial reports, and facilitates real-time tracking of financial transactions, helping companies stay on top of their financial health.",
-    icon: "/service/MD/fao2.svg",
-  },
-  {
-    title: "Continuous Innovation and Scalability",
-    description:
-      "Microsoft Dynamics 365 Finance and Operations is scalable, meaning it can grow with your business. Whether you're a small business looking to automate basic processes or a large enterprise requiring complex solutions, the system can be customized to meet your needs.",
-    icon: "/service/MD/fao3.svg",
-  },
-];
 export const businessSer = [
   {
     title: "Financial Management",
@@ -62,6 +91,52 @@ export const businessSer = [
     description:
       "Microsoft Dynamics 365 Finance and Operations is scalable, meaning it can grow with your business. Whether you're a small business looking to automate basic processes or a large enterprise requiring complex solutions, the system can be customized to meet your needs.",
     icon: "/service/MD/fao3.svg",
+  },
+];
+export const financeOpearations = [
+  {
+    title: "Unified Financial Management",
+    description:
+      "Gain real-time insights into your finances, track performance, and ensure compliance. Automate accounting processes and make data-driven decisions that enhance profitability.",
+    icon: "/service/MD/fao1.svg",
+  },
+  {
+    title: "Optimized Supply Chain and Inventory",
+    description:
+      "The system ensures compliance with local tax laws, generates accurate financial reports, and facilitates real-time tracking of financial transactions, helping companies stay on top of their financial health.",
+    icon: "/service/MD/fao2.svg",
+  },
+  {
+    title: "Scalable Operations and Business Agility",
+    description:
+      "Microsoft Dynamics 365 Finance and Operations is scalable, meaning it can grow with your business. Whether you're a small business looking to automate basic processes or a large enterprise requiring complex solutions, the system can be customized to meet your needs.",
+    icon: "/service/MD/fao3.svg",
+  },
+];
+export const OracleServiceItems = [
+ {
+    title: "Improved Data Security & Accessibility",
+    description:
+      "Oracle Cloud ERP offers enterprise-grade security with built-in governance and compliance features. With multi-layered encryption, role-based access, and global data residency options, your sensitive financial and operational data remains protected—while remaining accessible to authorized users anytime, anywhere.",
+    icon: "/service/MD/fao1.svg",
+  },
+  {
+    title: "Cost-Effective Cloud Solution",
+    description:
+      "By automating manual processes and centralizing your operations on the cloud, Oracle Fusion Finance reduces overhead costs and enhances operational efficiency. Cloud-native architecture minimizes infrastructure expenses, while seamless updates and integrations drive long-term value for your business.",
+    icon: "/service/MD/fao2.svg",
+  },
+  {
+    title: "Optimized Business Operations",
+    description:
+      "Oracle’s intelligent ERP ecosystem streamlines critical business functions—from finance and supply chain to procurement and HR. With real-time process automation, predictive analytics, and AI-powered workflows, you can make smarter decisions, faster.",
+    icon: "/service/MD/fao3.svg",
+  },
+  {
+    title: "Enhanced Visibility and Control",
+    description:
+      "With Oracle ERP Cloud, gain real-time insights through unified dashboards and powerful analytics. Consolidate data from across your enterprise and turn it into actionable intelligence, improving planning, forecasting, and executive-level control over every business area.",
+    icon: "/service/MD/fao4.svg",
   },
 ];
 export const oracleNetSuite = [

@@ -27,8 +27,8 @@ const OracleCloudFusion = () => {
             <OracleCloudFusionERP />
             <OrcaleFinancialFeature tabs={fusionTabs} para='Oracle Fusion Cloud provides a comprehensive suite of financial features and capabilities.' heading='Financial Features and Capabilities' />
             <PinkSection
-                heading={"Ready To Supercharge Your AI Workflow?"}
-                text={"Ready to explore the power of AI? Contact us 24×7 to schedule a one-on-one consultation and see how Momentum AI can elevate your AI workflow management and automation journey."}
+                heading={"Ready to Enjoy a Unified Experience?"}
+                text={"Oracle cloud application services are the backbone of the Oracle Fusion Cloud ecosystem. These services provide businesses with scalable, secure, and efficient applications that are tailored to their specific needs."}
                 show_button={true}
                 className="xl:h-[340px]"
                 isVideo={true}

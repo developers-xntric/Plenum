@@ -9,7 +9,7 @@ import ArticleSlider from "@/components/common/article-slider";
 import { Blog } from '@/components/homepage/blog';
 import { cardData } from '@/data/home-blog';
 import { ERPAccordin } from '@/components/common/accordinService';
-import { finance } from '@/data/services';
+import { finance, financeOpearations } from '@/data/services';
 
 const FinanceOpearations = () => {
     return (
@@ -27,10 +27,6 @@ const FinanceOpearations = () => {
             <ERPAccordin items={finance} className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={fao_service} left={true} isbottom={true} blackSection={fao_service_black} />
             <FaoDynamicOpearation />
             <Testimonials testimonials={testimonials} />
-            <Finance_Opearations_Service
-                heading='Benefits of Microsoft Dynamics 365 Finance and Operations'
-                para='Get real-time insights into your financial data to make faster, data-driven decisions. Track cash flow, profitability, and financial performance across global operations.'
-            />
             <div className='pt-20'>
                 <PinkSection
                     heading={"Ready To Choose Microsoft Dynamics 365 Finance and Operations?"}
@@ -40,6 +36,11 @@ const FinanceOpearations = () => {
                     isVideo={true}
                 />
             </div>
+            <Finance_Opearations_Service
+                data={financeOpearations}
+                heading='Benefits of Microsoft Dynamics 365 Finance and Operations'
+                para='Get real-time insights into your financial data to make faster, data-driven decisions. Track cash flow, profitability, and financial performance across global operations.'
+            />
             <ArticleSlider />
             <Blog heading='Discover Our Blog' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world" cardData={cardData} />
         </div>

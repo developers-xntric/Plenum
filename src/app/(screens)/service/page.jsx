@@ -22,7 +22,6 @@ const Service = () => {
             <PinkSection
                 heading={"Scalable Expertise When You Need It"}
                 text={"With smart, scalable solutions catered to your company's specific requirements, you can revolutionize the way you operate and empower your employees across departments."}
-
             />
             <ServicesList serviceList={ServiceList} />
           
