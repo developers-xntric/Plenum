@@ -40,7 +40,7 @@ export default function FaoDynamicOperation() {
     }
 
     return (
-        <section className="max-w-5xl mx-auto text-center px-4 py-14 md:pt-20 font-['Archivo']">
+        <section className="2xl:max-w-[1400px] w-[90%] mx-auto text-center px-4 py-14 md:pt-20 xl:pt-22 font-['Archivo']">
             <h1 className="text-[30px] lg:text-[50px] max-w-2xl mx-auto leading-[34px] lg:leading-[55px] text-secondary font-medium mb-4">
                 Dynamics 365 Finance and Operations modules
             </h1>
