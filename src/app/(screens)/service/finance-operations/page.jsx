@@ -24,8 +24,9 @@ const FinanceOpearations = () => {
                 heading_className={"lg:w-[600px] md:w-[300px]"}
                 para_className={'lg:w-[50%]'}
             />
-            <ERPAccordin items={finance} className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={fao_service} left={true} blackSection={fao_service_black} />
+            <ERPAccordin items={finance} className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={fao_service} left={true} isbottom={true} blackSection={fao_service_black} />
             <FaoDynamicOpearation />
+            <Testimonials testimonials={testimonials} />
             <Finance_Opearations_Service
                 heading='Benefits of Microsoft Dynamics 365 Finance and Operations'
                 para='Get real-time insights into your financial data to make faster, data-driven decisions. Track cash flow, profitability, and financial performance across global operations.'
@@ -39,7 +40,6 @@ const FinanceOpearations = () => {
                     isVideo={true}
                 />
             </div>
-            <Testimonials testimonials={testimonials} />
             <ArticleSlider />
             <Blog heading='Discover Our Blog' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world" cardData={cardData} />
         </div>
