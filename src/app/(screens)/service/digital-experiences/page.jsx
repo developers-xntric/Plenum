@@ -41,48 +41,14 @@ const DigitalExperiences = () => {
 
             <ERPSolutionsBottomSection className='flex justify-center items-center gap-20 lg:flex-row-reverse flex-col pt-10 lg:py-0' blackSection={blackSection2} bottomSection={{
                 heading: "Custom Digital Solutions",
-                Input: ["Mobile-First Business Apps", "Conversational Interfaces with SecureGPT"],
+                Input: ["Mobile-First Business Apps", "Conversational Interfaces with SecureGPT","Customer & Employee Portals"],
                 button: "View All",
                 img: "/service/DE/service2.svg"
             }} left={false} />
-            <Testimonials testimonials={[
-                {
-                    id: 1,
-                    quote:
-                        "“The talent bar at Plenum is extremely high, and there is something electric and deeply fulfilling about working with a team that is so passionate about our mission and what we do.”",
-                    author: "Maroun Najjar",
-                    position: "Head Of Design",
-                    socialLink: "https://linkedin.com",
-                },
-                {
-                    id: 2,
-                    quote:
-                        "“The talent bar at Plenum is extremely high, and there is something electric and deeply fulfilling about working with a team that is so passionate about our mission and what we do.”",
-                    author: "Maroun Najjar",
-                    position: "Head Of Design",
-                    socialLink: "https://linkedin.com",
-                },
-                {
-                    id: 3,
-                    quote:
-                        "“The talent bar at Plenum is extremely high, and there is something electric and deeply fulfilling about working with a team that is so passionate about our mission and what we do.”",
-                    author: "Maroun Najjar",
-                    position: "Head Of Design",
-                    socialLink: "https://linkedin.com",
-                },
-                {
-                    id: 4,
-                    quote:
-                        "“The talent bar at Plenum is extremely high, and there is something electric and deeply fulfilling about working with a team that is so passionate about our mission and what we do.”",
-                    author: "Maroun Najjar",
-                    position: "Head Of Design",
-                    socialLink: "https://linkedin.com",
-                },
-
-            ]} />
+            <Testimonials testimonials={testimonials} />
             <ERPSolutionsBottomSection className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={{
                 heading: "Data-Driven and Efficient Business Operations",
-                Input: ["Embedded Dashboards & BI", "UX Optimization & Analytics"],
+                Input: ["Embedded Dashboards & BI", "UX Optimization & Analytics","Internal Process Automation"],
                 button: "View All",
                 img: "/service/DE/service.svg"
             }} left={true} blackSection={blackSection} />
