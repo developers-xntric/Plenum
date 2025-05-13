@@ -54,7 +54,7 @@ export default function Testimonials({ testimonials, title , paragraph }) {
           className="w-full"
         >
           {/* Navigation Buttons */}
-          <div className="hidden lg:flex justify-end items-center mb-4">
+          {/* <div className="hidden lg:flex justify-end items-center mb-4">
             <div className="flex absolute gap-4 md:left-[95%] mb-10">
               <div className="flex items-center gap-1">
                 <CarouselPrevious className="h-10 w-fit opacity-60 hover:bg-white border-none cursor-pointer shadow-none" />
@@ -63,7 +63,7 @@ export default function Testimonials({ testimonials, title , paragraph }) {
                 <CarouselNext className="h-10 w-fit hover:bg-white border-none cursor-pointer relative left-4 shadow-none" />
               </div>
             </div>
-          </div>
+          </div> */}
           {/* Carousel Slides */}
           <CarouselContent>
             {testimonials.map((testimonial, index) => (
@@ -79,7 +79,7 @@ export default function Testimonials({ testimonials, title , paragraph }) {
           </CarouselContent>
 
           {/* Dots (Only show on small screen) */}
-          <div className="flex justify-center mt-6 gap-2 lg:hidden">
+          {/* <div className="flex justify-center mt-6 gap-2 lg:hidden">
             {testimonials.map((_, index) => (
               <button
                 key={index}
@@ -88,7 +88,7 @@ export default function Testimonials({ testimonials, title , paragraph }) {
                 onClick={() => emblaApi?.scrollTo(index)}
               />
             ))}
-          </div>
+          </div> */}
         </Carousel>
       </div>
     </section>

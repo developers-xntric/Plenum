@@ -215,7 +215,6 @@ export const buttonArray = [
   'Retail',
   'Manufacturing',
   'Education',
-  'Healthcare',
   'Banking & Finance',
   'Retail',
   'Manufacturing'

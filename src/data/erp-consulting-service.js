@@ -14,14 +14,14 @@ export const bottomSection2 = {
 }
 
 export const blackSection = {
-    heading: "Ready to Transform Your Business?",
-    para: "We help businesses unlock their full potential with expert ERP consulting and implementation. Whether you're seeking strategic ERP consultation or full-scale deployment, we’re here to guide you every step of the way.",
+    heading: "Let’s Shape the Future of Digital Together.",
+    para: "If you're ready to scale smarter, target more precisely, and achieve stronger performance. Plenum is your digital partner. We don’t just rely on algorithms; we create systems that drive lasting brand impact. From strategy to execution, we craft digital experiences that are intuitive, intelligent, and designed to grow with every interaction.",
     button: "Get in touch"
 }
 
 export const blackSection2 = {
-    heading: "Why Businesses in the Middle East Choose Our ERP Services",
-    para: "With rapid economic diversification and digital transformation shaping the region, organizations in the GCC require localized, agile ERP solutions. Our services are designed to support regional regulations, Arabic interfaces, and sector-specific requirements, making us a trusted partner for ERP implementation services in the Gulf.",
+    heading: "Why Plenum? A 360° Growth Engine Fueled by Next-Gen Digital Expertise.",
+    para: "At Plenum, we blend technical expertise with brand insight to craft digital strategies that do more than drive clicks. We don’t just refine campaigns; we create experiences that are intuitive for users and strategic for businesses. Our digital frameworks are flexible, scalable, and powered by real-time insights, ensuring your brand stays ahead of the curve.",
     button: "Get in touch"
 }
 
