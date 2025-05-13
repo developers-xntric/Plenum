@@ -25,7 +25,7 @@ const Navbar = () => {
             isExpanded: true,
             link: "/service/ERP-consulting",
             subMenus: [
-               
+
                 {
                     title: "Microsoft Dynamics ERP Solutions",
                     isExpanded: true,
@@ -35,7 +35,7 @@ const Navbar = () => {
                         { title: "Finance and Operations", link: "/service/finance-operations" },
                     ],
                 },
-                 {
+                {
                     title: "Oracle ERP Solutions",
                     isExpanded: true,
                     link: "/service/oracle",
@@ -221,7 +221,7 @@ const Navbar = () => {
     )
 
     return (
-        <header className='z-[999] border-[#E2E2E2] border 2xl:w-[1200px] lg:w-[85%] xl:w-[65%] font-normal font-["Archivo"] mx-auto hidden lg:block fixed -translate-x-1/2 left-1/2 top-6 bg-[#FFFFFF] rounded-[13px]'>
+        <header className='z-[999] border-[#E2E2E2] border 2xl:w-[1200px] lg:w-[80%]  font-normal font-["Archivo"] mx-auto hidden lg:block fixed -translate-x-1/2 left-1/2 top-6 bg-[#FFFFFF] rounded-[13px]'>
             <div className="xl:px-[18px] xl:py-2 py-1.5 px-3">
                 <div className="flex justify-between items-center">
                     <Link href={"/"} className="w-[100px]">
@@ -264,8 +264,8 @@ const Navbar = () => {
                             </defs>
                         </svg>
                     </Link>
-                    <div className="flex justify-start gap-[5px] xl:gap-[40px] mx-auto">
-                        <ul className="flex justify-start items-center gap-4 xl:gap-4 2xl:gap-10 text-[12px] font-semibold xl:text-[14px] text-black">
+                    <div className="flex justify-between items-center gap-[5px] xl:gap-[40px] mx-auto">
+                        <ul className="flex justify-end items-center gap-6 2xl:gap-8 text-[12px] font-semibold xl:text-[14px] text-black">
                             <li>
                                 <Link href={"/"}>Home</Link>
                             </li>
@@ -323,14 +323,14 @@ const Navbar = () => {
                                 <Link href={"/careers"}>Careers</Link>
                             </li>
                         </ul>
+                    </div>
                         <Button
                             text={"Contact Us"}
                             link="/contact"
                             className={
-                                "bg-[#101010] py-[10px] hover:bg-[#FF6035] transition-all duration-500 px-5 xl:px-10 text-[#FFFFFF]"
+                                "bg-[#101010] py-[10px] hover:bg-[#FF6035] transition-all duration-500 px-8 xl:px-10 text-[#FFFFFF]"
                             }
                         />
-                    </div>
                 </div>
             </div>
         </header>
