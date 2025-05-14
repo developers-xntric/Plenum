@@ -25,12 +25,11 @@ const MomentumAI = () => {
                 image={'/images/product-momentum-AI/AI-solutions.webp'} />
             <EndToEndAI />
             <MicrosoftDynamic heading1='What Can You Do With Momentum?' heading2='' para='Momentum AI is an integrated suite of AI software platforms purpose-built to automate every stage of the AI lifecycle — from data ingestion to model deployment. Designed to support enterprise scalability and flexibility, Momentum empowers businesses with intelligent AI automation tools that streamline processes and reduce development time.' services={momentumaiservices}
-                className='flex flex-col item-ce'
+                className='flex flex-col item-ce 2xl:relative 2xl:left-12'
                 bgColor='black'
-                paraClass={'lg:max-w-[90%] xl:max-w-[80%] 2xl:max-w-[70%]'}
+                paraClass={'lg:max-w-[90%] xl:max-w-[80%] 2xl:max-w-[95%]'}
                 gridcol='md:grid-cols-2 lg:grid-cols-4'
                 oneCardMobile={true}
-                
             />
             <StartSmallWithAI />
             <ArticleSlider />

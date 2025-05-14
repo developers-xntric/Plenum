@@ -10,6 +10,7 @@ import ArticleSlider from "@/components/common/article-slider";
 import ERPC2 from '@/components/service/ERP-Cosultant/ERPC2';
 import { ERPAccordin } from '@/components/common/accordinService';
 import { cloud, cloudAccor2 } from '@/data/services';
+import { testimonials } from '@/data/home-testimonials';
 
 
 const ManageCloud = () => {
@@ -17,13 +18,13 @@ const ManageCloud = () => {
         <div>
             <Service_Inner_Hero
                 heading={"Managed Cloud Services in Dubai and Middle East"}
-                para={"At Plenum, our Managed Cloud Services are built to empower enterprises with a powerful combination of Amazon Web Services (AWS) and Momentum, the no-code AI platform developed by Plenum."}
+                para={"Smart Infrastructure. Secure Delivery. AI-Ready from Day One. At Plenum, we help enterprises modernize their cloud ecosystem using Azure, AWS and our in-house AI platform, Momentum. From architecture and cost optimization to 24x7 support and compliance, we manage everything so you can scale faster with intelligence built in."}
                 image={"/service/MC/hero.png"}
                 is_space_in_image={false}
                 isERP={true}
                 isBottomButton={false}
                 heading_className={"xl:max-w-[600px]"}
-                para_className={"xl:w-[88%]"}
+                para_className={"xl:w-[80%]"}
             />
             <div className='2xl:max-w-[1440px] h-full w-[90%] mx-auto space-y-20 lg:pb-16 pb-10  lg:py-16'>
                 <BrandSlider
@@ -40,41 +41,7 @@ const ManageCloud = () => {
             <ERPServicesEast para={"We’ve carefully structured our service offerings to cater to both technical and business teams, ensuring clarity, usability, and long-term value."} heading={"Plenum Managed Cloud Services"} activeState={"Saudi Arabia"} />
             <ERPAccordin
                 isbottom={false} isAccordin={true} outside={false} items={cloud} className='flex justify-center  items-center gap-10 lg:gap-5 lg:flex-row-reverse flex-col pt-10 lg:py-0' bottomSection={cloudbottom1} left={false} blackSection={cloud1} />
-            <Testimonials testimonials={[
-                {
-                    id: 1,
-                    quote:
-                        "“The talent bar at Plenum is extremely high, and there is something electric and deeply fulfilling about working with a team that is so passionate about our mission and what we do.”",
-                    author: "Maroun Najjar",
-                    position: "Head Of Design",
-                    socialLink: "https://linkedin.com",
-                },
-                {
-                    id: 2,
-                    quote:
-                        "“The talent bar at Plenum is extremely high, and there is something electric and deeply fulfilling about working with a team that is so passionate about our mission and what we do.”",
-                    author: "Maroun Najjar",
-                    position: "Head Of Design",
-                    socialLink: "https://linkedin.com",
-                },
-                {
-                    id: 3,
-                    quote:
-                        "“The talent bar at Plenum is extremely high, and there is something electric and deeply fulfilling about working with a team that is so passionate about our mission and what we do.”",
-                    author: "Maroun Najjar",
-                    position: "Head Of Design",
-                    socialLink: "https://linkedin.com",
-                },
-                {
-                    id: 4,
-                    quote:
-                        "“The talent bar at Plenum is extremely high, and there is something electric and deeply fulfilling about working with a team that is so passionate about our mission and what we do.”",
-                    author: "Maroun Najjar",
-                    position: "Head Of Design",
-                    socialLink: "https://linkedin.com",
-                },
-
-            ]} />
+            <Testimonials testimonials={testimonials} />
             <ERPAccordin isbottom={false} isAccordin={true} outside={false} items={cloudAccor2} className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={cloudbottom2} left={true} blackSection={cloud2} />
             <ArticleSlider />
             <Blog heading='Discover Our Blog' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world." cardData={cardData} />

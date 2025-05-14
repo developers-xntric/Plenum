@@ -30,7 +30,7 @@ export const momentumaiservices = [
       "Train and deploy the image and video-based classification, object detection, and facial recognition models. Use pre-trained and customize OCR/ICR model",
   },
   {
-    title: "Nlp",
+    title: "NLP",
     icon: "/product/icon6.svg",
     description:
       "Use or train models for language modeling, text summarization, POS, NER, sentiment analysis, document similarity and more.​",

@@ -7,6 +7,15 @@ import { motion } from "framer-motion"
 export default function TeamTestimonials() {
     const testimonials = [
         {
+            id: 2,
+            quote:
+                "Working at Plenum has been the highlight of my career. The collaborative culture and innovative approach to solving problems is unmatched.",
+            name: "Hayden Pirkle",
+            title: "Group CEOr",
+            image: "/careers/p3.svg",
+
+        },
+        {
             id: 1,
             quote:
                 "The combination of brilliant colleagues, great work environment, and a purpose-driven mission makes Plenum an incredible place to be working. It's inspiring to know our work will impact in an industry that truly matters.",
@@ -15,25 +24,24 @@ export default function TeamTestimonials() {
             image: "/careers/p1.svg",
         },
         {
-            id: 2,
-            quote:
-                "Working at Plenum has been the highlight of my career. The collaborative culture and innovative approach to solving problems is unmatched.",
-            name: "Lavanya",
-            title: "Data Scientist",
-            image: "/careers/p2.svg",
-        },
-        {
             id: 3,
             quote:
                 "When I joined a very early stage Plenum years ago, I was looking for a dynamic, interesting, and impactful experience. Patch has delivered on all fronts, and I expect it to continue to do so as we work to rebalance the planet.",
-            name: "Hayden Pirkle",
-            title: "Group CEOr",
+            name: "Shashank",
+            title: "Data Engineer",
             image: "/careers/p2.svg",
         },
-      
-      
         {
             id: 4,
+            quote:
+                "Working at Plenum has been the highlight of my career. The collaborative culture and innovative approach to solving problems is unmatched.",
+            name: "Hayden Pirkle",
+            title: "Group CEOr",
+            image: "/careers/p3.svg",
+
+        },
+        {
+            id: 5,
             quote:
                 "The combination of brilliant colleagues, great work environment, and a purpose-driven mission makes Plenum an incredible place to be working. It's inspiring to know our work will impact in an industry that truly matters.",
             name: "Balasubramanian Rajendran",
@@ -41,16 +49,13 @@ export default function TeamTestimonials() {
             image: "/careers/p1.svg",
         },
         {
-            id: 5,
+            id: 6,
             quote:
-                "Working at Plenum has been the highlight of my career. The collaborative culture and innovative approach to solving problems is unmatched.",
-            name: "Lavanya",
-            title: "Data Scientist",
+                "When I joined a very early stage Plenum years ago, I was looking for a dynamic, interesting, and impactful experience. Patch has delivered on all fronts, and I expect it to continue to do so as we work to rebalance the planet.",
+            name: "Shashank",
+            title: "Data Engineer",
             image: "/careers/p2.svg",
         },
-     
-      
-      
     ]
 
     const [activeIndex, setActiveIndex] = useState(1)
@@ -95,7 +100,7 @@ export default function TeamTestimonials() {
                     What our team loves about working at Plenum
                 </h2>
                 <p className="text-secondary font-['Archivo'] md:max-w-[800px] mx-auto text-[15px] 2xl:text-[18px] tracking-tight font-medium opacity-60">
-                Hear from our people about the culture, collaboration, and opportunities that make Plenum a place to thrive.
+                    Hear from our people about the culture, collaboration, and opportunities that make Plenum a place to thrive.
                 </p>
             </div>
 
