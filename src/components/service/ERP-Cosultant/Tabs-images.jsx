@@ -46,7 +46,7 @@ export default function TabImageGallery({ activeState }) {
           <button
             key={tab}
             onClick={() => setActiveTab(tab)}
-            className={`text-[15px] lg:text-[22px] md:w-[33%] xl:w-[19%] flex-shrink-0 
+            className={`text-[15px] lg:text-[22px] md:w-[20%] lg:w-[20%] xl:w-[19%] flex-shrink-0 
               ${index === 0 ? "pl-[16rem] md:pl-[0rem] lg:pl-0" : ""} 
               py-2 cursor-pointer pb-4 font-['Archivo'] text-secondary font-semibold home-section-headings 
               ${activeTab === tab ? 'text-[#FF6035] border-b-2 border-[#FF6035]' : 'text-gray-400'} 
