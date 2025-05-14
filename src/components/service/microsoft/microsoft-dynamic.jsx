@@ -76,7 +76,7 @@ export default function MicrosoftDynamic({
                 {services?.map((service, index) => (
                   <div className="min-w-full flex-shrink-0 px-4" key={index}>
 
-                   <div className={`text-center max-w-[30%] mx-auto ${className}`}>
+                    <div className={`text-center max-w-[30%] mx-auto ${className}`}>
                       <div className="w-12 h-12 mb-5 mx-auto">
                         <Image
                           src={service.icon || "/placeholder.svg"}
@@ -120,7 +120,7 @@ export default function MicrosoftDynamic({
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <h3 className={`text-[20px] lg:text-[28px] font-semibold mb-[18px] lg:leading-8 ${isCenter && 'mx-auto'} ${bgColor === "black" ? "text-white" : "home-section-heading"}`}>
+                <h3 className={`text-[20px] lg:text-[28px] font-semibold mb-[18px] lg:leading-8 ${isCenter && 'mx-auto'} ${bgColor === "black" ? "text-white w-[90%]" : "home-section-heading"}`}>
                   {service.title}
                 </h3>
                 <p className={`text-xs lg:text-[15px] opacity-60 font-normal ${paraClass}`}>
