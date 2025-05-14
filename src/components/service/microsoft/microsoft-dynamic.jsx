@@ -120,7 +120,7 @@ export default function MicrosoftDynamic({
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <h3 className={`text-[20px] lg:text-[28px] font-semibold mb-[18px] lg:leading-8 ${isCenter && 'mx-auto'} ${bgColor === "black" ? "text-white w-[90%]" : "home-section-heading"}`}>
+                <h3 className={`text-[20px] lg:text-[28px] font-semibold mb-[18px] lg:leading-8  ${isCenter && 'mx-auto'} ${bgColor === "black" ? "text-white w-[90%] lg:min-h-18" : "home-section-heading"}`}>
                   {service.title}
                 </h3>
                 <p className={`text-xs lg:text-[15px] opacity-60 font-normal ${paraClass}`}>
