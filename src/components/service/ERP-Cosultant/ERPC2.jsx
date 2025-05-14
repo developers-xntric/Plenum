@@ -24,7 +24,7 @@ const ERPC2 = ({ heading, para, para2, image, para_className, heading_className 
                             <Image src={image || "/service/ERPC/ERPC2.svg"} alt='ERPC' width={1500} height={1500} />
                         </div>
                         <div className='w-full lg:w-[500px] xl:w-[720px] p-10 bg-[#282526]'>
-                            <p className='text-[#FFF] text-[18px] font-["Archivo"] font-normal w-[80%]'>{para2 || "We possess extensive knowledge across various industries, establishing ourselves as the leading IT company in Dubai for innovative solutions. We prioritize providing customized solutions that meet the distinct requirements of our clients, fostering growth and achieving operational excellence."}</p>
+                            <p className='text-[#FFF] text-[18px] font-["Archivo"] font-normal w-[80%] md:w-[100%] xl:w-[80%]'>{para2 || "We possess extensive knowledge across various industries, establishing ourselves as the leading IT company in Dubai for innovative solutions. We prioritize providing customized solutions that meet the distinct requirements of our clients, fostering growth and achieving operational excellence."}</p>
                         </div>
                     </div>
                 </div>
