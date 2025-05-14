@@ -62,7 +62,7 @@ const VerticalBuilds = () => {
             </div>
             <AISolutions title={"Develop Scalable Vertical Solutions. No Coding Required "}
                 paragraph={"Vertical Builds empowers your teams to launch customized, industry-ready applications through a low-code framework, cutting development time, reducing costs, and accelerating go-to-market across sectors."}
-                image={'/images/product-momentum-AI/AI-solutions.webp'} />
+                video={"/product/momentum2.mp4"} />
             <TabsSection />
             <ArticleSlider />
             <Blog heading='Discover Our Blog Articles' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world" cardData={cardData} />
