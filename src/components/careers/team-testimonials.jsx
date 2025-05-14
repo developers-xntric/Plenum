@@ -11,7 +11,7 @@ export default function TeamTestimonials() {
             quote:
                 "Working at Plenum has been the highlight of my career. The collaborative culture and innovative approach to solving problems is unmatched.",
             name: "Hayden Pirkle",
-            title: "Group CEOr",
+            title: "Head of Production",
             image: "/careers/p3.svg",
 
         },
@@ -36,7 +36,7 @@ export default function TeamTestimonials() {
             quote:
                 "Working at Plenum has been the highlight of my career. The collaborative culture and innovative approach to solving problems is unmatched.",
             name: "Hayden Pirkle",
-            title: "Group CEOr",
+            title: "Head of Production",
             image: "/careers/p3.svg",
 
         },

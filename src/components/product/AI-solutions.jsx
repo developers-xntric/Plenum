@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useRef, useState } from "react";
 
 
-export default function AISolutions({ title, paragraph, image }) {
+export default function AISolutions({ title, paragraph, video }) {
     const [isPlaying, setIsPlaying] = useState(false)
     const videoRef = useRef(null)
     const togglePlay = () => {
@@ -41,7 +41,7 @@ export default function AISolutions({ title, paragraph, image }) {
                         <video
                             ref={videoRef}
                             className="w-full h-72 md:h-full object-cover"
-                            src="/product/momentum.mp4"
+                            src={video || "/product/momentum.mp4"}
                             autoPlay
                             muted
                             loop
