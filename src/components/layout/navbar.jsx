@@ -174,7 +174,7 @@ const Navbar = () => {
 
     const renderDropdown = (showDropdown, menuItems, setShowDropdown) => (
         <div
-            className={`absolute top-10 left-0 bg-[#4C4C4CE5] text-white p-6 w-[340px] shadow-lg z-[1000]  transition-all duration-300 ease-in-out ${showDropdown ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2 pointer-events-none'}`}
+            className={`absolute top-9 xl:top-11 left-0 bg-[#4C4C4C] backdrop-blur-[20px] text-white p-6 w-[340px] shadow-lg z-[1000]  transition-all duration-300 ease-in-out ${showDropdown ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2 pointer-events-none'}`}
             onMouseEnter={() => handleMouseEnter(setShowDropdown)}
             onMouseLeave={() => handleMouseLeave(setShowDropdown)}
         >
@@ -324,13 +324,13 @@ const Navbar = () => {
                             </li>
                         </ul>
                     </div>
-                        <Button
-                            text={"Contact Us"}
-                            link="/contact"
-                            className={
-                                "bg-[#101010] py-[10px] hover:bg-[#FF6035] transition-all duration-500 px-8 xl:px-10 text-[#FFFFFF]"
-                            }
-                        />
+                    <Button
+                        text={"Contact Us"}
+                        link="/contact"
+                        className={
+                            "bg-[#101010] py-[10px] hover:bg-[#FF6035] transition-all duration-500 px-8 xl:px-10 text-[#FFFFFF]"
+                        }
+                    />
                 </div>
             </div>
         </header>
