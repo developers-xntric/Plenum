@@ -6,31 +6,67 @@ export function ContactForm() {
     const [formData, setFormData] = useState({
         name: "",
         email: "",
-        phone: "",
+        number: "",
         message: "",
     })
+
+    const [loading, setLoading] = useState(false)
+    const [successMessage, setSuccessMessage] = useState("")
+    const [errorMessage, setErrorMessage] = useState("")
 
     const handleChange = (e) => {
         const { name, value } = e.target
         setFormData((prev) => ({ ...prev, [name]: value }))
     }
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault()
-        console.log("Form submitted:", formData)
+
+        setLoading(true)
+        setErrorMessage("")
+        setSuccessMessage("")
+
+        try {
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            })
+
+            const data = await response.json()
+
+            if (response.ok) {
+                setSuccessMessage("Your message has been sent successfully!")
+                setFormData({
+                    name: "",
+                    email: "",
+                    number: "",
+                    message: "",
+                }) // Reset form fields after successful submission
+            } else {
+                setErrorMessage(data.error || "Failed to send the message. Please try again later.")
+            }
+        } catch (error) {
+            console.error("Error submitting form:", error)
+            setErrorMessage("An error occurred while submitting the form. Please try again later.")
+        } finally {
+            setLoading(false)
+        }
     }
 
     return (
         <div className="bg-[#EFEFEF] rounded-[20px] p-5 sm:p-8">
             <form onSubmit={handleSubmit} className='space-y-3'>
                 {/* Form Inputs (Unchanged) */}
-                {["name", "email", "phone"].map((field, i) => (
+                {["name", "email", "number"].map((field, i) => (
                     <div key={i} className="space-y-1">
                         <label htmlFor={field} className="block text-base text-[#0D0D0D] font-['Archivo'] font-semibold">
                             {field.charAt(0).toUpperCase() + field.slice(1)}
                         </label>
                         <input
-                            type={field === "email" ? "email" : field === "phone" ? "tel" : "text"}
+                            type={field === "email" ? "email" : field === "number" ? "tel" : "text"}
                             id={field}
                             name={field}
                             placeholder={
@@ -43,7 +79,7 @@ export function ContactForm() {
                             className="w-full px-4 py-3 rounded-[7px] bg-[#FFF] border text-[16px] border-[#D6D6D6] text-[#808080]  placeholder:text-[#808080]"
                             value={formData[field]}
                             onChange={handleChange}
-                            required={field !== "phone"}
+                            required={field !== "number"}
                         />
                     </div>
                 ))}
@@ -65,6 +101,14 @@ export function ContactForm() {
                     />
                 </div>
 
+                {/* Success/Error Message */}
+                {successMessage && (
+                    <div className="text-green-500 font-semibold">{successMessage}</div>
+                )}
+                {errorMessage && (
+                    <div className="text-red-500 font-semibold">{errorMessage}</div>
+                )}
+
                 {/* Animated Submit Button */}
                 <motion.button
                     type="submit"
@@ -76,6 +120,7 @@ export function ContactForm() {
                         rest: { transition: { staggerChildren: 0.1 } },
                     }}
                     className="group bg-primary cursor-pointer text-white rounded-full py-1 md:py-2 px-4 md:px-6 flex items-center justify-between md:gap-3 text-sm hover:bg-[#ff784f] transition-colors"
+                    disabled={loading}  // Disable the button while submitting
                 >
                     <div className="bg-white rounded-full p-5 relative -left-3">
                         {[1].map((_, i) => (
@@ -109,7 +154,9 @@ export function ContactForm() {
                             </motion.div>
                         ))}
                     </div>
-                    <span className="text-[12px] md:text-[17px] font-semibold font-['Archivo']">Book a free consultation session</span>
+                    <span className="text-[12px] md:text-[17px] font-semibold font-['Archivo']">
+                        {loading ? "Sending..." : "Book a free consultation session"}
+                    </span>
                 </motion.button>
             </form>
         </div>
