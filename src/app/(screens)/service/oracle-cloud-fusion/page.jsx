@@ -23,7 +23,7 @@ const OracleCloudFusion = () => {
                 heading_className={"md:w-[450px] leading-14"}
                 para_className={"md:w-[55%] lg:w-[45%] text-md"}
             />
-            <ERPAccordin items={fusion} className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={ocf_service} left={true} blackSection={ocf_service_black} />
+            <ERPAccordin items={fusion} className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' isbottom={true} bottomSection={ocf_service} left={true} blackSection={ocf_service_black} />
             <OracleCloudFusionERP />
             <OrcaleFinancialFeature tabs={fusionTabs} para='Oracle Fusion Cloud provides a comprehensive suite of financial features and capabilities.' heading='Financial Features and Capabilities' />
             <PinkSection
