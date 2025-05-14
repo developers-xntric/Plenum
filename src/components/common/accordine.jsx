@@ -16,7 +16,7 @@ const AccordionItem = ({ title, description, isOpen, isAccordin, onToggle, index
                     onClick={() => onToggle(index)}
                     className="flex items-center justify-between w-full py-5 text-secondary text-left"
                 >
-                    <h3 className={` text-[26px] lg:text-[30px] home-section-headings 2xl:text-[40px]  xl:text-[30px] leading-[30px] lg:leading-[40px] font-semibold max-w-[100%]`}>
+                    <h3 className={` text-[23px] lg:text-[30px] home-section-headings 2xl:text-[40px]  xl:text-[30px] leading-[30px] lg:leading-[40px] font-semibold max-w-[100%]`}>
                         {title}
                     </h3>
 
@@ -56,7 +56,7 @@ const AccordionItem = ({ title, description, isOpen, isAccordin, onToggle, index
                 transition={{ duration: 0.4, ease: "easeInOut" }}
                 className="overflow-hidden"
             >
-                <div className="pb-5 text-[#101010] font-['Archivo'] font-medium opacity-60 mt-4 text-[18px] w-[90%]">
+                <div className="pb-5 text-[#101010] font-['Archivo'] font-medium opacity-60 mt-4 text-[15px] md:text-[18px] md:w-[90%]">
                     <p>{description}</p>
                 </div>
             </motion.div>}

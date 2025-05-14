@@ -14,7 +14,7 @@ export default function CentralizeIntelligence() {
                     <div className="space-y-4 max-w-[50%">
                         <h2 className="font-semibold font-['Archivo'] xl:w-[60%] 2xl:w-[70%] text-black text-[20px]">Exceptional Design Meets Enterprise Functionality</h2>
                         <p className="text-[15.232px] font-medium tracking-tight text-black opacity-[0.6]  xl:max-w-[92%]">
-                            At Plenum, we don’t compromise on talent. We only hire senior-level designers with deep expertise across disciplines from UX to business systems so your project is always in the hands of specialists.
+                            At Plenum, we don’t compromise on talent. We only hire senior level designers with deep expertise across disciplines from UX to business systems so your project is always in the hands of specialists.
                         </p>
                         <div className="md:pt-4">
                             <div className="flex items-center justify-center md:justify-start gap-3">
@@ -54,7 +54,7 @@ export default function CentralizeIntelligence() {
                     <div className="space-y-4 ">
                         <h2 className="font-semibold xl:w-[90%] 2xl:w-[80%]  font-['Archivo'] text-black text-[20px]">Like Having Your Own Expert Team On-Demand</h2>
                         <p className="text-[15.232px] font-medium tracking-tight text-black opacity-[0.6] lg:max-w-[80%]">
-                            Think of us as an extension of your in-house team. Our flexible engagement model means you can scale up, shift focus, or pivot as your needs evolve—without breaking the bank.
+                            Think of us as an extension of your in-house team. Our flexible engagement model means you can scale up, shift focus, or pivot as your needs evolve without breaking the bank.
                         </p>
                         <div className="pt-4">
                             <div className="flex items-center justify-center md:justify-start gap3">
