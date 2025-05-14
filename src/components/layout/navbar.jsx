@@ -79,6 +79,7 @@ const Navbar = () => {
             isExpanded: false,
             link: "/service/digital-experiences",
         },
+        
     ]
 
     const productsMenuItems = [
@@ -291,7 +292,7 @@ const Navbar = () => {
                                 </Link>
                                 {renderDropdown(showProductsDropdown, productsMenuItems, setShowProductsDropdown)}
                             </li>
-                            {/* <li
+                            <li
                                 className="relative"
                                 ref={industriesRef}
                                 onMouseEnter={() => handleMouseEnter(setShowIndustriesDropdown)}
@@ -301,7 +302,7 @@ const Navbar = () => {
                                     Industries
                                 </Link>
                                 {industriesMenuItems.length > 0 && renderDropdown(showIndustriesDropdown, industriesMenuItems, setShowIndustriesDropdown)}
-                            </li> */}
+                            </li>
                             <li
                                 className="relative hover:text-[#FF6035] transition-colors"
                                 ref={resourcesRef}
