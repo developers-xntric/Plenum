@@ -7,14 +7,14 @@ export default function TabImageGallery({ activeState }) {
   const [activeTab, setActiveTab] = useState("UAE")
 
   // Define tabs
-  const tabs = ["UAE", "Saudi Arabia", "Egypt", "United Kingdom", "Qatar"]
+  const tabs = ["UAE", "Saudi Arabia", "Egypt", "United Kingdom", "Canada"]
 
   // Unified data for each tab
   const tabData = {
     "UAE": {
       src: "/service/UAE.png",
       alt: "Dubai Skyline with Burj Khalifa",
-      address: "Unit #47, Plot #1479, Feeder Commercial Centre, Me’Asiem First, Dubai Production City, Dubai"
+      address: "IT Plaza, Dubai Silicon Oasis, Dubai, UAE"
     },
     "Saudi Arabia": {
       src: "/service/Saudi-arabia.png",
@@ -31,7 +31,7 @@ export default function TabImageGallery({ activeState }) {
       alt: "United Kingdom Cityscape",
       address: "3 Rushton’s Yard, Ashby de la Zouch, Leicestershire, LE65 1AL, United Kingdom"
     },
-    "Qatar": {
+    "Canada": {
       src: "/service/canada.png",
       alt: "Qatar Modern Architecture",
       address: "3895 Manatee Way, Mississauga, Ontario L5M6P7"
@@ -101,7 +101,7 @@ export default function TabImageGallery({ activeState }) {
 
               <h2 className="text-[18px] md:text-[30px] font-semibold">{activeTab === "UAE" ? "United Arab Emirates" : activeTab}</h2>
             </div>
-            <p className="text-[11px] md:text-base text-left max-w-[70%] md:max-w-[95%] mt-3">{tabData[activeTab].address}</p>
+            <p className="text-[11px] md:text-base text-left max-w-[70%] md:max-w-[85%] mt-3">{tabData[activeTab].address}</p>
           </div>
         </div>
       </div>

@@ -132,7 +132,7 @@ export default function MobilitySolutions({
             <div
               key={index}
               className={`bg-white px-4 py-6 rounded-sm shadow-sm border border-gray-100 gap-4 justify-center flex flex-col ${includesFlex
-                ? "w-full sm:w-[310px] xl:w-[310px] 2xl:w-[310px] h-[200px]"
+                ? "w-full sm:w-[310px] xl:w-[310px] 2xl:w-[350px] h-[200px] 2xl:h-[230px]"
                 : card_className
                 }`}
             >
@@ -144,7 +144,7 @@ export default function MobilitySolutions({
                 className="w-10 h-10"
               />
               <h3 className="text-[20px] font-semibold text-sceondary lg:min-h-12">{solution.title}</h3>
-              <p className="text-xs 2xl:text-base text-[#4D4D56]">
+              <p className="text-xs 2xl:text-[15px] text-[#4D4D56]">
                 {solution.description || "Solution is easy to use and totally customizable to your business needs."}
               </p>
             </div>
