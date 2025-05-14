@@ -1,21 +1,21 @@
 export const md_solutions = [
     {
-        title: "Dynamics CRM Application",
+        title: "Dynamics CRM Mobile App",
         icon: "/service/MD/icon1.svg",
         description: "Empower your sales and customer service teams with an intuitive, mobile-friendly CRM solution tailored to your unique business processes.",
     },
     {
-        title: "Workflow Approvals Application",
+        title: "Workflow Approvals App",
         icon: "/service/MD/icon2.svg",
         description: "Accelerate decision-making with a seamless approval workflow application—fully customizable and built for on-the-go responsiveness.",
     },
     {
-        title: "Retail Management Application",
+        title: "Retail Management App",
         icon: "/service/MD/icon3.svg",
         description: "Digitize your retail operations with a robust mobile solution that simplifies store processes, inventory, and customer interactions.",
     },
     {
-        title: "Warehouse Management Application",
+        title: "Warehouse Management App",
         icon: "/service/MD/icon4.svg",
         description: "Streamline warehouse tasks from inventory tracking to order fulfillment with a dynamic, user-friendly mobile interface.",
     },
