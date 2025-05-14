@@ -4,7 +4,7 @@ import Image from "next/image"
 import { useState } from "react"
 
 export default function TabImageGallery({ activeState }) {
-  const [activeTab, setActiveTab] = useState(activeState || "UAE")
+  const [activeTab, setActiveTab] = useState("UAE")
 
   // Define tabs
   const tabs = ["UAE", "Saudi Arabia", "Egypt", "United Kingdom", "Qatar"]

@@ -34,7 +34,7 @@ const ERPConsulting = () => {
             <ERPC2
                 para={"We believe that ERP implementation isn’t just a software installation, it’s a strategic business transformation. Our seasoned consultants understand industry-specific challenges and align ERP solutions with your business goals to optimize workflows, increase efficiency, and improve ROI. Whether you’re adopting a new system or upgrading your current one, our expert ERP consultants help you make informed decisions, ensuring a seamless transition and long-term value."}
             />
-            <ERPServicesEast para={"Our ERP implementation experts provide the strategic guidance and technical expertise needed to modernize operations, increase efficiency, and achieve long-term success."} heading={"ERP Consulting and Implementation in the Middle East"} />
+            <ERPServicesEast para={"Our ERP implementation experts provide the strategic guidance and technical expertise needed to modernize operations, increase efficiency, and achieve long-term success."} heading={"ERP Consulting and Implementation in the Middle East"} activeState={"UAE"} />
             {/* <ERPSolutionsBottomSection className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={bottomSection} left={true} blackSection={blackSection} /> */}
             <ERPSolutionsBottomSection className='flex justify-center items-center gap-20 lg:flex-row-reverse flex-col pt-10 lg:py-0' blackSection={blackSection3} bottomSection={bottomSection2} left={false} />
         
