@@ -17,11 +17,11 @@ function Contact() {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
                         setStartCount(true)
-                        observer.disconnect() 
+                        observer.disconnect()
                     }
                 })
             },
-            { threshold: 0.3 } 
+            { threshold: 0.3 }
         )
 
         if (statsRef.current) {
