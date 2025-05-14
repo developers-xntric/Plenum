@@ -174,7 +174,7 @@ const Navbar = () => {
 
     const renderDropdown = (showDropdown, menuItems, setShowDropdown) => (
         <div
-            className={`absolute top-10 left-0 bg-[#4C4C4CE5] text-white p-6 w-[340px] shadow-lg z-[1000]  transition-all duration-300 ease-in-out ${showDropdown ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2 pointer-events-none'}`}
+            className={`absolute top-10 xl:top-12 left-0 bg-[#4C4C4CB3] text-white p-6 w-[340px] shadow-lg z-[1000]  transition-all duration-300 ease-in-out ${showDropdown ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2 pointer-events-none'}`}
             onMouseEnter={() => handleMouseEnter(setShowDropdown)}
             onMouseLeave={() => handleMouseLeave(setShowDropdown)}
         >
