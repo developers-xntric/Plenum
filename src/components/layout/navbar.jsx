@@ -324,13 +324,13 @@ const Navbar = () => {
                             </li>
                         </ul>
                     </div>
-                        <Button
-                            text={"Contact Us"}
-                            link="/contact"
-                            className={
-                                "bg-[#101010] py-[10px] hover:bg-[#FF6035] transition-all duration-500 px-8 xl:px-10 text-[#FFFFFF]"
-                            }
-                        />
+                    <Button
+                        text={"Contact Us"}
+                        link="/contact"
+                        className={
+                            "bg-[#101010] py-[10px] hover:bg-[#FF6035] transition-all duration-500 px-8 xl:px-10 text-[#FFFFFF]"
+                        }
+                    />
                 </div>
             </div>
         </header>
