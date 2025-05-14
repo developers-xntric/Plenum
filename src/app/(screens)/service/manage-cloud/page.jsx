@@ -18,13 +18,13 @@ const ManageCloud = () => {
         <div>
             <Service_Inner_Hero
                 heading={"Managed Cloud Services in Dubai and Middle East"}
-                para={"At Plenum, our Managed Cloud Services are built to empower enterprises with a powerful combination of Amazon Web Services (AWS) and Momentum, the no-code AI platform developed by Plenum."}
+                para={"Smart Infrastructure. Secure Delivery. AI-Ready from Day One. At Plenum, we help enterprises modernize their cloud ecosystem using Azure, AWS and our in-house AI platform, Momentum. From architecture and cost optimization to 24x7 support and compliance, we manage everything so you can scale faster with intelligence built in."}
                 image={"/service/MC/hero.png"}
                 is_space_in_image={false}
                 isERP={true}
                 isBottomButton={false}
                 heading_className={"xl:max-w-[600px]"}
-                para_className={"xl:w-[88%]"}
+                para_className={"xl:w-[80%]"}
             />
             <div className='2xl:max-w-[1440px] h-full w-[90%] mx-auto space-y-20 lg:pb-16 pb-10  lg:py-16'>
                 <BrandSlider

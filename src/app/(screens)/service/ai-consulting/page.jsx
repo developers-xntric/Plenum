@@ -17,13 +17,13 @@ const AiConsulting = () => {
         <div>
             <Service_Inner_Hero
                 heading={"AI Consulting, Governance and Implementation Services"}
-                para={"At Plenum, we guide enterprises through every phase of their AI journey from defining strategy to building scalable models, setting up governance, and enabling real-time decision-making."}
+                para={"At Plenum, we operationalize responsible AI, built for the enterprise From identifying the right use cases to building compliant models and governing them across the lifecycle, we bring AI to life using AWS and Azure Open AI services, and our inhoused no-code AI orchestration platform, Momentum."}
                 image={"/service/AC/image3.svg"}
                 is_space_in_image={false}
                 isERP={true}
                 isBottomButton={false}
                 heading_className={"xl:max-w-[600px]"}
-                para_className={"xl:w-[90%]"}
+                para_className={"xl:w-[80%]"}
             />
             <div className='2xl:max-w-[1440px] h-full w-[90%] mx-auto space-y-20 lg:pb-16 pb-10  lg:py-16'>
                 <BrandSlider

@@ -31,8 +31,8 @@ const BuisnessCentral = () => {
             />
             <ERPAccordin isbottom={true} isAccordin={true} outside={true} items={businessSer} className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={bc_service} left={true} blackSection={bc_service_black} />
             <Testimonials testimonials={testimonials} />
-            <ERPSolutionsAlone/>
-            
+            <ERPSolutionsAlone />
+
             <MobilitySolutions
                 card_className={"w-[300px] h-[200px]"}
                 className={"flex flex-wrap gap-10 justify-center"}
@@ -46,7 +46,6 @@ const BuisnessCentral = () => {
                 button={"Free consultation"}
                 className='flex flex-col items-center md:items-start text-center md:text-start'
                 bgColor='black'
-
             />
             <Capabilities capabilities={capabilities} />
             <div className=''>
