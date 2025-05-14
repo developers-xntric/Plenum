@@ -28,7 +28,7 @@ export default function TeamTestimonials() {
                 "When I joined a very early stage Plenum years ago, I was looking for a dynamic, interesting, and impactful experience. Patch has delivered on all fronts, and I expect it to continue to do so as we work to rebalance the planet.",
             name: "Hayden Pirkle",
             title: "Group CEOr",
-            image: "/careers/p2.svg",
+            image: "/careers/p3.svg",
         },
       
       
