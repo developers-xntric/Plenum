@@ -31,8 +31,8 @@ export default function CentralizeIntelligence() {
                     </div>
 
                     {/* Column 2 */}
-                    <div className="space-y-4 max-w-[50%">
-                        <h2 className="font-semibold  font-['Archivo'] text-black text-[20px]">Speed That Doesn’t Sacrifice Quality</h2>
+                    <div className="space-y-4 ">
+                        <h2 className="font-semibold font-['Archivo'] text-black text-[20px] lg:max-w-[300px]">Speed That Doesn’t Sacrifice Quality</h2>
                         <p className="text-[15.232px] font-medium tracking-tight text-black opacity-[0.6]  xl:max-w-[92%]">
                             Need high-impact designs fast? Whether it’s wireframes in Figma or full product UIs, we deliver with lightning speed. Our weekly design sprints ensure constant progress, delivering updates every other day
                         </p>
