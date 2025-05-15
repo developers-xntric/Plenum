@@ -1,6 +1,6 @@
 "use client"
 
-import { useRef, useState } from "react"
+import { useRef, useState, useEffect } from "react"
 import Image from "next/image"
 import { motion } from "framer-motion"
 
@@ -13,7 +13,6 @@ export default function TeamTestimonials() {
             name: "Hayden Pirkle",
             title: "Head of Production",
             image: "/careers/p3.svg",
-
         },
         {
             id: 1,
@@ -38,7 +37,6 @@ export default function TeamTestimonials() {
             name: "Hayden Pirkle",
             title: "Head of Production",
             image: "/careers/p3.svg",
-
         },
         {
             id: 5,
@@ -58,10 +56,21 @@ export default function TeamTestimonials() {
         },
     ]
 
-    const [activeIndex, setActiveIndex] = useState(1)
+    const [activeIndex, setActiveIndex] = useState(0)
     const carouselRef = useRef(null)
     const [startX, setStartX] = useState(0)
     const [isDragging, setIsDragging] = useState(false)
+
+    // Auto-slide effect
+    useEffect(() => {
+        const interval = setInterval(() => {
+            if (!isDragging) {
+                setActiveIndex((prevIndex) => (prevIndex + 1) % testimonials.length)
+            }
+        }, 3000) // Slide every 3 seconds
+
+        return () => clearInterval(interval)
+    }, [isDragging, testimonials.length])
 
     const handleDragStart = (e) => {
         setIsDragging(true)
@@ -79,10 +88,10 @@ export default function TeamTestimonials() {
         const diff = startX - currentX
 
         if (Math.abs(diff) > 30) {
-            if (diff > 0 && activeIndex < testimonials.length - 1) {
-                setActiveIndex(activeIndex + 1)
-            } else if (diff < 0 && activeIndex > 0) {
-                setActiveIndex(activeIndex - 1)
+            if (diff > 0) {
+                setActiveIndex((prevIndex) => (prevIndex + 1) % testimonials.length)
+            } else if (diff < 0) {
+                setActiveIndex((prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length)
             }
             setStartX(currentX)
             setIsDragging(false)
@@ -118,18 +127,19 @@ export default function TeamTestimonials() {
             >
                 <div className="flex items-center justify-center h-[200px] overflow-visible">
                     {testimonials.map((testimonial, index) => {
-                        const position = index - activeIndex
+                        const position = ((index - activeIndex) % testimonials.length + testimonials.length) % testimonials.length
+                        const adjustedPosition = position > Math.floor(testimonials.length / 2) ? position - testimonials.length : position
 
                         return (
                             <motion.div
                                 key={testimonial.id}
                                 className={`
                                     absolute bg-[#EFEFEF] rounded-lg p-4 md:p-6 md:w-[520px] md:h-[246px]
-                                    ${Math.abs(position) > 1 ? "opacity-0 pointer-events-none" : "opacity-100"}
+                                    ${Math.abs(adjustedPosition) > 1 ? "opacity-0 pointer-events-none" : "opacity-100"}
                                 `}
                                 animate={{
-                                    x: position * 540,
-                                    opacity: Math.abs(position) > 1 ? 0 : 1,
+                                    x: adjustedPosition * 540,
+                                    opacity: Math.abs(adjustedPosition) > 1 ? 0 : 1,
                                 }}
                                 transition={{
                                     type: "spring",
