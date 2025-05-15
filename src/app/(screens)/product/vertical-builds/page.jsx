@@ -95,7 +95,7 @@ const VerticalBuilds = () => {
                 paragraph={"Vertical Builds empowers your teams to launch customized, industry-ready applications through a low-code framework, cutting development time, reducing costs, and accelerating go-to-market across sectors."}
                 video={"/product/momentum2.mp4"} />
             <TabsSection values={values} tabImages={tabImages} />
-            <div className=" pb-16">
+            <div className="md:pb-16 lg:pb-20">
                 <TabsSection values={values2} tabImages={tabImages2} direction={"row-reverse"} />
             </div>
             <ArticleSlider />
