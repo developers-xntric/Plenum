@@ -9,7 +9,7 @@ import ArticleSlider from "@/components/common/article-slider";
 import { Blog } from '@/components/homepage/blog';
 import { cardData } from '@/data/home-blog';
 import { ERPAccordin } from '@/components/common/accordinService';
-import { finance, financeOpearations } from '@/data/services';
+import { finance, financeOpearations, financeOperations } from '@/data/services';
 
 const FinanceOpearations = () => {
     return (
@@ -37,7 +37,7 @@ const FinanceOpearations = () => {
                 />
             </div>
             <Finance_Opearations_Service
-                data={financeOpearations}
+                data={financeOperations}
                 heading='Benefits of Microsoft Dynamics 365 Finance and Operations'
                 para='Get real-time insights into your financial data to make faster, data-driven decisions. Track cash flow, profitability, and financial performance across global operations.'
             />
