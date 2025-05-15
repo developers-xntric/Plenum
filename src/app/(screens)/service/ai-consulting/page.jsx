@@ -37,7 +37,7 @@ const AiConsulting = () => {
 
                 para2={'This ensures you’re not just deploying AI—you’re doing it where it matters, with buy-in from every stakeholder.'}
             />
-            <ERPServicesEast para={"At Plenum, we enable companies to use artificial intelligence to release actual economic value. We start with high-impact use cases, then risk analyses, artificial intelligence policy development, and platform architecture."} heading={"Plenum AI Advisory, Governance & Execution"} activeState={"Qatar"} />
+            <ERPServicesEast para={"At Plenum, we enable companies to use artificial intelligence to release actual economic value. We start with high-impact use cases, then risk analyses, artificial intelligence policy development, and platform architecture."} heading={"Plenum AI Advisory, Governance & Execution"} activeState={"Qatar"} classNamePara={"xl:w-[700px]"}/>
             <ERPSolutionsBottomSection className='flex justify-center items-center gap-20 lg:flex-row-reverse flex-col pt-10 lg:py-0' blackSection={ai1} bottomSection={aiSection1} left={false} />
             <Testimonials testimonials={testimonials} />
             <ERPSolutionsBottomSection className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={aiSection2} left={true} blackSection={ai2} />
