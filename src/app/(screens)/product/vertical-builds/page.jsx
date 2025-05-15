@@ -42,6 +42,37 @@ const values = [
     },
 ]
 
+const tabImages2 = [
+    "/product/image-5.svg",
+    "/product/image-6.svg",
+    "/product/image-7.svg",
+    "/product/image-8.svg",
+    "/product/image-9.svg",
+]
+
+const values2 = [
+    {
+        title: "Super Admin​",
+        description: "The Super Admin has full access across all modules and branches, with the ability to configure settings, assign roles, manage permissions, and oversee system-wide operations.​​",
+    },
+    {
+        title: "Patients",
+        description: "Secure digital records with visit history, prescriptions, lab reports, and upcoming appointments  all in one place.​​",
+    },
+    {
+        title: "Labs",
+        description: "Up to 50% quicker processing with real-time sample tracking.​​",
+    },
+    {
+        title: "Doctors",
+        description: "Access complete patient history, conduct live consultations, update visit reports, and view lab results in real-time anytime, anywhere.​​",
+    },
+    {
+        title: "Receptionist",
+        description: "Quick and easy patient creation, appointment booking, and queue management  all in a few clicks.​​",
+    },
+]
+
 const VerticalBuilds = () => {
     return (
         <div>
@@ -63,7 +94,10 @@ const VerticalBuilds = () => {
             <AISolutions title={"Develop Scalable Vertical Solutions. No Coding Required "}
                 paragraph={"Vertical Builds empowers your teams to launch customized, industry-ready applications through a low-code framework, cutting development time, reducing costs, and accelerating go-to-market across sectors."}
                 video={"/product/momentum2.mp4"} />
-            <TabsSection />
+            <TabsSection values={values} tabImages={tabImages} />
+            <div className=" pb-16">
+                <TabsSection values={values2} tabImages={tabImages2} direction={"row-reverse"} />
+            </div>
             <ArticleSlider />
             <Blog heading='Discover Our Blog Articles' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world" cardData={cardData} />
             <div className='py-10'>
@@ -82,7 +116,7 @@ const VerticalBuilds = () => {
 
 export default VerticalBuilds
 
-function TabsSection() {
+function TabsSection({ values, tabImages, direction }) {
     const [activeTab, setActiveTab] = useState(0)
 
     return (
@@ -95,7 +129,7 @@ function TabsSection() {
                     </p>
                 </div>
 
-                <div className="flex lg:flex-row flex-col gap-10 w-full justify-between items-start lg:h-[650px]">
+                <div className={`flex lg:flex-${direction || "row"} flex-col gap-10 w-full justify-between items-start lg:h-[650px]`}>
                     {/* Left side - Tabs */}
                     <div className="bg-white rounded-lg lg:w-[45%] font-['Archivo'] w-full">
                         {values.map((value, index) => (
