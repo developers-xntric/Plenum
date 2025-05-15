@@ -13,6 +13,7 @@ export default function OracleResourcePlanning() {
             {/* WRAPPER */}
             <div className="2xl:max-w-[1440px] w-[90%] mx-auto space-y-8 lg:space-y-16">
                 {/* Headings */}
+                {/* Continous Build Generated */}
                 <div className="space-y-6">
                     <h2 className="text-[30px] lg:text-[50px] leading-[34px] md:w-[480px] lg:w-[680px] mx-auto lg:leading-[55px] font-['Archivo'] text-secondary font-semibold home-section-headings">
                         Oracle ERP Services For Best of Both Worlds
