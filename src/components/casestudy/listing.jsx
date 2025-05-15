@@ -7,15 +7,6 @@ import { useRouter } from 'next/navigation';
 
 const data = [
     {
-        title: "Retail ERP Transformation Finance & Operations Implementation",
-        description: "Modernized a retail group's operations using Microsoft Dynamics 365 F&O for finance, procurement, HR, and POS integration.",
-        industry: "Banking & Finance",
-        sectionId: "banking-finance",
-        deliverables: ["Microsoft Dynamics 365 F&O", "Power BI", "POS Middleware", "HRMS Module"],
-        image: "/casestudy/Group.png",
-        link: "/retail-erp",
-    },
-    {
         title: "Unified Retail Experience – ERP-Integrated eCommerce & Mobile App Platform",
         description: "Launched an ERP-integrated eCommerce store with inventory sync, customer segmentation, delivery tracking, and loyalty logic.",
         industry: "Retail",
@@ -50,6 +41,15 @@ const data = [
         deliverables: ["Databricks", "Power BI", "Momentum AI", "MLflow", "Python", 'Delta Tables'],
         image: "/casestudy/Group5.svg",
         link: "/ai-driven-property",
+    },
+    {
+        title: "Retail ERP Transformation Finance & Operations Implementation",
+        description: "Modernized a retail group's operations using Microsoft Dynamics 365 F&O for finance, procurement, HR, and POS integration.",
+        industry: "Banking & Finance",
+        sectionId: "banking-finance",
+        deliverables: ["Microsoft Dynamics 365 F&O", "Power BI", "POS Middleware", "HRMS Module"],
+        image: "/casestudy/Group.png",
+        link: "/retail-erp",
     },
     {
         title: "Personal Finance Intelligence – Behavioral Analytics for Engagement",

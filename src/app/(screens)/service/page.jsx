@@ -24,12 +24,12 @@ const Service = () => {
                 text={"With smart, scalable solutions catered to your company's specific requirements, you can revolutionize the way you operate and empower your employees across departments."}
             />
             <ServicesList serviceList={ServiceList} />
-          
-            <ArticleSlider  title={"Discover Our Articles"} paragraph={"Insights & practical knowledge designed to help you navigate the digital landscape effectively. "}/>
+
+            <ArticleSlider title={"Discover Our Articles"} paragraph={"Insights & practical knowledge designed to help you navigate the digital landscape effectively. "} />
             <Blog heading='Discover Our Blogs' para="Stay updated with our ongoing blogs inclusive of tips, case study examples and expert views around the usage of AI, cloud services and ERP solutions to support business growth and operational effectiveness." cardData={cardData} />
-              <PinkSection
-                heading={"Transform Your Enterprise with Next-Level Tech"}
-                text={"From cloud to AI and ERP, get solutions that evolve with your business."}
+            <PinkSection
+                heading={"Ready To Supercharge Your AI Workflow?"}
+                text={"Ready to explore the power of AI? Contact us 24×7 to schedule a one-on-one consultation and see how Momentum AI can elevate your AI workflow management and automation journey."}
                 show_button={true}
                 className="xl:h-[340px]"
                 isVideo={true}

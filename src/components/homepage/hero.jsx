@@ -26,6 +26,11 @@ const links = [
         link: "/case-studies#manufacturing",
         sectionId: "manufacturing"
     },
+    {
+        name: "Real Estate",
+        link: "/case-studies#Real Estate",
+        sectionId: "Real Estate"
+    },
 ]
 
 const Hero = () => {

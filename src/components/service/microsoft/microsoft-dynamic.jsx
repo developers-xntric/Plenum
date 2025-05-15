@@ -108,7 +108,7 @@ export default function MicrosoftDynamic({
             </div>
           </>
         ) : (
-          <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-14 place-items-center gap-x-28 2xl:gap-x-36 ${gridcol}`}>
+          <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-14 place-items-center gap-x-28 2xl:gap-x-34 ${gridcol}`}>
             {services?.map((service, index) => (
               <div key={index} className={`${className}`}>
                 <div className="w-12 h-12 mb-5">
@@ -120,10 +120,10 @@ export default function MicrosoftDynamic({
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <h3 className={`text-[20px] lg:text-[28px] font-semibold mb-[18px] lg:leading-8  ${isCenter && 'mx-auto'} ${bgColor === "black" ? "text-white w-[90%] lg:min-h-18" : "home-section-heading lg:max-w-[85%]"}`}>
+                <h3 className={`text-[20px] lg:text-[23px] xl:text-[28px] font-semibold mb-[18px] lg:leading-8  ${isCenter && 'mx-auto'} ${bgColor === "black" ? "text-white xl:w-[90%] lg:min-h-18" : `home-section-heading lg:max-w-[85%] ${index === 1 ? "2xl:pb-8" : ""}`}`}>
                   {service.title}
                 </h3>
-                <p className={`text-xs lg:text-[15px] opacity-60 font-normal ${paraClass}`}>
+                <p className={`text-xs lg:text-[15px] opacity-60 font-normal ${index === 1 ? "relative 2xl:bottom-8" : ""} ${paraClass}`}>
                   {service.description}
                 </p>
               </div>
