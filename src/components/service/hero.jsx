@@ -29,7 +29,7 @@ const ServiceHero = ({ bgImage, isLogo = true }) => {
               Experience how Plenum brings clarity to complexity with impactful digital solutions. See our process in action.
             </p>
             {/* Button */}
-            <Button className={"px-8 py-2.5 hover:bg-[#FF6035] hover:transition-colors ease-in-out duration-300 hover:text-white  tracking-tighter font-semibold bg-[#FFF] text-black rounded font-['Archivo'] text-[15px]"} text={"Request a Demo"} link={"/service"} />
+            <Button className={"px-8 py-2.5 hover:bg-[#FF6035] hover:transition-colors ease-in-out duration-300 hover:text-white  tracking-tighter font-semibold bg-[#FFF] text-black rounded font-['Archivo'] text-[15px]"} text={"Request a Demo"} link={"/contact"} />
           </div>
         </div>
       </div>
