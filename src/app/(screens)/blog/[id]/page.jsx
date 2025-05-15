@@ -67,7 +67,7 @@ export default function page() {
           </div>
         </div>
 
-        <Blog heading='Discover More Blogs' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world" cardData={cardData} />
+        <Blog heading='Discover More Blogs' para="Stay updated with our ongoing blogs inclusive of tips, case study examples and expert views around the usage of AI, cloud services and ERP solutions to support business growth and operational effectiveness." cardData={cardData} />
 
       </div>
     </>

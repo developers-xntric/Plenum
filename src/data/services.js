@@ -46,6 +46,33 @@ export const fusion = [
   },
  
 ];
+export const oracle = [
+  {
+    title: "Improved Data Security & Accessibility",
+    description:
+      "Oracle Cloud ERP offers enterprise-grade security with built-in governance and compliance features. With multi-layered encryption, role-based access, and global data residency options, your sensitive financial and operational data remains protected—while remaining accessible to authorized users anytime, anywhere.",
+    icon: "/service/MD/fao1.svg",
+  },
+  {
+    title: "Cost-Effective Cloud Solution",
+    description:
+      "By automating manual processes and centralizing your operations on the cloud, Oracle Fusion Finance reduces overhead costs and enhances operational efficiency. Cloud-native architecture minimizes infrastructure expenses, while seamless updates and integrations drive long-term value for your business.",
+    icon: "/service/MD/fao2.svg",
+  },
+  {
+    title: "Optimized Business Operations",
+    description:
+      "Oracle’s intelligent ERP ecosystem streamlines critical business functions—from finance and supply chain to procurement and HR. With real-time process automation, predictive analytics, and AI-powered workflows, you can make smarter decisions, faster.",
+    icon: "/service/MD/fao3.svg",
+  },
+  {
+    title: "Enhanced Visibility and Control",
+    description:
+      "With Oracle ERP Cloud, gain real-time insights through unified dashboards and powerful analytics. Consolidate data from across your enterprise and turn it into actionable intelligence, improving planning, forecasting, and executive-level control over every business area.",
+    icon: "/service/MD/fao3.svg",
+  },
+ 
+];
 
 export const financeOperations = [
   {
