@@ -18,19 +18,19 @@ export default function CustomerStats() {
                         {/* Stat 1 */}
                         <div className="text-center">
                             <p className="text-[32px] md:text-5xl text-secondary mb-1 font-medium">24K</p>
-                            <p className="text-[7px] uppercase tracking-wider font-semibold text-secondary opacity-60">Trusted Reviews</p>
+                            <p className="text-[14px] uppercase tracking-wider font-semibold text-secondary opacity-60">Trusted Reviews</p>
                         </div>
 
                         {/* Stat 2 */}
                         <div className="text-center">
                             <p className="text-[32px] md:text-5xl text-secondary mb-1 font-medium">96%</p>
-                            <p className="text-[7px] uppercase tracking-wider font-semibold text-secondary opacity-60">Customer Satisfaction</p>
+                            <p className="text-[14px] uppercase tracking-wider font-semibold text-secondary opacity-60">Customer Satisfaction</p>
                         </div>
 
                         {/* Stat 3 */}
                         <div className="text-center">
                             <p className="text-[32px] md:text-5xl text-secondary mb-1 font-medium">32K</p>
-                            <p className="text-[7px] uppercase tracking-wider font-semibold text-secondary opacity-60">Expenses Saved</p>
+                            <p className="text-[14px] uppercase tracking-wider font-semibold text-secondary opacity-60">Expenses Saved</p>
                         </div>
                     </div>
                 </div>

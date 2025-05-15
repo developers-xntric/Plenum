@@ -21,10 +21,16 @@ export default function IndustryShowcase() {
     if (emblaApiMain) emblaApiMain.scrollNext()
   }, [emblaApiMain])
 
-  // Sync the main carousel with the current index
   useEffect(() => {
     if (!emblaApiMain) return
 
+/*************  ✨ Windsurf Command ⭐  *************/
+/**
+ * Updates the current index state to reflect the selected scroll snap index
+ * in the Embla carousel.
+ */
+
+/*******  7f0a55c3-931b-4455-b141-68547f3ea043  *******/
     const onSelect = () => {
       setCurrentIndex(emblaApiMain.selectedScrollSnap())
     }

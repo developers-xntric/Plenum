@@ -8,11 +8,10 @@ import NetSuiteCards from '@/components/service/oracle-net-suite/netsuite-cards'
 import OracleOneStopShop from '@/components/service/oracle-net-suite/oracle-one-stop-shop'
 import PinkSection from '@/components/service/pink-section'
 import { oracleNetSuite } from '@/data/services'
-import { bc_service, bc_service_black, ons_service, ons_service_black } from '@/data/erp-consulting-service'
+import {  ons_service, ons_service_black } from '@/data/erp-consulting-service'
 import { cardData } from '@/data/home-blog'
 import { testimonials } from '@/data/home-testimonials'
 import { MicrosoftCarouselData } from '@/data/microsoft-carousel'
-import { businessSer } from '@/data/services'
 import React from 'react'
 
 const OracleNetSuite = () => {

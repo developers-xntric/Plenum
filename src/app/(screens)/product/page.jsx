@@ -16,7 +16,8 @@ const Product = () => {
                 isLogo={false}
                 bgImage='/product/m_hero.svg'
                 mobileBgImage={'/product/m_hero_mobile.svg'}
-
+                para1={'Plenum AI products enable businesses to make proactive, data-driven decisions at all organizational levels, optimize processes, and identify hidden value in their data.'}
+                para2={'Experience AI-driven products designed to optimize performance and deliver measurable results. Explore intelligent solutions for your business'}
             />
             <div className="2xl:max-w-[1440px] mx-auto w-[93%] xl:w-[90%] 2xl:w-[90%] py-5 lg:py-10">
                 <BrandSlider brand_icons={service_brand_icons} text={"Trusted by world's most exciting brands"} />

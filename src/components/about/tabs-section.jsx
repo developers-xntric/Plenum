@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import Image from "next/image"
-import { tabImages, values } from "@/data/tabs-section-data"
+import { about, tabImages, values } from "@/data/tabs-section-data"
 
 export default function TabsSection() {
     const [activeTab, setActiveTab] = useState(0)
@@ -20,7 +20,7 @@ export default function TabsSection() {
                 <div className="flex lg:flex-row flex-col gap-10 w-full justify-between items-start lg:h-[650px]">
                     {/* Left side - Tabs */}
                     <div className="bg-white rounded-lg lg:w-[45%] font-['Archivo'] w-full">
-                        {values.map((value, index) => (
+                        {about.map((value, index) => (
                             <div key={index}>
 
                                 <div
