@@ -28,7 +28,7 @@ const MomentumAI = () => {
                 className='flex flex-col item-ce 2xl:relative 2xl:left-12'
                 bgColor='black'
                 paraClass={'lg:max-w-[90%] xl:max-w-[80%] 2xl:max-w-[95%]'}
-                gridcol='md:grid-cols-2 lg:grid-cols-4'
+                gridcol='md:grid-cols-2 lg:grid-cols-4 gap-x-0   '
                 oneCardMobile={true}
             />
             <StartSmallWithAI />

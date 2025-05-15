@@ -43,6 +43,7 @@ const MicrosoftDynamics = () => {
                 className='flex flex-col items-center text-center'
                 paraClass='px-4'
                 isCenter={true}
+                ismicrosoft={true}
                 
             />
             <MicrosoftCarousel MicrosoftCarouselData={MicrosoftCarouselData} title={"Let’s Transform Your Business Together"} para={"Plenum redefines integration by offering intelligent, future-ready solutions that streamline how your business operates. Effortlessly link your applications with Microsoft Dynamics to simplify workflows, eliminate manual processes, and boost overall efficiency"} />
