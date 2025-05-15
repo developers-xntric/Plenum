@@ -1,13 +1,12 @@
-import Section2 from "@/components/case-studies/section2"
 import CaseDetailHero from "@/components/case-studies/case-details-hero"
+import CaseStudyList from "@/components/case-studies/case-studies-list"
 import Personalization from "@/components/case-studies/personalization"
-import { testimonials } from "@/data/home-testimonials"
-import Testimonials from "@/components/homepage/testimonial"
+import Section2 from "@/components/case-studies/section2"
 import ArticleSlider from "@/components/common/article-slider"
 import { Blog } from "@/components/homepage/blog"
+import Testimonials from "@/components/homepage/testimonial"
 import { cardData } from "@/data/home-blog"
-import { ServiceList } from "@/data/service-list"
-import CaseStudyList from "@/components/case-studies/case-studies-list"
+import { testimonials } from "@/data/home-testimonials"
 
 const case_studies = [
   [
@@ -60,40 +59,7 @@ export default function BrandOSPage() {
         "POS Middleware",
         "HRMS Module"
       ]} />
-      <Testimonials testimonials={[
-        {
-          id: 1,
-          quote:
-            "“Plenum’s approach to design and innovation has transformed how we operate. Their team consistently delivers exceptional results.”",
-          author: "Sarah Johnson",
-          position: "Director of Operations",
-          socialLink: "https://linkedin.com",
-        },
-        {
-          id: 2,
-          quote:
-            "“Working with Plenum has been a game-changer for our business. Their insight-driven approach has helped us reach new heights.”.",
-          author: "Michael Chen",
-          position: "Chief Marketing Officer",
-          socialLink: "https://linkedin.com",
-        },
-        {
-          id: 3,
-          quote:
-            "“Plenum’s approach to design and innovation has transformed how we operate. Their team consistently delivers exceptional results.”",
-          author: "Sarah Johnson",
-          position: "Director of Operations",
-          socialLink: "https://linkedin.com",
-        },
-        {
-          id: 4,
-          quote:
-            "“Working with Plenum has been a game-changer for our business. Their insight-driven approach has helped us reach new heights.”.",
-          author: "Michael Chen",
-          position: "Chief Marketing Officer",
-          socialLink: "https://linkedin.com",
-        },
-      ]} />
+      <Testimonials testimonials={testimonials} />
       <ArticleSlider />
       <Blog heading='Discover Our Blog Articles' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world" cardData={cardData} />
     </main>
