@@ -39,9 +39,9 @@ export async function POST(req) {
             `,
         });
 
-        return NextResponse.json({ message: "Email sent successfully!" }, { status: 200 });
+        return NextResponse.json({ message:"Your message has been sent successfully. We'll get back to you soon!"}, { status: 200 });
     } catch (error) {
         console.error("Error sending email:", error);
-        return NextResponse.json({ error: "Failed to send email" }, { status: 500 });
+        return NextResponse.json({ error: "Failed to send your message. Please try again later or contact us directly at support@example.com." }, { status: 500 });
     }
 }

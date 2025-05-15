@@ -15,7 +15,7 @@ export default function OracleResourcePlanning() {
                 {/* Headings */}
                 <div className="space-y-6">
                     <h2 className="text-[30px] lg:text-[50px] leading-[34px] md:w-[480px] lg:w-[680px] mx-auto lg:leading-[55px] font-['Archivo'] text-secondary font-semibold home-section-headings">
-                        Oracle ERP Services For Best of Both Worldsing
+                        Oracle ERP Services For Best of Both Worlds
                     </h2>
                     <p className="text-secondary font-medium font-['Archivo'] sm:text-lg opacity-75 mx-auto lg:w-[70%]  xl:max-w-[60%]">
                         Plenum's proprietary method seamlessly aligns with Oracle ERP Cloud, ideal for businesses seeking flexible integration and future-ready solutions.
