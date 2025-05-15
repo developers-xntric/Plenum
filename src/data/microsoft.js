@@ -7,7 +7,7 @@ export const services = [
     {
         title: "Microsoft Dynamics Migration",
         icon: "/service/MD/image2.svg",
-        description: "Migrating to Microsoft Dynamics 365 doesn’t have to be complex. We streamline the migration process—transferring your legacy data, workflows, and systems with precision and minimal downtime."
+        description: "Migrating to Microsoft Dynamics 365 doesn’t have to be complex. We streamline the migration process transferring your legacy data, workflows, and systems with precision and minimal downtime."
     },
     {
         title: "Microsoft Azure DevOps for Dynamics",
