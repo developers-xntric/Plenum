@@ -5,7 +5,7 @@ import MobileNav from "../components/layout/mobile-nav";
 import Head from "next/head";
 
 export const metadata = {
-  title: "Smart ERP Solutions in Middle Eas",
+  title: "Smart ERP Solutions in Middle East",
   description: "We deliver AI-powered ERP solutions in the Middle East and across the UAE, tailored to your operations expertly.",
 };
 
