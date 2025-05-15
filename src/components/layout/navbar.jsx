@@ -298,7 +298,7 @@ const Navbar = () => {
                                 onMouseEnter={() => handleMouseEnter(setShowIndustriesDropdown)}
                                 onMouseLeave={() => handleMouseLeave(setShowIndustriesDropdown)}
                             >
-                                <Link href={"/industries"} className="flex items-center">
+                                <Link href={"/industries"} className="flex items-center hover:text-[#FF6035] transition-colors">
                                     Industries
                                 </Link>
                                 {industriesMenuItems.length > 0 && renderDropdown(showIndustriesDropdown, industriesMenuItems, setShowIndustriesDropdown)}
