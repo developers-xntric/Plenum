@@ -34,7 +34,7 @@ const DigitalExperiences = () => {
             <ERPC2
                 para2={"Our custom digital learning modules are designed for mobile-first use, micro learning, AI assistants, gamification, progress analytics, and LMS integration."}
                 para={"At Plenum, we craft intelligent digital platforms that are fast, intuitive, and secure. From public-facing websites to employee portals and AI-powered service apps, we design and build responsive, mobile-ready, and enterprise-integrated experiences that work across every touchpoint. "}
-                image={"/service/DE/DE2.svg"}
+                image={"/service/DE/DE2-new.svg"}
                 para_className={"xl:w-[120%]"}
                 heading={"Smart, Seamless, and Scalable"}
             />

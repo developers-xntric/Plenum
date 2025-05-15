@@ -23,7 +23,7 @@ export default function Finance_Opearations_Service({ heading, para ,data}) {
                 className="w-10 h-10 md:w-8 md:h-8"
               />
               <div>
-                <h3 className="md:max-w-[70%] text-[25px] md:text-[28px] md:text-start text-center text-secondary font-semibold home-section-headings mb-4 leading-[30px]">
+                <h3 className="lg:max-w-[50%] text-[25px] md:text-[28px] md:text-start text-center text-secondary font-semibold home-section-headings mb-4 leading-[30px]">
                   {item.title}
                 </h3>
                 <p className="text-[15px] opacity-60 text-[#101010] font-medium text-center md:text-left">
