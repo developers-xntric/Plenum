@@ -43,6 +43,15 @@ const data = [
         link: "/virtual-learning",
     },
     {
+        title: "AI-Driven Property Valuation – Automated Valuation Model (AVM)",
+        description: "Developed an ML-powered rental AVM system to estimate property values and flag anomalies for a leading financial institution.",
+        industry: "Real Estate",
+        sectionId: "Real Estate",
+        deliverables: ["Databricks", "Power BI", "Momentum AI", "MLflow", "Python", 'Delta Tables'],
+        image: "/casestudy/Group5.svg",
+        link: "/ai-driven-property",
+    },
+    {
         title: "Personal Finance Intelligence – Behavioral Analytics for Engagement",
         description: "Built AI-powered behavioral models to identify high-potential customers, link entity structures, and personalize financial offerings.",
         industry: "Banking & Finance",

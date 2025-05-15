@@ -143,7 +143,7 @@ export default function MobilitySolutions({
                 height={40}
                 className="w-10 h-10"
               />
-              <h3 className={`text-[20px] font-semibld text-sceondary lg:min-h-12 ${index === 2 ? "2xl:mb-3" : ""} `}>{solution.title}</h3>
+              <h3 className="text-[20px] font-semibold text-[#101010] lg:min-h-12">{solution.title}</h3>
               <p className="text-xs 2xl:text-[15px] text-[#4D4D56]">
                 {solution.description || "Solution is easy to use and totally customizable to your business needs."}
               </p>

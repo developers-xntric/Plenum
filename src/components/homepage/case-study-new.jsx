@@ -21,7 +21,6 @@ export default function IndustryShowcase() {
     if (emblaApiMain) emblaApiMain.scrollNext()
   }, [emblaApiMain])
 
-  // Sync the main carousel with the current index
   useEffect(() => {
     if (!emblaApiMain) return
 
@@ -47,6 +46,23 @@ export default function IndustryShowcase() {
               {buttonArray.map((industry, index) => (
                 <button
                   key={`original-${index}`}
+                  className={cn(
+                    "px-4 2xl:px-10 py-6 whitespace-nowrap text-[15px] md:text-[17px] transition-colors duration-300",
+                    index % N === currentIndex ? "text-orange-500" : "text-white",
+                  )}
+                  onClick={() => {
+                    const originalIndex = index % N
+                    if (emblaApiMain) emblaApiMain.scrollTo(originalIndex)
+                  }}
+                >
+                  {industry}
+                </button>
+              ))}
+            </div>
+            <div className="ticker__item" aria-hidden="true">
+              {buttonArray.map((industry, index) => (
+                <button
+                  key={`duplicate-${index}`}
                   className={cn(
                     "px-4 2xl:px-10 py-6 whitespace-nowrap text-[15px] md:text-[17px] transition-colors duration-300",
                     index % N === currentIndex ? "text-orange-500" : "text-white",
