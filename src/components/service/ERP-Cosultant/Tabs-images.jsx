@@ -52,7 +52,7 @@ export default function TabImageGallery({ activeState }) {
               ${activeTab === tab ? 'text-[#FF6035] border-b-2 border-[#FF6035]' : 'text-gray-400'} 
               focus:outline-none transition-colors duration-300`}
           >
-            {tab}
+            {tab === "United Kingdom" ? "UK" : tab}
           </button>
         ))}
       </div>
