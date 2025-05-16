@@ -81,7 +81,7 @@ export default function HouseAIProduct({ heading, paragraph, card1Para, card2Par
               </div>
               <div className="flex justify-center items-center">
                 <Image
-                  src="/images/house-ai-product/momentum-graph.png"
+                  src="/images/video-gif.gif"
                   width={300}
                   height={100}
                   alt="Momentum Graph"
