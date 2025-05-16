@@ -35,7 +35,7 @@ export default function OurPeopleSection() {
     <section className="py-16  mx-auto font-['Archivo']">
       <div className="text-center mb-16">
         <h2 className="text-4xl md:text-5xl lg:text-6xl mb-6 text-[#101010]">Our People</h2>
-        <p className="text-secondary opacity-[0.6] font-medium max-w-3xl mx-auto text-lg">
+        <p className="text-secondary opacity-[0.6] font-medium max-w-3xl mx-auto text-[15px] md:text-lg px-3 md:px-0">
           Our vision goes beyond just providing IT services; we aim to empower businesses in the Middle East to be
           self-sufficient and prepared for the technological changes in the new age.
         </p>
@@ -58,9 +58,9 @@ export default function OurPeopleSection() {
                 quality={90}
               />
             </div>
-            <div className="md:flex mt-4 justify-start hidden flex-col gap-1 font-['Archivo']">
+            <div className="flex mt-4 justify-start md:text-left text-center flex-col gap-1 font-['Archivo'] pb-4 md:pb-0">
               <h4 className="text-[22px] text-[#000000] font-medium">{member.name}</h4>
-              <p className="text-[17px] max-w-[90%] text-[#000000B2] font-medium">{member.postion}</p>
+              <p className="text-[17px] md:max-w-[90%] text-[#000000B2] font-medium">{member.postion}</p>
             </div>
           </div>
         ))}

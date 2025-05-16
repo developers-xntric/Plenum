@@ -5,8 +5,7 @@ import Cards from '../../../components/blog/cards'
 const Blog = () => {
     return (
         <div>
-            <Banner heading='Our Blogs' para='News, insights and resources
-from the world of AI and Tech.' button={['business solutions', 'accelerate', 'accelerate', 'accelerate']} />
+            <Banner heading='Our Blogs' para='Explore stories, updates, and perspectives from the minds shaping the future of AI and intelligent systems' button={['business solutions', 'accelerate', 'accelerate', 'accelerate']} />
             <Cards />
         </div>
     )

@@ -47,8 +47,8 @@ const MobileNav = () => {
       name: "Products",
       link: "/product",
       subItems: [
-        { name: "Momentum AI", link: "/product" },
-        { name: "Vertical Builds", link: "/product" },
+        { name: "Momentum AI", link: "/product/momentum-ai" },
+        { name: "Vertical Builds", link: "/product/vertical-builds" },
       ],
     },
     {

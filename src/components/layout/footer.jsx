@@ -114,7 +114,7 @@ export default function Footer() {
           <div className=" hidden md:flex justify-center relative xl:-right-[1%] 2xl:-right-[1%] font-['Archivo'] z-20 ">
             <div className="">
               <Image src="/layout/footer-circle.webp" width={420} height={450} alt="footer-circle" className="" />
-              <div className="flex flex-col items-center justify-center text-center absolute bottom-[45%] lg:bottom-[0%] xl:bottom-0 lg:top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full">
+              <div className="flex flex-col items-center justify-center text-center absolute bottom-[38%] lg:bottom-[0%] xl:bottom-0 lg:top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full">
                 <h3 className="md:text-xl lg:text-4xl font-semibold lg:mb-1 font-['Archivo']">Transform vision</h3>
                 <p className="md:text-xl lg:text-4xl  font-semibold mb-7 font-['Archivo']">into impact</p>
                 <Link href="/contact" className="w-fit" >
@@ -126,7 +126,7 @@ export default function Footer() {
 
           {/* Right Links */}
           <div className="md:mt-[20%] lg:mt-[15%] xl:mt-[9%] 2xl:max-w-[1440px] w-full sm:w-[70%] md:w-auto mx-auto md:mx-0 ">
-            <div className="flex gap-x-[17.5%]  sm:gap-x-8 md:gap-x-8 gap-y-2 mx-auto md:mx-0 max-w-[85%] md:max-w-[100%]">
+            <div className="flex gap-x-[12%]  sm:gap-x-8 md:gap-x-8 gap-y-2 mx-auto md:mx-0 max-w-[85%] md:max-w-[100%]">
               <div>
                 <h3 className="text-[#767676] mb-2 text-lg md:text-base xl:text-lg font-bold font-['Archivo']">Legal</h3>
                 <ul className="space-y-1 md:text-sm xl:text-base font-['Archivo']">

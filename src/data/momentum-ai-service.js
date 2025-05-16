@@ -15,7 +15,7 @@ export const momentumaiservices = [
     title: "Data Pipeline​",
     icon: "/service/MD/icon3.svg",
     description:
-      "Automate data ingestion, transformation, processing, and exchange by building a customized pipeline to work with data in real-time, scheduled, or batch mode.​ ",
+      "Automate data ingestion, transformation, processing, and exchange by building a customized pipeline to work with data in real time, scheduled, or batch mode.​ ",
   },
   {
     title: "ML & AI",
@@ -45,6 +45,6 @@ export const momentumaiservices = [
     title: "Visualization",
     icon: "/product/icon8.svg",
     description:
-      "Visualize AI outcomes, monitor and track KPIs using an intuitive web-based dashboard with graphs and charts. Perform validation and verification with customizable workflow",
+      "Visualize AI outcomes, monitor and track KPIs using an intuitive web based dashboard with graphs and charts. Perform validation and verification with customizable workflow",
   },
 ];
