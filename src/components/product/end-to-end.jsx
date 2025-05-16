@@ -22,7 +22,7 @@ const EndToEndAI = () => {
                 {data.map((ele, i) => (
                     <div
                         key={i}
-                        className="rounded-[30px] px-8 pt-6 w-auto h-[280px] md:h-[300px]  md:w-[260px] lg:h-[390px] xl:w-[315px] xl:h-[380px] flex flex-col"
+                        className="rounded-[30px] px-8 pt-6 w-auto h-[280px] md:h-[300px]  md:w-[260px] lg:h-[370px] xl:w-[315px] xl:h-[340px] flex flex-col"
                         style={{
                             background: ele.bg === "white"
                                 ? "#EFEFEF"
@@ -35,7 +35,7 @@ const EndToEndAI = () => {
                     >
                         <div className='mb-5 flex lg:flex-col gap-3 lg:gap-6'>
                             <Image src={ele.logo || null} alt="logo" width={50} height={50} />
-                            <h3 className={`${ele.bg === "white" ? "text-[#282526]" : "text-[#FFFFFF]"} leading-[23.749px] font-bold max-w-[70%] relative top-3 lg:static text-[19.999px] mb-4 h-full`}>{ele.title}</h3>
+                            <h3 className={`${ele.bg === "white" ? "text-[#282526]" : "text-[#FFFFFF]"} leading-[23.749px] font-bold max-w-[7%] relative top-3 lg:static text-[19.999px] mb-4 h-full`}>{ele.title}</h3>
                         </div>
                         <p className={`${ele.bg == "white" ? "text-[#28252680]" : "text-[#E6E6E7]"} text-[14px] font-semibold leading-5`}>{ele.para}</p>
                     </div>

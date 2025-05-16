@@ -41,13 +41,13 @@ export default function ServicesList({ serviceList }) {
                                         {/* TITLE */}
                                         <h2>
                                             {service.title.map((title, i) => (
-                                                <p key={i} className="text-xl lg:text-3xl text-secondary text-center md:text-left font-semibold font-['Archivo']">
+                                                <p key={i} className="text-xl lg:text-2xl 2xl:text-3xl text-secondary text-center md:text-left font-semibold font-['Archivo']">
                                                     {title}
                                                 </p>
                                             ))}
                                         </h2>
 
-                                        <p className="text-secondary text-[15px] lg:text-[17px] text-center md:text-left opacity-[0.6] font-['Archivo'] mb-6 lg:max-w-[92%] xl:max-w-[78%] font-medium 2xl:max-w-[80%]">{service.description}</p>
+                                        <p className="text-secondary text-[15px] lg:text-[17px] text-center md:text-left opacity-[0.6] font-['Archivo'] mb-6 lg:max-w-[95%] xl:max-w-[80%] font-medium 2xl:max-w-[80%]">{service.description}</p>
                                     </div>
 
 
@@ -58,7 +58,7 @@ export default function ServicesList({ serviceList }) {
                                                 className="flex items-center font-semibold font-['Archivo'] w-fit transition-colors duration-300 text-[#101010] text-[15px] lg:text-[16px]"
                                             >
                                                 <ArrowRight className="h-4 w-4 mr-2 font-bold text-[#FF6035]" />
-                                                <span>{link}</span>
+                                                <span>{link.name}</span>
                                             </div>
                                         ))}
                                     </div>

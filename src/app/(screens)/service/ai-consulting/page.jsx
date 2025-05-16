@@ -17,7 +17,7 @@ const AiConsulting = () => {
         <div>
             <Service_Inner_Hero
                 heading={"AI Consulting, Governance and Implementation Services"}
-                para={"At Plenum, we operationalize responsible AI, built for the enterprise From identifying the right use cases to building compliant models and governing them across the lifecycle, we bring AI to life using AWS and Azure Open AI services, and our inhoused no-code AI orchestration platform, Momentum."}
+                para={"At Plenum, we operationalize responsible AI, built for the enterprise From identifying the right use cases to building compliant models and governing them across the lifecycle, we bring AI to life using AWS and Azure Open AI services, and our inhoused no code AI orchestration platform, Momentum."}
                 image={"/service/AC/image3.svg"}
                 is_space_in_image={false}
                 isERP={true}
@@ -35,7 +35,7 @@ const AiConsulting = () => {
                 heading={'AI Strategy & Readiness Laying the Right Foundation'}
                 para={"Successful AI starts with alignment. Our strategy workshops and AI readiness assessments help you identify high-impact use cases, assess data availability, and build a phased, ROI-driven roadmap."}
 
-                para2={'This ensures you’re not just deploying AI—you’re doing it where it matters, with buy-in from every stakeholder.'}
+                para2={'This ensures you’re not just deploying AI you’re doing it where it matters, with buy-in from every stakeholder.'}
             />
             <ERPServicesEast para={"At Plenum, we enable companies to use artificial intelligence to release actual economic value. We start with high-impact use cases, then risk analyses, artificial intelligence policy development, and platform architecture."} heading={"Plenum AI Advisory, Governance & Execution"} activeState={"Qatar"} classNamePara={"xl:w-[700px]"}/>
             <ERPSolutionsBottomSection className='flex justify-center items-center gap-20 lg:flex-row-reverse flex-col pt-10 lg:py-0' blackSection={ai1} bottomSection={aiSection1} left={false} />

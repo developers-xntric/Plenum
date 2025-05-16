@@ -52,7 +52,7 @@ export default function CentralizeIntelligence() {
 
                     {/* Column 3 */}
                     <div className="space-y-4 ">
-                        <h2 className="font-semibold font-['Archivo'] xl:w-[80%] 2xl:w-[70%] text-black text-[20px] lg:max-w-[300px]">Like Having Your Own Expert Team On-Demand</h2>
+                        <h2 className="font-semibold font-['Archivo'] xl:w-[80%] 2xl:w-[70%] text-black text-[20px] relative bottom-3 xl:bottom-0 xl:static lg:max-w-[300px]">Like Having Your Own Expert Team On-Demand</h2>
                         <p className="text-[15.232px] font-medium tracking-tight text-black opacity-[0.6] xl:max-w-[92%] py-2 ">
                             Think of us as an extension of your in-house team. Our flexible engagement model means you can scale up, shift focus, or pivot as your needs evolve without breaking the bank.
                         </p>
