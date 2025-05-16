@@ -95,8 +95,8 @@ const VerticalBuilds = () => {
                 paragraph={"Vertical Builds empowers your teams to launch customized, industry-ready applications through a low-code framework, cutting development time, reducing costs, and accelerating go-to-market across sectors."}
                 video={"/product/momentum2.mp4"} />
             <TabsSection values={values} tabImages={tabImages} />
-            <div className="md:pb-16 lg:pb-20">
-                <TabsSection values={values2} tabImages={tabImages2} direction={"row-reverse"} />
+            <div className="xl:pb-20">
+                <TabsSection para={"A comprehensive software solution designed to digitize and streamline every aspect of hospital operations, from patient care to backend administration.​"} heading={"Hospital Management System"} values={values2} tabImages={tabImages2} direction={"row-reverse"} />
             </div>
             <ArticleSlider />
             <Blog heading='Discover Our Blog Articles' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world" cardData={cardData} />
@@ -116,25 +116,24 @@ const VerticalBuilds = () => {
 
 export default VerticalBuilds
 
-function TabsSection({ values, tabImages, direction }) {
+function TabsSection({ values, tabImages, direction, heading, para }) {
     const [activeTab, setActiveTab] = useState(0)
 
     return (
         <section>
-            <div className='2xl:max-w-[1440px] w-[90%] mx-auto lg:space-y-20 py-16 md:py-10 lg:py-16'>
+            <div className='2xl:max-w-[1440px] w-[90%] mx-auto lg:space-y-20 py-16 md:py-10 xl:py-16'>
                 <div className="text-center mb-20">
-                    <h2 className='text-[36px] text-center lg:text-[50px] text-secondary font-semibold tracking-[-1.5px] md:tracking-tight home-section-headings  leading-[38px] lg:leading-14 mx-auto md:max-w-[50%]'>Purpose-Built Platforms. Less Code. Smarter Results</h2>
+                    <h2 className={`text-[36px] text-center lg:text-[50px] text-secondary font-semibold tracking-[-1.5px] md:tracking-tight home-section-headings  leading-[38px] lg:leading-16 mx-auto ${heading ? "md:max-w-[60%]" : "md:max-w-[50%]"}`}>{heading || "Purpose-Built Platforms. Less Code. Smarter Results"}</h2>
                     <p className='text-secondary text-center font-["Archivo"] lg:max-w-[95%] xl:max-w-[48.5%] mx-auto 2xl:max-w-[50%] my-4 opacity-75 text-[15px] xl:text-[18px]'>
-                        Vertical Builds delivers custom-fit solutions for diverse industries, faster, smarter, and more efficiently. Empower your teams to launch scalable systems without the complexity of traditional development.
+                        {para || "Vertical Builds delivers custom-fit solutions for diverse industries, faster, smarter, and more efficiently. Empower your teams to launch scalable systems without the complexity of traditional development."}
                     </p>
                 </div>
 
-                <div className={`flex lg:flex-${direction || "row"} flex-col gap-10 w-full justify-between items-start lg:h-[650px]`}>
+                <div className={`flex lg:flex-${direction || "row"} flex-col gap-10 w-full justify-between items-start xl:h-[650px]`}>
                     {/* Left side - Tabs */}
                     <div className="bg-white rounded-lg lg:w-[45%] font-['Archivo'] w-full">
                         {values.map((value, index) => (
                             <div key={index}>
-
                                 <div
                                     key={index}
                                     className={`p-4 md:p-6 cursor-pointer transition-all duration-200 hover:bg-[#F4F4F4] ${activeTab === index ? "bg-[#EFEFEF] rounded-[20px]" : ""}`}

@@ -18,7 +18,7 @@ const FinanceOpearations = () => {
                 heading={"Microsoft Dynamics 365 Finance and Operations"}
                 para={"Microsoft Dynamics 365 Finance and Operations is an integrated suite of enterprise resource planning (ERP) and customer relationship management (CRM) tools."}
                 image={"/service/FAO/FAO_hero.svg"}
-                image_className="md:w-[500px] md:h-[300px] xl:w-[500] xl:h-[500px]"
+                image_className="md:w-[500px] md:h-[300px] xl:w-[760px] xl:h-[480px]"
                 button_text="Connect with our Experts"
                 isSlider={true}
                 heading_className={"lg:w-[600px] md:w-[300px]"}

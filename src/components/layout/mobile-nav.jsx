@@ -69,7 +69,7 @@ const MobileNav = () => {
       subItems: [
         { name: "Case Studies", link: "/case-studies" },
         { name: "Blog", link: "/blog" },
-        { name: "Article", link: "/article" },
+        // { name: "Article", link: "/article" },
         // { name: "News", link: "/case-studies" },
         // { name: "Video & Podcasts", link: "/case-studies" },
       ],
@@ -106,7 +106,7 @@ const MobileNav = () => {
               {!item.subItems && <span className="w-4 mr-1"></span>}
               <Link
                 href={item.link}
-                className={`text-[15px] text-[#101010] ${item.subItems ? (expandedItems[item.name] ? 'opacity-100' : 'opacity-60') : 'opacity-100'} group-hover:text-[#FF6035]`}
+                className={`text-[15px] text-[#101010] ${item.subItems ? (expandedItems[item.name] ? 'text-[#FF6035]' : 'opacity-100') : 'opacity-100'} group-hover:text-[#FF6035]`}
                 onClick={() => setIsOpen(false)}
               >
                 {item.name}

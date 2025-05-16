@@ -17,7 +17,7 @@ export default function LeadershipSection() {
                         alt="Aasim Shaikh - Group CEO"
                         width={3000}
                         height={3000}
-                        className="w-full h-full rounded-lg"
+                        className="w-full md:h-full h-[400px] object-cover rounded-lg"
                     />
                 </div>
 
