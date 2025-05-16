@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Banner = ({ heading, para, button }) => {
+const Banner = ({ heading, para, button, paraClass }) => {
     return (
         <section className="bg-black pt-34 md:pt-60 pb-20  text-white">
             <div className='2xl:max-w-[1440px] w-[90%] mx-auto'>
@@ -8,7 +8,7 @@ const Banner = ({ heading, para, button }) => {
                     <div>
                         <h2 className="text-[#FF6035] font-['Chakra'] text-[32px] lg:text-[60px] font-medium">{heading}</h2>
                     </div>
-                    <div className='lg:max-w-[75%]'>
+                    <div className={`${paraClass ? paraClass : "lg:max-w-[75%]"}`}>
                         <p className="text-[#FFFFFF] font-light text-[15px] lg:text-[22px] leading-[25px] md:leading-[29px]">
                             {para}
                         </p>
