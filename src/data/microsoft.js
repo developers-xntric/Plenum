@@ -64,14 +64,14 @@ export const services2 = [
 ]
 export const businessPage = [
     {
-        title: "Small and Medium-Sized Businesses (SMBs)",
+        title: "Small and Medium Sized Businesses (SMBs)",
         icon: "/service/MD/image1.svg",
         description: "SMBs that are looking to automate and integrate their financial, sales, supply chain, and customer service operations will find Dynamics 365 Business Central an invaluable tool."
     },
     {
         title: "Manufacturers",
         icon: "/service/MD/image2.svg",
-        description: "Business Central provides tools for demand forecasting, managing production orders, and tracking raw materials and finished goods in real-time—making it an ideal choice for manufacturing businesses."
+        description: "Business Central provides tools for demand forecasting, managing production orders, and tracking raw materials and finished goods in real time making it an ideal choice for manufacturing businesses."
     },
     {
         title: "Retailers",
@@ -84,7 +84,7 @@ export const businessPage = [
         description: "Distributors who need to manage inventory across multiple warehouses, track shipments, and optimize their supply chain operations can benefit greatly from Dynamics 365 Business Central."
     },
     {
-        title: "Service-Based Businesses",
+        title: "Service Based Businesses",
         icon: "/service/MD/image5.svg",
         description: "Business Central offers the necessary tools to manage projects, allocate resources, and monitor profitability, ensuring better project delivery and customer satisfaction."
     },

@@ -128,7 +128,7 @@ export const cloud = [
     icon: "/service/MD/fao1.svg",
   },
   {
-    title: "Cloud cost optimization",
+    title: "Cloud Cost Optimization",
     description:
       "We help you reduce cloud spend by identifying unused resources, right-sizing infrastructure, and automating cost controls. With detailed usage insights and Momentum’s AI-driven recommendations, we ensure maximum ROI from every cloud dollar.",
     icon: "/service/MD/fao2.svg",

@@ -17,7 +17,7 @@ export default function TabsSection() {
                     </p>
                 </div>
 
-                <div className="flex lg:flex-row flex-col gap-10 w-full justify-between items-start lg:h-[650px]">
+                <div className="flex lg:flex-row flex-col gap-10 w-full justify-between items-start md:items-center lg:h-[800px] xl:h-[110vh] 2xl:h-[100vh]">
                     {/* Left side - Tabs */}
                     <div className="bg-white rounded-lg lg:w-[45%] font-['Archivo'] w-full">
                         {about.map((value, index) => (

@@ -24,7 +24,7 @@ export default function AboutHero() {
             <Button
               className="px-8 py-2.5 hover:bg-[#FF6035] transition-colors ease-in-out duration-300 hover:text-white tracking-tighter font-semibold bg-white text-black rounded font-['Archivo'] text-[15px]"
               text="Request a Demo"
-              link="/service"
+              link="/contact"
             />
           </div>
         </div>

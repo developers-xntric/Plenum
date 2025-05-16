@@ -40,8 +40,8 @@ export default function About4() {
           <h2 className="text-[39px] md:text-left text-center md:px-0 px-16 leading-[45px] md:leading-[40px] lg:text-6xl xl:text-7xl font-fontmedium mb-8">
             Our <span className="text-[#F26B44]">Vision</span>
           </h2>
-          <p className="text-[15px] lg:text-xl md:text-left text-center leading-relaxed text-white opacity-[0.6]">
-            To be a future-ready technology partner transforming enterprise operations through AI-powered ERP systems
+          <p className="text-[15px] lg:text-base 2xl:text-xl md:text-left text-center leading-relaxed text-white opacity-[0.6]">
+            To be a future-ready technology partner transforming enterprise operations through AI powered ERP systems
             that empower every person and department within a company. We anticipate a future where businesses of all
             sizes embrace intelligent technologies as part of their operations, driving innovation, agility, scale, and
             long- term growth, and transforming entire industries.
@@ -56,7 +56,7 @@ export default function About4() {
           <h2 className="text-[39px] md:text-left text-center md:px-0 px-12 leading-[45px] md:leading-[40px] lg:text-6xl xl:text-7xl mb-8 mt-10 lg:mt-0">
             Our <span className="text-[#F26B44]">Mission</span>
           </h2>
-          <p className="text-[15px] lg:text-xl md:text-left text-center leading-relaxed text-white opacity-[0.6]">
+          <p className="text-[15px] lg:text-base 2xl:text-xl md:text-left text-center leading-relaxed text-white opacity-[0.6]">
             Our mission is to provide innovative, scalable, and secure AI-enabled ERP solutions that simplify complex
             processes, simplify real-time analytics, and allow organizations to stay compliant. We strive to democratize
             AI through no-code intelligent platforms and cloud-managed services that empower business and IT teams to
@@ -68,7 +68,7 @@ export default function About4() {
 
         {/* Right side - SVG Semi-Circle Element */}
         <div className="w-full lg:w-1/3 relative mb-2 lg:mb-0 flex justify-end">
-          <div className="relative h-40 w-40 lg:w-64 2xl:w-72 lg:h-64 2xl:h-72 mx-auto lg:mx-0">
+          <div className="relative h-40 w-40 lg:w-50 xl:w-60 2xl:w-72 lg:h-50 xl:h-60 2xl:h-72 mx-auto lg:mx-0">
             {/* This is where you would place your SVG */}
             <Image
               alt="Arc"
