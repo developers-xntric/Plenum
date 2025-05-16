@@ -9,7 +9,7 @@ export const momentumaiservices = [
     title: "Transform",
     icon: "/service/MD/icon2.svg",
     description:
-      "Highly scalable, simple, UI-based engine to transform, merge, join, blend and filter all your data from multiple sources at scale and speed.​",
+      "Highly scalable, simple, UI based engine to transform, merge, join, blend and filter all your data from multiple sources at scale and speed.​",
   },
   {
     title: "Data Pipeline​",
