@@ -18,7 +18,7 @@ const DigitalExperiences = () => {
         <div>
             <Service_Inner_Hero
                 heading={"Engineered for Performance, Crafted for Evolution"}
-                para={"We believe that in a world where digital shapes first impressions, experience is paramount. Digital is more than just a tool for performance, it’s a strategic ecosystem. From SEO and paid media to data-driven optimization, we craft digital strategies that evolve in real-time, foster meaningful connections, and drive measurable growth."}
+                para={"We believe that in a world where digital shapes first impressions, experience is paramount. Digital is more than just a tool for performance, it’s a strategic ecosystem. From SEO and paid media to data driven optimization, we craft digital strategies that evolve in real-time, foster meaningful connections, and drive measurable growth."}
                 image={"/service/DE/hero.png"}
                 is_space_in_image={false}
                 isERP={true}

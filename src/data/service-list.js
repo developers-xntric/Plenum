@@ -7,9 +7,9 @@ export const ServiceList = [
     names: [
       {
         name: "Cloud Infrastructure Design",
-        link: "/service/oracle-cloud-fusion",
+        link: "/service/manage-cloud",
       },
-      { name: "Cloud Cost Optimization", link: "/service/oracle-cloud-fusion" },
+      { name: "Cloud Cost Optimization", link: "/service/manage-cloud" },
     ],
     icon: (
       <svg
@@ -451,7 +451,7 @@ export const ServiceList = [
       },
       {
         name: "Conversational Interfaces with SecureGPT",
-        link: "/service/ERP-consulting",
+        link: "/service/digital-experiences",
       },
         ,
    

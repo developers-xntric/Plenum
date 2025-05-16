@@ -48,7 +48,7 @@ const Hero = () => {
                         Empower your<span className='text-primary'> enterprise</span> to think smarter, operate faster, and grow intelligently
                     </h1>
                     <p className='font-["Archivo"] font-normal text-[14px] lg:text-lg xl:text-[19px] text-center text-white 2xl:max-w-[73%] xl:max-w-[77%] lg:max-w-[90%] max-w-[92%] mx-auto'>
-                        We build intelligent enterprise ecosystems by combining AI, data engineering, ERP, and digital experiences - empowering your businesses to work smarter, move faster, and stay connected seamlessly.
+                        We build intelligent enterprise ecosystems by combining AI, data engineering, ERP, and digital experiences empowering your businesses to work smarter, move faster, and stay connected seamlessly.
                     </p>
                 </div>
             </div>

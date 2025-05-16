@@ -53,13 +53,14 @@ export default function ServicesList({ serviceList }) {
 
                                     <div className="space-y-3">
                                         {service.names.map((link, i) => (
-                                            <div
+                                            <Link
+                                                href={`${link.link}`}
                                                 key={i}
                                                 className="flex items-center font-semibold font-['Archivo'] w-fit transition-colors duration-300 text-[#101010] text-[15px] lg:text-[16px]"
                                             >
                                                 <ArrowRight className="h-4 w-4 mr-2 font-bold text-[#FF6035]" />
                                                 <span>{link.name}</span>
-                                            </div>
+                                            </Link>
                                         ))}
                                     </div>
 
