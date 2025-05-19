@@ -80,8 +80,8 @@ export default function Footer() {
                 <h3 className="text-[#767676] mb-4 text-lg md:text-base xl:text-lg font-bold font-['Archivo']">Services</h3>
                 <ul className="space-y-1 font-normal md:text-sm xl:text-base font-['Archivo']">
                   <li>
-                    <Link href="/service/ERP-consulting" className="hover:text-gray-300">
-                     ERP Consulting 
+                    <Link href="/service/microsoft-dynamics" className="hover:text-gray-300">
+                     Microsoft Dynamics 
                     </Link>
                   </li>
                   <li>

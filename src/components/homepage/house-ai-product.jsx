@@ -3,6 +3,10 @@ import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
+import BrandSlider from "../common/brand-slider";
+import { useState } from 'react';
+
+import { home_brand_icons } from "@/data/brand-slider-icons-data";
 
 export default function HouseAIProduct({ heading, paragraph, card1Para, card2Para }) {
   const processRef = useRef(null);
@@ -147,7 +151,32 @@ export default function HouseAIProduct({ heading, paragraph, card1Para, card2Par
                     "Scalable AI models for retail, industrial, and enterprise supply chain operations are provided by Vertical Builds; these models are made for easy integration and quantifiable effects at scale."}
                 </p>
               </div>
-              <div className="flex items-center justify-center pb-2 md:pb-0">
+              <div className="flex flex-wrap justify-center gap-8 md:gap-12 items-center py-4">
+                <Image
+                  src="/home/Frame1.png"
+                  alt="Hospital"
+                  width={70}
+                  height={70}
+                  className="w-[40px] h-[55px] xl:w-[70px] xl:h-[110px] md:w-[65px] md:h-[100px]"
+                />
+                <Image
+                  src="/home/Frame2.png"
+                  alt="Real Estate"
+                  width={70}
+                  height={70}
+                  className="w-[40px] h-[55px] xl:w-[70px] xl:h-[110px]  md:w-[65px] md:h-[100px]"
+                />
+                <Image
+                  src="/home/Frame3.png"
+                  alt="Project Management"
+                  width={70}
+                  height={70}
+                  className="w-[70px] h-[55px] xl:w-[150px] xl:h-[110px] md:w-[120px] md:h-[100px]"
+                />
+              </div>
+
+
+              {/* <div className="flex items-center justify-center pb-2 md:pb-0">
                 <div className="space-y-3 w-[85%] md:w-[55%] max-w-[90%] mx-auto">
                   <div className="space-y-2">
                     <p className="text-sm font-['Archivo']">Process</p>
@@ -172,10 +201,14 @@ export default function HouseAIProduct({ heading, paragraph, card1Para, card2Par
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
+         
             </div>
           </div>
         </div>
+             <BrandSlider
+                text={"Trusted by world's most exciting brands"}
+          brand_icons={home_brand_icons}/>
       </div>
     </section>
   );
