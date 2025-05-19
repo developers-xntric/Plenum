@@ -16,8 +16,8 @@ const Navbar = () => {
     useEffect(() => {
         const getScrollThreshold = () => {
             const width = window.innerWidth;
-            if (width >= 1920) return 600;
-            if (width >= 1440) return 1100;
+            if (width >= 1920) return 1300;
+            if (width >= 1440) return 1000;
             return 1000; // default
         };
 
