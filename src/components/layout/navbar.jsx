@@ -14,12 +14,16 @@ const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
 
     useEffect(() => {
+        const getScrollThreshold = () => {
+            const width = window.innerWidth;
+            if (width >= 1920) return 1300;
+            if (width >= 1440) return 1000;
+            return 1000; // default
+        };
+
         const handleScroll = () => {
-            if (window.scrollY > 1000) {
-                setScrolled(true);
-            } else {
-                setScrolled(false);
-            }
+            const threshold = getScrollThreshold();
+            setScrolled(window.scrollY > threshold);
         };
 
         window.addEventListener("scroll", handleScroll);
@@ -241,7 +245,7 @@ const Navbar = () => {
 
     return (
         <header
-            className={`z-[999] 2xl:w-[1200px] lg:w-[80%] font-normal font-["Archivo"] mx-auto hidden lg:block fixed -translate-x-1/2 left-1/2 top-6 rounded-[13px] transition-colors duration-300 ${scrolled ? 'bg-[#272727] border-[#E2E2E2] border ' : 'bg-[#fff]'
+            className={`z-[999] 2xl:w-[1200px] lg:w-[80%] font-normal font-["Archivo"] mx-auto hidden lg:block fixed -translate-x-1/2 left-1/2 top-6 rounded-[13px] transition-colors duration-500 ${scrolled ? 'bg-[#272727] ' : 'bg-[#fff] border border-[#E2E2E2]'
                 }`}
         >
 

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState } from 'react';
 
 import Button from "../common/button";
+import Image from "next/image";
 
 const servicesData = [
   {
@@ -208,7 +209,7 @@ export default function HomeServices() {
   return (
     <div className="bg-white">
       {/* Main content */}
-      <div className="2xl:max-w-[1440px] w-[90%] mx-auto space-y-10 md:space-y-20 py-8 md:py-16 xl:py-16">
+      <div className="2xl:max-w-[1440px] w-[90%] mx-auto space-y-10 md:space-y-20 py-8 md:py-16 xl:py-20">
         {/* BRAND ICONS SLIDER */}
         {/* <BrandSlider
           text={"Trusted by world's most exciting brands"}
@@ -217,7 +218,7 @@ export default function HomeServices() {
 
         <div className="flex flex-col space-y-10 sm:space-y-16">
           {/* UPPER column - Headline */}
-          <div className=" xl:w-[80%] 2xl:w-[70%] text-center md:text-left relative z-20">
+          <div className="md:w-[500px] lg:w-[800px] xl:w-[80%] 2xl:w-[70%] text-center md:text-left relative z-20">
             <h2 className="text-[30px] lg:text-[50px] xl:text-[59.542px] leading-[40px] lg:leading-[60px] font-semibold font-['Archivo'] relative z-20 bg-[linear-gradient(to_right,_#101010,_#9b9999,_#101010,_#9b9999)] bg-clip-text text-transparent">
               Why Choose Plenum's AI-Enabled Enterprise Solutions?
             </h2>
@@ -249,6 +250,23 @@ export default function HomeServices() {
 
             {/* RIGHT - Accordion */}
             <div className="w-full lg:w-[65%] space-y-0 lg:my-0 my-14 font-['Archivo']">
+              <div className="flex items-center justify-between w-[90%] md:w-[50%] lg:w-[82%] xl:w-[80%] 2xl:w-[70%] mb-5 md:mb-10">
+                <Image
+                  src="/images/house-ai-product/microsoft.svg"
+                  height={1000}
+                  width={1000}
+                  alt="img"
+                  className="w-[140px] md:w-[190px] md:h-[110px] "
+                />
+                <Image
+                  src="/images/house-ai-product/aws.svg"
+                  height={1000}
+                  width={1000}
+                  alt="img"
+                  className="w-[70px] md:w-[100px] h-[100px] "
+                />
+
+              </div>
               {servicesData.map((item) => (
                 <div
                   key={item.id}
