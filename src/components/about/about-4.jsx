@@ -15,7 +15,7 @@ export default function About4() {
               src="/about/vission2.svg"
               width={1000}
               height={1000}
-              className="w-64 2xl:w-72 h-full object-cover lg:block hidden"
+              className="lg:w-60 xl:w-64 2xl:w-72 h-full object-cover lg:block hidden"
               style={{ userSelect: "none" }}
               unoptimized
             />
