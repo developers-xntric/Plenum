@@ -80,6 +80,7 @@ export function ContactForm() {
                             value={formData[field]}
                             onChange={handleChange}
                             required={field !== "number"}
+                            data-lpignore="true" // Add this attribute
                         />
                     </div>
                 ))}
@@ -158,6 +159,7 @@ export function ContactForm() {
                         {loading ? "Sending..." : "Book a free consultation session"}
                     </span>
                 </motion.button>
+                {/* Everything is right  */}
             </form>
         </div>
     )
