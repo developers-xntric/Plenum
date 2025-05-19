@@ -42,7 +42,7 @@ export default function Testimonials({ testimonials, title , paragraph }) {
           <h2 className="text-[30px] lg:text-[50px] leading-[33px] md:leading-[55px] font-['Archivo'] text-secondary font-semibold home-section-headings">
             {title || "What Our Clients Say"}
           </h2>
-          <p className="text-secondary font-['Archivo'] font-medium opacity-75 md:max-w-[60%] lg:max-w-[57%] xl:max-w-[40%]">
+          <p className="text-secondary font-['Archivo'] font-medium opacity-75 md:max-w-[60%] lg:max-w-[57%] xl:max-w-[45%] 2xl:max-w-[40%]">
             {paragraph || "As an ERP company, Plenum is trusted by professionals for insight-driven design, branding, and innovation."}
           </p>
         </div>
