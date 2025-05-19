@@ -11,6 +11,24 @@ const Navbar = () => {
     const [showProductsDropdown, setShowProductsDropdown] = useState(false)
     const [showIndustriesDropdown, setShowIndustriesDropdown] = useState(false)
     const [showResourcesDropdown, setShowResourcesDropdown] = useState(false)
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 1000) {
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
 
     const servicesRef = useRef(null)
     const productsRef = useRef(null)
@@ -79,7 +97,7 @@ const Navbar = () => {
             isExpanded: false,
             link: "/service/digital-experiences",
         },
-        
+
     ]
 
     const productsMenuItems = [
@@ -222,7 +240,11 @@ const Navbar = () => {
     )
 
     return (
-        <header className='z-[999] border-[#E2E2E2]border 2xl:w-[1200px] lg:w-[80%]  font-normal font-["Archivo"] mx-auto hidden lg:block fixed -translate-x-1/2 left-1/2 top-6 bg-[#272727] rounded-[13px]'>
+        <header
+            className={`z-[999] 2xl:w-[1200px] lg:w-[80%] font-normal font-["Archivo"] mx-auto hidden lg:block fixed -translate-x-1/2 left-1/2 top-6 rounded-[13px] transition-colors duration-300 ${scrolled ? 'bg-[#272727] border-[#E2E2E2] border ' : 'bg-[#fff]'
+                }`}
+        >
+
             <div className="xl:px-[18px] xl:py-2 py-1.5 px-3">
                 <div className="flex justify-between items-center">
                     <Link href={"/"} className="w-[100px]">
@@ -266,7 +288,7 @@ const Navbar = () => {
                         </svg>
                     </Link>
                     <div className="flex justify-between items-center gap-[5px] xl:gap-[40px] mx-auto">
-                        <ul className="flex justify-end items-center gap-6 2xl:gap-8 text-[12px] font-semibold xl:text-[14px] text-white">
+                        <ul className={`flex justify-end items-center gap-6 2xl:gap-8 text-[12px] font-semibold xl:text-[14px]  ${scrolled ? 'text-white ' : 'text-secondary'}`}>
                             <li className="hover:text-[#FF6035] transition-colors">
                                 <Link href={"/"}>Home</Link>
                             </li>
