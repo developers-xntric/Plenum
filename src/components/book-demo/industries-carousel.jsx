@@ -65,7 +65,7 @@ export default function IndustriesCarousel() {
                         <Button
                             variant="outline"
                             size="icon"
-                            className="rounded-full bg-black text-white hover:bg-black/90 hover:text-white w-12 h-12 flex items-center justify-center cursor-pointer"
+                            className="rounded-full bg-black text-white hover:bg-black/90 hover:text-white w-8 md:w-12 h-8 md:h-12 flex items-center justify-center cursor-pointer"
                             onClick={handlePrev}
                         >
                             <ChevronLeft className="h-4 w-4" />
@@ -74,7 +74,7 @@ export default function IndustriesCarousel() {
                         <Button
                             variant="outline"
                             size="icon"
-                            className="rounded-full bg-white text-black border border-gray-200 hover:bg-gray-100 w-12 h-12 flex items-center justify-center cursor-pointer"
+                            className="rounded-full bg-white text-black border border-gray-200 hover:bg-gray-100 w-8 md:w-12 h-8 md:h-12 flex items-center justify-center cursor-pointer"
                             onClick={handleNext}
                         >
                             <ChevronRight className="h-4 w-4" />
