@@ -4,12 +4,12 @@ import Image from 'next/image'
 
 function BookDemoHero({}) {
     return (
-        <section className='pt-36 md:pt-40 lg:pt-28 xl:pt-16 2xl:pt-0'>
+        <section className='pt-36 md:pt-40 lg:pt-28 xl:pt-16 2xl:pt-36'>
             <div className='2xl:max-w-[1440px] w-[90%] mx-auto'>
                 {/* HERO */}
-                <div className='flex lg:flex-row flex-col lg:items-center justify-between gap-10 lg:h-screen 2xl:h-[86vh]'>
+                <div className='flex lg:flex-row flex-col lg:items-center justify-between gap-10 lg:h-screen 2xl:h-[60vh]'>
                     {/* LEFT */}
-                    <div className='lg:w-[48%] xl:w-[500px] space-y-8 '>
+                    <div className='lg:w-[48%] xl:w-[500px] space-y-14 '>
                         {/* HEADING AND PARA*/}
                         <div className='space-y-3 md:space-y-5'>
                             <h2 className='text-[28px] uppercase md:text-4xl lg:text-[38px] xl:text-[40px] leading-[32px] md:leading-[43px] font-["Chakra"] font-bold text-black'>Transform Your SME Operations with Microsoft{''}<span className='text-primary'> DYNAMICS 365</span>{' '}Business Central</h2>

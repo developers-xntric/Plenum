@@ -26,11 +26,11 @@ function TrustedPartners() {
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-3 md:gap-5 mt-10 place-items-center">
+                    <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-3 md:gap-3 2xl:max-w-[90%] mx-auto mt-10 place-items-center">
                         {partners.map((partner, index) => (
                             <div
                                 key={index}
-                                className="md:w-[187.82px] p-5 h-[70px] md:h-[90.67px] bg-white/10 rounded-[20.79px] outline outline-[#ff6035]/70 backdrop-blur-[10.40px] flex items-center justify-center relative"
+                                className="md:w-[187.82px] p-5 h-[70px] md:h-[90.67px] bg-white/10 rounded-[20.79px] outline outline-[#ff6035]/50 backdrop-blur-[10.40px] flex items-center justify-center relative"
                             >
                                 <Image
                                     src={partner.logo}
@@ -45,7 +45,7 @@ function TrustedPartners() {
                 </div>
 
                 <div className='space-y-12'>
-                    <h2 className="text-center xl:w-[1000px] mx-auto justify-start text-black text-[30px] lg:text-[40px] font-bold font-['Archivo'] uppercase leading-[34px] md:leading-[47.70px]">
+                    <h2 className="text-center lg:w-[900px] xl:w-[1000px] mx-auto justify-start text-black text-[30px] lg:text-[40px] font-bold font-['Archivo'] uppercase leading-[34px] md:leading-[47.70px]">
                         Why Microsoft Dynamics 365 Business Central is Perfect for SMEs
                     </h2>
 
