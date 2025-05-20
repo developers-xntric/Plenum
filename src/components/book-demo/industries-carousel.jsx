@@ -55,8 +55,8 @@ export default function IndustriesCarousel() {
     const translateX = `-${currentIndex * (280.339 + 24)}px` // Card width + gap
 
     return (
-        <section className="py-20 px-6 bg-white">
-            <div className="container mx-auto lg:max-w-[1200px]">
+        <section className="lg:py-10 px-6 bg-white">
+            <div className="container mx-auto w-[90%] 2xl:max-w-[1440px]">
                 <div className="flex justify-between items-center mb-8">
                     <h2 className="text-[40px] font-bold tracking-tight leading-tight max-w-[800px] font-['Archivo']">
                         INDUSTRIES WE SERVE WITH DYNAMICS <br /> 365 BUSINESS CENTRAL

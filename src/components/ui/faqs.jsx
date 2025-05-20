@@ -44,7 +44,7 @@ function Faqs() {
 
   return (
     <div className="flex justify-center items-center w-full px-4 py-8 md:py-12 lg:p-[40px]">
-      <div className="w-full max-w-[1440px] mx-auto">
+      <div className="w-[90%] max-w-[1440px] mx-auto">
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-start mb-4 md:mb-6 lg:mb-8 font-['Archivo']  text-black  uppercase leading-10">
           FAQS
         </h1>
