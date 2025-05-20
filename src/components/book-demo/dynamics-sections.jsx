@@ -51,7 +51,7 @@ export default function DynamicsSection() {
                 ScrollTrigger.create({
                     trigger: containerRef.current,
                     start: "top top",
-                    end: () => `+=${window.innerHeight * (sections.length)}`,
+                    end: () => `+=${window.innerHeight * (sections.length - 2)}`,
                     pin: containerRef.current,
                     pinSpacing: true,
                     scrub: 1,
