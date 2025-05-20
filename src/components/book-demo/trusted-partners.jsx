@@ -18,7 +18,7 @@ function TrustedPartners() {
                 <div>
                     {/* CONTENT */}
                     <div className='flex items-center flex-col justify-center gap-1'>
-                        <h2 className="text-center text-black text-[30px] lg:text-[40px] font-bold font-['Archivo'] uppercase leading-[34px] md:leading-[55.70px]">
+                        <h2 className="text-center text-black text-[22px] lg:text-[40px] font-bold font-['Archivo'] uppercase leading-[34px] md:leading-[55.70px]">
                             Trusted Partners
                         </h2>
                         <p className=" mx-auto md:w-[80%] lg:w-full text-center justify-center text-[#000] text-[15px] md:text-[20px] md:text-lg font-normal font-['Archivo'] leading-[22px] md:leading-[27px]">
@@ -45,7 +45,7 @@ function TrustedPartners() {
                 </div>
 
                 <div className='space-y-12'>
-                    <h2 className="text-center lg:w-[900px] xl:w-[1000px] mx-auto justify-start text-black text-[30px] lg:text-[40px] font-bold font-['Archivo'] uppercase leading-[34px] md:leading-[47.70px]">
+                    <h2 className="text-center lg:w-[900px] xl:w-[1000px] mx-auto justify-start text-black text-[22px] lg:text-[40px] font-bold font-['Archivo'] uppercase leading-[30px] md:leading-[47.70px]">
                         Why Microsoft Dynamics 365 Business Central is Perfect for SMEs
                     </h2>
 
