@@ -20,8 +20,9 @@ export default function GrowthThird() {
           </Link>
         </div>
 
+
         {/* Center Image Section */}
-        <div className="mt-10  rounded-lg p-4 max-w-4xl mx-auto lg:w-[700px] ">
+        <div className="mt-10 relative rounded-lg p-4 max-w-4xl mx-auto lg:w-[700px] ">
           <Image
             src="/images/book-demo/growth-circle.svg"
             alt="Business Growth Graphic"
