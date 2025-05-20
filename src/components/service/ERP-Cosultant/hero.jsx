@@ -9,8 +9,7 @@ export function useWindowWidth() {
 
   useEffect(() => {
     if (typeof window === "undefined") return;
-
-    // Set initial width
+    
     setWidth(window.innerWidth);
 
     const handleResize = () => setWidth(window.innerWidth);
