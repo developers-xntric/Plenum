@@ -35,8 +35,8 @@ const links = [
 
 const Hero = () => {
     return (
-        <section className='relative z-30 bg-black overflow-hidden flex flex-col'>
-            <div className='hidden md:block absolute top-0 xl:-top-20 2xl:-top-40 -translate-x-1/2 left-1/2 w-full -z-15'>
+        <section className='relative z-30 bg-black md:h-[90vh] lg:h-[115vh] xl:h-[850px] 2xl:h-[100vh] overflow-hidden flex flex-col'>
+            <div className='hidden md:block b absolute top-0 xl:-top-20 2xl:-top-40 -translate-x-1/2 left-1/2 w-full -z-15'>
                 <Image src='/home/shade.png' priority height={1000} width={1000} alt='img' className='w-full h-full' />
             </div>
             <div className='md:hidden block h-[150vh] absolute top-0 -translate-x-1/2 left-1/2 w-full -z-15'>
@@ -74,7 +74,7 @@ const Hero = () => {
                     className='w-full object-contain h-full'
                 />
             </div>
-            <div className='flex justify-center items-center flex-col text-center'>
+            <div className='flex justify-center items-center flex-col text-center relative bottom-'>
                 <AnimatedBorder className='hidden lg:block'>
                     <div className="w-[680px] p-[0.8px] h-14 bg-white/5 rounded-xl inline-flex justify-start items-center">
                         <div className="flex px-4 rounded-xl justify-start items-center gap-2 bg-zinc-900 w-full h-full">
@@ -103,7 +103,7 @@ const Hero = () => {
                     <p className='font-["Chakra"] font-normal sm:text-[16px] text-[14px] md:text-[22px] text-white opacity-80'>
                         Ready to experience hyperperformance?
                     </p>
-                    <div className='bg-gradient-to-l relative right-3 p-[1.4px] xl:p-[1.2px] from-red-500 via-orange-700/80 to-red-300 rounded-[8px]'>
+                    <div className='bg-gradient-to-l relative right-3 p-[1.4px] xl:p-[1.2px] 2xl:p-[1.5px] from-red-500 via-orange-700/80 to-red-300 rounded-[8px]'>
                         <Button
                             className='font-["Archivo"] hover:bg-[#FF6035] hover:transition-colors ease-in-out duration-300 bg-zinc-900 xl:px-8 px-4 w-[100px] md:w-full xl:w-full md:px-8 md:py-2 py-2 text-white font-primary text-[10px] md:text-[14px]'
                             text="Lets Talk"
