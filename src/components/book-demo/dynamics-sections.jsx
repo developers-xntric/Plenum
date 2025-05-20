@@ -97,16 +97,16 @@ export default function DynamicsSection() {
                     {/* Left side - Timeline */}
                     <div ref={timelineRef} className="relative w-full lg:w-[40%]">
                         <div
-                            className={`absolute bg-[#808080] `}
+                            className={`absolute bg-[#FF6035] `}
                             style={{
-                                width: "3px",
+                                width: "2.5px",
                                 top: "6px",
                                 bottom: "6px",
                                 left: "18px",
                             }}
                         >
                             <div
-                                className="progress-bar absolute bg-orange-500 transition-all duration-500"
+                                className="progress-bar absolute bg-[#FF6035] transition-all duration-500"
                                 style={{
                                     width: "2px",
                                     top: "0",
@@ -125,8 +125,8 @@ export default function DynamicsSection() {
                             >
                                 <div
                                     className={`absolute w-[18px] h-[18px] rounded-full border-2 transition-all duration-300 flex justify-center items-center ${activeSection >= section.id
-                                        ? "bg-orange-500 border-orange-500 shadow-md"
-                                        : "bg-white border-orange-500"
+                                        ? "bg-primary border-[#FF6035] shadow-md"
+                                        : "bg-white border-[#FF6035]"
                                         }`}
                                     style={{
                                         left: "9px",
