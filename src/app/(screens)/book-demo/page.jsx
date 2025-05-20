@@ -9,4 +9,4 @@ function BookDemo() {
   )
 }
 
-export default page
+export default BookDemo
