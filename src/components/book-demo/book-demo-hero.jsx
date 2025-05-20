@@ -4,10 +4,10 @@ import Image from 'next/image'
 
 function BookDemoHero({}) {
     return (
-        <section className='pt-36 md:pt-40 lg:pt-28 xl:pt-16 2xl:pt-36'>
+        <section className='pt-36 md:pt-40 lg:pt-28 xl:pt-20 2xl:pt-36'>
             <div className='2xl:max-w-[1440px] w-[90%] mx-auto'>
                 {/* HERO */}
-                <div className='flex lg:flex-row flex-col lg:items-center justify-between gap-10 lg:h-screen 2xl:h-[60vh]'>
+                <div className='flex lg:flex-row flex-col lg:items-center justify-between gap-10 lg:h-[80vh] 2xl:h-[60vh]'>
                     {/* LEFT */}
                     <div className='lg:w-[48%] xl:w-[500px] space-y-14 '>
                         {/* HEADING AND PARA*/}

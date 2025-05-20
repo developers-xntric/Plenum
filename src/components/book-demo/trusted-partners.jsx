@@ -54,9 +54,10 @@ function TrustedPartners() {
                         <video
                             className='w-[100%] rounded-[15px] h-full object-cover'
                             src="/images/book-demo/book-demo-guide.webm"
-                            autoPlay
-                            loop
-                            muted
+                            controls
+                         
+                          
+                       
                         ></video>
                     </div>
                 </div>

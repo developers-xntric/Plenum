@@ -9,7 +9,7 @@ function BookDemo() {
     <div>
         <BookDemoHero/>
       
-        <BookDemoHero  />
+
         <TrustedPartners/>
         <GrowthThird/>
         <Faqs/>
