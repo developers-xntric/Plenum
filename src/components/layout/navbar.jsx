@@ -18,7 +18,7 @@ const Navbar = () => {
             const width = window.innerWidth;
             if (width >= 1920) return 1000;
             if (width >= 1440) return 800;
-            return 700; 
+            return 750; 
         };
 
         const handleScroll = () => {
