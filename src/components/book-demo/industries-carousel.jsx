@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
@@ -19,6 +19,7 @@ const IndustryCard = ({ icon, title, description }) => {
 
 export default function IndustriesCarousel() {
     const [currentIndex, setCurrentIndex] = useState(0)
+    const autoplayRef = useRef(null)
 
     const industries = [
         {
@@ -53,6 +54,21 @@ export default function IndustriesCarousel() {
 
     // Calculate the translateX value for sliding effect
     const translateX = `-${currentIndex * (280.339 + 24)}px` // Card width + gap
+
+    // Autoplay functionality
+    useEffect(() => {
+        // Set autoplay interval
+        autoplayRef.current = setInterval(() => {
+            setCurrentIndex((prevIndex) => (prevIndex === industries.length - 1 ? 0 : prevIndex + 1))
+        }, 3000) // Change every 3 seconds (adjust as needed)
+
+        // Clean up interval on component unmount
+        return () => {
+            if (autoplayRef.current) {
+                clearInterval(autoplayRef.current)
+            }
+        }
+    }, [])
 
     return (
         <section className="py-20 md:py-10 px-6 bg-white">
