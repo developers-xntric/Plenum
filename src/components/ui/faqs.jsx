@@ -53,15 +53,15 @@ function Faqs() {
             <div key={index} className="border-t border-black">
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full text-left py-3 md:py-4 flex justify-between items-start focus:outline-none"
+                className="w-full text-left py-3 md:py-4 flex justify-between items-start focus:outline-none cursor-pointer"
               >
-                <h2 className="text-base md:text-lg lg:text-xl font-semibold font-['Archivo'] pr-4">{faq.question}</h2>
+                <h2 className="text-base md:text-[20px] lg:text-xl font-semibold font-['Archivo'] pr-4">{faq.question}</h2>
                 <span className="text-lg md:text-xl flex-shrink-0 mt-1">
                   {openIndex === index ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
                 </span>
               </button>
               {openIndex === index && (
-                <div className="pb-3 md:pb-4 text-md md:text-base font-['Archivo'] text-black font-light leading-loose">
+                <div className="pb-3 md:pb-4 text-md md:text-base font-['Archivo'] text-black font-normal leading-6">
                   <p>{faq.answer}</p>
                 </div>
               )}
