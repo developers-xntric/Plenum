@@ -35,7 +35,7 @@ const links = [
 
 const Hero = () => {
     return (
-        <section className='relative z-30 bg-black md:h-[90vh] lg:h-[125vh] xl:h-[130vh] 2xl:h-[110vh] overflow-hidden flex flex-col'>
+        <section className='relative z-30 bg-black md:h-[90vh] lg:h-[115vh] xl:h-[850px] 2xl:h-[100vh] overflow-hidden flex flex-col'>
             <div className='hidden md:block b absolute top-0 xl:-top-20 2xl:-top-40 -translate-x-1/2 left-1/2 w-full -z-15'>
                 <Image src='/home/shade.png' priority height={1000} width={1000} alt='img' className='w-full h-full' />
             </div>
