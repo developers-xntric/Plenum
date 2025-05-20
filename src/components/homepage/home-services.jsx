@@ -219,7 +219,7 @@ export default function HomeServices() {
         <div className="flex flex-col space-y-10 sm:space-y-16">
           {/* UPPER column - Headline */}
           <div className="md:w-[500px] lg:w-[800px] xl:w-[80%] 2xl:w-[70%] text-center md:text-left relative z-20">
-            <h2 className="text-[30px] lg:text-[50px] xl:text-[59.542px] leading-[40px] lg:leading-[60px] font-semibold font-['Archivo'] relative z-20 bg-[linear-gradient(to_right,_#101010,_#9b9999,_#101010,_#9b9999)] bg-clip-text text-transparent">
+            <h2 className="text-[30px] lg:text-[50px] xl:text-[59.542px] leading-[35px] lg:leading-[60px] font-semibold font-['Archivo'] relative z-20 bg-[linear-gradient(to_right,_#101010,_#9b9999,_#101010,_#9b9999)] bg-clip-text text-transparent">
               Why Choose Plenum's AI-Enabled Enterprise Solutions?
             </h2>
           </div>

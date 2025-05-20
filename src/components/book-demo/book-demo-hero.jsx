@@ -1,20 +1,25 @@
 import React from 'react'
 import { ContactForm } from '../service/contact-form'
+import Image from 'next/image'
 
-function BookDemoHero() {
+function BookDemoHero({}) {
     return (
-        <section>
+        <section className='pt-36 md:pt-40 lg:pt-28 xl:pt-16 2xl:pt-36'>
             <div className='2xl:max-w-[1440px] w-[90%] mx-auto'>
                 {/* HERO */}
-                <div className='flex lg:flex-row flex-col lg:items-center justify-between gap-10 h-screen'>
+                <div className='flex lg:flex-row flex-col lg:items-center justify-between gap-10 lg:h-screen 2xl:h-[60vh]'>
                     {/* LEFT */}
-                    <div className='lg:w-[40%] xl:w-[50%] space-y-8 md:space-y-10 lg:space-y-40'>
+                    <div className='lg:w-[48%] xl:w-[500px] space-y-14 '>
                         {/* HEADING AND PARA*/}
                         <div className='space-y-3 md:space-y-5'>
-                            <h2 className='text-[30px] md:text-4xl lg:text-5xl xl:text-[60px] font-["Chakra"] tracking-[-2.771px] font-semibold text-primary'>Contact us</h2>
-                            <p className="lg:w-[100%] xl:w-[436px] opacity-60 justify-center text-[#0f0f0f] text-[15px] md:text-lg font-medium font-['Archivo'] leading-[22px] md:leading-[27px]">Ready to boost operational efficiency and drive innovation at scale? Get in touch with us to explore strategic solutions built for enterprise success.</p>
+                            <h2 className='text-[28px] uppercase md:text-4xl lg:text-[38px] xl:text-[40px] leading-[32px] md:leading-[43px] font-["Chakra"] font-bold text-black'>Transform Your SME Operations with Microsoft{''}<span className='text-primary'> DYNAMICS 365</span>{' '}Business Central</h2>
+                            <p className="lg:w-[100%] xl:w-[550px] justify-center text-[#000] text-[15px] md:text-[20px] md:text-lg font-normal font-['Archivo'] leading-[22px] md:leading-[27px]">Streamline workflows, enhance productivity, and drive growth with the ERP designed for small and medium sized enterprises.</p>
                         </div>
 
+                        <div className='flex  items-center gap-5 md:gap-10'>
+                            <p className='font-["Archivo"] text-secondary opacity-[0.5] text-[14px] md:text-[15px] 2xl:text-[17px] font-semibold w-[120px]'>Proud Solution Partner</p>
+                            <Image className='w-[150px] ' src="/images/book-demo/hero-logo.svg" alt="microsoft-logo" width={2000} height={2000}  />
+                        </div>
                     </div>
 
                     {/* RIGHT */}
