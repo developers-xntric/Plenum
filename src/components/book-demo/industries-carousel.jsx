@@ -55,13 +55,13 @@ export default function IndustriesCarousel() {
     const translateX = `-${currentIndex * (280.339 + 24)}px` // Card width + gap
 
     return (
-        <section className="lg:py-10 px-6 bg-white">
-            <div className="container mx-auto w-[90%] 2xl:max-w-[1440px]">
-                <div className="flex justify-between items-center mb-8">
-                    <h2 className="text-[40px] font-bold tracking-tight leading-tight max-w-[800px] font-['Archivo']">
-                        INDUSTRIES WE SERVE WITH DYNAMICS <br /> 365 BUSINESS CENTRAL
+        <section className="py-20 md:py-10 px-6 bg-white">
+            <div className="container mx-auto lg:w-[90%] 2xl:max-w-[1440px]">
+                <div className="flex md:flex-row flex-col justify-between items-center mb-8">
+                    <h2 className="text-[22px] md:text-[40px] font-bold tracking-tight leading-tight lg:max-w-[800px] font-['Archivo']">
+                        INDUSTRIES WE SERVE WITH DYNAMICS 365 BUSINESS CENTRAL
                     </h2>
-                    <div className="flex space-x-3">
+                    <div className="flex space-x-3 mt-8 ms-auto md:ms-0">
                         <Button
                             variant="outline"
                             size="icon"

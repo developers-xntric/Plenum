@@ -82,7 +82,7 @@ export default function DynamicsSection() {
 
     return (
         <section
-            className="2xl:max-w-[1440px] w-[90%] mx-auto overflow-hidden min-h-[80vh]"
+            className="2xl:max-w-[1440px] w-[90%] mx-auto overflow-hidden min-h-[80vh] py-20 md:py-0"
         >
             <div className="container mx-auto px-4 max-w-7xl"
                 ref={containerRef}
