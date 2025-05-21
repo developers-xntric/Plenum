@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import Button from './button'
 import Image from 'next/image'
@@ -32,11 +33,11 @@ export const ERPSolutionsBottomSection = ({ bottomSection, className, left, blac
                         {
                             bottomSection.Input.map((item, index) => {
                                 return (
-                                    <div key={index} className='flex items-center gap-2 mt-8'>
-                                        <p className='w-full lg:w-[90%] py-2 border-b border-[#BABABA] text-secondary font-medium cursor-pointer  home-section-headings px-2 placeholder:text-secondary placeholder:font-medium placeholder:home-section-headings text-[25px] 2xl:text-[30px]' >
-                                            {item}
+                                    <Link href={`${item.link}`} key={index} className='flex items-center gap-2 mt-8 '>
+                                        <p className='w-full lg:w-[90%] py-2 border-b border-[#BABABA] text-[#545454] transition-colors duration-500 hover:text-[#FF6035] font-medium cursor-pointer  home-section-heading px-2 placeholder:text-secondaryplaceholder:font-medium placeholder:home-section-headings text-[25px] 2xl:text-[30px]' >
+                                            {item.text}
                                         </p>
-                                    </div>
+                                    </Link>
                                 )
                             })
                         }
