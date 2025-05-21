@@ -2,12 +2,13 @@
 import BrandSlider from '@/components/common/brand-slider'
 import WorldMap from '@/components/common/world-map'
 import { ContactForm } from '@/components/service/contact-form'
+import ThankYou from '@/components/thankyou'
 import { service_brand_icons } from '@/data/brand-slider-icons-data'
 import React, { useEffect, useRef, useState } from 'react'
 import CountUp from 'react-countup'
 
 function Contact() {
-
+    const [confirmStatus, setConfirmStatus] = useState(false)
     const statsRef = useRef(null)
     const [startCount, setStartCount] = useState(false)
 
@@ -51,7 +52,7 @@ function Contact() {
 
                     {/* RIGHT */}
                     <div className='lg:w-[50%] xl:w-[40%]'>
-                        <ContactForm />
+                        <ContactForm confirmStatus={confirmStatus} setConfirmStatus={setConfirmStatus} />
                     </div>
                 </div>
 
@@ -117,7 +118,7 @@ function Contact() {
                         </div>
                     </div>
                 </div>
-
+                {confirmStatus && <ThankYou confirmStatus={confirmStatus} setConfirmStatus={setConfirmStatus} />}
             </div>
         </div>
     )

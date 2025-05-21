@@ -3,11 +3,12 @@ import { useEffect, useRef, useState } from "react"
 import WorldMap from "../common/world-map"
 import { ContactForm } from "./contact-form"
 import CountUp from "react-countup"
+import ThankYou from "../thankyou"
 
 export default function ServiceContact() {
     const statsRef = useRef(null)
     const [startCount, setStartCount] = useState(false)
-
+    const [confirmStatus, setConfirmStatus] = useState(false)
     useEffect(() => {
         const observer = new IntersectionObserver(
             (entries) => {
@@ -80,7 +81,7 @@ export default function ServiceContact() {
 
                             <div className="stat pl-4 md:pl-0">
                                 <h2 className="text-[38px] md:text-[48px] xl:text-[60px] font-semibold font-['Archivo'] text-[#202020] opacity-[0.8]">
-                                {startCount ? <CountUp start={0} end={8} duration={1} separator="" /> : '0'}<span className="text-primary font-['Archivo'] ">+</span>
+                                    {startCount ? <CountUp start={0} end={8} duration={1} separator="" /> : '0'}<span className="text-primary font-['Archivo'] ">+</span>
                                 </h2>
                                 <p className="text-secondary opacity-[0.6] relative text-[13px] md:text-[18px] bottom-2 leading-[16px] md:leading-[21px] font-['Archivo'] font-medium">
                                     Global Awards
@@ -93,9 +94,10 @@ export default function ServiceContact() {
 
                     {/* Right side - Contact Form */}
                     <div className="lg:w-[40%]">
-                        <ContactForm />
+                        <ContactForm confirmStatus={confirmStatus} setConfirmStatus={setConfirmStatus} />
                     </div>
                 </div>
+                {confirmStatus && <ThankYou confirmStatus={confirmStatus} setConfirmStatus={setConfirmStatus} />}
             </div>
         </div>
     )

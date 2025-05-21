@@ -2,7 +2,8 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 
-export function ContactForm() {
+
+export function ContactForm({ confirmStatus, setConfirmStatus }) {
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -15,9 +16,17 @@ export function ContactForm() {
     const [errorMessage, setErrorMessage] = useState("")
 
     const handleChange = (e) => {
-        const { name, value } = e.target
-        setFormData((prev) => ({ ...prev, [name]: value }))
-    }
+        const { name, value } = e.target;
+
+        if (name === "number") {
+            const cleanedValue = value.replace(/(?!^\+)[^\d]/g, "");
+            setFormData((prev) => ({ ...prev, [name]: cleanedValue }));
+        } else {
+            setFormData((prev) => ({ ...prev, [name]: value }));
+        }
+    };
+
+
 
     const handleSubmit = async (e) => {
         e.preventDefault()
@@ -44,7 +53,8 @@ export function ContactForm() {
                     email: "",
                     number: "",
                     message: "",
-                }) // Reset form fields after successful submission
+                })
+                setConfirmStatus(!confirmStatus)
             } else {
                 setErrorMessage(data.error || "Failed to send the message. Please try again later.")
             }
@@ -63,7 +73,7 @@ export function ContactForm() {
                 {["name", "email", "number"].map((field, i) => (
                     <div key={i} className="space-y-1">
                         <label htmlFor={field} className="block text-base text-[#0D0D0D] font-['Archivo'] font-semibold">
-                            {field.charAt(0).toUpperCase() + field.slice(1)}
+                            {field === "number" ? "Phone Number" : field.charAt(0).toUpperCase() + field.slice(1)}
                         </label>
                         <input
                             type={field === "email" ? "email" : field === "number" ? "tel" : "text"}
@@ -74,7 +84,7 @@ export function ContactForm() {
                                     ? "Please enter your name."
                                     : field === "email"
                                         ? "Please enter your email ID."
-                                        : "Share your mobile number."
+                                        : "Share your phone number."
                             }
                             className="w-full px-4 py-3 rounded-[7px] bg-[#FFF] border text-[16px] border-[#D6D6D6] text-[#808080]  placeholder:text-[#808080]"
                             value={formData[field]}
@@ -159,7 +169,6 @@ export function ContactForm() {
                         {loading ? "Sending..." : "Book a free consultation session"}
                     </span>
                 </motion.button>
-                {/* Everything is right  */}
             </form>
         </div>
     )
