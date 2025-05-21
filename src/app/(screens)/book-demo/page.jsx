@@ -13,6 +13,7 @@ import BrandSlider2 from '@/components/common/bs2'
 function BookDemo() {
   return (
     <div>
+      
       <BookDemoHero />
 
 
