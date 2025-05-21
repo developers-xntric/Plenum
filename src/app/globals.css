@@ -11,52 +11,58 @@
   font-weight: 100;
   font-style: normal;
 }
+
 /* Ticker for top navigation */
 .ticker-wrapper {
-    overflow: hidden;
-    width: 100%;
-  }
-  
+  overflow: hidden;
+  width: 100%;
+}
+
+.ticker-content {
+  display: flex;
+  animation: ticker 15s linear infinite;
+  /* Desktop speed */
+}
+
+.ticker-content button {
+  flex-shrink: 0;
+  /* Prevent buttons from shrinking */
+}
+
+/* Mobile speed (faster) */
+@media (max-width: 767px) {
   .ticker-content {
-    display: flex;
-    animation: ticker 15s linear infinite; /* Desktop speed */
+    animation: ticker 4s linear infinite;
+    /* Mobile speed */
   }
-  
-  .ticker-content button {
-    flex-shrink: 0; /* Prevent buttons from shrinking */
+}
+
+/* Keyframes for right-to-left ticker */
+@keyframes ticker {
+  0% {
+    transform: translateX(0);
   }
-  
-  /* Mobile speed (faster) */
-  @media (max-width: 767px) {
-    .ticker-content {
-      animation: ticker 4s linear infinite; /* Mobile speed */
-    }
+
+  100% {
+    transform: translateX(-50%);
+    /* Moves half the content width for seamless loop */
   }
-  
-  /* Keyframes for right-to-left ticker */
-  @keyframes ticker {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-50%); /* Moves half the content width for seamless loop */
-    }
-  }
-  
-  /* Main carousel (unchanged) */
-  .embla {
-    overflow: hidden;
-  }
-  
-  .embla__container {
-    display: flex;
-    will-change: transform;
-  }
-  
-  .embla__slide {
-    flex: 0 0 100%;
-    min-width: 0;
-  }
+}
+
+/* Main carousel (unchanged) */
+.embla {
+  overflow: hidden;
+}
+
+.embla__container {
+  display: flex;
+  will-change: transform;
+}
+
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
 
 
 /* Archivo Regular weight */
@@ -134,6 +140,7 @@
   .greyish-effect {
     @apply opacity-40 text-6xl font-bold font-['Archivo'];
   }
+
   .text-balance {
     text-wrap: balance;
   }
@@ -154,8 +161,7 @@
 
   .home-section-headings {
     opacity: 0.8;
-    background: url("../../public/images/house-ai-product/smoke.webp")
-      rgb(0, 0, 0) 0% 0% / 73.53749871253967px 73.53749871253967px repeat;
+    background: url("../../public/images/house-ai-product/smoke.webp") rgb(0, 0, 0) 0% 0% / 73.53749871253967px 73.53749871253967px repeat;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -177,12 +183,10 @@
   --primary-color: #ff6035;
   --secondary-color: #101010;
   --gray: #ffffff0d;
-  --liner-gray: linear-gradient(
-    90deg,
-    #10101014 -2.12%,
-    #ffffff14 50.19%,
-    #10101014 101.94%
-  );
+  --liner-gray: linear-gradient(90deg,
+      #10101014 -2.12%,
+      #ffffff14 50.19%,
+      #10101014 101.94%);
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.141 0.005 285.823);
@@ -254,6 +258,7 @@
 }
 
 @keyframes blink {
+
   0%,
   100% {
     opacity: 1;
@@ -329,12 +334,14 @@
   width: 120px;
   /* Size of the circular glow */
   height: 120px;
-  background: radial-gradient(
-    circle,
-    rgba(200, 200, 200, 0.6) 0%,
-    /* Grayish-white center */ rgba(16, 16, 16, 0.4) 50%,
-    /* Dark #101010-like */ transparent 70% /* Fade out */
-  );
+  background: radial-gradient(circle,
+      rgba(200, 200, 200, 0.6) 0%,
+      /* Grayish-white center */
+      rgba(16, 16, 16, 0.4) 50%,
+      /* Dark #101010-like */
+      transparent 70%
+      /* Fade out */
+    );
   border-radius: 50%;
   /* Circular shape */
   z-index: -10;
@@ -464,6 +471,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -475,14 +483,17 @@
     transform: translateY(-20px);
     opacity: 0;
   }
+
   20% {
     transform: translateY(0);
     opacity: 1;
   }
+
   80% {
     transform: translateY(0);
     opacity: 1;
   }
+
   100% {
     transform: translateY(20px);
     opacity: 0;
@@ -492,11 +503,13 @@
 .animate-slide-up {
   animation: slide-up 3s ease-in-out infinite;
 }
+
 @media (min-width: 344px) {
   .video {
     top: 355px;
   }
 }
+
 @media (min-width: 375px) {
   .video {
     top: 250px;

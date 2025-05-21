@@ -44,10 +44,10 @@ const values = [
 
 const tabImages2 = [
     "/product/image-5.svg",
-    "/product/image-6.svg",
     "/product/image-7.svg",
-    "/product/image-8.svg",
     "/product/image-9.svg",
+    "/product/image-6.svg",
+    "/product/image-8.svg",
 ]
 
 const values2 = [
