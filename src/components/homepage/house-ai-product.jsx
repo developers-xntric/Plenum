@@ -151,7 +151,7 @@ export default function HouseAIProduct({ heading, paragraph, card1Para, card2Par
                     "Scalable AI models for retail, industrial, and enterprise supply chain operations are provided by Vertical Builds; these models are made for easy integration and quantifiable effects at scale."}
                 </p>
               </div>
-              <div className="flex  justify-center gap-8 md:gap-12 items-start md:items-center py-4">
+              <div className="flex  justify-center gap-[10px] md:gap-12 items-start md:items-center py-4">
                 <div className="flex flex-col items-center justify-center">
                   <Image
                     src="/home/Real-Estate.svg"
@@ -163,7 +163,7 @@ export default function HouseAIProduct({ heading, paragraph, card1Para, card2Par
                   <p className="text-[12px] md:text-[16px] font-['Archivo'] text-center">Real Estate</p>
                 </div>
 
-                <div className="flex flex-col items-center justify-center">
+                <Link href={"/product//vertical-builds#project-management"} className="flex flex-col items-center justify-center">
                   <Image
                     src="/home/Project-Managment.svg"
                     alt="Real Estate"
@@ -172,8 +172,8 @@ export default function HouseAIProduct({ heading, paragraph, card1Para, card2Par
                     className="w-[50px] h-[55px] xl:w-[90px] xl:h-[110px]  md:w-[65px] md:h-[100px]"
                   />
                   <p className="text-[12px] md:text-[16px] font-['Archivo'] text-center">Project Management</p>
-                </div>
-                <div className="flex flex-col items-center justify-center">
+                </Link>
+                <Link href="/product/vertical-builds#hospital" className="flex flex-col items-center justify-center">
                   <Image
                     src="/home/Hospital.svg"
                     alt="Project Management"
@@ -182,7 +182,7 @@ export default function HouseAIProduct({ heading, paragraph, card1Para, card2Par
                     className="w-[50px] h-[55px] xl:w-[90px] xl:h-[110px] md:w-[120px] md:h-[100px]"
                   />
                   <p className="text-[12px] md:text-[16px] font-['Archivo'] text-center">Hospital</p>
-                </div>
+                </Link>
               </div>
 
 
