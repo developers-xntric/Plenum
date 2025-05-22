@@ -2,7 +2,7 @@
 export default function ThankYou({ confirmStatus, setConfirmStatus }) {
 
     return (
-        <div className="bg-black/70  mx-auto fixed z-50 inset-0 flex items-center justify-center">
+        <div className="bg-black/70  mx-auto fixed z-[999] inset-0 flex items-center justify-center">
 
 
             <div className=" flex flex-col items-center justify-center  w-[80%] h-[70%] mx-auto bg-white p-4 font-['Archivo']">
