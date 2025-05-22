@@ -29,5 +29,5 @@ jobs:
             git pull origin main || git clone https://github.com/${{ github.repository }} .
             yarn install
             yarn build
-            pm2 restart next-app || pm2 start yarn --name "next-app" -- start
+            pm2 restart Plenum || pm2 start yarn --name "Plenum" -- start
           EOF

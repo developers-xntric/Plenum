@@ -6,6 +6,7 @@ import React from 'react'
 const Careers = () => {
     return (
         <div>
+            {/* Casen Hero */}
             <CareerHero
                 heading={"Join Us in Building the Future of Intelligence"}
                 para={"Join a team driving the next generation of intelligent solutions, where innovation is powered by the people behind it."}
