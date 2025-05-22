@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { ArrowUpRight } from 'lucide-react'
 import Link from 'next/link'
 
+// DOne
 
 const ERPSolutions = ({ blackSection }) => {
     return (
