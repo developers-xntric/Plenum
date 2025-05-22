@@ -94,8 +94,11 @@ const VerticalBuilds = () => {
             <AISolutions title={"Develop Scalable Vertical Solutions. No Coding Required "}
                 paragraph={"Vertical Builds empowers your teams to launch customized, industry-ready applications through a low-code framework, cutting development time, reducing costs, and accelerating go-to-market across sectors."}
                 video={"/product/momentum2.mp4"} />
-            <TabsSection values={values} tabImages={tabImages} />
-            <div className="xl:pb-20">
+            <div id="project-management">
+                
+                <TabsSection values={values} tabImages={tabImages} />
+            </div>
+            <div id="hospital" className="xl:pb-20">
                 <TabsSection para={"A comprehensive software solution designed to digitize and streamline every aspect of hospital operations, from patient care to backend administration.​"} heading={"Hospital Management System"} values={values2} tabImages={tabImages2} direction={"row-reverse"} />
             </div>
             <ArticleSlider />
