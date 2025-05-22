@@ -355,7 +355,7 @@ const Navbar = () => {
                         text={"Contact Us"}
                         link="/contact"
                         className={
-                            "bg-[#FF6035] py-[10px] hover:text-white hover:bg-[#101010] transition-all duration-500 px-8 xl:px-10 text-[#000]"
+                            `bg-[#FF6035] py-[10px]  ${scrolled ? 'hover:bg-white hover:text-[#000]' : 'hover:bg-[#101010] hover:text-white'}  transition-all duration-500 px-8 xl:px-10 text-[#000]`
                         }
                     />
                 </div>
