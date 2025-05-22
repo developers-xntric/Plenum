@@ -245,7 +245,7 @@ const Navbar = () => {
 
     return (
         <header
-            className={`z-[999] 2xl:w-[1200px] lg:w-[80%] font-normal font-["Archivo"] mx-auto hidden lg:block fixed -translate-x-1/2 left-1/2 top-6 rounded-[13px] transition-colors duration-500 ${scrolled ? 'bg-[#272727] ' : 'bg-[#fff] border border-[#E2E2E2]'
+            className={`z-[999] 2xl:w-[1200px] lg:w-[80%] font-normal font-["Archivo"] mx-auto hidden lg:block fixed -translate-x-1/2 left-1/2 top-0 rounded-[13px] transition-colors duration-500 ${scrolled ? 'bg-[#272727] ' : 'bg-[#fff] border border-[#E2E2E2]'
                 }`}
         >
 
