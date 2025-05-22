@@ -7,7 +7,6 @@ import BrandSlider from "../common/brand-slider";
 import { useState } from 'react';
 
 import { home_brand_icons } from "@/data/brand-slider-icons-data";
-
 export default function HouseAIProduct({ heading, paragraph, card1Para, card2Para }) {
   const processRef = useRef(null);
   const optimizationRef = useRef(null);
