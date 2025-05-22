@@ -89,7 +89,7 @@ export function ContactForm({ confirmStatus, setConfirmStatus }) {
                             className="w-full px-4 py-3 rounded-[7px] bg-[#FFF] border text-[16px] border-[#D6D6D6] text-[#808080]  placeholder:text-[#808080]"
                             value={formData[field]}
                             onChange={handleChange}
-                            required={field !== "number"}
+                            required
                             data-lpignore="true" // Add this attribute
                         />
                     </div>
