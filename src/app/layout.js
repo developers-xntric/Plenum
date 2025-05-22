@@ -1,11 +1,9 @@
-// app/layout.js (or layout.tsx)
 
 import Navbar from "../components/layout/navbar";
 import "./globals.css";
 import Footer from "../components/layout/footer";
 import MobileNav from "../components/layout/mobile-nav";
 
-// ✅ This is the correct way to include noindex, nofollow in App Router
 export const metadata = {
   title: "Smart ERP Solutions in Middle East",
   description:
