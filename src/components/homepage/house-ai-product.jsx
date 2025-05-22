@@ -151,28 +151,38 @@ export default function HouseAIProduct({ heading, paragraph, card1Para, card2Par
                     "Scalable AI models for retail, industrial, and enterprise supply chain operations are provided by Vertical Builds; these models are made for easy integration and quantifiable effects at scale."}
                 </p>
               </div>
-              <div className="flex flex-wrap justify-center gap-8 md:gap-12 items-center py-4">
-                <Image
-                  src="/home/Frame1.png"
-                  alt="Hospital"
-                  width={70}
-                  height={70}
-                  className="w-[40px] h-[55px] xl:w-[70px] xl:h-[110px] md:w-[65px] md:h-[100px]"
-                />
-                <Image
-                  src="/home/Frame2.png"
-                  alt="Real Estate"
-                  width={70}
-                  height={70}
-                  className="w-[40px] h-[55px] xl:w-[70px] xl:h-[110px]  md:w-[65px] md:h-[100px]"
-                />
-                <Image
-                  src="/home/Frame3.png"
-                  alt="Project Management"
-                  width={70}
-                  height={70}
-                  className="w-[70px] h-[55px] xl:w-[150px] xl:h-[110px] md:w-[120px] md:h-[100px]"
-                />
+              <div className="flex  justify-center gap-8 md:gap-12 items-start md:items-center py-4">
+                <div className="flex flex-col items-center justify-center">
+                  <Image
+                    src="/home/Real-Estate.svg"
+                    alt="Hospital"
+                    width={70}
+                    height={70}
+                    className="w-[50px] h-[55px] xl:w-[90px] xl:h-[110px] md:w-[65px] md:h-[100px]"
+                  />
+                  <p className="text-[12px] md:text-[16px] font-['Archivo'] text-center">Real Estate</p>
+                </div>
+
+                <div className="flex flex-col items-center justify-center">
+                  <Image
+                    src="/home/Project-Managment.svg"
+                    alt="Real Estate"
+                    width={70}
+                    height={70}
+                    className="w-[50px] h-[55px] xl:w-[90px] xl:h-[110px]  md:w-[65px] md:h-[100px]"
+                  />
+                  <p className="text-[12px] md:text-[16px] font-['Archivo'] text-center">Project Management</p>
+                </div>
+                <div className="flex flex-col items-center justify-center">
+                  <Image
+                    src="/home/Hospital.svg"
+                    alt="Project Management"
+                    width={70}
+                    height={70}
+                    className="w-[50px] h-[55px] xl:w-[90px] xl:h-[110px] md:w-[120px] md:h-[100px]"
+                  />
+                  <p className="text-[12px] md:text-[16px] font-['Archivo'] text-center">Hospital</p>
+                </div>
               </div>
 
 
@@ -202,13 +212,13 @@ export default function HouseAIProduct({ heading, paragraph, card1Para, card2Par
                   </div>
                 </div>
               </div> */}
-         
+
             </div>
           </div>
         </div>
-             <BrandSlider
-                text={"Trusted by world's most exciting brands"}
-          brand_icons={home_brand_icons}/>
+        <BrandSlider
+          text={"Trusted by world's most exciting brands"}
+          brand_icons={home_brand_icons} />
       </div>
     </section>
   );
