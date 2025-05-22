@@ -35,14 +35,14 @@ const links = [
 
 const Hero = () => {
     return (
-        <section className='relative z-30 bg-black md:h-[90vh] lg:h-[115vh] xl:h-[850px] 2xl:h-[100vh] overflow-hidden flex flex-col'>
+        <section className='home-hero relative z-30 bg-black md:h-[90vh] lg:h-[115vh] xl:h-[850px] 2xl:h-[100vh] overflow-hidden flex flex-col'>
             <div className='hidden md:block b absolute top-0 xl:-top-20 2xl:-top-40 -translate-x-1/2 left-1/2 w-full -z-15'>
                 <Image src='/home/shade.png' priority height={1000} width={1000} alt='img' className='w-full h-full' />
             </div>
             <div className='md:hidden block h-[150vh] absolute top-0 -translate-x-1/2 left-1/2 w-full -z-15'>
                 <Image src='/home/shade.png' priority height={1000} width={1000} alt='img' className='w-full h-full' />
             </div>
-            <div className='flex w-full md:w-[100%] lg:w-[95%] xl:w-[80%] 2xl:w-[1200px] mx-auto justify-center h-[80vh] md:h-screen mt-32 lg:mt-[18%] xl:mt-44'>
+            <div className='flex w-full md:w-[100%] lg:w-[95%] xl:w-[80%] 2xl:w-[1200px] mx-auto justify-center h-[80vh] md:h-screen mt-32 lg:mt-[18%] xl:mt-[13%] 2xl:mt-[8%]'>
                 <div className='w-full mx-auto flex flex-col gap-4'>
                     <h1 className='max-w-[98%] md:max-w-[100%] lg:max-w-[800px] xl:max-w-[90%] mx-auto text-white 2xl:text-[70px] text-[32px] sm:text-[55px] font-semibold xl:text-[70px] leading-[36px] md:leading-[50px] xl:leading-[71px] 2xl:leading-[75px] font-["Chakra"] text-center'>
                         Empower your<span className='text-primary'> enterprise</span> to think smarter, operate faster, and grow intelligently

@@ -245,7 +245,7 @@ const Navbar = () => {
 
     return (
         <header
-            className={`z-[999] 2xl:w-[1200px] lg:w-[80%] font-normal font-["Archivo"] mx-auto hidden lg:block fixed -translate-x-1/2 left-1/2 top-6 rounded-[13px] transition-colors duration-500 ${scrolled ? 'bg-[#272727] ' : 'bg-[#fff] border border-[#E2E2E2]'
+            className={`z-[999] 2xl:w-[1200px] lg:w-[80%] font-normal font-["Archivo"] mx-auto hidden lg:block fixed -translate-x-1/2 left-1/2 top-0 rounded-[13px] transition-colors duration-500 ${scrolled ? 'bg-[#272727] ' : 'bg-[#fff] border border-[#E2E2E2]'
                 }`}
         >
 
@@ -355,7 +355,7 @@ const Navbar = () => {
                         text={"Contact Us"}
                         link="/contact"
                         className={
-                            "bg-[#FF6035] py-[10px] hover:text-white hover:bg-[#101010] transition-all duration-500 px-8 xl:px-10 text-[#000]"
+                            `bg-[#FF6035] py-[10px]  ${scrolled ? 'hover:bg-white hover:text-[#000]' : 'hover:bg-[#101010] hover:text-white'}  transition-all duration-500 px-8 xl:px-10 text-[#000]`
                         }
                     />
                 </div>
