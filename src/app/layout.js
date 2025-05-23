@@ -7,8 +7,7 @@ import MobileNav from "../components/layout/mobile-nav";
 export const metadata = {
   title: "Smart ERP Solutions in Middle East",
   description:
-    "We deliver AI-powered ERP solutions in the Middle East and across the UAE, tailored to your operations expertly.",
-  robots: "noindex, nofollow", // ✅ This adds <meta name="robots" content="noindex, nofollow" />
+    "We deliver AI-powered ERP solutions in the Middle East and across the UAE, tailored to your operations expertly.",// ✅ This adds <meta name="robots" content="noindex, nofollow" />
 };
 
 export default function RootLayout({ children }) {
