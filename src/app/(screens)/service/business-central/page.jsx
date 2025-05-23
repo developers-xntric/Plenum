@@ -16,6 +16,11 @@ import { businessPage } from '@/data/microsoft'
 import { bc_solution } from '@/data/mobility-solutions'
 import { businessSer, capabilities } from '@/data/services'
 
+export const metadata = {
+  title: 'Explore Microsoft Dynamics 365 Business Central and ERP Solution in UAE',
+  description: "Simplify operations, manage finances, and scale efficiently in Dubai and across the UAE through our Microsoft Dynamics 365 Business Central. ",
+};
+
 const BuisnessCentral = () => {
     return (
         <div>

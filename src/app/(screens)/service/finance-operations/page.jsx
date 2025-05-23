@@ -11,6 +11,11 @@ import { cardData } from '@/data/home-blog';
 import { ERPAccordin } from '@/components/common/accordinService';
 import { finance, financeOpearations, financeOperations } from '@/data/services';
 
+export const metadata = {
+  title: ' Explore Our Microsoft Dynamics 365 Finance and Operations',
+  description: "Discover how Microsoft Dynamics 365 Finance and Operations helps businesses automate financial management.",
+};
+
 const FinanceOpearations = () => {
     return (
         <div>

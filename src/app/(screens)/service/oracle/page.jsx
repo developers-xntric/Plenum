@@ -15,6 +15,12 @@ import { cardData } from '@/data/home-blog'
 import { testimonials } from '@/data/home-testimonials'
 import { oracle, OracleServiceItems } from '@/data/services'
 
+
+export const metadata = {
+  title: 'Outstanding Oracle Cloud ERP Experts in Dubai',
+  description: "Discover expert Oracle Cloud ERP services to streamline operations without any additional hassle. ",
+};
+
 const Oracle = () => {
     return (
         <div>

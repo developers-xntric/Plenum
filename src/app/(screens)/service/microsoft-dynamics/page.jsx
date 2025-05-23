@@ -18,6 +18,12 @@ import { md_solutions } from '@/data/mobility-solutions'
 import { services } from '@/data/microsoft'
 // import OracleOneStopShop from '@/components/service/oracle-net-suite/oracle-one-stop-shop'
 
+
+export const metadata = {
+  title: 'Explore Microsoft Dynamics 365 Solutions with ERP & CRM Experts ',
+  description: "Discover tailored Microsoft Dynamics solutions your certified Microsoft Dynamics partner in the UAE.",
+};
+
 const MicrosoftDynamics = () => {
     return (
         <div>
