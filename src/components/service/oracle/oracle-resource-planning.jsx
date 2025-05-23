@@ -57,9 +57,9 @@ export default function OracleResourcePlanning() {
 
                                     {/* Right Section - Text */}
                                     <div className="w-full lg:w-1/2 lg:p-4 space-y-4">
-                                        <h1 className="text-[25px] lg:text-[28px]  text-start lg:max-w-[80%] 2xl:max-w-[60%] font-['Archivo'] text-secondary font-semibold home-section-headings">
+                                        <h3 className="text-[25px] lg:text-[28px]  text-start lg:max-w-[80%] 2xl:max-w-[60%] font-['Archivo'] text-secondary font-semibold home-section-headings">
                                             Seamless Service Integration
-                                        </h1>
+                                        </h3>
                                         <p className="text-secondary text-start font-['Archivo'] opacity-75 w-[45% xl:max-w-[85%] ">
                                             Unify your business functions with Oracle ERP's seamless service integration. Break down data silos and connect departments effortlessly across your enterprise. Experience smoother workflows and enhanced productivity from end to end.
                                         </p>
@@ -84,9 +84,9 @@ export default function OracleResourcePlanning() {
 
                                 {/* Right Section - Text */}
                                 <div className="w-full lg:w-1/2 lg:p-4 space-y-4">
-                                    <h1 className="text-[25px] lg:text-[28px]  text-start lg:max-w-[80%] 2xl:max-w-[60%] font-['Archivo'] text-secondary font-semibold home-section-headings">
+                                    <h3 className="text-[25px] lg:text-[28px]  text-start lg:max-w-[80%] 2xl:max-w-[60%] font-['Archivo'] text-secondary font-semibold home-section-headings">
                                         Connected Cloud Platforms
-                                    </h1>
+                                    </h3>
                                     <p className="text-secondary text-start font-['Archivo'] opacity-75 w-[45% xl:max-w-[85%] ">
                                         Harness the power of connected cloud platforms with Oracle ERP.  Enable flexible, scalable operations across locations and teams. Stay agile with real-time data access and unified business management
                                     </p>
@@ -109,9 +109,9 @@ export default function OracleResourcePlanning() {
 
                                 {/* Right Section - Text */}
                                 <div className="w-full lg:w-1/2 lg:p-4 space-y-4">
-                                    <h1 className="text-[25px] lg:text-[28px]  text-start lg:max-w-[80%] 2xl:max-w-[60%] font-['Archivo'] text-secondary font-semibold home-section-headings">
+                                    <h3 className="text-[25px] lg:text-[28px]  text-start lg:max-w-[80%] 2xl:max-w-[60%] font-['Archivo'] text-secondary font-semibold home-section-headings">
                                         Real-time Financial Insights
-                                    </h1>
+                                    </h3>
                                     <p className="text-secondary text-start font-['Archivo'] opacity-75 w-[45% xl:max-w-[85%] ">
                                         Make smarter decisions with real-time financial insights at your fingertips. Track budgets, forecasts, and performance metrics as they happen. Empower your finance team with up-to-date, actionable intelligence.
                                     </p>
@@ -134,9 +134,9 @@ export default function OracleResourcePlanning() {
 
                                 {/* Right Section - Text */}
                                 <div className="w-full lg:w-1/2 lg:p-4 space-y-4">
-                                    <h1 className="text-[25px] lg:text-[28px]  text-start lg:max-w-[80%] 2xl:max-w-[60%] font-['Archivo'] text-secondary font-semibold home-section-headings">
+                                    <h3 className="text-[25px] lg:text-[28px]  text-start lg:max-w-[80%] 2xl:max-w-[60%] font-['Archivo'] text-secondary font-semibold home-section-headings">
                                         Tailored Workflow Automation
-                                    </h1>
+                                    </h3>
                                     <p className="text-secondary text-start font-['Archivo'] opacity-75 w-[45% xl:max-w-[85%] ">
                                         Automate repetitive tasks with workflows designed around your needs. Increase efficiency, reduce human error, and save valuable time. Customize processes to match your business model and scale effortlessly.
                                     </p>

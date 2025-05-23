@@ -15,9 +15,9 @@ export default function OracleOneStopShop() {
             <div className="2xl:max-w-[1440px] w-[90%] mx-auto space-y-16">
                 {/* Headings */}
                 <div className="space-y-6">
-                    <h1 className="text-[30px] lg:text-[50px] leading-[35px] md:w-[350px] lg:w-[550px] mx-auto lg:leading-[55px] font-['Archivo'] text-secondary font-semibold home-section-headings">
+                    <h2 className="text-[30px] lg:text-[50px] leading-[35px] md:w-[350px] lg:w-[550px] mx-auto lg:leading-[55px] font-['Archivo'] text-secondary font-semibold home-section-headings">
                         Trusted Oracle NetSuite Partners in the Region
-                    </h1>
+                    </h2>
                     <p className="text-secondary font-['Archivo'] font-medium opacity-75 mx-auto md:w-[60%] lg:w-[35%] xl:max-w-[40%] 2xl:max-w-[30%]">
                         Whether you're looking for NetSuite consulting partners or full-service ERP support, we’ve got you covered.
                     </p>

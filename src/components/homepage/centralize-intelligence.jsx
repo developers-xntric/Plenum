@@ -12,7 +12,7 @@ export default function CentralizeIntelligence() {
                 <div className="flex lg:flex-row flex-col text-center md:text-left items-center justify-between gap-5 md:gap-12">
                     {/* Column 1 */}
                     <div className="space-y-4 max-w-[50%">
-                        <h3 className="font-semibold font-['Archivo'] xl:w-[80%]  2xl:w-[70%] text-black text-[20px] lg:max-w-[300px]">Exceptional Design Meets Enterprise Functionality</h2>
+                        <h3 className="font-semibold font-['Archivo'] xl:w-[80%]  2xl:w-[70%] text-black text-[20px] lg:max-w-[300px]">Exceptional Design Meets Enterprise Functionality</h3>
                         <p className="text-[15.232px] font-medium tracking-tight text-black opacity-[0.6]  xl:max-w-[92%] py-2 ">
                             At Plenum, we don’t compromise on talent. We only hire senior level designers with deep expertise across disciplines from UX to business systems so your project is always in the hands of specialists.
                         </p>

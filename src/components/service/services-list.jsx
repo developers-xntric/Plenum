@@ -14,7 +14,7 @@ export default function ServicesList({ serviceList }) {
                         <div key={service.id} className="relative ">
                             <div className="flex items-center mb-6">
                                 <div className="flex items-center justify-center lg:w-10 w-14 md:w-18 h-[50px] md:h-[60px] rounded-[208px] border-[0.90px] border-secondary text-lg font-semibold">
-                                    <h1 className="text-secondary text-[20px] md:text-[24px] font-['Archivo']">{service.id}</h1>
+                                    <span className="text-secondary text-[20px] md:text-[24px] font-['Archivo']">{service.id}</span>
                                 </div>
                                 {/* THE BORDER LINE */}
                                 <svg
@@ -39,13 +39,13 @@ export default function ServicesList({ serviceList }) {
 
                                     <div className="space-y-4">
                                         {/* TITLE */}
-                                        <h2>
+                                        <span>
                                             {service.title.map((title, i) => (
                                                 <p key={i} className="text-xl lg:text-2xl 2xl:text-3xl text-secondary text-center md:text-left font-semibold font-['Archivo']">
                                                     {title}
                                                 </p>
                                             ))}
-                                        </h2>
+                                        </span>
 
                                         <p className="text-secondary text-[15px] lg:text-[17px] text-center md:text-left opacity-[0.6] font-['Archivo'] mb-6 lg:max-w-[95%] xl:max-w-[80%] font-medium 2xl:max-w-[80%]">{service.description}</p>
                                     </div>
