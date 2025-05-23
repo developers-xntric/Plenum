@@ -229,12 +229,12 @@ export default function HomeServices() {
             {/* LEFT */}
             <div className="space-y-2 lg:space-y-6 text-center md:text-left w-full lg:w-[80%]">
               <div className="relative font-medium">
-                <h2 className="text-[30px] lg:text-[50px] xl:text-[57.375px] font-semibold text-secondary opacity-[0.8] inline-block md:block font-['Archivo'] tracking-tighter">
+                <span className="text-[30px] lg:text-[50px] xl:text-[57.375px] font-semibold text-secondary opacity-[0.8] inline-block md:block font-['Archivo'] tracking-tighter">
                   Our
-                </h2>
-                <h2 className="text-[30px] lg:text-[50px] xl:text-[57.375px] font-semibold text-secondary opacity-[0.8] inline-block lg:block md:mx-0 mx-2 font-['Archivo'] tracking-tighter mt-[-32px]">
+                </span>
+                <span className="text-[30px] lg:text-[50px] xl:text-[57.375px] font-semibold text-secondary opacity-[0.8] inline-block lg:block md:mx-0 mx-2 font-['Archivo'] tracking-tighter mt-[-32px]">
                   Services
-                </h2>
+                </span>
               </div>
               <div className="space-y-5">
                 <p className="text-[14px] md:text-[15px] text-secondary w-full md:w-[80%]  xl:max-w-[70%] leading-[20px] font-normal font-['Archivo'] opacity-75">

@@ -23,7 +23,7 @@ const Service = () => {
                 heading={"Scalable Expertise When You Need It"}
                 text={"With smart, scalable solutions catered to your company's specific requirements, you can revolutionize the way you operate and empower your employees across departments."}
             />
-            <ServicesList serviceList={ServiceList} />
+            <ServicesList serviceList={ServiceList} /> 
 
             <ArticleSlider title={"Discover Our Articles"} paragraph={"Insights & practical knowledge designed to help you navigate the digital landscape effectively. "} />
             <Blog heading='Discover Our Blogs' para="Stay updated with our ongoing blogs inclusive of tips, case study examples and expert views around the usage of AI, cloud services and ERP solutions to support business growth and operational effectiveness." cardData={cardData} />

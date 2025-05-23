@@ -26,9 +26,9 @@ export default function BrandSlider({ text, brand_icons, width }) {
         <div className="relative overflow-hidden flex items-center w-full h-full">
             {/* Left side - Text */}
             <div className="relative z-30 -top-0 md:bg-white ">
-                <h2 className="text- text-white  opacity-0 blur-2xl text-base leading-[20px] font-medium font-['Archivo'] w-[10px] md:block hidden">
+                <span className="text- text-white  opacity-0 blur-2xl text-base leading-[20px] font-medium font-['Archivo'] w-[10px] md:block hidden">
                     {text}
-                </h2>
+                </span>
                 <div className="absolute md:-right-20 -top-4 md:top-0 h-32 md:h-96 w-10 md:w-20 bg-gradient-to-r from-white via-white/70 to-transparent z-20 pointer-events-none" />
             </div>
 

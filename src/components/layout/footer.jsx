@@ -43,7 +43,7 @@ export default function Footer() {
               <div className="">
                 <Image src="/layout/footer-circle.webp" width={420} height={450} alt="footer-circle" className="" />
                 <div className="flex flex-col items-center justify-center text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full">
-                  <h3 className="text-3xl md:text-xl lg:text-3xl font-medium lg:mb-1 font-['Archivo']">Transform vision</h3>
+                  <span className="text-3xl md:text-xl lg:text-3xl font-medium lg:mb-1 font-['Archivo']">Transform vision</span>
                   <p className="text-3xl md:text-xl lg:text-3xl  font-medium mb-7 font-['Archivo']">into impact</p>
                   <Link href="/contact" className="w-fit" >
                   <ArrowButton text={"Let's talk strategy"} />
@@ -54,7 +54,7 @@ export default function Footer() {
 
             <div className="flex justify-between lg:flex-row md:flex-col  gap-x-16 md:gap-x-12 gap-y-2 p-6 md:p-0">
               <div>
-                <h3 className="text-[#767676] mb-4 text-lg md:text-base xl:text-lg font-bold font-['Archivo']">Company</h3>
+                <span className="text-[#767676] mb-4 text-lg md:text-base xl:text-lg font-bold font-['Archivo']">Company</span>
                 <ul className="space-y-1 font-normal md:text-sm xl:text-base font-['Archivo']">
                   <li>
                     <Link href="/about" className="hover:text-gray-300">
@@ -77,7 +77,7 @@ export default function Footer() {
               </div>
 
               <div>
-                <h3 className="text-[#767676] mb-4 text-lg md:text-base xl:text-lg font-bold font-['Archivo']">Services</h3>
+                <span className="text-[#767676] mb-4 text-lg md:text-base xl:text-lg font-bold font-['Archivo']">Services</span>
                 <ul className="space-y-1 font-normal md:text-sm xl:text-base font-['Archivo']">
                   <li>
                     <Link href="/service/microsoft-dynamics" className="hover:text-gray-300">
@@ -115,7 +115,7 @@ export default function Footer() {
             <div className="">
               <Image src="/layout/footer-circle.webp" width={420} height={450} alt="footer-circle" className="" />
               <div className="flex flex-col items-center justify-center text-center absolute bottom-[38%] lg:bottom-[0%] xl:bottom-0 lg:top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full">
-                <h3 className="md:text-xl lg:text-4xl font-semibold lg:mb-1 font-['Archivo']">Transform vision</h3>
+                <span className="md:text-xl lg:text-4xl font-semibold lg:mb-1 font-['Archivo']">Transform vision</span>
                 <p className="md:text-xl lg:text-4xl  font-semibold mb-7 font-['Archivo']">into impact</p>
                 <Link href="/contact" className="w-fit" >
                   <ArrowButton text={"Let's talk strategy"} />
@@ -128,7 +128,7 @@ export default function Footer() {
           <div className="md:mt-[20%] lg:mt-[15%] xl:mt-[9%] 2xl:max-w-[1440px] w-full sm:w-[70%] md:w-auto mx-auto md:mx-0 ">
             <div className="flex gap-x-[12%]  sm:gap-x-8 md:gap-x-8 gap-y-2 mx-auto md:mx-0 max-w-[85%] md:max-w-[100%]">
               <div>
-                <h3 className="text-[#767676] mb-2 text-lg md:text-base xl:text-lg font-bold font-['Archivo']">Legal</h3>
+                <span className="text-[#767676] mb-2 text-lg md:text-base xl:text-lg font-bold font-['Archivo']">Legal</span>
                 <ul className="space-y-1 md:text-sm xl:text-base font-['Archivo']">
                   <li>
                     <Link href="/terms" className="hover:text-gray-300 ">
@@ -149,7 +149,7 @@ export default function Footer() {
               </div>
 
               <div>
-                <h3 className="text-[#767676] relative top-1 mb-4 text-lg md:text-base xl:text-lg font-bold font-['Archivo'] leading-5">Contact Us</h3>
+                <span className="text-[#767676] relative top-1 mb-4 text-lg md:text-base xl:text-lg font-bold font-['Archivo'] leading-5">Contact Us</span>
                 <ul className="space-y-1 md:text-sm xl:text-base font-['Archivo']">
                   <li>
                     <Link href="mailto:info@plenum-tech.com"  className="hover:text-gray-300">

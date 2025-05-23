@@ -6,7 +6,7 @@ const Banner = ({ heading, para, button, paraClass }) => {
             <div className='2xl:max-w-[1440px] w-[90%] mx-auto'>
                 <div className="max-w-[70%] 2xl:max-w-[55%] xl:max-w-[60%] ml-2 mx-auto  grid lg:grid-cols-2 items-center">
                     <div>
-                        <h2 className="text-[#FF6035] font-['Chakra'] text-[32px] lg:text-[60px] font-medium">{heading}</h2>
+                        <h1 className="text-[#FF6035] font-['Chakra'] text-[32px] lg:text-[60px] font-medium">{heading}</h1>
                     </div>
                     <div className={`${paraClass ? paraClass : "lg:max-w-[95%]"}`}>
                         <p className="text-[#FFFFFF] font-light text-[15px] lg:text-[22px] leading-[25px] md:leading-[29px]">

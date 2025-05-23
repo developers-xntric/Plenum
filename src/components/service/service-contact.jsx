@@ -49,9 +49,9 @@ export default function ServiceContact() {
                         {/* Stats */}
                         <div ref={statsRef} className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-8 font-['Archivo'] place-items-center md:place-items-start">
                             <div className="stat ">
-                                <h2 className="text-[38px] md:text-[48px] xl:text-[60px] font-semibold flex items-center font-['Archivo'] text-[#202020] opacity-[0.8]">
+                                <span className="text-[38px] md:text-[48px] xl:text-[60px] font-semibold flex items-center font-['Archivo'] text-[#202020] opacity-[0.8]">
                                     {startCount ? <CountUp start={0} end={1} duration={1} separator="" /> : '0'}k <span className="text-primary font-['Archivo'] ">+</span>
-                                </h2>
+                                </span>
                                 <p className="text-secondary opacity-[0.6] relative text-[13px] md:text-[18px] bottom-2 leading-[16px] md:leading-[21px] font-['Archivo'] font-medium">
                                     Projects
                                     <br />
@@ -60,9 +60,9 @@ export default function ServiceContact() {
                             </div>
 
                             <div className="stat ">
-                                <h2 className="text-[38px] md:text-[48px] xl:text-[60px] font-semibold font-['Archivo'] text-[#202020] opacity-[0.8]">
+                                <span className="text-[38px] md:text-[48px] xl:text-[60px] font-semibold font-['Archivo'] text-[#202020] opacity-[0.8]">
                                     {startCount ? <CountUp start={0} end={50} duration={1} separator="" /> : '0'}<span className="text-primary font-['Archivo'] ">+</span>
-                                </h2>
+                                </span>
                                 <p className="text-secondary opacity-[0.6] relative text-[13px] md:text-[18px] bottom-2 leading-[16px] md:leading-[21px] font-['Archivo'] font-medium">
                                     Global
                                     <br />
@@ -71,9 +71,9 @@ export default function ServiceContact() {
                             </div>
 
                             <div className="stat ">
-                                <h2 className="text-[38px] md:text-[48px] xl:text-[60px] font-semibold font-['Archivo'] text-[#202020] opacity-[0.8]">
+                                <span className="text-[38px] md:text-[48px] xl:text-[60px] font-semibold font-['Archivo'] text-[#202020] opacity-[0.8]">
                                     {startCount ? <CountUp start={0} end={200} duration={1} separator="" /> : '0'}<span className="text-primary font-['Archivo'] ">+</span>
-                                </h2>
+                                </span>
                                 <p className="text-secondary opacity-[0.6] relative text-[13px] md:text-[18px] bottom-2 leading-[16px] md:leading-[21px] font-['Archivo'] font-medium">
                                     Companies
                                     <br />
@@ -82,9 +82,9 @@ export default function ServiceContact() {
                             </div>
 
                             <div className="stat pl-4 md:pl-0">
-                                <h2 className="text-[38px] md:text-[48px] xl:text-[60px] font-semibold font-['Archivo'] text-[#202020] opacity-[0.8]">
+                                <span className="text-[38px] md:text-[48px] xl:text-[60px] font-semibold font-['Archivo'] text-[#202020] opacity-[0.8]">
                                     {startCount ? <CountUp start={0} end={8} duration={1} separator="" /> : '0'}<span className="text-primary font-['Archivo'] ">+</span>
-                                </h2>
+                                </span>
                                 <p className="text-secondary opacity-[0.6] relative text-[13px] md:text-[18px] bottom-2 leading-[16px] md:leading-[21px] font-['Archivo'] font-medium">
                                     Global Awards
                                     <br />

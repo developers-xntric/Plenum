@@ -62,9 +62,9 @@ const PinkSection = ({ heading, text, show_button = false, className, isVideo = 
 
           {/* Centered Content */}
           <div className="relative z-20 h-full flex flex-col justify-center items-center text-center px-4">
-            <h2 className="text-secondary text-[30px] lg:text-[40px] md:max-w-[70%] xl:text-[45px] font-['Archivo'] font-semibold home-section-headings leading-[34px] lg:leading-[56px]">
+            <h3 className="text-secondary text-[30px] lg:text-[40px] md:max-w-[70%] xl:text-[45px] font-['Archivo'] font-semibold home-section-headings leading-[34px] lg:leading-[56px]">
               {heading}
-            </h2>
+            </h3>
             <p className="text-secondary opacity-60 md:text-[14px] xl:text-[18px] font-medium mt-4 font-['Archivo'] max-w-[790px]">
               {text}
             </p>

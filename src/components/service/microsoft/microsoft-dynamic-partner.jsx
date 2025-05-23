@@ -14,12 +14,12 @@ export default function MicrosoftDynamicPartner() {
       <div className="2xl:max-w-[1440px] w-[90%] mx-auto space-y-16">
         {/* Headings */}
         <div className="space-y-6">
-          <h1 className="text-[30px] lg:text-[50px] leading-[34px] lg:leading-[55px] sm:w-[400px] lg:w-[700px] mx-auto text-center font-['Archivo'] text-secondary font-semibold home-section-headings">
+          <h2 className="text-[30px] lg:text-[50px] leading-[34px] lg:leading-[55px] sm:w-[400px] lg:w-[700px] mx-auto text-center font-['Archivo'] text-secondary font-semibold home-section-headings">
             Your Trusted Microsoft Dynamics Partner
             {/* <span className="block text-[30px] lg:text-[50px] leading-[34px] lg:leading-[55px] font-['Archivo'] text-secondary font-semibold">
               with Diverse Expertise
             </span> */}
-          </h1>
+          </h2>
           <p className="text-secondary font-medium font-['Archivo'] sm:text-lg opacity-75 mx-auto  lg:w-[70%] xl:max-w-[50%]">
             With over 15 years of hands-on experience, Plenum specializes in delivering tailored solutions across the Microsoft Dynamics ecosystem, including ERPs, CRMs, industry-specific modules, and advanced analytics dashboards.
           </p>
@@ -59,9 +59,9 @@ export default function MicrosoftDynamicPartner() {
 
                 {/* Right Section - Text */}
                 <div className="w-full lg:w-1/2 lg:p-4 space-y-4">
-                  <h2 className="text-[25px] md:text-3xl  text-start lg:max-w-[80%] 2xl:max-w-[60%] font-['Archivo'] text-secondary font-semibold opacity-95">
+                  <h3 className="text-[25px] md:text-3xl  text-start lg:max-w-[80%] 2xl:max-w-[60%] font-['Archivo'] text-secondary font-semibold opacity-95">
                     Modular Solutions
-                  </h2>
+                  </h3>
                   <p className="text-secondary text-start font-medium font-['Archivo'] opacity-75 w-[45% xl:max-w-[85%] ">
                     Customize your Microsoft Dynamics setup with industry-specific modules tailored to your needs. Achieve greater flexibility, faster deployment, and targeted functionality that grows with your business.
                   </p>
@@ -84,9 +84,9 @@ export default function MicrosoftDynamicPartner() {
 
                 {/* Right Section - Text */}
                 <div className="w-full lg:w-1/2 lg:p-4 space-y-4">
-                  <h2 className="text-[25px] md:text-3xl  text-start lg:max-w-[80%] 2xl:max-w-[60%] font-['Archivo'] text-secondary font-semibold opacity-95">
+                  <h3 className="text-[25px] md:text-3xl  text-start lg:max-w-[80%] 2xl:max-w-[60%] font-['Archivo'] text-secondary font-semibold opacity-95">
                     Dynamics ERP Solutions
-                  </h2>
+                  </h3>
                   <p className="text-secondary text-start font-medium font-['Archivo'] opacity-75 w-[45% xl:max-w-[85%] ">
                     Streamline core business operations with powerful, scalable ERP systems. Enhance productivity, unify departments, and make smarter decisions with real-time data and automation.
                   </p>
@@ -109,9 +109,9 @@ export default function MicrosoftDynamicPartner() {
 
                 {/* Right Section - Text */}
                 <div className="w-full lg:w-1/2 lg:p-4 space-y-4">
-                  <h2 className="text-[25px] md:text-3xl  text-start lg:max-w-[80%] 2xl:max-w-[60%] font-['Archivo'] text-secondary font-semibold opacity-95">
+                  <h3 className="text-[25px] md:text-3xl  text-start lg:max-w-[80%] 2xl:max-w-[60%] font-['Archivo'] text-secondary font-semibold opacity-95">
                     Dynamics 365 CE/CRM
-                  </h2>
+                  </h3>
                   <p className="text-secondary text-start font-medium font-['Archivo'] opacity-75 w-[45% xl:max-w-[85%] ">
                     Boost customer engagement and sales performance with intelligent CRM tools tailored to your business. Track leads, manage relationships, and deliver personalized experiences across every touchpoint.
                   </p>
