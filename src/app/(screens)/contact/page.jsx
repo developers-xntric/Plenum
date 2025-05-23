@@ -41,7 +41,7 @@ function Contact() {
                     <div className='lg:w-[40%] xl:w-[50%] space-y-8 md:space-y-10 lg:space-y-40'>
                         {/* HEADING AND PARA*/}
                         <div className='space-y-3 md:space-y-5'>
-                            <h2 className='text-[30px] md:text-4xl lg:text-5xl xl:text-[60px] font-["Chakra"] tracking-[-2.771px] font-semibold text-primary'>Contact us</h2>
+                            <h1 className='text-[30px] md:text-4xl lg:text-5xl xl:text-[60px] font-["Chakra"] tracking-[-2.771px] font-semibold text-primary'>Contact us</h1>
                             <p className="lg:w-[100%] xl:w-[436px] opacity-60 justify-center text-[#0f0f0f] text-[15px] md:text-lg font-medium font-['Archivo'] leading-[22px] md:leading-[27px]">Ready to boost operational efficiency and drive innovation at scale? Get in touch with us to explore strategic solutions built for enterprise success.</p>
                         </div>
 
@@ -94,10 +94,10 @@ function Contact() {
                         </div>
 
                         <div className="stat md:border-b">
-                            <h2 className="text-[38px] md:text-[48px] xl:text-[70px] font-semibold font-['Archivo'] text-[#101010]">
+                            <span className="text-[38px] md:text-[48px] xl:text-[70px] font-semibold font-['Archivo'] text-[#101010]">
                                 {startCount ? <CountUp start={0} end={200} duration={1} separator="," /> : '0'}
                                 <span className="text-primary font-['Archivo'] ">+</span>
-                            </h2>
+                            </span>
                             <p className="text-secondary opacity-[0.6] relative text-[13px] md:text-[18px] bottom-2 leading-[16px] md:leading-[21px] font-['Archivo'] font-medium">
                                 Companies
                                 <br />
@@ -106,10 +106,10 @@ function Contact() {
                         </div>
 
                         <div className="stat md:border-b">
-                            <h2 className="text-[38px] md:text-[48px] xl:text-[70px] font-semibold font-['Archivo'] text-[#101010]">
+                            <span className="text-[38px] md:text-[48px] xl:text-[70px] font-semibold font-['Archivo'] text-[#101010]">
                                 {startCount ? <CountUp start={0} end={8} duration={1} separator="," /> : '0'}
                                 <span className="text-primary font-['Archivo'] ">+</span>
-                            </h2>
+                            </span>
                             <p className="text-secondary opacity-[0.6] relative text-[13px] md:text-[18px] bottom-2 leading-[16px] md:leading-[21px] font-['Archivo'] font-medium">
                                 Global Awards
                                 <br />
