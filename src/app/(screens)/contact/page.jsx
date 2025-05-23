@@ -118,7 +118,7 @@ function Contact() {
                         </div>
                     </div>
                 </div>
-                {confirmStatus && <ThankYou confirmStatus={confirmStatus} setConfirmStatus={setConfirmStatus} />}
+                {/* {confirmStatus && <ThankYou confirmStatus={confirmStatus} setConfirmStatus={setConfirmStatus} />} */}
             </div>
         </div>
     )
