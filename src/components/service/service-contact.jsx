@@ -4,6 +4,7 @@ import WorldMap from "../common/world-map"
 import { ContactForm } from "./contact-form"
 import CountUp from "react-countup"
 import ThankYou from "../thankyou"
+import { useRouter } from "next/navigation"
 
 export default function ServiceContact() {
     const statsRef = useRef(null)
@@ -25,6 +26,7 @@ export default function ServiceContact() {
         if (statsRef.current) {
             observer.observe(statsRef.current)
         }
+
 
         return () => observer.disconnect()
     }, [])
@@ -97,7 +99,7 @@ export default function ServiceContact() {
                         <ContactForm confirmStatus={confirmStatus} setConfirmStatus={setConfirmStatus} />
                     </div>
                 </div>
-                {confirmStatus && <ThankYou confirmStatus={confirmStatus} setConfirmStatus={setConfirmStatus} />}
+                {/* {confirmStatus && <ThankYou confirmStatus={confirmStatus} setConfirmStatus={setConfirmStatus} />} */}
             </div>
         </div>
     )
