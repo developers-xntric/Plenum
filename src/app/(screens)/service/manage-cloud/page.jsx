@@ -12,6 +12,11 @@ import { ERPAccordin } from '@/components/common/accordinService';
 import { cloud, cloudAccor2 } from '@/data/services';
 import { testimonials } from '@/data/home-testimonials';
 
+export const metadata = {
+  title: 'Scalable, Secure & 24/7 Cloud Management Solutions',
+  description: "Get expert-managed cloud services with 24/7 support, scalability, and security.",
+};
+
 
 const ManageCloud = () => {
     return (

@@ -10,6 +10,12 @@ import ArticleSlider from '@/components/common/article-slider'
 import { Blog } from '@/components/homepage/blog'
 import { cardData } from '@/data/home-blog'
 
+export const metadata = {
+  title: 'Plenum Services | Digital Transformation & AI Solutions',
+  description: "Explore Plenum's innovative services in AI, cloud, and digital transformation tailored to accelerate your business growth.",
+};
+
+
 const Service = () => {
     return (
         <div>

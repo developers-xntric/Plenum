@@ -11,6 +11,11 @@ import { testimonials } from '@/data/home-testimonials';
 import ArticleSlider from "@/components/common/article-slider";
 import ERPC2 from '@/components/service/ERP-Cosultant/ERPC2';
 
+export const metadata = {
+  title: 'Top Notch AI Consulting, Governance & Implementation',
+  description: "Explore expert AI consulting, responsible governance, and end-to-end implementation services. ",
+};
+
 
 const AiConsulting = () => {
     return (

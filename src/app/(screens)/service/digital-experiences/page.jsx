@@ -13,6 +13,13 @@ import { ERPAccordin } from '@/components/common/accordinService';
 import { digitalItem1, digitalItem2 } from '@/data/services';
 
 
+export const metadata = {
+  title: 'Transformative Digital Experiences and Unmatched Solutions',
+  description: "Create seamless, user-centric digital experiences with Plenum’s UI/UX, web, and mobile solutions.",
+};
+
+
+
 const DigitalExperiences = () => {
     return (
         <div>

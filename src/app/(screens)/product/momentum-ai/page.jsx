@@ -12,6 +12,13 @@ import { service_brand_icons } from "@/data/brand-slider-icons-data"
 import { cardData } from "@/data/home-blog"
 import { momentumaiservices } from "@/data/momentum-ai-service"
 
+export const metadata = {
+  title: 'Momentum AI by Plenum | Transform Business with AI',
+  description: "Leverage Momentum AI to boost operational efficiency, automate processes, and drive intelligent decision-making at scale.",
+};
+
+
+
 const MomentumAI = () => {
     return (
         <div>
