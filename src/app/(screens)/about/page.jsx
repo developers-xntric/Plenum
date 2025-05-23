@@ -10,6 +10,11 @@ import About4 from '@/components/about/about-4'
 import OurPeopleSection from '@/components/about/our-people'
 import React from 'react'
 
+export const metadata = {
+  title: 'About Plenum | AI Innovators Powering Digital Change',
+  description: 'Learn about Plenum’s mission, vision, and leadership in AI-powered innovation and enterprise technology solutions.',
+};
+
 const About = () => {
   return (
     <div>

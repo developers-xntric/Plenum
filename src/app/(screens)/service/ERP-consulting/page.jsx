@@ -11,6 +11,10 @@ import { testimonials } from '@/data/home-testimonials';
 import ArticleSlider from "@/components/common/article-slider";
 import ERPC2 from '@/components/service/ERP-Cosultant/ERPC2';
 
+export const metadata = {
+  title: 'Top ERP Consulting and Implementation Services ',
+  description: 'Streamline your business operations with expert ERP consulting and implementation services. ',
+};
 
 const ERPConsulting = () => {
     return (

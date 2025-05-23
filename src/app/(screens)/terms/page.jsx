@@ -1,6 +1,11 @@
 import Image from 'next/image'
 import React from 'react'
 
+export const metadata = {
+  title: 'Plenum Terms & Conditions | User Agreement',
+  description: "Read the terms and conditions for using Plenum's website, products, and services, including legal disclaimers and user rights.",
+};
+
 const Terms = () => {
     return (
         <div>

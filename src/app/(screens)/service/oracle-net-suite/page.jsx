@@ -14,6 +14,12 @@ import { testimonials } from '@/data/home-testimonials'
 import { MicrosoftCarouselData } from '@/data/microsoft-carousel'
 import React from 'react'
 
+export const metadata = {
+  title: 'Oracle NetSuite ERP Solutions Consulting & Integration ',
+  description: 'Plenum is a leading Oracle NetSuite partner in Dubai, offering ERP implementation tailored for UAE businesses.',
+};
+
+
 const OracleNetSuite = () => {
     return (
         <div>

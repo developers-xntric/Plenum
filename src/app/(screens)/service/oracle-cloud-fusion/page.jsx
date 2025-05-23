@@ -11,6 +11,11 @@ import { cardData } from '@/data/home-blog'
 import { testimonials } from '@/data/home-testimonials'
 import { fusion, fusionTabs } from '@/data/services'
 
+export const metadata = {
+  title: 'Oracle Fusion Cloud is revolutionizing Business Operations',
+  description: 'Discover how Oracle Fusion Cloud applications transform business processes with integrated solutions.',
+};
+
 const OracleCloudFusion = () => {
     return (
         <div>

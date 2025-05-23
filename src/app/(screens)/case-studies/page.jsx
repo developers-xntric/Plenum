@@ -3,6 +3,13 @@ import CaseHero from '@/components/common/case-hero'
 import ListingPage from '@/components/casestudy/listing'
 import PinkSection from '@/components/service/pink-section'
 import ServiceContact from '@/components/service/service-contact';
+
+export const metadata = {
+  title: 'Case Studies | Real-World Success Stories by Plenum',
+  description: "See how Plenum delivers impactful results across industries through real-life case studies and transformative AI solutions.",
+};
+
+
 const CaseStudy = () => {
   return (
     <div>

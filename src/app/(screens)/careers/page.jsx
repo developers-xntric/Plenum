@@ -3,6 +3,12 @@ import JobListings from '@/components/careers/jobs-linting'
 import TeamTestimonials from '@/components/careers/team-testimonials'
 import React from 'react'
 
+export const metadata = {
+  title: 'Careers at Plenum | Join the Future of AI & Tech',
+  description: "Shape the future of AI with Plenum. Explore exciting career opportunities and be part of our innovation-driven team.",
+};
+
+
 const Careers = () => {
     return (
         <div>
