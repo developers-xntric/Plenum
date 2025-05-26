@@ -7,7 +7,7 @@ import HomeServices from "@/components/homepage/home-services";
 import HouseAIProduct from "@/components/homepage/house-ai-product";
 import Testimonials from "@/components/homepage/testimonial";
 import { testimonials } from "@/data/home-testimonials";
-import {cardData} from "@/data/home-blog";
+import { cardData } from "@/data/blogData";
 export default function Home() {
   return (
     <div>
