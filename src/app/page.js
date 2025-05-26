@@ -6,9 +6,8 @@ import Hero from "@/components/homepage/hero";
 import HomeServices from "@/components/homepage/home-services";
 import HouseAIProduct from "@/components/homepage/house-ai-product";
 import Testimonials from "@/components/homepage/testimonial";
-import { cardData } from "@/data/home-blog";
 import { testimonials } from "@/data/home-testimonials";
-
+import {cardData} from "@/data/home-blog";
 export default function Home() {
   return (
     <div>
