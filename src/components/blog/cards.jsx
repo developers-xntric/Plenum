@@ -10,7 +10,7 @@ const Cards = () => {
                 <div className='grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-5 '>
                     {cardData.map((card, index) => (
                         <div className='relative hover:opacity-75 transition-opacity ease-in duration-500' key={index}>
-                            <Link href={`/blog/${card.id}`}>
+                            <Link href={card.link}>
                                 <Image src={card.img} width={300} height={300} alt="blog 1" className='w-full ' />
                                 <div className='max-w-[80%] absolute bottom-6 left-6'>
                                     <span className='text-[#D4D4D8] text-[14px]'>{card.date}</span>

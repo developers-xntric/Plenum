@@ -1,27 +1,33 @@
-export const cardData = [
+const cardData = [
     {
-        img: "/home/blog_1.png",
-        date: "March 9, 2025",
-        para: "The Role of Artificial Intelligence in Innovation",
-        id: 1
+        img: "/blog/blog_1.jpg",
+        date: "May 26, 2025",
+        para: "ERP vs CRM: What’s the Difference and Which Do You Need?",
+        id: 1,
+        link: '/blog/ERP-CRM'
     },
     {
-        img: "/home/blog_2.png",
-        date: "March 9, 2025",
-        para: "Unlocking AI's Potential in Product Development",
-        id: 2
+        img: "/blog/blog_2.jpg",
+        date: "May 26, 2025",
+        para: "Dynamics vs NetSuite: Comparing Microsoft and Oracle ERP Solutions",
+        id: 2,
+        link: '/blog/dynamics-netsuite'
     },
     {
-        img: "/home/blog_3.png",
-        date: "March 9, 2025",
-        para: "AI Revolution: Transforming Industries Worldwide",
-        id: 3
+        img: "/blog/blog_3.jpg",
+        date: "May 26, 2025",
+        para: "Oracle NetSuite vs Salesforce: CRM and ERP Compared",
+        id: 3,
+        link: '/blog/oracle-netsuite-salesforce'
     },
     {
-        img: "/home/blog_1.png",
-        date: "March 9, 2025",
-        para: "The Role of Artificial Intelligence in Innovation",
-        id: 4
+        img: "/blog/blog_1.jpg",
+        date: "May 26, 2025",
+        para: "Oracle NetSuite vs SAP: Which ERP Solution Fits Your Business Best?",
+        id: 4,
+        link: '/blog/oracle-netsuite-sap'
     },
-   
+
 ]
+
+export default cardData
