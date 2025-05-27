@@ -16,7 +16,7 @@ export default function ERPCRM() {
         </div>
 
         {/* IMAGE */}
-        <Image src="/blog/1.jpg" alt="Blog Image" width={1000} height={1000} className="w-full h-60 md:h-full" />
+        <Image src="/blog/2.jpg" alt="Blog Image" width={1000} height={1000} className="w-full h-60 md:h-full" />
 
 
 

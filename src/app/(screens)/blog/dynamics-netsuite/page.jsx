@@ -16,7 +16,7 @@ export default function dynamics() {
         </div>
 
         {/* IMAGE */}
-        <Image src="/blog/2.jpg" alt="Blog Image" width={1000} height={1000} className="w-full h-60 md:h-full" />
+        <Image src="/blog/1.jpg" alt="Blog Image" width={1000} height={1000} className="w-full h-60 md:h-full" />
 
         {/* CONTENT */}
         <div className="2xl:max-w-[1440px] w-[90%] mx-auto flex items-center justify-end font-['Archivo']">

@@ -2,8 +2,11 @@ import Image from 'next/image'
 import React from 'react'
 
 export const metadata = {
-  title: 'Plenum Privacy Policy | Data Usage & Protection',
-  description: 'Understand how Plenum collects, uses, and protects your personal data in compliance with privacy regulations.',
+    title: 'Plenum Privacy Policy | Data Usage & Protection',
+    description: 'Understand how Plenum collects, uses, and protects your personal data in compliance with privacy regulations.',
+    alternates: {
+        canonical: 'https://plenum-tech.com/privacy-policy',
+    },
 };
 
 const PrivacyPolicy = () => {

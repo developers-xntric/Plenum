@@ -9,7 +9,13 @@ import IndustriesCarousel from '@/components/book-demo/industries-carousel'
 import BrandSlider from '@/components/common/brand-slider'
 import { home_brand_icons } from '@/data/brand-slider-icons-data'
 import BrandSlider2 from '@/components/common/bs2'
-
+export const metadata = {
+  title: 'About Plenum | AI Innovators Powering Digital Change',
+  description: 'Learn about Plenum’s mission, vision, and leadership in AI-powered innovation and enterprise technology solutions.',
+  alternates: {
+    canonical: 'https://plenum-tech.com/article',
+  },
+};
 function BookDemo() {
   return (
     <div>

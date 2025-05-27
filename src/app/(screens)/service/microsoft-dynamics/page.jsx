@@ -21,7 +21,10 @@ import { services } from '@/data/microsoft'
 
 export const metadata = {
   title: 'Explore Microsoft Dynamics 365 Solutions with ERP & CRM Experts ',
-  description: "Discover tailored Microsoft Dynamics solutions your certified Microsoft Dynamics partner in the UAE.",
+    description: "Discover tailored Microsoft Dynamics solutions your certified Microsoft Dynamics partner in the UAE.",
+    alternates: {
+        canonical: 'https://plenum-tech.com/service/microsoft-dynamics',
+    },
 };
 
 const MicrosoftDynamics = () => {

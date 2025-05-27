@@ -8,15 +8,18 @@ import NetSuiteCards from '@/components/service/oracle-net-suite/netsuite-cards'
 import OracleOneStopShop from '@/components/service/oracle-net-suite/oracle-one-stop-shop'
 import PinkSection from '@/components/service/pink-section'
 import { oracleNetSuite } from '@/data/services'
-import {  ons_service, ons_service_black } from '@/data/erp-consulting-service'
+import { ons_service, ons_service_black } from '@/data/erp-consulting-service'
 import { cardData } from '@/data/home-blog'
 import { testimonials } from '@/data/home-testimonials'
 import { MicrosoftCarouselData } from '@/data/microsoft-carousel'
 import React from 'react'
 
 export const metadata = {
-  title: 'Oracle NetSuite ERP Solutions Consulting & Integration ',
-  description: 'Plenum is a leading Oracle NetSuite partner in Dubai, offering ERP implementation tailored for UAE businesses.',
+    title: 'Oracle NetSuite ERP Solutions Consulting & Integration ',
+    description: 'Plenum is a leading Oracle NetSuite partner in Dubai, offering ERP implementation tailored for UAE businesses.',
+    alternates: {
+        canonical: 'https://plenum-tech.com/service/oracle-net-suite',
+    },
 };
 
 
@@ -38,7 +41,7 @@ const OracleNetSuite = () => {
                 para={"As experienced NetSuite implementation partners, we design and deploy ERP solutions that align with your operational goals. Our phased implementation approach minimizes downtime and ensures smooth migration."}
                 bottomSection={ons_service} left={true} blackSection={ons_service_black}
             />
-         
+
             <OracleOneStopShop />
             <NetSuiteCards />
             <MicrosoftCarousel MicrosoftCarouselData={MicrosoftCarouselData} title={"Seamless Oracle NetSuite Integration with Leading Business Apps"} para={"Accelerate your operations by connecting Oracle NetSuite with your favorite tools, eCommerce platforms, CRMs, marketplaces, payment gateways, and 3PLs."}

@@ -72,8 +72,11 @@ const values2 = [
 ]
 
 export const metadata = {
-  title: ' Vertical Builds: Industry-Focused Innovative Solutions',
-  description: "Empowering industries with smart solutions—from efficient projects and intelligent patient care to data-driven SEO strategies that fuel measurable business growth.",
+    title: ' Vertical Builds: Industry-Focused Innovative Solutions',
+    description: "Empowering industries with smart solutions—from efficient projects and intelligent patient care to data-driven SEO strategies that fuel measurable business growth.",
+    alternates: {
+        canonical: 'https://plenum-tech.com/product/vertical-builds',
+    },
 };
 
 
@@ -99,7 +102,7 @@ const VerticalBuilds = () => {
                 paragraph={"Vertical Builds empowers your teams to launch customized, industry-ready applications through a low-code framework, cutting development time, reducing costs, and accelerating go-to-market across sectors."}
                 video={"/product/momentum2.mp4"} />
             <div id="project-management">
-                
+
                 <TabsSection values={values} tabImages={tabImages} />
             </div>
             <div id="hospital" className="xl:pb-20">

@@ -12,8 +12,11 @@ import ArticleSlider from "@/components/common/article-slider";
 import ERPC2 from '@/components/service/ERP-Cosultant/ERPC2';
 
 export const metadata = {
-  title: 'Top ERP Consulting and Implementation Services ',
-  description: 'Streamline your business operations with expert ERP consulting and implementation services. ',
+    title: 'Top ERP Consulting and Implementation Services ',
+    description: 'Streamline your business operations with expert ERP consulting and implementation services. ',
+    alternates: {
+        canonical: 'https://plenum-tech.com/service/ERP-consulting',
+    },
 };
 
 const ERPConsulting = () => {

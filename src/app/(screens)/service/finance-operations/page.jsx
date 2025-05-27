@@ -12,8 +12,11 @@ import { ERPAccordin } from '@/components/common/accordinService';
 import { finance, financeOpearations, financeOperations } from '@/data/services';
 
 export const metadata = {
-  title: ' Explore Our Microsoft Dynamics 365 Finance and Operations',
-  description: "Discover how Microsoft Dynamics 365 Finance and Operations helps businesses automate financial management.",
+    title: ' Explore Our Microsoft Dynamics 365 Finance and Operations',
+    description: "Discover how Microsoft Dynamics 365 Finance and Operations helps businesses automate financial management.",
+    alternates: {
+        canonical: 'https://plenum-tech.com/service/finance-operations',
+    },
 };
 
 const FinanceOpearations = () => {

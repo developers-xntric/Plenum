@@ -38,6 +38,13 @@ const cardData = [
     },
 
 ]
+export const metadata = {
+  title: 'About Plenum | AI Innovators Powering Digital Change',
+  description: 'Learn about Plenum’s mission, vision, and leadership in AI-powered innovation and enterprise technology solutions.',
+  alternates: {
+    canonical: 'https://plenum-tech.com',
+  },
+};
 export default function Home() {
   return (
     <div>

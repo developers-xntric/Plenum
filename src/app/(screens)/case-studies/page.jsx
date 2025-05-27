@@ -7,6 +7,9 @@ import ServiceContact from '@/components/service/service-contact';
 export const metadata = {
   title: 'Case Studies | Real-World Success Stories by Plenum',
   description: "See how Plenum delivers impactful results across industries through real-life case studies and transformative AI solutions.",
+  alternates: {
+    canonical: 'https://plenum-tech.com/case-studies',
+  },
 };
 
 

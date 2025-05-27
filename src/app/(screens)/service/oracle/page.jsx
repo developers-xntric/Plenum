@@ -17,8 +17,11 @@ import { oracle, OracleServiceItems } from '@/data/services'
 
 
 export const metadata = {
-  title: 'Outstanding Oracle Cloud ERP Experts in Dubai',
-  description: "Discover expert Oracle Cloud ERP services to streamline operations without any additional hassle. ",
+    title: 'Outstanding Oracle Cloud ERP Experts in Dubai',
+    description: "Discover expert Oracle Cloud ERP services to streamline operations without any additional hassle. ",
+    alternates: {
+        canonical: 'https://plenum-tech.com/service/oracle',
+    },
 };
 
 const Oracle = () => {
@@ -42,7 +45,7 @@ const Oracle = () => {
                 <OracleResourcePlanning />
 
                 <Finance_Opearations_Service data={oracle} heading={"Impact of Oracle Cloud ERP and Oracle Fusion Finance"} para={"Explore our latest insights on Oracle’s innovation in enterprise resource planning, financial management, and workflow optimization. Stay ahead with fresh perspectives that shape the future of business."} />
-                
+
                 <ERPSolutionsBottomSection className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={bottomSection} left={true} blackSection={OracleBlack} />
                 <div className=' pt-20'>
                     <PinkSection
