@@ -3,8 +3,8 @@ import Banner from '@/components/common/banner'
 import React from 'react'
 
 export const metadata = {
-  title: 'About Plenum | AI Innovators Powering Digital Change',
-  description: 'Learn about Plenum’s mission, vision, and leadership in AI-powered innovation and enterprise technology solutions.',
+  title: 'Plenum Articles | Expert Takes on Tech & Trends ',
+  description: 'Explore in-depth articles on AI, cloud, and digital innovation curated by Plenum tech experts and industry professionals.',
   alternates: {
     canonical: 'https://plenum-tech.com/article',
   },
