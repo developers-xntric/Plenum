@@ -1,7 +1,13 @@
 import { Blog } from "@/components/homepage/blog";
 import { cardData } from "@/data/home-blog";
 import Image from "next/image";
-
+export const metadata = {
+  title: 'ERP vs CRM: What’s the Difference and Which Do You Need?',
+  description: "Understand the key differences between ERP vs CRM. Learn how ERP and CRM systems function, their benefits, and which is best suited for your business needs.",
+  alternates: {
+    canonical: 'https://plenum-tech.com/blog/ERP-CRM',
+  },
+};
 export default function ERPCRM() {
   return (
     <>
