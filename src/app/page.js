@@ -8,25 +8,25 @@ import HouseAIProduct from "@/components/homepage/house-ai-product";
 import Testimonials from "@/components/homepage/testimonial";
 import { testimonials } from "@/data/home-testimonials";
 const cardData = [
-    {
-        img: "/blog/Section-1.jpg",
-        date: "May 26, 2025",
-        para: "ERP vs CRM: What’s the Difference and Which Do You Need?",
-        id: 1,
-        link: '/blog/ERP-CRM'
-    },
-    {
-        img: "/blog/Section-2.jpg",
-        date: "May 26, 2025",
-        para: "Dynamics vs NetSuite: Comparing Microsoft and Oracle ERP Solutions",
-        id: 2,
-        link: '/blog/dynamics-netsuite'
-    },
+  {
+    img: "/blog/Section-1.jpg",
+    date: "May 26, 2025",
+    para: "ERP vs CRM: What’s the Difference and Which Do You Need?",
+    id: 1,
+    link: '/blog/ERP-CRM'
+  },
+  {
+    img: "/blog/Section-2.jpg",
+    date: "May 26, 2025",
+    para: "Dynamics vs NetSuite: Comparing Microsoft and Oracle ERP Solutions",
+    id: 2,
+    link: '/blog/dynamics-netsuite'
+  },
 
 ]
 export const metadata = {
-  title: 'About Plenum | AI Innovators Powering Digital Change',
-  description: 'Learn about Plenum’s mission, vision, and leadership in AI-powered innovation and enterprise technology solutions.',
+  title: 'Smart ERP Solutions in Middle East Especially For You',
+  description: 'We deliver AI-powered ERP solutions in the Middle East and across the UAE, tailored to your operations expertly.',
   alternates: {
     canonical: 'https://plenum-tech.com',
   },
