@@ -25,8 +25,8 @@ const cardData = [
 
 ]
 export const metadata = {
-  title: 'Smart ERP Solutions in Middle East Especially For You',
-  description: 'We deliver AI-powered ERP solutions in the Middle East and across the UAE, tailored to your operations expertly.',
+  title: 'AI, ERP & Cloud Solutions in the Middle East | Plenum',
+  description: 'We deliver AI, ERP, and cloud solutions across the Middle East and UAE. Streamline operations and scale with trusted enterprise tech from Plenum.',
   alternates: {
     canonical: 'https://plenum-tech.com',
   },
