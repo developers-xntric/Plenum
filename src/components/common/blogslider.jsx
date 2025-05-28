@@ -13,14 +13,14 @@ const BlogSlider = ({ }) => {
             date: "May 26, 2025",
             para: "ERP vs CRM: What’s the Difference and Which Do You Need?",
             id: 1,
-            link: '/blog/ERP-CRM'
+            link: '/blog/erp-vs-crm'
         },
         {
             img: "/blog/Section-2.jpg",
             date: "May 26, 2025",
             para: "Dynamics vs NetSuite: Comparing Microsoft and Oracle ERP Solutions",
             id: 2,
-            link: '/blog/dynamics-netsuite'
+            link: '/blog/dynamics-vs-netsuite'
         },
 
     ]
