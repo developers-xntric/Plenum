@@ -1,0 +1,11 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://plenum-tech.com
+
+# Sitemaps
+Sitemap: https://plenum-tech.com/sitemap.xml
+
+
