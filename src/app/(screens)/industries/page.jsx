@@ -10,6 +10,16 @@ import { cardData } from '@/data/home-blog';
 import { testimonials } from '@/data/home-testimonials';
 import React from 'react'
 
+
+
+export const metadata = {
+    title: 'ERP & AI Solutions for Retail, Finance, and Manufacturing',
+    description: "Explore how Plenum delivers ERP, AI, and cloud services across retail, education, finance, and more—powering digital transformation in every industry.",
+    alternates: {
+        canonical: 'https://plenum-tech.com/industries',
+    },
+};
+
 const Industries = () => {
     return (
         <div>
