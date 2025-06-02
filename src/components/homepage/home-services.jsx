@@ -252,17 +252,19 @@ export default function HomeServices() {
             <div className="w-full lg:w-[65%] space-y-0 lg:my-0 my-14 font-['Archivo']">
               <div className="flex items-center justify-between w-[90%] md:w-[50%] lg:w-[82%] xl:w-[80%] 2xl:w-[70%] mb-5 md:mb-10">
                 <Image
-                  src="/images/house-ai-product/microsoft.svg"
-                  height={1000}
-                  width={1000}
+                  src="/images/house-ai-product/microsoft-icon.svg"
+                  height={2000}
+                  width={3000}
                   alt="img"
+                  quality={100}
                   className="w-[140px] md:w-[190px] md:h-[110px] "
                 />
                 <Image
-                  src="/images/house-ai-product/aws.svg"
-                  height={1000}
-                  width={1000}
+                  src="/images/house-ai-product/aws-icon.svg"
+                  height={2000}
+                  width={3000}
                   alt="img"
+                  quality={100}
                   className="w-[70px] md:w-[100px] h-[100px] "
                 />
 
