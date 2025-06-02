@@ -8,20 +8,48 @@ import HouseAIProduct from "@/components/homepage/house-ai-product";
 import Testimonials from "@/components/homepage/testimonial";
 import { testimonials } from "@/data/home-testimonials";
 const cardData = [
-    {
-        img: "/blog/Section-1.jpg",
-        date: "May 26, 2025",
-        para: "ERP vs CRM: What’s the Difference and Which Do You Need?",
-        id: 1,
-        link: '/blog/erp-vs-crm'
-    },
-    {
-        img: "/blog/Section-2.jpg",
-        date: "May 26, 2025",
-        para: "Dynamics vs NetSuite: Comparing Microsoft and Oracle ERP Solutions",
-        id: 2,
-        link: '/blog/dynamics-vs-netsuite'
-    },
+  {
+    img: "/blog/Section-1.jpg",
+    date: "May 26, 2025",
+    para: "ERP vs CRM: What’s the Difference and Which Do You Need?",
+    id: 1,
+    link: '/blog/erp-vs-crm'
+  },
+  {
+    img: "/blog/Section-2.jpg",
+    date: "May 26, 2025",
+    para: "Dynamics vs NetSuite: Comparing Microsoft and Oracle ERP Solutions",
+    id: 2,
+    link: '/blog/dynamics-vs-netsuite'
+  },
+  {
+    img: "/blog/Article1.1.jpg",
+    date: "May 26, 2025",
+    para: "How AI Revolutionizes Oracle Cloud Infrastructure for Businesses ",
+    id: 3,
+    link: '/blog/ai-revolutionizes'
+  },
+  {
+    img: "/blog/Article3.1.jpg",
+    date: "May 26, 2025",
+    para: "Microsoft Dynamics 365 vs. Traditional CRM: Which is Better?",
+    id: 4,
+    link: '/blog/dynamics-traditional-crm'
+  },
+  {
+    img: "/blog/Article4.1.jpg",
+    date: "May 26, 2025",
+    para: "Key Benefits of Microsoft Dynamics 365 for Small Businesses",
+    id: 5,
+    link: '/blog/key-benefits'
+  },
+  {
+    img: "/blog/Article2.1.jpg",
+    date: "May 26, 2025",
+    para: "Why Every Business Needs Oracle Database Integration with ERP Systems",
+    id: 6,
+    link: '/blog/oracle-database'
+  },
 
 ]
 export const metadata = {

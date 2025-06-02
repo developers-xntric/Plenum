@@ -11,6 +11,7 @@ export const metadata = {
 };
 
 
+
 const Blog = () => {
     return (
         <div>
