@@ -36,7 +36,7 @@ const Product = () => {
                 <HouseAIProduct />
             </div>
             <ArticleSlider />
-            <Blog heading='Discover Our Blog Articles' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world" cardData={cardData} />
+            <Blog heading='Discover Our Blog' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world" cardData={cardData} />
             <PinkSection
                 heading={"Ready To Supercharge Your AI Workflow?"}
                 text={"Ready to explore the power of AI? Contact us 24×7 to schedule a one-on-one consultation and see how Momentum AI can elevate your AI workflow management and automation journey."}
