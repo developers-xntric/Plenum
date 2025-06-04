@@ -103,6 +103,36 @@ export default function OracleDatabase() {
                                 </p>
                             </div>
                         </div>
+                        <div>
+                            <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                                Which ERP is used by Oracle?
+                            </h2>
+                            <div className="space-y-5">
+                                <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
+                                    Oracle uses its own ERP system called Oracle ERP Cloud, a comprehensive suite of integrated applications for finance, procurement, project management, and more, designed to streamline and automate business processes.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                                What is the difference between Dynamics 365 and Oracle ERP?
+                            </h2>
+                            <div className="space-y-5">
+                                <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
+                                    Dynamics 365 integrates ERP and CRM with Microsoft tools, ideal for SMBs, while Oracle ERP Cloud offers deep enterprise-grade capabilities focused on large-scale financials, automation, and global scalability.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                                What is the Oracle ERP Cloud?
+                            </h2>
+                            <div className="space-y-5">
+                                <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
+                                    Oracle ERP Cloud is a cloud-based enterprise resource planning suite offering tools for financial management, procurement, project planning, and risk management, aimed at increasing efficiency and real-time decision-making.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <Blog heading='Discover More Blogs' para="Stay updated with our ongoing blogs inclusive of tips, case study examples and expert views around the usage of AI, cloud services and ERP solutions to support business growth and operational effectiveness." cardData={cardData} />

@@ -17,13 +17,13 @@ export default function KeyBenefits() {
                 {/* HEADING AND DATE */}
                 <div className="2xl:max-w-[1440px] w-[90%] mx-auto">
                     <div className="lg:max-w-[75%] 2xl:max-w-[60%] py-10">
-                        <p className="text-[#636363] text-[15px] lg:text-[17px] font-['Archivo'] font-medium">May 26 2025</p>
+                        <p className="text-[#636363] text-[15px] lg:text-[17px] font-['Archivo'] font-medium">June 2 2025</p>
                         <h2 className="text-secondary font['Archivo'] leading-[34px] lg:leading-[56px] text-[30px] lg:text-[46px] font-semibold">Key Benefits of Microsoft Dynamics 365 for Small Businesses </h2>
                     </div>
                 </div>
 
                 {/* IMAGE */}
-                <Image src="/blog/Article4.jpg" alt="Blog Image" width={1000} height={1000} className="w-full h-60 md:h-full" />
+                <Image src="/blog/Article12.jpg" alt="Blog Image" width={1000} height={1000} className="w-full h-60 md:h-full" />
 
                 {/* CONTENT */}
                 <div className="2xl:max-w-[1440px] w-[90%] mx-auto flex items-center justify-end font-['Archivo']">
@@ -68,6 +68,36 @@ export default function KeyBenefits() {
                             <div className="space-y-5">
                                 <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
                                     Small companies require clever, scalable solutions in a world where operational efficiency is critical and consumer expectations are great. Exactly that—a strong, all-in-one platform that streamlines your operations, enhances customer interactions, and expands with your company—Microsoft Dynamics 365 offers. Dynamics 365 gives small businesses the tools they need to compete with bigger companies—without breaking the budget—by integrating CRM and ERP features, intelligent automation, seamless interfaces, and real-time analytics. Therefore, Microsoft Dynamics 365 is more than simply an excellent investment; it's a game changer if you're searching for a future-proof one that fuels your team and supports your expansion.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                                1. What size companies use Microsoft Dynamics 365?
+                            </h2>
+                            <div className="space-y-5">
+                                <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
+                                    Microsoft Dynamics 365 is used by businesses of all sizes—from small startups to large enterprises. Its modular design and flexible pricing make it suitable for scaling as a company grows.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                                2. What is the minimum number of licenses for Dynamics 365?
+                            </h2>
+                            <div className="space-y-5">
+                                <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
+                                    There is no strict minimum; you can start with just one user license. This makes Dynamics 365 accessible for small businesses and scalable for teams as needs grow.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                                3. What is the purpose of Microsoft Dynamics 365?
+                            </h2>
+                            <div className="space-y-5">
+                                <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
+                                    Microsoft Dynamics 365 helps businesses manage operations, sales, customer service, finance, and marketing through a unified, cloud-based platform that enhances productivity and data-driven decision-making.
                                 </p>
                             </div>
                         </div>

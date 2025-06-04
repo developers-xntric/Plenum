@@ -109,6 +109,36 @@ export default function ERPCRM() {
                 </p>
               </div>
             </div>
+            <div>
+              <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                1. What is the difference between a CRM and ERP?
+              </h2>
+              <div className="space-y-5">
+                <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
+                  CRM (Customer Relationship Management) focuses on managing customer interactions, sales, and marketing efforts. ERP (Enterprise Resource Planning) integrates internal business processes like finance, HR, inventory, and supply chain. CRM drives revenue growth, while ERP improves operational efficiency across departments.
+                </p>
+              </div>
+            </div>
+            <div>
+              <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                2. What are some examples of ERP systems?
+              </h2>
+              <div className="space-y-5">
+                <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
+                  Popular ERP systems include SAP, Oracle NetSuite, Microsoft Dynamics 365, and Odoo. These platforms help businesses streamline operations like accounting, inventory, procurement, and human resources through a unified system.
+                </p>
+              </div>
+            </div>
+            <div>
+              <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                3. What are some examples of CRM?
+              </h2>
+              <div className="space-y-5">
+                <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
+                  Common CRM platforms include Salesforce, HubSpot, Zoho CRM, and Microsoft Dynamics 365 CRM. These tools help businesses manage leads, track customer interactions, automate marketing, and improve customer support.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 

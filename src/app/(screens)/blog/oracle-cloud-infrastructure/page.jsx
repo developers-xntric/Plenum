@@ -101,9 +101,47 @@ export default function Ai() {
               </h2>
               <div className="space-y-5">
                 <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
-                  Clearly changing how companies run is artificial intelligence, which opens a world of possibilities when coupled with Oracle Cloud Infrastructure. From better decision-making and cost savings to increased automation and scalability, AI integration has several advantages that can help companies have a competitive edge in the market. Companies of all kinds may use artificial intelligence (AI) to drive success and expansion as Oracle keeps developing and innovating its AI capacity.
-
-                  Organisations that use AI with Oracle Cloud may keep ahead of the curve, make better choices, automate tasks, and eventually boost their bottom line.
+                  AI is enhancing cloud computing by enabling automation, predictive analytics, intelligent resource management, and faster data processing—making cloud services smarter, more scalable, and cost-efficient across industries.
+                </p>
+              </div>
+            </div>
+            <div>
+              <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                1. How is AI changing cloud computing?
+              </h2>
+              <div className="space-y-5">
+                <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
+                  Common CRM platforms include Salesforce, HubSpot, Zoho CRM, and Microsoft Dynamics 365 CRM. These tools help businesses manage leads, track customer interactions, automate marketing, and improve customer support.
+                </p>
+              </div>
+            </div>
+            <div>
+              <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                2. Which AI does Oracle use?
+              </h2>
+              <div className="space-y-5">
+                <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
+                  Oracle uses its own AI and machine learning technologies, integrated into products like Oracle Autonomous Database, Oracle Digital Assistant, and OCI AI Services, to automate operations and deliver intelligent insights.
+                </p>
+              </div>
+            </div>
+            <div>
+              <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                3. Does Oracle Cloud have a future?
+              </h2>
+              <div className="space-y-5">
+                <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
+                  Yes, Oracle Cloud has a strong future, driven by enterprise-grade performance, AI integration, and strategic partnerships. Its focus on security, scalability, and autonomous services continues to attract global businesses.
+                </p>
+              </div>
+            </div>
+            <div>
+              <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                4. What is a key benefit of using Oracle Cloud Infrastructure?
+              </h2>
+              <div className="space-y-5">
+                <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
+                  A key benefit of Oracle Cloud Infrastructure is its high performance at a lower cost. It offers reliable, secure, and scalable computing with built-in AI for automation and advanced analytics.
                 </p>
               </div>
             </div>

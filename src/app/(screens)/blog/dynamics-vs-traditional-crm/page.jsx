@@ -103,6 +103,46 @@ export default function DynamicsTraditionalCRM() {
                                 </p>
                             </div>
                         </div>
+                        <div>
+                            <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                                1. What is the difference between CRM and Dynamics 365?
+                            </h2>
+                            <div className="space-y-5">
+                                <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
+                                    CRM (Customer Relationship Management) is a general term for tools managing customer interactions. Dynamics 365 is Microsoft's platform that includes CRM capabilities along with ERP and other business applications.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                                2. Does Microsoft Dynamics 365 include CRM?
+                            </h2>
+                            <div className="space-y-5">
+                                <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
+                                    Yes, Dynamics 365 includes full CRM functionality through modules like Sales, Customer Service, and Marketing, helping businesses manage leads, contacts, relationships, and customer engagement.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                                3. What are the disadvantages of Dynamics 365?
+                            </h2>
+                            <div className="space-y-5">
+                                <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
+                                    Dynamics 365 can be expensive for small businesses, has a complex setup process, and may require training. Customization and integrations can also be time-consuming and resource-intensive.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                                4. Can Microsoft 365 be used as a CRM?
+                            </h2>
+                            <div className="space-y-5">
+                                <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
+                                    Microsoft 365 isn’t a dedicated CRM, but it can support basic CRM needs using tools like Excel, Outlook, and SharePoint. For advanced features, Dynamics 365 is recommended.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <Blog heading='Discover More Blogs' para="Stay updated with our ongoing blogs inclusive of tips, case study examples and expert views around the usage of AI, cloud services and ERP solutions to support business growth and operational effectiveness." cardData={cardData} />

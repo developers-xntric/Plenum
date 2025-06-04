@@ -51,7 +51,7 @@ const ManageCloud = () => {
                 isbottom={false} isAccordin={true} outside={false} items={cloud} className='flex justify-center  items-center gap-10 lg:gap-5 lg:flex-row-reverse flex-col pt-10 lg:py-0' bottomSection={cloudbottom1} left={false} blackSection={cloud1} />
             <Testimonials testimonials={testimonials} />
             <ERPAccordin isbottom={false} isAccordin={true} outside={false} items={cloudAccor2} className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={cloudbottom2} left={true} blackSection={cloud2} />
-            <ArticleSlider />
+            <ArticleSlider className={'pt-20'} />
             <Blog heading='Discover Our Blog' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world." cardData={cardData} />
         </div>
     )

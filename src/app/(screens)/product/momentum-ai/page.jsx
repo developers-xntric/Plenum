@@ -42,8 +42,8 @@ const MomentumAI = () => {
                 oneCardMobile={true}
             />
             <StartSmallWithAI />
-            <ArticleSlider paragraph={'Insights & practical knowledge designed to help you navigate the digital landscape effectively.'} />
-            <Blog heading='Discover Our Blog Articles' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world" cardData={cardData} />
+            <ArticleSlider className={'pt-10'} paragraph={'Insights & practical knowledge designed to help you navigate the digital landscape effectively.'} />
+            <Blog heading='Discover Our Blogs' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world" cardData={cardData} />
             <div className='py-10'>
                 <PinkSection
                     heading={"Ready To Supercharge Your AI Workflow?"}
