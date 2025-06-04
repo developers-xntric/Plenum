@@ -104,6 +104,36 @@ export default function dynamics() {
                 </p>
               </div>
             </div>
+            <div>
+              <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                Q1: Is Microsoft Dynamics better than NetSuite?
+              </h2>
+              <div className="space-y-5">
+                <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
+                  Microsoft Dynamics and NetSuite both offer robust ERP solutions, but the best choice depends on your business needs. Dynamics is highly customizable and integrates well with other Microsoft products, while NetSuite offers a strong cloud-native ERP platform. Mid-sized to large enterprises often prefer Dynamics for flexibility; NetSuite appeals for simplicity and ease of deployment.
+                </p>
+              </div>
+            </div>
+            <div>
+              <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                Q2: Is Dynamics an ERP or CRM?
+              </h2>
+              <div className="space-y-5">
+                <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
+                  Microsoft Dynamics is both an ERP and a CRM platform. Dynamics 365 offers a suite of business applications that includes ERP solutions (like Finance and Supply Chain Management) and CRM tools (like Sales and Customer Service), allowing businesses to manage operations and customer relationships from a single platform.
+                </p>
+              </div>
+            </div>
+            <div>
+              <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                Q3: Which is better, Microsoft Dynamics or Oracle?
+              </h2>
+              <div className="space-y-5">
+                <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
+                  Microsoft Dynamics and Oracle both offer powerful ERP systems. Oracle is often favored by large enterprises needing deep financial and supply chain functionality. Dynamics, however, is known for user-friendliness, scalability, and strong integration with Microsoft tools. The better option depends on your business size, complexity, and existing tech stack
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 

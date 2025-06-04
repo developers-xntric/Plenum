@@ -68,7 +68,7 @@ export default function Home() {
       <HouseAIProduct heading={"AI Products "} paragraph={"Plenum integrates intelligence into your business in addition to providing ERP systems. Our proprietary AI solutions are designed to help all organizational levels get deeper insights, increase productivity, and make more informed business decisions."} />
       <Testimonials title={"What Our Clients Say"} testimonials={testimonials} paragraph={"As an ERP company, Plenum is trusted by professionals for insight-driven design, branding, and innovation."} />
       <IndustryShowcase />
-      <ArticleSlider title={"Discover Our Articles"} paragraph={"Insights & practical knowledge designed to help you navigate the digital landscape effectively. "} />
+      <ArticleSlider className={'pt-20'} title={"Discover Our Articles"} paragraph={"Insights & practical knowledge designed to help you navigate the digital landscape effectively. "} />
       <Blog heading='Discover Our Blog ' para="Stay updated with our ongoing blogs inclusive of tips, case study examples and expert views around the usage of AI, cloud services and ERP solutions to support business growth and operational effectiveness." cardData={cardData} />
     </div>
   );

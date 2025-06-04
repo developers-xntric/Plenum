@@ -50,7 +50,7 @@ const AiConsulting = () => {
             <Testimonials testimonials={testimonials} />
             <ERPSolutionsBottomSection className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={aiSection2} left={true} blackSection={ai2} />
 
-            <ArticleSlider />
+            <ArticleSlider className={'pt-20'} />
             <Blog heading='Discover Our Blog' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world." cardData={cardData} />
         </div>
     )

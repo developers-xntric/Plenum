@@ -21,28 +21,77 @@ const cardData = [
         date: "May 26, 2025",
         para: "How AI Revolutionizes Oracle Cloud Infrastructure for Businesses ",
         id: 3,
-        link: '/blog/ai-revolutionizes'
+        link: '/blog/oracle-cloud-infrastructure'
     },
     {
         img: "/blog/Article3.1.jpg",
         date: "May 26, 2025",
         para: "Microsoft Dynamics 365 vs. Traditional CRM: Which is Better?",
         id: 4,
-        link: '/blog/dynamics-traditional-crm'
+        link: '/blog/dynamics-vs-traditional-crm'
     },
     {
         img: "/blog/Article4.1.jpg",
         date: "May 26, 2025",
         para: "Key Benefits of Microsoft Dynamics 365 for Small Businesses",
         id: 5,
-        link: '/blog/key-benefits'
+        link: '/blog/dynamics-365-for-small-businesses'
     },
     {
         img: "/blog/Article2.1.jpg",
         date: "May 26, 2025",
         para: "Why Every Business Needs Oracle Database Integration with ERP Systems",
         id: 6,
-        link: '/blog/oracle-database'
+        link: '/blog/oracle-database-integration'
+    },
+    {
+        img: "/blog/Article5.1.jpg",
+        date: "May 27, 2025",
+        para: "How Microsoft Dynamics 365 Integrates with Your Business Operations",
+        id: 7,
+        link: '/blog/erp-software-explained'
+    },
+    {
+        img: "/blog/Article6.1.jpg",
+        date: "May 28, 2025",
+        para: "The Future of ERP: Exploring ERP Modules in Microsoft Dynamics 365",
+        id: 8,
+        link: '/blog/future-of-erp'
+    },
+    {
+        img: "/blog/Article7.1.jpg",
+        date: "May 29, 2025",
+        para: "What is ERP? A Comprehensive Guide ",
+        id: 9,
+        link: '/blog/what-is-erp'
+    },
+    {
+        img: "/blog/Article9.1.jpg",
+        date: "May 30, 2025",
+        para: "What is Microsoft Dynamics 365? A Complete Guide",
+        id: 10,
+        link: '/blog/what-is-microsoft-dynamics-365'
+    },
+    {
+        img: "/blog/Article12.1.jpg",
+        date: "June 2, 2025",
+        para: "Key Benefits of Microsoft Dynamics 365 for Small Businesses ",
+        id: 11,
+        link: '/blog/dynamics-365-for-small-businesses'
+    },
+    {
+        img: "/blog/Article13.1.jpg",
+        date: "June 3, 2025",
+        para: "Common Types of ERP: Understanding the Options Available",
+        id: 12,
+        link: '/blog/common-types-of-erp'
+    },
+    {
+        img: "/blog/Article14.1.jpg",
+        date: "June 4, 2025",
+        para: "How to Integrate Microsoft Dynamics 365 with Other Applications",
+        id: 13,
+        link: '/blog/dynamics-with-other-apps-integration'
     },
 
 ]

@@ -344,9 +344,6 @@ const Navbar = () => {
                                 <Link href={"/about"}>About Us</Link>
                             </li>
                             <li className="hover:text-[#FF6035] transition-colors">
-                                <Link href={"/article"}>Articles</Link>
-                            </li>
-                            <li className="hover:text-[#FF6035] transition-colors">
                                 <Link href={"/careers"}>Careers</Link>
                             </li>
                         </ul>

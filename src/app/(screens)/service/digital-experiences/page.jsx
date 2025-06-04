@@ -52,7 +52,7 @@ const DigitalExperiences = () => {
             <ERPAccordin isbottom={true} isAccordin={true} outside={false} items={digitalItem1} className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row-reverse flex-col pt-10 lg:py-0' bottomSection={digitalBottom1} left={false} blackSection={digital1} />
             <ERPAccordin isbottom={true} isAccordin={true} outside={false} items={digitalItem2} className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={digitalBottom2} left={true} blackSection={digital2} />
             <ERPServicesEast para={"Plenum crafts fast, secure digital experiences for the Middle East and UK—built for mobile, bilingual use, and local compliance."} heading={"Digital Experiences Tailored for the Middle East and UK Markets"} activeState={"Egypt"} />
-            <ArticleSlider />
+            <ArticleSlider className={'pt-10'} />
             <Blog heading='Discover Our Blog' para="Stay updated with our ongoing blogs inclusive of tips, case study examples and expert views around the usage of AI, cloud services and ERP solutions to support business growth and operational effectiveness." cardData={cardData} />
         </div>
     )

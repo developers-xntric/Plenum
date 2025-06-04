@@ -18,13 +18,13 @@ export default function CommonTypes() {
                 {/* HEADING AND DATE */}
                 <div className="2xl:max-w-[1440px] w-[90%] mx-auto">
                     <div className="lg:max-w-[72%] 2xl:max-w-[60%] py-10">
-                        <p className="text-[#636363] text-[15px] lg:text-[17px] font-['Archivo'] font-medium">May 26 2025</p>
+                        <p className="text-[#636363] text-[15px] lg:text-[17px] font-['Archivo'] font-medium">June 4 2025</p>
                         <h2 className="text-secondary font['Archivo'] leading-[34px] lg:leading-[56px] text-[30px] lg:text-[46px] font-semibold">How to Integrate Microsoft Dynamics 365 with Other Applications </h2>
                     </div>
                 </div>
 
                 {/* IMAGE */}
-                <Image src="/blog/Article1.jpg" alt="Blog Image" width={1000} height={1000} className="w-full h-60 md:h-full" />
+                <Image src="/blog/Article14.jpg" alt="Blog Image" width={1000} height={1000} className="w-full h-60 md:h-full" />
 
                 {/* CONTENT */}
                 <div className="2xl:max-w-[1440px] w-[90%] mx-auto flex items-center justify-end font-['Archivo']">
