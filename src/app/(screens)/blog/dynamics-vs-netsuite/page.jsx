@@ -104,9 +104,12 @@ export default function dynamics() {
                 </p>
               </div>
             </div>
+            <h2 className="text-[20px] lg:text-[30px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+              FAQs:
+            </h2>
             <div>
               <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
-                Q1: Is Microsoft Dynamics better than NetSuite?
+                1: Is Microsoft Dynamics better than NetSuite?
               </h2>
               <div className="space-y-5">
                 <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
@@ -116,7 +119,7 @@ export default function dynamics() {
             </div>
             <div>
               <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
-                Q2: Is Dynamics an ERP or CRM?
+                2: Is Dynamics an ERP or CRM?
               </h2>
               <div className="space-y-5">
                 <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
@@ -126,7 +129,7 @@ export default function dynamics() {
             </div>
             <div>
               <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
-                Q3: Which is better, Microsoft Dynamics or Oracle?
+                3: Which is better, Microsoft Dynamics or Oracle?
               </h2>
               <div className="space-y-5">
                 <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">

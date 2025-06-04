@@ -103,9 +103,12 @@ export default function OracleDatabase() {
                                 </p>
                             </div>
                         </div>
+                        <h2 className="text-[20px] lg:text-[30px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                            FAQs:
+                        </h2>
                         <div>
                             <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
-                                Which ERP is used by Oracle?
+                                1. Which ERP is used by Oracle?
                             </h2>
                             <div className="space-y-5">
                                 <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
@@ -115,7 +118,7 @@ export default function OracleDatabase() {
                         </div>
                         <div>
                             <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
-                                What is the difference between Dynamics 365 and Oracle ERP?
+                                2. What is the difference between Dynamics 365 and Oracle ERP?
                             </h2>
                             <div className="space-y-5">
                                 <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
@@ -125,7 +128,7 @@ export default function OracleDatabase() {
                         </div>
                         <div>
                             <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
-                                What is the Oracle ERP Cloud?
+                                3. What is the Oracle ERP Cloud?
                             </h2>
                             <div className="space-y-5">
                                 <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">

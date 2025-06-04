@@ -9,7 +9,7 @@ import { motion } from 'framer-motion'
 const Cards = () => {
     return (
         <section className='py-20'>
-            <div className='2xl:max-w-[1440px] max-w-[90%] mx-auto'>
+            {/* <div className='2xl:max-w-[1440px] max-w-[90%] mx-auto'>
                 <div className='grid grid-cols-1  md:grid-cols-2  gap-6 '>
                     {articles.map((article) => (
                         <div key={article.id}>
@@ -70,7 +70,7 @@ const Cards = () => {
                         </div>
                     ))}
                 </div>
-            </div>
+            </div> */}
         </section>
     )
 }

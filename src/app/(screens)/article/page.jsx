@@ -10,12 +10,12 @@ export const metadata = {
   },
 };
 const Article = () => {
-    return (
-        <div>
-            <Banner heading='Our Articles' para='Insights, analysis, and thought leadership that keeps you on the front edge' paraClass="lg:max-w-[100%]" button={['business solutions', 'accelerate', 'accelerate', 'accelerate']} />
-            <Cards />
-        </div>
-    )
+  return (
+    <div>
+      <Banner heading='Our Articles' para='Insights, analysis, and thought leadership that keeps you on the front edge' paraClass="lg:max-w-[100%]" button={['Thought Leadership', 'AI Trends', 'Business Strategy', 'Innovation ']} />
+      <Cards />
+    </div>
+  )
 }
 
 export default Article

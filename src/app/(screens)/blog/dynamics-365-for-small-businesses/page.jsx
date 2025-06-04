@@ -71,6 +71,9 @@ export default function KeyBenefits() {
                                 </p>
                             </div>
                         </div>
+                        <h2 className="text-[20px] lg:text-[30px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                            FAQs:
+                        </h2>
                         <div>
                             <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
                                 1. What size companies use Microsoft Dynamics 365?
