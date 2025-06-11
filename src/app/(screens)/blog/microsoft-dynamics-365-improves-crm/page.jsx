@@ -17,7 +17,7 @@ export default function CRMImprovement() {
                 {/* HEADING AND DATE */}
                 <div className="2xl:max-w-[1440px] w-[90%] mx-auto">
                     <div className="lg:max-w-[75%] 2xl:max-w-[60%] py-10">
-                        <p className="text-[#636363] text-[15px] lg:text-[17px] font-['Archivo'] font-medium">June 2 2025</p>
+                        <p className="text-[#636363] text-[15px] lg:text-[17px] font-['Archivo'] font-medium">June 11 2025</p>
                         <h2 className="text-secondary font['Archivo'] leading-[34px] lg:leading-[56px] text-[30px] lg:text-[46px] font-semibold">
                             How Microsoft Dynamics 365 Improves CRM
                         </h2>
