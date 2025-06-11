@@ -5,7 +5,7 @@ export const metadata = {
     title: 'How ERP Increase Efficiency in Supply Chain Management',
     description: "Learn how well-designed ERP can Automate repetitive and time-consuming tasks, freeing up time to focus on higher value-added activities.",
     alternates: {
-        canonical: 'https://plenum-tech.com/blog/dynamics-netsuite',
+        canonical: 'https://plenum-tech.com/blog/how-erp-enhances-efficiency-in-supply-chain',
     },
 };
 

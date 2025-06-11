@@ -5,7 +5,7 @@ export const metadata = {
     title: 'Dynamics vs NetSuite: Comparing Microsoft and Oracle ERP Solutions',
     description: "Discover the key differences between Microsoft Dynamics vs NetSuite. Explore features, pricing, scalability, and industry fit to choose the best ERP for your business.",
     alternates: {
-        canonical: 'https://plenum-tech.com/blog/dynamics-netsuite',
+        canonical: 'https://plenum-tech.com/blog/dynamics-with-other-apps-integration',
     },
 };
 
