@@ -1,16 +1,56 @@
 import { Blog } from "@/components/homepage/blog";
 import { cardData } from "@/data/home-blog";
 import Image from "next/image";
+import Head from "next/head";
+
 export const metadata = {
   title: 'ERP vs CRM: What’s the Difference and Which Do You Need?',
   description: "Understand the key differences between ERP vs CRM. Learn how ERP and CRM systems function, their benefits, and which is best suited for your business needs.",
   alternates: {
-    canonical: 'https://plenum-tech.com/blog/ERP-CRM',
+    canonical: 'https://plenum-tech.com/blog/erp-vs-crm',
   },
 };
+
 export default function ERPCRM() {
+  const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the difference between a CRM and ERP?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CRM (Customer Relationship Management) focuses on managing customer interactions, sales, and marketing efforts. ERP (Enterprise Resource Planning) integrates internal business processes like finance, HR, inventory, and supply chain. CRM drives revenue growth, while ERP improves operational efficiency across departments."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are some examples of ERP systems?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Popular ERP systems include SAP, Oracle NetSuite, Microsoft Dynamics 365, and Odoo. These platforms help businesses streamline operations like accounting, inventory, procurement, and human resources through a unified system."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are some examples of CRM?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common CRM platforms include Salesforce, HubSpot, Zoho CRM, and Microsoft Dynamics 365 CRM. These tools help businesses manage leads, track customer interactions, automate marketing, and improve customer support."
+      }
+    }
+  ]
+};
+
   return (
     <>
+     <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      </Head>
       <div className=" font-['Archivo'] pt-34 lg:pt-52">
 
         {/* HEADING AND DATE */}
