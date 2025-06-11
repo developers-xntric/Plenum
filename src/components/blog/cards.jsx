@@ -114,6 +114,13 @@ const cardData = [
         id: 14,
         link: '/blog/get-started-with-microsoft-dynamics-365'
     },
+    {
+        img: "/blog/AN17.jpg",
+        date: "June 10, 2025",
+        para: "Why Microsoft Dynamics 365 is Game-Changer in 2025?",
+        id: 14,
+        link: '/blog/why-microsoft-dynamics-365-is-game-changer'
+    },
 ]
 const Cards = () => {
     return (
