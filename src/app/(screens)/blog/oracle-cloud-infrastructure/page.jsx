@@ -2,8 +2,8 @@ import { Blog } from "@/components/homepage/blog";
 import { cardData } from "@/data/home-blog";
 import Image from "next/image";
 export const metadata = {
-  title: 'Dynamics vs NetSuite: Comparing Microsoft and Oracle ERP Solutions',
-  description: "Discover the key differences between Microsoft Dynamics vs NetSuite. Explore features, pricing, scalability, and industry fit to choose the best ERP for your business.",
+  title: 'How AI Revolutionizes Oracle Cloud Infrastructure for Businesses ',
+  description: "Discover how AI transforms Oracle Cloud Infrastructure by boosting automation, scalability, security, and decision-making across industries. ",
   alternates: {
     canonical: 'https://plenum-tech.com/blog/oracle-cloud-infrastructure',
   },

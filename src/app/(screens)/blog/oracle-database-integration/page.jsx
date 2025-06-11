@@ -2,8 +2,8 @@ import { Blog } from "@/components/homepage/blog";
 import { cardData } from "@/data/home-blog";
 import Image from "next/image";
 export const metadata = {
-    title: 'Dynamics vs NetSuite: Comparing Microsoft and Oracle ERP Solutions',
-    description: "Discover the key differences between Microsoft Dynamics vs NetSuite. Explore features, pricing, scalability, and industry fit to choose the best ERP for your business.",
+    title: 'Why Every Business Needs Oracle Database Integration with ERP Systems ',
+    description: "Discover why integrating Oracle Database with ERP systems boosts efficiency, data security, scalability, and smarter decision-making for business growth. ",
     alternates: {
         canonical: 'https://plenum-tech.com/blog/oracle-database-integration',
     },

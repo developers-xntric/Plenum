@@ -2,8 +2,8 @@ import { Blog } from "@/components/homepage/blog";
 import { cardData } from "@/data/home-blog";
 import Image from "next/image";
 export const metadata = {
-    title: 'Dynamics vs NetSuite: Comparing Microsoft and Oracle ERP Solutions',
-    description: "Discover the key differences between Microsoft Dynamics vs NetSuite. Explore features, pricing, scalability, and industry fit to choose the best ERP for your business.",
+    title: 'How Microsoft Dynamics 365 Integrates with Your Business Operations',
+    description: "Discover how Microsoft Dynamics 365 seamlessly integrates your business operations, enhancing productivity, collaboration, and data-driven decision-making. ",
     alternates: {
         canonical: 'https://plenum-tech.com/blog/erp-software-exaplained',
     },

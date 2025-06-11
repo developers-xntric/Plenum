@@ -1,9 +1,10 @@
 import { Blog } from "@/components/homepage/blog";
 import { cardData } from "@/data/home-blog";
 import Image from "next/image";
+
 export const metadata = {
-    title: 'Dynamics vs NetSuite: Comparing Microsoft and Oracle ERP Solutions',
-    description: "Discover the key differences between Microsoft Dynamics vs NetSuite. Explore features, pricing, scalability, and industry fit to choose the best ERP for your business.",
+    title: 'Key Benefits of Microsoft Dynamics 365 for Small Businesses',
+    description: "Discover the key benefits of Microsoft Dynamics 365 for small businesses—scalable CRM/ERP, automation, insights, and seamless Microsoft integration. ",
     alternates: {
         canonical: 'https://plenum-tech.com/blog/dynamics-365-for-small-business',
     },
