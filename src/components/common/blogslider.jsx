@@ -36,13 +36,13 @@ const BlogSlider = ({ }) => {
             id: 4,
             link: '/blog/dynamics-vs-traditional-crm'
         },
-        {
-            img: "/blog/Article4.1.jpg",
-            date: "May 26, 2025",
-            para: "Key Benefits of Microsoft Dynamics 365 for Small Businesses",
-            id: 5,
-            link: '/blog/dynamics-365-for-small-businesses'
-        },
+        // {
+        //     img: "/blog/Article4.1.jpg",
+        //     date: "May 26, 2025",
+        //     para: "Key Benefits of Microsoft Dynamics 365 for Small Businesses",
+        //     id: 5,
+        //     link: '/blog/dynamics-365-for-small-businesses'
+        // },
         {
             img: "/blog/Article2.1.jpg",
             date: "May 26, 2025",
