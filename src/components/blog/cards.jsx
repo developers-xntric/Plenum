@@ -104,22 +104,36 @@ const cardData = [
         img: "/blog/AN15.jpg",
         date: "June 6, 2025",
         para: "How to Choose an ERP System for Your Company",
-        id: 14,
+        id: 15,
         link: '/blog/how-to-choose-an-erp-system'
     },
     {
         img: "/blog/AN16.jpg",
         date: "June 9, 2025",
         para: "How to Get Started with Microsoft Dynamics 365",
-        id: 14,
+        id: 16,
         link: '/blog/get-started-with-microsoft-dynamics-365'
     },
     {
         img: "/blog/AN17.jpg",
         date: "June 10, 2025",
         para: "Why Microsoft Dynamics 365 is Game-Changer in 2025?",
-        id: 14,
+        id: 17,
         link: '/blog/why-microsoft-dynamics-365-is-game-changer'
+    },
+    {
+        img: "/blog/AN18.jpg",
+        date: "June 11, 2025",
+        para: "Microsoft Dynamics 365 Improves CRM - Key Features",
+        id: 18,
+        link: '/blog/microsoft-dynamics-365-improves-crm'
+    },
+    {
+        img: "/blog/AN19.jpg",
+        date: "June 12, 2025",
+        para: "What is Microsoft Dynamics 365? In-Depth Overview",
+        id: 19,
+        link: '/blog/what-is-microsoft-dynamics'
     },
 ]
 const Cards = () => {
