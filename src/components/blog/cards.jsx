@@ -93,7 +93,27 @@ const cardData = [
         id: 13,
         link: '/blog/dynamics-with-other-apps-integration'
     },
-
+    {
+        img: "/blog/AN14.jpg",
+        date: "June 5, 2025",
+        para: "How ERP Increase Efficiency in Supply Chain Management",
+        id: 14,
+        link: '/blog/how-erp-enhances-efficiency-in-supply-chain'
+    },
+    {
+        img: "/blog/AN15.jpg",
+        date: "June 6, 2025",
+        para: "How to Choose an ERP System for Your Company",
+        id: 14,
+        link: '/blog/how-to-choose-an-erp-system'
+    },
+    {
+        img: "/blog/AN16.jpg",
+        date: "June 9, 2025",
+        para: "How to Get Started with Microsoft Dynamics 365",
+        id: 14,
+        link: '/blog/get-started-with-microsoft-dynamics-365'
+    },
 ]
 const Cards = () => {
     return (
