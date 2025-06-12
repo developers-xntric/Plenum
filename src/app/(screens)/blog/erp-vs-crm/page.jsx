@@ -10,8 +10,6 @@ export const metadata = {
     canonical: 'https://plenum-tech.com/blog/erp-vs-crm',
   },
 };
-
-export default function ERPCRM() {
   const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -42,6 +40,8 @@ export default function ERPCRM() {
     }
   ]
 };
+export default function ERPCRM() {
+
 
   return (
     <>
