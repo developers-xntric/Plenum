@@ -1,11 +1,52 @@
 import { Blog } from "@/components/homepage/blog";
 import { cardData } from "@/data/home-blog";
 import Image from "next/image";
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "How is AI changing cloud computing?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Common CRM platforms include Salesforce, HubSpot, Zoho CRM, and Microsoft Dynamics 365 CRM. These tools help businesses manage leads, track customer interactions, automate marketing, and improve customer support.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Which AI does Oracle use?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Oracle uses its own AI and machine learning technologies, integrated into products like Oracle Autonomous Database, Oracle Digital Assistant, and OCI AI Services, to automate operations and deliver intelligent insights.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Does Oracle Cloud have a future?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes, Oracle Cloud has a strong future, driven by enterprise-grade performance, AI integration, and strategic partnerships. Its focus on security, scalability, and autonomous services continues to attract global businesses.",
+      },
+    },
+      {
+      "@type": "Question",
+      name: "What is a key benefit of using Oracle Cloud Infrastructure?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "A key benefit of Oracle Cloud Infrastructure is its high performance at a lower cost. It offers reliable, secure, and scalable computing with built-in AI for automation and advanced analytics.",
+      },
+    },
+  ],
+}
 export const metadata = {
   title: 'How AI Revolutionizes Oracle Cloud Infrastructure for Businesses ',
   description: "Discover how AI transforms Oracle Cloud Infrastructure by boosting automation, scalability, security, and decision-making across industries. ",
   alternates: {
     canonical: 'https://plenum-tech.com/blog/oracle-cloud-infrastructure',
+  },
+    other: {
+    "script:ld+json": JSON.stringify(faqSchema),
   },
 };
 

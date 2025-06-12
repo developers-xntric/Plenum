@@ -1,12 +1,53 @@
 import { Blog } from "@/components/homepage/blog";
 import { cardData } from "@/data/home-blog";
 import Image from "next/image";
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Which ERP is used by Oracle?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Oracle uses its own ERP system called Oracle ERP Cloud, a comprehensive suite of integrated applications for finance, procurement, project management, and more, designed to streamline and automate business processes.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What is the difference between Dynamics 365 and Oracle ERP?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Dynamics 365 integrates ERP and CRM with Microsoft tools, ideal for SMBs, while Oracle ERP Cloud offers deep enterprise-grade capabilities focused on large-scale financials, automation, and global scalability.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What is the Oracle ERP Cloud?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Oracle ERP Cloud is a cloud-based enterprise resource planning suite offering tools for financial management, procurement, project planning, and risk management, aimed at increasing efficiency and real-time decision-making.",
+      },
+    },
+      {
+      "@type": "Question",
+      name: "What is a key benefit of using Oracle Cloud Infrastructure?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "A key benefit of Oracle Cloud Infrastructure is its high performance at a lower cost. It offers reliable, secure, and scalable computing with built-in AI for automation and advanced analytics.",
+      },
+    },
+  ],
+}
 export const metadata = {
     title: 'Why Every Business Needs Oracle Database Integration with ERP Systems ',
     description: "Discover why integrating Oracle Database with ERP systems boosts efficiency, data security, scalability, and smarter decision-making for business growth. ",
     alternates: {
         canonical: 'https://plenum-tech.com/blog/oracle-database-integration',
     },
+     other: {
+    "script:ld+json": JSON.stringify(faqSchema),
+  },
 };
 
 

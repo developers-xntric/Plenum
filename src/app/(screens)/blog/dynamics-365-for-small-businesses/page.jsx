@@ -2,12 +2,47 @@ import { Blog } from "@/components/homepage/blog";
 import { cardData } from "@/data/home-blog";
 import Image from "next/image";
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What size companies use Microsoft Dynamics 365?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Microsoft Dynamics 365 is used by businesses of all sizes—from small startups to large enterprises. Its modular design and flexible pricing make it suitable for scaling as a company grows.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What is the minimum number of licenses for Dynamics 365?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "There is no strict minimum; you can start with just one user license. This makes Dynamics 365 accessible for small businesses and scalable for teams as needs grow.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What is the purpose of Microsoft Dynamics 365?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Microsoft Dynamics 365 helps businesses manage operations, sales, customer service, finance, and marketing through a unified, cloud-based platform that enhances productivity and data-driven decision-making.",
+      },
+    },
+      
+  ],
+}
+
 export const metadata = {
     title: 'Key Benefits of Microsoft Dynamics 365 for Small Businesses',
     description: "Discover the key benefits of Microsoft Dynamics 365 for small businesses—scalable CRM/ERP, automation, insights, and seamless Microsoft integration. ",
     alternates: {
         canonical: 'https://plenum-tech.com/blog/dynamics-365-for-small-business',
     },
+      other: {
+    "script:ld+json": JSON.stringify(faqSchema),
+  },
 };
 
 

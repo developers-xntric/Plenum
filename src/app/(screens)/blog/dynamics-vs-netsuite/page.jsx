@@ -1,11 +1,44 @@
 import { Blog } from "@/components/homepage/blog";
 import { cardData } from "@/data/home-blog";
 import Image from "next/image";
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Is Microsoft Dynamics better than NetSuite?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Microsoft Dynamics and NetSuite both offer robust ERP solutions, but the best choice depends on your business needs. Dynamics is highly customizable and integrates well with other Microsoft products, while NetSuite offers a strong cloud-native ERP platform. Mid-sized to large enterprises often prefer Dynamics for flexibility; NetSuite appeals for simplicity and ease of deployment.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is Dynamics an ERP or CRM?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Popular ERP systems include SAP, Oracle NetSuite, Microsoft Dynamics 365, and Odoo. These platforms help businesses streamline operations like accounting, inventory, procurement, and human resources through a unified system.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Which is better, Microsoft Dynamics or Oracle?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Microsoft Dynamics and Oracle both offer powerful ERP systems. Oracle is often favored by large enterprises needing deep financial and supply chain functionality. Dynamics, however, is known for user-friendliness, scalability, and strong integration with Microsoft tools. The better option depends on your business size, complexity, and existing tech stack",
+      },
+    },
+  ],
+}
 export const metadata = {
   title: 'Dynamics vs NetSuite: Comparing Microsoft and Oracle ERP Solutions',
   description: "Discover the key differences between Microsoft Dynamics vs NetSuite. Explore features, pricing, scalability, and industry fit to choose the best ERP for your business.",
   alternates: {
     canonical: 'https://plenum-tech.com/blog/dynamics-vs-netsuite',
+  },
+  other: {
+    "script:ld+json": JSON.stringify(faqSchema),
   },
 };
 
