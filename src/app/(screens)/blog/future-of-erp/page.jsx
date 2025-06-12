@@ -2,8 +2,8 @@ import { Blog } from "@/components/homepage/blog";
 import { cardData } from "@/data/home-blog";
 import Image from "next/image";
 export const metadata = {
-  title: 'Future Of ERP',
-  description: "Discover how Microsoft Dynamics 365 ERP modules drive business growth with AI, cloud flexibility, and seamless integration for modern enterprise success. ",
+  title: 'The Future of ERP: Exploring ERP Modules in Microsoft Dynamics 365 ',
+  description: "Discover how Microsoft Dynamics 365 ERP modules drive business growth with AI, cloud flexibility, and seamless integration for modern enterprise success.  ",
   alternates: {
     canonical: 'https://plenum-tech.com/blog/future-of-erp',
   },

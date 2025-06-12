@@ -3,7 +3,7 @@ import { cardData } from "@/data/home-blog";
 import Image from "next/image";
 export const metadata = {
     title: 'What is ERP? A Comprehensive Guide',
-    description: "Discover the key differences between Microsoft Dynamics vs NetSuite. Explore features, pricing, scalability, and industry fit to choose the best ERP for your business.",
+    description: "Learn what ERP is, how ERP systems work, their role in accounting, and key solutions like SAP ERP in this comprehensive guide for businesses of all sizes. ",
     alternates: {
         canonical: 'https://plenum-tech.com/blog/what-is-erp',
     },

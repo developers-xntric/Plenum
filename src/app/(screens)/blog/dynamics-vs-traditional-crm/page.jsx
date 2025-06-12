@@ -2,8 +2,8 @@ import { Blog } from "@/components/homepage/blog";
 import { cardData } from "@/data/home-blog";
 import Image from "next/image";
 export const metadata = {
-    title: 'Dynamics vs NetSuite: Comparing Microsoft and Oracle ERP Solutions',
-    description: "Discover the key differences between Microsoft Dynamics vs NetSuite. Explore features, pricing, scalability, and industry fit to choose the best ERP for your business.",
+    title: 'Microsoft Dynamics 365 vs Traditional CRM: Key Differences ',
+    description: "Compare Microsoft Dynamics 365 with traditional CRMs. Discover which CRM suits modern business needs with insights on features, scalability, and ROI. ",
     alternates: {
         canonical: 'https://plenum-tech.com/blog/dynamics-vs-traditional-crm',
     },
