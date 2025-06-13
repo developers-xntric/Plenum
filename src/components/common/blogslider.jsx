@@ -141,6 +141,20 @@ const BlogSlider = ({ }) => {
             id: 19,
             link: '/blog/what-is-microsoft-dynamics'
         },
+        {
+            img: "/blog/Article21.1.jpeg",
+            date: "June 13, 2025",
+            para: "What is Business Process Modelling? A Critical Step in ERP Success",
+            id: 20,
+            link: '/blog/what-is-business-process-modeling'
+        },
+        {
+            img: "/blog/Article22.1.jpeg",
+            date: "June 13, 2025",
+            para: "The Complete Guide to Business Central Reporting",
+            id: 21,
+            link: '/blog/guide-to-business-central-reports'
+        },
     ]
     const splideRef = useRef(null);
     useEffect(() => {
