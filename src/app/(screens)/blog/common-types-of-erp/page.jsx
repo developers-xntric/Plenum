@@ -195,6 +195,32 @@ export default function CommonTypes() {
                 </p>
               </div>
             </div>
+            <h2 className="text-[20px] lg:text-[30px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+              FAQs:
+            </h2>
+            <div>
+              <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+               What are the 3 common types of ERP?
+              </h2>
+              <div className="space-y-5">
+                <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
+                  The three common ERP types are on-premise ERP, cloud ERP, and hybrid ERP. Each offers different deployment models, scalability, and control depending on business needs.
+
+                </p>
+              </div>
+            </div>
+            <div>
+              <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                What is the most commonly used ERP?
+
+              </h2>
+              <div className="space-y-5">
+                <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
+                 SAP and Microsoft Dynamics are among the most widely used ERP systems globally, offering robust features for enterprises of all sizes across industries.
+
+                </p>
+              </div>
+            </div>
           </div>
         </div>
         <Blog heading='Discover More Blogs' para="Stay updated with our ongoing blogs inclusive of tips, case study examples and expert views around the usage of AI, cloud services and ERP solutions to support business growth and operational effectiveness." cardData={cardData} />

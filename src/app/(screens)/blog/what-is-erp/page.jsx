@@ -150,6 +150,39 @@ export default function ComprehensiveGuide() {
                                 </p>
                             </div>
                         </div>
+                        <h2 className="text-[20px] lg:text-[30px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                            FAQs:
+                        </h2>
+                        <div>
+                            <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                              What are the 5 components of ERP?
+                            </h2>
+                            <div className="space-y-5">
+                                <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
+                                  The five core components of ERP are finance, human resources, manufacturing, supply chain management, and customer relationship management (CRM), collectively supporting end-to-end business operations.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                               Why is ERP important?
+                            </h2>
+                            <div className="space-y-5">
+                                <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
+                                     ERP systems centralize data, automate processes, and improve visibility across departments, enabling better decision-making, enhanced productivity, cost control, and a unified view of operations.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                               What are the 3 characteristics of an ERP?
+                            </h2>
+                            <div className="space-y-5">
+                                <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
+                                    ERP systems are integrated, scalable, and modular—offering centralized data management, adaptability to business growth, and customizable modules to match specific organizational needs.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <Blog heading='Discover More Blogs' para="Stay updated with our ongoing blogs inclusive of tips, case study examples and expert views around the usage of AI, cloud services and ERP solutions to support business growth and operational effectiveness." cardData={cardData} />

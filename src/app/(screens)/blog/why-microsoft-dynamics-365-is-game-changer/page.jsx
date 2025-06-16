@@ -165,6 +165,42 @@ export default function KeyBenefits() {
                             Microsoft Dynamics 365 will keep modifying ERP and CRM systems in 2025, enabling companies to operate in a world where technology is continually evolving and ensure their success. Whether achieving operational effectiveness, sustainability, or enhancing customer interactions define your goals, Dynamics 365 will be first in business innovation and success.
                         </p>
                     </div>
+                    <h2 className="text-[20px] lg:text-[30px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                        FAQs:
+                    </h2>
+                    <div>
+                        <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                            What is the future of D365?
+                        </h2>
+                        <div className="space-y-5">
+                            <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
+                                The future of Dynamics 365 lies in deeper AI integration, industry-specific modules, better data analytics, and tighter integration with Microsoft’s cloud ecosystem.
+
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                            Is Dynamics 365 growing?
+
+                        </h2>
+                        <div className="space-y-5">
+                            <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
+                                Yes, Dynamics 365 continues to grow rapidly, driven by its flexible architecture, cloud capabilities, and increasing adoption among enterprises seeking digital transformation.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                            Is Microsoft Dynamics ending?
+
+                        </h2>
+                        <div className="space-y-5">
+                            <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
+                                No, Microsoft Dynamics is not ending. Instead, it continues to evolve with regular updates, enhancements, and expanding features across ERP and CRM.
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
                 {/* Related Blog Section */}

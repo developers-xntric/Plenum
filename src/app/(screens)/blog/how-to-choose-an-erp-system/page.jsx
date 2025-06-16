@@ -220,11 +220,44 @@ export default function HowToChoose() {
                                 <div className="space-y-5">
                                     <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
                                         Choosing the appropriate ERP system is a strategic choice that may change the way your company runs. Finding a system that enables your business to reach its objectives requires a full awareness of your demands, a reasonable budget, evaluation of possibilities depending on scalability, security, and user-friendliness.
-                                        
+
 
                                     </p>
                                     <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
-                                       Spend some time organising, including your staff, and selecting a method that advances your development and efficiency vision.
+                                        Spend some time organising, including your staff, and selecting a method that advances your development and efficiency vision.
+                                    </p>
+                                </div>
+                            </div>
+                            <h2 className="text-[20px] lg:text-[30px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                                FAQs:
+                            </h2>
+                            <div>
+                                <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                                    How do you select an ERP system for an organization?
+                                </h2>
+                                <div className="space-y-5">
+                                    <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
+                                        Choose an ERP system by evaluating your business needs, industry requirements, scalability, integration capabilities, vendor support, and total cost of ownership.
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                                    What are the main 3 factors would you set to choose an ERP system?
+                                </h2>
+                                <div className="space-y-5">
+                                    <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
+                                        Key factors include system compatibility with business processes, scalability for future growth, and user-friendliness to ensure smooth adoption.
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                                    What should be the essential selection criteria for selecting an ERP?
+                                </h2>
+                                <div className="space-y-5">
+                                    <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
+                                        Selection criteria should include functionality, customization options, vendor reputation, integration ease, implementation time, and total cost.
                                     </p>
                                 </div>
                             </div>

@@ -147,6 +147,42 @@ export default function CommonTypes() {
                                 </p>
                             </div>
                         </div>
+                        <h2 className="text-[20px] lg:text-[30px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                            FAQs:
+                        </h2>
+                        <div>
+                            <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                                Do you integrate any other products with Dynamics 365?
+                            </h2>
+                            <div className="space-y-5">
+                                <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
+                                    Yes, Dynamics 365 can be integrated with third-party applications such as Salesforce, Shopify, QuickBooks, Power BI, and more, enabling seamless data flow and process automation.
+
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                                Does Microsoft Dynamics have an API?
+                            </h2>
+                            <div className="space-y-5">
+                                <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
+                                    Yes, Microsoft Dynamics provides RESTful Web APIs and OData services, allowing developers to access and integrate data from Dynamics 365 with external applications.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                                What is Microsoft 365 integration?
+
+                            </h2>
+                            <div className="space-y-5">
+                                <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
+                                    It allows users to connect Dynamics 365 with Microsoft 365 apps like Outlook, Excel, and Teams to enhance productivity and ensure seamless workflow integration.
+
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <Blog heading='Discover More Blogs' para="Stay updated with our ongoing blogs inclusive of tips, case study examples and expert views around the usage of AI, cloud services and ERP solutions to support business growth and operational effectiveness." cardData={cardData} />

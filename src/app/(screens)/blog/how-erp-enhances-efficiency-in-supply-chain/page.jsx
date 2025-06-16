@@ -230,14 +230,14 @@ export default function HowERP() {
                         </div>
                         <div>
                             <h2 className="text-[25px] lg:text-[36px] font-medium mb-6 leading-[35px] lg:leading-[42px] font-['Archivo']">
-                               The Future of ERP in Supply Chain Management
+                                The Future of ERP in Supply Chain Management
 
                             </h2>
                             <div className="space-y-3">
                                 <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
                                     ERP systems' future resides in its interaction with newly developing technologies such artificial intelligence (AI), machine learning, and the Internet of Things (IoT). Predictive analytics, automated decision-making, and improved process optimization made possible by these developments will IoT devices, for instance, may provide real-time data from warehouses, while artificial intelligence systems can see trends and recommend changes. Companies using these developments will have a competitive advantage in their supply chain activities.
                                 </p>
-                               
+
                             </div>
                         </div>
                         <div>
@@ -246,9 +246,42 @@ export default function HowERP() {
                             </h2>
                             <div className="space-y-3">
                                 <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
-                                   ERP Supply Chain systems have transformed supply chain management by providing a consistent platform to simplify procedures, boost cooperation, and raise performance. ERP software helps companies to save costs, maximize resources, and increase customer satisfaction by means of improved control of expenses. ERP systems will remain essential in creating nimble and strong supply chains as technology develops.
+                                    ERP Supply Chain systems have transformed supply chain management by providing a consistent platform to simplify procedures, boost cooperation, and raise performance. ERP software helps companies to save costs, maximize resources, and increase customer satisfaction by means of improved control of expenses. ERP systems will remain essential in creating nimble and strong supply chains as technology develops.
                                 </p>
-                               
+
+                            </div>
+                        </div>
+                        <h2 className="text-[20px] lg:text-[30px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                            FAQs:
+                        </h2>
+                        <div>
+                            <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                                What is ERP in supply chain management?
+                            </h2>
+                            <div className="space-y-5">
+                                <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
+                                    ERP in supply chain management refers to using integrated software to manage procurement, production, inventory, logistics, and demand planning in real time.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                                How do ERP systems impact supply chain management?
+                            </h2>
+                            <div className="space-y-5">
+                                <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
+                                    ERP enhances visibility, streamlines operations, reduces delays, and improves supplier coordination, enabling more efficient and responsive supply chain management.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                                What is the relationship between ERP and SCM?
+                            </h2>
+                            <div className="space-y-5">
+                                <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
+                                    ERP systems provide the backbone for SCM by integrating data across departments, enabling better planning, coordination, and execution of supply chain activities.
+                                </p>
                             </div>
                         </div>
                     </div>

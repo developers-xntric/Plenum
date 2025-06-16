@@ -101,6 +101,30 @@ export default function GuideToBusinessCentralReports() {
                             At Datix, we specialize in helping manufacturers and distributors optimize operations through proven ERP strategies. With over 20 years of experience, our team understands how critical BPM is to business transformation. Using tools like our Unity integration platform, we connect ERP with CRM, eCommerce, and Marketing Automation systems for end-to-end visibility and control.
                         </p>
                     </div>
+                    <h2 className="text-[20px] lg:text-[30px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                        FAQs:
+                    </h2>
+                    <div>
+                        <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                          What do you mean by business process modeling?
+                        </h2>
+                        <div className="space-y-5">
+                            <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
+                               Business process modeling is the visual representation of a company’s workflows, helping to analyze, optimize, and standardize operations for better efficiency and control.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                          What is the business module in ERP?
+                        </h2>
+                        <div className="space-y-5">
+                            <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
+                                A business module in ERP refers to a functional unit—like finance, HR, or inventory—that handles a specific set of business operations within the system.
+                            </p>
+                        </div>
+                    </div>
+                   
                 </div>
 
                 {/* Related Blog Section */}

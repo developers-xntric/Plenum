@@ -38,9 +38,9 @@ export default function GetStartedWithDynamics365() {
                     <div className="md:px-6 pb-2 md:pb-12 py-12 space-y-12 lg:max-w-[80%] xl:max-w-[70%] 2xl:max-w-[65%]">
                         <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
                             Powerful, cloud-based business solution Microsoft Dynamics 365 combines ERP and CRM into one platform. Designed to simplify processes, increase customer involvement, and improve decision-making, Dynamics 365 provides a suite of tools catered to different business requirements.
-                    
+
                             It brings along the tools required to promote efficiency and expansion whether your goals are to maximize sales, automate processes, or get real-time insights using AI-driven analytics.
-                    
+
                             In this article, we will tell you how to start Microsoft Dynamics along with everything else you need to know.
                         </p>
 
@@ -127,6 +127,39 @@ export default function GetStartedWithDynamics365() {
                         <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
                             Dynamic 365 helps companies to make data-driven choices and increase general efficiency with its cloud-based architecture, AI-powered insights, and flawless integrations. Successful deployment calls for teamwork, instruction, and ongoing development to help companies realize Microsoft Dynamics 365's full capability. Adopting Dynamics 365 will help operational excellence and position your firm for long-term success regardless of size—small business or major corporation.
                         </p>
+                    </div>
+                    <h2 className="text-[20px] lg:text-[30px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                        FAQs:
+                    </h2>
+                    <div>
+                        <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                            What does Microsoft Dynamics 365 do?
+                        </h2>
+                        <div className="space-y-5">
+                            <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
+                                Dynamics 365 helps businesses manage sales, customer service, finance, operations, and more through modular applications integrated into a cloud-based platform.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                            Does Dynamics 365 need coding?
+                        </h2>
+                        <div className="space-y-5">
+                            <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
+                                Basic usage requires no coding, but advanced customization and integration may require programming knowledge, especially for extensions or complex automation.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                            What are the disadvantages of Dynamics 365?
+                        </h2>
+                        <div className="space-y-5">
+                            <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
+                                Disadvantages may include a steep learning curve, high licensing costs for larger implementations, and occasional performance issues with custom integrations.
+                            </p>
+                        </div>
                     </div>
                 </div>
 

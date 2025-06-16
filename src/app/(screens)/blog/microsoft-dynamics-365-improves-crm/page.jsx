@@ -157,6 +157,49 @@ export default function CRMImprovement() {
                             Microsoft Dynamics 365 is more than just a CRM for companies trying to remain competitive in a world becoming more and more customer-centric; it's a strategic partner that promotes development, creativity, and enduring customer loyalty.
                         </p>
                     </div>
+                    <h2 className="text-[20px] lg:text-[30px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                        FAQs:
+                    </h2>
+                    <div>
+                        <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                            What are the benefits of Microsoft Dynamics CRM?
+                        </h2>
+                        <div className="space-y-5">
+                            <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
+                                Dynamics CRM offers improved customer insights, sales tracking, automated workflows, customer service tools, and marketing automation—all integrated into one platform.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                            Is Dynamic 365 a good CRM?
+                        </h2>
+                        <div className="space-y-5">
+                            <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
+                                Yes, it’s a robust, scalable CRM solution with deep integration across Microsoft tools, making it ideal for businesses seeking efficiency and data-driven decision-making.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                            Can Microsoft 365 be used as a CRM?
+                        </h2>
+                        <div className="space-y-5">
+                            <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
+                                Microsoft 365 isn’t a CRM, but when integrated with Dynamics 365, it enhances CRM capabilities by linking communication, collaboration, and data tools.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                          What are the CRM capabilities of Dynamics 365?
+                        </h2>
+                        <div className="space-y-5">
+                            <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
+                               Dynamics 365 CRM capabilities include lead and opportunity management, customer service, sales automation, marketing campaigns, and customer engagement analytics.
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
                 {/* Related Blog Section */}

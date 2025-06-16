@@ -120,6 +120,40 @@ export default function Ai() {
                 </p>
               </div>
             </div>
+            <h2 className="text-[20px] lg:text-[30px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+              FAQs:
+            </h2>
+            <div>
+              <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                What is the future of ERP system?
+              </h2>
+              <div className="space-y-5">
+                <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
+                  The future of ERP lies in cloud-based, AI-powered, and modular solutions that offer real-time analytics, automation, and flexibility to adapt to evolving business needs and digital transformation initiatives.
+                </p>
+              </div>
+            </div>
+            <div>
+              <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                What are the modules of Dynamics 365?
+              </h2>
+              <div className="space-y-5">
+                <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
+                  Dynamics 365 includes modules for Sales, Customer Service, Finance, Supply Chain, Human Resources, Field Service, Marketing, and Project Operations, each designed to manage specific business functions effectively.
+
+                </p>
+              </div>
+            </div>
+            <div>
+              <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                What are the major ERP products of Microsoft Dynamics?
+              </h2>
+              <div className="space-y-5">
+                <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
+                  Major ERP products include Dynamics 365 Finance, Supply Chain Management, Business Central, and Project Operations—each tailored for organizations of different sizes and operational needs.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
         <Blog heading='Discover More Blogs' para="Stay updated with our ongoing blogs inclusive of tips, case study examples and expert views around the usage of AI, cloud services and ERP solutions to support business growth and operational effectiveness." cardData={cardData} />

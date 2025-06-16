@@ -166,7 +166,7 @@ export default function GuideToBusinessCentralReports() {
                             </ul>
                         </div>
                         <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
-                           Other tips include:
+                            Other tips include:
                         </p>
                         <div>
                             <ul className="list-disc pl-5 space-y-2 mt-4">
@@ -177,6 +177,39 @@ export default function GuideToBusinessCentralReports() {
                                 <li className="text-[16px] lg:text-[18px] font-medium leading-[35px] lg:leading-[42px] font-['Archivo']">Customize Only When Necessary: Turn to custom reports when your business faces a unique scenario not covered by default templates.
                                 </li>
                             </ul>
+                        </div>
+                    </div>
+                    <h2 className="text-[20px] lg:text-[30px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                        FAQs:
+                    </h2>
+                    <div>
+                        <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                            What are reports in Business Central?
+                        </h2>
+                        <div className="space-y-5">
+                            <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
+                                Reports in Business Central provide real-time data insights on finance, inventory, sales, and more. They help users make informed business decisions using customizable templates and visual dashboards.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                            Is Microsoft Dynamics the same as Business Central?
+                        </h2>
+                        <div className="space-y-5">
+                            <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
+                                Business Central is part of Microsoft Dynamics 365, specifically designed for small to medium-sized businesses as an all-in-one ERP solution.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                            Which two types of reports can be created for Microsoft Dynamics CRM?
+                        </h2>
+                        <div className="space-y-5">
+                            <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
+                                You can create FetchXML-based reports and SQL Server Reporting Services (SSRS) reports in Microsoft Dynamics CRM for data visualization and analytics.
+                            </p>
                         </div>
                     </div>
                 </div>
