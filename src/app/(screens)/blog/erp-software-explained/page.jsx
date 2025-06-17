@@ -1,12 +1,56 @@
 import { Blog } from "@/components/homepage/blog";
 import { cardData } from "@/data/home-blog";
 import Image from "next/image";
+
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "How to integrate with Microsoft Dynamics?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Integration with Microsoft Dynamics involves using APIs, data connectors, or middleware tools to sync external systems like CRM, e-commerce, or finance apps with Dynamics modules for seamless data sharing and process automation.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What is Microsoft 365 integration?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: " Microsoft 365 integration connects tools like Outlook, Teams, and Excel with Dynamics 365, allowing users to collaborate, access data, and streamline tasks directly within familiar Microsoft productivity apps.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What is Microsoft Dynamics 365 Operations?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: " Dynamics 365 Operations, now called Finance and Operations, is an ERP solution for managing financials, manufacturing, supply chain, and commerce, helping businesses drive efficiency across core operational areas.",
+      },
+    },
+     {
+      "@type": "Question",
+      name: "How do I integrate Teams with Dynamics 365?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "You can integrate Microsoft Teams with Dynamics 365 using native connectors, allowing users to collaborate on records, schedule meetings, and share updates within Teams while maintaining context from Dynamics.",
+      },
+    },
+      
+  ],
+}
 export const metadata = {
     title: 'How Microsoft Dynamics 365 Integrates with Your Business Operations',
     description: "Discover how Microsoft Dynamics 365 seamlessly integrates your business operations, enhancing productivity, collaboration, and data-driven decision-making. ",
     alternates: {
         canonical: 'https://plenum-tech.com/blog/erp-software-exaplained',
     },
+      other: {
+    "script:ld+json": JSON.stringify(faqSchema),
+  },
 };
 
 

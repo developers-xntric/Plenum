@@ -1,12 +1,49 @@
 import { Blog } from "@/components/homepage/blog";
 import { cardData } from "@/data/home-blog";
 import Image from "next/image";
+
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What is ERP in supply chain management?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: " ERP in supply chain management refers to using integrated software to manage procurement, production, inventory, logistics, and demand planning in real time.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How do ERP systems impact supply chain management?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "ERP enhances visibility, streamlines operations, reduces delays, and improves supplier coordination, enabling more efficient and responsive supply chain management.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What is the relationship between ERP and SCM?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: " ERP systems provide the backbone for SCM by integrating data across departments, enabling better planning, coordination, and execution of supply chain activities.",
+      },
+    },
+    
+      
+  ],
+}
 export const metadata = {
     title: 'How ERP Increase Efficiency in Supply Chain Management',
     description: "Learn how well-designed ERP can Automate repetitive and time-consuming tasks, freeing up time to focus on higher value-added activities.",
     alternates: {
         canonical: 'https://plenum-tech.com/blog/how-erp-enhances-efficiency-in-supply-chain',
     },
+      other: {
+    "script:ld+json": JSON.stringify(faqSchema),
+  },
 };
 
 

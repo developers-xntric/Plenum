@@ -2,12 +2,38 @@ import { Blog } from "@/components/homepage/blog";
 import { cardData } from "@/data/home-blog";
 import Image from "next/image";
 
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What do you mean by business process modeling?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Business process modeling is the visual representation of a company’s workflows, helping to analyze, optimize, and standardize operations for better efficiency and control."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the business module in ERP?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A business module in ERP refers to a functional unit—like finance, HR, or inventory—that handles a specific set of business operations within the system."
+      }
+    }
+  ]
+}
 export const metadata = {
     title: 'What is Business Process Modelling? | ERP Success Guide',
     description: "Discover what business process modelling is, why it's vital in ERP, and how tools like BPMN help boost efficiency, ROI, and project success.",
     alternates: {
         canonical: 'https://plenum-tech.com/what-is-business-process-modeling',
     },
+     other: {
+    "script:ld+json": JSON.stringify(faqSchema),
+  },
 };
 
 export default function GuideToBusinessCentralReports() {

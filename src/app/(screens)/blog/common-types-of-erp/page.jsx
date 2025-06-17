@@ -1,11 +1,39 @@
 import { Blog } from "@/components/homepage/blog";
 import { cardData } from "@/data/home-blog";
 import Image from "next/image";
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What are the 3 common types of ERP?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The three common ERP types are on-premise ERP, cloud ERP, and hybrid ERP. Each offers different deployment models, scalability, and control depending on business needs.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What is the most commonly used ERP?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "SAP and Microsoft Dynamics are among the most widely used ERP systems globally, offering robust features for enterprises of all sizes across industries.",
+      },
+    },
+    
+      
+  ],
+}
 export const metadata = {
   title: 'Common Types of ERP: Understanding the Options Available.  ',
   description: "Explore common types of ERP systems—cloud, on-premise, hybrid, and more—to find the best fit for your business size, industry, and growth goals. ",
   alternates: {
     canonical: 'https://plenum-tech.com/blog/dynamics-netsuite',
+  },
+     other: {
+    "script:ld+json": JSON.stringify(faqSchema),
   },
 };
 

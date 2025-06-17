@@ -2,12 +2,56 @@ import { Blog } from "@/components/homepage/blog";
 import { cardData } from "@/data/home-blog";
 import Image from "next/image";
 
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are the benefits of Microsoft Dynamics CRM?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dynamics CRM offers improved customer insights, sales tracking, automated workflows, customer service tools, and marketing automation—all integrated into one platform."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Dynamic 365 a good CRM?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, it’s a robust, scalable CRM solution with deep integration across Microsoft tools, making it ideal for businesses seeking efficiency and data-driven decision-making."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can Microsoft 365 be used as a CRM?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Microsoft 365 isn’t a CRM, but when integrated with Dynamics 365, it enhances CRM capabilities by linking communication, collaboration, and data tools."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the CRM capabilities of Dynamics 365?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dynamics 365 CRM capabilities include lead and opportunity management, customer service, sales automation, marketing campaigns, and customer engagement analytics."
+      }
+    }
+  ]
+}
+
+
 export const metadata = {
     title: 'Microsoft Dynamics 365 Improves CRM - Key Features',
     description: "Discover how Microsoft Dynamics 365 enhances CRM with powerful features like AI-driven insights, automation, and seamless integrations.",
     alternates: {
         canonical: 'https://plenum-tech.com/microsoft-dynamics-365-improves-crm',
     },
+         other: {
+    "script:ld+json": JSON.stringify(faqSchema),
+  },
 };
 
 export default function CRMImprovement() {

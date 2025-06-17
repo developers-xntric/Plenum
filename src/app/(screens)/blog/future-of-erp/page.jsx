@@ -1,11 +1,46 @@
 import { Blog } from "@/components/homepage/blog";
 import { cardData } from "@/data/home-blog";
 import Image from "next/image";
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What is the future of ERP system?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: " The future of ERP lies in cloud-based, AI-powered, and modular solutions that offer real-time analytics, automation, and flexibility to adapt to evolving business needs and digital transformation initiatives.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What are the modules of Dynamics 365?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Dynamics 365 includes modules for Sales, Customer Service, Finance, Supply Chain, Human Resources, Field Service, Marketing, and Project Operations, each designed to manage specific business functions effectively.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What are the major ERP products of Microsoft Dynamics?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: " Major ERP products include Dynamics 365 Finance, Supply Chain Management, Business Central, and Project Operations—each tailored for organizations of different sizes and operational needs.",
+      },
+    },
+      
+  ],
+}
 export const metadata = {
   title: 'The Future of ERP: Exploring ERP Modules in Microsoft Dynamics 365 ',
   description: "Discover how Microsoft Dynamics 365 ERP modules drive business growth with AI, cloud flexibility, and seamless integration for modern enterprise success.  ",
   alternates: {
     canonical: 'https://plenum-tech.com/blog/future-of-erp',
+  },
+   other: {
+    "script:ld+json": JSON.stringify(faqSchema),
   },
 };
 

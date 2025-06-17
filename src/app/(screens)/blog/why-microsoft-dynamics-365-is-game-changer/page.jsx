@@ -2,12 +2,50 @@ import { Blog } from "@/components/homepage/blog";
 import { cardData } from "@/data/home-blog";
 import Image from "next/image";
 
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What is the future of D365?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The future of Dynamics 365 lies in deeper AI integration, industry-specific modules, better data analytics, and tighter integration with Microsoft’s cloud ecosystem.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is Dynamics 365 growing?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes, Dynamics 365 continues to grow rapidly, driven by its flexible architecture, cloud capabilities, and increasing adoption among enterprises seeking digital transformation.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is Microsoft Dynamics ending?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: " No, Microsoft Dynamics is not ending. Instead, it continues to evolve with regular updates, enhancements, and expanding features across ERP and CRM.",
+      },
+    },
+    
+      
+  ],
+}
+
+
 export const metadata = {
     title: 'Why Microsoft Dynamics 365 is Game-Changer in 2025?',
     description: "Learn why Microsoft Dynamics 365 is a game-changer in 2025. Explore its latest features, AI-driven innovations, and business benefits.",
     alternates: {
         canonical: 'https://plenum-tech.com/why-microsoft-dynamics-365-is-game-changer',
     },
+            other: {
+    "script:ld+json": JSON.stringify(faqSchema),
+  },
 };
 
 export default function KeyBenefits() {

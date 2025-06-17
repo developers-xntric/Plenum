@@ -2,12 +2,55 @@ import { Blog } from "@/components/homepage/blog";
 import { cardData } from "@/data/home-blog";
 import Image from "next/image";
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What is Microsoft Dynamics 365 used for?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Microsoft Dynamics 365 is used to manage business processes across sales, marketing, finance, supply chain, and customer service, combining ERP and CRM capabilities in a unified cloud platform.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is Dynamics 365 an ERP or CRM?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Dynamics 365 is both an ERP and CRM platform. It offers separate applications for enterprise resource planning and customer relationship management, integrated within a single ecosystem.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What is the function of Dynamics 365?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Its primary function is to streamline operations, improve customer engagement, and provide data-driven insights by integrating various business processes in a connected platform.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What is the difference between Microsoft 365 and Dynamics 365?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: " Microsoft 365 includes productivity tools like Word, Excel, and Outlook, while Dynamics 365 is a business management solution focused on ERP and CRM functionalities.",
+      },
+    },
+      
+  ],
+}
+
 export const metadata = {
     title: 'What is Microsoft Dynamics 365? In-Depth Overview',
     description: "Learn what Microsoft Dynamics 365 is? its features, and how it transforms business operations with CRM and ERP integration.",
     alternates: {
         canonical: 'https://plenum-tech.com/what-is-microsoft-dynamics',
     },
+           other: {
+    "script:ld+json": JSON.stringify(faqSchema),
+  },
 };
 
 export default function MicrosoftDynamicsOverview() {

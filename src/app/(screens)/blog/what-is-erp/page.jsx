@@ -1,12 +1,47 @@
 import { Blog } from "@/components/homepage/blog";
 import { cardData } from "@/data/home-blog";
 import Image from "next/image";
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What are the 5 components of ERP?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The five core components of ERP are finance, human resources, manufacturing, supply chain management, and customer relationship management (CRM), collectively supporting end-to-end business operations.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Why is ERP important?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: " ERP systems centralize data, automate processes, and improve visibility across departments, enabling better decision-making, enhanced productivity, cost control, and a unified view of operations.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What are the 3 characteristics of an ERP?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "ERP systems are integrated, scalable, and modular—offering centralized data management, adaptability to business growth, and customizable modules to match specific organizational needs.",
+      },
+    },
+      
+  ],
+}
 export const metadata = {
     title: 'What is ERP? A Comprehensive Guide',
     description: "Learn what ERP is, how ERP systems work, their role in accounting, and key solutions like SAP ERP in this comprehensive guide for businesses of all sizes. ",
     alternates: {
         canonical: 'https://plenum-tech.com/blog/what-is-erp',
     },
+       other: {
+    "script:ld+json": JSON.stringify(faqSchema),
+  },
 };
 
 

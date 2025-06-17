@@ -2,12 +2,45 @@ import { Blog } from "@/components/homepage/blog";
 import { cardData } from "@/data/home-blog";
 import Image from "next/image";
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are reports in Business Central?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Reports in Business Central provide real-time data insights on finance, inventory, sales, and more. They help users make informed business decisions using customizable templates and visual dashboards."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Microsoft Dynamics the same as Business Central?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Business Central is part of Microsoft Dynamics 365, specifically designed for small to medium-sized businesses as an all-in-one ERP solution."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which two types of reports can be created for Microsoft Dynamics CRM?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can create FetchXML-based reports and SQL Server Reporting Services (SSRS) reports in Microsoft Dynamics CRM for data visualization and analytics."
+      }
+    }
+  ]
+}
 export const metadata = {
     title: 'A Complete Guide to Business Central Reporting',
     description: "Explore how Microsoft Dynamics 365 Business Central reports support financial analysis, compliance, and strategic decision-making. Learn best practices and customization options.",
     alternates: {
         canonical: 'https://plenum-tech.com/guide-to-business-central-reports',
     },
+      other: {
+    "script:ld+json": JSON.stringify(faqSchema),
+  },
 };
 
 export default function GuideToBusinessCentralReports() {

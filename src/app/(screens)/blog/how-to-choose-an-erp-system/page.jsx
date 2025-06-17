@@ -1,12 +1,49 @@
 import { Blog } from "@/components/homepage/blog";
 import { cardData } from "@/data/home-blog";
 import Image from "next/image";
+
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "How do you select an ERP system for an organization?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Choose an ERP system by evaluating your business needs, industry requirements, scalability, integration capabilities, vendor support, and total cost of ownership.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What are the main 3 factors would you set to choose an ERP system?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Key factors include system compatibility with business processes, scalability for future growth, and user-friendliness to ensure smooth adoption.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What should be the essential selection criteria for selecting an ERP?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Selection criteria should include functionality, customization options, vendor reputation, integration ease, implementation time, and total cost.",
+      },
+    },
+   
+      
+  ],
+}
 export const metadata = {
     title: 'How to Choose an ERP System for Your Company',
     description: "Learn how to choose the ideal ERP system for your business. Our expert insights will help you make informed decisions to optimize your operations effectively.",
     alternates: {
         canonical: 'https://plenum-tech.com/blog/dynamics-netsuite',
     },
+     other: {
+    "script:ld+json": JSON.stringify(faqSchema),
+  },
 };
 
 

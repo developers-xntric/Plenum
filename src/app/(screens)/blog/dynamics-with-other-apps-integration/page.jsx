@@ -1,12 +1,48 @@
 import { Blog } from "@/components/homepage/blog";
 import { cardData } from "@/data/home-blog";
 import Image from "next/image";
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Do you integrate any other products with Dynamics 365?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes, Dynamics 365 can be integrated with third-party applications such as Salesforce, Shopify, QuickBooks, Power BI, and more, enabling seamless data flow and process automation.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Does Microsoft Dynamics have an API?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes, Microsoft Dynamics provides RESTful Web APIs and OData services, allowing developers to access and integrate data from Dynamics 365 with external applications.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What is Microsoft 365 integration?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: " It allows users to connect Dynamics 365 with Microsoft 365 apps like Outlook, Excel, and Teams to enhance productivity and ensure seamless workflow integration.",
+      },
+    },
+
+      
+  ],
+}
 export const metadata = {
     title: 'How to Integrate Microsoft Dynamics 365 with Other Applications',
     description: "Discover how to integrate Microsoft Dynamics 365 with other apps to boost automation, improve data flow, and streamline business operations efficiently. ",
     alternates: {
         canonical: 'https://plenum-tech.com/blog/dynamics-with-other-apps-integration',
     },
+         other: {
+    "script:ld+json": JSON.stringify(faqSchema),
+  },
 };
 
 
