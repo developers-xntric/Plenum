@@ -256,6 +256,7 @@ export default function MicrosoftDynamicsOverview() {
                         </p>
                         <div className= "space-y-2 gap-2.5 my-2">
                             <h2 className="font-medium text-lg text-[25px]">FAQ's</h2>
+                            {/* Hye */}
                             <div>
                                 <h3 className=" text-[25px] font-medium max-w-[80%] 2xl:max-w-[60%] leading-[35px] lg:leading-[42px] font-['Archivo']">
                                     What is Microsoft Dynamics 365 used for?
