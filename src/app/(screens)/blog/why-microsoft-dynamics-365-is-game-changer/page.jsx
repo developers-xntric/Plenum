@@ -202,8 +202,8 @@ export default function KeyBenefits() {
                         <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
                             Microsoft Dynamics 365 will keep modifying ERP and CRM systems in 2025, enabling companies to operate in a world where technology is continually evolving and ensure their success. Whether achieving operational effectiveness, sustainability, or enhancing customer interactions define your goals, Dynamics 365 will be first in business innovation and success.
                         </p>
-                    </div>
-                    <h2 className="text-[20px] lg:text-[30px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+
+                             <h2 className="text-[20px] lg:text-[30px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
                         FAQs:
                     </h2>
                     <div>
@@ -239,6 +239,8 @@ export default function KeyBenefits() {
                             </p>
                         </div>
                     </div>
+                    </div>
+               
                 </div>
 
                 {/* Related Blog Section */}

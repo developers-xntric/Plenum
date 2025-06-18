@@ -171,8 +171,8 @@ export default function GetStartedWithDynamics365() {
                         <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
                             Dynamic 365 helps companies to make data-driven choices and increase general efficiency with its cloud-based architecture, AI-powered insights, and flawless integrations. Successful deployment calls for teamwork, instruction, and ongoing development to help companies realize Microsoft Dynamics 365's full capability. Adopting Dynamics 365 will help operational excellence and position your firm for long-term success regardless of size—small business or major corporation.
                         </p>
-                    </div>
-                    <h2 className="text-[20px] lg:text-[30px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+
+                              <h2 className="text-[20px] lg:text-[30px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
                         FAQs:
                     </h2>
                     <div>
@@ -205,6 +205,8 @@ export default function GetStartedWithDynamics365() {
                             </p>
                         </div>
                     </div>
+                    </div>
+              
                 </div>
 
                 {/* Related Blog Section */}

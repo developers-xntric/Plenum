@@ -4,26 +4,26 @@ import Image from "next/image";
 
 
 const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What do you mean by business process modeling?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Business process modeling is the visual representation of a company’s workflows, helping to analyze, optimize, and standardize operations for better efficiency and control."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the business module in ERP?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A business module in ERP refers to a functional unit—like finance, HR, or inventory—that handles a specific set of business operations within the system."
-      }
-    }
-  ]
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "What do you mean by business process modeling?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Business process modeling is the visual representation of a company’s workflows, helping to analyze, optimize, and standardize operations for better efficiency and control."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What is the business module in ERP?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A business module in ERP refers to a functional unit—like finance, HR, or inventory—that handles a specific set of business operations within the system."
+            }
+        }
+    ]
 }
 export const metadata = {
     title: 'What is Business Process Modelling? | ERP Success Guide',
@@ -31,14 +31,15 @@ export const metadata = {
     alternates: {
         canonical: 'https://plenum-tech.com/what-is-business-process-modeling',
     },
-     other: {
-    "script:ld+json": JSON.stringify(faqSchema),
-  },
+    other: {
+        "script:ld+json": JSON.stringify(faqSchema),
+    },
 };
 
 export default function GuideToBusinessCentralReports() {
     return (
         <>
+        <div>
             <div className="font-['Archivo'] pt-34 lg:pt-52">
                 {/* HEADING AND DATE */}
                 <div className="2xl:max-w-[1440px] w-[90%] mx-auto">
@@ -126,35 +127,39 @@ export default function GuideToBusinessCentralReports() {
                             If you’re serious about successful ERP implementation, business process modelling is non-negotiable. It helps you clarify goals, reduce risks, and set your project up for long-term success.
                             At Datix, we specialize in helping manufacturers and distributors optimize operations through proven ERP strategies. With over 20 years of experience, our team understands how critical BPM is to business transformation. Using tools like our Unity integration platform, we connect ERP with CRM, eCommerce, and Marketing Automation systems for end-to-end visibility and control.
                         </p>
-                    </div>
-                    <h2 className="text-[20px] lg:text-[30px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
-                        FAQs:
-                    </h2>
-                    <div>
-                        <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
-                          What do you mean by business process modeling?
-                        </h2>
-                        <div className="space-y-5">
-                            <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
-                               Business process modeling is the visual representation of a company’s workflows, helping to analyze, optimize, and standardize operations for better efficiency and control.
-                            </p>
+                            <div>
+                              
+                                <div className="space-y-2">
+                                    <h3 className="text-[25px] lg:text-[36px] font-medium max-w-[80%] 2xl:max-w-[60%] leading-[35px] lg:leading-[42px] font-['Archivo']">
+                            FAQ'S
+                                    </h3>
+                                    <h3 className="text-[20px] lg:text-[24px] font-medium max-w-[80%] 2xl:max-w-[60%] leading-[35px] lg:leading-[42px] font-['Archivo']">
+                                        What do you mean by business process modeling?
+                                    </h3>
+                                    <p>Business process modeling is the visual representation of a company’s workflows, helping to analyze, optimize, and standardize operations for better efficiency and control.
+                                    </p>
+                                    <div>
+                                        <h3 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                                            What is the business module in ERP?
+                                        </h3>
+                                        <p>
+                                            A business module in ERP refers to a functional unit—like finance, HR, or inventory—that handles a specific set of business operations within the system.
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        x
                     </div>
-                    <div>
-                        <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
-                          What is the business module in ERP?
-                        </h2>
-                        <div className="space-y-5">
-                            <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
-                                A business module in ERP refers to a functional unit—like finance, HR, or inventory—that handles a specific set of business operations within the system.
-                            </p>
-                        </div>
-                    </div>
-                   
+
                 </div>
 
-                {/* Related Blog Section */}
-                <Blog heading="Discover More Blogs" para="Stay updated with our ongoing blogs inclusive of tips, case study examples, and expert views around the usage of AI, cloud services, and ERP solutions to support business growth and operational effectiveness." cardData={cardData} />
+
+
+            {/* Related Blog Section */}
+            <Blog heading="Discover More Blogs" para="Stay updated with our ongoing blogs inclusive of tips, case study examples, and expert views around the usage of AI, cloud services, and ERP solutions to support business growth and operational effectiveness." cardData={cardData} />
+            <div />
             </div>
         </>
     );

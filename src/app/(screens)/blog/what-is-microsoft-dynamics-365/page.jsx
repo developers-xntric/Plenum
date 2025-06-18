@@ -188,11 +188,12 @@ export default function MicrosoftDynamics() {
                                 </p>
                             </div>
                         </div>
-                        <h2 className="text-[20px] lg:text-[30px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                        <div className="flex flex-col space-y-2.5 gap-1.5">
+                        <h2 className="text-[20px] py-2.5 lg:text-[30px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
                             FAQs:
                         </h2>
                         <div>
-                            <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                            <h2 className="text-[20px] py-2.5 lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
                                 What is Microsoft Dynamics 365 used for?
                             </h2>
                             <div className="space-y-5">
@@ -202,7 +203,7 @@ export default function MicrosoftDynamics() {
                             </div>
                         </div>
                         <div>
-                            <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                            <h2 className="text-[20px] py-2.5lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
                                 Is Dynamics 365 an ERP or CRM?
                             </h2>
                             <div className="space-y-5">
@@ -212,7 +213,7 @@ export default function MicrosoftDynamics() {
                             </div>
                         </div>
                         <div>
-                            <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                            <h2 className="text-[20px] py-2.5 lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
                                 What is the function of Dynamics 365?
 
                             </h2>
@@ -223,7 +224,7 @@ export default function MicrosoftDynamics() {
                             </div>
                         </div>
                         <div>
-                            <h2 className="text-[20px] lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                            <h2 className="text-[20px] py-2.5 lg:text-[24px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
                                 What is the difference between Microsoft 365 and Dynamics 365?
                             </h2>
                             <div className="space-y-5">
@@ -231,6 +232,7 @@ export default function MicrosoftDynamics() {
                                     Microsoft 365 includes productivity tools like Word, Excel, and Outlook, while Dynamics 365 is a business management solution focused on ERP and CRM functionalities.
                                 </p>
                             </div>
+                        </div>
                         </div>
                     </div>
                 </div>

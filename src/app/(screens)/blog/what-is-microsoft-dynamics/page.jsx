@@ -254,6 +254,48 @@ export default function MicrosoftDynamicsOverview() {
                         <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
                             Its interaction with the Microsoft ecosystem and sophisticated analytics features also guarantee companies can use real-time data to guide strategic choices. Dynamics 365 is a great tool in the competitive corporate world of today as it will help companies to position themselves for sustainable development, increased operational efficiency, and great customer experiences.
                         </p>
+                        <div className= "space-y-2 gap-2.5 my-2">
+                            <h2 className="font-medium text-lg text-[25px]">FAQ's</h2>
+                            <div>
+                                <h3 className=" text-[25px] font-medium max-w-[80%] 2xl:max-w-[60%] leading-[35px] lg:leading-[42px] font-['Archivo']">
+                                    What is Microsoft Dynamics 365 used for?
+
+                                </h3>
+                                <p>
+                                     Microsoft Dynamics 365 is used to manage business processes across sales, marketing, finance, supply chain, and customer service, combining ERP and CRM capabilities in a unified cloud platform.
+
+
+                                </p>
+
+                                <h3 className=" text-[25px]  font-medium max-w-[80%] 2xl:max-w-[60%] leading-[35px] lg:leading-[42px] font-['Archivo']">
+                                    Is Dynamics 365 an ERP or CRM?
+
+                                </h3>
+                                <p> 
+                                    Dynamics 365 is both an ERP and CRM platform. It offers separate applications for enterprise resource planning and customer relationship management, integrated within a single ecosystem.
+
+
+                                </p>
+                                <h3 className="text-[25px] font-medium max-w-[80%] 2xl:max-w-[60%] leading-[35px] lg:leading-[42px] font-['Archivo']">
+                                    What is the function of Dynamics 365?
+                                </h3>
+                                <p>
+                                    Its primary function is to streamline operations, improve customer engagement, and provide data-driven insights by integrating various business processes in a connected platform.
+
+
+                                </p>
+                                <h3 className="text-[25px]  font-medium max-w-[80%] 2xl:max-w-[60%] leading-[35px] lg:leading-[42px] font-['Archivo']">
+                                    What is the difference between Microsoft 365 and Dynamics 365?
+
+                                </h3>
+                                <p>
+                                     Microsoft 365 includes productivity tools like Word, Excel, and Outlook, while Dynamics 365 is a business management solution focused on ERP and CRM functionalities.
+
+                                </p>
+                            </div>
+
+
+                        </div>
                     </div>
                 </div>
 

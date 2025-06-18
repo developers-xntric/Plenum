@@ -211,8 +211,7 @@ export default function GuideToBusinessCentralReports() {
                                 </li>
                             </ul>
                         </div>
-                    </div>
-                    <h2 className="text-[20px] lg:text-[30px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                     <h2 className="text-[20px] lg:text-[30px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
                         FAQs:
                     </h2>
                     <div>
@@ -244,6 +243,8 @@ export default function GuideToBusinessCentralReports() {
                                 You can create FetchXML-based reports and SQL Server Reporting Services (SSRS) reports in Microsoft Dynamics CRM for data visualization and analytics.
                             </p>
                         </div>
+                    </div>
+                   
                     </div>
                 </div>
 

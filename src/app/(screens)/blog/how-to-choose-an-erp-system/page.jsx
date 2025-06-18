@@ -265,7 +265,7 @@ export default function HowToChoose() {
                                     </p>
                                 </div>
                             </div>
-                            <h2 className="text-[20px] lg:text-[30px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
+                            <h2 className="text-[20px] my-2.5 lg:text-[30px] font-medium mb-2 leading-[35px] lg:leading-[42px] font-['Archivo']">
                                 FAQs:
                             </h2>
                             <div>
