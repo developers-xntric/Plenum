@@ -20,8 +20,8 @@ const ServiceHero = ({ bgImage, isLogo = true }) => {
             <p className='mt-8 text-[17px] lg:text-[14px] xl:text-[18px] font-normal text-gray-400 md:max-w-[480px] md:pr-10'>
               Transform your business with scalable, intelligent AI services that are specifically designed to improve decision making, streamline operations, and accelerate growth in a variety of sectors.
             </p>
-{/* Traces */}
-{/* This is the updated one */}
+             {/* Traces */}
+              {/* This is the updated one */}
           </div>
           {/* Right-Aligned Text and Button */}
           <div className="text-gray-400 lg:w-[340px] xl:w-96 lg:ms-auto">
