@@ -1,6 +1,7 @@
 import { Blog } from "@/components/homepage/blog";
 import { cardData } from "@/data/home-blog";
 import Image from "next/image";
+import Link from "next/link";
 
 
 const faqSchema = {
@@ -272,7 +273,9 @@ export default function HowERP() {
                             </h2>
                             <div className="space-y-3">
                                 <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
-                                    ERP systems' future resides in its interaction with newly developing technologies such artificial intelligence (AI), machine learning, and the Internet of Things (IoT). Predictive analytics, automated decision-making, and improved process optimization made possible by these developments will IoT devices, for instance, may provide real-time data from warehouses, while artificial intelligence systems can see trends and recommend changes. Companies using these developments will have a competitive advantage in their supply chain activities.
+                                    ERP systems' future resides in its interaction with newly developing technologies such <Link href="https://plenum-tech.com/service/ai-consulting" className="text-primary ">
+                                    artificial intelligence (AI)
+                                    </Link>, machine learning, and the Internet of Things (IoT). Predictive analytics, automated decision-making, and improved process optimization made possible by these developments will IoT devices, for instance, may provide real-time data from warehouses, while artificial intelligence systems can see trends and recommend changes. Companies using these developments will have a competitive advantage in their supply chain activities.
                                 </p>
 
                             </div>

@@ -1,6 +1,7 @@
 import { Blog } from "@/components/homepage/blog";
 import { cardData } from "@/data/home-blog";
 import Image from "next/image";
+import Link from "next/link";
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -86,7 +87,7 @@ export default function Ai() {
               <h2 className="text-[25px] lg:text-[36px] font-medium leading-[35px] lg:leading-[42px] font-['Archivo']">Microsoft Dynamics 365 ERP Modules: A Modular, Scalable Approach</h2>
               <div className="space-y-5">
                 <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
-                  Dynamics 365 ERP is developed in a modular manner unlike most conventional ERP packages. You may choose the particular tools you need right now and add additional gradually. This lets companies grow at their own speed without having to commit big overhauls or capital.
+                  <Link href='https://plenum-tech.com/service/microsoft-dynamics' className="text-primary"> Dynamics 365</Link> ERP is developed in a modular manner unlike most conventional ERP packages. You may choose the particular tools you need right now and add additional gradually. This lets companies grow at their own speed without having to commit big overhauls or capital.
                 </p>
               </div>
             </div>

@@ -1,6 +1,7 @@
 import { Blog } from "@/components/homepage/blog";
 import { cardData } from "@/data/home-blog";
 import Image from "next/image";
+import Link from "next/link";
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -81,7 +82,7 @@ export default function CommonTypes() {
                                 </p>
                                 <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
                                     Eliminating data silos enables greater collaboration, as no critical information remains isolated across systems—enhancing overall business productivity.
-                                    Another key benefit of D365 integration is improved automation. Connecting Microsoft Dynamics with other systems enables automation of previously manual tasks, reducing the chance of human error while accelerating business processes. Tasks such as reporting, customer follow-ups, and CRM Office 365 integration for calendar and email automation become much more efficient. </p>
+                                    Another key benefit of <Link href='https://plenum-tech.com/service/microsoft-dynamics' className="text-primary">D365 integration</Link> is improved automation. Connecting Microsoft Dynamics with other systems enables automation of previously manual tasks, reducing the chance of human error while accelerating business processes. Tasks such as reporting, customer follow-ups, and CRM Office 365 integration for calendar and email automation become much more efficient. </p>
                                 <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
                                     Furthermore, integrating the Dynamics 365 platform with other programs enhances user experience. Instead of switching between multiple platforms, users can operate through a unified interface. For example, a sales agent can access customer data, manage orders, and check inventory without leaving Dynamics—boosting productivity and saving time.
                                     Finally, a well-executed Microsoft Dynamics CRM integration provides a 360-degree view of the business. By consolidating data across systems, leadership can access unified insights into customer behavior, financial performance, and operational metrics—enabling smarter, faster decisions.  </p>

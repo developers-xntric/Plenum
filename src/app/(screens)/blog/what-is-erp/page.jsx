@@ -1,6 +1,7 @@
 import { Blog } from "@/components/homepage/blog";
 import { cardData } from "@/data/home-blog";
 import Image from "next/image";
+import Link from "next/link";
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -153,7 +154,7 @@ export default function ComprehensiveGuide() {
                                 <li className="text-[16px] lg:text-[18px] font-medium leading-[35px] lg:leading-[42px] font-['Archivo']">Hybrid ERP: Combines on-premise and cloud features. Offers flexibility and a phased approach to cloud migration. </li>
                                 <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
                                     Each deployment method has its pros and cons, and the right choice depends on your budget, IT capabilities, and long-term goals.
-                                    Challenges of Implementing ERP
+                                    Challenges of <Link href='https://plenum-tech.com/service/ERP-consulting' className="text-primary"> Implementing ERP</Link>
                                     While ERP systems offer substantial benefits, they can be challenging to implement. Common issues include:
                                 </p>
                                 <li className="text-[16px] lg:text-[18px] font-medium leading-[35px] lg:leading-[42px] font-['Archivo']">High Initial Costs: Licensing, customization, and training can be expensive. </li>

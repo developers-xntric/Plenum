@@ -1,6 +1,7 @@
 import { Blog } from "@/components/homepage/blog";
 import { cardData } from "@/data/home-blog";
 import Image from "next/image";
+import Link from "next/link";
 
 
 const faqSchema = {
@@ -82,7 +83,7 @@ export default function KeyBenefits() {
                             Integration with AI and Machine Learning
                         </h3>
                         <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
-                            Mostly with its artificial intelligence (AI) and machine learning (ML) features, Microsoft Dynamics 365 prides itself as being one of the best out there. These innovations are meant to enable companies to maximise job automation, project outcomes, and decision-making. Dynamics 365 can examine vast amounts of data in real time by using artificial intelligence, therefore giving companies access to hitherto unattainable actionable insights.
+                            Mostly with its artificial intelligence (AI) and machine learning (ML) features, <Link href='https://plenum-tech.com/service/microsoft-dynamics' className="text-primary">Microsoft Dynamics 365</Link> prides itself as being one of the best out there. These innovations are meant to enable companies to maximise job automation, project outcomes, and decision-making. Dynamics 365 can examine vast amounts of data in real time by using artificial intelligence, therefore giving companies access to hitherto unattainable actionable insights.
                         </p>
                         <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
                             AI can, for instance, optimise inventory control, automate customer service answers, and forecast consumer behaviour. These features enable companies to become more proactive than reactive, therefore enhancing operational efficiency and customer happiness by means of better control.
