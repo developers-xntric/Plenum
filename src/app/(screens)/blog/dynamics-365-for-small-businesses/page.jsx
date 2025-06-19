@@ -1,6 +1,7 @@
 import { Blog } from "@/components/homepage/blog";
 import { cardData } from "@/data/home-blog";
 import Image from "next/image";
+import Link from "next/link";
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -83,7 +84,7 @@ export default function KeyBenefits() {
                                     <li className="text-[16px] lg:text-[18px] font-medium leading-[35px] lg:leading-[42px] font-['Archivo']">Scalable and Affordable for Growing Businesses </li>
                                     <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">Cost and complexity of enterprise-level software make many small firms reluctant to employ it. Dynamics 365 attends to both issues. Its modular pricing system lets you pay only for what you consume. You may choose only the tools pertinent to your business whether you need assistance organizing invoices or handling leads. Dynamics 365 develops with your company, enabling you to add new features without changing platforms. </p>
                                     <li className="text-[16px] lg:text-[18px] font-medium leading-[35px] lg:leading-[42px] font-['Archivo']">Unified Customer View and Relationship Management </li>
-                                    <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">The ability of Microsoft Dynamics 365 to provide a 360-degree perspective of your clients is among its main advantages. This implies that the same data is available for sales, marketing, and service teams, therefore guaranteeing constant communication, wise choices, and improved services. All in one location, you can manage contacts, monitor leads, convert opportunities, and customize correspondence. Small companies where each client encounters matters depend on this. </p>
+                                    <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">The ability of <Link href='https://plenum-tech.com/service/microsoft-dynamics' className="text-primary">Microsoft Dynamics 365</Link> to provide a 360-degree perspective of your clients is among its main advantages. This implies that the same data is available for sales, marketing, and service teams, therefore guaranteeing constant communication, wise choices, and improved services. All in one location, you can manage contacts, monitor leads, convert opportunities, and customize correspondence. Small companies where each client encounters matters depend on this. </p>
                                     <li className="text-[16px] lg:text-[18px] font-medium leading-[35px] lg:leading-[42px] font-['Archivo']">Perfect Fusion using Microsoft Tools </li>
                                     <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">Your small company most likely already takes use of Microsoft programs like Outlook, Excel, Word, and Teams. Dynamics 365 runs well with every one of them. Without having to migrate across systems, sales personnel may send emails straight from Dynamics 365 using Outlook, do Excel-based trend analysis, and work with colleagues on personnel. This known environment lowers the learning curve and increases output. </p>
                                     <li className="text-[16px] lg:text-[18px] font-medium leading-[35px] lg:leading-[42px] font-['Archivo']">Automation that Saves Time and Reduces Errors</li>

@@ -1,6 +1,7 @@
 import { Blog } from "@/components/homepage/blog";
 import { cardData } from "@/data/home-blog";
 import Image from "next/image";
+import Link from "next/link";
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -79,7 +80,7 @@ export default function CommonTypes() {
               <h2 className="text-[25px] lg:text-[36px] font-medium leading-[35px] lg:leading-[42px] font-['Archivo']">On-Premise ERP Systems </h2>
               <div className="space-y-5">
                 <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
-                  ERP implementation historically comes in on-site form. Under this approach, the program is housed locally on the corporate servers and hardware. This kind of ERP system gives complete control over the security, data, and infrastructure. Often selected by big companies with sophisticated processes and specialized IT teams, it is very flexible.
+                   <Link href='https://plenum-tech.com/service/ERP-consulting' className="text-primary">ERP implementation</Link> historically comes in on-site form. Under this approach, the program is housed locally on the corporate servers and hardware. This kind of ERP system gives complete control over the security, data, and infrastructure. Often selected by big companies with sophisticated processes and specialized IT teams, it is very flexible.
                 </p>
                 <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
                   On-site ERP solutions do, however, have large upfront hardware and software expenditures. Long-term expenses may also be added to maintenance, security updates, and system improvements that companies handle. Even with their complexity, on-site solutions are favored by businesses needing strong data management and working in sectors with tight regulatory norms.

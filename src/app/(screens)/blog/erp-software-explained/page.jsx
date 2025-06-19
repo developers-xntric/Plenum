@@ -1,6 +1,7 @@
 import { Blog } from "@/components/homepage/blog";
 import { cardData } from "@/data/home-blog";
 import Image from "next/image";
+import Link from "next/link";
 
 
 const faqSchema = {
@@ -83,7 +84,7 @@ export default function BusinessOperations() {
                             <h2 className="text-[25px] lg:text-[36px] font-medium max-w-[80%] 2xl:max-w-[60%] leading-[35px] lg:leading-[42px] font-['Archivo']">What is Microsoft Dynamics 365?</h2>
                             <div className="space-y-5">
                                 <p className="text-[17px] lg:text-lg text-[#6D6E76] font-medium font-['Archivo']">
-                                    Comprising Enterprise Resource Planning (ERP) and Customer Relationship Management (CRM) features, Microsoft Dynamics 365 is a cloud-based software. It provides a broad spectrum of business apps—including sales, customer service, marketing, finance, supply chain management—that cooperate to simplify your main operations.
+                                    Comprising Enterprise Resource Planning (ERP) and Customer Relationship Management (CRM) features,<Link href='https://plenum-tech.com/service/microsoft-dynamics' className="text-primary">Microsoft Dynamics 365</Link> is a cloud-based software. It provides a broad spectrum of business apps—including sales, customer service, marketing, finance, supply chain management—that cooperate to simplify your main operations.
                                 </p>
                                 <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
                                     Dynamics 365 permits real-time data sharing and departmental collaboration across silos unlike more conventional solutions. This generates a very linked commercial ecology.</p>

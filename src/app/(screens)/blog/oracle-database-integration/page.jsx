@@ -1,6 +1,7 @@
 import { Blog } from "@/components/homepage/blog";
 import { cardData } from "@/data/home-blog";
 import Image from "next/image";
+import Link from "next/link";
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -153,7 +154,7 @@ export default function OracleDatabase() {
                             </h2>
                             <div className="space-y-5">
                                 <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
-                                    Oracle uses its own ERP system called Oracle ERP Cloud, a comprehensive suite of integrated applications for finance, procurement, project management, and more, designed to streamline and automate business processes.
+                                    Oracle uses its own ERP system called <Link href='https://plenum-tech.com/service/oracle-cloud-fusion' className="text-primary">Oracle ERP Cloud</Link>, a comprehensive suite of integrated applications for finance, procurement, project management, and more, designed to streamline and automate business processes.
                                 </p>
                             </div>
                         </div>

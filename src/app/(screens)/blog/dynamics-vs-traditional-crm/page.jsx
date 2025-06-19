@@ -1,6 +1,7 @@
 import { Blog } from "@/components/homepage/blog";
 import { cardData } from "@/data/home-blog";
 import Image from "next/image";
+import Link from "next/link";
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -71,7 +72,7 @@ export default function DynamicsTraditionalCRM() {
                 <div className="2xl:max-w-[1440px] w-[90%] mx-auto flex items-center justify-end font-['Archivo']">
                     <div className="md:px-6 pb-2 md:pb-12 py-12  space-y-12 lg:max-w-[80%] xl:max-w-[70%] 2xl:max-w-[65%]">
                         <p className="text-[15px] lg:text-lg text-[#6D6E76] font-medium font-['Archivo']">
-                            Customer connections in the fast-paced digital business scene of today are strategic assets rather than just exchanges. Therefore, for companies of all kinds selecting the appropriate Customer Relationship Management (CRM) system is very essential. The debate revolves mostly on two main choices: conventional CRM systems and contemporary, integrated solutions such as Microsoft Dynamics 365.
+                            Customer connections in the fast-paced digital business scene of today are strategic assets rather than just exchanges. Therefore, for companies of all kinds selecting the appropriate Customer Relationship Management (CRM) system is very essential. The debate revolves mostly on two main choices: conventional CRM systems and contemporary, integrated solutions such as  <Link href='https://plenum-tech.com/service/microsoft-dynamics' className="text-primary">Microsoft Dynamics 365</Link>.
                             But in what actual sense do these two strategies differ? Is it worth divorcing a traditional CRM? Let's investigate the main variations and see which system fits the changing corporate demands of today.
                         </p>
 
