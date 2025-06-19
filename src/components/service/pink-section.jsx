@@ -18,6 +18,8 @@ const PinkSection = ({ heading, text, show_button = false, className, isVideo = 
                 alt="Left Decoration"
                 width={1000}
                 height={1000}
+                priority  // ✅ Forces early preload
+                fetchPriority="high"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -31,6 +33,8 @@ const PinkSection = ({ heading, text, show_button = false, className, isVideo = 
                 alt="Right Decoration"
                 width={1000}
                 height={1000}
+                priority  // ✅ Forces early preload
+                fetchPriority="high"
                 className="w-full h-full object-cover"
               />
             </div>

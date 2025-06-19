@@ -49,8 +49,10 @@ export default function OrcaleFinancialFeature({ tabs, heading, para }) {
                                                 src="/images/service/oracle/tab1.png"
                                                 alt="Financial dashboard with analytics charts and graphs"
                                                 fill
+                                                priority  // ✅ Forces early preload
+                                                fetchPriority="high"
                                                 className="object-cover"
-                                                priority
+
                                             />
                                         </div>
                                     </div>
@@ -112,7 +114,7 @@ export default function OrcaleFinancialFeature({ tabs, heading, para }) {
                                     <div className="flex items-center justify-center">
                                         <div className="relative w-full aspect-[4/3]  overflow-hidden">
                                             <Image
-                                              src="/service/OCF/tab3.png"
+                                                src="/service/OCF/tab3.png"
                                                 alt="Financial dashboard with analytics charts and graphs"
                                                 fill
                                                 className="object-cover"
@@ -145,7 +147,7 @@ export default function OrcaleFinancialFeature({ tabs, heading, para }) {
                                     <div className="flex items-center justify-center">
                                         <div className="relative w-full aspect-[4/3]  overflow-hidden">
                                             <Image
-                                                 src="/service/OCF/tab4.png"
+                                                src="/service/OCF/tab4.png"
                                                 alt="Financial dashboard with analytics charts and graphs"
                                                 fill
                                                 className="object-cover"
@@ -162,7 +164,7 @@ export default function OrcaleFinancialFeature({ tabs, heading, para }) {
                                             </h2>
 
                                             <p className=" text-left text-secondary font-['Archivo'] opacity-75 font-semibold">
-                                               With integrated financial management, businesses can seamlessly connect all financial processes across the enterprise, from accounts payable to general ledger. This integration improves accuracy, efficiency, and consistency, ensuring financial data is always aligned with business operations.
+                                                With integrated financial management, businesses can seamlessly connect all financial processes across the enterprise, from accounts payable to general ledger. This integration improves accuracy, efficiency, and consistency, ensuring financial data is always aligned with business operations.
                                             </p>
                                         </div>
 

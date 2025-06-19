@@ -64,6 +64,8 @@ export default function MicrosoftCarousel({ MicrosoftCarouselData, title, para }
                           width={1000}
                           height={1000}
                           className={`${index === 0 ? "w-14" : "w-20"} object-contain`}
+                          priority  // ✅ Forces early preload
+                          fetchPriority="high"
                         />
                       </div>
                     ))}

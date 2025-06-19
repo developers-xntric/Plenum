@@ -49,15 +49,17 @@ export default function MicrosoftDynamicPartner() {
                 {/* Left Section - Image */}
                 <div className="w-full lg:w-1/2 xl:w-[60%] lg:p-4">
                   <Image
-                   src="/images/service/microsoft-dynamics/image.svg"
+                    src="/images/service/microsoft-dynamics/image.svg"
                     alt="Analytics Dashboard"
                     width={1000}
                     height={1000}
                     className="object-cover "
+                    priority  // ✅ Forces early preload
+                    fetchPriority="high"
                   />
                 </div>
 
-                {/* Right Section - Text */}
+                { }
                 <div className="w-full lg:w-1/2 lg:p-4 space-y-4">
                   <h3 className="text-[25px] md:text-3xl  text-start lg:max-w-[80%] 2xl:max-w-[60%] font-['Archivo'] text-secondary font-semibold opacity-95">
                     Modular Solutions
