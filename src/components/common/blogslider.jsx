@@ -167,7 +167,7 @@ const BlogSlider = ({ }) => {
         date: "June 23, 2025",
         para: "  Business Modeling in ERP: Optimizing Enterprise Efficiency",
         id: 23,
-        link: '/blog/discover-how-business-modeling'
+        link: '/blog/business-modeling-in-erp'
     },
     {
         img: "/blog/Article25.1.jpg",
