@@ -6,7 +6,7 @@ import React from 'react'
 import DynamicsSection from '@/components/book-demo/dynamics-sections'
 import Link from 'next/link'
 import IndustriesCarousel from '@/components/book-demo/industries-carousel'
-import BrandSlider from '@/components/common/brand-slider'
+// import BrandSlider from '@/components/common/brand-slider'
 import { home_brand_icons } from '@/data/brand-slider-icons-data'
 import BrandSlider2 from '@/components/common/bs2'
 export const metadata = {
