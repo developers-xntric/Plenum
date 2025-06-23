@@ -5,7 +5,9 @@ import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
 import Button from "@/components/common/button"
 import Image from "next/image"
-import useWindowWidth from '@/hooks/useWindowWidth'
+// import useWindowWidth from '../../../hooks/useWindowWidth';
+
+import useWindowWidth from '@/app/hooks/useWindowWidth'
 
 export default function MicrosoftDynamic({
   heading1,
@@ -21,7 +23,7 @@ export default function MicrosoftDynamic({
   gridcol,
   oneCardMobile = false,
 }) {
-  const width = useWindowWidth()
+   const width = useWindowWidth()
   const isMobile = width < 1024
 
   // Embla carousel refs
