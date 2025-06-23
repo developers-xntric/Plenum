@@ -155,6 +155,34 @@ const BlogSlider = ({ }) => {
             id: 21,
             link: '/blog/guide-to-business-central-reports'
         },
+         {
+        img: "/blog/Article23.1.jpg",
+        date: "June 23, 2025",
+        para: " Dynamics 365 Field Service: Overview and Industry Focus",
+        id: 22,
+        link: '/blog/ms-dynamics-365-field-service'
+    },
+    {
+        img: "/blog/Article24.1.jpg",
+        date: "June 23, 2025",
+        para: "  Business Modeling in ERP: Optimizing Enterprise Efficiency",
+        id: 23,
+        link: '/blog/discover-how-business-modeling'
+    },
+    {
+        img: "/blog/Article25.1.jpg",
+        date: "June 23, 2025",
+        para: " Dynamics 365 Data Migration: A Step-by-Step Guide for Seamless Transition",
+        id: 24,
+        link: '/blog/dynamics-365-data-migration'
+    },
+    {
+        img: "/blog/Article26.1.jpg",
+        date: "June 23, 2025",
+        para: "  Microsoft Business Central Extensions: Powering Custom ERP Solutions",
+        id: 25,
+        link: '/blog/microsoft-business-central-extensions'
+    },
     ]
     const splideRef = useRef(null);
     useEffect(() => {
