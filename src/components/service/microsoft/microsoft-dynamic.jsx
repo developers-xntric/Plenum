@@ -5,7 +5,7 @@ import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
 import Button from "@/components/common/button"
 import Image from "next/image"
-import { useWindowWidth } from '../../service/ERP-Cosultant/hero'
+import useWindowWidth from '@/hooks/useWindowWidth'
 
 export default function MicrosoftDynamic({
   heading1,

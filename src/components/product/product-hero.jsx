@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import Button from '../common/button'
-import { useWindowWidth } from '../service/ERP-Cosultant/hero'
+import useWindowWidth from '@/hooks/useWindowWidth'
 
 const ProductHero = ({ bgImage, mobileBgImage, para2, para1 ,heading, heading_className }) => {
     const width = useWindowWidth();
