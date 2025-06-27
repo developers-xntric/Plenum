@@ -177,6 +177,13 @@ const cardData = [
         id: 25,
         link: '/blog/microsoft-business-central-extensions'
     },
+    {
+        img: "/blog/Article27.1.jpg",
+        date: "June 27, 2025",
+        para: "What is Cloud Managed Services? A Complete Guide to the Future of IT Management",
+        id: 26,
+        link: '/blog/cloud-managed-services'
+    },
 ]
 const Cards = () => {
     return (
