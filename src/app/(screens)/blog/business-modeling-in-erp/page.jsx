@@ -15,6 +15,7 @@ const faqSchema = {
         text: "Dynamics CRM offers improved customer insights, sales tracking, automated workflows, customer service tools, and marketing automation—all integrated into one platform.",
       },
     },
+    // THISAS
     {
       "@type": "Question",
       name: "Is Dynamic 365 a good CRM?",
