@@ -16,6 +16,7 @@ const faqSchema = {
       },
     },
     // THISAS
+    // dqadqd
     {
       "@type": "Question",
       name: "Is Dynamic 365 a good CRM?",
