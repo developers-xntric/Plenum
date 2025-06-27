@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+
 <url><loc>https://plenum-tech.com/case-studies/commision-fraud-detection</loc><lastmod>2025-06-27T11:23:57.293Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://plenum-tech.com/contact</loc><lastmod>2025-06-27T11:23:57.294Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://plenum-tech.com/case-studies/proper-finance-intelligence</loc><lastmod>2025-06-27T11:23:57.294Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
@@ -63,9 +62,7 @@
 <url><loc>https://plenum-tech.com/service</loc><lastmod>2025-06-27T11:23:57.294Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://plenum-tech.com/case-studies/unified-retail</loc><lastmod>2025-06-27T11:23:57.294Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://plenum-tech.com/case-studies/virtual-learning</loc><lastmod>2025-06-27T11:23:57.294Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-=======
-=======
->>>>>>> Stashed changes
+
 <url><loc>https://plenum-tech.com/case-studies/proper-finance-intelligence</loc><lastmod>2025-06-25T08:29:38.183Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://plenum-tech.com/case-studies/virtual-learning</loc><lastmod>2025-06-25T08:29:38.184Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://plenum-tech.com/case-studies/retail-erp</loc><lastmod>2025-06-25T08:29:38.184Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
@@ -126,8 +123,5 @@
 <url><loc>https://plenum-tech.com/service/digital-experiences</loc><lastmod>2025-06-25T08:29:38.184Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://plenum-tech.com/service/oracle-cloud-fusion</loc><lastmod>2025-06-25T08:29:38.184Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://plenum-tech.com/service/oracle</loc><lastmod>2025-06-25T08:29:38.184Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+
 </urlset>
