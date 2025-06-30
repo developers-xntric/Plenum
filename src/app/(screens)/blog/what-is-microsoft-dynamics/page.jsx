@@ -64,9 +64,9 @@ export default function MicrosoftDynamicsOverview() {
             <p className="text-[#636363] text-[15px] lg:text-[17px] font-['Archivo'] font-medium">
               June 2 2025
             </p>
-            <h2 className="text-secondary font['Archivo'] leading-[34px] lg:leading-[56px] text-[30px] lg:text-[46px] font-semibold">
+            <h1 className="text-secondary font['Archivo'] leading-[34px] lg:leading-[56px] text-[30px] lg:text-[46px] font-semibold">
               What is Microsoft Dynamics 365? An In-Depth Analysis
-            </h2>
+            </h1>
           </div>
         </div>
 

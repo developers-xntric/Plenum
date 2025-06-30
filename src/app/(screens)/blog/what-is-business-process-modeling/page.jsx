@@ -48,10 +48,10 @@ export default function GuideToBusinessCentralReports() {
               <p className="text-[#636363] text-[15px] lg:text-[17px] font-['Archivo'] font-medium">
                 June 13 2025
               </p>
-              <h2 className="text-secondary font['Archivo'] leading-[34px] lg:leading-[56px] text-[30px] lg:text-[46px] font-semibold">
+              <h1 className="text-secondary font['Archivo'] leading-[34px] lg:leading-[56px] text-[30px] lg:text-[46px] font-semibold">
                 What is Business Process Modelling? A Critical Step in ERP
                 Success
-              </h2>
+              </h1>
             </div>
           </div>
 

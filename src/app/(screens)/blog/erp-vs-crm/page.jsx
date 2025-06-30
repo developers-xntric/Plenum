@@ -67,9 +67,9 @@ export default function ERPCRM() {
             <p className="text-[#636363] text-[15px] lg:text-[17px] font-['Archivo'] font-medium">
               May 26 2025
             </p>
-            <h2 className="text-secondary font['Archivo'] leading-[34px] lg:leading-[56px] text-[30px] lg:text-[46px] font-semibold">
+            <h1 className="text-secondary font['Archivo'] leading-[34px] lg:leading-[56px] text-[30px] lg:text-[46px] font-semibold">
               ERP vs CRM: What's the Difference and Which Do You Need?
-            </h2>
+            </h1>
           </div>
         </div>
 
@@ -207,15 +207,21 @@ export default function ERPCRM() {
               </h2>
               <div className="space-y-5">
                 <p className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
-                  The flawless integration of <Link className="text-primary" href=' https://plenum-tech.com/service/microsoft-dynamics'>Dynamics 365 ERP</Link> against CRM
-                  modules is one of the main benefits of Microsoft's ecosystem.
-                  Starting with any system, businesses may grow as their
-                  requirements change. This adaptability lets businesses give
-                  their investment top priority depending on urgent business
-                  issues. Integration also increases reporting capacity,
-                  improves cross-departmental visibility, and lessens data
-                  duplication. Businesses requiring end-to- end control over
-                  operations and customer interaction might gain from
+                  The flawless integration of{" "}
+                  <Link
+                    className="text-primary"
+                    href=" https://plenum-tech.com/service/microsoft-dynamics"
+                  >
+                    Dynamics 365 ERP
+                  </Link>{" "}
+                  against CRM modules is one of the main benefits of Microsoft's
+                  ecosystem. Starting with any system, businesses may grow as
+                  their requirements change. This adaptability lets businesses
+                  give their investment top priority depending on urgent
+                  business issues. Integration also increases reporting
+                  capacity, improves cross-departmental visibility, and lessens
+                  data duplication. Businesses requiring end-to- end control
+                  over operations and customer interaction might gain from
                   concurrently adopting ERP and CRM modules.
                 </p>
               </div>

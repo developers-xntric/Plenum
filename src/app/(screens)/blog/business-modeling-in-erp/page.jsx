@@ -64,9 +64,9 @@ export default function CRMImprovement() {
           <p className="text-[#636363] text-[15px] lg:text-[17px] font-['Archivo'] font-medium">
             June 23 2025
           </p>
-          <h2 className="text-secondary font['Archivo'] leading-[34px] lg:leading-[56px] text-[30px] lg:text-[46px] font-semibold">
+          <h1 className="text-secondary font['Archivo'] leading-[34px] lg:leading-[56px] text-[30px] lg:text-[46px] font-semibold">
             Business Modeling in ERP: Optimizing Enterprise Efficiency
-          </h2>
+          </h1>
         </div>
       </div>
 

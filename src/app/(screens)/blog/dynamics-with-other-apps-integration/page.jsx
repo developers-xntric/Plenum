@@ -56,7 +56,7 @@ export default function CommonTypes() {
                 <div className="2xl:max-w-[1440px] w-[90%] mx-auto">
                     <div className="lg:max-w-[72%] 2xl:max-w-[60%] py-10">
                         <p className="text-[#636363] text-[15px] lg:text-[17px] font-['Archivo'] font-medium">June 4 2025</p>
-                        <h2 className="text-secondary font['Archivo'] leading-[34px] lg:leading-[56px] text-[30px] lg:text-[46px] font-semibold">How to Integrate Microsoft Dynamics 365 with Other Applications </h2>
+                        <h1 className="text-secondary font['Archivo'] leading-[34px] lg:leading-[56px] text-[30px] lg:text-[46px] font-semibold">How to Integrate Microsoft Dynamics 365 with Other Applications </h1>
                     </div>
                 </div>
 
