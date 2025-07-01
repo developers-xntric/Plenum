@@ -200,27 +200,33 @@ const Cards = () => {
     <section className="py-20">
       <div className="2xl:max-w-[1440px] max-w-[90%] mx-auto">
         <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-5 ">
-          {/* {data.map((card, index) => (
-              <Link href={`blog/${card.slug}`} key={index}>
-                <div className="relative hover:opacity-75 transition-opacity ease-in duration-500">
-                  <div className="absolute top-0 left-0 w-full h-full bg-[#000000] rounded-[20px] opacity-60"></div>
-                  <Image
-                    src={card.imageURL}
-                    width={300}
-                    height={300}
-                    alt="blog 1"
-                    className="w-full rounded-[20px]"
-                  />
-                  <div className="max-w-[80%] absolute bottom-6 left-6">
-                    <span className="text-[#D4D4D8] text-[14px]">
-                      {card.publishedDate.slice(0,10)}
-                    </span>
-                    <p className="text-white text-[16px]">{card.description}</p>
-                  </div>
+          {data.map((card, index) => (
+            <Link href={`blog/${card.slug}`} key={index}>
+              <div className="relative hover:opacity-75 transition-opacity ease-in duration-500">
+                <div className="absolute top-0 left-0 w-full h-full bg-[#000000] rounded-[20px] opacity-60"></div>
+                <Image
+                  src={card.imageURL}
+                  width={300}
+                  height={300}
+                  alt="blog 1"
+                  className="w-full rounded-[20px]"
+                />
+                <div className="max-w-[80%] absolute bottom-6 left-6">
+                  <span className="text-[#D4D4D8] text-[14px]">
+                    {new Date(card.publishedDate).toLocaleString("en-US", {
+                      day: "2-digit",
+                      month: "short",
+                      year: "numeric",
+                    })}
+                  </span>
+                  <p className="text-white text-[16px] line-clamp-2">
+                    {card.description}
+                  </p>
                 </div>
-              </Link>
-            ))} */}
-          {cardData.map((card, index) => (
+              </div>
+            </Link>
+          ))}
+          {/* {cardData.map((card, index) => (
             <Link href={card.link} key={index}>
               <div className="relative hover:opacity-75 transition-opacity ease-in duration-500">
                 <div className="absolute top-0 left-0 w-full h-full bg-[#000000] rounded-[20px] opacity-60"></div>
@@ -239,7 +245,7 @@ const Cards = () => {
                 </div>
               </div>
             </Link>
-          ))}
+          ))} */}
         </div>
       </div>
     </section>

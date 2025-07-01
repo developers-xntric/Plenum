@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { Blog } from "@/components/homepage/blog";
 import { cardData } from "@/data/home-blog";
 import axios from "axios";
@@ -13,7 +13,9 @@ export default function BlogPage() {
   useEffect(() => {
     const getData = async () => {
       try {
-        const res = await axios.get(`http://localhost:8000/api/v2/blog/${slug}`);
+        const res = await axios.get(
+          `http://localhost:8000/api/v2/blog/${slug}`
+        );
         setData(res.data.blog);
       } catch (error) {
         console.log(error);
@@ -21,7 +23,7 @@ export default function BlogPage() {
     };
     getData();
   }, [slug]);
-
+  console.log(data);
   return (
     <>
       {/* FAQ Schema for SEO */}
@@ -30,7 +32,7 @@ export default function BlogPage() {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "FAQPage",
-            mainEntity: data.faqs.map(faq => ({
+            mainEntity: data.faqs.map((faq) => ({
               "@type": "Question",
               name: faq.question,
               acceptedAnswer: {
@@ -48,7 +50,11 @@ export default function BlogPage() {
           <div className="lg:max-w-[72%] 2xl:max-w-[60%] py-10">
             {data.publishedDate && (
               <p className="text-[#636363] text-[15px] lg:text-[17px] font-['Archivo'] font-medium">
-                {data.publishedDate.slice(0, 10)}
+                {new Date(data.publishedDate).toLocaleString('en-US',{
+                  day:"2-digit",
+                  month:"short",
+                  year:"numeric"
+                })}
               </p>
             )}
             {data.title && (
@@ -81,43 +87,73 @@ export default function BlogPage() {
             )}
 
             {/* Subsections */}
-            {data.subsections && data.subsections.length > 0 && data.subsections.map((subsection, index) => (
-              <div key={index} className="space-y-8">
-                {/* Subheading */}
-                {subsection.subtitle && (
-                  <h2 className="text-[25px] lg:text-[36px] font-medium max-w-[80%] 2xl:max-w-[60%] leading-[35px] lg:leading-[42px] font-['Archivo']">
-                    {subsection.subtitle}
-                  </h2>
-                )}
+            {data.subsections &&
+              data.subsections.length > 0 &&
+              data.subsections.map((subsection, index) => (
+                <div key={index} className="space-y-8">
+                  {/* Subheading */}
+                  {subsection.subtitle && (
+                    <h2 className="text-[25px] lg:text-[36px] font-medium max-w-[80%] 2xl:max-w-[60%] leading-[35px] lg:leading-[42px] font-['Archivo']">
+                      {subsection.subtitle}
+                    </h2>
+                  )}
 
-                {/* Sub-descriptions */}
-                {subsection.subdescription && subsection.subdescription.length > 0 && (
-                  <div className="space-y-5">
-                    {subsection.subdescription.map((desc, descIndex) => (
-                      <p key={descIndex} className="text-lg text-[#6D6E76] font-medium font-['Archivo']">
-                        {desc}
-                      </p>
-                    ))}
-                  </div>
-                )}
-
-                {/* Lists */}
-                {subsection.lists && subsection.lists.length > 0 && (
-                  <ul className="list-disc pl-5 space-y-2 mt-4">
-                    {subsection.lists.map((listItem, listIndex) => (
-                      <li key={listIndex} className="text-[16px] lg:text-[18px] font-medium leading-[35px] lg:leading-[42px] font-['Archivo']">
-                        {typeof listItem === 'string' ? listItem : listItem.title}
-                        {typeof listItem === 'object' && listItem.description && (
-                          <p className="text-lg text-[#6D6E76] font-medium font-['Archivo'] mt-1">
-                            {listItem.description}
+                  {/* Sub-descriptions */}
+                  {subsection.subdescription &&
+                    subsection.subdescription.length > 0 && (
+                      <div className="space-y-5">
+                        {subsection.subdescription.map((desc, descIndex) => (
+                          <p
+                            key={descIndex}
+                            className="text-lg text-[#6D6E76] font-medium font-['Archivo']"
+                          >
+                            {desc}
                           </p>
-                        )}
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </div>
-            ))}
+                        ))}
+                      </div>
+                    )}
+
+                  {/* Lists */}
+                  {subsection.lists && subsection.lists.length > 0 && (
+                    <div className="space-y-6 mt-6">
+                      {subsection.lists.map((list, listIndex) => (
+                        <div key={listIndex}>
+                          {/* List Title */}
+                          <h3 className="text-xl lg:text-2xl font-bold font-['Archivo'] mb-2">
+                            {list.listTitle}
+                          </h3>
+
+                          {/* List Description if available */}
+                          {list.listDescription && (
+                            <p className="text-base lg:text-lg text-[#6D6E76] font-medium font-['Archivo'] mb-4">
+                              {list.listDescription}
+                            </p>
+                          )}
+
+                          {/* List items */}
+                          {list.items && list.items.length > 0 && (
+                            <ul className="list-disc pl-5 space-y-2">
+                              {list.items.map((item, itemIndex) => (
+                                <li
+                                  key={itemIndex}
+                                  className="text-[16px] lg:text-[18px] font-medium leading-[35px] lg:leading-[42px] font-['Archivo']"
+                                >
+                                  {item.title}
+                                  {item.description && (
+                                    <p className="text-base text-[#6D6E76] font-medium font-['Archivo'] mt-1">
+                                      {item.description}
+                                    </p>
+                                  )}
+                                </li>
+                              ))}
+                            </ul>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ))}
 
             {/* Conclusion */}
             {data.conclusion && (
