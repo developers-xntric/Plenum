@@ -14,13 +14,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-      <link rel="alternate" href="https://plenum-tech.com/" hreflang="en-sa" />
+      <link rel="alternate" href="https://plenum-tech.com/" hrefLang="en-sa" />
 
-        <link rel="alternate" href="https://plenum-tech.com/" hreflang="en-ae" />
+        <link rel="alternate" href="https://plenum-tech.com/" hrefLang="en-ae" />
 
-        <link rel="alternate" href="https://plenum-tech.com/" hreflang="en" />
+        <link rel="alternate" href="https://plenum-tech.com/" hrefLang="en" />
 
-        <link rel="alternate" href="https://plenum-tech.com/" hreflang="x-default" /> 
+        <link rel="alternate" href="https://plenum-tech.com/" hrefLang="x-default" /> 
         {/* Google Tag Manager */}
         <Script id="gtm-init" strategy="afterInteractive">
           {`

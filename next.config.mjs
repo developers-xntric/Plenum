@@ -3,7 +3,9 @@ const nextConfig = {
   experimental: {
     legacyBrowsers: false,
   },
-
+  images:{
+    domains:['res.cloudinary.com']
+  },
   reactStrictMode: true,
 };
 
