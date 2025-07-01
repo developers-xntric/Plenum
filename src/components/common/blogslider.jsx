@@ -254,11 +254,7 @@ const BlogSlider = ({}) => {
                 />
                 <div className="max-w-[80%] absolute bottom-6 left-6">
                   <span className="text-[#D4D4D8] text-[14px]">
-                    {new Date(card.publishedDate).toLocaleString("en-US", {
-                      day: "2-digit",
-                      month: "short",
-                      year: "numeric",
-                    })}
+                     {card?.publishedDate?.slice(0,10)}
                   </span>
                   <p className="text-white text-[16px] line-clamp-2">
                     {card.description}

@@ -50,11 +50,7 @@ export default function BlogPage() {
           <div className="lg:max-w-[72%] 2xl:max-w-[60%] py-10">
             {data.publishedDate && (
               <p className="text-[#636363] text-[15px] lg:text-[17px] font-['Archivo'] font-medium">
-                {new Date(data.publishedDate).toLocaleString('en-US',{
-                  day:"2-digit",
-                  month:"short",
-                  year:"numeric"
-                })}
+                {data.publishedDate.slice(0,10)}
               </p>
             )}
             {data.title && (
