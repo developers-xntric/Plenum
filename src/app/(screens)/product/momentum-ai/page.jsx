@@ -25,6 +25,25 @@ export const metadata = {
 const MomentumAI = () => {
     return (
         <div>
+            <Head>
+                <script type="application/ld+json">
+                    {`
+            {
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "name": "Momentum Ai",
+              "url": "https://plenum-tech.com/product/momentum-ai",
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.5",
+                "reviewCount": "56",
+                "bestRating": "5",
+                "worstRating": "1"
+              }
+            }
+          `}
+                </script>
+            </Head>
             <ProductHero isLogo={false} bgImage='/product/m_hero.svg' mobileBgImage={'/product/m_hero_mobile.svg'} para1={"Unlock enterprise-grade AI solutions that will fuel accuracy, speed, and additional intelligent decision-making and are designed to grow with your supply chain, retail, and industrial operations."} />
             <div className="2xl:max-w-[1440px] mx-auto w-[93%] xl:w-[90%] 2xl:w-[90%] py-10">
                 <BrandSlider brand_icons={service_brand_icons} text={"Trusted by world's most exciting brands"} />

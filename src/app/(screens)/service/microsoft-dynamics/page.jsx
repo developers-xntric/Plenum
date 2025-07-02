@@ -16,11 +16,12 @@ import ArticleSlider from "@/components/common/article-slider";
 import { Blog } from '@/components/homepage/blog'
 import { md_solutions } from '@/data/mobility-solutions'
 import { services } from '@/data/microsoft'
+import Head from 'next/head'
 // import OracleOneStopShop from '@/components/service/oracle-net-suite/oracle-one-stop-shop'
 
 
 export const metadata = {
-  title: 'Explore Microsoft Dynamics 365 Solutions with ERP & CRM Experts ',
+    title: 'Explore Microsoft Dynamics 365 Solutions with ERP & CRM Experts ',
     description: "Discover tailored Microsoft Dynamics solutions your certified Microsoft Dynamics partner in the UAE.",
     alternates: {
         canonical: 'https://plenum-tech.com/service/microsoft-dynamics',
@@ -31,6 +32,25 @@ const MicrosoftDynamics = () => {
     return (
         <div>
             <div className='mt-10'>
+                <Head>
+                    <script type="application/ld+json">
+                        {`
+            {
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "name": "Microsoft Dynamics",
+              "url": "https://plenum-tech.com/service/microsoft-dynamics",
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.5",
+                "reviewCount": "56",
+                "bestRating": "5",
+                "worstRating": "1"
+              }
+            }
+          `}
+                    </script>
+                </Head>
                 <Service_Inner_Hero
                     heading={"Microsoft Dynamics Solutions Tailored to Your Business"}
                     para={"At Plenum Technologies, we offer Microsoft Dynamics 365 Solutions that empower organizations to streamline operations, enhance productivity, and achieve sustainable growth."}
@@ -53,13 +73,13 @@ const MicrosoftDynamics = () => {
                 paraClass='px-4'
                 isCenter={true}
                 ismicrosoft={true}
-                
+
             />
             <MicrosoftCarousel MicrosoftCarouselData={MicrosoftCarouselData} title={"Let’s Transform Your Business Together"} para={"Plenum redefines integration by offering intelligent, future-ready solutions that streamline how your business operates. Effortlessly link your applications with Microsoft Dynamics to simplify workflows, eliminate manual processes, and boost overall efficiency"} />
 
 
             <MobilitySolutions heading1={"Mobile-First Solutions for"} heading2={"Microsoft Dynamics"} para={"With Plexian's innovative mobile apps, created and delivered by a Certified Microsoft Application Developer, lock the full potential of Microsoft Dynamics 365, NAV, AX, and Business Central. Our complete mobility solutions provide industry-wide optimization of company processes, increased productivity, and agility."} className={"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4"} solutions={md_solutions} />
-            <MicrosoftPartner  />
+            <MicrosoftPartner />
             <ERPSolutionsBottomSection className='flex justify-center items-center gap-20 lg:flex-row-reverse flex-col pt-10 lg:py-0' bottomSection={md_service} left={false} blackSection={md_service_black} />
             <div className='pt-20'>
                 <PinkSection

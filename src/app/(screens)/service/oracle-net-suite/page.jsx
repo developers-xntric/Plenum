@@ -13,6 +13,7 @@ import { cardData } from '@/data/home-blog'
 import { testimonials } from '@/data/home-testimonials'
 import { MicrosoftCarouselData } from '@/data/microsoft-carousel'
 import React from 'react'
+import Head from 'next/head'
 
 export const metadata = {
     title: 'Oracle NetSuite ERP Solutions Consulting & Integration ',
@@ -26,6 +27,25 @@ export const metadata = {
 const OracleNetSuite = () => {
     return (
         <div>
+            <Head>
+                <script type="application/ld+json">
+                    {`
+            {
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "name": "Net Suite",
+              "url": "https://plenum-tech.com/service/oracle-net-suite",
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.5",
+                "reviewCount": "56",
+                "bestRating": "5",
+                "worstRating": "1"
+              }
+            }
+          `}
+                </script>
+            </Head>
             <New_Service_Inner_Hero
                 heading={"Oracle NetSuite: Powerful ERP for Growth"}
                 para={"Whether you're a growing SME or an established enterprise, our Oracle NetSuite services streamline operations, boost productivity, and improve visibility."}

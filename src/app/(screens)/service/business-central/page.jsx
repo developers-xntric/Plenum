@@ -15,6 +15,7 @@ import { testimonials } from '@/data/home-testimonials'
 import { businessPage } from '@/data/microsoft'
 import { bc_solution } from '@/data/mobility-solutions'
 import { businessSer, capabilities } from '@/data/services'
+import Head from 'next/head'
 
 export const metadata = {
     title: 'Explore Microsoft Dynamics 365 Business Central and ERP Solution in UAE',
