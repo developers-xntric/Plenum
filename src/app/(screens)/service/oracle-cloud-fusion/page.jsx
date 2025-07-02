@@ -30,7 +30,7 @@ const OracleCloudFusion = () => {
               "@context": "https://schema.org",
               "@type": "WebPage",
               "name": "Oracle Cloud Fusion",
-              "url": "https://plenum-tech.com/service/oracle",
+              "url": "https://plenum-tech.com/service/oracle-cloud-fusion",
               "aggregateRating": {
                 "@type": "AggregateRating",
                 "ratingValue": "4.5",

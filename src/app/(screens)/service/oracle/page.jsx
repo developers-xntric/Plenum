@@ -14,6 +14,7 @@ import { blackSection, bottomSection, oracle_service, oracle_service_black, Orac
 import { cardData } from '@/data/home-blog'
 import { testimonials } from '@/data/home-testimonials'
 import { oracle, OracleServiceItems } from '@/data/services'
+import Head from 'next/head'
 
 
 export const metadata = {
@@ -27,6 +28,25 @@ export const metadata = {
 const Oracle = () => {
     return (
         <div>
+            <Head>
+                <script type="application/ld+json">
+                    {`
+            {
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "name": "Oracle",
+              "url": "https://plenum-tech.com/service/oracle",
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.5",
+                "reviewCount": "56",
+                "bestRating": "5",
+                "worstRating": "1"
+              }
+            }
+          `}
+                </script>
+            </Head>
             <div className='mt-10'>
                 <Service_Inner_Hero
                     heading={"Oracle ERP Solutions Empowered by Oracle Cloud ERP"}
