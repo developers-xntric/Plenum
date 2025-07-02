@@ -21,7 +21,26 @@ const DynamicComp = (slug) => {
     getData();
   }, [slug]);
   return (
+    <>
+    // Title , metaDescripton, slug
+    <Head>
+        <title>{data?.title || "Xntric Blog"}</title>
+        <meta
+          name={data.title}
+          content={data?.metaDescription || data?.description?.slice(0, 150)}
+        />
+        {/* Optional Open Graph Tags for Social Sharing */}
+        <meta property="og:title" content={data?.title || "Xntric Blog"} />
+        <meta
+          property="og:description"
+          content={data?.metaDescription || data?.description?.slice(0, 150)}
+        />
+        <meta property="og:image" content={data?.bannerImageURL || ""} />
+        <meta property="og:type" content="article" />
+      </Head>
+
     <div className="font-['Archivo'] pt-34 lg:pt-52">
+
       {/* Date and Title */}
       <div className="2xl:max-w-[1440px] w-[90%] mx-auto">
         <div className="lg:max-w-[72%] 2xl:max-w-[60%] py-10">
@@ -168,6 +187,7 @@ const DynamicComp = (slug) => {
         cardData={cardData}
       />
     </div>
+</>
   );
 };
 
