@@ -243,7 +243,7 @@ const BlogSlider = ({}) => {
         <ul className="splide__list">
           {data.map((card, index) => (
             <Link href={`${location.startsWith === "blog" ? "" : "/blog/" }${card.slug}`} key={index}>
-              <div className="relative hover:opacity-75 transition-opacity ease-in duration-500">
+              <div className=" splide__slide hover:opacity-75 transition-opacity ease-in duration-500">
                 <div className="absolute top-0 left-0 w-full h-full bg-[#000000] rounded-[20px] opacity-60"></div>
                 <Image
                   src={card.imageURL}

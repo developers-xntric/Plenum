@@ -102,7 +102,7 @@ export default function BlogPage() {
                             key={descIndex}
                             className="text-lg text-[#6D6E76] font-medium font-['Archivo']"
                           >
-                            {desc}
+                            {desc} 
                           </p>
                         ))}
                       </div>
