@@ -10,59 +10,107 @@ import { usePathname } from "next/navigation";
 
 const BlogSlider = ({}) => {
   const splideRef = useRef(null);
-  useEffect(() => {
-    if (splideRef.current) {
-      const splide = new Splide(splideRef.current, {
-        perPage: 3,
-        gap: "16px",
-        arrows: false,
-        drag: "free",
-        pagination: true,
-        rewind: true,
-        paginationKeyboard: true,
-        paginationDirection: "ltr",
-        autoplay: true,
-        breakpoints: {
-          768: {
-            perPage: 1,
-          },
-          1024: {
-            perPage: 3,
-          },
-        },
-      });
-
-      splide.mount();
-      const paginationContainer =
-        splideRef.current.querySelector(".custom-pagination");
-      const pagination = splideRef.current.querySelector(".splide__pagination");
-      if (pagination && paginationContainer) {
-        paginationContainer.appendChild(pagination);
-        pagination.style.display = "flex";
-      }
-
-      return () => splide.destroy();
-    }
-  }, []);
+  // Ref to store the Splide instance, ensuring it’s initialized only once
+  const splideInstanceRef = useRef(null);
   const [data, setData] = useState([]);
+  const location = usePathname();
+
+  // Fetch blog data on component mount
   useEffect(() => {
     const getAllBlogs = async () => {
-      const res = await axios.get(
-        "https://xntric-blog-server-production.up.railway.app/api/v2/blogs"
-      );
-      setData(res.data.blogs);
+      try {
+        const res = await axios.get(
+          "https://xntric-blog-server-production.up.railway.app/api/v2/blogs"
+        );
+        setData(res.data.blogs);
+      } catch (error) {
+        console.error("Failed to fetch blogs:", error);
+      }
     };
     getAllBlogs();
   }, []);
-  const location = usePathname();
+
+ useEffect(() => {
+  if (data.length > 0 && splideRef.current) {
+    const splide = new Splide(splideRef.current, {
+      perPage: 3,
+      gap: "16px",
+      arrows: false,
+      drag: "free",
+      pagination: false, // Disable default pagination
+      rewind: true,
+      autoplay: true,
+      breakpoints: {
+        768: { perPage: 1 },
+        1024: { perPage: 3 },
+      },
+    });
+
+    splide.mount();
+
+    // Create custom pagination with 3 dots
+    const paginationContainer = splideRef.current.querySelector('.custom-pagination');
+    if (paginationContainer) {
+      paginationContainer.innerHTML = ''; // Clear any existing content
+      for (let i = 0; i < 3; i++) {
+        const button = document.createElement('button');
+        button.className = 'splide__pagination__page'; // Use Splide's default dot styling
+        button.type = 'button';
+        button.setAttribute('aria-label', `Go to group ${i + 1}`);
+        button.addEventListener('click', () => {
+          const totalSlides = splide.length;
+          let targetIndex;
+          if (i === 0) {
+            targetIndex = 0; // Beginning
+          } else if (i === 1) {
+            targetIndex = Math.ceil(totalSlides / 3); // Middle group start
+          } else {
+            targetIndex = Math.ceil(2 * totalSlides / 3); // End group start
+          }
+          splide.go(targetIndex);
+        });
+        paginationContainer.appendChild(button);
+      }
+
+      // Update active dot when slider moves
+      splide.on('moved', (newIndex) => {
+        const totalSlides = splide.length;
+        const groupSize = Math.ceil(totalSlides / 3);
+        let activeDot;
+        if (newIndex < groupSize) {
+          activeDot = 0;
+        } else if (newIndex < 2 * groupSize) {
+          activeDot = 1;
+        } else {
+          activeDot = 2;
+        }
+        const buttons = paginationContainer.querySelectorAll('.splide__pagination__page');
+        buttons.forEach((btn, index) => {
+          btn.classList.toggle('is-active', index === activeDot);
+        });
+      });
+
+      // Set initial active dot
+      splide.emit('moved', splide.index);
+    }
+  }
+}, [data]);
+  useEffect(() => {
+    return () => {
+      if (splideInstanceRef.current) {
+        splideInstanceRef.current.destroy();
+      }
+    };
+  }, []);
+
   return (
     <section ref={splideRef} className="splide" aria-label="Blog Slider">
       <div className="splide__track">
-        <ul className="splide__list gap-2">
+        <ul className="splide__list">
           {data.map((card, index) => (
             <Link
               className="splide__slide hover:opacity-75 transition-opacity ease-in duration-500"
-              href={`${location.startsWith === "blog" ? "" : "/blog/"}${
+              href={`${location.startsWith("/blog") ? "" : "/blog/"}${
                 card.slug
               }`}
               key={index}
