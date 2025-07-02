@@ -13,7 +13,7 @@ export const Blog = ({ heading, para, cardData }) => {
                     <div className="mb-10 lg:mb-0 lg:w-[15%] mt-5">
                         <Button
                             text={"View All Blogs"}
-                            link="/article"
+                            link="/blog"
                             className={
                                 `bg-[#FF6035] cursor-pointer py-[10px] hover:bg-[#101010] hover:text-white  transition-all duration-500 px-6 xl:px-5 text-[#000]`
                             }
