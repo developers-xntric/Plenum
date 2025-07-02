@@ -10,6 +10,7 @@ import { ocf_service, ocf_service_black } from '@/data/erp-consulting-service'
 import { cardData } from '@/data/home-blog'
 import { testimonials } from '@/data/home-testimonials'
 import { fusion, fusionTabs } from '@/data/services'
+import Head from 'next/head'
 
 export const metadata = {
     title: 'Oracle Fusion Cloud is revolutionizing Business Operations',
@@ -22,6 +23,25 @@ export const metadata = {
 const OracleCloudFusion = () => {
     return (
         <div>
+            <Head>
+                <script type="application/ld+json">
+                    {`
+            {
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "name": "Oracle Cloud Fusion",
+              "url": "https://plenum-tech.com/service/oracle",
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.5",
+                "reviewCount": "56",
+                "bestRating": "5",
+                "worstRating": "1"
+              }
+            }
+          `}
+                </script>
+            </Head>
             <New_Service_Inner_Hero
                 heading={"Oracle Fusion Cloud Transforming Your Business"}
                 para={"This integrated suite of applications offers a wide range of solutions, from Oracle Fusion ERP to Oracle Fusion applications."}
