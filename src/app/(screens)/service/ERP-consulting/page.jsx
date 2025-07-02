@@ -22,6 +22,25 @@ export const metadata = {
 const ERPConsulting = () => {
     return (
         <div>
+            <Head>
+                <script type="application/ld+json">
+                    {`
+            {
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "name": "ERP-consulting",
+              "url": "https://plenum-tech.com/service/ERP-consulting",
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.5",
+                "reviewCount": "56",
+                "bestRating": "5",
+                "worstRating": "1"
+              }
+            }
+          `}
+                </script>
+            </Head>
             <Service_Inner_Hero
                 heading={"ERP Consulting and Implementation in Dubai and Middle East"}
                 para={"We are Microsoft business central + AI for Intelligent enterprise ops we architect, implement and optimize Microsoft D365 ERP systems with a focus on automation, insights, and integrated workflows. With our copilot studio capabilities and our inhouse on premise product SecureGPT®  built in, your ERP becomes a smart assistant empowering finance, operations, and procurement teams. "}
