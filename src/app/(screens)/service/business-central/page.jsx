@@ -15,6 +15,7 @@ import { testimonials } from '@/data/home-testimonials'
 import { businessPage } from '@/data/microsoft'
 import { bc_solution } from '@/data/mobility-solutions'
 import { businessSer, capabilities } from '@/data/services'
+import Head from 'next/head'
 
 export const metadata = {
     title: 'Explore Microsoft Dynamics 365 Business Central and ERP Solution in UAE',
@@ -27,6 +28,25 @@ export const metadata = {
 const BuisnessCentral = () => {
     return (
         <div>
+            <Head>
+                <script type="application/ld+json">
+                    {`
+            {
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "name": "Business Central",
+              "url": "https://plenum-tech.com/service/business-central",
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.5",
+                "reviewCount": "56",
+                "bestRating": "5",
+                "worstRating": "1"
+              }
+            }
+          `}
+                </script>
+            </Head>
             <New_Service_Inner_Hero
                 heading={"Streamline Your Business With Dynamics 365 Business Central"}
                 para={"Dynamics 365 Business Central is a comprehensive cloud-based ERP solution designed to help small and medium-sized businesses manage finances, streamline operations, and improve customer interactions all from one unified platform."}

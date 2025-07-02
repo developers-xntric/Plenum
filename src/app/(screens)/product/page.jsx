@@ -21,6 +21,25 @@ export const metadata = {
 const Product = () => {
     return (
         <div>
+            <Head>
+                <script type="application/ld+json">
+                    {`
+            {
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "name": "Product",
+              "url": "https://plenum-tech.com/product",
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.5",
+                "reviewCount": "56",
+                "bestRating": "5",
+                "worstRating": "1"
+              }
+            }
+          `}
+                </script>
+            </Head>
             <ProductHero
                 heading={"Plenum <br/> AI Products"}
                 isLogo={false}
