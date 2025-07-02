@@ -1,139 +1,133 @@
-"use client"
+'use client';
 
-import { useEffect, useRef, useState } from "react"
-import { ArrowUpRight, ChevronRight } from "lucide-react"
-import { cn } from "@/lib/utils"
-import Image from "next/image"
-import Link from "next/link"
-import { articles } from "@/data/article"
-import { motion } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
+
+import { cn } from "@/lib/utils";
+
+import ArticleCard from "../article/articleCard";
+import Button from "../common/button"
+
+const articleUrls = [
+    'https://thedailyguardian.com/others/the-future-of-manufacturing-with-microsoft-dynamics-365-is-here-are-you-ready/',
+    'https://thearabianpost.com/dynamics-365-business-central-overview-everything-you-need-to-know/',
+    // Add more URLs as needed
+];
 
 export default function ArticleSlider({ bg = "black", title, paragraph, className }) {
-    const [activeIndex, setActiveIndex] = useState(0)
-    const [isAnimating, setIsAnimating] = useState(false)
-    const carouselRef = useRef(null)
-    const isDragging = useRef(false)
-    const startX = useRef(0)
-    const scrollLeft = useRef(0)
-    const dragThreshold = 50
+    const [activeIndex, setActiveIndex] = useState(0);
+    const [isAnimating, setIsAnimating] = useState(false);
+    const carouselRef = useRef(null);
+    const isDragging = useRef(false);
+    const startX = useRef(0);
+    const scrollLeft = useRef(0);
 
-    // Auto-slide with timing buffer
     useEffect(() => {
         const interval = setInterval(() => {
             if (!isDragging.current && !isAnimating) {
-                const nextIndex = (activeIndex + 1) % articles.length
-                goToSlide(nextIndex)
+                const nextIndex = (activeIndex + 1) % articleUrls.length;
+                goToSlide(nextIndex);
             }
-        }, 2000)
+        }, 4000);
+        return () => clearInterval(interval);
+    }, [activeIndex, articleUrls.length, isAnimating]);
 
-        return () => clearInterval(interval)
-    }, [activeIndex, articles.length, isAnimating])
-
-    // Smooth slide transition with scrolling
     const goToSlide = (index) => {
-        if (isAnimating || index === activeIndex) return
-
-        setIsAnimating(true)
-        setActiveIndex(index)
-
+        if (isAnimating || index === activeIndex) return;
+        setIsAnimating(true);
+        setActiveIndex(index);
         if (carouselRef.current) {
-            const article = carouselRef.current.children[index]
-            const scrollPos = article.offsetLeft - 250
-
-            carouselRef.current.scrollTo({ left: scrollPos, behavior: "smooth" })
-            setTimeout(() => {
-                setIsAnimating(false)
-            }, 600) // Match the transition duration
+            const article = carouselRef.current.children[index];
+            const scrollPos = article.offsetLeft - 250;
+            carouselRef.current.scrollTo({ left: scrollPos, behavior: "smooth" });
+            setTimeout(() => setIsAnimating(false), 600);
         }
-    }
+    };
 
-    // Mouse drag handlers
     const handleMouseDown = (e) => {
-        if (isAnimating) return
-        isDragging.current = true
-        startX.current = e.pageX - (carouselRef.current?.offsetLeft || 0)
-        scrollLeft.current = carouselRef.current?.scrollLeft || 0
-        if (carouselRef.current) {
-            carouselRef.current.style.cursor = "grabbing"
-        }
-    }
+        if (isAnimating) return;
+        isDragging.current = true;
+        startX.current = e.pageX - (carouselRef.current?.offsetLeft || 0);
+        scrollLeft.current = carouselRef.current?.scrollLeft || 0;
+        carouselRef.current.style.cursor = "grabbing";
+    };
 
     const handleMouseUp = () => {
-        if (!isDragging.current) return
-        isDragging.current = false
+        if (!isDragging.current) return;
+        isDragging.current = false;
+        carouselRef.current.style.cursor = "grab";
+        const currentScroll = carouselRef.current.scrollLeft;
+        let minDiff = Infinity;
+        let closestIndex = 0;
 
-        if (carouselRef.current) {
-            carouselRef.current.style.cursor = "grab"
-            const currentScroll = carouselRef.current.scrollLeft
-
-            let minDiff = Number.POSITIVE_INFINITY
-            let closestIndex = 0
-
-            for (let i = 0; i < articles.length; i++) {
-                const article = carouselRef.current.children[i]
-                const targetPosition = article.offsetLeft - 100
-                const diff = Math.abs(targetPosition - currentScroll)
-
-                if (diff < minDiff) {
-                    minDiff = diff
-                    closestIndex = i
-                }
+        for (let i = 0; i < articleUrls.length; i++) {
+            const article = carouselRef.current.children[i];
+            const targetPosition = article.offsetLeft - 100;
+            const diff = Math.abs(targetPosition - currentScroll);
+            if (diff < minDiff) {
+                minDiff = diff;
+                closestIndex = i;
             }
-
-            goToSlide(closestIndex)
         }
-    }
+
+        goToSlide(closestIndex);
+    };
 
     const handleMouseMove = (e) => {
-        if (!isDragging.current || isAnimating) return
-        e.preventDefault()
+        if (!isDragging.current || isAnimating) return;
+        e.preventDefault();
+        const x = e.pageX - (carouselRef.current?.offsetLeft || 0);
+        const walk = (x - startX.current) * 1.5;
+        carouselRef.current.scrollLeft = scrollLeft.current - walk;
+    };
 
-        const x = e.pageX - (carouselRef.current?.offsetLeft || 0)
-        const walk = (x - startX.current) * 1.5
-
-        if (carouselRef.current) {
-            carouselRef.current.scrollLeft = scrollLeft.current - walk
-        }
-    }
-
-    // Touch handlers
     const handleTouchStart = (e) => {
-        if (isAnimating) return
-        isDragging.current = true
-        startX.current = e.touches[0].pageX - (carouselRef.current?.offsetLeft || 0)
-        scrollLeft.current = carouselRef.current?.scrollLeft || 0
-    }
+        if (isAnimating) return;
+        isDragging.current = true;
+        startX.current = e.touches[0].pageX - (carouselRef.current?.offsetLeft || 0);
+        scrollLeft.current = carouselRef.current?.scrollLeft || 0;
+    };
 
     const handleTouchMove = (e) => {
-        if (!isDragging.current || isAnimating) return
-
-        const x = e.touches[0].pageX - (carouselRef.current?.offsetLeft || 0)
-        const walk = (x - startX.current) * 1.5
-
-        if (carouselRef.current) {
-            carouselRef.current.scrollLeft = scrollLeft.current - walk
-        }
-    }
+        if (!isDragging.current || isAnimating) return;
+        const x = e.touches[0].pageX - (carouselRef.current?.offsetLeft || 0);
+        const walk = (x - startX.current) * 1.5;
+        carouselRef.current.scrollLeft = scrollLeft.current - walk;
+    };
 
     const handleTouchEnd = () => {
-        handleMouseUp()
-    }
+        handleMouseUp();
+    };
 
     useEffect(() => {
         if (carouselRef.current) {
-            goToSlide(activeIndex)
+            goToSlide(activeIndex);
         }
-    }, [])
+    }, []);
 
     return (
-        <div className={`${className}`}>
-            {/* <div className={`w-full ${bg == "black" ? "bg-[#282526]" : "bg-white"}  text-white py-14 lg:py-20 font-['Archivo']`}>
-            <div className="w-[95%] 2xl:w-[88%] ms-auto">
-                <div className="max-w-full ms-auto ">
-                    <h2 className={` ${bg == "black" ? "text-white" : "text-[#101010]"} text-3xl md:text-left text-center font-semibold mb-6 md:mb-2 lg:mb-6 text-[30px] lg:text-[50px]`}>{title || "Discover Our Articles"}</h2>
-                    <p className={` ${bg == "black" ? "text-[#FFF]" : "text-[#101010]"}  md:text-left text-center opacity-60 text-[14] md:text-[15px] mb-10 md:w-[70%] lg:w-[60%] xl:w-[40%] 2xl:w-[500px] `}>
-                        {paragraph || "Explore our latest posts for insights in design, learning, and innovation. Stay updated with trends breakthroughs in the creative world."}
-                    </p>
+        <div className={cn(className)}>
+            <div className={`w-full ${bg === "black" ? "bg-[#282526]" : "bg-white"} text-white py-14 lg:py-20 font-['Archivo']`}>
+                <div className="w-[95%] 2xl:w-[88%] ms-auto">
+                    <div className=" lg:flex-row  flex-col flex items-center lg:items-start justify-between">
+                        <div>
+                            <h2 className={`text-3xl md:text-left text-center font-semibold mb-6 md:mb-2 lg:mb-6 text-[30px] lg:text-[50px] ${bg === "black" ? "text-white" : "text-[#101010]"}`}>
+                                {title || "Discover Our Articles"}
+                            </h2>
+                            <p className={`md:text-left text-center opacity-60 text-[14] md:text-[15px] mb-10 md:w-[70%] lg:w-[60%] xl:w-[80%] 2xl:w-[500px] ${bg === "black" ? "text-[#FFF]" : "text-[#101010]"}`}>
+                                {paragraph || "Explore our latest posts for insights in design, learning, and innovation. Stay updated with trends and breakthroughs in the creative world."}
+                            </p>
+                        </div>
+                        <div className="mb-10 lg:mb-0 lg:w-[20%] lg:mt-5">
+                            <Button
+                                text={"View All Articles"}
+                                link="/article"
+                                className={
+                                    `bg-[#FF6035] cursor-pointer py-[10px] hover:bg-[#101010] hover:text-white  transition-all duration-500 px-8 xl:px-5 text-[#000]`
+                                }
+                            />
+                        </div>
+                    </div>
+
                     <div className="relative">
                         <div
                             ref={carouselRef}
@@ -146,115 +140,50 @@ export default function ArticleSlider({ bg = "black", title, paragraph, classNam
                             onTouchMove={handleTouchMove}
                             onTouchEnd={handleTouchEnd}
                         >
-                            {articles.map((article, index) => {
-                                const isActive = index === activeIndex
-                                const isFirstVisible = index === activeIndex
+                            {articleUrls.map((url, index) => {
+                                const isActive = index === activeIndex;
+                                const isFirstVisible = index === activeIndex;
 
                                 return (
                                     <div
-                                        key={article.id}
+                                        key={index}
                                         className={cn(
                                             "flex-shrink-0 transition-all duration-500 ease-out",
-                                            isActive ? "w-full md:w-[45%]" : "w-[35%] md:w-[30%]",
+                                            isActive ? "w-full md:w-[45%]" : "w-[35%] md:w-[30%]"
                                         )}
                                         style={{
-                                            transform: isFirstVisible ? "scale(1) 2xl:scale(2)" : "scale(0.95)",
+                                            transform: isFirstVisible ? "scale(1)" : "scale(0.95)",
                                             opacity: isActive ? 1 : 0.8,
                                         }}
                                     >
-                                        <div className="flex flex-col h-full">
-                                            <div
-                                                className={cn(
-                                                    "w-full bg-gray-800 overflow-hidden",
-                                                    isActive ? "h-[300px] xl:h-[404px] 2xl:h-[480px]" : "h-[200px] xl:h-[300px] 2xl:h-[350px]",
-                                                )}
-                                            >
-                                                <div className="relative w-full h-full">
-                                                    <Image
-                                                        src={article.image || "/placeholder.svg"}
-                                                        alt={article.title}
-                                                        fill
-                                                        className="object-cover transition-transform duration-700 hover:scale-105"
-                                                        sizes={isActive ? "(max-width: 768px) 50vw, 55vw" : "(max-width: 768px) 30vw, 30vw"}
-                                                    />
-                                                </div>
-                                            </div>
-
-                                            <div className="mt-3">
-                                                <p className="text-xs text-gray-400 mb-1">{article.date}</p>
-                                                <h3 className={cn("font-semibold  mb-1 line-clamp-2 text-xl", bg == "black" ? "text-[#FFF]" : "text-[#101010]")}>
-                                                    {article.title}
-                                                </h3>
-
-                                                <motion.a
-                                                    href={`/article/${article.id}`}
-                                                    className="text-primary underline underline-offset-2 inline-flex items-center text-sm group hover:underline"
-                                                    aria-label={`Read more about ${article.title}`}
-                                                    initial="rest"
-                                                    whileHover="hover"
-                                                    animate="rest"
-                                                >
-                                                    Read More
-                                                    <motion.span
-                                                        className="ml-1"
-                                                        variants={{
-                                                            rest: {
-                                                                x: 0,
-                                                                y: 0,
-                                                                opacity: 1,
-                                                            },
-                                                            hover: {
-                                                                x: [0, 4, 0],
-                                                                y: [0, -4, 0],
-                                                                opacity: 1,
-                                                                transition: {
-                                                                    duration: 1,
-                                                                    ease: "easeInOut",
-                                                                    repeat: Infinity,
-                                                                },
-                                                            },
-                                                        }}
-                                                    >
-                                                        <ArrowUpRight
-                                                            size={10}
-                                                            className="h-5 w-5 text-[#FF6035] cursor-pointer transition-transform duration-200"
-                                                        />
-                                                    </motion.span>
-                                                </motion.a>
-
-
-                                            </div>
-                                        </div>
+                                        <ArticleCard url={url} index={index} slider={true} />
                                     </div>
-                                )
+                                );
                             })}
                         </div>
+                    </div>
 
+                    {/* Pagination Dots */}
+                    <div className="flex justify-center items-center gap-1 mt-2">
+                        {[0, 1, 2, 3].map((dotIndex) => {
+                            const mappedIndex = Math.round((dotIndex / 3) * (articleUrls.length - 1));
+                            return (
+                                <button
+                                    key={dotIndex}
+                                    className={cn(
+                                        "w-2 h-2 rounded-full transition-all duration-300",
+                                        Math.round((activeIndex / (articleUrls.length - 1)) * 3) === dotIndex
+                                            ? `${bg === "white" ? "bg-black" : "bg-white"} w-4`
+                                            : "bg-gray-600 opacity-70 hover:opacity-100"
+                                    )}
+                                    onClick={() => goToSlide(mappedIndex)}
+                                    disabled={isAnimating}
+                                />
+                            );
+                        })}
                     </div>
                 </div>
-
             </div>
-            <div className="flex justify-center items-center gap-1 mt-2">
-                {[0, 1, 2, 3].map((dotIndex) => {
-                    const mappedIndex = Math.round((dotIndex / 3) * (articles.length - 1))
-                    return (
-                        <button
-                            key={dotIndex}
-                            className={cn(
-                                "w-2 h-2 rounded-full transition-all duration-300",
-                                Math.round((activeIndex / (articles.length - 1)) * 3) === dotIndex
-                                    ? `${bg == "white" ? "bg-black" : "bg-white"} w-4`
-                                    : "bg-gray-600 opacity-70 hover:opacity-100"
-                            )}
-                            onClick={() => goToSlide(mappedIndex)}
-                            aria-label={`Go to slide group ${dotIndex + 1}`}
-                            disabled={isAnimating}
-                        />
-                    )
-                })}
-            </div>
-
-        </div> */}
         </div>
-    )
+    );
 }
