@@ -191,7 +191,7 @@ const Cards = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
     const getAllBlogs = async () => {
-      const res = await axios.get("http://localhost:8000/api/v2/blogs");
+      const res = await axios.get("https://xntric-blog-server-production.up.railway.app/api/v2/blogs");
       setData(res.data.blogs);
     };
     getAllBlogs();

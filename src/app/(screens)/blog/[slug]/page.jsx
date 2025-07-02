@@ -14,7 +14,7 @@ export default function BlogPage() {
     const getData = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:8000/api/v2/blog/${slug}`
+          `https://xntric-blog-server-production.up.railway.app/api/v2/blog/${slug}`
         );
         setData(res.data.blog);
       } catch (error) {
