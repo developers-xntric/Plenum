@@ -52,20 +52,20 @@ export default function ArticleCard({ url, index, slider }) {
             <div className={` flex flex-col justify-between ${!slider ? 'flex-grow p-4' : 'py-4'} `}>
                 {!slider && (
                     <div>
-                        <p className="text-xs text-gray-400 mb-1">
+                        <p className="text-[11px] md:text-xs text-gray-400 mb-1">
                             {preview.publisher || new URL(url).hostname}
                         </p>
-                        <h3 className="font-semibold mb-1 line-clamp-2 text-xl ">
+                        <h3 className="font-semibold mb-1 line-clamp-2 md:text-xl ">
                             {preview.title}
                         </h3>
-                        <p className="text-sm text-gray-600 line-clamp-2 mt-4">
+                        <p className="text-xs md:text-sm text-gray-600 line-clamp-2 mt-4">
                             {preview.description}
                         </p>
                     </div>
                 )}
 
                 {slider && (
-                    <h3 className="font-semibold mb-1 line-clamp-2 text-xl ">
+                    <h3 className="font-semibold mb-1 line-clamp-2 mdtext-xl ">
                         {preview.title}
                     </h3>
                 )}

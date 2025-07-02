@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 
 import ArticleCard from "../article/articleCard";
 import Button from "../common/button"
+import { ArrowUpRight } from "lucide-react";
 
 const articleUrls = [
     'https://thedailyguardian.com/others/the-future-of-manufacturing-with-microsoft-dynamics-365-is-here-are-you-ready/',
@@ -117,14 +118,14 @@ export default function ArticleSlider({ bg = "black", title, paragraph, classNam
                                 {paragraph || "Explore our latest posts for insights in design, learning, and innovation. Stay updated with trends and breakthroughs in the creative world."}
                             </p>
                         </div>
-                        <div className="mb-10 lg:mb-0 lg:w-[20%] lg:mt-5">
+                        <div className="mb-16 lg:mb-0 lg:w-[20%] lg:mt-5">
                             <Button
                                 text={"View All Articles"}
                                 link="/article"
                                 className={
-                                    `bg-[#FF6035] cursor-pointer py-[10px] hover:bg-[#101010] hover:text-white  transition-all duration-500 px-8 xl:px-5 text-[#000]`
+                                    `bg-[#FF6035] cursor-pointer py-[10px] hover:bg-[#101010] hover:text-white  transition-all duration-500 px-5 xl:px-5 text-[#000]`
                                 }
-                            />
+                            ></Button>
                         </div>
                     </div>
 

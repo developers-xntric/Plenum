@@ -161,6 +161,11 @@ const Navbar = () => {
             isExpanded: false,
             link: "/blog",
         },
+        {
+            title: "Article",
+            isExpanded: false,
+            link: "/article",
+        },
 
         //     title: "News",
         //     isExpanded: false,
