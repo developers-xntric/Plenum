@@ -4,7 +4,7 @@ const nextConfig = {
     legacyBrowsers: false,
   },
   images:{
-    domains:['res.cloudinary.com']
+    domains:['res.cloudinary.com','thedailyguardian.com','thearabianpost.com']
   },
   reactStrictMode: true,
 };
