@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-export default function SimpleLinkPreview({ url, index }) {
+export default function ArticleCard({ url, index, slider }) {
     const [preview, setPreview] = useState(null);
 
     useEffect(() => {
@@ -31,15 +31,15 @@ export default function SimpleLinkPreview({ url, index }) {
         "/article/article-4.webp"
     ];
 
-    const forceImageIndexes = [0]; 
+    const forceImageIndexes = [0];
     const shouldUseSavedImage = forceImageIndexes.includes(index);
     const fallbackImage = fallbackImages[index] || "/article/article-1.webp";
 
     const imageToUse = shouldUseSavedImage ? fallbackImage : (preview.image?.url || fallbackImage);
 
     return (
-        <div className="flex flex-col h-full border border-gray-200 rounded-lg overflow-hidden shadow-sm">
-            <div className="relative w-full max-h-[52%] 2xl:max-h-[54%] overflow-hidden ">
+        <div className={`flex flex-col h-full ${!slider ? 'border border-gray-200 rounded-lg shadow-sm' : ''}  overflow-hidden `}>
+            <div className={`relative w-full ${!slider ? 'max-h-[52%] 2xl:max-h-[54%]' : ''}   overflow-hidden `}>
                 <Image
                     src={imageToUse}
                     alt={preview.title}
@@ -49,18 +49,26 @@ export default function SimpleLinkPreview({ url, index }) {
                 />
             </div>
 
-            <div className="p-4 flex flex-col justify-between flex-grow">
-                <div>
-                    <p className="text-xs text-gray-400 mb-1">
-                        {preview.publisher || new URL(url).hostname}
-                    </p>
+            <div className={` flex flex-col justify-between ${!slider ? 'flex-grow p-4' : 'py-4'} `}>
+                {!slider && (
+                    <div>
+                        <p className="text-xs text-gray-400 mb-1">
+                            {preview.publisher || new URL(url).hostname}
+                        </p>
+                        <h3 className="font-semibold mb-1 line-clamp-2 text-xl ">
+                            {preview.title}
+                        </h3>
+                        <p className="text-sm text-gray-600 line-clamp-2 mt-4">
+                            {preview.description}
+                        </p>
+                    </div>
+                )}
+
+                {slider && (
                     <h3 className="font-semibold mb-1 line-clamp-2 text-xl ">
                         {preview.title}
                     </h3>
-                    <p className="text-sm text-gray-600 line-clamp-2 mt-4">
-                        {preview.description}
-                    </p>
-                </div>
+                )}
 
                 <Link
                     href={url}
