@@ -91,7 +91,7 @@ const MobileNav = () => {
       subItems: [
         { name: "Case Studies", link: "/case-studies" },
         { name: "Blog", link: "/blog" },
-        // { name: "Article", link: "/article" },
+        { name: "Article", link: "/article" },
         // { name: "News", link: "/case-studies" },
         // { name: "Video & Podcasts", link: "/case-studies" },
       ],
