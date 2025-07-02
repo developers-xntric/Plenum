@@ -5,7 +5,7 @@ import axios from "axios";
 import Image from "next/image";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
-import Head from "next/head";
+
 export default function BlogPage() {
   const { slug } = useParams();
   const [data, setData] = useState({});
@@ -23,7 +23,6 @@ export default function BlogPage() {
     };
     getData();
   }, [slug]);
-  console.log(data);
   return (
     <>
       {/* FAQ Schema for SEO */}
@@ -43,6 +42,7 @@ export default function BlogPage() {
           })}
         </script>
       )}
+
       <div className="font-['Archivo'] pt-34 lg:pt-52">
         {/* Date and Title */}
         <div className="2xl:max-w-[1440px] w-[90%] mx-auto">
