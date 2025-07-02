@@ -5,7 +5,7 @@ import axios from "axios";
 import Image from "next/image";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
-import Head from "next/head";
+
 export default function BlogPage() {
   const { slug } = useParams();
   const [data, setData] = useState({});
@@ -23,31 +23,26 @@ export default function BlogPage() {
     };
     getData();
   }, [slug]);
-  console.log(data);
   return (
     <>
       {/* FAQ Schema for SEO */}
-      <Head>
-        <title>{data.title}</title>
-        <meta name="description" content={data.description} />
-        <link rel="canonical" href={`https://plenum-tech.com/${data.slug}`} />
-        {data.faqs && data.faqs.length > 0 && (
-          <script type="application/ld+json">
-            {JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              mainEntity: data.faqs.map((faq) => ({
-                "@type": "Question",
-                name: faq.question,
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: faq.answer,
-                },
-              })),
-            })}
-          </script>
-        )}
-      </Head>
+      {data.faqs && data.faqs.length > 0 && (
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: data.faqs.map((faq) => ({
+              "@type": "Question",
+              name: faq.question,
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: faq.answer,
+              },
+            })),
+          })}
+        </script>
+      )}
+
       <div className="font-['Archivo'] pt-34 lg:pt-52">
         {/* Date and Title */}
         <div className="2xl:max-w-[1440px] w-[90%] mx-auto">
@@ -107,7 +102,7 @@ export default function BlogPage() {
                             key={descIndex}
                             className="text-lg text-[#6D6E76] font-medium font-['Archivo']"
                           >
-                            {desc}
+                            {desc} 
                           </p>
                         ))}
                       </div>
