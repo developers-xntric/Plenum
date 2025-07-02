@@ -7,6 +7,7 @@ import HomeServices from "@/components/homepage/home-services";
 import HouseAIProduct from "@/components/homepage/house-ai-product";
 import Testimonials from "@/components/homepage/testimonial";
 import { testimonials } from "@/data/home-testimonials";
+import Head from "next/head";
 const cardData = [
   {
     img: "/blog/Section-1.jpg",
@@ -62,6 +63,25 @@ export const metadata = {
 export default function Home() {
   return (
     <div>
+      <Head>
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "name": "Plenum Tech Solutions",
+              "url": "https://plenum-tech.com/",
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.5",
+                "reviewCount": "56",
+                "bestRating": "5",
+                "worstRating": "1"
+              }
+            }
+          `}
+        </script>
+      </Head>
       <Hero />
       <HomeServices />
       <CentralizeIntelligence />
