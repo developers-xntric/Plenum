@@ -3,6 +3,7 @@ import axios from "axios";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
+import Head from "next/head";
 const Cards = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
@@ -13,6 +14,19 @@ const Cards = () => {
     getAllBlogs();
   }, []);
   return (
+    <>
+    <Head>
+  <title>{data.metaTitle || data.title || "Blog | Plenum Tech"}</title>
+  <meta
+    name="description"
+    content={data.metaDescription || data.description || "Explore insightful blogs from Plenum Tech on AI, Cloud, and ERP solutions."}
+  />
+  <link
+    rel="canonical"
+    href={`https://www.plenum-tech.com/blog/${data.slug}`}
+  />
+</Head>
+
     <section className="py-20">
       <div className="2xl:max-w-[1440px] max-w-[90%] mx-auto">
         <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-5 ">
@@ -41,6 +55,7 @@ const Cards = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 
