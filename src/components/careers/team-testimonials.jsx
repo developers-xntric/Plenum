@@ -158,6 +158,7 @@ export default function TeamTestimonials() {
                                                 width={40}
                                                 height={40}
                                                 className="object-cover"
+                                                priority
                                             />
                                         </div>
                                         <div>
@@ -190,6 +191,8 @@ export default function TeamTestimonials() {
                     width={1500}
                     height={1500}
                     className="w-full h-auto object-cover"
+                    priority
+
                 />
                 <Image
                     src="/careers/image-1.svg"
@@ -197,6 +200,7 @@ export default function TeamTestimonials() {
                     width={1500}
                     height={1500}
                     className="w-full h-auto object-cover"
+                    priority
                 />
                 <Image
                     src="/careers/image-2.svg"
@@ -204,6 +208,7 @@ export default function TeamTestimonials() {
                     width={1500}
                     height={1500}
                     className="w-full h-auto object-cover"
+                    priority
                 />
                 <Image
                     src="/careers/image-3.svg"
@@ -211,6 +216,7 @@ export default function TeamTestimonials() {
                     width={1500}
                     height={1500}
                     className="w-full h-auto object-cover"
+                    priority
                 />
                 <Image
                     src="/careers/image-4.svg"
@@ -218,6 +224,7 @@ export default function TeamTestimonials() {
                     width={1500}
                     height={1500}
                     className="w-full h-auto object-cover"
+                    priority
                 />
                 <Image
                     src="/careers/image-5.svg"
@@ -225,6 +232,7 @@ export default function TeamTestimonials() {
                     width={1500}
                     height={1500}
                     className="w-full h-auto object-cover"
+                    priority
                 />
             </div>
         </section>
