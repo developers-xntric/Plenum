@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 
 import ArticleCard from "../article/articleCard";
 import Button from "../common/button"
-import { ArrowUpRight } from "lucide-react";
+// import { ArrowUpRight } from "lucide-react";
 
 const articleUrls = [
     'https://thedailyguardian.com/others/the-future-of-manufacturing-with-microsoft-dynamics-365-is-here-are-you-ready/',

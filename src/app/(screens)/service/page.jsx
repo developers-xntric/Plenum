@@ -1,14 +1,17 @@
-import BrandSlider from '@/components/common/brand-slider'
-import ServiceHero from '@/components/service/hero'
-import PinkSection from '@/components/service/pink-section'
+import dynamic from 'next/dynamic'
+const PinkSection = dynamic(()=> import('@/components/service/pink-section'))
 import { service_brand_icons } from '@/data/brand-slider-icons-data'
-import ServicesList from '@/components/service/services-list'
+const ServicesList = dynamic(() => import('@/components/service/services-list'))
 import React from 'react'
 import { ServiceList } from "@/data/service-list";
 import ServiceContact from '@/components/service/service-contact';
-import ArticleSlider from '@/components/common/article-slider'
+const ArticleSlider = dynamic(() => import('@/components/common/article-slider'))
 import { Blog } from '@/components/homepage/blog'
 import { cardData } from '@/data/home-blog'
+import {memo}  from "react"
+
+const ServiceHero = dynamic(() => import('@/components/service/hero'))
+const BrandSlider = dynamic(() => import('@/components/common/brand-slider'))
 
 export const metadata = {
     title: 'Plenum Services | Digital Transformation & AI Solutions',
@@ -48,4 +51,4 @@ const Service = () => {
     )
 }
 
-export default Service
+export default memo(Service)

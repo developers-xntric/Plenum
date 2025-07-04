@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import Button from '../common/button'
+import {memo} from 'react'
 
 const ServiceHero = ({ bgImage, isLogo = true }) => {
   return (
@@ -10,13 +11,14 @@ const ServiceHero = ({ bgImage, isLogo = true }) => {
 
         {/* Image Div */}
         {isLogo && <div className='xl:w-[200px] xl:h-[250px] w-[185px] md:w-[130px] h-[240px] md:h-[180px] absolute left-1/2 lg:top-1/2 md:top-[40%] top-[38%] transform -translate-x-1/2 -translate-y-1/2'>
-          <Image src="/service/sp_hero.svg" alt='Plenum AI Logo' width={1500} height={1500} className='w-full h-full object-contain' priority   fetchPriority="high"  />
+          <Image src="/service/sp_hero.svg" alt='Plenum AI Logo' width={1500} height={1500} className='w-full h-full object-contain'  fetchPriority="high" loading='lazy'/>
         </div>}
 
         <div className='w-full h-full flex lg:flex-row flex-col text-center md:text-left lg:mt-10 xl:mt-0 lg:gap-0 gap-8'>
           {/* Centered Text Below Image */}
           <div className="flex flex-col justify-end h-full items-center md:items-start lg:w-[530px]">
             <h1 className='text-[40px] lg:text-[60px] xl:text-[90px] font-["Chakra"] font-[600] text-primary flex flex-col gap-2 leading-10 lg:leading-12 xl:leading-20'>Plenum <span>AI Services</span></h1>
+            {/* Optimize the spepd thriugh this componnet add somthing which will make speed faster  */}
             <p className='mt-8 text-[17px] lg:text-[14px] xl:text-[18px] font-normal text-gray-400 md:max-w-[480px] md:pr-10'>
               Transform your business with scalable, intelligent AI services that are specifically designed to improve decision making, streamline operations, and accelerate growth in a variety of sectors.
             </p>
@@ -37,4 +39,4 @@ const ServiceHero = ({ bgImage, isLogo = true }) => {
   )
 }
 
-export default ServiceHero
+export default memo(ServiceHero)

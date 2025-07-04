@@ -36,6 +36,7 @@ const PinkSection = ({ heading, text, show_button = false, className, isVideo = 
                 priority  // ✅ Forces early preload
                 fetchPriority="high"
                 className="w-full h-full object-cover"
+                
               />
             </div>
           )}
@@ -59,6 +60,7 @@ const PinkSection = ({ heading, text, show_button = false, className, isVideo = 
                   width={1000}
                   height={1000}
                   className="w-full h-full object-cover"
+                  loading='lazy'
                 />
               </div>
             </>

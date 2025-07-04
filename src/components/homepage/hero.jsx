@@ -4,6 +4,7 @@ import React from 'react'
 import Button from '../common/button'
 import Image from 'next/image'
 import { AnimatedBorder } from '../common/animated-border'
+import {memo} from 'react'
 
 const links = [
     {
@@ -116,4 +117,4 @@ const Hero = () => {
     )
 }
 
-export default Hero
+export default memo(Hero)
