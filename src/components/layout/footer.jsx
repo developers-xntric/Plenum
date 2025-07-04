@@ -150,8 +150,8 @@ export default function Footer() {
               </div>
 
               <div>
-                <span className="text-[#767676] relative xl:top-1 mb-4 text-lg md:text-base xl:text-lg font-bold font-['Archivo'] leading-5">Contact Us</span>
-                <ul className="space-y-1 md:text-sm xl:text-base font-['Archivo']">
+                <span className="text-[#767676] relative xl:top-1 2xl:top-[2px] mb-4 text-lg md:text-base xl:text-lg font-bold font-['Archivo'] leading-5">Contact Us</span>
+                <ul className="space-y-1 md:text-sm xl:text-base font-['Archivo']  relative xl:top-1">
                   <li>
                     <Link href="mailto:info@plenum-tech.com"  className="hover:text-gray-300">
                     info@plenum-tech.com
