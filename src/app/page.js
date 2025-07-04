@@ -67,21 +67,23 @@ export default function Home() {
       <Head>
         <script type="application/ld+json">
           {`
-            {
-              "@context": "https://schema.org",
-              "@type": "WebPage",
-              "name": "Plenum Tech Solutions",
-              "url": "https://plenum-tech.com/",
-              "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.5",
-                "reviewCount": "56",
-                "bestRating": "5",
-                "worstRating": "1"
-              }
-            }
+ 
+             {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Awesome Widget",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "42",
+      "bestRating": "10",
+      "worstRating": "4"
+    }
+  }
+
           `}
         </script>
+
       </Head>
       <Hero />
       <HomeServices />
