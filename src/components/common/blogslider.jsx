@@ -121,7 +121,7 @@ const BlogSlider = () => {
                   {card.publishedDate?.slice(0, 10)}
                 </span>
                 <p className="text-white text-[16px] line-clamp-2">
-                  {card.description}
+                  {card.title}
                 </p>
               </div>
             </Link>
