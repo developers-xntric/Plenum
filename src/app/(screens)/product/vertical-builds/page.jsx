@@ -73,7 +73,7 @@ const values2 = [
 
 export const metadata = {
     title: ' Vertical Builds: Industry-Focused Innovative Solutions',
-    description: "Empowering industries with smart solutions—from efficient projects and intelligent patient care to data-driven SEO strategies that fuel measurable business growth.",
+    description: "Industry-specific tech solutions that drive growth, from patient care to SEO and project optimization.",
     alternates: {
         canonical: 'https://plenum-tech.com/product/vertical-builds',
     },
