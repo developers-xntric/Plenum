@@ -3,10 +3,25 @@ const nextConfig = {
   experimental: {
     legacyBrowsers: false,
   },
-  images:{
-    domains:['res.cloudinary.com','thedailyguardian.com','thearabianpost.com']
+  images: {
+    domains: ['res.cloudinary.com', 'thedailyguardian.com', 'thearabianpost.com']
   },
   reactStrictMode: true,
+  compress: true,
+  swcMinify: true,
+  async headers() {
+    return [
+      {
+        source: "/(.*)",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable"
+          }
+        ]
+      }
+    ]
+  }
 };
 
 export default nextConfig;
