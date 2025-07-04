@@ -17,7 +17,7 @@ export const metadata = {
     },
 };
 
-
+// This is all done backend server is stopped 
 const Product = () => {
     return (
         <div>
