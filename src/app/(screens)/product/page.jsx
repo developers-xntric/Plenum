@@ -8,7 +8,7 @@ import ServiceContact from "@/components/service/service-contact"
 import { service_brand_icons } from "@/data/brand-slider-icons-data"
 import { cardData } from "@/data/home-blog"
 import Head from "next/head"
-
+// this is complete
 export const metadata = {
     title: 'Plenum Products | Scalable AI & Cloud-Based Solutions',
     description: "Discover Plenum's advanced AI-driven products designed for scalable, secure, and efficient enterprise transformation.",
