@@ -1,44 +1,93 @@
 import { Blog } from "@/components/homepage/blog";
 import { cardData } from "@/data/home-blog";
 import Image from "next/image";
-import Head from "next/head";
-import axios from "axios";
 
-export default function BlogPage({ data }) {
+
+export async function generateStaticParams() {
+  try {
+    const res = await fetch("https://xntric-blog-server-production.up.railway.app/api/v2/blog");
+    const blogs = await res.json();
+    return blogs.map((blog) => ({ slug: blog.slug }));
+  } catch (error) {
+    console.error("Error fetching slugs:", error);
+    return [];
+  }
+}
+
+
+export async function generateMetadata({ params }) {
+  try {
+    const res = await fetch(`https://xntric-blog-server-production.up.railway.app/api/v2/blog/${params.slug}`);
+    
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+
+    const { blog } = await res.json();
+
+    return {
+      title: blog.metaTitle || blog.title || "Blog | Plenum Tech",
+      description:
+        blog.metaDescription ||
+        blog.description ||
+        "Explore insightful blogs from Plenum Tech on AI, Cloud, and ERP solutions.",
+      alternates: {
+        canonical: `https://www.plenum-tech.com/blog/${blog.slug}`,
+      },
+      openGraph: {
+        title: blog.metaTitle || blog.title,
+        description: blog.metaDescription || blog.description,
+        url: `https://www.plenum-tech.com/blog/${blog.slug}`,
+        images: blog.bannerImageURL ? [{ url: blog.bannerImageURL }] : [],
+      },
+    };
+  } catch (error) {
+    console.error("Metadata fetch error:", error);
+    return {
+      title: "Blog Not Found | Plenum Tech",
+      description: "The requested blog could not be loaded.",
+    };
+  }
+}
+
+// ✅ Page rendering
+export default async function BlogPage({ params }) {
+  let data = null;
+
+  try {
+    const res = await fetch(`https://xntric-blog-server-production.up.railway.app/api/v2/blog/${params.slug}`);
+
+    if (!res.ok) {
+      console.error(`Failed to load blog: ${res.status}`);
+      return <div className="p-10 text-center text-red-500">Blog not found.</div>;
+    }
+
+    const { blog } = await res.json();
+    data = blog;
+  } catch (error) {
+    console.error("Blog fetch error:", error);
+    return <div className="p-10 text-center text-red-500">Failed to load blog content.</div>;
+  }
+
   return (
     <>
-      <Head>
-        <title>{data.metaTitle || data.title || "Blog | Plenum Tech"}</title>
-        <meta
-          name="description"
-          content={
-            data.metaDescription ||
-            data.description ||
-            "Explore insightful blogs from Plenum Tech on AI, Cloud, and ERP solutions."
-          }
-        />
-        <link
-          rel="canonical"
-          href={`https://www.plenum-tech.com/blog/${data.slug}`}
-        />
-      </Head>
-
       {/* FAQ Schema for SEO */}
-      {data.faqs && data.faqs.length > 0 && (
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            mainEntity: data.faqs.map((faq) => ({
-              "@type": "Question",
-              name: faq.question,
-              acceptedAnswer: {
-                "@type": "Answer",
-                text: faq.answer,
-              },
-            })),
-          })}
-        </script>
+      {data.faqs?.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: data.faqs.map((faq) => ({
+                "@type": "Question",
+                name: faq.question,
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: faq.answer,
+                },
+              })),
+            }),
+          }}
+        />
       )}
 
       <div className="font-['Archivo'] pt-34 lg:pt-52">
@@ -49,11 +98,9 @@ export default function BlogPage({ data }) {
                 {data.publishedDate.slice(0, 10)}
               </p>
             )}
-            {data.title && (
-              <h1 className="text-secondary leading-[34px] lg:leading-[56px] text-[30px] lg:text-[46px] font-semibold">
-                {data.title}
-              </h1>
-            )}
+            <h1 className="text-secondary leading-[34px] lg:leading-[56px] text-[30px] lg:text-[46px] font-semibold">
+              {data.title}
+            </h1>
           </div>
         </div>
 
@@ -161,26 +208,4 @@ export default function BlogPage({ data }) {
       </div>
     </>
   );
-}
-
-// ✅ Server-side data fetching for SEO
-export async function getServerSideProps(context) {
-  const { slug } = context.params;
-
-  try {
-    const res = await axios.get(
-      `https://xntric-blog-server-production.up.railway.app/api/v2/blog/${slug}`
-    );
-
-    return {
-      props: {
-        data: res.data.blog,
-      },
-    };
-  } catch (error) {
-    console.error(error);
-    return {
-      notFound: true,
-    };
-  }
 }
