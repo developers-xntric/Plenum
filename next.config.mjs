@@ -1,14 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    legacyBrowsers: false,
-  },
   images: {
-    domains: ['res.cloudinary.com', 'thedailyguardian.com', 'thearabianpost.com']
+    domains: ['res.cloudinary.com', 'thedailyguardian.com', 'thearabianpost.com'],
   },
   reactStrictMode: true,
   compress: true,
-  swcMinify: true,
+  // Remove swcMinify - Next.js 15 uses SWC minification by default
+  // Remove legacyBrowsers - Next.js 15 targets modern browsers by default
+
   async headers() {
     return [
       {
@@ -16,12 +15,13 @@ const nextConfig = {
         headers: [
           {
             key: "Cache-Control",
-            value: "public, max-age=31536000, immutable"
-          }
-        ]
-      }
-    ]
-  }
+            value: "public, max-age=31536000, immutable",
+          },
+        ],
+      },
+    ];
+  },
 };
 
 export default nextConfig;
+

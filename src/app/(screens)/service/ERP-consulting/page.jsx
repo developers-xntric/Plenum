@@ -10,7 +10,7 @@ import { cardData } from '@/data/home-blog';
 import { testimonials } from '@/data/home-testimonials';
 import ArticleSlider from "@/components/common/article-slider";
 import ERPC2 from '@/components/service/ERP-Cosultant/ERPC2';
-
+import Head from 'next/head';
 export const metadata = {
     title: 'Top ERP Consulting and Implementation Services ',
     description: 'Streamline your business operations with expert ERP consulting and implementation services. ',
@@ -22,7 +22,7 @@ export const metadata = {
 const ERPConsulting = () => {
     return (
         <div>
-            <Head>
+             <Head>
                 <script type="application/ld+json">
                     {`
             {
@@ -40,7 +40,7 @@ const ERPConsulting = () => {
             }
           `}
                 </script>
-            </Head>
+            </Head> 
             <Service_Inner_Hero
                 heading={"ERP Consulting and Implementation in Dubai and Middle East"}
                 para={"We are Microsoft business central + AI for Intelligent enterprise ops we architect, implement and optimize Microsoft D365 ERP systems with a focus on automation, insights, and integrated workflows. With our copilot studio capabilities and our inhouse on premise product SecureGPT®  built in, your ERP becomes a smart assistant empowering finance, operations, and procurement teams. "}

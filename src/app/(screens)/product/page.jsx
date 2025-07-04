@@ -7,7 +7,7 @@ import PinkSection from "@/components/service/pink-section"
 import ServiceContact from "@/components/service/service-contact"
 import { service_brand_icons } from "@/data/brand-slider-icons-data"
 import { cardData } from "@/data/home-blog"
-
+import Head from "next/head"
 
 export const metadata = {
     title: 'Plenum Products | Scalable AI & Cloud-Based Solutions',

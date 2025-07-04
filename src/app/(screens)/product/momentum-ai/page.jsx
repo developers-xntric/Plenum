@@ -11,6 +11,7 @@ import ServiceContact from "@/components/service/service-contact"
 import { service_brand_icons } from "@/data/brand-slider-icons-data"
 import { cardData } from "@/data/home-blog"
 import { momentumaiservices } from "@/data/momentum-ai-service"
+import Head from "next/head"
 
 export const metadata = {
     title: 'Momentum AI by Plenum | Transform Business with AI',
