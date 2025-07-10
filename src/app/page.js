@@ -1,4 +1,3 @@
-
 import ArticleSlider from "@/components/common/article-slider";
 import { Blog } from "@/components/homepage/blog";
 import IndustryShowcase from "@/components/homepage/case-study-new";
@@ -9,6 +8,7 @@ import HouseAIProduct from "@/components/homepage/house-ai-product";
 import Testimonials from "@/components/homepage/testimonial";
 import { testimonials } from "@/data/home-testimonials";
 import Head from "next/head";
+
 const cardData = [
   {
     img: "/blog/Section-1.jpg",
@@ -53,7 +53,8 @@ const cardData = [
     link: '/blog/oracle-database'
   },
 
-]
+];
+
 export const metadata = {
   title: 'AI, ERP & Cloud Solutions in the Middle East | Plenum',
   description: 'We deliver AI, ERP, and cloud solutions across the Middle East and UAE. Streamline operations and scale with trusted enterprise tech from Plenum.',
@@ -61,17 +62,12 @@ export const metadata = {
     canonical: 'https://plenum-tech.com',
   },
 };
+
 export default function Home() {
-  return (
-    <div>
-      <Head>
-        <script type="application/ld+json">
-          {`
- 
-             {
+  const schemaData = {
     "@context": "https://schema.org",
     "@type": "Product",
-    "name": "Awesome Widget",
+    "name": "Plenum Tech",
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "4.9",
@@ -79,11 +75,12 @@ export default function Home() {
       "bestRating": "10",
       "worstRating": "4"
     }
-  }
+  };
 
-          `}
-        </script>
-
+  return (
+    <div>
+      <Head>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
       </Head>
       <Hero />
       <HomeServices />
@@ -96,4 +93,3 @@ export default function Home() {
     </div>
   );
 }
-

@@ -14,13 +14,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-      <link rel="alternate" href="https://plenum-tech.com/" hrefLang="en-sa" />
+        <link rel="alternate" href="https://plenum-tech.com/" hrefLang="en-sa" />
 
         <link rel="alternate" href="https://plenum-tech.com/" hrefLang="en-ae" />
 
         <link rel="alternate" href="https://plenum-tech.com/" hrefLang="en" />
 
-        <link rel="alternate" href="https://plenum-tech.com/" hrefLang="x-default" /> 
+        <link rel="alternate" href="https://plenum-tech.com/" hrefLang="x-default" />
         {/* Google Tag Manager */}
         <Script id="gtm-init" strategy="afterInteractive">
           {`
@@ -33,7 +33,12 @@ export default function RootLayout({ children }) {
         </Script>
         {/* End Google Tag Manager */}
       </head>
-      <body className="antialiased" cz-shortcut-listen="true">
+      <body
+        className="antialiased"
+        cz-shortcut-listen="true"
+        bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWllZ2..."
+        __processed_351b6b1a-623f-4e5a-b6be-40cadde6a094__='true'
+      >
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
@@ -44,7 +49,7 @@ export default function RootLayout({ children }) {
           ></iframe>
         </noscript>
         {/* End Google Tag Manager (noscript) */}
-        
+
         <Navbar />
         <MobileNav />
         {children}
