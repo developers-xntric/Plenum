@@ -38,7 +38,7 @@ const Cards = () => {
                   src={card.imageURL}
                   width={300}
                   height={300}
-                  alt="blog 1"
+                  alt={card.title}
                   className="w-full rounded-[20px]"
                 />
                 <div className="max-w-[80%] absolute bottom-6 left-6">

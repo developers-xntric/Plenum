@@ -48,7 +48,6 @@ export async function generateMetadata({ params }) {
   }
 }
 
-// ✅ Page rendering
 export default async function BlogPage({ params }) {
   let data = null;
 
@@ -107,7 +106,7 @@ export default async function BlogPage({ params }) {
         {data.bannerImageURL && (
           <Image
             src={data.bannerImageURL}
-            alt="Blog Image"
+            alt={data.title}
             width={1000}
             height={1000}
             className="w-full h-60 md:h-full"
