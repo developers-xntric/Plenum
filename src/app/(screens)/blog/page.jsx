@@ -7,7 +7,7 @@ export const metadata = {
   description:
     "Stay updated with the latest trends in AI, cloud, and digital innovation through expert articles and industry insights.",
   alternates: {
-    canonical: "https://plenum-tech.com/blog",
+    canonical: "https://plenum-tech.com",
   },
 };
 
