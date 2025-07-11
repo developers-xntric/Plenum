@@ -113,6 +113,7 @@ export default async function BlogPage({ params }) {
             alt={data.title}
             width={1000}
             height={1000}
+            sizes="(max-width: 768px) 100vw, 50vw"
             className="w-full h-60 md:h-full"
           />
         )}
