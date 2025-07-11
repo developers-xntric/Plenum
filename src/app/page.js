@@ -66,14 +66,15 @@ export const metadata = {
 export default function Home() {
   const schemaData = {
     "@context": "https://schema.org",
-    "@type": "Product",
-    "name": "Plenum Tech",
+    "@type": "WebPage",
+    "name": "Plenum Tech Solutions",
+    "url": "https://plenum-tech.com/",
     "aggregateRating": {
       "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "42",
-      "bestRating": "10",
-      "worstRating": "4"
+      "ratingValue": "4.5",
+      "reviewCount": "30",
+      "bestRating": "5",
+      "worstRating": "1"
     }
   };
 
