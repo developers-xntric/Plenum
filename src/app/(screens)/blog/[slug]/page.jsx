@@ -2,7 +2,6 @@ import { Blog } from "@/components/homepage/blog";
 import { cardData } from "@/data/home-blog";
 import Image from "next/image";
 
-
 export async function generateStaticParams() {
   try {
     const res = await fetch("https://xntric-blog-server-production.up.railway.app/api/v2/blog");
@@ -13,7 +12,6 @@ export async function generateStaticParams() {
     return [];
   }
 }
-
 
 export async function generateMetadata({ params }) {
   try {
@@ -68,6 +66,12 @@ export default async function BlogPage({ params }) {
 
   return (
     <>
+      <style>{`
+        .blog-content a {
+          color: #FF6035;
+        }
+      `}</style>
+
       {/* FAQ Schema for SEO */}
       {data.faqs?.length > 0 && (
         <script
@@ -116,9 +120,10 @@ export default async function BlogPage({ params }) {
         <div className="2xl:max-w-[1440px] w-[90%] mx-auto flex items-center justify-end">
           <div className="md:px-6 pb-2 md:pb-12 py-12 space-y-12 lg:max-w-[80%] xl:max-w-[70%] 2xl:max-w-[65%]">
             {data.description && (
-              <p className="text-[15px] lg:text-lg text-[#6D6E76] font-medium">
-                {data.description}
-              </p>
+              <div
+                className="text-[15px] lg:text-lg text-[#6D6E76] font-medium blog-content"
+                dangerouslySetInnerHTML={{ __html: data.description }}
+              />
             )}
 
             {data.subsections?.map((subsection, index) => (
@@ -129,12 +134,11 @@ export default async function BlogPage({ params }) {
                   </h2>
                 )}
                 {subsection.subdescription?.map((desc, descIndex) => (
-                  <p
+                  <div
                     key={descIndex}
-                    className="text-lg text-[#6D6E76] font-medium"
-                  >
-                    {desc}
-                  </p>
+                    className="text-lg text-[#6D6E76] font-medium blog-content"
+                    dangerouslySetInnerHTML={{ __html: desc }}
+                  />
                 ))}
                 {subsection.lists?.map((list, listIndex) => (
                   <div key={listIndex}>
@@ -142,9 +146,10 @@ export default async function BlogPage({ params }) {
                       {list.listTitle}
                     </h3>
                     {list.listDescription && (
-                      <p className="text-base lg:text-lg text-[#6D6E76] font-medium mb-4">
-                        {list.listDescription}
-                      </p>
+                      <div
+                        className="text-base lg:text-lg text-[#6D6E76] font-medium mb-4 blog-content"
+                        dangerouslySetInnerHTML={{ __html: list.listDescription }}
+                      />
                     )}
                     {list.items?.length > 0 && (
                       <ul className="list-disc pl-5 space-y-2">
@@ -155,9 +160,10 @@ export default async function BlogPage({ params }) {
                           >
                             {item.title}
                             {item.description && (
-                              <p className="text-base text-[#6D6E76] font-medium mt-1">
-                                {item.description}
-                              </p>
+                              <div
+                                className="text-base text-[#6D6E76] font-medium mt-1 blog-content"
+                                dangerouslySetInnerHTML={{ __html: item.description }}
+                              />
                             )}
                           </li>
                         ))}
@@ -173,9 +179,10 @@ export default async function BlogPage({ params }) {
                 <h2 className="text-[25px] lg:text-[36px] font-medium leading-[35px] lg:leading-[42px]">
                   Conclusion
                 </h2>
-                <p className="text-lg text-[#6D6E76] font-medium">
-                  {data.conclusion}
-                </p>
+                <div
+                  className="text-lg text-[#6D6E76] font-medium blog-content"
+                  dangerouslySetInnerHTML={{ __html: data.conclusion }}
+                />
               </div>
             )}
 
@@ -189,9 +196,10 @@ export default async function BlogPage({ params }) {
                     <h3 className="text-[20px] lg:text-[24px] font-medium leading-[35px] lg:leading-[42px]">
                       {index + 1}. {faq.question}
                     </h3>
-                    <p className="text-lg text-[#6D6E76] font-medium">
-                      {faq.answer}
-                    </p>
+                    <div
+                      className="text-lg text-[#6D6E76] font-medium blog-content"
+                      dangerouslySetInnerHTML={{ __html: faq.answer }}
+                    />
                   </div>
                 ))}
               </div>
