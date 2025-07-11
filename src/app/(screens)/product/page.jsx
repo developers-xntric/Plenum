@@ -40,6 +40,7 @@ const Product = () => {
           `}
                 </script>
             </Head>
+            
             <ProductHero
                 heading={"Plenum <br/> AI Products"}
                 isLogo={false}
