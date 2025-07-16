@@ -7,8 +7,7 @@ import HomeServices from "@/components/homepage/home-services";
 import HouseAIProduct from "@/components/homepage/house-ai-product";
 import Testimonials from "@/components/homepage/testimonial";
 import { testimonials } from "@/data/home-testimonials";
-import Head from "next/head";
-
+import Script from "next/script";
 const cardData = [
   {
     img: "/blog/Section-1.jpg",
@@ -63,26 +62,29 @@ export const metadata = {
   },
 };
 
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Plenum Tech Solutions",
+  "url": "https://plenum-tech.com/",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.5",
+    "reviewCount": "30",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+};
 export default function Home() {
-  const schemaData = {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Plenum Tech Solutions",
-    "url": "https://plenum-tech.com/",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.5",
-      "reviewCount": "30",
-      "bestRating": "5",
-      "worstRating": "1"
-    }
-  };
-
   return (
+    <>
+     <Script
+        id="schema-script"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+      />
     <div>
-      <Head>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
-      </Head>
       <Hero />
       <HomeServices />
       <CentralizeIntelligence />
@@ -92,5 +94,6 @@ export default function Home() {
       <ArticleSlider className={'pt-20'} title={"Discover Our Articles"} paragraph={"Insights & practical knowledge designed to help you navigate the digital landscape effectively. "} />
       <Blog heading='Discover Our Blog ' para="Stay updated with our ongoing blogs inclusive of tips, case study examples and expert views around the usage of AI, cloud services and ERP solutions to support business growth and operational effectiveness." cardData={cardData} />
     </div>
+    </>
   );
 }
