@@ -1,12 +1,12 @@
-import ArticleSlider from "@/components/common/article-slider";
-import { Blog } from "@/components/homepage/blog";
-import IndustryShowcase from "@/components/homepage/case-study-new";
-import CentralizeIntelligence from "@/components/homepage/centralize-intelligence";
-import Hero from "@/components/homepage/hero";
-import HomeServices from "@/components/homepage/home-services";
-import HouseAIProduct from "@/components/homepage/house-ai-product";
-import Testimonials from "@/components/homepage/testimonial";
-import { testimonials } from "@/data/home-testimonials";
+import ArticleSlider from "../components/common/article-slider";
+import { Blog } from "../components/homepage/blog";
+import IndustryShowcase from "../components/homepage/case-study-new";
+import CentralizeIntelligence from "../components/homepage/centralize-intelligence";
+import Hero from "../components/homepage/hero";
+import HomeServices from "../components/homepage/home-services";
+import HouseAIProduct from "../components/homepage/house-ai-product";
+import Testimonials from "../components/homepage/testimonial";
+import { testimonials } from "../data/home-testimonials";
 import Script from "next/script";
 const cardData = [
   {
@@ -78,22 +78,22 @@ const schemaData = {
 export default function Home() {
   return (
     <>
-     <Script
+      <Script
         id="schema-script"
         type="application/ld+json"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
       />
-    <div>
-      <Hero />
-      <HomeServices />
-      <CentralizeIntelligence />
-      <HouseAIProduct heading={"AI Products "} paragraph={"Plenum integrates intelligence into your business in addition to providing ERP systems. Our proprietary AI solutions are designed to help all organizational levels get deeper insights, increase productivity, and make more informed business decisions."} />
-      <Testimonials title={"What Our Clients Say"} testimonials={testimonials} paragraph={"As an ERP company, Plenum is trusted by professionals for insight-driven design, branding, and innovation."} />
-      <IndustryShowcase />
-      <ArticleSlider className={'pt-20'} title={"Discover Our Articles"} paragraph={"Insights & practical knowledge designed to help you navigate the digital landscape effectively. "} />
-      <Blog heading='Discover Our Blog ' para="Stay updated with our ongoing blogs inclusive of tips, case study examples and expert views around the usage of AI, cloud services and ERP solutions to support business growth and operational effectiveness." cardData={cardData} />
-    </div>
+      <div>
+        <Hero />
+        <HomeServices />
+        <CentralizeIntelligence />
+        <HouseAIProduct heading={"AI Products "} paragraph={"Plenum integrates intelligence into your business in addition to providing ERP systems. Our proprietary AI solutions are designed to help all organizational levels get deeper insights, increase productivity, and make more informed business decisions."} />
+        <Testimonials title={"What Our Clients Say"} testimonials={testimonials} paragraph={"As an ERP company, Plenum is trusted by professionals for insight-driven design, branding, and innovation."} />
+        <IndustryShowcase />
+        <ArticleSlider className={'pt-20'} title={"Discover Our Articles"} paragraph={"Insights & practical knowledge designed to help you navigate the digital landscape effectively. "} />
+        <Blog heading='Discover Our Blog ' para="Stay updated with our ongoing blogs inclusive of tips, case study examples and expert views around the usage of AI, cloud services and ERP solutions to support business growth and operational effectiveness." cardData={cardData} />
+      </div>
     </>
   );
 }

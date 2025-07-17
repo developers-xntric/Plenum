@@ -1,4 +1,4 @@
-import Banner from "@/components/common/banner";
+import Banner from "../../../components/common/banner";
 import React from "react";
 import Cards from "../../../components/blog/cards";
 

@@ -1,14 +1,11 @@
 "use client"
 
-import { useEffect, useState } from "react"
-import Autoplay from "embla-carousel-autoplay"
 import {
   Carousel,
   CarouselContent,
-  CarouselItem,
-  CarouselPrevious,
-  CarouselNext
-} from "@/components/ui/carousel"
+  CarouselItem
+} from "../../components/ui/carousel"
+import { useEffect, useState } from "react"
 import TestimonialCard from "../common/testimonial-cards"
 
 export default function Testimonials({ testimonials, title , paragraph }) {

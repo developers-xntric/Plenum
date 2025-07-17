@@ -1,5 +1,5 @@
-import { Blog } from "@/components/homepage/blog";
-import { cardData } from "@/data/home-blog";
+import { Blog } from "../../../../components/homepage/blog";
+import { cardData } from "../../../../data/home-blog";
 import Image from "next/image";
 
 export async function generateMetadata({ params }) {

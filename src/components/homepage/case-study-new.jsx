@@ -2,8 +2,8 @@
 import { useState, useEffect, useCallback } from "react"
 import useEmblaCarousel from "embla-carousel-react"
 import { ChevronLeft, ChevronRight, ArrowUpRight } from "lucide-react"
-import { cn } from "@/lib/utils"
-import { buttonArray, industries2 } from "@/data/indusdries"
+import { cn } from "../../lib/utils"
+import { buttonArray, industries2 } from "../../data/indusdries"
 import Link from "next/link"
 
 export default function IndustryShowcase() {
