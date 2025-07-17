@@ -100,6 +100,7 @@ export default async function BlogPage({ params }) {
           <Image
             src={data.bannerImageURL}
             alt={data.title}
+            title={data.title}
             width={1000}
             height={1000}
             sizes="(max-width: 768px) 100vw, 50vw"

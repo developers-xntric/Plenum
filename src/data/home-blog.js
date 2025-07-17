@@ -30,4 +30,4 @@ const cardData = [
 
 ]
 
-export default cardData
+export default cardData; 
