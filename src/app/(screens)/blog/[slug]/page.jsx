@@ -9,7 +9,7 @@ export async function generateMetadata({ params }) {
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
 
     const { blog } = await res.json();
-
+// This sis the all 
     return {
       title: blog.metaTitle || blog.title || "Blog | Plenum Tech",
       description:
