@@ -14,6 +14,7 @@ export const metadata = {
 const Blog = () => {
   return (
     <div>
+      // This is how it is 
       {/* This is how we do */}
       <Banner
         heading="Our Blogs"
