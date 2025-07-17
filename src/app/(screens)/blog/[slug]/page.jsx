@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export async function generateStaticParams() {
   try {
-    const res = await fetch("https://xntric-blog-server-production.up.railway.app/api/v2/blog");
+    const res = await fetch("https://blog.xntric.me/api/v2/blog");
     const blogs = await res.json();
     return blogs.map((blog) => ({ slug: blog.slug }));
   } catch (error) {
@@ -14,11 +14,10 @@ export async function generateStaticParams() {
   }
 }
 
-
 export async function generateMetadata({ params }) {
   try {
-    const res = await fetch(`https://xntric-blog-server-production.up.railway.app/api/v2/blog/${params.slug}`);
-    
+    const res = await fetch(`https://blog.xntric.me/api/v2/blog/${params.slug}`);
+
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
 
     const { blog } = await res.json();
@@ -53,7 +52,7 @@ export default async function BlogPage({ params }) {
   let data = null;
 
   try {
-    const res = await fetch(`https://xntric-blog-server-production.up.railway.app/api/v2/blog/${params.slug}`);
+    const res = await fetch(`https://blog.xntric.me/api/v2/blog/${params.slug}`);
 
     if (!res.ok) {
       console.error(`Failed to load blog: ${res.status}`);
