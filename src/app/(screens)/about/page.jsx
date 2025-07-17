@@ -1,15 +1,14 @@
 
-import AboutHero from '@/components/about/about-hero'
-import LeadershipSection from '@/components/about/leadership'
-import MissionSection from '@/components/about/mission'
-import OurPurpose from '@/components/about/our-purpose'
-import TabsSection from '@/components/about/tabs-section'
-import WhoWeAre from '@/components/about/who-we-are'
-import BrandSlider from '@/components/common/brand-slider'
-import { service_brand_icons } from '@/data/brand-slider-icons-data'
-import About4 from '@/components/about/about-4'
-import OurPeopleSection from '@/components/about/our-people'
-import React from 'react'
+import AboutHero from '../../../components/about/about-hero'
+import LeadershipSection from '../../../components/about/leadership'
+// import MissionSection from '@/components/about/mission'
+import OurPurpose from '../../../components/about/our-purpose'
+import TabsSection from '../../../components/about/tabs-section'
+import WhoWeAre from '../../../components/about/who-we-are'
+import BrandSlider from '../../../components/common/brand-slider'
+import { service_brand_icons } from '../../../data/brand-slider-icons-data'
+import About4 from '../../../components/about/about-4'
+import OurPeopleSection from '../../../components/about/our-people'
 
 
 export const metadata = {
