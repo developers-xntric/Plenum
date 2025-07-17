@@ -30,7 +30,7 @@ const Cards = () => {
     <section className="py-20">
       <div className="2xl:max-w-[1440px] max-w-[90%] mx-auto">
         <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-5 ">
-          {data.map((card, index) => (
+          {[...data].reverse().map((card, index) => (
             <Link href={`blog/${card.slug}`} key={index}>
               <div className="relative hover:opacity-75 transition-opacity ease-in duration-500">
                 <div className="absolute top-0 left-0 w-full h-full bg-[#000000] rounded-[20px] opacity-60"></div>
