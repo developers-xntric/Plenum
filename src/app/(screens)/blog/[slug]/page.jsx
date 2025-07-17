@@ -2,17 +2,6 @@ import { Blog } from "@/components/homepage/blog";
 import { cardData } from "@/data/home-blog";
 import Image from "next/image";
 
-export async function generateStaticParams() {
-  try {
-    const res = await fetch("https://blog.xntric.me/api/v2/blog");
-    const blogs = await res.json();
-    return blogs.map((blog) => ({ slug: blog.slug }));
-  } catch (error) {
-    console.error("Error fetching slugs:", error);
-    return [];
-  }
-}
-
 export async function generateMetadata({ params }) {
   try {
     const res = await fetch(`https://blog.xntric.me/api/v2/blog/${params.slug}`);
