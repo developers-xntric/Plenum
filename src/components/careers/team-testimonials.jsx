@@ -178,8 +178,8 @@ export default function TeamTestimonials() {
                 <Image
                     src="/careers/careers-group.svg"
                     alt="Team photo collage"
-                    width={1500}
-                    height={1500}
+                    width={100}
+                    height={100}
                     className="w-full h-auto object-cover"
                     priority
                 />
