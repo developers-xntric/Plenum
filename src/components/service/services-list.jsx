@@ -47,7 +47,7 @@ export default function ServicesList({ serviceList }) {
                                             ))}
                                         </span>
 
-                                        <p className="text-secondary text-[15px] lg:text-[17px] text-center md:text-left opacity-[0.6] font-['Archivo'] mb-6 lg:max-w-[95%] xl:max-w-[80%] font-medium 2xl:max-w-[80%]">{service.description}</p>
+                                        <p className="text-secondary text-[15px] lg:text-[17px] text-center md:text-left opacity-[0.6] font-['Archivo'] mb-6 mt-5 lg:max-w-[95%] xl:max-w-[90%] 2xl:max-w-[95%] font-medium 2xl:max-w-[80%]">{service.description}</p>
                                     </div>
 
 

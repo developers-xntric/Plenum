@@ -58,6 +58,7 @@ export default function IconsSlider({ text, brand_icons }) {
                             alt={`Icon ${index}`}
                             width={Number(icon.width)}
                             height={Number(icon.height)}
+                            priority
                             className={`${index === 2 ? "w-52" : "w-32 "} md:w-[${icon.width}px] h-20 md:h-[${icon.height}px]`}
                         />
                     </div>

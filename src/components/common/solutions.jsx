@@ -46,7 +46,7 @@ export const ERPSolutionsBottomSection = ({ bottomSection, className, left, blac
                         border border-[#282526] px-9 py-2.5' link='/service' />
                     </div>
                     <div className='w-full lg:w-[50%] 2xl:w-[100%] flex justify-center items-center'>
-                        <Image src={bottomSection.img} alt='img' width={1000} height={1000} className='w-full h-full' />
+                        <Image src={bottomSection.img} alt='img' width={1000} priority height={1000} className='w-full h-full' />
                     </div>
                 </div>
             </div>
