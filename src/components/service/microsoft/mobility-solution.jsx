@@ -141,6 +141,7 @@ export default function MobilitySolutions({
                 alt={solution.title}
                 width={40}
                 height={40}
+                priority
                 className="w-10 h-10"
               />
               <h3 className="text-[20px] font-semibold text-[#101010] lg:min-h-12">{solution.title}</h3>

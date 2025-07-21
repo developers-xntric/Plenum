@@ -2,11 +2,15 @@ import CaseDetailHero from "@/components/case-studies/case-details-hero"
 import CaseStudyList from "@/components/case-studies/case-studies-list"
 import Personalization from "@/components/case-studies/personalization"
 import Section2 from "@/components/case-studies/section2"
-import ArticleSlider from "@/components/common/article-slider"
+// import ArticleSlider from "@/components/common/article-slider"
 import { Blog } from "@/components/homepage/blog"
-import Testimonials from "@/components/homepage/testimonial"
+// import Testimonials from "@/components/homepage/testimonial"
 import { cardData } from "@/data/home-blog"
 import { testimonials } from "@/data/home-testimonials"
+import dynamic from "next/dynamic"
+
+const Testimonials = dynamic(() => import('@/components/homepage/testimonial'));
+const ArticleSlider = dynamic(() => import('@/components/common/article-slider'));
 
 const case_studies = [
     [

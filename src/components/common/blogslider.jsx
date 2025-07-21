@@ -114,6 +114,7 @@ const BlogSlider = () => {
                 width={300}
                 height={300}
                 alt="blog"
+                priority
                 className="w-full rounded-[20px]"
               />
               <div className="max-w-[80%] absolute bottom-6 left-6">

@@ -55,6 +55,7 @@ export default function Capabilities({ capabilities }) {
                   alt={capability.title}
                   fill
                   className="object-contain"
+                  priority
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
@@ -84,6 +85,7 @@ export default function Capabilities({ capabilities }) {
                 fill
                 className="object-contain"
                 sizes="100vw"
+                priority
               />
             </div>
             <div className="max-w-[90%] mx-auto space-y-4">
