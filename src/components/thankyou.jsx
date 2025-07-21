@@ -33,6 +33,7 @@ export default function ThankYou({ confirmStatus, setConfirmStatus }) {
                                 fill="white"
                             />
                         </g>
+                        {/* This is it is  */}
                         <defs>
                             <clipPath id="clip0_1_198">
                                 <rect width="126" height="126" fill="white" />
