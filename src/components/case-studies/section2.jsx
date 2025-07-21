@@ -18,6 +18,7 @@ export default function Section2({ heading, heading_className, image, case_studi
             alt="Group"
             width={3000}
             height={3000}
+            priority
             className="h-full w-full"
           />
         </div>
@@ -26,7 +27,7 @@ export default function Section2({ heading, heading_className, image, case_studi
           {/* Feature 1 */}
           <div className="bg-zinc-100 rounded-[20px] p-6 shadow-sm">
             <div className="bg-white rounded-full w-12 h-12 flex items-center justify-center mb-4">
-              <Image src={"/casestudy/Icon.svg"} alt="" width={50} height={50} />
+              <Image src={"/casestudy/Icon.svg"} alt="" width={50} priority height={50} />
             </div>
             <h2 className="text-xl font-semibold mb-3">Business Challenges</h2>
             <ul className="space-y-2">
@@ -37,7 +38,7 @@ export default function Section2({ heading, heading_className, image, case_studi
           {/* Feature 2 */}
           <div className="bg-zinc-100 rounded-[20px] p-6 shadow-sm">
             <div className="bg-white rounded-full w-12 h-12 flex items-center justify-center mb-4">
-              <Image src={"/casestudy/Icon.svg"} alt="" width={50} height={50} />
+              <Image src={"/casestudy/Icon.svg"} alt="" width={50} priority height={50} />
             </div>
             <h2 className="text-xl font-semibold mb-3">Plenum’s Solution</h2>
             <ul className="space-y-2">
@@ -48,7 +49,7 @@ export default function Section2({ heading, heading_className, image, case_studi
           {/* Feature 3 */}
           <div className="bg-zinc-100 rounded-[20px] p-6 shadow-sm">
             <div className="bg-white rounded-full w-12 h-12 flex items-center justify-center mb-4">
-              <Image src={"/casestudy/Icon.svg"} alt="" width={50} height={50} />
+              <Image src={"/casestudy/Icon.svg"} alt="" width={50} priority height={50} />
             </div>
             <h2 className="text-xl font-semibold mb-3">Key Capabilities Used</h2>
             <ul className="space-y-2">

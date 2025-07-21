@@ -90,7 +90,7 @@ export function ContactForm({ confirmStatus, setConfirmStatus }) {
                             value={formData[field]}
                             onChange={handleChange}
                             required
-                            data-lpignore="true" // Add this attribute
+                            data-lpignore="true" 
                         />
                     </div>
                 ))}

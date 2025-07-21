@@ -3,8 +3,6 @@ import { useEffect, useRef, useState } from "react"
 import WorldMap from "../common/world-map"
 import { ContactForm } from "./contact-form"
 import CountUp from "react-countup"
-import ThankYou from "../thankyou"
-import { useRouter } from "next/navigation"
 
 export default function ServiceContact() {
     const statsRef = useRef(null)
