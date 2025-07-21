@@ -1,5 +1,4 @@
 import { Blog } from "../../../../components/homepage/blog";
-import { cardData } from "../../../../data/home-blog";
 import Image from "next/image";
 
 export async function generateMetadata({ params }) {
@@ -201,7 +200,6 @@ export default async function BlogPage({ params }) {
         <Blog
           heading="Discover More Blogs"
           para="Stay updated with our ongoing blogs inclusive of tips, case study examples and expert views around the usage of AI, cloud services and ERP solutions to support business growth and operational effectiveness."
-          cardData={cardData}
         />
       </div>
     </>

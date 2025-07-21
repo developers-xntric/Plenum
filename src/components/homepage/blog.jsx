@@ -1,7 +1,7 @@
 import BlogSlider from "../common/blogslider";
 import Button from "../common/button";
 
-export const Blog = ({ heading, para, cardData }) => {
+export const Blog = ({ heading }) => {
     return (
         <section className='relative py-14 lg:py-20'>
             <div className='max-w-[90%] mx-auto 2xl:max-w-[1440px] '>
@@ -22,7 +22,6 @@ export const Blog = ({ heading, para, cardData }) => {
                 </div>
                 <div className="mt-10">
                     <BlogSlider
-                        cardData={cardData}
                     />
                 </div>
             </div>

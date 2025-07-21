@@ -10,7 +10,6 @@ import MobilitySolutions from '@/components/service/microsoft/mobility-solution'
 import PinkSection from '@/components/service/pink-section'
 import { Oracleitems } from '@/data/accordineData'
 import { bc_service, bc_service_black } from '@/data/erp-consulting-service'
-import { cardData } from '@/data/home-blog'
 import { testimonials } from '@/data/home-testimonials'
 import { businessPage } from '@/data/microsoft'
 import { bc_solution } from '@/data/mobility-solutions'
@@ -86,7 +85,7 @@ const BuisnessCentral = () => {
                 />
             </div>
             <ArticleSlider className={'pt-20'} />
-            <Blog heading='Discover Our Blog' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world" cardData={cardData} />
+            <Blog heading='Discover Our Blog' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world"/>
         </div>
     )
 }

@@ -5,8 +5,7 @@ import Testimonials from '@/components/homepage/testimonial';
 import ERPServicesEast from '@/components/service/ERP-Cosultant/ERP-services-east';
 import Service_Inner_Hero from '@/components/service/ERP-Cosultant/hero';
 import { service_brand_icons } from '@/data/brand-slider-icons-data';
-import { blackSection, blackSection2, blackSection3, blackSection4, bottomSection, bottomSection2 } from '@/data/erp-consulting-service';
-import { cardData } from '@/data/home-blog';
+import { blackSection3, blackSection4, bottomSection, bottomSection2 } from '@/data/erp-consulting-service';
 import { testimonials } from '@/data/home-testimonials';
 import ArticleSlider from "@/components/common/article-slider";
 import ERPC2 from '@/components/service/ERP-Cosultant/ERPC2';
@@ -69,7 +68,7 @@ const ERPConsulting = () => {
             <ERPSolutionsBottomSection className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={bottomSection} left={true} blackSection={blackSection4} />
             <ArticleSlider className={'pt-20'} />
 
-            <Blog heading='Discover Our Blog' para="Stay updated with our ongoing blogs inclusive of tips, case study examples and expert views around the usage of AI, cloud services and ERP solutions to support business growth and operational effectiveness." cardData={cardData} />
+            <Blog heading='Discover Our Blog' para="Stay updated with our ongoing blogs inclusive of tips, case study examples and expert views around the usage of AI, cloud services and ERP solutions to support business growth and operational effectiveness." />
         </div>
     )
 }

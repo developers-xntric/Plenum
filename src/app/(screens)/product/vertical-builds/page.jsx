@@ -5,7 +5,6 @@ import ProductHero from "@/components/product/product-hero"
 import PinkSection from "@/components/service/pink-section"
 import ServiceContact from "@/components/service/service-contact"
 import { product_brand_icons } from "@/data/brand-slider-icons-data"
-import { cardData } from "@/data/home-blog"
 import AISolutions from "@/components/product/AI-solutions"
 import { TabsSection } from "@/components/product/tab-section"
 
@@ -109,7 +108,7 @@ const VerticalBuilds = () => {
                 <TabsSection para={"A comprehensive software solution designed to digitize and streamline every aspect of hospital operations, from patient care to backend administration.​"} heading={"Hospital Management System"} values={values2} tabImages={tabImages2} direction={"row-reverse"} />
             </div>
             <ArticleSlider />
-            <Blog heading='Discover Our Blog Articles' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world" cardData={cardData} />
+            <Blog heading='Discover Our Blog Articles' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world"     />
             <div className='py-10'>
                 <PinkSection
                     heading={"Ready To Supercharge Your AI Workflow?"}

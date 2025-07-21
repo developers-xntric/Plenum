@@ -5,7 +5,6 @@ import Section2 from "@/components/case-studies/section2"
 import ArticleSlider from "@/components/common/article-slider"
 import { Blog } from "@/components/homepage/blog"
 import Testimonials from "@/components/homepage/testimonial"
-import { cardData } from "@/data/home-blog"
 import { testimonials } from "@/data/home-testimonials"
 
 const case_studies = [
@@ -61,7 +60,7 @@ export default function ProperFinanceIntelligence() {
             ]} />
             <Testimonials testimonials={testimonials} />
             <ArticleSlider />
-            <Blog heading='Discover Our Blog Articles' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world" cardData={cardData} />
+            <Blog heading='Discover Our Blog Articles' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world"  />
         </main>
     )
 }

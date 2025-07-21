@@ -7,7 +7,6 @@ import { fao_service, fao_service_black } from '@/data/erp-consulting-service';
 import { testimonials } from '@/data/home-testimonials';
 import ArticleSlider from "@/components/common/article-slider";
 import { Blog } from '@/components/homepage/blog';
-import { cardData } from '@/data/home-blog';
 import { ERPAccordin } from '@/components/common/accordinService';
 import { finance, financeOpearations, financeOperations } from '@/data/services';
 
@@ -50,7 +49,7 @@ const FinanceOpearations = () => {
                 para='Get real-time insights into your financial data to make faster, data-driven decisions. Track cash flow, profitability, and financial performance across global operations.'
             />
             <ArticleSlider />
-            <Blog heading='Discover Our Blog' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world" cardData={cardData} />
+            <Blog heading='Discover Our Blog' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world" />
         </div>
     )
 }

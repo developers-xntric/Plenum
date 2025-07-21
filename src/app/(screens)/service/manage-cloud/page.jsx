@@ -5,7 +5,6 @@ import ERPServicesEast from '@/components/service/ERP-Cosultant/ERP-services-eas
 import Service_Inner_Hero from '@/components/service/ERP-Cosultant/hero';
 import { service_brand_icons } from '@/data/brand-slider-icons-data';
 import { bc_service, cloud1, cloud2, cloudbottom1, cloudbottom2 } from '@/data/erp-consulting-service';
-import { cardData } from '@/data/home-blog';
 import ArticleSlider from "@/components/common/article-slider";
 import ERPC2 from '@/components/service/ERP-Cosultant/ERPC2';
 import { ERPAccordin } from '@/components/common/accordinService';
@@ -52,7 +51,7 @@ const ManageCloud = () => {
             <Testimonials testimonials={testimonials} />
             <ERPAccordin isbottom={false} isAccordin={true} outside={false} items={cloudAccor2} className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={cloudbottom2} left={true} blackSection={cloud2} />
             <ArticleSlider className={'pt-20'} />
-            <Blog heading='Discover Our Blog' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world." cardData={cardData} />
+            <Blog heading='Discover Our Blog' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world." />
         </div>
     )
 }

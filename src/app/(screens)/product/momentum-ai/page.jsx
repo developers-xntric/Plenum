@@ -9,7 +9,6 @@ import MicrosoftDynamic from "@/components/service/microsoft/microsoft-dynamic"
 import PinkSection from "@/components/service/pink-section"
 import ServiceContact from "@/components/service/service-contact"
 import { service_brand_icons } from "@/data/brand-slider-icons-data"
-import { cardData } from "@/data/home-blog"
 import { momentumaiservices } from "@/data/momentum-ai-service"
 import Head from "next/head"
 
@@ -63,7 +62,7 @@ const MomentumAI = () => {
             />
             <StartSmallWithAI />
             <ArticleSlider className={'pt-10'} paragraph={'Insights & practical knowledge designed to help you navigate the digital landscape effectively.'} />
-            <Blog heading='Discover Our Blogs' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world" cardData={cardData} />
+            <Blog heading='Discover Our Blogs' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world"  />
             <div className='py-10'>
                 <PinkSection
                     heading={"Ready To Supercharge Your AI Workflow?"}

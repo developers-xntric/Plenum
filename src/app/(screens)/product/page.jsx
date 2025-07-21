@@ -6,7 +6,6 @@ import ProductHero from "@/components/product/product-hero"
 import PinkSection from "@/components/service/pink-section"
 import ServiceContact from "@/components/service/service-contact"
 import { service_brand_icons } from "@/data/brand-slider-icons-data"
-import { cardData } from "@/data/home-blog"
 import Head from "next/head"
 // this is complete
 export const metadata = {
@@ -56,7 +55,7 @@ const Product = () => {
                 <HouseAIProduct />
             </div>
             <ArticleSlider />
-            <Blog heading='Discover Our Blog' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world" cardData={cardData} />
+            <Blog heading='Discover Our Blog' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world"  />
             <PinkSection
                 heading={"Ready To Supercharge Your AI Workflow?"}
                 text={"Ready to explore the power of AI? Contact us 24×7 to schedule a one-on-one consultation and see how Momentum AI can elevate your AI workflow management and automation journey."}
