@@ -27,11 +27,12 @@ export default function ArticleCard({ url, index, slider }) {
     const fallbackImages = [
         "/article/article-1.webp",
         "/article/article-2.webp",
+        "/article/article-5.jpeg",
         "/article/article-3.webp",
-        "/article/article-4.webp"
+        "/article/article-4.webp",
     ];
 
-    const forceImageIndexes = [0];
+    const forceImageIndexes = [0,2];
     const shouldUseSavedImage = forceImageIndexes.includes(index);
     const fallbackImage = fallbackImages[index] || "/article/article-1.webp";
 
