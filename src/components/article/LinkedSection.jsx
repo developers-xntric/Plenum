@@ -5,6 +5,7 @@ function LinkedSection() {
     const articleUrls = [
         'https://thedailyguardian.com/others/the-future-of-manufacturing-with-microsoft-dynamics-365-is-here-are-you-ready/',
         'https://thearabianpost.com/dynamics-365-business-central-overview-everything-you-need-to-know/',
+        'https://emiratesinside.net/why-2025-will-be-the-year-of-strategic-erp-implementation/'
     ];
 
     return (
