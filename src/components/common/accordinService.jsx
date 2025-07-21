@@ -40,7 +40,7 @@ export const ERPAccordin = ({ bottomSection, outside, isbottom, items, className
                             alt={bottomSection.alt || 'ERP Solution Illustration'}
                             width={1000}
                             height={2000}
-                            loading="lazy"
+                            priority
                             className="w-full h-auto"
                         />
                     </div>

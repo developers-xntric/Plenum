@@ -86,6 +86,7 @@ export default function MicrosoftDynamic({
                           alt={service.title}
                           width={48}
                           height={48}
+                          priority
                           className="w-full h-full object-contain"
                         />
                       </div>
@@ -120,6 +121,7 @@ export default function MicrosoftDynamic({
                     alt={service.title}
                     width={48}
                     height={48}
+                    priority
                     className="w-full h-full object-contain"
                   />
                 </div>
