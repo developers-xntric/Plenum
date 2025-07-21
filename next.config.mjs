@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['res.cloudinary.com', 'thedailyguardian.com', 'thearabianpost.com'],
+    domains: ['res.cloudinary.com', 'thedailyguardian.com', 'thearabianpost.com','emiratesinside.net'],
   },
   reactStrictMode: true,
   compress: true,
