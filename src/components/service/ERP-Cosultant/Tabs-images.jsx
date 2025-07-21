@@ -64,6 +64,7 @@ export default function TabImageGallery({ activeState }) {
             src={tabData[activeTab].src}
             alt={tabData[activeTab].alt}
             fill
+            priority
             style={{ objectFit: "cover" }}
             className="transition-opacity duration-300"
           />

@@ -21,7 +21,7 @@ const ERPC2 = ({ heading, para, para2, image, para_className, heading_className 
                     {/* Part 2 Right */}
                     <div className=' flex-col relative lg:left-[5.55%] lg:flex hidden'>
                         <div className='w-full lg:w-[500px] md:h-[300px] xl:w-[720px] xl:h-[504px]'>
-                            <Image src={image || "/service/ERPC/ERPC2.svg"} alt='ERPC' width={1500} height={1500} />
+                            <Image src={image || "/service/ERPC/ERPC2.svg"} alt='ERPC' width={1500} priority height={1500} />
                         </div>
                         <div className='w-full lg:w-[500px] xl:w-[720px] p-10 bg-[#282526]'>
                             <p className='text-[#FFF] text-[18px] font-["Archivo"] font-normal w-[80%] md:w-[100%] xl:w-[80%]'>{para2 || "We possess extensive knowledge across various industries, establishing ourselves as the leading IT company in Dubai for innovative solutions. We prioritize providing customized solutions that meet the distinct requirements of our clients, fostering growth and achieving operational excellence."}</p>
@@ -32,7 +32,7 @@ const ERPC2 = ({ heading, para, para2, image, para_className, heading_className 
             {/* Part 2 Right */}
             <div className='flex-col relative lg:left-[5.55%] lg:hidden flex'>
                 <div className='w-full lg:w-[500px] md:h-[300px] xl:w-[720px] xl:h-[504px]'>
-                    <Image src={image || "/service/ERPC/ERPC2.svg"} alt='ERPC' width={1500} height={1500} />
+                    <Image src={image || "/service/ERPC/ERPC2.svg"} alt='ERPC' width={1500} priority height={1500} />
                 </div>
                 <div className='w-full lg:w-[500px] xl:w-[720px] p-5 md:p-10 bg-[#282526]'>
                     <p className='text-[#FFF] text-[14px] md:text-[18px] font-["Archivo"] font-normal'>{para2 || "We possess extensive knowledge across various industries, establishing ourselves as the leading IT company in Dubai for innovative solutions. We prioritize providing customized solutions that meet the distinct requirements of our clients, fostering growth and achieving operational excellence."}</p>
