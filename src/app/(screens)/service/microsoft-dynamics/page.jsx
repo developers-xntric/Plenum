@@ -16,6 +16,7 @@ import { Blog } from '@/components/homepage/blog'
 import { md_solutions } from '@/data/mobility-solutions'
 import { services } from '@/data/microsoft'
 import Head from 'next/head'
+import Script from 'next/script'
 // import OracleOneStopShop from '@/components/service/oracle-net-suite/oracle-one-stop-shop'
 
 
@@ -27,29 +28,43 @@ export const metadata = {
     },
 };
 
+const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Microsoft Dynamics",
+    "description": "Microsoft Dynamics solutions for business growth and efficiency.",
+    "provider": {
+        "@type": "Organization",
+        "name": "Plenum Tech Solutions",
+        "url": "https://plenum-tech.com"
+    },
+    "serviceType": "ERP Consulting",
+    "areaServed": {
+        "@type": "Place",
+        "name": "Global"
+    },
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "53",
+        "bestRating": "5",
+        "worstRating": "1"
+    }
+}
+
+
+
+
 const MicrosoftDynamics = () => {
     return (
         <div>
             <div className='mt-10'>
-                <Head>
-                    <script type="application/ld+json">
-                        {`
-            {
-              "@context": "https://schema.org",
-              "@type": "WebPage",
-              "name": "Microsoft Dynamics",
-              "url": "https://plenum-tech.com/service/microsoft-dynamics",
-              "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.5",
-                "reviewCount": "56",
-                "bestRating": "5",
-                "worstRating": "1"
-              }
-            }
-          `}
-                    </script>
-                </Head>
+                <Script
+                    id="schema-script"
+                    type="application/ld+json"
+                    strategy="afterInteractive"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+                />
                 <Service_Inner_Hero
                     heading={"Microsoft Dynamics Solutions Tailored to Your Business"}
                     para={"At Plenum Technologies, we offer Microsoft Dynamics 365 Solutions that empower organizations to streamline operations, enhance productivity, and achieve sustainable growth."}

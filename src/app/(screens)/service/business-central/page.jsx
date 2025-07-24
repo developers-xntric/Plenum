@@ -14,7 +14,8 @@ import { testimonials } from '@/data/home-testimonials'
 import { businessPage } from '@/data/microsoft'
 import { bc_solution } from '@/data/mobility-solutions'
 import { businessSer, capabilities } from '@/data/services'
-import Head from 'next/head'
+
+import Script from 'next/script'
 
 export const metadata = {
     title: 'Explore Microsoft Dynamics 365 Business Central and ERP Solution in UAE',
@@ -24,28 +25,40 @@ export const metadata = {
     },
 };
 
+const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Business Central",
+    "description": "Business Central is a cloud-based ERP solution designed to help small and medium-sized businesses manage.",
+    "provider": {
+        "@type": "Organization",
+        "name": "Plenum Tech Solutions",
+        "url": "https://plenum-tech.com"
+    },
+    "serviceType": "ERP Consulting",
+    "areaServed": {
+        "@type": "Place",
+        "name": "Global"
+    },
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "53",
+        "bestRating": "5",
+        "worstRating": "1"
+    }
+}
+
+
 const BuisnessCentral = () => {
     return (
         <div>
-            <Head>
-                <script type="application/ld+json">
-                    {`
-            {
-              "@context": "https://schema.org",
-              "@type": "WebPage",
-              "name": "Business Central",
-              "url": "https://plenum-tech.com/service/business-central",
-              "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.5",
-                "reviewCount": "56",
-                "bestRating": "5",
-                "worstRating": "1"
-              }
-            }
-          `}
-                </script>
-            </Head>
+            <Script
+                id="schema-script"
+                type="application/ld+json"
+                strategy="afterInteractive"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+            />
             <New_Service_Inner_Hero
                 heading={"Streamline Your Business With Dynamics 365 Business Central"}
                 para={"Dynamics 365 Business Central is a comprehensive cloud-based ERP solution designed to help small and medium-sized businesses manage finances, streamline operations, and improve customer interactions all from one unified platform."}
@@ -85,7 +98,7 @@ const BuisnessCentral = () => {
                 />
             </div>
             <ArticleSlider className={'pt-20'} />
-            <Blog heading='Discover Our Blog' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world"/>
+            <Blog heading='Discover Our Blog' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world" />
         </div>
     )
 }

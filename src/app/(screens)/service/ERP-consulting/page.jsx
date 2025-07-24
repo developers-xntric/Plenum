@@ -9,7 +9,8 @@ import { blackSection3, blackSection4, bottomSection, bottomSection2 } from '@/d
 import { testimonials } from '@/data/home-testimonials';
 import ArticleSlider from "@/components/common/article-slider";
 import ERPC2 from '@/components/service/ERP-Cosultant/ERPC2';
-import Head from 'next/head';
+
+import Script from 'next/script';
 export const metadata = {
     title: 'Top ERP Consulting and Implementation Services ',
     description: 'Streamline your business operations with expert ERP consulting and implementation services. ',
@@ -18,28 +19,40 @@ export const metadata = {
     },
 };
 
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "ERP Consulting",
+  "description": "Expert ERP consulting services including implementation, migration, and optimization tailored for your business.",
+  "provider": {
+    "@type": "Organization",
+    "name": "Plenum Tech Solutions",
+    "url": "https://plenum-tech.com"
+  },
+  "serviceType": "ERP Consulting",
+  "areaServed": {
+    "@type": "Place",
+    "name": "Global"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "53",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}
+
+
 const ERPConsulting = () => {
     return (
         <div>
-             <Head>
-                <script type="application/ld+json">
-                    {`
-            {
-              "@context": "https://schema.org",
-              "@type": "WebPage",
-              "name": "ERP-consulting",
-              "url": "https://plenum-tech.com/service/ERP-consulting",
-              "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.5",
-                "reviewCount": "56",
-                "bestRating": "5",
-                "worstRating": "1"
-              }
-            }
-          `}
-                </script>
-            </Head> 
+            <Script
+                id="schema-service-cloud"
+                type="application/ld+json"
+                strategy="afterInteractive"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+            />
             <Service_Inner_Hero
                 heading={"ERP Consulting and Implementation in Dubai and Middle East"}
                 para={"We are Microsoft business central + AI for Intelligent enterprise ops we architect, implement and optimize Microsoft D365 ERP systems with a focus on automation, insights, and integrated workflows. With our copilot studio capabilities and our inhouse on premise product SecureGPT®  built in, your ERP becomes a smart assistant empowering finance, operations, and procurement teams. "}
@@ -51,7 +64,7 @@ const ERPConsulting = () => {
                 para_className={"xl:w-[90%]"}
 
             />
-{/* Upadated code new code  */}
+            {/* Upadated code new code  */}
             <div className='2xl:max-w-[1440px] h-full w-[90%] mx-auto space-y-20 lg:pb-16 pb-10  lg:py-16'>
                 <BrandSlider
                     text={"Trusted by world's most exciting brands"}

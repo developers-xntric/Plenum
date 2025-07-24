@@ -10,10 +10,11 @@ import OracleResourcePlanning from '@/components/service/oracle/oracle-resource-
 import PinkSection from '@/components/service/pink-section'
 import { Oracleitems } from '@/data/accordineData'
 import { service_brand_icons } from '@/data/brand-slider-icons-data'
-import {  bottomSection, oracle_service, oracle_service_black, OracleBlack } from '@/data/erp-consulting-service'
+import { bottomSection, oracle_service, oracle_service_black, OracleBlack } from '@/data/erp-consulting-service'
 import { testimonials } from '@/data/home-testimonials'
 import { oracle } from '@/data/services'
 import Head from 'next/head'
+import Script from 'next/script'
 
 
 export const metadata = {
@@ -24,28 +25,39 @@ export const metadata = {
     },
 };
 
+const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Oracle",
+    "description": "Oracle ERP solutions for business growth and efficiency.",
+    "provider": {
+        "@type": "Organization",
+        "name": "Plenum Tech Solutions",
+        "url": "https://plenum-tech.com"
+    },
+    "serviceType": "ERP Consulting",
+    "areaServed": {
+        "@type": "Place",
+        "name": "Global"
+    },
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "53",
+        "bestRating": "5",
+        "worstRating": "1"
+    }
+}
+
 const Oracle = () => {
     return (
         <div>
-            <Head>
-                <script type="application/ld+json">
-                    {`
-            {
-              "@context": "https://schema.org",
-              "@type": "WebPage",
-              "name": "Oracle",
-              "url": "https://plenum-tech.com/service/oracle",
-              "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.5",
-                "reviewCount": "56",
-                "bestRating": "5",
-                "worstRating": "1"
-              }
-            }
-          `}
-                </script>
-            </Head>
+            <Script
+                id="schema-service-cloud"
+                type="application/ld+json"
+                strategy="afterInteractive"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+            />            
             <div className='mt-10'>
                 <Service_Inner_Hero
                     heading={"Oracle ERP Solutions Empowered by Oracle Cloud ERP"}

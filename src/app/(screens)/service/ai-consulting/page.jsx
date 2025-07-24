@@ -9,6 +9,7 @@ import { ai1, ai2, aiSection1, aiSection2, blackSection, blackSection2, bottomSe
 import { testimonials } from '@/data/home-testimonials';
 import ArticleSlider from "@/components/common/article-slider";
 import ERPC2 from '@/components/service/ERP-Cosultant/ERPC2';
+import Script from 'next/script';
 
 export const metadata = {
     title: 'Top Notch AI Consulting, Governance & Implementation',
@@ -18,10 +19,40 @@ export const metadata = {
     },
 };
 
+const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "AI Consulting",
+    "description": "AI Consulting, Governance and Implementation Services",
+    "provider": {
+        "@type": "Organization",
+        "name": "Plenum Tech Solutions",
+        "url": "https://plenum-tech.com"
+    },
+    "serviceType": "ERP Consulting",
+    "areaServed": {
+        "@type": "Place",
+        "name": "Global"
+    },
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "53",
+        "bestRating": "5",
+        "worstRating": "1"
+    }
+}
+
 
 const AiConsulting = () => {
     return (
         <div>
+            <Script
+                id="schema-service-cloud"
+                type="application/ld+json"
+                strategy="afterInteractive"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+            />
             <Service_Inner_Hero
                 heading={"AI Consulting, Governance and Implementation Services"}
                 para={"At Plenum, we operationalize responsible AI, built for the enterprise From identifying the right use cases to building compliant models and governing them across the lifecycle, we bring AI to life using AWS and Azure Open AI services, and our inhoused no code AI orchestration platform, Momentum."}

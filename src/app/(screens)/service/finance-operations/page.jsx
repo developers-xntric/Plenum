@@ -9,6 +9,7 @@ import ArticleSlider from "@/components/common/article-slider";
 import { Blog } from '@/components/homepage/blog';
 import { ERPAccordin } from '@/components/common/accordinService';
 import { finance, financeOpearations, financeOperations } from '@/data/services';
+import Script from 'next/script';
 
 export const metadata = {
     title: ' Explore Our Microsoft Dynamics 365 Finance and Operations',
@@ -18,9 +19,40 @@ export const metadata = {
     },
 };
 
+
+const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Finance and Operations",
+    "description": "Microsoft Dynamics 365 Finance and Operations is an integrated suite of enterprise resource planning.",
+    "provider": {
+        "@type": "Organization",
+        "name": "Plenum Tech Solutions",
+        "url": "https://plenum-tech.com"
+    },
+    "serviceType": "ERP Consulting",
+    "areaServed": {
+        "@type": "Place",
+        "name": "Global"
+    },
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "53",
+        "bestRating": "5",
+        "worstRating": "1"
+    }
+}
+
 const FinanceOpearations = () => {
     return (
         <div>
+            <Script
+                id="schema-script"
+                type="application/ld+json"
+                strategy="afterInteractive"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+            />
             <New_Service_Inner_Hero
                 heading={"Microsoft Dynamics 365 Finance and Operations"}
                 para={"Microsoft Dynamics 365 Finance and Operations is an integrated suite of enterprise resource planning (ERP) and customer relationship management (CRM) tools."}

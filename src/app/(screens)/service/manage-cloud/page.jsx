@@ -10,6 +10,7 @@ import ERPC2 from '@/components/service/ERP-Cosultant/ERPC2';
 import { ERPAccordin } from '@/components/common/accordinService';
 import { cloud, cloudAccor2 } from '@/data/services';
 import { testimonials } from '@/data/home-testimonials';
+import Script from 'next/script';
 
 export const metadata = {
     title: 'Scalable, Secure & 24/7 Cloud Management Solutions',
@@ -19,10 +20,40 @@ export const metadata = {
     },
 };
 
+const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Managed Cloud",
+    "description": "Expert ERP consulting services including implementation, migration, and optimization tailored for your business.",
+    "provider": {
+        "@type": "Organization",
+        "name": "Plenum Tech Solutions",
+        "url": "https://plenum-tech.com"
+    },
+    "serviceType": "ERP Consulting",
+    "areaServed": {
+        "@type": "Place",
+        "name": "Global"
+    },
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "53",
+        "bestRating": "5",
+        "worstRating": "1"
+    }
+}
+
 
 const ManageCloud = () => {
     return (
         <div>
+            <Script
+                id="schema-service-cloud"
+                type="application/ld+json"
+                strategy="afterInteractive"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+            />
             <Service_Inner_Hero
                 heading={"Managed Cloud Services in Dubai and Middle East"}
                 para={"Smart Infrastructure. Secure Delivery. AI-Ready from Day One. At Plenum, we help enterprises modernize their cloud ecosystem using Azure, AWS and our in-house AI platform, Momentum. From architecture and cost optimization to 24x7 support and compliance, we manage everything so you can scale faster with intelligence built in."}

@@ -9,7 +9,8 @@ import PinkSection from '@/components/service/pink-section'
 import { ocf_service, ocf_service_black } from '@/data/erp-consulting-service'
 import { testimonials } from '@/data/home-testimonials'
 import { fusion, fusionTabs } from '@/data/services'
-import Head from 'next/head'
+import Script from 'next/script'
+
 
 export const metadata = {
     title: 'Oracle Fusion Cloud is revolutionizing Business Operations',
@@ -19,28 +20,41 @@ export const metadata = {
     },
 };
 
+const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Oracle Cloud Fusion",
+    "description": "Oracle Cloud Fusion ERP solutions for business growth and efficiency.",
+    "provider": {
+        "@type": "Organization",
+        "name": "Plenum Tech Solutions",
+        "url": "https://plenum-tech.com"
+    },
+    "serviceType": "ERP Consulting",
+    "areaServed": {
+        "@type": "Place",
+        "name": "Global"
+    },
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "53",
+        "bestRating": "5",
+        "worstRating": "1"
+    }
+}
+
+
+
 const OracleCloudFusion = () => {
     return (
         <div>
-            <Head>
-                <script type="application/ld+json">
-                    {`
-            {
-              "@context": "https://schema.org",
-              "@type": "WebPage",
-              "name": "Oracle Cloud Fusion",
-              "url": "https://plenum-tech.com/service/oracle-cloud-fusion",
-              "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.5",
-                "reviewCount": "56",
-                "bestRating": "5",
-                "worstRating": "1"
-              }
-            }
-          `}
-                </script>
-            </Head>
+            <Script
+                id="schema-service-cloud"
+                type="application/ld+json"
+                strategy="afterInteractive"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+            />
             <New_Service_Inner_Hero
                 heading={"Oracle Fusion Cloud Transforming Your Business"}
                 para={"This integrated suite of applications offers a wide range of solutions, from Oracle Fusion ERP to Oracle Fusion applications."}

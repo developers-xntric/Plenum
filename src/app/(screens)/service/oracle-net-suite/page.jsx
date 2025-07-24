@@ -14,9 +14,35 @@ import { ons_service, ons_service_black } from '@/data/erp-consulting-service'
 import { testimonials } from '@/data/home-testimonials'
 import { MicrosoftCarouselData } from '@/data/microsoft-carousel'
 import { oracleNetSuite } from '@/data/services'
+import Script from 'next/script'
 
 const Testimonials = dynamic(() => import('@/components/homepage/testimonial'))
 const ArticleSlider = dynamic(() => import('@/components/common/article-slider'))
+
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Oracle NetSuite",
+  "description": "Oracle NetSuite ERP solutions for business growth and efficiency.",
+  "provider": {
+    "@type": "Organization",
+    "name": "Plenum Tech Solutions",
+    "url": "https://plenum-tech.com"
+  },
+  "serviceType": "ERP Consulting",
+  "areaServed": {
+    "@type": "Place",
+    "name": "Global"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "53",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}
+
 
 const OracleNetSuite = () => {
     return (
@@ -40,23 +66,11 @@ const OracleNetSuite = () => {
                 <meta name="twitter:image" content="/og-image.png" />
 
                 {/* JSON-LD Structured Data */}
-                <script
+                <Script
+                    id="schema-service-cloud"
                     type="application/ld+json"
-                    dangerouslySetInnerHTML={{
-                        __html: JSON.stringify({
-                            "@context": "https://schema.org",
-                            "@type": "WebPage",
-                            "name": "Oracle NetSuite ERP Solutions Consulting & Integration",
-                            "url": "https://plenum-tech.com/service/oracle-net-suite",
-                            "aggregateRating": {
-                                "@type": "AggregateRating",
-                                "ratingValue": "4.5",
-                                "reviewCount": "56",
-                                "bestRating": "5",
-                                "worstRating": "1"
-                            }
-                        })
-                    }}
+                    strategy="afterInteractive"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
                 />
             </Head>
 
@@ -106,7 +120,7 @@ const OracleNetSuite = () => {
             {/* ✅ Lazy-loaded components */}
             <Testimonials testimonials={testimonials} />
             <ArticleSlider />
-            <Blog heading='Discover Our Blog' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world"  />
+            <Blog heading='Discover Our Blog' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world" />
         </div>
     )
 }

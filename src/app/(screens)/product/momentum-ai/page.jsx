@@ -11,6 +11,7 @@ import ServiceContact from "@/components/service/service-contact"
 import { service_brand_icons } from "@/data/brand-slider-icons-data"
 import { momentumaiservices } from "@/data/momentum-ai-service"
 import Head from "next/head"
+import Script from "next/script"
 
 export const metadata = {
     title: 'Momentum AI by Plenum | Transform Business with AI',
@@ -20,30 +21,34 @@ export const metadata = {
     },
 };
 
+const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Momentum AI",
+    "description": "AI-powered productivity and process automation platform by Plenum Tech Solutions.",
+    "brand": {
+        "@type": "Organization",
+        "name": "Plenum Tech Solutions"
+    },
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.6",
+        "reviewCount": "34",
+        "bestRating": "5",
+        "worstRating": "1"
+    }
+}
 
 
 const MomentumAI = () => {
     return (
         <div>
-            <Head>
-                <script type="application/ld+json">
-                    {`
-            {
-              "@context": "https://schema.org",
-              "@type": "WebPage",
-              "name": "Momentum Ai",
-              "url": "https://plenum-tech.com/product/momentum-ai",
-              "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.5",
-                "reviewCount": "56",
-                "bestRating": "5",
-                "worstRating": "1"
-              }
-            }
-          `}
-                </script>
-            </Head>
+            <Script
+                id="schema-script"
+                type="application/ld+json"
+                strategy="afterInteractive"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+            />
             <ProductHero isLogo={false} bgImage='/product/m_hero.svg' mobileBgImage={'/product/m_hero_mobile.svg'} para1={"Unlock enterprise-grade AI solutions that will fuel accuracy, speed, and additional intelligent decision-making and are designed to grow with your supply chain, retail, and industrial operations."} />
             <div className="2xl:max-w-[1440px] mx-auto w-[93%] xl:w-[90%] 2xl:w-[90%] py-10">
                 <BrandSlider brand_icons={service_brand_icons} text={"Trusted by world's most exciting brands"} />
@@ -62,7 +67,7 @@ const MomentumAI = () => {
             />
             <StartSmallWithAI />
             <ArticleSlider className={'pt-10'} paragraph={'Insights & practical knowledge designed to help you navigate the digital landscape effectively.'} />
-            <Blog heading='Discover Our Blogs' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world"  />
+            <Blog heading='Discover Our Blogs' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world" />
             <div className='py-10'>
                 <PinkSection
                     heading={"Ready To Supercharge Your AI Workflow?"}

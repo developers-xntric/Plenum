@@ -10,6 +10,7 @@ import ArticleSlider from "@/components/common/article-slider";
 import ERPC2 from '@/components/service/ERP-Cosultant/ERPC2';
 import { ERPAccordin } from '@/components/common/accordinService';
 import { digitalItem1, digitalItem2 } from '@/data/services';
+import Script from 'next/script';
 
 
 export const metadata = {
@@ -20,11 +21,40 @@ export const metadata = {
     },
 };
 
+const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Digital Experiences",
+    "description": "Digital Experiences and Unmatched Solutions",
+    "provider": {
+        "@type": "Organization",
+        "name": "Plenum Tech Solutions",
+        "url": "https://plenum-tech.com"
+    },
+    "serviceType": "ERP Consulting",
+    "areaServed": {
+        "@type": "Place",
+        "name": "Global"
+    },
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "53",
+        "bestRating": "5",
+        "worstRating": "1"
+    }
+}
 
 
 const DigitalExperiences = () => {
     return (
         <div>
+            <Script
+                id="schema-service-cloud"
+                type="application/ld+json"
+                strategy="afterInteractive"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+            />
             <Service_Inner_Hero
                 heading={"Engineered for Performance, Crafted for Evolution"}
                 para={"We believe that in a world where digital shapes first impressions, experience is paramount. Digital is more than just a tool for performance, it’s a strategic ecosystem. From SEO and paid media to data driven optimization, we craft digital strategies that evolve in real-time, foster meaningful connections, and drive measurable growth."}

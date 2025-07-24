@@ -1,3 +1,4 @@
+import Script from "next/script";
 import { Blog } from "../../../../components/homepage/blog";
 import Image from "next/image";
 
@@ -8,7 +9,7 @@ export async function generateMetadata({ params }) {
     });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const { blog } = await res.json();
-// This sis the all 
+    // This sis the all 
     return {
       title: blog.metaTitle || blog.title || "Blog | Plenum Tech",
       description:
@@ -34,6 +35,31 @@ export async function generateMetadata({ params }) {
   }
 }
 
+
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "Blogs",
+  "description": "Blogs from Plenum Tech",
+  "provider": {
+    "@type": "Organization",
+    "name": "Plenum Tech Solutions",
+    "url": "https://plenum-tech.com"
+  },
+  "serviceType": "ERP Consulting",
+  "areaServed": {
+    "@type": "Place",
+    "name": "Global"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "53",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}
+
 export default async function BlogPage({ params }) {
   let data = null;
 
@@ -54,6 +80,12 @@ export default async function BlogPage({ params }) {
 
   return (
     <>
+      <Script
+        id="schema-service-cloud"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+      />
       <style>{`
         .blog-content a {
           color: #FF6035;
