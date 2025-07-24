@@ -1,21 +1,24 @@
 /** @type {import('next').NextConfig} */
+import bundleAnalyzer from '@next/bundle-analyzer';
+
+const withBundleAnalyzer = bundleAnalyzer({
+  enabled: process.env.ANALYZE === 'true',
+});
+
 const nextConfig = {
   images: {
-    domains: ['res.cloudinary.com', 'thedailyguardian.com', 'thearabianpost.com','emiratesinside.net'],
+    domains: ['res.cloudinary.com', 'thedailyguardian.com', 'thearabianpost.com', 'emiratesinside.net'],
   },
   reactStrictMode: true,
   compress: true,
-  // Remove swcMinify - Next.js 15 uses SWC minification by default
-  // Remove legacyBrowsers - Next.js 15 targets modern browsers by default
-
   async headers() {
     return [
       {
-        source: "/(.*)",
+        source: '/(.*)',
         headers: [
           {
-            key: "Cache-Control",
-            value: "public, max-age=31536000, immutable",
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
           },
         ],
       },
@@ -23,5 +26,4 @@ const nextConfig = {
   },
 };
 
-export default nextConfig;
-
+export default withBundleAnalyzer(nextConfig);
