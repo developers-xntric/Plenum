@@ -209,7 +209,7 @@ export default async function BlogPage({ params }) {
             )}
 
             {data.faqs && data.faqs.length > 0 && (
-              <div>
+              <div className="space-y-6">
                 <h2 className="text-[20px] lg:text-[30px] font-medium mb-2 leading-[35px] lg:leading-[42px]">
                   FAQs:
                 </h2>
