@@ -20,7 +20,6 @@ export const service_brand_icons = [
     "/images/Plenum-Client-Logos/image-153.png",
     "/images/Plenum-Client-Logos/image-154.png",
     "/images/Plenum-Client-Logos/image-155.png",
-    // "/images/Plenum-Client-Logos/image-156.png",
     "/images/Plenum-Client-Logos/image-157.png",
     "/images/Plenum-Client-Logos/image-156.png",
     "/images/Plenum-Client-Logos/image-158.png",
