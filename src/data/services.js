@@ -17,12 +17,6 @@ export const finance = [
       "Microsoft Dynamics 365 Finance and Operations is scalable, meaning it can grow with your business. Whether you're a small business looking to automate basic processes or a large enterprise requiring complex solutions, the system can be customized to meet your needs.",
     icon: "/service/MD/fao3.svg",
   },
-  // {
-  //   title: "Continuous Innovation and Scalability",
-  //   description:
-  //     "With the power of analytics and reporting tools, Dynamics 365 Finance and Operations helps businesses make informed decisions",
-  //   icon: "/service/MD/fao4.svg",
-  // },
 ];
 
 export const fusion = [

@@ -7,7 +7,24 @@ const withBundleAnalyzer = bundleAnalyzer({
 
 const nextConfig = {
   images: {
-    domains: ['res.cloudinary.com', 'thedailyguardian.com', 'thearabianpost.com', 'emiratesinside.net'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'res.cloudinary.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'thedailyguardian.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'thearabianpost.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'emiratesinside.net',
+      },
+    ],
   },
   reactStrictMode: true,
   compress: true,

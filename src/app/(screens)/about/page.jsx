@@ -1,7 +1,6 @@
 
 import AboutHero from '../../../components/about/about-hero'
 import LeadershipSection from '../../../components/about/leadership'
-// import MissionSection from '@/components/about/mission'
 import OurPurpose from '../../../components/about/our-purpose'
 import TabsSection from '../../../components/about/tabs-section'
 import WhoWeAre from '../../../components/about/who-we-are'

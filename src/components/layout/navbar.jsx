@@ -4,7 +4,6 @@ import { useState, useRef, useEffect } from "react"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import Button from "../common/button"
-// import { link } from "fs"
 
 const Navbar = () => {
     const [showServicesDropdown, setShowServicesDropdown] = useState(false)
@@ -66,24 +65,6 @@ const Navbar = () => {
                         { title: "Fusion Cloud", link: "/service/oracle-cloud-fusion" },
                     ],
                 },
-                //  {
-                //     title: "Managed Cloud Services",
-                //     link:"/service/manage-cloud",
-                //     // isExpanded: true,
-                //     // link: "/service/oracle",
-                //     // items: [
-                //     //     { title: "Net Suite", link: "/service/oracle-net-suite" },
-                //     //     { title: "Fusion Cloud", link: "/service/oracle-cloud-fusion" },
-                //     // ],
-                // },
-                // {
-                //     title:"AI Consulting, Governance and Implementation",
-                //     link: "/service/ai-consulting",
-                // },
-                // {
-                //     title:"Digital Experiences",
-                //     link:"service/digital-experiences",
-                // }
             ],
         },
         {
@@ -118,36 +99,7 @@ const Navbar = () => {
     ]
 
     const industriesMenuItems = [
-        // {
-        //     title: "Healthcare Industry",
-        //     isExpanded: true,
-        //     link: "/industries",
-        // },
-        // {
-        //     title: "BioTech Industries",
-        //     isExpanded: false,
-        //     link: "/industries",
-        // },
-        // {
-        //     title: "Consumer Banking",
-        //     isExpanded: false,
-        //     link: "/industries",
-        // },
-        // {
-        //     title: "Construction Industry",
-        //     isExpanded: false,
-        //     link: "/industries",
-        // },
-        // {
-        //     title: "Agriculture & Food Industries",
-        //     isExpanded: false,
-        //     link: "/industries",
-        // },
-        // {
-        //     title: "Business & Enterprise Banking",
-        //     isExpanded: false,
-        //     link: "/industries",
-        // },
+       
     ]
 
     const resourcesMenuItems = [
@@ -167,15 +119,7 @@ const Navbar = () => {
             link: "/article",
         },
 
-        //     title: "News",
-        //     isExpanded: false,
-        //     link: "/case-studies",
-        // },
-        // {
-        //     title: "Video & Podcasts",
-        //     isExpanded: false,
-        //     link: "/case-studies",
-        // },
+       
     ]
 
     const closeAllDropdowns = () => {

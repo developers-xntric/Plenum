@@ -182,35 +182,6 @@ export default function HouseAIProduct({ heading, paragraph, card1Para, card2Par
                   <p className="text-[12px] md:text-[16px] font-['Archivo'] text-center">Hospital</p>
                 </Link>
               </div>
-
-
-              {/* <div className="flex items-center justify-center pb-2 md:pb-0">
-                <div className="space-y-3 w-[85%] md:w-[55%] max-w-[90%] mx-auto">
-                  <div className="space-y-2">
-                    <p className="text-sm font-['Archivo']">Process</p>
-                    <div ref={processRef} className="bg-[#dbdbdb] rounded-full h-6 md:h-8 overflow-hidden">
-                      <motion.div
-                        initial={{ width: 0 }}
-                        animate={{ width: isProcessInView ? "100%" : 0 }}
-                        transition={{ duration: 1.2 }}
-                        className="h-full bg-white rounded-full"
-                      />
-                    </div>
-                  </div>
-                  <div className="space-y-2">
-                    <p className="text-sm font-['Archivo']">Optimization</p>
-                    <div ref={optimizationRef} className="bg-gray-300 rounded-full h-6 md:h-8 overflow-hidden">
-                      <motion.div
-                        initial={{ width: 0 }}
-                        animate={{ width: isOptimizationInView ? "100%" : 0 }}
-                        transition={{ duration: 1.2 }}
-                        className="h-full bg-primary rounded-full"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div> */}
-
             </div>
           </div>
         </div>

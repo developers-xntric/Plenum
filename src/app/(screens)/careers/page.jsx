@@ -1,8 +1,6 @@
-// import CareerHero from '@/components/careers/career-hero';
 import dynamic from 'next/dynamic';
 import React from 'react';
 
-// Dynamically import only the client-only components
 const CareerHero = dynamic(() => import('@/components/careers/career-hero'));
 const JobListings = dynamic(() => import('@/components/careers/jobs-linting'));
 const TeamTestimonials = dynamic(() => import('@/components/careers/team-testimonials'));

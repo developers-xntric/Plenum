@@ -77,12 +77,7 @@ const MobileNav = () => {
       name: "Industries",
       link: "/industries",
       subItems: [
-        // { name: "Healthcare Industry", link: "/industries" },
-        // { name: "BioTech Industries", link: "/industries" },
-        // { name: "Consumer Banking", link: "/industries" },
-        // { name: "Construction Industry", link: "/industries" },
-        // { name: "Agriculture & Food Industries", link: "/industries" },
-        // { name: "Business & Enterprise Banking", link: "/industries" },
+   
       ],
     },
     {
@@ -92,8 +87,6 @@ const MobileNav = () => {
         { name: "Case Studies", link: "/case-studies" },
         { name: "Blog", link: "/blog" },
         { name: "Article", link: "/article" },
-        // { name: "News", link: "/case-studies" },
-        // { name: "Video & Podcasts", link: "/case-studies" },
       ],
     },
     { name: "About Us", link: "/about" },
