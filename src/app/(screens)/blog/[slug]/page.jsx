@@ -6,7 +6,7 @@ export async function generateMetadata({ params }) {
   try {
     const res = await fetch(`https://blog.xntric.me/api/v2/blog/${params.slug}`, {
       next: { revalidate: 60 }, // ISR for metadata
-    });
+    });  
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const { blog } = await res.json();
     // This sis the all 
