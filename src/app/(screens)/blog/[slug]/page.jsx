@@ -113,9 +113,8 @@ export default async function BlogPage({ params }) {
         
         .table-of-contents {
           background: #f8f9fa;
-          border-left: 2px solid #FF6035;
+          
           padding: 20px;
-          border-radius: 8px;
         }
         
         .table-of-contents h3 {
@@ -129,6 +128,7 @@ export default async function BlogPage({ params }) {
         
         .toc-list {
           list-style: none;
+          border-left: 2px solid #FF6035; 
           padding: 0;
           margin: 0;
         }
