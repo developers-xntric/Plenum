@@ -1,6 +1,7 @@
 import Script from "next/script";
 import { Blog } from "../../../../components/homepage/blog";
 import Image from "next/image";
+import Link from "next/link";
 
 export async function generateMetadata({ params }) {
   try {
@@ -9,7 +10,7 @@ export async function generateMetadata({ params }) {
     });  
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const { blog } = await res.json();
-    // This sis the all 
+    
     return {
       title: blog.metaTitle || blog.title || "Blog | Plenum Tech",
       description:
@@ -34,7 +35,6 @@ export async function generateMetadata({ params }) {
     };
   }
 }
-
 
 const schemaData = {
   "@context": "https://schema.org",
@@ -94,8 +94,9 @@ export default async function BlogPage({ params }) {
     tableOfContents.push({ id: "conclusion", title: "Conclusion" });
   }
   if (data.faqs?.length > 0) {
-    tableOfContents.push({ id: "faqs", title: "FAQs" });
+    tableOfContents.push({ id: "faqs", title: "Frequently Asked Questions" });
   }
+
   return (
     <>
       <Script
@@ -104,9 +105,68 @@ export default async function BlogPage({ params }) {
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
       />
+      
       <style>{`
         .blog-content a {
           color: #FF6035;
+        }
+        
+        .table-of-contents {
+          background: #f8f9fa;
+          border-left: 2px solid #FF6035;
+          padding: 20px;
+          border-radius: 8px;
+        }
+        
+        .table-of-contents h3 {
+          font-size: 24px;
+          font-weight: 700;
+          color: #333;
+          margin-bottom: 16px;
+          border-bottom: 2px solid #e9ecef;
+          padding-bottom: 8px;
+        }
+        
+        .toc-list {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+        }
+        
+        .toc-item {
+          margin-bottom: 8px;
+        }
+        
+        .toc-link {
+          display: block;
+          color: #495057;
+          text-decoration: none;
+          padding: 8px 12px;
+          border-radius: 4px;
+          transition: all 0.2s ease;
+          font-weight: 500;
+          line-height: 1.4;
+        }
+        
+        .toc-link:hover {
+          background-color: #FF6035;
+          color: white;
+          transform: translateX(4px);
+        }
+        
+        .toc-link.active {
+          background-color: #FF6035;
+          color: white;
+        }
+        
+        /* Smooth scroll behavior */
+        html {
+          scroll-behavior: smooth;
+        }
+        
+        /* Add scroll offset for fixed headers */
+        [id] {
+          scroll-margin-top: 100px;
         }
       `}</style>
 
@@ -133,23 +193,16 @@ export default async function BlogPage({ params }) {
 
       <div className="font-['Archivo'] pt-34 lg:pt-52">
         <div className="2xl:max-w-[1440px] w-[90%] mx-auto">
-          {tableOfContents.length > 0 && (
-            <div className="table-of-contents lg:w-[25%] lg:float-left lg:mr-6">
-              <h3>Table of Content</h3>
-              {tableOfContents.map((item) => (
-                <a key={item.id} href={`#${item.id}`}>
-                  {item.title}
-                </a>
-              ))}
-            </div>
-          )}
           <div className="lg:max-w-[72%] 2xl:max-w-[60%] py-10">
             {data.publishedDate && (
               <p className="text-[#636363] text-[15px] lg:text-[17px] font-medium">
                 {data.publishedDate.slice(0, 10)}
               </p>
             )}
-            <h1 className="text-secondary leading-[34px] lg:leading-[56px] text-[30px] lg:text-[46px] font-semibold">
+            <h1 
+              id="main-title"
+              className="text-secondary leading-[34px] lg:leading-[56px] text-[30px] lg:text-[46px] font-semibold"
+            >
               {data.title}
             </h1>
           </div>
@@ -167,93 +220,128 @@ export default async function BlogPage({ params }) {
           />
         )}
 
-        <div className="2xl:max-w-[1440px] w-[90%] mx-auto flex items-center justify-end">
-          <div className="md:px-6 pb-2 md:pb-12 py-12 space-y-12 lg:max-w-[80%] xl:max-w-[70%] 2xl:max-w-[65%]">
-            {data.description && (
-              <div
-                className="text-[15px] lg:text-lg text-[#6D6E76] font-medium blog-content"
-                dangerouslySetInnerHTML={{ __html: data.description }}
-              />
+        <div className="2xl:max-w-[1440px] w-[90%] mx-auto">
+          <div className="flex flex-col lg:flex-row gap-8">
+            {/* Table of Contents */}
+            {tableOfContents.length > 0 && (
+              <div className="lg:w-[30%] lg:sticky lg:top-20 lg:self-start mt-10">
+                <div className="table-of-contents">
+                  <h3>Table of Content</h3>
+                  <ul className="toc-list">
+                    {tableOfContents.map((item, index) => (
+                      <li key={item.id} className="toc-item">
+                        <Link 
+                          href={`#${item.id}`} 
+                          className="toc-link"
+                        >
+                          {item.title}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
             )}
 
-            {data.subsections?.map((subsection, index) => (
-              <div key={index} className="space-y-8">
-                {subsection.subtitle && (
-                  <h2 className="text-[25px] lg:text-[36px] font-medium leading-[35px] lg:leading-[42px]">
-                    {subsection.subtitle}
-                  </h2>
-                )}
-                {subsection.subdescription?.map((desc, descIndex) => (
+            {/* Main Content */}
+            <div className="lg:w-[70%]">
+              <div className="md:px-6 pb-2 md:pb-12 py-12 space-y-12">
+                {data.description && (
                   <div
-                    key={descIndex}
-                    className="text-lg text-[#6D6E76] font-medium blog-content"
-                    dangerouslySetInnerHTML={{ __html: desc }}
+                    className="text-[15px] lg:text-lg text-[#6D6E76] font-medium blog-content"
+                    dangerouslySetInnerHTML={{ __html: data.description }}
                   />
-                ))}
-                {subsection.lists?.map((list, listIndex) => (
-                  <div key={listIndex}>
-                    <h3 className="text-xl lg:text-2xl font-bold mb-2">
-                      {list.listTitle}
-                    </h3>
-                    {list.listDescription && (
+                )}
+
+                {data.subsections?.map((subsection, index) => (
+                  <div key={index} className="space-y-8">
+                    {subsection.subtitle && (
+                      <h2 
+                        id={`subsection-${index}`}
+                        className="text-[25px] lg:text-[36px] font-medium leading-[35px] lg:leading-[42px]"
+                      >
+                        {subsection.subtitle}
+                      </h2>
+                    )}
+                    {subsection.subdescription?.map((desc, descIndex) => (
                       <div
-                        className="text-base lg:text-lg text-[#6D6E76] font-medium mb-4 blog-content"
-                        dangerouslySetInnerHTML={{ __html: list.listDescription }}
+                        key={descIndex}
+                        className="text-lg text-[#6D6E76] font-medium blog-content"
+                        dangerouslySetInnerHTML={{ __html: desc }}
                       />
-                    )}
-                    {list.items?.length > 0 && (
-                      <ul className="list-disc pl-5 space-y-2">
-                        {list.items.map((item, itemIndex) => (
-                          <li
-                            key={itemIndex}
-                            className="text-[16px] lg:text-[18px] font-medium leading-[35px] lg:leading-[42px]"
-                          >
-                            {item.title}
-                            {item.description && (
-                              <div
-                                className="text-base text-[#6D6E76] font-medium mt-1 blog-content"
-                                dangerouslySetInnerHTML={{ __html: item.description }}
-                              />
-                            )}
-                          </li>
-                        ))}
-                      </ul>
-                    )}
+                    ))}
+                    {subsection.lists?.map((list, listIndex) => (
+                      <div key={listIndex}>
+                        <h3 className="text-xl lg:text-2xl font-bold mb-2">
+                          {list.listTitle}
+                        </h3>
+                        {list.listDescription && (
+                          <div
+                            className="text-base lg:text-lg text-[#6D6E76] font-medium mb-4 blog-content"
+                            dangerouslySetInnerHTML={{ __html: list.listDescription }}
+                          />
+                        )}
+                        {list.items?.length > 0 && (
+                          <ul className="list-disc pl-5 space-y-2">
+                            {list.items.map((item, itemIndex) => (
+                              <li
+                                key={itemIndex}
+                                className="text-[16px] lg:text-[18px] font-medium leading-[35px] lg:leading-[42px]"
+                              >
+                                {item.title}
+                                {item.description && (
+                                  <div
+                                    className="text-base text-[#6D6E76] font-medium mt-1 blog-content"
+                                    dangerouslySetInnerHTML={{ __html: item.description }}
+                                  />
+                                )}
+                              </li>
+                            ))}
+                          </ul>
+                        )}
+                      </div>
+                    ))}
                   </div>
                 ))}
-              </div>
-            ))}
 
-            {data.conclusion && (
-              <div className="space-y-8">
-                <h2 className="text-[25px] lg:text-[36px] font-medium leading-[35px] lg:leading-[42px]">
-                  Conclusion
-                </h2>
-                <div
-                  className="text-lg text-[#6D6E76] font-medium blog-content"
-                  dangerouslySetInnerHTML={{ __html: data.conclusion }}
-                />
-              </div>
-            )}
-
-            {data.faqs && data.faqs.length > 0 && (
-              <div className="space-y-6">
-                <h2 className="text-[20px] lg:text-[30px] font-medium mb-2 leading-[35px] lg:leading-[42px]">
-                  FAQs:
-                </h2>
-                {data.faqs.map((faq, index) => (
-                  <div key={index} className="space-y-2">
-                    <h3 className="text-[20px] lg:text-[24px] font-medium leading-[35px] lg:leading-[42px]">
-                      {index + 1}. {faq.question}
-                    </h3>
+                {data.conclusion && (
+                  <div className="space-y-8">
+                    <h2 
+                      id="conclusion"
+                      className="text-[25px] lg:text-[36px] font-medium leading-[35px] lg:leading-[42px]"
+                    >
+                      Conclusion
+                    </h2>
                     <div
                       className="text-lg text-[#6D6E76] font-medium blog-content"
-                      dangerouslySetInnerHTML={{ __html: faq.answer }}
+                      dangerouslySetInnerHTML={{ __html: data.conclusion }}
                     />
                   </div>
-                ))}
+                )}
+
+                {data.faqs && data.faqs.length > 0 && (
+                  <div className="space-y-6">
+                    <h2 
+                      id="faqs"
+                      className="text-[20px] lg:text-[30px] font-medium mb-2 leading-[35px] lg:leading-[42px]"
+                    >
+                      Frequently Asked Questions
+                    </h2>
+                    {data.faqs.map((faq, index) => (
+                      <div key={index} className="space-y-2">
+                        <h3 className="text-[20px] lg:text-[24px] font-medium leading-[35px] lg:leading-[42px]">
+                          {index + 1}. {faq.question}
+                        </h3>
+                        <div
+                          className="text-lg text-[#6D6E76] font-medium blog-content"
+                          dangerouslySetInnerHTML={{ __html: faq.answer }}
+                        />
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
-            )}
+            </div>
           </div>
         </div>
 
