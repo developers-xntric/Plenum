@@ -90,7 +90,6 @@ const MobileNav = () => {
       ],
     },
     { name: "About Us", link: "/about" },
-    // { name: "Book a Demo", link: "/article" },
     { name: "Careers", link: "/careers" },
   ]
 
@@ -141,14 +140,14 @@ const MobileNav = () => {
   }
 
   // Close menu on route change
-  useEffect(() => {
-    const handleRouteChange = () => {
-      setIsOpen(false)
-    }
-    return () => {
-      router.events.off("routeChangeStart", handleRouteChange)
-    }
-  }, [router.events])
+  // useEffect(() => {
+  //   const handleRouteChange = () => {
+  //     setIsOpen(false)
+  //   }
+  //   // return () => {
+  //   //   router.events?.off("routeChangeStart", handleRouteChange)
+  //   // }
+  // }, [router.events])
 
   return (
     <div className="relative font-['Archivo'] lg:hidden z-[999]">

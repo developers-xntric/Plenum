@@ -61,7 +61,7 @@ const schemaData = {
 }
 
 export default async function BlogPage({ params }) {
-  let data = null;
+   let data = null;
 
   try {
     const res = await fetch(`https://blog.xntric.me/api/v2/blog/${params.slug}`);
@@ -78,6 +78,24 @@ export default async function BlogPage({ params }) {
     return <div className="p-10 text-center text-red-500">Failed to load blog content.</div>;
   }
 
+  // Generate table of contents dynamically
+  const tableOfContents = [];
+  if (data.title) {
+    tableOfContents.push({ id: "main-title", title: data.title });
+  }
+  if (data.subsections?.length > 0) {
+    data.subsections.forEach((subsection, index) => {
+      if (subsection.subtitle) {
+        tableOfContents.push({ id: `subsection-${index}`, title: subsection.subtitle });
+      }
+    });
+  }
+  if (data.conclusion) {
+    tableOfContents.push({ id: "conclusion", title: "Conclusion" });
+  }
+  if (data.faqs?.length > 0) {
+    tableOfContents.push({ id: "faqs", title: "FAQs" });
+  }
   return (
     <>
       <Script
@@ -115,6 +133,16 @@ export default async function BlogPage({ params }) {
 
       <div className="font-['Archivo'] pt-34 lg:pt-52">
         <div className="2xl:max-w-[1440px] w-[90%] mx-auto">
+          {tableOfContents.length > 0 && (
+            <div className="table-of-contents lg:w-[25%] lg:float-left lg:mr-6">
+              <h3>Table of Content</h3>
+              {tableOfContents.map((item) => (
+                <a key={item.id} href={`#${item.id}`}>
+                  {item.title}
+                </a>
+              ))}
+            </div>
+          )}
           <div className="lg:max-w-[72%] 2xl:max-w-[60%] py-10">
             {data.publishedDate && (
               <p className="text-[#636363] text-[15px] lg:text-[17px] font-medium">
