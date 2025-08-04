@@ -64,7 +64,7 @@ export const metadata = {
 
 const schemaData = {
   "@context": "https://schema.org",
-  "@type": "Organization",
+  "@type": "LocalBusiness",
   "name": "Plenum Tech Solutions",
   "url": "https://plenum-tech.com/",
   "aggregateRating": {
@@ -72,7 +72,7 @@ const schemaData = {
     "ratingValue": "4.5",
     "reviewCount": "30",
     "bestRating": "5",
-    "worstRating": "1"
+    "worstRating": "2"
   }
   };
 

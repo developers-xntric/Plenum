@@ -35,14 +35,13 @@ export async function generateMetadata({ params }) {
     };
   }
 }
-
-const schemaData = {
+const schemaData ={
   "@context": "https://schema.org",
   "@type": "Blog",
   "name": "Blogs",
-  "description": "Blogs from Plenum Tech",
+  "description": "Blogs from Plenum Tech about ERP consulting, technology insights, and more.",
   "provider": {
-    "@type": "Organization",
+    "@type": "WebSite",
     "name": "Plenum Tech Solutions",
     "url": "https://plenum-tech.com"
   },
@@ -50,16 +49,8 @@ const schemaData = {
   "areaServed": {
     "@type": "Place",
     "name": "Global"
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.8",
-    "reviewCount": "53",
-    "bestRating": "5",
-    "worstRating": "1"
   }
 }
-
 export default async function BlogPage({ params }) {
    let data = null;
 
