@@ -165,7 +165,7 @@ export default async function BlogPage({ params }) {
         }
       `}</style>
       {/* ImageObject Schema for Blog Banner */}
-{data.bannerImageURL && (
+     {data.bannerImageURL && (
   <Script
     id="schema-image-object"
     type="application/ld+json"
