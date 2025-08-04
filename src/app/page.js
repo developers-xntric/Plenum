@@ -61,20 +61,45 @@ export const metadata = {
     canonical: 'https://plenum-tech.com',
   },
 };
-
-const schemaData = {
+const schemaData ={
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Plenum Tech Solutions",
   "url": "https://plenum-tech.com/",
+  "logo": "https://plenum-tech.com/casestudy/Group8.png", 
+  "image": "https://plenum-tech.com/product/m_hero_mobile.svg",
+  "description": "Plenum Tech Solutions offers cutting-edge technology solutions to help businesses optimize their processes and grow.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Office F11, First Floor, IT Plaza,",
+    "addressLocality": "Dubai Silicon Oasis, Dubai",
+    "addressRegion": "UAE",
+    "postalCode": "00000",
+    "addressCountry": "UAE"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "00971 054 308 9222",
+    "contactType": "Customer Service",
+    "areaServed": "UAE",
+    "availableLanguage": "English"
+  },
+  "sameAs": [
+    "https://www.facebook.com/PlenumTech",
+    "https://twitter.com/PlenumTech",
+    "https://www.linkedin.com/company/plenum-tech-solutions"
+  ],
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "4.5",
     "reviewCount": "30",
     "bestRating": "5",
     "worstRating": "2"
-  }
-  };
+  },
+  "priceRange": "$$",
+  "openingHours": "Mo-Fr 09:00-18:00",
+  "additionalType": "https://schema.org/TechnologyBusiness"
+}
 
 export default function Home() {
   return (
