@@ -35,6 +35,8 @@ export async function generateMetadata({ params }) {
     };
   }
 }
+
+
 const schemaData ={
   "@context": "https://schema.org",
   "@type": "Blog",
@@ -51,6 +53,8 @@ const schemaData ={
     "name": "Global"
   }
 }
+
+
 export default async function BlogPage({ params }) {
    let data = null;
 
@@ -160,6 +164,32 @@ export default async function BlogPage({ params }) {
           scroll-margin-top: 100px;
         }
       `}</style>
+      {/* ImageObject Schema for Blog Banner */}
+{data.bannerImageURL && (
+  <Script
+    id="schema-image-object"
+    type="application/ld+json"
+    strategy="afterInteractive"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "ImageObject",
+        "url": data.bannerImageURL,
+        "name": data.title,
+        "caption": data.title,
+        "contentUrl": data.bannerImageURL,
+        "thumbnailUrl": data.bannerImageURL,
+        "description": data.metaDescription || data.description || "",
+        "uploadDate": data.publishedDate || "",
+        "author": {
+          "@type": "Organization",
+          "name": "Plenum Tech Solutions"
+        }
+      }),
+    }}
+  />
+)}
+
 
       {/* FAQ Schema for SEO */}
       {data.faqs?.length > 0 && (
