@@ -2,15 +2,19 @@ import Script from "next/script";
 import { Blog } from "../../../../components/homepage/blog";
 import Image from "next/image";
 import Link from "next/link";
+import { Linkedin, LinkedinIcon } from "lucide-react";
 
 export async function generateMetadata({ params }) {
   try {
-    const res = await fetch(`https://blog.xntric.me/api/v2/blog/${params.slug}`, {
-      next: { revalidate: 60 }, // ISR for metadata
-    });  
+    const res = await fetch(
+      `https://blog.xntric.me/api/v2/blog/${params.slug}`,
+      {
+        next: { revalidate: 60 }, // ISR for metadata
+      }
+    );
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const { blog } = await res.json();
-    
+
     return {
       title: blog.metaTitle || blog.title || "Blog | Plenum Tech",
       description:
@@ -39,43 +43,51 @@ export async function generateMetadata({ params }) {
 const schemaData = {
   "@context": "https://schema.org",
   "@type": "Blog",
-  "name": "Blogs",
-  "description": "Blogs from Plenum Tech",
-  "provider": {
+  name: "Blogs",
+  description: "Blogs from Plenum Tech",
+  provider: {
     "@type": "Organization",
-    "name": "Plenum Tech Solutions",
-    "url": "https://plenum-tech.com"
+    name: "Plenum Tech Solutions",
+    url: "https://plenum-tech.com",
   },
-  "serviceType": "ERP Consulting",
-  "areaServed": {
+  serviceType: "ERP Consulting",
+  areaServed: {
     "@type": "Place",
-    "name": "Global"
+    name: "Global",
   },
-  "aggregateRating": {
+  aggregateRating: {
     "@type": "AggregateRating",
-    "ratingValue": "4.8",
-    "reviewCount": "53",
-    "bestRating": "5",
-    "worstRating": "1"
-  }
-}
+    ratingValue: "4.8",
+    reviewCount: "53",
+    bestRating: "5",
+    worstRating: "1",
+  },
+};
 
 export default async function BlogPage({ params }) {
-   let data = null;
+  let data = null;
 
   try {
-    const res = await fetch(`https://blog.xntric.me/api/v2/blog/${params.slug}`);
+    const res = await fetch(
+      `https://blog.xntric.me/api/v2/blog/${params.slug}`
+    );
 
     if (!res.ok) {
       console.error(`Failed to load blog: ${res.status}`);
-      return <div className="p-10 text-center text-red-500">Blog not found.</div>;
+      return (
+        <div className="p-10 text-center text-red-500">Blog not found.</div>
+      );
     }
 
     const { blog } = await res.json();
     data = blog;
   } catch (error) {
     console.error("Blog fetch error:", error);
-    return <div className="p-10 text-center text-red-500">Failed to load blog content.</div>;
+    return (
+      <div className="p-10 text-center text-red-500">
+        Failed to load blog content.
+      </div>
+    );
   }
 
   // Generate table of contents dynamically
@@ -86,7 +98,10 @@ export default async function BlogPage({ params }) {
   if (data.subsections?.length > 0) {
     data.subsections.forEach((subsection, index) => {
       if (subsection.subtitle) {
-        tableOfContents.push({ id: `subsection-${index}`, title: subsection.subtitle });
+        tableOfContents.push({
+          id: `subsection-${index}`,
+          title: subsection.subtitle,
+        });
       }
     });
   }
@@ -105,7 +120,20 @@ export default async function BlogPage({ params }) {
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
       />
-      
+
+      <Script
+        id="schema-author"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "http://schema.org",
+            "@type": "Person",
+            name: "Shaikh Zubaer Aasim",
+          }),
+        }}
+      />
+
       <style>{`
         .blog-content a {
           color: #FF6035;
@@ -199,7 +227,7 @@ export default async function BlogPage({ params }) {
                 {data.publishedDate.slice(0, 10)}
               </p>
             )}
-            <h1 
+            <h1
               id="main-title"
               className="text-secondary leading-[34px] lg:leading-[56px] text-[30px] lg:text-[46px] font-semibold"
             >
@@ -230,10 +258,7 @@ export default async function BlogPage({ params }) {
                   <ul className="toc-list">
                     {tableOfContents.map((item, index) => (
                       <li key={item.id} className="toc-item">
-                        <Link 
-                          href={`#${item.id}`} 
-                          className="toc-link"
-                        >
+                        <Link href={`#${item.id}`} className="toc-link">
                           {item.title}
                         </Link>
                       </li>
@@ -256,7 +281,7 @@ export default async function BlogPage({ params }) {
                 {data.subsections?.map((subsection, index) => (
                   <div key={index} className="space-y-8">
                     {subsection.subtitle && (
-                      <h2 
+                      <h2
                         id={`subsection-${index}`}
                         className="text-[25px] lg:text-[36px] font-medium leading-[35px] lg:leading-[42px]"
                       >
@@ -278,7 +303,9 @@ export default async function BlogPage({ params }) {
                         {list.listDescription && (
                           <div
                             className="text-base lg:text-lg text-[#6D6E76] font-medium mb-4 blog-content"
-                            dangerouslySetInnerHTML={{ __html: list.listDescription }}
+                            dangerouslySetInnerHTML={{
+                              __html: list.listDescription,
+                            }}
                           />
                         )}
                         {list.items?.length > 0 && (
@@ -292,7 +319,9 @@ export default async function BlogPage({ params }) {
                                 {item.description && (
                                   <div
                                     className="text-base text-[#6D6E76] font-medium mt-1 blog-content"
-                                    dangerouslySetInnerHTML={{ __html: item.description }}
+                                    dangerouslySetInnerHTML={{
+                                      __html: item.description,
+                                    }}
                                   />
                                 )}
                               </li>
@@ -306,7 +335,7 @@ export default async function BlogPage({ params }) {
 
                 {data.conclusion && (
                   <div className="space-y-8">
-                    <h2 
+                    <h2
                       id="conclusion"
                       className="text-[25px] lg:text-[36px] font-medium leading-[35px] lg:leading-[42px]"
                     >
@@ -321,7 +350,7 @@ export default async function BlogPage({ params }) {
 
                 {data.faqs && data.faqs.length > 0 && (
                   <div className="space-y-6">
-                    <h2 
+                    <h2
                       id="faqs"
                       className="text-[20px] lg:text-[30px] font-medium mb-2 leading-[35px] lg:leading-[42px]"
                     >
@@ -340,6 +369,42 @@ export default async function BlogPage({ params }) {
                     ))}
                   </div>
                 )}
+                <div className="w-full">
+                  <div className="flex justify-between item-center">
+                    <div className="flex gap-4 mb-4">
+                      <Image
+                        src="/blog/asim.webp"
+                        alt="Shaikh zubaer Aasim"
+                        width={30}
+                        height={30}
+                        className="rounded-full bg-center"
+                      />
+                      <h4 className="text-xl  ">Shaikh Zubaer Aasim</h4>
+                    </div>
+                    <div>
+                      <Link target="_blank" href="https://www.linkedin.com/in/aasimzshaikh">
+                        <LinkedinIcon />
+                      </Link>
+                    </div>
+                  </div>
+                  <div>
+                    <p className="text-justify">
+                      With over two decades of driving marketing transformation
+                      across the GCC, Aasim brings a rare blend of brand
+                      leadership, digital innovation, and business foresight. He
+                      has demonstrated a unique ability to align with evolving
+                      customer and market demands whilst predicting and leading
+                      best practice in digital and customer experiences. His
+                      journey spans across building multi-million-dirham
+                      portfolios, launching modern marketing campaigns, building
+                      AI enablled Tech platforms and leading award-winning teams
+                      across both client and agency environments. His
+                      appointment to the MMA Board of Director reinforces a
+                      larger belief: Modern marketing demands more than strategy
+                      it demands ideas that are unafraid to build what’s next.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
