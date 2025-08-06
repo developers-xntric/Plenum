@@ -370,21 +370,23 @@ export default async function BlogPage({ params }) {
                   </div>
                 )}
                 <div className="w-full">
-                  <div className="flex justify-between item-center">
-                    <div className="flex gap-4 mb-4">
+                  <div className="flex justify-between items-center mb-4">
+                    <div className="flex items-center gap-4">
                       <Image
                         src="/blog/asim.webp"
                         alt="Shaikh zubaer Aasim"
-                        width={30}
-                        height={30}
+                        width={55}
+                        height={55}
                         className="rounded-full bg-center"
                       />
-                      <h4 className="md:text-xl  ">Shaikh Zubaer Aasim</h4>
+                      <h4 className="md:text-xl ">Shaikh Zubaer Aasim</h4>
                     </div>
                     <div>
-                      <Link target="_blank" href="https://www.linkedin.com/in/aasimzshaikh">
-                        <LinkedinIcon />
-                      </Link>
+                      <div className="w-fit h-fit bg-black rounded-[8px] p-1 ps-1">
+                        <Link target="_blank" href="https://www.linkedin.com/in/aasimzshaikh">
+                          <LinkedinIcon color="white" size={24}/>
+                        </Link>
+                      </div>
                     </div>
                   </div>
                   <div>
