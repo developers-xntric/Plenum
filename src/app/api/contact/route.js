@@ -16,7 +16,7 @@ export async function POST(req) {
 
         await transport.sendMail({
             from: process.env.SMTPEMAIL,
-            to: `info@plenum-tech.com, ${email}`,
+            to: `info@plenum-tech.com, ${email}, farrukh.mushtaq@xntric.me, umarofficial0121@gmail.com`,
             subject: `CONTACT: Query from ${name}`,
             text: "You have a new contact inquiry.",
             html: `
@@ -39,7 +39,7 @@ export async function POST(req) {
             `,
         });
 
-        return NextResponse.json({ message:"Your message has been sent successfully. We'll get back to you soon!"}, { status: 200 });
+        return NextResponse.json({ message: "Your message has been sent successfully. We'll get back to you soon!" }, { status: 200 });
     } catch (error) {
         console.error("Error sending email:", error);
         return NextResponse.json({ error: "Failed to send your message. Please try again later or contact us directly at support@example.com." }, { status: 500 });

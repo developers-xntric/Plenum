@@ -2,7 +2,6 @@
 import BrandSlider from '../../../components/common/brand-slider'
 import WorldMap from '../../../components/common/world-map'
 import { ContactForm } from '../../../components/service/contact-form'
-// import ThankYou from '@/components/thankyou'
 import { service_brand_icons } from '../../../data/brand-slider-icons-data'
 import React, { useEffect, useRef, useState } from 'react'
 import CountUp from 'react-countup'

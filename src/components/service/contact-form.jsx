@@ -2,7 +2,6 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 
-
 export function ContactForm({ confirmStatus, setConfirmStatus }) {
     const [formData, setFormData] = useState({
         name: "",
@@ -15,6 +14,17 @@ export function ContactForm({ confirmStatus, setConfirmStatus }) {
     const [successMessage, setSuccessMessage] = useState("")
     const [errorMessage, setErrorMessage] = useState("")
 
+    // Function to get traffic source information (UTM parameters or referrer)
+    const getTrafficSource = () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const utmSource = urlParams.get("utm_source") || document.referrer || "direct";
+        const isOrganic = utmSource.includes("google") || utmSource.includes("bing") || utmSource === "direct";
+        return {
+            source: utmSource,
+            isOrganic: isOrganic ? "true" : "false",
+        };
+    };
+
     const handleChange = (e) => {
         const { name, value } = e.target;
 
@@ -25,8 +35,6 @@ export function ContactForm({ confirmStatus, setConfirmStatus }) {
             setFormData((prev) => ({ ...prev, [name]: value }));
         }
     };
-
-
 
     const handleSubmit = async (e) => {
         e.preventDefault()
@@ -55,6 +63,13 @@ export function ContactForm({ confirmStatus, setConfirmStatus }) {
                     message: "",
                 })
                 setConfirmStatus(!confirmStatus)
+                // Send GA4 event on successful submission
+                const trafficSource = getTrafficSource();
+                window.gtag("event", "form_submission", {
+                    form_name: "contact_form",
+                    traffic_source: trafficSource.source,
+                    is_organic: trafficSource.isOrganic,
+                });
             } else {
                 setErrorMessage(data.error || "Failed to send the message. Please try again later.")
             }
@@ -90,7 +105,7 @@ export function ContactForm({ confirmStatus, setConfirmStatus }) {
                             value={formData[field]}
                             onChange={handleChange}
                             required
-                            data-lpignore="true" 
+                            data-lpignore="true"
                         />
                     </div>
                 ))}
