@@ -1,8 +1,8 @@
-import Script from "next/script";
-import { Blog } from "../../../../components/homepage/blog";
+import { LinkedinIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { Linkedin, LinkedinIcon } from "lucide-react";
+import Script from "next/script";
+import { Blog } from "../../../../components/homepage/blog";
 
 export async function generateMetadata({ params }) {
   try {
