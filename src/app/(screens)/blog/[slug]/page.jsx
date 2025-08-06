@@ -5,8 +5,9 @@ import Link from "next/link";
 
 export async function generateMetadata({ params }) {
   try {
+      const {slug} = await params;
     const res = await fetch(
-      `https://blog.xntric.me/api/v2/blog/${params.slug}`,
+      `https://blog.xntric.me/api/v2/blog/${slug}`,
       {
         next: { revalidate: 60 }, // ISR for metadata
       }
@@ -59,10 +60,10 @@ const schemaData = {
 
 export default async function BlogPage({ params }) {
   let data = null;
-
+  const {slug} = await params;
   try {
     const res = await fetch(
-      `https://blog.xntric.me/api/v2/blog/${params.slug}`
+      `https://blog.xntric.me/api/v2/blog/${slug}`
     );
 
     if (!res.ok) {
