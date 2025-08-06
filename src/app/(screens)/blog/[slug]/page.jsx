@@ -379,7 +379,7 @@ export default async function BlogPage({ params }) {
                         height={30}
                         className="rounded-full bg-center"
                       />
-                      <h4 className="text-xl  ">Shaikh Zubaer Aasim</h4>
+                      <h4 className="md:text-xl  ">Shaikh Zubaer Aasim</h4>
                     </div>
                     <div>
                       <Link target="_blank" href="https://www.linkedin.com/in/aasimzshaikh">
@@ -388,7 +388,7 @@ export default async function BlogPage({ params }) {
                     </div>
                   </div>
                   <div>
-                    <p className="text-justify">
+                    <p className="text-justify text-sm md:text-base">
                       With over two decades of driving marketing transformation
                       across the GCC, Aasim brings a rare blend of brand
                       leadership, digital innovation, and business foresight. He
