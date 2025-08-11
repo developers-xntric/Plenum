@@ -14,16 +14,24 @@ export function ContactForm({ confirmStatus, setConfirmStatus }) {
     const [successMessage, setSuccessMessage] = useState("")
     const [errorMessage, setErrorMessage] = useState("")
 
-    // Function to get traffic source information (UTM parameters or referrer)
-    const getTrafficSource = () => {
-        const urlParams = new URLSearchParams(window.location.search);
-        const utmSource = urlParams.get("utm_source") || document.referrer || "direct";
-        const isOrganic = utmSource.includes("google") || utmSource.includes("bing") || utmSource === "direct";
-        return {
-            source: utmSource,
-            isOrganic: isOrganic ? "true" : "false",
-        };
-    };
+const getTrafficSource = () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    let utmSource = urlParams.get("utm_source");
+
+    if (!utmSource) {
+        if (document.referrer.includes("google.")) utmSource = "google";
+        else if (document.referrer.includes("bing.")) utmSource = "bing";
+        else if (document.referrer.includes("facebook.")) utmSource = "facebook";
+        else if (document.referrer) utmSource = document.referrer;
+        else utmSource = "direct";
+    }
+
+    const isOrganic = utmSource.includes("google") || utmSource.includes("bing");
+    return { source: utmSource, isOrganic: isOrganic ? "true" : "false" };
+};
+
+
+
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -63,6 +71,7 @@ export function ContactForm({ confirmStatus, setConfirmStatus }) {
                     message: "",
                 })
                 setConfirmStatus(!confirmStatus)
+
                 // Send GA4 event on successful submission
                 const trafficSource = getTrafficSource();
                 window.gtag("event", "form_submission", {

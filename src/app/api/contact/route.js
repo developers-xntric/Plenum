@@ -16,7 +16,7 @@ export async function POST(req) {
 
         await transport.sendMail({
             from: process.env.SMTPEMAIL,
-            to: `info@plenum-tech.com, ${email}, farrukh.mushtaq@xntric.me, umarofficial0121@gmail.com`,
+            to: `info@plenum-tech.com, ${email}, farrukh.mushtaq@xntric.me`,
             subject: `CONTACT: Query from ${name}`,
             text: "You have a new contact inquiry.",
             html: `
