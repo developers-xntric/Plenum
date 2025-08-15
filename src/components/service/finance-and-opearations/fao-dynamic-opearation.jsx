@@ -41,9 +41,9 @@ export default function FaoDynamicOperation() {
 
     return (
         <section className="2xl:max-w-[1400px] w-[90%] mx-auto text-center px-4 py-14 md:pt-20 xl:pt-22 font-['Archivo']">
-            <h1 className="text-[30px] lg:text-[50px] max-w-2xl mx-auto leading-[34px] lg:leading-[55px] text-secondary font-medium mb-4">
+            <h2 className="text-[30px] lg:text-[50px] max-w-2xl mx-auto leading-[34px] lg:leading-[55px] text-secondary font-medium mb-4">
                 Dynamics 365 Finance and Operations modules
-            </h1>
+            </h2>
 
             <p className="text-secondary font-medium opacity-75 max-w-4xl mx-auto mb-8">
                 Enhance your business efficiency and adapt quickly to changing market conditions by optimizing your financial

@@ -52,7 +52,7 @@ function TermsTexts() {
 
             <div className="space-y-8">
                 <section>
-                    <h1 className="text-2xl font-bold italic mb-4">1. Purpose of the Site</h1>
+                    <h2 className="text-2xl font-bold italic mb-4">1. Purpose of the Site</h2>
                     <p className='text-[#000000] text-[18px] font-medium'>
                         The Site is provided by Plenum Tech to inform visitors about our company, services, products, and solutions.
                         The Site is intended for lawful, non-commercial use only, primarily by prospective clients, partners, and

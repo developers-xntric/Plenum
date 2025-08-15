@@ -55,7 +55,7 @@ function PrivacyPolicyTexts() {
 
             <div className="space-y-8">
                 <section>
-                    <h1 className="text-2xl font-bold italic mb-4">PLEASE READ THIS POLICY CAREFULLY</h1>
+                    <h2 className="text-2xl font-bold italic mb-4">PLEASE READ THIS POLICY CAREFULLY</h2>
                     <p className='text-[#000000] text-[18px] font-medium'>
                         By accessing or using our Website, you acknowledge that you have read, understood, and agreed to be bound by
                         this Privacy Policy and the Terms of Use. If you do not agree, please exit the Website and do not use our

@@ -6,7 +6,7 @@ export default function Section2({ heading, heading_className, image, case_studi
       {/* TEXT HEADING 1 */}
       <div className=" text-[30px] lg:text-[50px] leading-[40px] lg:leading-[55px] font-semibold font-['Archivo'] relative z-20 bg-[linear-gradient(to_right,_#101010,_#9b9999,_#101010,_#9b9999)] bg-clip-text text-transparent">
         <div className={`text-start pt-12 ${heading_className}`}>
-          <h1>{heading}</h1>
+          <h2>{heading}</h2>
         </div>
       </div>
       {/* Two Cols */}
