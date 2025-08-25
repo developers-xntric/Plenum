@@ -7,7 +7,7 @@ import { Blog } from "../../../../components/homepage/blog";
 export async function generateMetadata({ params }) {
   try {
     const res = await fetch(
-      `https://blog.xntric.me/api/v2/blog/${params.slug}`,
+      `http://69.62.125.12:8000/api/v2/blog/${params.slug}`,
       {
         next: { revalidate: 60 }, // ISR for metadata
       }
@@ -69,7 +69,7 @@ export default async function BlogPage({ params }) {
 
   try {
     const res = await fetch(
-      `https://blog.xntric.me/api/v2/blog/${params.slug}`
+      `http://69.62.125.12:8000/api/v2/blog/${params.slug}`
     );
 
     if (!res.ok) {
