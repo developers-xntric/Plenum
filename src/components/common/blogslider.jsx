@@ -34,7 +34,7 @@ const BlogSlider = () => {
   const fetchBlogs = async () => {
     try {
       const res = await axios.get(
-        "http://69.62.125.12:8000/api/v2/blogs"
+        "https://blog.xntric.me/api/v2/blogs"
       );
       setData(res.data.blogs);
     } catch (error) {

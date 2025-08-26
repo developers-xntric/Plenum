@@ -10,7 +10,7 @@ const Cards = () => {
   
   useEffect(() => {
     const getAllBlogs = async () => {
-      const res = await axios.get("http://69.62.125.12:8000/api/v2/blogs");
+      const res = await axios.get("https://blog.xntric.me/api/v2/blogs");
       setData(res.data.blogs);
     };
     getAllBlogs();
