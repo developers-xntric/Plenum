@@ -44,51 +44,50 @@ const getTrafficSource = () => {
         }
     };
 
-    const handleSubmit = async (e) => {
-        e.preventDefault()
+const handleSubmit = async (e) => {
+    e.preventDefault();
 
-        setLoading(true)
-        setErrorMessage("")
-        setSuccessMessage("")
+    setLoading(true);
+    setErrorMessage("");
+    setSuccessMessage("");
 
-        try {
-            const response = await fetch('/api/contact', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(formData),
-            })
+    try {
+        const response = await fetch("/api/contact", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(formData),
+        });
 
-            const data = await response.json()
+        const data = await response.json();
 
-            if (response.ok) {
-                setSuccessMessage("Your message has been sent successfully!")
-                setFormData({
-                    name: "",
-                    email: "",
-                    number: "",
-                    message: "",
-                })
-                setConfirmStatus(!confirmStatus)
+        if (response.ok) {
+            setSuccessMessage("Your message has been sent successfully!");
+            setFormData({ name: "", email: "", number: "", message: "" });
+            setConfirmStatus(!confirmStatus);
 
-                // Send GA4 event on successful submission
-                const trafficSource = getTrafficSource();
-                window.gtag("event", "form_submission", {
+            // 🔥 Fire GA4 event on success
+            const trafficSource = getTrafficSource();
+
+            if (typeof window !== "undefined" && window.gtag) {
+                window.gtag("event", "book_a_free_consultation", {
                     form_name: "contact_form",
+                    form_location: window.location.pathname,
                     traffic_source: trafficSource.source,
                     is_organic: trafficSource.isOrganic,
                 });
-            } else {
-                setErrorMessage(data.error || "Failed to send the message. Please try again later.")
+
             }
-        } catch (error) {
-            console.error("Error submitting form:", error)
-            setErrorMessage("An error occurred while submitting the form. Please try again later.")
-        } finally {
-            setLoading(false)
+        } else {
+            setErrorMessage(data.error || "Failed to send the message. Please try again later.");
         }
+    } catch (error) {
+        console.error("Error submitting form:", error);
+        setErrorMessage("An error occurred while submitting the form. Please try again later.");
+    } finally {
+        setLoading(false);
     }
+};
+
 
     return (
         <div className="bg-[#EFEFEF] rounded-[20px] p-5 sm:p-8">
