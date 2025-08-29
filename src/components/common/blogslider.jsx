@@ -109,14 +109,14 @@ const BlogSlider = () => {
               href={`${location.startsWith("/blog") ? "" : "/blog/"}${card.slug}`}
               className="splide__slide hover:opacity-75 transition-opacity ease-in duration-500 relative"
             >
-              <div className="absolute top-0 left-0 w-full h-full bg-black rounded-[20px] opacity-60" />
+              <div className="absolute top-0 left-0 w-full h-[100%] bg-black rounded-[20px] opacity-60" />
                 <Image
                   src={card.imageURL}
                   width={300}
                   height={300}
                   alt="blog"
                   priority
-                  className="w-full rounded-[20px]"
+                  className="w-full h-full rounded-[20px]"
                 />
               <div className="max-w-[80%] absolute bottom-6 left-6">
                 <span className="text-[#D4D4D8] text-[14px]">
