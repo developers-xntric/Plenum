@@ -2,7 +2,7 @@
 
 const nextConfig = {
   images: {
-    domains: ['res.cloudinary.com', 'thedailyguardian.com', 'thearabianpost.com','emiratesinside.net'],
+    domains: ['res.cloudinary.com', 'thedailyguardian.com', 'thearabianpost.com','emiratesinside.net', 'lps-me.com'],
   },
   reactStrictMode: true,
   compress: true,

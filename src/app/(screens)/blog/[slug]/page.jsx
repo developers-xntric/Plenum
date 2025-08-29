@@ -80,6 +80,7 @@ export default async function BlogPage({ params }) {
     }
 
     const { blog } = await res.json();
+    console.log(blog,"blog");
     data = blog;
   } catch (error) {
     console.error("Blog fetch error:", error);

@@ -36,7 +36,8 @@ const BlogSlider = () => {
       const res = await axios.get(
         "https://blog.xntric.me/api/v2/blogs"
       );
-      setData(res.data.blogs);
+      const fileterData = res.data.blogs.filter((item) => item.blogCategory.toLowerCase() === "plenum");
+      setData(fileterData);
     } catch (error) {
       console.error("Failed to fetch blogs:", error);
     }
