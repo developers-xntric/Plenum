@@ -55,12 +55,14 @@ const cardData = [
 ];
 
 export const metadata = {
-  title: 'AI, ERP & Cloud Solutions in the Middle East | Plenum',
-  description: 'We deliver AI, ERP, and cloud solutions across the Middle East and UAE. Streamline operations and scale with trusted enterprise tech from Plenum.',
+  title: "AI, ERP & Cloud Solutions in the Middle East | Plenum",
+  description:
+    "LPS is a New-Age 360° full-impact marketing agency, building identities, communications & digital experiences for modern brands with measurable impact.",
   alternates: {
-    canonical: 'https://plenum-tech.com',
+    canonical: "https://lps-me.com/",
   },
 };
+
 const schemaData ={
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
