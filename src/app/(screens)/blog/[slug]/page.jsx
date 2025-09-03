@@ -80,7 +80,7 @@ export default async function BlogPage({ params }) {
     }
 
     const { blog } = await res.json();
-    console.log(blog,"blog");
+    console.log(blog, "blog");
     data = blog;
   } catch (error) {
     console.error("Blog fetch error:", error);
@@ -298,9 +298,9 @@ export default async function BlogPage({ params }) {
                     ))}
                     {subsection.lists?.map((list, listIndex) => (
                       <div key={listIndex}>
-                        <h3 className="text-xl lg:text-2xl font-bold mb-2">
-                          {list.listTitle}
-                        </h3>
+                        <h3 className="text-xl lg:text-2xl font-bold mb-2 blog-content" dangerouslySetInnerHTML={{ __html: list.listTitle }} />
+
+                       
                         {list.listDescription && (
                           <div
                             className="text-base lg:text-lg text-[#6D6E76] font-medium mb-4 blog-content"
@@ -316,7 +316,7 @@ export default async function BlogPage({ params }) {
                                 key={itemIndex}
                                 className="text-[16px] lg:text-[18px] font-medium leading-[35px] lg:leading-[42px]"
                               >
-                                {item.title}
+                                <div className="blog-content" dangerouslySetInnerHTML={{ __html: item.title }}/>
                                 {item.description && (
                                   <div
                                     className="text-base text-[#6D6E76] font-medium mt-1 blog-content"
@@ -385,7 +385,7 @@ export default async function BlogPage({ params }) {
                     <div>
                       <div className="w-fit h-fit bg-black rounded-[8px] p-1 ps-1">
                         <Link target="_blank" href="https://www.linkedin.com/in/aasimzshaikh">
-                          <LinkedinIcon color="white" size={24}/>
+                          <LinkedinIcon color="white" size={24} />
                         </Link>
                       </div>
                     </div>
