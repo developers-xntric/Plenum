@@ -1,44 +1,35 @@
 /** @type {import('next').NextConfig} */
 
-
 export const oldBlogUrls = [
   "https://m.plenum-tech.com/",
   "https://m.plenum-tech.com/ms-dynamics-business-central-new/",
   "https://m.plenum-tech.com/plenum-erp-freebook-bc-fo/",
 ];
 
-
 const nextConfig = {
   images: {
-    domains: ['res.cloudinary.com', 'thedailyguardian.com', 'thearabianpost.com','emiratesinside.net', 'lps-me.com'],
+    domains: [
+      "res.cloudinary.com",
+      "thedailyguardian.com",
+      "thearabianpost.com",
+      "emiratesinside.net",
+      "lps-me.com",
+    ],
   },
   reactStrictMode: true,
   compress: true,
   async headers() {
     return [
       {
-        source: '/(.*)',
+        source: "/(.*)",
         headers: [
           {
-              key: "Cache-Control",
+            key: "Cache-Control",
             value: "public, max-age=31536000, immutable",
           },
         ],
       },
     ];
-  },
-   async redirects() {
-    const rules = oldBlogUrls.map((full) => {
-      const slug = full
-        .replace('https://m.plenum-tech.com/', '')
-        .replace(/\/$/, ''); 
-      return {
-        source: slug ? `/${slug}` : '/', 
-        destination: 'https://plenum-tech.com/', 
-        permanent: true,
-      };
-    });
-    return rules;
   },
 };
 
