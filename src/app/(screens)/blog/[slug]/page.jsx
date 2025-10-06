@@ -22,12 +22,12 @@ export async function generateMetadata({ params }) {
         blog.description ||
         "Explore insightful blogs from Plenum Tech on AI, Cloud, and ERP solutions.",
       alternates: {
-        canonical: `https://www.plenum-tech.com/blog/${blog.slug}`,
+        canonical: `https://plenum-tech.com/blog/${blog.slug}`,
       },
       openGraph: {
         title: blog.metaTitle || blog.title,
         description: blog.metaDescription || blog.description,
-        url: `https://www.plenum-tech.com/blog/${blog.slug}`,
+        url: `https://plenum-tech.com/blog/${blog.slug}`,
         images: blog.bannerImageURL ? [{ url: blog.bannerImageURL }] : [],
       },
     };
