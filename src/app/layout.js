@@ -21,6 +21,8 @@ export default function RootLayout({ children }) {
         <link rel="alternate" href="https://plenum-tech.com/" hrefLang="en" />
 
         <link rel="alternate" href="https://plenum-tech.com/" hrefLang="x-default" />
+        {/* aHREFS */}
+        <Script src="https://analytics.ahrefs.com/analytics.js" data-key="Luw5xUd6d9B9txp7yUTixw" async></Script>
         {/* Google Tag Manager */}
         <Script id="gtm-init" strategy="afterInteractive">
           {`
