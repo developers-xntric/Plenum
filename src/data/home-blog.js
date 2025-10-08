@@ -9,7 +9,7 @@ const cardData = [
     {
         img: "/blog/blog_2.jpg",
         date: "May 26, 2025",
-        para: "Dynamics vs NetSuite: Comparing Oracle and Microsoft ERP Solutions",
+        para: "Dynamics vs NetSuite: Comparing Microsoft and Oracle ERP Solutions",
         id: 2,
         link: '/blog/dynamics-netsuite'
     },
