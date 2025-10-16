@@ -35,6 +35,7 @@ export default function RootLayout({ children }) {
             })(window,document,'script','dataLayer','GTM-52FBQGQC');
           `}
         </Script>
+        
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-V6RHZ3XPLZ"
           strategy="afterInteractive"
