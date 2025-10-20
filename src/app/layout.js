@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-          {/* AHREFS */}
+        {/* AHREFS */}
         <Script src="https://analytics.ahrefs.com/analytics.js" data-key="Luw5xUd6d9B9txp7yUTixw" async></Script>
         <link rel="alternate" href="https://plenum-tech.com/" hrefLang="en-sa" />
 
@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
 
         <link rel="alternate" href="https://plenum-tech.com/" hrefLang="x-default" />
 
-      
+
         {/* Google Tag Manager */}
         <Script id="gtm-init" strategy="afterInteractive">
           {`
@@ -35,19 +35,14 @@ export default function RootLayout({ children }) {
             })(window,document,'script','dataLayer','GTM-52FBQGQC');
           `}
         </Script>
-        
+
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-V6RHZ3XPLZ"
           strategy="afterInteractive"
         />
         <Script id="gtag-init" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-V6RHZ3XPLZ');
-          `}
         </Script>
+
         {/* End Google Tag Manager */}
       </head>
       <body
@@ -55,6 +50,7 @@ export default function RootLayout({ children }) {
         cz-shortcut-listen="true"
         bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWllZ2..."
         __processed_351b6b1a-623f-4e5a-b6be-40cadde6a094__='true'
+        bis_skin_checked="1"
       >
         {/* Google Tag Manager (noscript) */}
         <noscript>
