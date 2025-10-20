@@ -3,6 +3,7 @@ import "./globals.css";
 import Footer from "../components/layout/footer";
 import MobileNav from "../components/layout/mobile-nav";
 import Script from "next/script";
+import NavigationTracker from "../components/NavigationTracker";
 
 export const metadata = {
   title: "Smart ERP Solutions in Middle East",
@@ -70,6 +71,7 @@ export default function RootLayout({ children }) {
 
         <Navbar />
         <MobileNav />
+        <NavigationTracker />
         {children}
         <Footer />
       </body>
