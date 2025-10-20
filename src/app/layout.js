@@ -3,7 +3,7 @@ import "./globals.css";
 import Footer from "../components/layout/footer";
 import MobileNav from "../components/layout/mobile-nav";
 import Script from "next/script";
-import NavigationTracker from "../components/NavigationTracker";
+import NavigationTracker from "@/components/NavigationTracker";
 
 export const metadata = {
   title: "Smart ERP Solutions in Middle East",
@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-          {/* AHREFS */}
+        {/* AHREFS */}
         <Script src="https://analytics.ahrefs.com/analytics.js" data-key="Luw5xUd6d9B9txp7yUTixw" async></Script>
         <link rel="alternate" href="https://plenum-tech.com/" hrefLang="en-sa" />
 
@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
 
         <link rel="alternate" href="https://plenum-tech.com/" hrefLang="x-default" />
 
-      
+
         {/* Google Tag Manager */}
         <Script id="gtm-init" strategy="afterInteractive">
           {`
@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
             })(window,document,'script','dataLayer','GTM-52FBQGQC');
           `}
         </Script>
-        
+
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-V6RHZ3XPLZ"
           strategy="afterInteractive"
