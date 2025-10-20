@@ -1,7 +1,7 @@
 "use client";
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
-import { pushPathToSession } from "../../lib/trackNavigation";
+import { pushPathToSession } from "@/lib/trackNavigation";
 
 /**
  * We can Mount this once (e.g., in app/layout.js). It stores every pathname change in sessionStorage.
@@ -33,5 +33,5 @@ export default function NavigationTracker() {
         }
     }, [pathname]);
 
-    return null; 
+    return null;
 }
