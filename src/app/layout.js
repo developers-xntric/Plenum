@@ -4,7 +4,6 @@ import Footer from "../components/layout/footer";
 import MobileNav from "../components/layout/mobile-nav";
 import Script from "next/script";
 import NavigationTracker from "@/components/NavigationTracker";
-import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata = {
   title: "Smart ERP Solutions in Middle East",
@@ -54,23 +53,15 @@ export default function RootLayout({ children }) {
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
-            // Initialize GA4 with your Measurement ID
             gtag('config', 'G-V6RHZ3XPLZ', {
               debug_mode: process.env.NODE_ENV === 'development',
               send_page_view: true
             });
           `}
         </Script>
-
-        <GoogleAnalytics gaId="G-V6RHZ3XPLZ" />
       </head>
 
-      <body
-        className="antialiased"
-        cz-shortcut-listen="true"
-        bis_skin_checked="1"
-      >
-        {/* Google Tag Manager (noscript) */}
+      <body className="antialiased">
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-52FBQGQC"
@@ -79,7 +70,6 @@ export default function RootLayout({ children }) {
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
-        {/* End Google Tag Manager (noscript) */}
 
         <Navbar />
         <MobileNav />
@@ -97,9 +87,6 @@ export default function RootLayout({ children }) {
                   event_label: 'Plenum GA4 Custom Event',
                   value: 1
                 });
-                console.log('✅ GA4 Event Fired: Plenum_Page_Load | GA4 ID: G-V6RHZ3XPLZ');
-              } else {
-                console.warn('⚠️ GA4 not initialized yet.');
               }
             });
           `}
@@ -120,9 +107,6 @@ export default function RootLayout({ children }) {
                     event_label: '50% Scroll Depth',
                     value: 1
                   });
-                  console.log('✅ GA4 Event Fired: Scroll_Depth_50');
-                } else {
-                  console.warn('⚠️ GA4 not initialized for scroll depth.');
                 }
               }
             });
