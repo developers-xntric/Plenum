@@ -108,7 +108,8 @@ export function ContactForm({ confirmStatus, setConfirmStatus }) {
                 // include any server-returned id/info if useful
                 lead_id: data?.id || undefined,
             };
-
+            console.log(payload);
+            
             // ---------- Push to dataLayer (GTM friendly) ----------
             try {
                 window.dataLayer = window.dataLayer || [];
