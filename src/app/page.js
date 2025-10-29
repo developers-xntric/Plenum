@@ -67,7 +67,16 @@ const schemaData ={
   "name": "Plenum Tech Solutions",
   "url": "https://plenum-tech.com/",
   "logo": "https://plenum-tech.com/casestudy/Group8.png", 
-  "image": "https://plenum-tech.com/product/m_hero_mobile.svg",
+  "image": [
+    {
+      "@type": "ImageObject",
+      "url": "https://plenum-tech.com/product/m_hero_mobile.svg",
+      "width": 1200,
+      "height": 630,
+      "caption": "Plenum Tech Solutions - AI, ERP & Cloud Experts"
+    },
+  ],
+
   "description": "Plenum Tech Solutions offers cutting-edge technology solutions to help businesses optimize their processes and grow.",
   "address": {
     "@type": "PostalAddress",
@@ -79,17 +88,16 @@ const schemaData ={
   },
   "contactPoint": {
     "@type": "ContactPoint",
-    "telephone": "00971 054 308 9222",
-    "contactType": "Customer Service",
-    "areaServed": "UAE",
-    "availableLanguage": "English"
+    "telephone": "+971 54 30 89222",
+    "contactType": "sales",
+    "areaServed": "AE",
+    "availableLanguage": "en"
   },
   "sameAs": [
-    "https://www.facebook.com/PlenumTech",
-    "https://twitter.com/PlenumTech",
-    "https://www.linkedin.com/company/plenum-tech-solutions"
+    "https://www.facebook.com/people/Plenum-Technologies/",
+    "https://www.instagram.com/plenum.technologies/",
   ],
-  "aggregateRating": {
+    "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "4.5",
     "reviewCount": "30",

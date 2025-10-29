@@ -20,27 +20,47 @@ export const metadata = {
 };
 
 const schemaData = {
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "ERP Consulting",
-  "description": "Expert ERP consulting services including implementation, migration, and optimization tailored for your business.",
-  "provider": {
-    "@type": "Organization",
-    "name": "Plenum Tech Solutions",
-    "url": "https://plenum-tech.com"
-  },
-  "serviceType": "ERP Consulting",
-  "areaServed": {
-    "@type": "Place",
-    "name": "Global"
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.8",
-    "reviewCount": "53",
-    "bestRating": "5",
-    "worstRating": "1"
-  }
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "ERP Consulting",
+    "description": "Expert ERP consulting services including implementation, migration, and optimization tailored for your business.",
+    "provider": {
+        "@type": "Organization",
+        "name": "Plenum Tech Solutions",
+        "url": "https://plenum-tech.com",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+971 54 308 9222",
+            "contactType": "Sales",
+            "areaServed": "AE",
+            "availableLanguage": "en"
+        },
+        "sameAs": [
+            "https://www.facebook.com/people/Plenum-Technologies/",
+            "https://www.instagram.com/plenum.technologies/"
+        ]
+    },
+    "serviceType": "ERP Consulting",
+    "areaServed": {
+        "@type": "Place",
+        "name": "Global"
+    },
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "53",
+        "bestRating": "5",
+        "worstRating": "1"
+    },
+    "image": [
+        {
+            "@type": "ImageObject",
+            "url": "https://plenum-tech.com/service/ERPC/ERPC-Hero.svg",
+            "width": 1200,
+            "height": 630,
+            "caption": "ERP Consulting and Implementation in Dubai and Middle East"
+        },
+    ],
 }
 
 

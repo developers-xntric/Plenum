@@ -16,15 +16,20 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         {/* AHREFS */}
-        <Script src="https://analytics.ahrefs.com/analytics.js" data-key="Luw5xUd6d9B9txp7yUTixw" async></Script>
+        <Script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="MswbyUt+iwC9fs+QwP7lGw"
+          async
+        ></Script>
+
         <link rel="alternate" href="https://plenum-tech.com/" hrefLang="en-sa" />
-
         <link rel="alternate" href="https://plenum-tech.com/" hrefLang="en-ae" />
-
         <link rel="alternate" href="https://plenum-tech.com/" hrefLang="en" />
-
-        <link rel="alternate" href="https://plenum-tech.com/" hrefLang="x-default" />
-
+        <link
+          rel="alternate"
+          href="https://plenum-tech.com/"
+          hrefLang="x-default"
+        />
 
         {/* Google Tag Manager */}
         <Script id="gtm-init" strategy="afterInteractive">
@@ -37,6 +42,7 @@ export default function RootLayout({ children }) {
           `}
         </Script>
 
+        {/* Google Analytics 4 (gtag.js) */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-V6RHZ3XPLZ"
           strategy="afterInteractive"
@@ -46,19 +52,16 @@ export default function RootLayout({ children }) {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-V6RHZ3XPLZ');
+
+            gtag('config', 'G-V6RHZ3XPLZ', {
+              debug_mode: process.env.NODE_ENV === 'development',
+              send_page_view: true
+            });
           `}
         </Script>
-        {/* End Google Tag Manager */}
       </head>
-      <body
-        className="antialiased"
-        cz-shortcut-listen="true"
-        bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWllZ2..."
-        __processed_351b6b1a-623f-4e5a-b6be-40cadde6a094__='true'
-        bis_skin_checked="1"
-      >
-        {/* Google Tag Manager (noscript) */}
+
+      <body className="antialiased">
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-52FBQGQC"
@@ -67,13 +70,48 @@ export default function RootLayout({ children }) {
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
-        {/* End Google Tag Manager (noscript) */}
 
         <Navbar />
         <MobileNav />
         <NavigationTracker />
         {children}
         <Footer />
+
+        {/* Custom GA4 Event for Page Load */}
+        <Script id="plenum-ga4-event" strategy="afterInteractive">
+          {`
+            window.addEventListener('load', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'Plenum_Page_Load', {
+                  event_category: 'engagement',
+                  event_label: 'Plenum GA4 Custom Event',
+                  value: 1
+                });
+              }
+            });
+          `}
+        </Script>
+
+        {/* Scroll Depth Tracking Event */}
+        <Script id="plenum-scroll-depth" strategy="afterInteractive">
+          {`
+            window.addEventListener('scroll', () => {
+              const scrollPercent = Math.round(
+                (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100
+              );
+              if (scrollPercent >= 50 && !window.scrollEventFired) {
+                window.scrollEventFired = true;
+                if (typeof gtag === 'function') {
+                  gtag('event', 'Scroll_Depth_50', {
+                    event_category: 'engagement',
+                    event_label: '50% Scroll Depth',
+                    value: 1
+                  });
+                }
+              }
+            });
+          `}
+        </Script>
       </body>
     </html>
   );
