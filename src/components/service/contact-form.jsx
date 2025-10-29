@@ -51,12 +51,31 @@ export function ContactForm({ confirmStatus, setConfirmStatus }) {
         setErrorMessage("");
         setSuccessMessage("");
 
+        // Get traffic source and first interaction data
+        const trafficSource = getTrafficSource();
+        let navPath = [];
         try {
-            // send form to your API
+            navPath = JSON.parse(sessionStorage.getItem("navigationPath") || "[]");
+            if (!Array.isArray(navPath)) navPath = [];
+        } catch (err) {
+            navPath = [];
+        }
+        const firstInteraction = navPath[0] || window.location.pathname || "unknown";
+        const pathString = navPath.length ? navPath.join(" > ") : window.location.pathname || "";
+
+        try {
+            // Send form to your API including traffic data
             const response = await fetch("/api/contact", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(formData),
+                body: JSON.stringify({
+                    ...formData,
+                    traffic_source: trafficSource.source,
+                    first_interaction: firstInteraction,
+                    navigation_path: pathString,
+                    referrer: document.referrer || "direct",
+                    is_organic: trafficSource.isOrganic,
+                }),
             });
 
             // try to parse JSON safely
@@ -78,80 +97,6 @@ export function ContactForm({ confirmStatus, setConfirmStatus }) {
             setSuccessMessage("Your message has been sent successfully!");
             setFormData({ name: "", email: "", number: "", message: "" });
             setConfirmStatus(!confirmStatus);
-
-            // ---------- Analytics: build payload ----------
-            // traffic source detection (reuse your existing helper)
-            const trafficSource = getTrafficSource ? getTrafficSource() : { source: "direct", isOrganic: "false" };
-
-            // navigation path from sessionStorage
-            let navPath = [];
-            try {
-                navPath = JSON.parse(sessionStorage.getItem("navigationPath") || "[]");
-                if (!Array.isArray(navPath)) navPath = [];
-            } catch (err) {
-                navPath = [];
-            }
-            const firstInteraction = navPath[0] || window.location.pathname || "unknown";
-            const pathString = navPath.length ? navPath.join(" > ") : window.location.pathname || "";
-
-            // build payload
-            const payload = {
-                event: "lead_submit", // GTM event name
-                event_category: "engagement",
-                event_label: "contact_form",
-                navigation_path: pathString,
-                first_interaction: firstInteraction,
-                referrer: document.referrer || "direct",
-                traffic_source: trafficSource.source || "direct",
-                is_organic: trafficSource.isOrganic || "false",
-                form_id: "contact_form",
-                // include any server-returned id/info if useful
-                lead_id: data?.id || undefined,
-            };
-            console.log(payload);
-            
-            // ---------- Push to dataLayer (GTM friendly) ----------
-            try {
-                window.dataLayer = window.dataLayer || [];
-                window.dataLayer.push(payload);
-                console.info("[analytics] dataLayer.push:", payload);
-            } catch (err) {
-                console.warn("[analytics] dataLayer push failed", err);
-            }
-
-            // ---------- gtag fallback / direct (GA4) ----------
-            try {
-                if (typeof window.gtag === "function") {
-                    window.gtag("event", "lead_submit", {
-                        navigation_path: pathString,
-                        first_interaction: firstInteraction,
-                        referrer: document.referrer || "direct",
-                        traffic_source: trafficSource.source,
-                        is_organic: trafficSource.isOrganic,
-                        form_id: "contact_form",
-                    });
-                    console.info("[analytics] gtag sent: lead_submit");
-                } else {
-                    // queue if gtag not ready
-                    window.__gtag_queue = window.__gtag_queue || [];
-                    window.__gtag_queue.push({
-                        name: "lead_submit",
-                        params: {
-                            navigation_path: pathString,
-                            first_interaction: firstInteraction,
-                            referrer: document.referrer || "direct",
-                            traffic_source: trafficSource.source,
-                            is_organic: trafficSource.isOrganic,
-                            form_id: "contact_form",
-                        },
-                    });
-                    console.info("[analytics] gtag not ready, event queued");
-                }
-            } catch (err) {
-                console.warn("[analytics] gtag error", err);
-            }
-
-            // Optionally: you can show a success UI, redirect or clear states here
         } catch (error) {
             console.error("Error submitting form:", error);
             setErrorMessage("An error occurred while submitting the form. Please try again later.");
@@ -159,6 +104,7 @@ export function ContactForm({ confirmStatus, setConfirmStatus }) {
             setLoading(false);
         }
     };
+
 
 
     return (

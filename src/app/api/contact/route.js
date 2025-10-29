@@ -52,7 +52,7 @@ export async function POST(req) {
 
         // 2) Log to Google Sheet  
         try {
-            await fetch("https://script.google.com/macros/s/AKfycbwjepj9tjLLQbqSmif4dLke41gYoRxH7gRUOHcnTSAV3soDFyRL2o5PPlQbO66HRW6rmQ/exec", {
+            await fetch("https://script.google.com/macros/s/AKfycbxl5VYfgUK-2PqJuF5CWZCJDkHs1fdEwsIJApCHDoN_JZV3Uj9HpZoq6kUEV009KnqT9g/exec", {
                 method: "POST",
                 headers: { "Content-Type": "application/x-www-form-urlencoded" },
                 body: new URLSearchParams({
