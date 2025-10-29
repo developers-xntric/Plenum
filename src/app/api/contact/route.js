@@ -12,7 +12,17 @@ const transport = nodemailer.createTransport({
 
 export async function POST(req) {
     try {
-        const { name, email, number, message } = await req.json();
+        const {
+            name,
+            email,
+            number,
+            message,
+            traffic_source,
+            first_interaction,
+            navigation_path,
+            referrer,
+            is_organic
+        } = await req.json();  // Get additional data from the frontend
 
         // 1) Send email  
         await transport.sendMail({
@@ -21,19 +31,23 @@ export async function POST(req) {
             subject: `CONTACT: Query from ${name}`,
             text: "You have a new contact inquiry.",
             html: `
-        <div style="background:#f3f4f6; padding:20px;">
-          <div style="max-width:600px; margin:auto; background:white; padding:20px; border-radius:10px; box-shadow:0 4px 6px rgba(0,0,0,0.1);">
-            <h2 style="color:#ff6035; text-align:center;">New Inquiry Received</h2>
-            <p><strong>Name:</strong> ${name}</p>
-            <p><strong>Email:</strong> <a href="mailto:${email}" style="color:#ff6035;">${email}</a></p>
-            <p><strong>Number:</strong> ${number}</p>
-            <p><strong>Message:</strong> ${message}</p>
-            <div style="text-align:center; margin-top:20px;">
-              <a href="mailto:${email}" style="background:#ff6035; color:white; padding:10px 20px; border-radius:5px; text-decoration:none; font-weight:bold;">Reply Now</a>
+            <div style="background:#f3f4f6; padding:20px;">
+              <div style="max-width:600px; margin:auto; background:white; padding:20px; border-radius:10px; box-shadow:0 4px 6px rgba(0,0,0,0.1);">
+                <h2 style="color:#ff6035; text-align:center;">New Inquiry Received</h2>
+                <p><strong>Name:</strong> ${name}</p>
+                <p><strong>Email:</strong> <a href="mailto:${email}" style="color:#ff6035;">${email}</a></p>
+                <p><strong>Number:</strong> ${number}</p>
+                <p><strong>Message:</strong> ${message}</p>
+                <p><strong>Traffic Source:</strong> ${traffic_source}</p>
+                <p><strong>First Interaction:</strong> ${first_interaction}</p>
+                <p><strong>Referrer:</strong> ${referrer}</p>
+                <p><strong>Is Organic:</strong> ${is_organic}</p>
+                <div style="text-align:center; margin-top:20px;">
+                  <a href="mailto:${email}" style="background:#ff6035; color:white; padding:10px 20px; border-radius:5px; text-decoration:none; font-weight:bold;">Reply Now</a>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      `,
+            `,
         });
 
         // 2) Log to Google Sheet  
@@ -45,7 +59,12 @@ export async function POST(req) {
                     name,
                     email,
                     number,
-                    message
+                    message,
+                    traffic_source,
+                    first_interaction,
+                    navigation_path,
+                    referrer,
+                    is_organic,
                 })
             });
 
