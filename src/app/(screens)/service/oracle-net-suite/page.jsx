@@ -20,27 +20,47 @@ const Testimonials = dynamic(() => import('@/components/homepage/testimonial'))
 const ArticleSlider = dynamic(() => import('@/components/common/article-slider'))
 
 const schemaData = {
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Oracle NetSuite",
-  "description": "Oracle NetSuite ERP solutions for business growth and efficiency.",
-  "provider": {
-    "@type": "Organization",
-    "name": "Plenum Tech Solutions",
-    "url": "https://plenum-tech.com"
-  },
-  "serviceType": "ERP Consulting",
-  "areaServed": {
-    "@type": "Place",
-    "name": "Global"
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.8",
-    "reviewCount": "53",
-    "bestRating": "5",
-    "worstRating": "1"
-  }
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Oracle NetSuite",
+    "description": "Oracle NetSuite ERP solutions for business growth and efficiency.",
+    "provider": {
+        "@type": "Organization",
+        "name": "Plenum Tech Solutions",
+        "url": "https://plenum-tech.com",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+971 54 308 9222",
+            "contactType": "Sales",
+            "areaServed": "AE",
+            "availableLanguage": "en"
+        },
+        "sameAs": [
+            "https://www.facebook.com/people/Plenum-Technologies/",
+            "https://www.instagram.com/plenum.technologies/"
+        ]
+    },
+    "serviceType": "ERP Consulting",
+    "areaServed": {
+        "@type": "Place",
+        "name": "Global"
+    },
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "53",
+        "bestRating": "5",
+        "worstRating": "1"
+    },
+    "image": [
+        {
+            "@type": "ImageObject",
+            "url": "https://plenum-tech.com/service/ONS/banner.svg",
+            "width": 1200,
+            "height": 630,
+            "caption": "Oracle NetSuite:Powerful ERP for Growth"
+        },
+    ],
 }
 
 

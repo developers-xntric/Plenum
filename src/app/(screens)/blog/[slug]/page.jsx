@@ -128,6 +128,33 @@ export default async function BlogPage({ params }) {
         }}
       />
 
+      {/* Blog Image Schema for SEO */}
+      {data.bannerImageURL && (
+        <Script
+          id="schema-image"
+          type="application/ld+json"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "ImageObject",
+              url: data.bannerImageURL,
+              name: data.title,
+              caption: data.title,
+              contentUrl: data.bannerImageURL,
+              thumbnailUrl: data.thumbnailURL || data.bannerImageURL,
+              description:
+                data.metaDescription ||
+                data.description ||
+                `Image about ${data.title} from Plenum Tech.`,
+              uploadDate: data.publishedDate || "2025-08-04T12:00:00+00:00",
+             
+            }),
+          }}
+        />
+      )}
+
+
       <style>{`
         .blog-content a {
           color: #FF6035;

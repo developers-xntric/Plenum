@@ -33,7 +33,18 @@ const schemaData = {
     "provider": {
         "@type": "Organization",
         "name": "Plenum Tech Solutions",
-        "url": "https://plenum-tech.com"
+        "url": "https://plenum-tech.com",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+971 54 308 9222",
+            "contactType": "Sales",
+            "areaServed": "AE",
+            "availableLanguage": "en"
+        },
+        "sameAs": [
+            "https://www.facebook.com/people/Plenum-Technologies/",
+            "https://www.instagram.com/plenum.technologies/"
+        ]
     },
     "serviceType": "ERP Consulting",
     "areaServed": {
@@ -46,7 +57,16 @@ const schemaData = {
         "reviewCount": "53",
         "bestRating": "5",
         "worstRating": "1"
-    }
+    },
+    "image": [
+        {
+            "@type": "ImageObject",
+            "url": "https://plenum-tech.com/service/Oracle/oracle.svg",
+            "width": 1200,
+            "height": 630,
+            "caption": "Oracle ERP Solutions Empowered by Oracle Cloud ERP"
+        },
+    ],
 }
 
 const Oracle = () => {
@@ -57,7 +77,7 @@ const Oracle = () => {
                 type="application/ld+json"
                 strategy="afterInteractive"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
-            />            
+            />
             <div className='mt-10'>
                 <Service_Inner_Hero
                     heading={"Oracle ERP Solutions Empowered by Oracle Cloud ERP"}

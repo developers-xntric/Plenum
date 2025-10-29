@@ -28,7 +28,18 @@ const schemaData = {
     "provider": {
         "@type": "Organization",
         "name": "Plenum Tech Solutions",
-        "url": "https://plenum-tech.com"
+        "url": "https://plenum-tech.com",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+971 54 308 9222",
+            "contactType": "Sales",
+            "areaServed": "AE",
+            "availableLanguage": "en"
+        },
+        "sameAs": [
+            "https://www.facebook.com/people/Plenum-Technologies/",
+            "https://www.instagram.com/plenum.technologies/"
+        ]
     },
     "serviceType": "ERP Consulting",
     "areaServed": {
@@ -41,7 +52,16 @@ const schemaData = {
         "reviewCount": "53",
         "bestRating": "5",
         "worstRating": "1"
-    }
+    },
+    "image": [
+        {
+            "@type": "ImageObject",
+            "url": "https://plenum-tech.com/service/FAO/FAO_hero.svg",
+            "width": 1200,
+            "height": 630,
+            "caption": "Microsoft Dynamics 365 Finance and Operations"
+        },
+    ],
 }
 
 const FinanceOpearations = () => {
