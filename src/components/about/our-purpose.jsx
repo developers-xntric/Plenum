@@ -8,20 +8,20 @@ function OurPurpose() {
                 <div className={`flex flex-col lg:flex-row gap-8 md:gap-12 lg:gap-12 xl:gap-20  `}>
                     <div className="w-full lg:w-1/2">
                         <Image
-                            src={"/about/our-purpose.svg"}
+                            src={"/about/our-purpose-2.png"}
                             alt="Team photo"
                             width={2000}
                             height={2000}
                             quality={100}
-                            className="w-full h-full md:block hidden"
+                            className="w-full h-full md:block hidden rounded-[12px]"
                         />
                         <Image
-                            src={"/about/our-porpose-mob.png"}
+                            src={"/about/our-purpose-2.png"}
                             alt="Team photo"
                             width={2000}
                             height={2000}
                             quality={100}
-                            className="w-full h-full md:hidden block"
+                            className="w-full h-full md:hidden block rounded-[8px]"
                         />
 
                     </div>

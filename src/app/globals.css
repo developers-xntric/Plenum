@@ -50,6 +50,17 @@
   }
 }
 
+/* ABout Page  */
+.people-image {
+  transform: scale(1.02) !important;
+  transition: transform 0.5s ease;
+}
+
+.group:hover .people-image {
+  transform: scale(1.05) !important; 
+}
+
+
 /* Main carousel (unchanged) */
 .embla {
   overflow: hidden;

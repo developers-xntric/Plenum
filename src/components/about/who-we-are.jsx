@@ -6,7 +6,7 @@ function WhoWeAre() {
     return (
         <section className='relative font-["Archivo"] bg-[#EFEFEF]'>
             <div className={` `}>
-                <div className={`flex 2xl:items-center lg:flex-row flex-col justify-between`}>
+                <div className={`flex lg:items-center lg:flex-row flex-col justify-between`}>
                     <div className='space-y-7'>
                         <div className="2xl:max-w-[1440px] lg:w-[82%] max-w-[90%] xl:w-[80%] 2xl:w-[55%] mx-auto flex items-center lg:items-start flex-col md:flex-col py-12">
 
@@ -19,7 +19,8 @@ function WhoWeAre() {
 
                     </div>
                     <div className=' flex justify-center relative items-center lg:w-[2100px] 2xl:w-[70%] '>
-                        <Image src={"/about/group_1.svg"} alt='img' width={2000} height={2000} className='w-full  md:h-full' />
+                        <Image src={"/about/who-we-are-2.jpg"} alt='img' width={2000} height={2000} className='w-full  md:h-full' />
+                        {/* <Image src={"/about/Image1.jpg"} alt='img' width={2500} height={2500} className='w-full  md:h-full' /> */}
 
                     </div>
                 </div>

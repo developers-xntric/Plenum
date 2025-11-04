@@ -15,9 +15,9 @@ export default function OurPeopleSection() {
     },
     {
       id: 3,
-      image: "/about/P4.png",
-      name: "Sammas Sulaiman",
-      postion: "Senior Sales Executive"
+      image: "/about/leader-2.svg",
+      name: "Aasim Shaikh",
+      postion: "Group CEO"
     },
     {
       id: 4,
@@ -38,20 +38,19 @@ export default function OurPeopleSection() {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-3 gap-8 w-[90%] mx-auto 2xl:max-w-[1440px]">
-        {teamMembers.map((member) => (
+        {teamMembers.map((member,index) => (
           <div
             key={member.id}
-            className="group b rounded-lg overflow-hidden transition-all duration-300 "
+            className="group  rounded-lg overflow-hidden transition-all duration-300 "
           >
-            <div className="relative aspect-[3/4] w-full overflow-hidden">
+            <div className="relative aspect-[3/4] w-full overflow-hidden scale-95">
+            <div className="w-full h-2 bg-white"></div>
               <Image
                 src={member.image || "/placeholder.svg"}
                 alt={member.name}
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
-                className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                priority={member.id <= 2}
-                quality={90}
+                className="object-cover object-center transition-transform duration-500 people-image"
               />
             </div>
             <div className="flex mt-4 justify-start md:text-left text-center flex-col gap-1 font-['Archivo'] px-4 pb-4 md:pb-0">
