@@ -1,51 +1,46 @@
-'use client';
-import React, { useRef, useEffect } from "react";
+"use client";
+import React, { useEffect, useState, useRef } from "react";
+
 
 export const AnimatedBorder = ({
   children,
   className = "",
 }) => {
+  const [position, setPosition] = useState({ x: 0, y: 0 });
   const containerRef = useRef(null);
   const animationFrameRef = useRef();
-  const positionRef = useRef({ x: 0, y: 0 });
   const directionRef = useRef({ x: 1, y: 1 });
   const speedRef = useRef({ x: 2, y: 1.5 });
-  const lastUpdateRef = useRef(performance.now());
 
   useEffect(() => {
     const container = containerRef.current;
     if (!container) return;
 
-    const animate = (currentTime) => {
-      const deltaTime = currentTime - lastUpdateRef.current;
-      const targetFPS = 30; // Limit to 30 FPS
-      const frameTime = 1000 / targetFPS;
+    const animate = () => {
+      const rect = container.getBoundingClientRect();
 
-      if (deltaTime >= frameTime) {
-        const rect = container.getBoundingClientRect();
-
-        positionRef.current = {
-          x: positionRef.current.x + speedRef.current.x * directionRef.current.x,
-          y: positionRef.current.y + speedRef.current.y * directionRef.current.y,
-        };
+      setPosition((prev) => {
+        let newX = prev.x + speedRef.current.x * directionRef.current.x;
+        let newY = prev.y + speedRef.current.y * directionRef.current.y;
 
         // Bounce off edges
-        if (positionRef.current.x >= rect.width || positionRef.current.x <= 0) {
+        if (newX >= rect.width || newX <= 0) {
           directionRef.current.x *= -1;
-          positionRef.current.x = Math.max(0, Math.min(rect.width, positionRef.current.x));
-        }
-        if (positionRef.current.y >= rect.height || positionRef.current.y <= 0) {
-          directionRef.current.y *= -1;
-          positionRef.current.y = Math.max(0, Math.min(rect.height, positionRef.current.y));
+          newX = prev.x;
         }
 
-        lastUpdateRef.current = currentTime;
-      }
+        if (newY >= rect.height || newY <= 0) {
+          directionRef.current.y *= -1;
+          newY = prev.y;
+        }
+
+        return { x: newX, y: newY };
+      });
 
       animationFrameRef.current = requestAnimationFrame(animate);
     };
 
-    animationFrameRef.current = requestAnimationFrame(animate);
+    animate();
 
     return () => {
       if (animationFrameRef.current) {
@@ -62,8 +57,8 @@ export const AnimatedBorder = ({
         style={{
           border: "2px solid #FF7047",
           opacity: 0.8,
-          WebkitMaskImage: `radial-gradient(100px 100px at ${positionRef.current.x}px ${positionRef.current.y}px, black 30%, transparent)`,
-          maskImage: `radial-gradient(100px 100px at ${positionRef.current.x}px ${positionRef.current.y}px, black 30%, transparent)`,
+          WebkitMaskImage: `radial-gradient(100px 100px at ${position.x}px ${position.y}px, black 30%, transparent)`,
+          maskImage: `radial-gradient(100px 100px at ${position.x}px ${position.y}px, black 30%, transparent)`,
         }}
         className="pointer-events-none absolute inset-0 z-10 rounded-2xl transition-all duration-300 ease-in-out"
       />
