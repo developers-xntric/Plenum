@@ -38,7 +38,7 @@ export default function OurPeopleSection() {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-3 gap-8 w-[90%] mx-auto 2xl:max-w-[1440px]">
-        {teamMembers.map((member,index) => (
+        {teamMembers.map((member) => (
           <div
             key={member.id}
             className="group  rounded-lg overflow-hidden transition-all duration-300 "
