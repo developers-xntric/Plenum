@@ -14,21 +14,27 @@ export async function generateMetadata({ params }) {
     );
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const { blog } = await res.json();
+    let data;
+    if (blog.blogCategory === "plenum") {
+      data = blog;
+    } else {
+      return
+    }
 
     return {
-      title: blog.metaTitle || blog.title || "Blog | Plenum Tech",
+      title: data.metaTitle || data.title || "Blog | Plenum Tech",
       description:
-        blog.metaDescription ||
-        blog.description ||
+        data.metaDescription ||
+        data.description ||
         "Explore insightful blogs from Plenum Tech on AI, Cloud, and ERP solutions.",
       alternates: {
-        canonical: `https://plenum-tech.com/blog/${blog.slug}`,
+        canonical: `https://plenum-tech.com/blog/${data.slug}`,
       },
       openGraph: {
-        title: blog.metaTitle || blog.title,
-        description: blog.metaDescription || blog.description,
-        url: `https://plenum-tech.com/blog/${blog.slug}`,
-        images: blog.bannerImageURL ? [{ url: blog.bannerImageURL }] : [],
+        title: data.metaTitle || data.title,
+        description: data.metaDescription || data.description,
+        url: `https://plenum-tech.com/blog/${data.slug}`,
+        images: data.bannerImageURL ? [{ url: data.bannerImageURL }] : [],
       },
     };
   } catch (error) {
@@ -74,6 +80,16 @@ export default async function BlogPage({ params }) {
 
     const { blog } = await res.json();
     console.log(blog, "blog");
+    // ✅ Stop rendering if blog is NOT plenum category
+    if (blog.blogCategory !== "plenum") {
+      return (
+         <div className="min-h-screen flex items-center justify-center">
+      <p className="text-2xl font-semibold text-red-500 text-center">
+        This blog does not exist on Plenum Tech.
+      </p>
+    </div>
+      );
+    }
     data = blog;
   } catch (error) {
     console.error("Blog fetch error:", error);
@@ -148,7 +164,7 @@ export default async function BlogPage({ params }) {
                 data.description ||
                 `Image about ${data.title} from Plenum Tech.`,
               uploadDate: data.publishedDate || "2025-08-04T12:00:00+00:00",
-             
+
             }),
           }}
         />
@@ -320,7 +336,7 @@ export default async function BlogPage({ params }) {
                       <div key={listIndex}>
                         <h3 className="text-xl lg:text-2xl font-bold mb-2 blog-content" dangerouslySetInnerHTML={{ __html: list.listTitle }} />
 
-                       
+
                         {list.listDescription && (
                           <div
                             className="text-base lg:text-lg text-[#6D6E76] font-medium mb-4 blog-content"
@@ -336,7 +352,7 @@ export default async function BlogPage({ params }) {
                                 key={itemIndex}
                                 className="text-[16px] lg:text-[18px] font-medium leading-[35px] lg:leading-[42px]"
                               >
-                                <div className="blog-content" dangerouslySetInnerHTML={{ __html: item.title }}/>
+                                <div className="blog-content" dangerouslySetInnerHTML={{ __html: item.title }} />
                                 {item.description && (
                                   <div
                                     className="text-base text-[#6D6E76] font-medium mt-1 blog-content"
