@@ -34,7 +34,7 @@ const BlogSlider = () => {
   const fetchBlogs = async () => {
     try {
       const res = await axios.get(
-        "https://blog.xntric.me/api/v2/blogs"
+        "/api/plenum-blogs"
       );
       const fileterData = res.data.blogs.filter((item) => item.blogCategory.toLowerCase() === "plenum");
       setData(fileterData);
