@@ -8,7 +8,10 @@ import { client } from "@/sanity/lib/client";
 import { Blog } from "../../../../components/homepage/blog";
 
 const blogBySlugQuery = groq`
-  *[_type == "plenum_blogs" && slug.current == $slug][0]{
+  *[_type == "plenum_blogs" 
+    && slug.current == $slug 
+    && blogCategory match "plenum"
+  ][0]{
     _id,
     title,
     metaTitle,
@@ -43,6 +46,7 @@ const blogBySlugQuery = groq`
     "thumbnailURL": image.asset->url
   }
 `;
+
 
 async function getBlogBySlug(slug) {
   if (!slug) return null;
