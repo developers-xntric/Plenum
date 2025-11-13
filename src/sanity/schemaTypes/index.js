@@ -1,5 +1,3 @@
 import { PlenumblogType } from "./postType";
 
-export const schema = {
-  types: [PlenumblogType],
-}
+export const schemaTypes = [PlenumblogType];

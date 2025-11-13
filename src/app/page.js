@@ -111,7 +111,7 @@ const schemaData ={
 }
 
 export default async function Home() {
-  await run()
+  // await run()
   return (
     <>
       <Script
