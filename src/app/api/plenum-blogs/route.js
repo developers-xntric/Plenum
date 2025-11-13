@@ -15,7 +15,6 @@ export async function GET() {
         category,
         publishedDate,
         "slug": slug.current,
-        // direct image URLs from Sanity
         "imageUrl": image.asset->url,
         "bannerImageUrl": bannerImage.asset->url
       }

@@ -4,10 +4,11 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
+import { log } from "util";
 
 const Cards = () => {
   const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(false); 
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const getAllBlogs = async () => {
@@ -21,12 +22,15 @@ const Cards = () => {
       } catch (error) {
         console.error("Error fetching blogs:", error);
       } finally {
-        setLoading(false); 
+        setLoading(false);
       }
     };
     getAllBlogs();
   }, []);
-  
+  if (!data) {
+    return <></>;
+  }
+
   return (
     <>
       <Head>
@@ -43,7 +47,7 @@ const Cards = () => {
 
       <section className="py-20">
         <div className="2xl:max-w-[1440px] max-w-[90%] mx-auto">
-           {loading ? (
+          {loading ? (
             <div className="flex justify-center items-center h-[60vh]">
               <div className="w-14 h-14 border-4 border-gray-300 border-t-[#FF6035] rounded-full animate-spin"></div>
             </div>
@@ -53,10 +57,10 @@ const Cards = () => {
             </p>
           ) : (
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {[...data].reverse().map((card, index) => {
-              // Define the imageSchema per card
-              const imageSchema = {
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+              {[...data].reverse().map((card, index) => {
+                // Define the imageSchema per card
+                const imageSchema = {
                   "@context": "https://schema.org",
                   "@type": "ImageObject",
                   url: card.imageURL,
@@ -74,34 +78,36 @@ const Cards = () => {
                   },
                 };
 
-              return (
-                <Link href={`blog/${card.slug}`} key={index}>
-                  <div className="relative hover:opacity-75 transition-opacity ease-in duration-500">
-                    <div className="absolute top-0 left-0 w-full h-full bg-[#000000] rounded-[20px] opacity-60"></div>
-                    <Image
-                      src={card.imageURL}
-                      width={300}
-                      height={300}
-                      alt={card.title}
-                      className="w-full rounded-[20px]"
-                    />
-                    <div className="max-w-[80%] absolute bottom-6 left-6">
-                      <span className="text-[#D4D4D8] text-[14px]">
-                        {card.publishedDate.slice(0, 10)}
-                      </span>
-                      <p className="text-white text-[16px] line-clamp-2">
-                        {card.title}
-                      </p>
+                return (
+                  <Link href={`blog/${card.slug}`} key={index}>
+                    <div className="relative hover:opacity-75 transition-opacity ease-in duration-500">
+                      <div className="absolute top-0 left-0 w-full h-full bg-[#000000] rounded-[20px] opacity-60"></div>
+                      {card.imageURL && (
+                        <Image
+                          src={card.imageURL}
+                          width={300}
+                          height={300}
+                          alt={card.title}
+                          className="w-full rounded-[20px]"
+                        />
+                      )}
+                      <div className="max-w-[80%] absolute bottom-6 left-6">
+                        <span className="text-[#D4D4D8] text-[14px]">
+                          {card.publishedDate.slice(0, 10)}
+                        </span>
+                        <p className="text-white text-[16px] line-clamp-2">
+                          {card.title}
+                        </p>
+                      </div>
+                      <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(imageSchema) }}
+                      />
                     </div>
-                    <script
-                      type="application/ld+json"
-                      dangerouslySetInnerHTML={{ __html: JSON.stringify(imageSchema) }}
-                    />
-                  </div>
-                </Link>
-              );
-            })}
-          </div>
+                  </Link>
+                );
+              })}
+            </div>
           )}
         </div>
       </section>
