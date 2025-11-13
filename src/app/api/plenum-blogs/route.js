@@ -15,8 +15,8 @@ export async function GET() {
         category,
         publishedDate,
         "slug": slug.current,
-        "imageUrl": image.asset->url,
-        "bannerImageUrl": bannerImage.asset->url
+        "imageURL": image.asset->url,
+        "bannerImageURL": bannerImage.asset->url
       }
     `;
 
