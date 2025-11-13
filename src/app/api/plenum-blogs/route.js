@@ -5,8 +5,8 @@ import { client } from "@/sanity/lib/client";
 export async function GET() {
     try {
         const query = `
-      *[_type == "plenum_blogs" && blogCategory == "plenum"]
-      | order(publishedDate desc) {
+       *[_type == "plenum_blogs" && blogCategory == "plenum"]
+       | order(publishedDate asc) {
         _id,
         title,
         description,
