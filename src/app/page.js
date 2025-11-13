@@ -1,3 +1,4 @@
+import { run } from "../../migrate-to-sanity";
 import ArticleSlider from "../components/common/article-slider";
 import { Blog } from "../components/homepage/blog";
 import IndustryShowcase from "../components/homepage/case-study-new";
@@ -109,7 +110,8 @@ const schemaData ={
   "additionalType": "https://schema.org/TechnologyBusiness"
 }
 
-export default function Home() {
+export default async function Home() {
+  await run()
   return (
     <>
       <Script
