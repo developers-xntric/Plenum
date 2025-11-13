@@ -1,3 +1,3 @@
-import { PlenumblogType } from "./postType";
+import { PlenumType } from "./postType";
 
-export const schemaTypes = [PlenumblogType];
+export const schemaTypes = [PlenumType];

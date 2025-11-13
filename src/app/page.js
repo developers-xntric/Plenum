@@ -1,4 +1,4 @@
-import { run } from "../../migrate-to-sanity";
+import Script from "next/script";
 import ArticleSlider from "../components/common/article-slider";
 import { Blog } from "../components/homepage/blog";
 import IndustryShowcase from "../components/homepage/case-study-new";
@@ -8,7 +8,6 @@ import HomeServices from "../components/homepage/home-services";
 import HouseAIProduct from "../components/homepage/house-ai-product";
 import Testimonials from "../components/homepage/testimonial";
 import { testimonials } from "../data/home-testimonials";
-import Script from "next/script";
 const cardData = [
   {
     img: "/blog/Section-1.jpg",
@@ -111,7 +110,6 @@ const schemaData ={
 }
 
 export default async function Home() {
-  // await run()
   return (
     <>
       <Script

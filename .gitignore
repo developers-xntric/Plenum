@@ -36,6 +36,6 @@ yarn-error.log*
 
 # vercel
 .vercel
-migrate-to-sanity*
 blog.js
 deleteBlogs.js
+migrate-to-sanity.js

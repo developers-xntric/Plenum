@@ -181,7 +181,6 @@ async function upsertBlog(blog) {
 export async function run() {
     const blogs = await loadBlogs()
 
-    // 🔥 Only migrate Plenum category blogs
     const plenumBlogs = blogs.filter(
         (b) => String(b.blogCategory).toLowerCase() === 'plenum'
     )
