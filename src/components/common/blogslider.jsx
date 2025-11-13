@@ -37,8 +37,6 @@ const BlogSlider = () => {
         "/api/plenum-blogs"
       );
       const fileterData = res.data.blogs.filter((item) => item.blogCategory.toLowerCase() === "plenum");
-      console.log(fileterData);
-      return;
       setData(fileterData);
     } catch (error) {
       console.error("Failed to fetch blogs:", error);
