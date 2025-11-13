@@ -1,8 +1,8 @@
 import { defineType, defineField } from 'sanity'
 
-export const blogType = defineType({
-  name: 'blog',
-  title: 'Blog',
+export const PlenumblogType = defineType({
+  name: 'plenum-blogs',
+  title: 'Plenum Blogs',
   type: 'document',
   fields: [
     defineField({
