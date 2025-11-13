@@ -79,7 +79,6 @@ export default async function BlogPage({ params }) {
     }
 
     const { blog } = await res.json();
-    console.log(blog, "blog");
     // ✅ Stop rendering if blog is NOT plenum category
     if (blog.blogCategory !== "plenum") {
       return (
