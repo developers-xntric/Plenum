@@ -33,6 +33,7 @@ async function loadBlogs() {
             .replace(/;?\s*export\s*{[\s\S]*?}\s*;?\s*$/m, '')
             .replace(/;?\s*module\.exports[\s\S]*$/m, '')
             .trim()
+
         const arr = Function('"use strict";return (' + (body.endsWith(';') ? body.slice(0, -1) : body) + ');')()
         if (Array.isArray(arr)) return arr
     } catch (_) { }
@@ -49,12 +50,15 @@ const toSlug = (title, fallback = 'untitled') =>
     slugify(title || fallback, { lower: true, strict: true }).slice(0, 96)
 
 function pickCategory(val) {
-    if (typeof val === 'string' && CATEGORY_OPTIONS.includes(val)) return val
-    return DEFAULT_CATEGORY
+    return typeof val === 'string' && CATEGORY_OPTIONS.includes(val)
+        ? val
+        : DEFAULT_CATEGORY
 }
+
 function pickBlogCategory(val) {
-    if (typeof val === 'string' && BLOG_CATEGORY_OPTIONS.includes(val)) return val
-    return DEFAULT_BLOG_CATEGORY
+    return typeof val === 'string' && BLOG_CATEGORY_OPTIONS.includes(val)
+        ? val
+        : DEFAULT_BLOG_CATEGORY
 }
 
 async function uploadImageFromUrl(url, altFallback = '') {
@@ -65,6 +69,7 @@ async function uploadImageFromUrl(url, altFallback = '') {
         const buf = Buffer.from(await res.arrayBuffer())
         const filename = safeFilenameFromUrl(url)
         const asset = await client.assets.upload('image', buf, { filename })
+
         return {
             _type: 'image',
             asset: { _type: 'reference', _ref: asset._id },
@@ -94,16 +99,20 @@ function mapSubsections(subsections) {
         subdescription: Array.isArray(s?.subdescription)
             ? s.subdescription.map(x => String(x ?? ''))
             : [],
-        lists: Array.isArray(s?.lists) ? s.lists.map(lst => ({
-            _type: 'object',
-            listTitle: lst?.listTitle || '',
-            listDescription: lst?.listDescription ? String(lst.listDescription) : '',
-            items: Array.isArray(lst?.items) ? lst.items.map(it => ({
+        lists: Array.isArray(s?.lists)
+            ? s.lists.map(lst => ({
                 _type: 'object',
-                title: it?.title || '',
-                description: it?.description ? String(it.description) : '',
-            })) : []
-        })) : []
+                listTitle: lst?.listTitle || '',
+                listDescription: lst?.listDescription ? String(lst.listDescription) : '',
+                items: Array.isArray(lst?.items)
+                    ? lst.items.map(it => ({
+                        _type: 'object',
+                        title: it?.title || '',
+                        description: it?.description ? String(it.description) : '',
+                    }))
+                    : [],
+            }))
+            : [],
     }))
 }
 
@@ -119,15 +128,17 @@ function mapFaqs(faqs) {
 function stableIdFor(blog) {
     const legacy = blog?._id || blog?.id || blog?.slug
     if (legacy) return `imported-blog-${String(legacy)}`
-    const h = crypto.createHash('sha1').update(JSON.stringify({
-        t: blog?.title, s: blog?.slug, c: blog?.createdAt
-    })).digest('hex').slice(0, 16)
+
+    const h = crypto.createHash('sha1')
+        .update(JSON.stringify({ t: blog?.title, s: blog?.slug, c: blog?.createdAt }))
+        .digest('hex')
+        .slice(0, 16)
+
     return `imported-blog-${h}`
 }
 
 function ensureISO(dt) {
-    const pick = dt || null
-    const d = pick ? new Date(pick) : new Date()
+    const d = dt ? new Date(dt) : new Date()
     return isNaN(d.getTime()) ? new Date().toISOString() : d.toISOString()
 }
 
@@ -135,12 +146,20 @@ async function upsertBlog(blog) {
     const _id = stableIdFor(blog)
 
     const slugCurrent = blog?.slug || toSlug(blog?.title)
-    const mainImage = await uploadImageFromUrl(blog?.imageURL, blog?.imageAlt || blog?.title)
-    const bannerImage = await uploadImageFromUrl(blog?.bannerImageURL, blog?.bannerAlt || `${blog?.title || ''} banner`)
+
+    const mainImage = await uploadImageFromUrl(
+        blog?.imageURL,
+        blog?.imageAlt || blog?.title
+    )
+
+    const bannerImage = await uploadImageFromUrl(
+        blog?.bannerImageURL,
+        blog?.bannerAlt || `${blog?.title || ''} banner`
+    )
 
     const doc = {
         _id,
-        _type: 'migrated_blogs',
+        _type: 'plenum_blogs',
         title: blog?.title || 'Untitled',
         description: blog?.description ? String(blog.description) : '',
         metaDescription: blog?.metaDescription ? String(blog.metaDescription) : '',
@@ -161,26 +180,35 @@ async function upsertBlog(blog) {
 
 export async function run() {
     const blogs = await loadBlogs()
-    console.log(`Importing ${blogs.length} blog(s) → sanity://${projectId}/${dataset}`)
+
+    // 🔥 Only migrate Plenum category blogs
+    const plenumBlogs = blogs.filter(
+        (b) => String(b.blogCategory).toLowerCase() === 'plenum'
+    )
+
+    console.log(
+        `Importing ${plenumBlogs.length} Plenum blog(s) → sanity://${projectId}/${dataset}`
+    )
+
     let ok = 0, fail = 0
 
-    for (const b of blogs) {
+    for (const b of plenumBlogs) {
         try {
-
             await upsertBlog(b)
             ok++
             console.log(`✓ ${b.title || b._id || 'Untitled'}`)
         } catch (err) {
             fail++
-            console.error(`✗ ${b.title || b._id || 'Untitled'} — ${err.message}`)
+            console.error(
+                `✗ ${b.title || b._id || 'Untitled'} — ${err.message}`
+            )
         }
     }
 
     console.log(`Done. Success: ${ok}, Failed: ${fail}`)
 }
 
-
 // await run().catch((e) => {
-//   console.error(e)
-//   process.exit(1)
+//     console.error(e)
+//     process.exit(1)
 // })
