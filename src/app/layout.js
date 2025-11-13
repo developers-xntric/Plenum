@@ -54,7 +54,6 @@ export default function RootLayout({ children }) {
             gtag('js', new Date());
 
             gtag('config', 'G-V6RHZ3XPLZ', {
-              debug_mode: process.env.NODE_ENV === 'development',
               send_page_view: true
             });
           `}
@@ -74,7 +73,7 @@ export default function RootLayout({ children }) {
         {/* <Navbar />
         <MobileNav />
         */}
-        <NavigationTracker /> 
+        <NavigationTracker />
         {children}
         {/* <Footer /> */}
 
