@@ -13,7 +13,7 @@ const Cards = () => {
     const getAllBlogs = async () => {
       setLoading(true)
       try {
-        const res = await axios.get("https://blog.xntric.me/api/v2/blogs");
+        const res = await axios.get("/api/plenum-blogs");
         const filterData = res.data.blogs.filter(
           (item) => item.blogCategory.toLowerCase() === "plenum"
         );
