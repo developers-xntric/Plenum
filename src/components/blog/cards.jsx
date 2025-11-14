@@ -95,7 +95,7 @@ const Cards = () => {
                       />
                     )}
                     <div className="absolute inset-0 bg-black/60" />
-                    <div className="absolute bottom-6 left-6 z-[1] max-w-[80%]">
+                    <div className="absolute bottom-6 left-6 z-1 max-w-[80%]">
                       {card.publishedDate && (
                         <span className="text-[14px] text-[#D4D4D8]">
                           {card.publishedDate.slice(0, 10)}
