@@ -10,6 +10,7 @@ const nextConfig = {
   images: {
     domains: [
       "res.cloudinary.com",
+      "cdn.sanity.io",
       "thedailyguardian.com",
       "thearabianpost.com",
       "emiratesinside.net",

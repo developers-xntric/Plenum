@@ -31,10 +31,10 @@ const BlogSlider = () => {
     };
   }, []);
 
-  const fetchBlogs = async () => {
+  const fetchBlogs = async () => {  
     try {
       const res = await axios.get(
-        "https://blog.xntric.me/api/v2/blogs"
+        "/api/plenum-blogs"
       );
       const fileterData = res.data.blogs.filter((item) => item.blogCategory.toLowerCase() === "plenum");
       setData(fileterData);
@@ -110,6 +110,7 @@ const BlogSlider = () => {
               className="splide__slide hover:opacity-75 transition-opacity ease-in duration-500 relative"
             >
               <div className="absolute top-0 left-0 w-full h-[100%] bg-black rounded-[20px] opacity-60" />
+              {card.imageURL && (
                 <Image
                   src={card.imageURL}
                   width={300}
@@ -118,6 +119,8 @@ const BlogSlider = () => {
                   priority
                   className="w-full h-full rounded-[20px]"
                 />
+              )}
+
               <div className="max-w-[80%] absolute bottom-6 left-6">
                 <span className="text-[#D4D4D8] text-[14px]">
                   {card.publishedDate?.slice(0, 10)}

@@ -2,48 +2,98 @@ import { LinkedinIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import Script from "next/script";
+import { notFound } from "next/navigation";
+import { groq } from "next-sanity";
+import { client } from "@/sanity/lib/client";
 import { Blog } from "../../../../components/homepage/blog";
 
-export async function generateMetadata({ params }) {
+const blogBySlugQuery = groq`
+  *[_type == "plenum_blogs" 
+    && slug.current == $slug 
+    && blogCategory match "plenum"
+  ][0]{
+    _id,
+    title,
+    metaTitle,
+    description,
+    metaDescription,
+    blogCategory,
+    category,
+    quotes,
+    conclusion,
+    publishedDate,
+    faqs[]{
+      question,
+      answer
+    },
+    subsections[]{
+      subtitle,
+      subdescription,
+      lists[]{
+        listTitle,
+        listDescription,
+        items[]{
+          title,
+          description
+        }
+      }
+    },
+    "slug": slug.current,
+    "imageURL": image.asset->url,
+    "imageAlt": image.alt,
+    "bannerImageURL": bannerImage.asset->url,
+    "bannerImageAlt": bannerImage.alt,
+    "thumbnailURL": image.asset->url
+  }
+`;
+
+
+async function getBlogBySlug(slug) {
+  if (!slug) return null;
+
   try {
-    const res = await fetch(
-      `http://69.62.125.12:8000/api/v2/blog/${params.slug}`,
+    return await client.fetch(
+      blogBySlugQuery,
+      { slug },
       {
-        next: { revalidate: 60 }, // ISR for metadata
+        next: { revalidate: 60 },
       }
     );
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const { blog } = await res.json();
-    let data;
-    if (blog.blogCategory === "plenum") {
-      data = blog;
-    } else {
-      return
-    }
-
-    return {
-      title: data.metaTitle || data.title || "Blog | Plenum Tech",
-      description:
-        data.metaDescription ||
-        data.description ||
-        "Explore insightful blogs from Plenum Tech on AI, Cloud, and ERP solutions.",
-      alternates: {
-        canonical: `https://plenum-tech.com/blog/${data.slug}`,
-      },
-      openGraph: {
-        title: data.metaTitle || data.title,
-        description: data.metaDescription || data.description,
-        url: `https://plenum-tech.com/blog/${data.slug}`,
-        images: data.bannerImageURL ? [{ url: data.bannerImageURL }] : [],
-      },
-    };
   } catch (error) {
-    console.error("Metadata fetch error:", error);
+    console.error("Sanity blog fetch error:", error);
+    return null;
+  }
+}
+
+export async function generateMetadata({ params }) {
+  const data = await getBlogBySlug(params.slug);
+
+  if (
+    !data ||
+    (data.blogCategory && data.blogCategory.toLowerCase() !== "plenum")
+  ) {
     return {
       title: "Blog Not Found | Plenum Tech",
       description: "The requested blog could not be loaded.",
     };
   }
+
+  return {
+    title: data.metaTitle || data.title || "Blog | Plenum Tech",
+    description:
+      data.metaDescription ||
+      data.description ||
+      "Explore insightful blogs from Plenum Tech on AI, Cloud, and ERP solutions.",
+    alternates: {
+      canonical: `https://plenum-tech.com/blog/${data.slug}`,
+    },
+    openGraph: {
+      title: data.metaTitle || data.title,
+      description: data.metaDescription || data.description,
+      url: `https://plenum-tech.com/blog/${data.slug}`,
+      images: data.bannerImageURL ? [{ url: data.bannerImageURL }] : [],
+    },
+  };
 }
 
 const schemaData = {
@@ -64,39 +114,13 @@ const schemaData = {
 };
 
 export default async function BlogPage({ params }) {
-  let data = null;
+  const data = await getBlogBySlug(params.slug);
 
-  try {
-    const res = await fetch(
-      `https://blog.xntric.me/api/v2/blog/${params.slug}`
-    );
-
-    if (!res.ok) {
-      console.error(`Failed to load blog: ${res.status}`);
-      return (
-        <div className="p-10 text-center text-red-500">Blog not found.</div>
-      );
-    }
-
-    const { blog } = await res.json();
-    // ✅ Stop rendering if blog is NOT plenum category
-    if (blog.blogCategory !== "plenum") {
-      return (
-         <div className="min-h-screen flex items-center justify-center">
-      <p className="text-2xl font-semibold text-red-500 text-center">
-        This blog does not exist on Plenum Tech.
-      </p>
-    </div>
-      );
-    }
-    data = blog;
-  } catch (error) {
-    console.error("Blog fetch error:", error);
-    return (
-      <div className="p-10 text-center text-red-500">
-        Failed to load blog content.
-      </div>
-    );
+  if (
+    !data ||
+    (data.blogCategory && data.blogCategory.toLowerCase() !== "plenum")
+  ) {
+    notFound();
   }
 
   // Generate table of contents dynamically

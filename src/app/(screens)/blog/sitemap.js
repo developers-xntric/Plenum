@@ -38,7 +38,7 @@ export default async function sitemap() {
 async function fetchBlogPosts() {
   try {
     // Fetch the list of blogs from the API
-    const response = await fetch("https://blog.xntric.me/api/v2/blogs", {
+    const response = await fetch("/api/plenum-blogs", {
       next: { revalidate: 3600 }, // Revalidate every hour, adjust as needed
     });
 
