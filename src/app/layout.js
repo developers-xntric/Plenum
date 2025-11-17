@@ -70,12 +70,12 @@ export default function RootLayout({ children }) {
           ></iframe>
         </noscript>
 
-        {/* <Navbar />
+        <Navbar />
         <MobileNav />
-        */}
+     
         <NavigationTracker />
         {children}
-        {/* <Footer /> */}
+        <Footer /> 
 
         {/* Custom GA4 Event for Page Load */}
         <Script id="plenum-ga4-event" strategy="afterInteractive">
