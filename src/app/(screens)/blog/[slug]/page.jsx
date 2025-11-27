@@ -442,7 +442,7 @@ export default async function BlogPage({ params }) {
                       <h4 className="md:text-xl ">Shaikh Zubaer Aasim</h4>
                     </div>
                     <div>
-                      <div className="w-fit h-fit bg-black rounded-[8px] p-1 ps-1">
+                      <div className="w-fit h-fit bg-black rounded-xl p-1 ps-1">
                         <Link target="_blank" href="https://www.linkedin.com/in/aasimzshaikh">
                           <LinkedinIcon color="white" size={24} />
                         </Link>

@@ -1,5 +1,4 @@
-// src/app/(screens)/blog/sitemap.js
-// Optional for type safety, but recommended
+import { client } from "../../../sanity/lib/client";
 
 /**
  * Generates the sitemap for the blog section.
@@ -23,7 +22,7 @@ export default async function sitemap() {
     },
   ];
 
-  // Dynamic URLs – fetch from API
+  // Dynamic URLs – fetch from Sanity
   const dynamicUrls = await fetchBlogPosts();
 
   // Combine and return
@@ -31,38 +30,29 @@ export default async function sitemap() {
 }
 
 /**
- * Helper function to fetch dynamic blog post URLs from the API.
+ * Helper function to fetch dynamic blog post URLs from Sanity.
  *
  * @returns {Promise<MetadataRoute.Sitemap>} Promise resolving to an array of sitemap entries.
  */
 async function fetchBlogPosts() {
   try {
-    // Fetch the list of blogs from the API
-    const response = await fetch("/api/plenum-blogs", {
-      next: { revalidate: 3600 }, // Revalidate every hour, adjust as needed
-    });
+    // Fetch the list of blogs from Sanity
+    const query = `*[_type == "plenum_blogs" && blogCategory match "plenum"] {
+      "slug": slug.current,
+      "updatedAt": _updatedAt,
+      "publishedDate": publishedDate,
+      "createdAt": _createdAt
+    }`;
 
-    if (!response.ok) {
-      throw new Error(`HTTP ${response.status}: Failed to fetch blogs`);
-    }
+    const blogs = await client.fetch(query);
 
-    // Assuming the API returns an array of blog objects directly, or { blogs: [...] }
-    // Adjust based on actual response structure (e.g., if it's { blogs: [...] }, use data.blogs)
-    const data = await response.json();
-    const blogs = Array.isArray(data) ? data : data.blogs || [];
-    const filteredBlogs = blogs.filter(
-      (post) => post.blogCategory?.toLowerCase() === "plenum"
-    );
-    return filteredBlogs.map((blog) => ({
+    return blogs.map((blog) => ({
       url: `https://lps-me.com/blog/${blog.slug}`,
       lastModified: new Date(
         blog.updatedAt || blog.publishedDate || blog.createdAt || new Date()
       ),
       changeFrequency: "weekly",
       priority: 0.7,
-      // Optional: Add alternates for internationalization, images, etc.
-      // alternates: { languages: { 'en': '...', 'es': '...' } },
-      // images: [{ loc: blog.bannerImageURL || blog.imageURL }],
     }));
   } catch (error) {
     console.error("Error fetching blog posts for sitemap:", error);
@@ -70,6 +60,7 @@ async function fetchBlogPosts() {
     return [];
   }
 }
+
 
 // For large sitemaps (>50,000 URLs), optionally implement this to split into multiple files
 // export async function generateSitemaps() {
