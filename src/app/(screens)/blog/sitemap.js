@@ -9,13 +9,13 @@ export default async function sitemap() {
   // Static URLs – replace with your actual logic if needed
   const staticUrls = [
     {
-      url: "https://lps-me.com/blog", // Homepage of blog
+      url: "https://plenum-tech.com/blog", // Homepage of blog
       lastModified: new Date(),
       changeFrequency: "daily",
       priority: 1.0,
     },
     {
-      url: "https://lps-me.com/blog/",
+      url: "https://plenum-tech.com/blog/",
       lastModified: new Date("2023-01-01"), // Or fetch from your data source
       changeFrequency: "monthly",
       priority: 0.8,
@@ -47,7 +47,7 @@ async function fetchBlogPosts() {
     const blogs = await client.fetch(query);
 
     return blogs.map((blog) => ({
-      url: `https://lps-me.com/blog/${blog.slug}`,
+      url: `https://plenum-tech.com/blog/${blog.slug}`,
       lastModified: new Date(
         blog.updatedAt || blog.publishedDate || blog.createdAt || new Date()
       ),
