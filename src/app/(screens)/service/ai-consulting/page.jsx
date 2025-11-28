@@ -52,16 +52,31 @@ const schemaData = {
         "bestRating": "5",
         "worstRating": "1"
     },
-    "image": [
-    {
-      "@type": "ImageObject",
-      "url": "https://plenum-tech.com/service/AC/image3.svg",
-      "width": 1200,
-      "height": 630,
-      "caption": "AI Consulting, Governance and Implementation Services"
+    "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "@id": "https://plenum-tech.com/#breadcrumb",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "AI Consulting",
+            }
+        ]
     },
-   
-  ],
+    "potentialAction": {
+        "@type": "ReadAction",
+        "target": ["https://plenum-tech.com/service/ai-consulting"]
+    },
+    "image": [
+        {
+            "@type": "ImageObject",
+            "url": "https://plenum-tech.com/service/AC/image3.svg",
+            "width": 1200,
+            "height": 630,
+            "caption": "AI Consulting, Governance and Implementation Services"
+        },
+
+    ],
 }
 
 

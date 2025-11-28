@@ -52,6 +52,21 @@ const schemaData = {
         "bestRating": "5",
         "worstRating": "1"
     },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "@id": "https://plenum-tech.com/#breadcrumb",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "ERP Consulting",
+            }
+        ]
+    },
+    "potentialAction": {
+        "@type": "ReadAction",
+        "target": ["https://plenum-tech.com/service/ERP-consulting"]
+    },
     "image": [
         {
             "@type": "ImageObject",

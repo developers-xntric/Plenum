@@ -123,6 +123,20 @@ export default async function BlogPage({ params }) {
     notFound();
   }
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": `https://plenum-tech.com/blog/${data.slug}/#breadcrumb`,
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: `${data.title}`,
+        item: `https://plenum-tech.com/blog/${data.slug}/`,
+      },
+    ],
+  };
+
   // Generate table of contents dynamically
   const tableOfContents = [];
   if (data.title) {
@@ -152,6 +166,15 @@ export default async function BlogPage({ params }) {
         type="application/ld+json"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+      />
+
+      <Script
+        id="schema-breadcrumb"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema),
+        }}
       />
 
       <Script

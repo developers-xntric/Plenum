@@ -61,12 +61,12 @@ export const metadata = {
     canonical: 'https://plenum-tech.com',
   },
 };
-const schemaData ={
+const schemaData = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Plenum Tech Solutions",
   "url": "https://plenum-tech.com/",
-  "logo": "https://plenum-tech.com/casestudy/Group8.png", 
+  "logo": "https://plenum-tech.com/casestudy/Group8.png",
   "image": [
     {
       "@type": "ImageObject",
@@ -74,10 +74,10 @@ const schemaData ={
       "width": 1200,
       "height": 630,
       "caption": "Plenum Tech Solutions - AI, ERP & Cloud Experts"
-    },
+    }
   ],
-
-  "description": "Plenum Tech Solutions offers cutting-edge technology solutions to help businesses optimize their processes and grow.",
+  "description":
+    "Plenum Tech Solutions offers cutting-edge technology solutions to help businesses optimize their processes and grow.",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Office F11, First Floor, IT Plaza,",
@@ -95,19 +95,36 @@ const schemaData ={
   },
   "sameAs": [
     "https://www.facebook.com/people/Plenum-Technologies/",
-    "https://www.instagram.com/plenum.technologies/",
+    "https://www.instagram.com/plenum.technologies/"
   ],
-    "aggregateRating": {
+  "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "4.5",
     "reviewCount": "30",
     "bestRating": "5",
     "worstRating": "2"
   },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "@id": "https://plenum-tech.com/#breadcrumb",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://plenum-tech.com/"
+      }
+    ]
+  },
+  "potentialAction": {
+    "@type": "ReadAction",
+    "target": ["https://plenum-tech.com/"]
+  },
   "priceRange": "$$",
   "openingHours": "Mo-Fr 09:00-18:00",
   "additionalType": "https://schema.org/TechnologyBusiness"
 }
+
 
 export default async function Home() {
   return (

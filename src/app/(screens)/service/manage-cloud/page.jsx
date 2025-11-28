@@ -53,6 +53,21 @@ const schemaData = {
         "bestRating": "5",
         "worstRating": "1"
     },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "@id": "https://plenum-tech.com/#breadcrumb",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Manage Cloud",
+            }
+        ]
+    },
+    "potentialAction": {
+        "@type": "ReadAction",
+        "target": ["https://plenum-tech.com/service/manage-cloud"]
+    },
     "image": [
         {
             "@type": "ImageObject",
