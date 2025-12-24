@@ -8,13 +8,13 @@ export const oldBlogUrls = [
 
 const nextConfig = {
   images: {
-    domains: [
-      "res.cloudinary.com",
-      "cdn.sanity.io",
-      "thedailyguardian.com",
-      "thearabianpost.com",
-      "emiratesinside.net",
-      "lps-me.com",
+    remotePatterns: [
+      { protocol: "https", hostname: "res.cloudinary.com" },
+      { protocol: "https", hostname: "cdn.sanity.io" },
+      { protocol: "https", hostname: "thedailyguardian.com" },
+      { protocol: "https", hostname: "thearabianpost.com" },
+      { protocol: "https", hostname: "emiratesinside.net" },
+      { protocol: "https", hostname: "lps-me.com" },
     ],
   },
   reactStrictMode: true,

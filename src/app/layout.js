@@ -60,7 +60,7 @@ export default function RootLayout({ children }) {
         </Script>
       </head>
 
-      <body className="antialiased">
+      <body className="antialiased" suppressHydrationWarning={true}>
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-52FBQGQC"
@@ -72,10 +72,10 @@ export default function RootLayout({ children }) {
 
         <Navbar />
         <MobileNav />
-     
+
         <NavigationTracker />
         {children}
-        <Footer /> 
+        <Footer />
 
         {/* Custom GA4 Event for Page Load */}
         <Script id="plenum-ga4-event" strategy="afterInteractive">
