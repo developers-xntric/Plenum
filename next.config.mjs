@@ -7,6 +7,9 @@ export const oldBlogUrls = [
 ];
 
 const nextConfig = {
+  reactStrictMode: true,
+  compress: true,
+
   images: {
     remotePatterns: [
       { protocol: "https", hostname: "res.cloudinary.com" },
@@ -16,9 +19,20 @@ const nextConfig = {
       { protocol: "https", hostname: "emiratesinside.net" },
       { protocol: "https", hostname: "lps-me.com" },
     ],
+    // ✅ Required from Next.js 16+
+    qualities: [50, 60, 75, 80, 90, 100],
   },
-  reactStrictMode: true,
-  compress: true,
+
+  // ✅ Fix cross-origin LAN warning in dev
+  allowedDevOrigins: [
+    "http://localhost:3000",
+    "http://localhost:3001",
+    "http://127.0.0.1:3000",
+    "http://127.0.0.1:3001",
+    "http://192.168.18.22:3000",
+    "http://192.168.18.22:3001",
+  ],
+
   async headers() {
     return [
       {

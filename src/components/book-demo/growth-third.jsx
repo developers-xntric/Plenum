@@ -1,4 +1,4 @@
-// components/GrowthSection.tsx
+// components/GrowthSectionx
 import Image from 'next/image';
 import Link from 'next/link';
 
