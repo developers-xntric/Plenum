@@ -33,7 +33,9 @@ export default function HouseAIProduct({ heading, paragraph, card1Para, card2Par
               width={400}
               height={400}
               alt="Smoke Background"
+              unoptimized
               className="w-full h-full object-cover absolute inset-0 z-30"
+              
             />
             <div className="absolute inset-0 bg-gradient-to-br from-black opacity-90 to-gray-950 z-20" />
             <div className="text-white p-6 sm:p-5 lg:p-7 pb-0 xl:h-80 rounded-2xl space-y-6 relative z-50">
