@@ -187,7 +187,7 @@ export default function Footer() {
               </clipPath>
             </defs>
           </svg>
-          <p className="text-[13px] text-white text-center md:relative  bottom-6 mt-[12%] md:mt-0 font-['Archivo']">© 2025 Plenum. All rights reserved.</p>
+          <p className="text-[13px] text-white text-center md:relative  bottom-6 mt-[12%] md:mt-0 font-['Archivo']">© {new Date().getFullYear()} Plenum. All rights reserved.</p>
         </div>
 
 
