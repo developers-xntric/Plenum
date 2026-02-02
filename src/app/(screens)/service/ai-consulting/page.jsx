@@ -6,7 +6,7 @@ import ERPServicesEast from '@/components/service/ERP-Cosultant/ERP-services-eas
 import Service_Inner_Hero from '@/components/service/ERP-Cosultant/hero';
 import { service_brand_icons } from '@/data/brand-slider-icons-data';
 import { ai1, ai2, aiSection1, aiSection2, blackSection, blackSection2, bottomSection, bottomSection2 } from '@/data/erp-consulting-service';
-import { testimonials } from '@/data/home-testimonials';
+;
 import ArticleSlider from "@/components/common/article-slider";
 import ERPC2 from '@/components/service/ERP-Cosultant/ERPC2';
 import Script from 'next/script';
@@ -113,7 +113,6 @@ const AiConsulting = () => {
             />
             <ERPServicesEast para={"At Plenum, we enable companies to use artificial intelligence to release actual economic value. We start with high-impact use cases, then risk analyses, artificial intelligence policy development, and platform architecture."} heading={"Plenum AI Advisory, Governance & Execution"} activeState={"Qatar"} classNamePara={"xl:w-[700px]"} />
             <ERPSolutionsBottomSection className='flex justify-center items-center gap-20 lg:flex-row-reverse flex-col pt-10 lg:py-0' blackSection={ai1} bottomSection={aiSection1} left={false} />
-            <Testimonials testimonials={testimonials} />
             <ERPSolutionsBottomSection className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={aiSection2} left={true} blackSection={ai2} />
 
             <ArticleSlider className={'pt-20'} />

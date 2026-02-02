@@ -7,7 +7,7 @@ import OracleCloudFusionERP from '@/components/service/oracle-cloud-fusion/ocf-e
 import OrcaleFinancialFeature from '@/components/service/oracle-cloud-fusion/oracle-financial-feature'
 import PinkSection from '@/components/service/pink-section'
 import { ocf_service, ocf_service_black } from '@/data/erp-consulting-service'
-import { testimonials } from '@/data/home-testimonials'
+
 import { fusion, fusionTabs } from '@/data/services'
 import Script from 'next/script'
 
@@ -109,7 +109,6 @@ const OracleCloudFusion = () => {
                 className="xl:h-[340px]"
                 isVideo={true}
             />
-            <Testimonials testimonials={testimonials} />
             <ArticleSlider />
             <Blog heading='Discover Our Blog' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world" />
         </div>

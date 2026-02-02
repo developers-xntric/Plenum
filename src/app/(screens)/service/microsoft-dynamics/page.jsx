@@ -9,7 +9,7 @@ import MobilitySolutions from '@/components/service/microsoft/mobility-solution'
 import PinkSection from '@/components/service/pink-section'
 import { service_brand_icons } from '@/data/brand-slider-icons-data'
 import { md_service, md_service_black } from '@/data/erp-consulting-service'
-import { testimonials } from '@/data/home-testimonials'
+
 import { MicrosoftCarouselData } from '@/data/microsoft-carousel'
 import ArticleSlider from "@/components/common/article-slider";
 import { Blog } from '@/components/homepage/blog'
@@ -138,7 +138,6 @@ const MicrosoftDynamics = () => {
                     isVideo={true}
                 />
             </div>
-            <Testimonials testimonials={testimonials} />
             <ArticleSlider />
             <Blog heading='Discover Our Blog Articles' para="Stay updated with our ongoing blogs inclusive of tips, case study examples and expert views around the usage of AI, cloud services and ERP solutions to support business growth and operational effectiveness." />
         </div>

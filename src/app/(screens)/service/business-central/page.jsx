@@ -10,7 +10,7 @@ import MobilitySolutions from '@/components/service/microsoft/mobility-solution'
 import PinkSection from '@/components/service/pink-section'
 import { Oracleitems } from '@/data/accordineData'
 import { bc_service, bc_service_black } from '@/data/erp-consulting-service'
-import { testimonials } from '@/data/home-testimonials'
+
 import { businessPage } from '@/data/microsoft'
 import { bc_solution } from '@/data/mobility-solutions'
 import { businessSer, capabilities } from '@/data/services'
@@ -58,7 +58,7 @@ const schemaData = {
         "bestRating": "5",
         "worstRating": "1"
     },
-      "breadcrumb": {
+    "breadcrumb": {
         "@type": "BreadcrumbList",
         "@id": "https://plenum-tech.com/#breadcrumb",
         "itemListElement": [
@@ -106,7 +106,6 @@ const BuisnessCentral = () => {
                 para_className={"lg:w-[60%] lg:w-[70%] 2xl:w-[65%]"}
             />
             <ERPAccordin isbottom={true} isAccordin={true} outside={true} items={businessSer} className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={bc_service} left={true} blackSection={bc_service_black} />
-            <Testimonials testimonials={testimonials} />
             <ERPSolutionsAlone />
 
             <MobilitySolutions

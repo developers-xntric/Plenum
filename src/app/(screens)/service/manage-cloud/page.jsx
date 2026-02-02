@@ -9,7 +9,7 @@ import ArticleSlider from "@/components/common/article-slider";
 import ERPC2 from '@/components/service/ERP-Cosultant/ERPC2';
 import { ERPAccordin } from '@/components/common/accordinService';
 import { cloud, cloudAccor2 } from '@/data/services';
-import { testimonials } from '@/data/home-testimonials';
+;
 import Script from 'next/script';
 
 export const metadata = {
@@ -114,7 +114,6 @@ const ManageCloud = () => {
             <ERPServicesEast para={"We’ve carefully structured our service offerings to cater to both technical and business teams, ensuring clarity, usability, and long-term value."} heading={"Plenum Managed Cloud Services"} activeState={"Saudi Arabia"} />
             <ERPAccordin
                 isbottom={false} isAccordin={true} outside={false} items={cloud} className='flex justify-center  items-center gap-10 lg:gap-5 lg:flex-row-reverse flex-col pt-10 lg:py-0' bottomSection={cloudbottom1} left={false} blackSection={cloud1} />
-            <Testimonials testimonials={testimonials} />
             <ERPAccordin isbottom={false} isAccordin={true} outside={false} items={cloudAccor2} className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={cloudbottom2} left={true} blackSection={cloud2} />
             <ArticleSlider className={'pt-20'} />
             <Blog heading='Discover Our Blog' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world." />

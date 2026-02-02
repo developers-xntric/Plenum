@@ -11,7 +11,7 @@ import PinkSection from '@/components/service/pink-section'
 
 import { Blog } from '@/components/homepage/blog'
 import { ons_service, ons_service_black } from '@/data/erp-consulting-service'
-import { testimonials } from '@/data/home-testimonials'
+
 import { MicrosoftCarouselData } from '@/data/microsoft-carousel'
 import { oracleNetSuite } from '@/data/services'
 import Script from 'next/script'
@@ -52,7 +52,7 @@ const schemaData = {
         "bestRating": "5",
         "worstRating": "1"
     },
-      "breadcrumb": {
+    "breadcrumb": {
         "@type": "BreadcrumbList",
         "@id": "https://plenum-tech.com/#breadcrumb",
         "itemListElement": [
@@ -153,7 +153,6 @@ const OracleNetSuite = () => {
             </div>
 
             {/* ✅ Lazy-loaded components */}
-            <Testimonials testimonials={testimonials} />
             <ArticleSlider />
             <Blog heading='Discover Our Blog' para="Explore our latest posts for insights on design, branding, and innovation. Stay updated with fresh ideas and trends in the creative world" />
         </div>

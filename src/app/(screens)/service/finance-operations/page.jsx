@@ -4,7 +4,7 @@ import Finance_Opearations_Service from '@/components/service/finance-and-opeara
 import New_Service_Inner_Hero from '@/components/service/finance-and-opearations/hero';
 import PinkSection from '@/components/service/pink-section';
 import { fao_service, fao_service_black } from '@/data/erp-consulting-service';
-import { testimonials } from '@/data/home-testimonials';
+;
 import ArticleSlider from "@/components/common/article-slider";
 import { Blog } from '@/components/homepage/blog';
 import { ERPAccordin } from '@/components/common/accordinService';
@@ -100,7 +100,6 @@ const FinanceOpearations = () => {
             />
             <ERPAccordin items={finance} className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={fao_service} left={true} isbottom={true} blackSection={fao_service_black} />
             <FaoDynamicOpearation />
-            <Testimonials testimonials={testimonials} />
             <div className='pt-20'>
                 <PinkSection
                     heading={"Ready To Choose Microsoft Dynamics 365 Finance and Operations?"}

@@ -11,7 +11,7 @@ import PinkSection from '@/components/service/pink-section'
 import { Oracleitems } from '@/data/accordineData'
 import { service_brand_icons } from '@/data/brand-slider-icons-data'
 import { bottomSection, oracle_service, oracle_service_black, OracleBlack } from '@/data/erp-consulting-service'
-import { testimonials } from '@/data/home-testimonials'
+
 import { oracle } from '@/data/services'
 import Head from 'next/head'
 import Script from 'next/script'
@@ -122,7 +122,6 @@ const Oracle = () => {
                         isVideo={true}
                     />
                 </div>
-                <Testimonials testimonials={testimonials} />
                 <ArticleSlider />
                 <Blog heading='Discover Our Blog' para="Stay updated with our ongoing blogs inclusive of tips, case study examples and expert views around the usage of AI, cloud services and ERP solutions to support business growth and operational effectiveness." />
             </div>

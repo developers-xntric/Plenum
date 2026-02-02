@@ -5,7 +5,7 @@ import ERPServicesEast from '@/components/service/ERP-Cosultant/ERP-services-eas
 import Service_Inner_Hero from '@/components/service/ERP-Cosultant/hero';
 import { service_brand_icons } from '@/data/brand-slider-icons-data';
 import { digital1, digital2, digitalBottom1, digitalBottom2 } from '@/data/erp-consulting-service';
-import { testimonials } from '@/data/home-testimonials';
+;
 import ArticleSlider from "@/components/common/article-slider";
 import ERPC2 from '@/components/service/ERP-Cosultant/ERPC2';
 import { ERPAccordin } from '@/components/common/accordinService';
@@ -112,7 +112,6 @@ const DigitalExperiences = () => {
                 para_className={"xl:w-[120%]"}
                 heading={"Smart, Seamless, and Scalable"}
             />
-            <Testimonials testimonials={testimonials} />
             <ERPAccordin isbottom={true} isAccordin={true} outside={false} items={digitalItem1} className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row-reverse flex-col pt-10 lg:py-0' bottomSection={digitalBottom1} left={false} blackSection={digital1} />
             <ERPAccordin isbottom={true} isAccordin={true} outside={false} items={digitalItem2} className='flex justify-center items-center gap-10 lg:gap-5 lg:flex-row flex-col pt-10 lg:py-0' bottomSection={digitalBottom2} left={true} blackSection={digital2} />
             <ERPServicesEast para={"Plenum crafts fast, secure digital experiences for the Middle East and UK—built for mobile, bilingual use, and local compliance."} heading={"Digital Experiences Tailored for the Middle East and UK Markets"} activeState={"Egypt"} />

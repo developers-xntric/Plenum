@@ -5,7 +5,7 @@ import Testimonials from '@/components/homepage/testimonial';
 import IndustryTabs from '@/components/industries/IndustryTabs';
 import PinkSection from '@/components/service/pink-section';
 import ServiceContact from '@/components/service/service-contact';
-import { testimonials } from '@/data/home-testimonials';
+;
 import React from 'react'
 
 
@@ -37,7 +37,6 @@ const Industries = () => {
                     isVideo={true}
                 />
             </div>
-            <Testimonials testimonials={testimonials}  paragraph={"As an ERP company, Plenum is trusted by professionals for insight-driven design, branding, and innovation."} />
             <ArticleSlider />
             <Blog heading='Discover Our Blogs' para="Stay updated with our ongoing blogs inclusive of tips, case study examples and expert views around the usage of AI, cloud services and ERP solutions to support business growth and operational effectiveness." />
             <ServiceContact />
