@@ -16,7 +16,7 @@ import { MicrosoftCarouselData } from '@/data/microsoft-carousel'
 import { oracleNetSuite } from '@/data/services'
 import Script from 'next/script'
 
-const Testimonials = dynamic(() => import('@/components/homepage/testimonial'))
+
 const ArticleSlider = dynamic(() => import('@/components/common/article-slider'))
 
 const schemaData = {

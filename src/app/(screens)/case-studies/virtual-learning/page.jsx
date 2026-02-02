@@ -6,7 +6,7 @@ import { Blog } from "@/components/homepage/blog"
 import { testimonials } from "@/data/home-testimonials"
 import dynamic from "next/dynamic"
 
-const Testimonials = dynamic(() => import('@/components/homepage/testimonial'));
+;
 const ArticleSlider = dynamic(() => import('@/components/common/article-slider'));
 
 const case_studies = [
